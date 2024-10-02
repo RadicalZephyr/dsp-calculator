@@ -1,0 +1,13 @@
+^{:open-url "http://[[server-hostname]]:[[server-port]]/index.html"
+  }
+{:main "dsp-calculator.app"
+ :asset-path "/js/compiled/out"
+ :output-to "resources/public/js/compiled/dsp-calculator.js"
+ :output-dir "resources/public/js/compiled/out"
+ :closure-defines {"re_frame.trace.trace_enabled_QMARK_" true
+                   "day8.re_frame.tracing.trace_enabled_QMARK_" true
+                   day8.re-frame-10x.hidden-namespaces "[re-com.box]"}
+ :preloads [devtools.preload day8.re-frame-10x.preload.react-18]
+ :optimizations :none
+ :source-map-timestamp true
+ }

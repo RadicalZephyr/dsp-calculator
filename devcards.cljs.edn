@@ -1,0 +1,12 @@
+^{:open-url "http://[[server-hostname]]:[[server-port]]/devcards/index.html"
+  }
+{:main "dsp-calculator.devcards"
+ :devcards true
+ :asset-path "/devcards/js/compiled/out"
+ :output-to "dev-resources/public/devcards/js/compiled/dsp-calculator-devcards.js"
+ :output-dir "dev-resources/public/devcards/js/compiled/out"
+ :recompile-dependents false
+ :preloads [devtools.preload]
+ :optimizations :none
+ :source-map-timestamp true
+ }
