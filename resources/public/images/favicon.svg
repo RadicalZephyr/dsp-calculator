@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="clip-favicon">
+      <rect width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g id="favicon" clip-path="url(#clip-favicon)">
+    <g id="Group_7" data-name="Group 7" transform="translate(-76.793 -85.976)">
+      <g id="Group_5" data-name="Group 5" transform="translate(198.5 204.5)">
+        <line id="Line_1" data-name="Line 1" y1="313.486" x2="313.486" transform="translate(-20.859 -20.859)" fill="none" stroke="#673ab8" stroke-linecap="round" stroke-width="190"/>
+        <line id="Line_2" data-name="Line 2" y1="313.486" x2="313.486" transform="translate(292.627 -20.859) rotate(90)" fill="none" stroke="#673ab8" stroke-linecap="round" stroke-width="190"/>
+        <circle id="Ellipse_3" data-name="Ellipse 3" cx="247" cy="247" r="247" transform="translate(-112.707 -109.524)" fill="#673ab8"/>
+      </g>
+    </g>
+    <g id="Group_3" data-name="Group 3" transform="translate(90.954 14.225)">
+      <path id="Subtraction_2" data-name="Subtraction 2" d="M330.091,413.763h0L208.879,433.639,42.617,460.9,33.37,360.889l286.5-19.8,10.226,72.673Zm-12.455-88.518h0l-53.028,2.585-8.255-62.656,8.324.214L248.1,140.924l29.2,4.984,16.6,120.23,12.23.314,4.093,6.164,7.405,52.629ZM116.48,335.052h0L31.364,339.2l-6.633-71.736,5.162-8.107,21.4.55L36.232,104.764l45.076,7.693L96.883,261.078l11.73.3,7.867,73.672Zm120.4-6.142-84.659,4.1L149.893,312.4l84.6-2.26,2.385,18.77Zm46.9-196.507h0L229.65,122.2l-.9-6.909-59.564-11.686L100.917,90.212l.857,7.886L19.748,82.637l-6.1-64.5,12.1-11.439L81.63,21.224l13.644,17.04.994,9.15,68.106,16.194,59.48,14.143-1.048-8.035,7.471-9.844L267.329,69.5l9.559,13.548,6.886,49.35Z" transform="translate(0 0)" fill="#fff"/>
+      <path id="Path_6" data-name="Path 6" d="M0,0,65.387,12.956l3.128,24.9-7.56,7.888L14.039,38.189,3.052,26.652Z" transform="translate(135.125 95.039)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

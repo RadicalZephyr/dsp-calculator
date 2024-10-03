@@ -1,0 +1,11574 @@
+[
+  {
+    "name": "T戴森球计划",
+    "id": 1,
+    "description": "戴森球计划描述",
+    "published": true,
+    "iconPath": "Icons/Tech/1",
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1"
+    },
+    "position": [
+      5,
+      1
+    ]
+  },
+  {
+    "name": "T电磁学",
+    "id": 1001,
+    "description": "电磁学描述",
+    "conclusion": "电磁学结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1001",
+    "preTechs": [
+      1
+    ],
+    "items": [
+      1202
+    ],
+    "itemPoints": [
+      30
+    ],
+    "propertyOverrideItems": [
+      6001
+    ],
+    "propertyItemCounts": [
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1200"
+    },
+    "unlockRecipes": [
+      7,
+      8,
+      48
+    ],
+    "addItems": [
+      2203,
+      2201,
+      2301
+    ],
+    "addItemCounts": [
+      1,
+      1,
+      1
+    ],
+    "position": [
+      9,
+      1
+    ]
+  },
+  {
+    "name": "T电磁矩阵",
+    "id": 1002,
+    "description": "电磁矩阵描述",
+    "conclusion": "电磁矩阵结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1002",
+    "preTechs": [
+      1001
+    ],
+    "items": [
+      1202,
+      1301
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "propertyOverrideItems": [
+      6001
+    ],
+    "propertyItemCounts": [
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1800"
+    },
+    "unlockRecipes": [
+      9,
+      10
+    ],
+    "addItems": [
+      2901
+    ],
+    "addItemCounts": [
+      1
+    ],
+    "position": [
+      13,
+      1
+    ]
+  },
+  {
+    "name": "T高效电浆控制",
+    "id": 1101,
+    "description": "高效电浆控制描述",
+    "conclusion": "高效电浆控制结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1101",
+    "isLabTech": true,
+    "preTechs": [
+      1001
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "9000"
+    },
+    "unlockRecipes": [
+      11,
+      12,
+      13
+    ],
+    "addItems": [
+      1401
+    ],
+    "addItemCounts": [
+      10
+    ],
+    "position": [
+      13,
+      -27
+    ]
+  },
+  {
+    "name": "T等离子萃取精炼",
+    "id": 1102,
+    "description": "等离子萃取精炼描述",
+    "conclusion": "等离子萃取精炼结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1102",
+    "isLabTech": true,
+    "preTechs": [
+      1120,
+      1101
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockRecipes": [
+      14,
+      15,
+      16
+    ],
+    "position": [
+      17,
+      -27
+    ]
+  },
+  {
+    "name": "TX射线裂解",
+    "id": 1103,
+    "description": "X射线裂解描述",
+    "conclusion": "X射线裂解结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1103",
+    "isLabTech": true,
+    "preTechs": [
+      1121,
+      1102
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockRecipes": [
+      58
+    ],
+    "position": [
+      25,
+      -27
+    ]
+  },
+  {
+    "name": "T重整精炼",
+    "id": 1104,
+    "description": "重整精炼描述",
+    "conclusion": "重整精炼结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1104",
+    "isLabTech": true,
+    "preTechs": [
+      1103
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "90000"
+    },
+    "unlockRecipes": [
+      121
+    ],
+    "position": [
+      29,
+      -27
+    ]
+  },
+  {
+    "name": "T能量矩阵",
+    "id": 1111,
+    "description": "能量矩阵描述",
+    "conclusion": "能量矩阵结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1111",
+    "isLabTech": true,
+    "preTechs": [
+      1102
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockRecipes": [
+      18
+    ],
+    "position": [
+      21,
+      -31
+    ]
+  },
+  {
+    "name": "T氢燃料棒",
+    "id": 1112,
+    "description": "氢燃料棒描述",
+    "conclusion": "氢燃料棒结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1112",
+    "isLabTech": true,
+    "preTechs": [
+      1111
+    ],
+    "items": [
+      6002
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockRecipes": [
+      19
+    ],
+    "position": [
+      25,
+      -31
+    ]
+  },
+  {
+    "name": "T推进器",
+    "id": 1113,
+    "description": "推进器描述",
+    "conclusion": "推进器结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1113",
+    "isLabTech": true,
+    "preTechs": [
+      1112
+    ],
+    "items": [
+      6002
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockRecipes": [
+      20
+    ],
+    "position": [
+      29,
+      -31
+    ]
+  },
+  {
+    "name": "T加力推进器",
+    "id": 1114,
+    "description": "加力推进器描述",
+    "conclusion": "加力推进器结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1114",
+    "isLabTech": true,
+    "preTechs": [
+      1113
+    ],
+    "items": [
+      6002
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "288000"
+    },
+    "unlockRecipes": [
+      21
+    ],
+    "position": [
+      33,
+      -31
+    ]
+  },
+  {
+    "name": "T流体储存封装",
+    "id": 1120,
+    "description": "流体储存封装描述",
+    "conclusion": "流体储存封装结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1120",
+    "isLabTech": true,
+    "preTechs": [
+      1001
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "9000"
+    },
+    "unlockRecipes": [
+      114,
+      49
+    ],
+    "addItems": [
+      2106
+    ],
+    "addItemCounts": [
+      1
+    ],
+    "position": [
+      13,
+      -23
+    ]
+  },
+  {
+    "name": "T基础化工",
+    "id": 1121,
+    "description": "基础化工描述",
+    "conclusion": "基础化工结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1121",
+    "isLabTech": true,
+    "preTechs": [
+      1120,
+      1102
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockRecipes": [
+      22,
+      23,
+      24
+    ],
+    "position": [
+      21,
+      -23
+    ]
+  },
+  {
+    "name": "T高分子化工",
+    "id": 1122,
+    "description": "高分子化工描述",
+    "conclusion": "高分子化工结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1122",
+    "isLabTech": true,
+    "preTechs": [
+      1121
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockRecipes": [
+      25,
+      54
+    ],
+    "position": [
+      25,
+      -23
+    ]
+  },
+  {
+    "name": "T高强度晶体",
+    "id": 1123,
+    "description": "高强度晶体描述",
+    "conclusion": "高强度晶体结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1123",
+    "isLabTech": true,
+    "preTechs": [
+      1122
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "108000"
+    },
+    "unlockRecipes": [
+      26
+    ],
+    "position": [
+      29,
+      -23
+    ]
+  },
+  {
+    "name": "T结构矩阵",
+    "id": 1124,
+    "description": "结构矩阵描述",
+    "conclusion": "结构矩阵结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1124",
+    "isLabTech": true,
+    "preTechs": [
+      1123
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "240000"
+    },
+    "unlockRecipes": [
+      27
+    ],
+    "position": [
+      33,
+      -23
+    ]
+  },
+  {
+    "name": "T卡西米尔晶体",
+    "id": 1125,
+    "description": "卡西米尔晶体描述",
+    "conclusion": "卡西米尔晶体结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1125",
+    "isLabTech": true,
+    "preTechs": [
+      1124
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "240000"
+    },
+    "unlockRecipes": [
+      28,
+      29
+    ],
+    "position": [
+      37,
+      -23
+    ]
+  },
+  {
+    "name": "T高强度玻璃",
+    "id": 1126,
+    "description": "高强度玻璃描述",
+    "conclusion": "高强度玻璃结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1126",
+    "isLabTech": true,
+    "preTechs": [
+      1132
+    ],
+    "items": [
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "240000"
+    },
+    "unlockRecipes": [
+      30
+    ],
+    "position": [
+      37,
+      -19
+    ]
+  },
+  {
+    "name": "T应用型超导体",
+    "id": 1131,
+    "description": "应用型超导体描述",
+    "conclusion": "应用型超导体结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1131",
+    "isLabTech": true,
+    "preTechs": [
+      1121
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockRecipes": [
+      31,
+      32
+    ],
+    "position": [
+      25,
+      -19
+    ]
+  },
+  {
+    "name": "T高强度材料",
+    "id": 1132,
+    "description": "高强度材料描述",
+    "conclusion": "高强度材料结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1132",
+    "isLabTech": true,
+    "preTechs": [
+      1131
+    ],
+    "items": [
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      16,
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "135000"
+    },
+    "unlockRecipes": [
+      33,
+      35
+    ],
+    "position": [
+      33,
+      -19
+    ]
+  },
+  {
+    "name": "T粒子可控技术",
+    "id": 1133,
+    "description": "粒子可控技术描述",
+    "conclusion": "粒子可控技术结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1133",
+    "isLabTech": true,
+    "preTechs": [
+      1132
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      16,
+      16,
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockRecipes": [
+      36,
+      62
+    ],
+    "position": [
+      37,
+      -15
+    ]
+  },
+  {
+    "name": "T重氢分馏",
+    "id": 1134,
+    "description": "重氢分馏描述",
+    "conclusion": "重氢分馏结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1134",
+    "isLabTech": true,
+    "preTechs": [
+      1412,
+      1102
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      30
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockRecipes": [
+      110,
+      115
+    ],
+    "position": [
+      21,
+      -15
+    ]
+  },
+  {
+    "name": "T波函数干扰",
+    "id": 1141,
+    "description": "波函数干扰描述",
+    "conclusion": "波函数干扰结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1141",
+    "isLabTech": true,
+    "preTechs": [
+      1126,
+      1125
+    ],
+    "items": [
+      6001,
+      6002,
+      6004
+    ],
+    "itemPoints": [
+      12,
+      12,
+      2
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockRecipes": [
+      38
+    ],
+    "position": [
+      41,
+      -23
+    ]
+  },
+  {
+    "name": "T微型粒子对撞机",
+    "id": 1142,
+    "description": "微型粒子对撞机描述",
+    "conclusion": "微型粒子对撞机结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1142",
+    "isLabTech": true,
+    "preTechs": [
+      1124
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "240000"
+    },
+    "unlockRecipes": [
+      39,
+      40
+    ],
+    "position": [
+      37,
+      -31
+    ]
+  },
+  {
+    "name": "T奇异物质",
+    "id": 1143,
+    "description": "奇异物质描述",
+    "conclusion": "奇异物质结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1143",
+    "isLabTech": true,
+    "preTechs": [
+      1142
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "300000"
+    },
+    "unlockRecipes": [
+      104
+    ],
+    "position": [
+      41,
+      -31
+    ]
+  },
+  {
+    "name": "T人造恒星",
+    "id": 1144,
+    "description": "人造恒星描述",
+    "conclusion": "人造恒星结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1144",
+    "isLabTech": true,
+    "preTechs": [
+      1145
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "432000"
+    },
+    "unlockRecipes": [
+      43
+    ],
+    "position": [
+      61,
+      -3
+    ]
+  },
+  {
+    "name": "T可控湮灭反应",
+    "id": 1145,
+    "description": "可控湮灭反应描述",
+    "conclusion": "可控湮灭反应结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1145",
+    "isLabTech": true,
+    "preTechs": [
+      1506
+    ],
+    "items": [
+      6002,
+      6005
+    ],
+    "itemPoints": [
+      24,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "600000"
+    },
+    "unlockRecipes": [
+      42,
+      44
+    ],
+    "position": [
+      57,
+      -3
+    ]
+  },
+  {
+    "name": "T增产剂 Mk.I",
+    "id": 1151,
+    "description": "增产剂 Mk.I描述",
+    "conclusion": "增产剂 Mk.I结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1151",
+    "isLabTech": true,
+    "preTechs": [
+      1311,
+      1101
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockRecipes": [
+      106,
+      109
+    ],
+    "position": [
+      21,
+      -11
+    ]
+  },
+  {
+    "name": "T增产剂 Mk.II",
+    "id": 1152,
+    "description": "增产剂 Mk.II描述",
+    "conclusion": "增产剂 Mk.II结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1152",
+    "isLabTech": true,
+    "preTechs": [
+      1302,
+      1151
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      16,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockRecipes": [
+      107
+    ],
+    "position": [
+      29,
+      -11
+    ]
+  },
+  {
+    "name": "T增产剂 Mk.III",
+    "id": 1153,
+    "description": "增产剂 Mk.III描述",
+    "conclusion": "增产剂 Mk.III结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1153",
+    "isLabTech": true,
+    "preTechs": [
+      1152,
+      1132
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      8,
+      6,
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockRecipes": [
+      108
+    ],
+    "position": [
+      37,
+      -11
+    ]
+  },
+  {
+    "name": "T基础制造工艺",
+    "id": 1201,
+    "description": "基础制造工艺描述",
+    "conclusion": "基础制造工艺结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1201",
+    "preTechs": [
+      1001
+    ],
+    "items": [
+      1301,
+      1201
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "propertyOverrideItems": [
+      6001
+    ],
+    "propertyItemCounts": [
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1800"
+    },
+    "unlockRecipes": [
+      45
+    ],
+    "addItems": [
+      2303
+    ],
+    "addItemCounts": [
+      1
+    ],
+    "position": [
+      13,
+      -3
+    ]
+  },
+  {
+    "name": "T高速制造工艺",
+    "id": 1202,
+    "description": "高速制造工艺描述",
+    "conclusion": "高速制造工艺结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1202",
+    "isLabTech": true,
+    "preTechs": [
+      1201,
+      1302
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "108000"
+    },
+    "unlockRecipes": [
+      46
+    ],
+    "unlockFunctions": [
+      7
+    ],
+    "unlockValues": [
+      0.5
+    ],
+    "position": [
+      29,
+      -3
+    ]
+  },
+  {
+    "name": "T量子打印技术",
+    "id": 1203,
+    "description": "量子打印技术描述",
+    "conclusion": "量子打印技术结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1203",
+    "isLabTech": true,
+    "preTechs": [
+      1202,
+      1303
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "288000"
+    },
+    "unlockRecipes": [
+      47
+    ],
+    "unlockFunctions": [
+      7
+    ],
+    "unlockValues": [
+      0.5
+    ],
+    "position": [
+      49,
+      -3
+    ]
+  },
+  {
+    "name": "T处理器",
+    "id": 1302,
+    "description": "处理器描述",
+    "conclusion": "处理器结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1302",
+    "isLabTech": true,
+    "preTechs": [
+      1311
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockRecipes": [
+      51
+    ],
+    "position": [
+      25,
+      -7
+    ]
+  },
+  {
+    "name": "T量子芯片",
+    "id": 1303,
+    "description": "量子芯片描述",
+    "conclusion": "量子芯片结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1303",
+    "isLabTech": true,
+    "preTechs": [
+      1312,
+      1141
+    ],
+    "items": [
+      6001,
+      6002,
+      6004
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "288000"
+    },
+    "unlockRecipes": [
+      52
+    ],
+    "position": [
+      45,
+      -19
+    ]
+  },
+  {
+    "name": "T大型采矿机",
+    "id": 1304,
+    "description": "大型采矿机描述",
+    "conclusion": "大型采矿机结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1304",
+    "isLabTech": true,
+    "preTechs": [
+      1303
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockRecipes": [
+      119
+    ],
+    "position": [
+      49,
+      -19
+    ]
+  },
+  {
+    "name": "T高级化工",
+    "id": 1305,
+    "description": "高级化工描述",
+    "conclusion": "高级化工结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1305",
+    "isLabTech": true,
+    "preTechs": [
+      1303,
+      1143
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockRecipes": [
+      124
+    ],
+    "position": [
+      49,
+      -31
+    ]
+  },
+  {
+    "name": "T半导体材料",
+    "id": 1311,
+    "description": "半导体材料描述",
+    "conclusion": "半导体材料结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1311",
+    "isLabTech": true,
+    "preTechs": [
+      1201
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "18000"
+    },
+    "unlockRecipes": [
+      53
+    ],
+    "position": [
+      17,
+      -7
+    ]
+  },
+  {
+    "name": "T信息矩阵",
+    "id": 1312,
+    "description": "信息矩阵描述",
+    "conclusion": "信息矩阵结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1312",
+    "isLabTech": true,
+    "preTechs": [
+      1302,
+      1133
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "288000"
+    },
+    "unlockRecipes": [
+      55
+    ],
+    "position": [
+      41,
+      -7
+    ]
+  },
+  {
+    "name": "T自动化冶金",
+    "id": 1401,
+    "description": "自动化冶金描述",
+    "conclusion": "自动化冶金结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1401",
+    "preTechs": [
+      1001
+    ],
+    "items": [
+      1202,
+      1301
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "propertyOverrideItems": [
+      6001
+    ],
+    "propertyItemCounts": [
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1800"
+    },
+    "unlockRecipes": [
+      56,
+      57
+    ],
+    "addItems": [
+      2302
+    ],
+    "addItemCounts": [
+      3
+    ],
+    "position": [
+      13,
+      5
+    ]
+  },
+  {
+    "name": "T冶炼提纯",
+    "id": 1402,
+    "description": "冶炼提纯描述",
+    "conclusion": "冶炼提纯结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1402",
+    "isLabTech": true,
+    "preTechs": [
+      1401
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "18000"
+    },
+    "unlockRecipes": [
+      34,
+      17,
+      59
+    ],
+    "position": [
+      17,
+      5
+    ]
+  },
+  {
+    "name": "T晶体冶炼",
+    "id": 1403,
+    "description": "晶体冶炼描述",
+    "conclusion": "晶体冶炼结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1403",
+    "isLabTech": true,
+    "preTechs": [
+      1402
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "90000"
+    },
+    "unlockRecipes": [
+      60,
+      61,
+      37
+    ],
+    "position": [
+      21,
+      5
+    ]
+  },
+  {
+    "name": "T钢材冶炼",
+    "id": 1411,
+    "description": "钢材冶炼描述",
+    "conclusion": "钢材冶炼结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1411",
+    "isLabTech": true,
+    "preTechs": [
+      1401
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "21600"
+    },
+    "unlockRecipes": [
+      63
+    ],
+    "unlockFunctions": [
+      37
+    ],
+    "unlockValues": [
+      2203
+    ],
+    "position": [
+      17,
+      13
+    ]
+  },
+  {
+    "name": "T火力发电",
+    "id": 1412,
+    "description": "火力发电描述",
+    "conclusion": "火力发电结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1412",
+    "isLabTech": true,
+    "preTechs": [
+      1201
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "5400"
+    },
+    "unlockRecipes": [
+      64
+    ],
+    "addItems": [
+      2204
+    ],
+    "addItemCounts": [
+      1
+    ],
+    "position": [
+      17,
+      -15
+    ]
+  },
+  {
+    "name": "T钛矿冶炼",
+    "id": 1413,
+    "description": "钛矿冶炼描述",
+    "conclusion": "钛矿冶炼结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1413",
+    "isLabTech": true,
+    "preTechs": [
+      1411
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockRecipes": [
+      65
+    ],
+    "position": [
+      25,
+      13
+    ]
+  },
+  {
+    "name": "T高强度钛合金",
+    "id": 1414,
+    "description": "高强度钛合金描述",
+    "conclusion": "高强度钛合金结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1414",
+    "isLabTech": true,
+    "preTechs": [
+      1413
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      2
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockRecipes": [
+      66
+    ],
+    "position": [
+      33,
+      13
+    ]
+  },
+  {
+    "name": "T移山填海工程",
+    "id": 1415,
+    "description": "移山填海工程描述",
+    "conclusion": "移山填海工程结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1415",
+    "isLabTech": true,
+    "preTechs": [
+      1411
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockRecipes": [
+      112
+    ],
+    "position": [
+      21,
+      9
+    ]
+  },
+  {
+    "name": "T微型核聚变发电",
+    "id": 1416,
+    "description": "微型核聚变发电描述",
+    "conclusion": "微型核聚变发电结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1416",
+    "isLabTech": true,
+    "preTechs": [
+      1134
+    ],
+    "preTechsImplicit": [
+      1414
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      10,
+      5
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockRecipes": [
+      113,
+      41
+    ],
+    "position": [
+      33,
+      -15
+    ]
+  },
+  {
+    "name": "T位面冶金",
+    "id": 1417,
+    "description": "位面冶金描述",
+    "conclusion": "位面冶金结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1417",
+    "isLabTech": true,
+    "preTechs": [
+      1141
+    ],
+    "preTechsImplicit": [
+      1403
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockRecipes": [
+      116
+    ],
+    "position": [
+      45,
+      -23
+    ]
+  },
+  {
+    "name": "T太阳能收集",
+    "id": 1501,
+    "description": "太阳能收集描述",
+    "conclusion": "太阳能收集结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1501",
+    "isLabTech": true,
+    "preTechs": [
+      1402,
+      1002,
+      1201
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "18000"
+    },
+    "unlockRecipes": [
+      67
+    ],
+    "addItems": [
+      2205
+    ],
+    "addItemCounts": [
+      1
+    ],
+    "position": [
+      21,
+      1
+    ]
+  },
+  {
+    "name": "T光子变频",
+    "id": 1502,
+    "description": "光子变频描述",
+    "conclusion": "光子变频结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1502",
+    "isLabTech": true,
+    "preTechs": [
+      1501
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockRecipes": [
+      68,
+      69
+    ],
+    "position": [
+      25,
+      1
+    ]
+  },
+  {
+    "name": "T太阳帆轨道系统",
+    "id": 1503,
+    "description": "太阳帆轨道系统描述",
+    "conclusion": "太阳帆轨道系统结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1503",
+    "isLabTech": true,
+    "preTechs": [
+      1502
+    ],
+    "preTechsImplicit": [
+      1711
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "54000"
+    },
+    "unlockRecipes": [
+      70,
+      71
+    ],
+    "position": [
+      29,
+      1
+    ]
+  },
+  {
+    "name": "T射线接收站",
+    "id": 1504,
+    "description": "射线接收站描述",
+    "conclusion": "射线接收站结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1504",
+    "isLabTech": true,
+    "preTechs": [
+      1503
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "108000"
+    },
+    "unlockRecipes": [
+      72
+    ],
+    "position": [
+      33,
+      1
+    ]
+  },
+  {
+    "name": "T行星电离层利用",
+    "id": 1505,
+    "description": "行星电离层利用描述",
+    "conclusion": "行星电离层利用结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1505",
+    "isLabTech": true,
+    "preTechs": [
+      1504
+    ],
+    "preTechsImplicit": [
+      1704
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6005
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      8
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      49,
+      1
+    ]
+  },
+  {
+    "name": "T狄拉克逆变机制",
+    "id": 1506,
+    "description": "狄拉克逆变机制描述",
+    "conclusion": "狄拉克逆变机制结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1506",
+    "isLabTech": true,
+    "preTechs": [
+      1505
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      20,
+      20,
+      5,
+      5,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "540000"
+    },
+    "unlockRecipes": [
+      74
+    ],
+    "position": [
+      53,
+      1
+    ]
+  },
+  {
+    "name": "T宇宙矩阵",
+    "id": 1507,
+    "description": "宇宙矩阵描述",
+    "conclusion": "宇宙矩阵结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1507",
+    "isLabTech": true,
+    "preTechs": [
+      1506
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "720000"
+    },
+    "unlockRecipes": [
+      75
+    ],
+    "position": [
+      65,
+      1
+    ]
+  },
+  {
+    "name": "T任务完成",
+    "id": 1508,
+    "description": "任务完成描述",
+    "conclusion": "任务完成结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1508",
+    "isLabTech": true,
+    "preTechs": [
+      1507
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "3600000"
+    },
+    "unlockFunctions": [
+      99
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      69,
+      1
+    ]
+  },
+  {
+    "name": "T能量储存",
+    "id": 1511,
+    "description": "能量储存描述",
+    "conclusion": "能量储存结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1511",
+    "isLabTech": true,
+    "preTechs": [
+      1403,
+      1501
+    ],
+    "preTechsImplicit": [
+      1711
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "108000"
+    },
+    "unlockRecipes": [
+      76
+    ],
+    "position": [
+      25,
+      9
+    ]
+  },
+  {
+    "name": "T星际电力运输",
+    "id": 1512,
+    "description": "星际电力运输描述",
+    "conclusion": "星际电力运输结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1512",
+    "isLabTech": true,
+    "preTechs": [
+      1414,
+      1511
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      2
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "216000"
+    },
+    "unlockRecipes": [
+      77
+    ],
+    "position": [
+      37,
+      9
+    ]
+  },
+  {
+    "name": "T地热开采",
+    "id": 1513,
+    "description": "地热开采描述",
+    "conclusion": "地热开采结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1513",
+    "isLabTech": true,
+    "preTechs": [
+      1502
+    ],
+    "preTechsImplicit": [
+      1711
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockRecipes": [
+      118
+    ],
+    "position": [
+      29,
+      5
+    ]
+  },
+  {
+    "name": "T高强度轻质结构",
+    "id": 1521,
+    "description": "高强度轻质结构描述",
+    "conclusion": "高强度轻质结构结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1521",
+    "isLabTech": true,
+    "preTechs": [
+      1503
+    ],
+    "preTechsImplicit": [
+      1132
+    ],
+    "items": [
+      6001,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      2
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockRecipes": [
+      80,
+      81
+    ],
+    "position": [
+      33,
+      5
+    ]
+  },
+  {
+    "name": "T垂直发射井",
+    "id": 1522,
+    "description": "垂直发射井描述",
+    "conclusion": "垂直发射井结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1522",
+    "isLabTech": true,
+    "preTechs": [
+      1521
+    ],
+    "preTechsImplicit": [
+      1303
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "576000"
+    },
+    "unlockRecipes": [
+      82,
+      83
+    ],
+    "position": [
+      45,
+      5
+    ]
+  },
+  {
+    "name": "T戴森球应力系统",
+    "id": 1523,
+    "description": "戴森球应力系统描述",
+    "conclusion": "戴森球应力系统结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 6,
+    "levelCoef1": 180000,
+    "iconPath": "Icons/Tech/1523",
+    "isLabTech": true,
+    "preTechs": [
+      1522
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockFunctions": [
+      26
+    ],
+    "unlockValues": [
+      15
+    ],
+    "position": [
+      49,
+      5
+    ]
+  },
+  {
+    "name": "T基础物流系统",
+    "id": 1601,
+    "description": "基础物流系统描述",
+    "conclusion": "基础物流系统结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1601",
+    "preTechs": [
+      1001
+    ],
+    "items": [
+      1301,
+      1201
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "propertyOverrideItems": [
+      6001
+    ],
+    "propertyItemCounts": [
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1800"
+    },
+    "unlockRecipes": [
+      84,
+      85,
+      86
+    ],
+    "addItems": [
+      2001,
+      2011
+    ],
+    "addItemCounts": [
+      20,
+      5
+    ],
+    "position": [
+      13,
+      21
+    ]
+  },
+  {
+    "name": "T改良物流系统",
+    "id": 1602,
+    "description": "改良物流系统描述",
+    "conclusion": "改良物流系统结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1602",
+    "isLabTech": true,
+    "preTechs": [
+      1601
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "18000"
+    },
+    "unlockRecipes": [
+      87,
+      88,
+      117
+    ],
+    "addItems": [
+      2020,
+      2012,
+      2030
+    ],
+    "addItemCounts": [
+      1,
+      5,
+      5
+    ],
+    "position": [
+      21,
+      21
+    ]
+  },
+  {
+    "name": "T高效物流系统",
+    "id": 1603,
+    "description": "高效物流系统描述",
+    "conclusion": "高效物流系统结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1603",
+    "isLabTech": true,
+    "preTechs": [
+      1602
+    ],
+    "preTechsImplicit": [
+      1702
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      5
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockRecipes": [
+      89,
+      90,
+      91
+    ],
+    "position": [
+      25,
+      21
+    ]
+  },
+  {
+    "name": "T行星物流系统",
+    "id": 1604,
+    "description": "行星物流系统描述",
+    "conclusion": "行星物流系统结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1604",
+    "isLabTech": true,
+    "preTechs": [
+      1603
+    ],
+    "preTechsImplicit": [
+      1113,
+      3701
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockRecipes": [
+      92,
+      93,
+      94
+    ],
+    "position": [
+      29,
+      21
+    ]
+  },
+  {
+    "name": "T星际物流系统",
+    "id": 1605,
+    "description": "星际物流系统描述",
+    "conclusion": "星际物流系统结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1605",
+    "isLabTech": true,
+    "preTechs": [
+      1604,
+      1414
+    ],
+    "preTechsImplicit": [
+      1114
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      2
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "216000"
+    },
+    "unlockRecipes": [
+      95,
+      96
+    ],
+    "position": [
+      37,
+      21
+    ]
+  },
+  {
+    "name": "T气态行星开采",
+    "id": 1606,
+    "description": "气态行星开采描述",
+    "conclusion": "气态行星开采结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1606",
+    "isLabTech": true,
+    "preTechs": [
+      1605,
+      1512
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "432000"
+    },
+    "unlockRecipes": [
+      111
+    ],
+    "position": [
+      41,
+      13
+    ]
+  },
+  {
+    "name": "T集装物流系统",
+    "id": 1607,
+    "description": "集装物流系统描述",
+    "conclusion": "集装物流系统结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1607",
+    "isLabTech": true,
+    "preTechs": [
+      1603
+    ],
+    "preTechsImplicit": [
+      1711
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      10,
+      1
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockRecipes": [
+      120,
+      160
+    ],
+    "position": [
+      33,
+      17
+    ]
+  },
+  {
+    "name": "T配送物流系统",
+    "id": 1608,
+    "description": "配送物流系统描述",
+    "conclusion": "配送物流系统结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1608",
+    "isLabTech": true,
+    "preTechs": [
+      1602
+    ],
+    "preTechsImplicit": [
+      1702
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "108000"
+    },
+    "unlockRecipes": [
+      122,
+      123
+    ],
+    "unlockFunctions": [
+      32
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      25,
+      17
+    ]
+  },
+  {
+    "name": "T电磁驱动",
+    "id": 1701,
+    "description": "电磁驱动描述",
+    "conclusion": "电磁驱动结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1701",
+    "isLabTech": true,
+    "preTechs": [
+      1001
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "9000"
+    },
+    "unlockRecipes": [
+      97
+    ],
+    "position": [
+      13,
+      -35
+    ]
+  },
+  {
+    "name": "T磁悬浮技术",
+    "id": 1702,
+    "description": "磁悬浮技术描述",
+    "conclusion": "磁悬浮技术结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1702",
+    "isLabTech": true,
+    "preTechs": [
+      1701
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      5
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockRecipes": [
+      98
+    ],
+    "position": [
+      21,
+      -35
+    ]
+  },
+  {
+    "name": "T粒子磁力阱",
+    "id": 1703,
+    "description": "粒子磁力阱描述",
+    "conclusion": "粒子磁力阱结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1703",
+    "isLabTech": true,
+    "preTechs": [
+      1702
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "288000"
+    },
+    "unlockRecipes": [
+      99,
+      100
+    ],
+    "position": [
+      29,
+      -35
+    ]
+  },
+  {
+    "name": "T引力波折射",
+    "id": 1704,
+    "description": "引力波折射描述",
+    "conclusion": "引力波折射结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1704",
+    "isLabTech": true,
+    "preTechs": [
+      1143,
+      1703
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockRecipes": [
+      101,
+      78
+    ],
+    "position": [
+      45,
+      -35
+    ]
+  },
+  {
+    "name": "T引力矩阵",
+    "id": 1705,
+    "description": "引力矩阵描述",
+    "conclusion": "引力矩阵结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1705",
+    "isLabTech": true,
+    "preTechs": [
+      1303,
+      1704
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "576000"
+    },
+    "unlockRecipes": [
+      102,
+      79
+    ],
+    "position": [
+      49,
+      -35
+    ]
+  },
+  {
+    "name": "T超级磁场发生器",
+    "id": 1711,
+    "description": "超级磁场发生器描述",
+    "conclusion": "超级磁场发生器结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1711",
+    "isLabTech": true,
+    "preTechs": [
+      1702
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      5
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockRecipes": [
+      103
+    ],
+    "position": [
+      25,
+      -39
+    ]
+  },
+  {
+    "name": "T卫星配电系统",
+    "id": 1712,
+    "description": "卫星配电系统描述",
+    "conclusion": "卫星配电系统结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1712",
+    "isLabTech": true,
+    "preTechs": [
+      1711
+    ],
+    "preTechsImplicit": [
+      1521
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "240000"
+    },
+    "unlockRecipes": [
+      73
+    ],
+    "position": [
+      37,
+      -39
+    ]
+  },
+  {
+    "name": "T武器系统",
+    "id": 1801,
+    "description": "武器系统描述",
+    "conclusion": "武器系统结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1801",
+    "isLabTech": true,
+    "preTechs": [
+      1001
+    ],
+    "preTechsImplicit": [
+      1401
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "7200"
+    },
+    "unlockRecipes": [
+      125,
+      136
+    ],
+    "addItems": [
+      1601
+    ],
+    "addItemCounts": [
+      10
+    ],
+    "position": [
+      13,
+      -47
+    ]
+  },
+  {
+    "name": "T燃烧单元",
+    "id": 1802,
+    "description": "燃烧单元描述",
+    "conclusion": "燃烧单元结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1802",
+    "isLabTech": true,
+    "preTechs": [
+      1401
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "21600"
+    },
+    "unlockRecipes": [
+      133
+    ],
+    "position": [
+      17,
+      9
+    ]
+  },
+  {
+    "name": "T爆破单元",
+    "id": 1803,
+    "description": "爆破单元描述",
+    "conclusion": "爆破单元结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1803",
+    "isLabTech": true,
+    "preTechs": [
+      1123
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockRecipes": [
+      134
+    ],
+    "position": [
+      33,
+      -27
+    ]
+  },
+  {
+    "name": "T晶石爆破单元",
+    "id": 1804,
+    "description": "晶石爆破单元描述",
+    "conclusion": "晶石爆破单元结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1804",
+    "isLabTech": true,
+    "preTechs": [
+      1125
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      5
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "216000"
+    },
+    "unlockRecipes": [
+      135
+    ],
+    "position": [
+      41,
+      -27
+    ]
+  },
+  {
+    "name": "T动力引擎",
+    "id": 1805,
+    "description": "动力引擎描述",
+    "conclusion": "动力引擎结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1805",
+    "isLabTech": true,
+    "preTechs": [
+      1001
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "7200"
+    },
+    "unlockRecipes": [
+      105
+    ],
+    "position": [
+      13,
+      -43
+    ]
+  },
+  {
+    "name": "T导弹防御塔",
+    "id": 1806,
+    "description": "导弹防御塔描述",
+    "conclusion": "导弹防御塔结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1806",
+    "isLabTech": true,
+    "preTechs": [
+      1805,
+      1801
+    ],
+    "preTechsImplicit": [
+      1802
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "54000"
+    },
+    "unlockRecipes": [
+      129,
+      144
+    ],
+    "position": [
+      21,
+      -47
+    ]
+  },
+  {
+    "name": "T聚爆加农炮",
+    "id": 1807,
+    "description": "聚爆加农炮描述",
+    "conclusion": "聚爆加农炮结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1807",
+    "isLabTech": true,
+    "preTechs": [
+      1806
+    ],
+    "preTechsImplicit": [
+      1702
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "108000"
+    },
+    "unlockRecipes": [
+      127,
+      139
+    ],
+    "position": [
+      25,
+      -47
+    ]
+  },
+  {
+    "name": "T信号塔",
+    "id": 1808,
+    "description": "信号塔描述",
+    "conclusion": "信号塔结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1808",
+    "isLabTech": true,
+    "preTechs": [
+      1806
+    ],
+    "preTechsImplicit": [
+      1101
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockRecipes": [
+      131
+    ],
+    "position": [
+      25,
+      -43
+    ]
+  },
+  {
+    "name": "T行星防御系统",
+    "id": 1809,
+    "description": "行星防御系统描述",
+    "conclusion": "行星防御系统结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1809",
+    "isLabTech": true,
+    "preTechs": [
+      1807
+    ],
+    "preTechsImplicit": [
+      1703
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockRecipes": [
+      126,
+      132
+    ],
+    "position": [
+      33,
+      -47
+    ]
+  },
+  {
+    "name": "T干扰塔",
+    "id": 1810,
+    "description": "干扰塔描述",
+    "conclusion": "干扰塔结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1810",
+    "isLabTech": true,
+    "preTechs": [
+      1806
+    ],
+    "preTechsImplicit": [
+      1302
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      10,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockRecipes": [
+      130,
+      158
+    ],
+    "position": [
+      25,
+      -51
+    ]
+  },
+  {
+    "name": "T磁化电浆炮",
+    "id": 1811,
+    "description": "磁化电浆炮描述",
+    "conclusion": "磁化电浆炮结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1811",
+    "isLabTech": true,
+    "preTechs": [
+      1809
+    ],
+    "preTechsImplicit": [
+      1126
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "300000"
+    },
+    "unlockRecipes": [
+      128,
+      142,
+      157
+    ],
+    "position": [
+      41,
+      -47
+    ]
+  },
+  {
+    "name": "T钛化弹箱",
+    "id": 1812,
+    "description": "钛化弹箱描述",
+    "conclusion": "钛化弹箱结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1812",
+    "isLabTech": true,
+    "preTechs": [
+      1801
+    ],
+    "preTechsImplicit": [
+      1413
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockRecipes": [
+      137
+    ],
+    "position": [
+      29,
+      -55
+    ]
+  },
+  {
+    "name": "T超合金弹箱",
+    "id": 1813,
+    "description": "超合金弹箱描述",
+    "conclusion": "超合金弹箱结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1813",
+    "isLabTech": true,
+    "preTechs": [
+      1812
+    ],
+    "preTechsImplicit": [
+      1414
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      10,
+      10,
+      5
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "216000"
+    },
+    "unlockRecipes": [
+      138
+    ],
+    "position": [
+      33,
+      -55
+    ]
+  },
+  {
+    "name": "T高爆炮弹组",
+    "id": 1814,
+    "description": "高爆炮弹组描述",
+    "conclusion": "高爆炮弹组结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1814",
+    "isLabTech": true,
+    "preTechs": [
+      1807
+    ],
+    "preTechsImplicit": [
+      1413
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockRecipes": [
+      140
+    ],
+    "position": [
+      33,
+      -43
+    ]
+  },
+  {
+    "name": "T超音速导弹组",
+    "id": 1815,
+    "description": "超音速导弹组描述",
+    "conclusion": "超音速导弹组结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1815",
+    "isLabTech": true,
+    "preTechs": [
+      1814
+    ],
+    "preTechsImplicit": [
+      1113
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      12,
+      3
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "240000"
+    },
+    "unlockRecipes": [
+      145
+    ],
+    "position": [
+      37,
+      -43
+    ]
+  },
+  {
+    "name": "T晶石炮弹组",
+    "id": 1816,
+    "description": "晶石炮弹组描述",
+    "conclusion": "晶石炮弹组结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1816",
+    "isLabTech": true,
+    "preTechs": [
+      1815
+    ],
+    "preTechsImplicit": [
+      1414
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "288000"
+    },
+    "unlockRecipes": [
+      141
+    ],
+    "position": [
+      41,
+      -43
+    ]
+  },
+  {
+    "name": "T引力导弹组",
+    "id": 1817,
+    "description": "引力导弹组描述",
+    "conclusion": "引力导弹组结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1817",
+    "isLabTech": true,
+    "preTechs": [
+      1816
+    ],
+    "preTechsImplicit": [
+      1143
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockRecipes": [
+      146
+    ],
+    "position": [
+      49,
+      -43
+    ]
+  },
+  {
+    "name": "T反物质胶囊",
+    "id": 1818,
+    "description": "反物质胶囊描述",
+    "conclusion": "反物质胶囊结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1818",
+    "isLabTech": true,
+    "preTechs": [
+      1145,
+      1811
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "540000"
+    },
+    "unlockRecipes": [
+      143
+    ],
+    "position": [
+      61,
+      -47
+    ]
+  },
+  {
+    "name": "T地面战斗机-E型",
+    "id": 1819,
+    "description": "地面战斗机-E型描述",
+    "conclusion": "地面战斗机-E型结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1819",
+    "isLabTech": true,
+    "preTechs": [
+      1826
+    ],
+    "preTechsImplicit": [
+      1101
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockRecipes": [
+      147
+    ],
+    "unlockFunctions": [
+      77,
+      78
+    ],
+    "unlockValues": [
+      1,
+      4
+    ],
+    "position": [
+      21,
+      -59
+    ]
+  },
+  {
+    "name": "T地面战斗机-A型",
+    "id": 1820,
+    "description": "地面战斗机-A型描述",
+    "conclusion": "地面战斗机-A型结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1820",
+    "isLabTech": true,
+    "preTechs": [
+      1819
+    ],
+    "preTechsImplicit": [
+      1502
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockRecipes": [
+      148
+    ],
+    "position": [
+      25,
+      -59
+    ]
+  },
+  {
+    "name": "T地面战斗机-F型",
+    "id": 1821,
+    "description": "地面战斗机-F型描述",
+    "conclusion": "地面战斗机-F型结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1821",
+    "isLabTech": true,
+    "preTechs": [
+      1819
+    ],
+    "preTechsImplicit": [
+      1703
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockRecipes": [
+      149
+    ],
+    "position": [
+      33,
+      -63
+    ]
+  },
+  {
+    "name": "T太空战斗机-A型",
+    "id": 1822,
+    "description": "太空战斗机-A型描述",
+    "conclusion": "太空战斗机-A型结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1822",
+    "isLabTech": true,
+    "preTechs": [
+      1809,
+      1820
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "216000"
+    },
+    "unlockRecipes": [
+      150
+    ],
+    "unlockFunctions": [
+      79,
+      80
+    ],
+    "unlockValues": [
+      1,
+      4
+    ],
+    "position": [
+      41,
+      -59
+    ]
+  },
+  {
+    "name": "T太空战斗机-F型",
+    "id": 1823,
+    "description": "太空战斗机-F型描述",
+    "conclusion": "太空战斗机-F型结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1823",
+    "isLabTech": true,
+    "preTechs": [
+      1822,
+      1821
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "288000"
+    },
+    "unlockRecipes": [
+      151
+    ],
+    "position": [
+      49,
+      -63
+    ]
+  },
+  {
+    "name": "T电磁胶囊II",
+    "id": 1824,
+    "description": "电磁胶囊II描述",
+    "conclusion": "电磁胶囊II结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1824",
+    "isLabTech": true,
+    "preTechs": [
+      1810
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "216000"
+    },
+    "unlockRecipes": [
+      159
+    ],
+    "position": [
+      41,
+      -51
+    ]
+  },
+  {
+    "name": "T战场分析基站",
+    "id": 1826,
+    "description": "战场分析基站描述",
+    "conclusion": "战场分析基站结果",
+    "published": true,
+    "iconPath": "Icons/Tech/1826",
+    "isLabTech": true,
+    "preTechs": [
+      1801,
+      1805
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockRecipes": [
+      152
+    ],
+    "position": [
+      17,
+      -59
+    ]
+  },
+  {
+    "name": "T数字模拟计算",
+    "id": 1901,
+    "description": "数字模拟计算描述",
+    "conclusion": "数字模拟计算结果",
+    "published": true,
+    "isHiddenTech": true,
+    "preItem": [
+      5202
+    ],
+    "iconPath": "Icons/Tech/1901",
+    "preTechs": [
+      1312
+    ],
+    "items": [
+      5201
+    ],
+    "itemPoints": [
+      120
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "24000"
+    },
+    "unlockRecipes": [
+      153
+    ],
+    "position": [
+      45,
+      -7
+    ]
+  },
+  {
+    "name": "T物质重组技术",
+    "id": 1902,
+    "description": "物质重组技术描述",
+    "conclusion": "物质重组技术结果",
+    "published": true,
+    "isHiddenTech": true,
+    "preItem": [
+      5203
+    ],
+    "iconPath": "Icons/Tech/1902",
+    "preTechs": [
+      1203
+    ],
+    "items": [
+      5201
+    ],
+    "itemPoints": [
+      120
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "18000"
+    },
+    "unlockRecipes": [
+      154
+    ],
+    "position": [
+      53,
+      -3
+    ]
+  },
+  {
+    "name": "T负熵递归",
+    "id": 1903,
+    "description": "负熵递归描述",
+    "conclusion": "负熵递归结果",
+    "published": true,
+    "isHiddenTech": true,
+    "preItem": [
+      5204
+    ],
+    "iconPath": "Icons/Tech/1903",
+    "preTechs": [
+      1417
+    ],
+    "items": [
+      5201
+    ],
+    "itemPoints": [
+      120
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockRecipes": [
+      155
+    ],
+    "position": [
+      49,
+      -23
+    ]
+  },
+  {
+    "name": "T金色燃料棒",
+    "id": 1904,
+    "description": "金色燃料棒描述",
+    "conclusion": "金色燃料棒结果",
+    "published": true,
+    "isHiddenTech": true,
+    "preItem": [
+      5205
+    ],
+    "iconPath": "Icons/Tech/1904",
+    "preTechs": [
+      1145
+    ],
+    "items": [
+      5201
+    ],
+    "itemPoints": [
+      120
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "60000"
+    },
+    "unlockRecipes": [
+      156
+    ],
+    "position": [
+      61,
+      -7
+    ]
+  },
+  {
+    "name": "T机甲核心",
+    "id": 2101,
+    "description": "机甲核心描述",
+    "conclusion": "机甲核心结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/2101",
+    "items": [
+      1101,
+      1104
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "propertyOverrideItems": [
+      6001
+    ],
+    "propertyItemCounts": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "3600"
+    },
+    "unlockFunctions": [
+      6,
+      81,
+      82
+    ],
+    "unlockValues": [
+      80000000,
+      30000,
+      1
+    ],
+    "position": [
+      9,
+      29
+    ]
+  },
+  {
+    "name": "T机甲核心",
+    "id": 2102,
+    "description": "机甲核心描述",
+    "conclusion": "机甲核心结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/2102",
+    "isLabTech": true,
+    "preTechs": [
+      2101
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      6,
+      81,
+      82,
+      83
+    ],
+    "unlockValues": [
+      200000000,
+      30000,
+      1,
+      200
+    ],
+    "position": [
+      13,
+      29
+    ]
+  },
+  {
+    "name": "T机甲核心",
+    "id": 2103,
+    "description": "机甲核心描述",
+    "conclusion": "机甲核心结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/2103",
+    "isLabTech": true,
+    "preTechs": [
+      2102
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "108000"
+    },
+    "unlockFunctions": [
+      6,
+      81,
+      82,
+      83
+    ],
+    "unlockValues": [
+      400000000,
+      30000,
+      2,
+      200
+    ],
+    "position": [
+      17,
+      29
+    ]
+  },
+  {
+    "name": "T机甲核心",
+    "id": 2104,
+    "description": "机甲核心描述",
+    "conclusion": "机甲核心结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/2104",
+    "isLabTech": true,
+    "preTechs": [
+      2103
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "300000"
+    },
+    "unlockFunctions": [
+      6,
+      81,
+      82,
+      83
+    ],
+    "unlockValues": [
+      800000000,
+      30000,
+      2,
+      200
+    ],
+    "position": [
+      21,
+      29
+    ]
+  },
+  {
+    "name": "T机甲核心",
+    "id": 2105,
+    "description": "机甲核心描述",
+    "conclusion": "机甲核心结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/2105",
+    "isLabTech": true,
+    "preTechs": [
+      2104
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1440000"
+    },
+    "unlockFunctions": [
+      6,
+      81,
+      82,
+      83
+    ],
+    "unlockValues": [
+      1600000000,
+      30000,
+      2,
+      200
+    ],
+    "position": [
+      25,
+      29
+    ]
+  },
+  {
+    "name": "T机甲核心",
+    "id": 2106,
+    "description": "机甲核心描述2",
+    "conclusion": "机甲核心结果2",
+    "published": true,
+    "level": 6,
+    "maxLevel": 10000,
+    "levelCoef1": -8100000,
+    "levelCoef2": 900000,
+    "iconPath": "Icons/Tech/2106",
+    "isLabTech": true,
+    "preTechs": [
+      2105
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      2
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "18000000"
+    },
+    "unlockFunctions": [
+      6,
+      81,
+      83
+    ],
+    "unlockValues": [
+      2400000000,
+      20000,
+      200
+    ],
+    "position": [
+      29,
+      29
+    ]
+  },
+  {
+    "name": "T机械骨骼",
+    "id": 2201,
+    "description": "机械骨骼描述",
+    "conclusion": "机械骨骼结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/2201",
+    "preTechsImplicit": [
+      2101
+    ],
+    "items": [
+      1203
+    ],
+    "itemPoints": [
+      30
+    ],
+    "propertyOverrideItems": [
+      6001
+    ],
+    "propertyItemCounts": [
+      100
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "7200"
+    },
+    "unlockFunctions": [
+      3
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      9,
+      25
+    ]
+  },
+  {
+    "name": "T机械骨骼",
+    "id": 2202,
+    "description": "机械骨骼描述2",
+    "conclusion": "机械骨骼结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/2202",
+    "isLabTech": true,
+    "preTechs": [
+      2201
+    ],
+    "preTechsImplicit": [
+      2101
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      3
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      13,
+      25
+    ]
+  },
+  {
+    "name": "T机械骨骼",
+    "id": 2203,
+    "description": "机械骨骼描述2",
+    "conclusion": "机械骨骼结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/2203",
+    "isLabTech": true,
+    "preTechs": [
+      2202
+    ],
+    "preTechsImplicit": [
+      2102
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockFunctions": [
+      3
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      17,
+      25
+    ]
+  },
+  {
+    "name": "T机械骨骼",
+    "id": 2204,
+    "description": "机械骨骼描述2",
+    "conclusion": "机械骨骼结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/2204",
+    "isLabTech": true,
+    "preTechs": [
+      2203
+    ],
+    "preTechsImplicit": [
+      2102
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockFunctions": [
+      3
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      21,
+      25
+    ]
+  },
+  {
+    "name": "T机械骨骼",
+    "id": 2205,
+    "description": "机械骨骼描述2",
+    "conclusion": "机械骨骼结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/2205",
+    "isLabTech": true,
+    "preTechs": [
+      2204
+    ],
+    "preTechsImplicit": [
+      2103
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "240000"
+    },
+    "unlockFunctions": [
+      3
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      25,
+      25
+    ]
+  },
+  {
+    "name": "T机械骨骼",
+    "id": 2206,
+    "description": "机械骨骼描述2",
+    "conclusion": "机械骨骼结果",
+    "published": true,
+    "level": 6,
+    "maxLevel": 6,
+    "iconPath": "Icons/Tech/2206",
+    "isLabTech": true,
+    "preTechs": [
+      2205
+    ],
+    "preTechsImplicit": [
+      2104
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "300000"
+    },
+    "unlockFunctions": [
+      3
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      29,
+      25
+    ]
+  },
+  {
+    "name": "T机械骨骼",
+    "id": 2207,
+    "description": "机械骨骼描述2",
+    "conclusion": "机械骨骼结果",
+    "published": true,
+    "level": 7,
+    "maxLevel": 7,
+    "iconPath": "Icons/Tech/2207",
+    "isLabTech": true,
+    "preTechs": [
+      2206
+    ],
+    "preTechsImplicit": [
+      2104
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      3
+    ],
+    "unlockValues": [
+      2
+    ],
+    "position": [
+      33,
+      25
+    ]
+  },
+  {
+    "name": "T机械骨骼",
+    "id": 2208,
+    "description": "机械骨骼描述2",
+    "conclusion": "机械骨骼结果",
+    "published": true,
+    "level": 8,
+    "maxLevel": 8,
+    "iconPath": "Icons/Tech/2208",
+    "isLabTech": true,
+    "preTechs": [
+      2207
+    ],
+    "preTechsImplicit": [
+      2105
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1200000"
+    },
+    "unlockFunctions": [
+      3
+    ],
+    "unlockValues": [
+      2
+    ],
+    "position": [
+      37,
+      25
+    ]
+  },
+  {
+    "name": "T机舱容量",
+    "id": 2301,
+    "description": "机舱容量描述",
+    "conclusion": "机舱容量结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/2301",
+    "preTechsImplicit": [
+      2101
+    ],
+    "items": [
+      1103,
+      1301
+    ],
+    "itemPoints": [
+      60,
+      60
+    ],
+    "propertyOverrideItems": [
+      6001
+    ],
+    "propertyItemCounts": [
+      100
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "7200"
+    },
+    "unlockFunctions": [
+      5
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      9,
+      21
+    ]
+  },
+  {
+    "name": "T机舱容量",
+    "id": 2302,
+    "description": "机舱容量描述",
+    "conclusion": "机舱容量结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/2302",
+    "isLabTech": true,
+    "preTechs": [
+      2301
+    ],
+    "preTechsImplicit": [
+      2101
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      5
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      13,
+      21
+    ]
+  },
+  {
+    "name": "T机舱容量",
+    "id": 2303,
+    "description": "机舱容量描述",
+    "conclusion": "机舱容量结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/2303",
+    "isLabTech": true,
+    "preTechs": [
+      2302
+    ],
+    "preTechsImplicit": [
+      2102
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockFunctions": [
+      5,
+      33
+    ],
+    "unlockValues": [
+      1,
+      2
+    ],
+    "position": [
+      17,
+      21
+    ]
+  },
+  {
+    "name": "T机舱容量",
+    "id": 2304,
+    "description": "机舱容量描述2",
+    "conclusion": "机舱容量结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/2304",
+    "isLabTech": true,
+    "preTechs": [
+      2303
+    ],
+    "preTechsImplicit": [
+      2102
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockFunctions": [
+      5,
+      32,
+      33
+    ],
+    "unlockValues": [
+      1,
+      1,
+      2
+    ],
+    "position": [
+      21,
+      21
+    ]
+  },
+  {
+    "name": "T机舱容量",
+    "id": 2305,
+    "description": "机舱容量描述2",
+    "conclusion": "机舱容量结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/2305",
+    "isLabTech": true,
+    "preTechs": [
+      2304
+    ],
+    "preTechsImplicit": [
+      2103
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "240000"
+    },
+    "unlockFunctions": [
+      5,
+      33
+    ],
+    "unlockValues": [
+      2,
+      2
+    ],
+    "position": [
+      25,
+      21
+    ]
+  },
+  {
+    "name": "T机舱容量",
+    "id": 2306,
+    "description": "机舱容量描述2",
+    "conclusion": "机舱容量结果",
+    "published": true,
+    "level": 6,
+    "maxLevel": 6,
+    "iconPath": "Icons/Tech/2306",
+    "isLabTech": true,
+    "preTechs": [
+      2305
+    ],
+    "preTechsImplicit": [
+      2105
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "600000"
+    },
+    "unlockFunctions": [
+      5,
+      33
+    ],
+    "unlockValues": [
+      2,
+      2
+    ],
+    "position": [
+      29,
+      21
+    ]
+  },
+  {
+    "name": "T机舱容量",
+    "id": 2307,
+    "description": "机舱容量描述2",
+    "conclusion": "机舱容量结果",
+    "published": true,
+    "level": 7,
+    "maxLevel": 7,
+    "iconPath": "Icons/Tech/2307",
+    "isLabTech": true,
+    "preTechs": [
+      2306
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "900000"
+    },
+    "unlockFunctions": [
+      38,
+      32
+    ],
+    "unlockValues": [
+      2,
+      1
+    ],
+    "position": [
+      33,
+      21
+    ]
+  },
+  {
+    "name": "T通讯控制",
+    "id": 2401,
+    "description": "通讯控制描述",
+    "conclusion": "通讯控制结果1",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/2401",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      2101
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "9000"
+    },
+    "unlockFunctions": [
+      1
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      9,
+      17
+    ]
+  },
+  {
+    "name": "T通讯控制",
+    "id": 2402,
+    "description": "通讯控制描述2",
+    "conclusion": "通讯控制结果2",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/2402",
+    "isLabTech": true,
+    "preTechs": [
+      2401
+    ],
+    "preTechsImplicit": [
+      2101
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      1
+    ],
+    "unlockValues": [
+      2
+    ],
+    "position": [
+      13,
+      17
+    ]
+  },
+  {
+    "name": "T通讯控制",
+    "id": 2403,
+    "description": "通讯控制描述3",
+    "conclusion": "通讯控制结果3",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/2403",
+    "isLabTech": true,
+    "preTechs": [
+      2402
+    ],
+    "preTechsImplicit": [
+      2102
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockFunctions": [
+      9
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      17,
+      17
+    ]
+  },
+  {
+    "name": "T通讯控制",
+    "id": 2404,
+    "description": "通讯控制描述2",
+    "conclusion": "通讯控制结果4",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/2404",
+    "isLabTech": true,
+    "preTechs": [
+      2403
+    ],
+    "preTechsImplicit": [
+      2103
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockFunctions": [
+      1
+    ],
+    "unlockValues": [
+      3
+    ],
+    "position": [
+      21,
+      17
+    ]
+  },
+  {
+    "name": "T通讯控制",
+    "id": 2405,
+    "description": "通讯控制描述2",
+    "conclusion": "通讯控制结果5",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/2405",
+    "isLabTech": true,
+    "preTechs": [
+      2404
+    ],
+    "preTechsImplicit": [
+      2104
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "300000"
+    },
+    "unlockFunctions": [
+      1
+    ],
+    "unlockValues": [
+      3
+    ],
+    "position": [
+      25,
+      17
+    ]
+  },
+  {
+    "name": "T通讯控制",
+    "id": 2406,
+    "description": "通讯控制描述3",
+    "conclusion": "通讯控制结果6",
+    "published": true,
+    "level": 6,
+    "maxLevel": 6,
+    "iconPath": "Icons/Tech/2406",
+    "isLabTech": true,
+    "preTechs": [
+      2405
+    ],
+    "preTechsImplicit": [
+      2105
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1440000"
+    },
+    "unlockFunctions": [
+      9
+    ],
+    "unlockValues": [
+      2
+    ],
+    "position": [
+      29,
+      17
+    ]
+  },
+  {
+    "name": "T通讯控制",
+    "id": 2407,
+    "description": "通讯控制描述2",
+    "conclusion": "通讯控制结果7",
+    "published": true,
+    "level": 7,
+    "maxLevel": 10000,
+    "levelCoef1": -21600000,
+    "levelCoef2": 1800000,
+    "iconPath": "Icons/Tech/2407",
+    "isLabTech": true,
+    "preTechs": [
+      2406
+    ],
+    "preTechsImplicit": [
+      2105
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "64800000"
+    },
+    "unlockFunctions": [
+      1
+    ],
+    "unlockValues": [
+      3
+    ],
+    "position": [
+      33,
+      17
+    ]
+  },
+  {
+    "name": "T能量回路",
+    "id": 2501,
+    "description": "能量回路描述",
+    "conclusion": "能量回路结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/2501",
+    "preTechsImplicit": [
+      2101
+    ],
+    "items": [
+      1030,
+      1006,
+      1109
+    ],
+    "itemPoints": [
+      30,
+      30,
+      30
+    ],
+    "propertyOverrideItems": [
+      6001
+    ],
+    "propertyItemCounts": [
+      200
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "7200"
+    },
+    "unlockFunctions": [
+      2
+    ],
+    "unlockValues": [
+      200000
+    ],
+    "position": [
+      9,
+      5
+    ]
+  },
+  {
+    "name": "T能量回路",
+    "id": 2502,
+    "description": "能量回路描述",
+    "conclusion": "能量回路结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/2502",
+    "isLabTech": true,
+    "preTechs": [
+      2501
+    ],
+    "preTechsImplicit": [
+      2102
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockFunctions": [
+      2
+    ],
+    "unlockValues": [
+      200000
+    ],
+    "position": [
+      13,
+      5
+    ]
+  },
+  {
+    "name": "T能量回路",
+    "id": 2503,
+    "description": "能量回路描述",
+    "conclusion": "能量回路结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/2503",
+    "isLabTech": true,
+    "preTechs": [
+      2502
+    ],
+    "preTechsImplicit": [
+      2103
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "216000"
+    },
+    "unlockFunctions": [
+      2
+    ],
+    "unlockValues": [
+      200000
+    ],
+    "position": [
+      17,
+      5
+    ]
+  },
+  {
+    "name": "T能量回路",
+    "id": 2504,
+    "description": "能量回路描述",
+    "conclusion": "能量回路结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/2504",
+    "isLabTech": true,
+    "preTechs": [
+      2503
+    ],
+    "preTechsImplicit": [
+      2104
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "600000"
+    },
+    "unlockFunctions": [
+      2
+    ],
+    "unlockValues": [
+      200000
+    ],
+    "position": [
+      21,
+      5
+    ]
+  },
+  {
+    "name": "T能量回路",
+    "id": 2505,
+    "description": "能量回路描述",
+    "conclusion": "能量回路结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/2505",
+    "isLabTech": true,
+    "preTechs": [
+      2504
+    ],
+    "preTechsImplicit": [
+      2105
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "2700000"
+    },
+    "unlockFunctions": [
+      2
+    ],
+    "unlockValues": [
+      800000
+    ],
+    "position": [
+      25,
+      5
+    ]
+  },
+  {
+    "name": "T能量回路",
+    "id": 2506,
+    "description": "能量回路描述",
+    "conclusion": "能量回路结果",
+    "published": true,
+    "level": 6,
+    "maxLevel": 10000,
+    "levelCoef1": -16200000,
+    "levelCoef2": 1800000,
+    "iconPath": "Icons/Tech/2506",
+    "isLabTech": true,
+    "preTechs": [
+      2505
+    ],
+    "preTechsImplicit": [
+      2105
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000000"
+    },
+    "unlockFunctions": [
+      2
+    ],
+    "unlockValues": [
+      1000000
+    ],
+    "position": [
+      29,
+      5
+    ]
+  },
+  {
+    "name": "T无人机引擎",
+    "id": 2601,
+    "description": "无人机引擎描述",
+    "conclusion": "无人机引擎结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/2601",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      2101
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "18000"
+    },
+    "unlockFunctions": [
+      10
+    ],
+    "unlockValues": [
+      2
+    ],
+    "position": [
+      9,
+      1
+    ]
+  },
+  {
+    "name": "T无人机引擎",
+    "id": 2602,
+    "description": "无人机引擎描述2",
+    "conclusion": "无人机引擎结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/2602",
+    "isLabTech": true,
+    "preTechs": [
+      2601
+    ],
+    "preTechsImplicit": [
+      2102
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockFunctions": [
+      10
+    ],
+    "unlockValues": [
+      2
+    ],
+    "position": [
+      13,
+      1
+    ]
+  },
+  {
+    "name": "T无人机引擎",
+    "id": 2603,
+    "description": "无人机引擎描述2",
+    "conclusion": "无人机引擎结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/2603",
+    "isLabTech": true,
+    "preTechs": [
+      2602
+    ],
+    "preTechsImplicit": [
+      2103
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      10
+    ],
+    "unlockValues": [
+      2
+    ],
+    "position": [
+      17,
+      1
+    ]
+  },
+  {
+    "name": "T无人机引擎",
+    "id": 2604,
+    "description": "无人机引擎描述2",
+    "conclusion": "无人机引擎结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/2604",
+    "isLabTech": true,
+    "preTechs": [
+      2603
+    ],
+    "preTechsImplicit": [
+      2104
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      10
+    ],
+    "unlockValues": [
+      3
+    ],
+    "position": [
+      21,
+      1
+    ]
+  },
+  {
+    "name": "T无人机引擎",
+    "id": 2605,
+    "description": "无人机引擎描述2",
+    "conclusion": "无人机引擎结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/2605",
+    "isLabTech": true,
+    "preTechs": [
+      2604
+    ],
+    "preTechsImplicit": [
+      2105
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1440000"
+    },
+    "unlockFunctions": [
+      10
+    ],
+    "unlockValues": [
+      3
+    ],
+    "position": [
+      25,
+      1
+    ]
+  },
+  {
+    "name": "T无人机引擎",
+    "id": 2606,
+    "description": "无人机引擎描述2",
+    "conclusion": "无人机引擎结果",
+    "published": true,
+    "level": 6,
+    "maxLevel": 24,
+    "levelCoef1": -18000000,
+    "levelCoef2": 1800000,
+    "iconPath": "Icons/Tech/2606",
+    "isLabTech": true,
+    "preTechs": [
+      2605
+    ],
+    "preTechsImplicit": [
+      2105
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "45000000"
+    },
+    "unlockFunctions": [
+      10
+    ],
+    "unlockValues": [
+      3
+    ],
+    "position": [
+      29,
+      1
+    ]
+  },
+  {
+    "name": "T批量建造",
+    "id": 2701,
+    "description": "批量建造描述",
+    "conclusion": "批量建造结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/2701",
+    "preTechsImplicit": [
+      2101
+    ],
+    "items": [
+      1301
+    ],
+    "itemPoints": [
+      30
+    ],
+    "propertyOverrideItems": [
+      6001
+    ],
+    "propertyItemCounts": [
+      100
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "12000"
+    },
+    "unlockFunctions": [
+      28
+    ],
+    "unlockValues": [
+      150
+    ],
+    "position": [
+      9,
+      9
+    ]
+  },
+  {
+    "name": "T批量建造",
+    "id": 2702,
+    "description": "批量建造描述2",
+    "conclusion": "批量建造结果2",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/2702",
+    "isLabTech": true,
+    "preTechs": [
+      2701
+    ],
+    "preTechsImplicit": [
+      2101
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      30
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      28
+    ],
+    "unlockValues": [
+      300
+    ],
+    "position": [
+      13,
+      9
+    ]
+  },
+  {
+    "name": "T批量建造",
+    "id": 2703,
+    "description": "批量建造描述2",
+    "conclusion": "批量建造结果2",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/2703",
+    "isLabTech": true,
+    "preTechs": [
+      2702
+    ],
+    "preTechsImplicit": [
+      2102
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      30,
+      30
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "60000"
+    },
+    "unlockFunctions": [
+      28
+    ],
+    "unlockValues": [
+      900
+    ],
+    "position": [
+      17,
+      9
+    ]
+  },
+  {
+    "name": "T批量建造",
+    "id": 2704,
+    "description": "批量建造描述2",
+    "conclusion": "批量建造结果2",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/2704",
+    "isLabTech": true,
+    "preTechs": [
+      2703
+    ],
+    "preTechsImplicit": [
+      2103
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      15,
+      15,
+      15
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "192000"
+    },
+    "unlockFunctions": [
+      28
+    ],
+    "unlockValues": [
+      3600
+    ],
+    "position": [
+      21,
+      9
+    ]
+  },
+  {
+    "name": "T批量建造",
+    "id": 2705,
+    "description": "批量建造描述5",
+    "conclusion": "批量建造结果5",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/2705",
+    "isLabTech": true,
+    "preTechs": [
+      2704
+    ],
+    "preTechsImplicit": [
+      2104
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      15,
+      15,
+      15,
+      15
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "240000"
+    },
+    "unlockFunctions": [
+      28
+    ],
+    "unlockValues": [
+      1048576
+    ],
+    "position": [
+      25,
+      9
+    ]
+  },
+  {
+    "name": "T能量护盾",
+    "id": 2801,
+    "description": "解锁能量护盾描述",
+    "conclusion": "解锁能量护盾结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/2801",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1001
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "9000"
+    },
+    "unlockFunctions": [
+      75,
+      65,
+      66
+    ],
+    "unlockValues": [
+      1,
+      2,
+      100000000
+    ],
+    "position": [
+      9,
+      -7
+    ]
+  },
+  {
+    "name": "T能量护盾",
+    "id": 2802,
+    "description": "能量护盾描述",
+    "conclusion": "能量护盾结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/2802",
+    "isLabTech": true,
+    "preTechs": [
+      2801
+    ],
+    "preTechsImplicit": [
+      2102
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      65,
+      66
+    ],
+    "unlockValues": [
+      0.5,
+      200000000
+    ],
+    "position": [
+      13,
+      -7
+    ]
+  },
+  {
+    "name": "T能量护盾",
+    "id": 2803,
+    "description": "能量护盾描述3",
+    "conclusion": "能量护盾结果3",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/2803",
+    "isLabTech": true,
+    "preTechs": [
+      2802
+    ],
+    "preTechsImplicit": [
+      2103
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      5,
+      5,
+      5
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      65,
+      66,
+      86
+    ],
+    "unlockValues": [
+      0.5,
+      200000000,
+      1
+    ],
+    "position": [
+      17,
+      -7
+    ]
+  },
+  {
+    "name": "T能量护盾",
+    "id": 2804,
+    "description": "能量护盾描述",
+    "conclusion": "能量护盾结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/2804",
+    "isLabTech": true,
+    "preTechs": [
+      2803
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      65,
+      66
+    ],
+    "unlockValues": [
+      1,
+      200000000
+    ],
+    "position": [
+      21,
+      -7
+    ]
+  },
+  {
+    "name": "T能量护盾",
+    "id": 2805,
+    "description": "能量护盾描述",
+    "conclusion": "能量护盾结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/2805",
+    "isLabTech": true,
+    "preTechs": [
+      2804
+    ],
+    "preTechsImplicit": [
+      2104
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "720000"
+    },
+    "unlockFunctions": [
+      65,
+      66
+    ],
+    "unlockValues": [
+      1,
+      300000000
+    ],
+    "position": [
+      25,
+      -7
+    ]
+  },
+  {
+    "name": "T能量护盾",
+    "id": 2806,
+    "description": "能量护盾描述",
+    "conclusion": "能量护盾结果",
+    "published": true,
+    "level": 6,
+    "maxLevel": 25,
+    "levelCoef1": -8100000,
+    "levelCoef2": 900000,
+    "iconPath": "Icons/Tech/2806",
+    "isLabTech": true,
+    "preTechs": [
+      2805
+    ],
+    "preTechsImplicit": [
+      2105
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "18000000"
+    },
+    "unlockFunctions": [
+      65,
+      66
+    ],
+    "unlockValues": [
+      1,
+      500000000
+    ],
+    "position": [
+      29,
+      -7
+    ]
+  },
+  {
+    "name": "T能量护盾",
+    "id": 2807,
+    "description": "能量护盾描述7",
+    "conclusion": "能量护盾结果7",
+    "published": true,
+    "level": 26,
+    "maxLevel": 10000,
+    "levelCoef1": -8100000,
+    "levelCoef2": 900000,
+    "iconPath": "Icons/Tech/2807",
+    "isLabTech": true,
+    "preTechs": [
+      2806
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "18000000"
+    },
+    "unlockFunctions": [
+      66
+    ],
+    "unlockValues": [
+      500000000
+    ],
+    "position": [
+      33,
+      -7
+    ]
+  },
+  {
+    "name": "T驱动引擎",
+    "id": 2901,
+    "description": "驱动引擎描述",
+    "conclusion": "驱动引擎结果1",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/2901",
+    "preTechsImplicit": [
+      2101
+    ],
+    "items": [
+      1006,
+      1407
+    ],
+    "itemPoints": [
+      30,
+      10
+    ],
+    "propertyOverrideItems": [
+      6001
+    ],
+    "propertyItemCounts": [
+      200
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "18000"
+    },
+    "unlockFunctions": [
+      4
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      9,
+      -3
+    ]
+  },
+  {
+    "name": "T驱动引擎",
+    "id": 2902,
+    "description": "驱动引擎描述2",
+    "conclusion": "驱动引擎结果2",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/2902",
+    "isLabTech": true,
+    "preTechs": [
+      2901
+    ],
+    "preTechsImplicit": [
+      2102
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      4
+    ],
+    "unlockValues": [
+      2
+    ],
+    "position": [
+      13,
+      -3
+    ]
+  },
+  {
+    "name": "T驱动引擎",
+    "id": 2903,
+    "description": "驱动引擎描述3",
+    "conclusion": "驱动引擎结果3",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/2903",
+    "isLabTech": true,
+    "preTechs": [
+      2902
+    ],
+    "preTechsImplicit": [
+      2103
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockFunctions": [
+      11
+    ],
+    "unlockValues": [
+      1000
+    ],
+    "position": [
+      17,
+      -3
+    ]
+  },
+  {
+    "name": "T驱动引擎",
+    "id": 2904,
+    "description": "驱动引擎描述4",
+    "conclusion": "驱动引擎结果4",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/2904",
+    "isLabTech": true,
+    "preTechs": [
+      2903
+    ],
+    "preTechsImplicit": [
+      2104,
+      1704
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "720000"
+    },
+    "unlockFunctions": [
+      4
+    ],
+    "unlockValues": [
+      3
+    ],
+    "position": [
+      21,
+      -3
+    ]
+  },
+  {
+    "name": "T驱动引擎",
+    "id": 2905,
+    "description": "驱动引擎描述5",
+    "conclusion": "驱动引擎结果5",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/2904",
+    "isLabTech": true,
+    "preTechs": [
+      2904
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6005
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1080000"
+    },
+    "unlockFunctions": [
+      27
+    ],
+    "unlockValues": [
+      3
+    ],
+    "position": [
+      25,
+      -3
+    ]
+  },
+  {
+    "name": "T驱动引擎",
+    "id": 2906,
+    "description": "驱动引擎描述5",
+    "conclusion": "驱动引擎结果5",
+    "published": true,
+    "level": 6,
+    "maxLevel": 100,
+    "levelCoef1": -1800000,
+    "levelCoef2": 360000,
+    "iconPath": "Icons/Tech/2904",
+    "isLabTech": true,
+    "preTechs": [
+      2905
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      10
+    ],
+    "unlockFunctions": [
+      27
+    ],
+    "unlockValues": [
+      3
+    ],
+    "position": [
+      29,
+      -3
+    ]
+  },
+  {
+    "name": "T自动重建",
+    "id": 2951,
+    "description": "自动重建描述",
+    "conclusion": "自动重建结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/2951",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      2101
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "18000"
+    },
+    "unlockFunctions": [
+      76
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      9,
+      13
+    ]
+  },
+  {
+    "name": "T自动重建",
+    "id": 2952,
+    "description": "自动重建描述",
+    "conclusion": "自动重建结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/2952",
+    "isLabTech": true,
+    "preTechs": [
+      2951
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockFunctions": [
+      76
+    ],
+    "unlockValues": [
+      3
+    ],
+    "position": [
+      13,
+      13
+    ]
+  },
+  {
+    "name": "T自动重建",
+    "id": 2953,
+    "description": "自动重建描述",
+    "conclusion": "自动重建结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/2953",
+    "isLabTech": true,
+    "preTechs": [
+      2952
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      76
+    ],
+    "unlockValues": [
+      6
+    ],
+    "position": [
+      17,
+      13
+    ]
+  },
+  {
+    "name": "T自动重建",
+    "id": 2954,
+    "description": "自动重建描述",
+    "conclusion": "自动重建结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/2954",
+    "isLabTech": true,
+    "preTechs": [
+      2953
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      76
+    ],
+    "unlockValues": [
+      15
+    ],
+    "position": [
+      21,
+      13
+    ]
+  },
+  {
+    "name": "T自动重建",
+    "id": 2955,
+    "description": "自动重建描述",
+    "conclusion": "自动重建结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/2955",
+    "isLabTech": true,
+    "preTechs": [
+      2954
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "720000"
+    },
+    "unlockFunctions": [
+      76
+    ],
+    "unlockValues": [
+      30
+    ],
+    "position": [
+      25,
+      13
+    ]
+  },
+  {
+    "name": "T自动重建",
+    "id": 2956,
+    "description": "自动重建描述6",
+    "conclusion": "自动重建结果6",
+    "published": true,
+    "level": 6,
+    "maxLevel": 6,
+    "iconPath": "Icons/Tech/2956",
+    "isLabTech": true,
+    "preTechs": [
+      2955
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      8
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1440000"
+    },
+    "unlockFunctions": [
+      76
+    ],
+    "unlockValues": [
+      9999
+    ],
+    "position": [
+      29,
+      13
+    ]
+  },
+  {
+    "name": "T太阳帆寿命",
+    "id": 3101,
+    "description": "太阳帆寿命描述",
+    "conclusion": "太阳帆寿命结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/3101",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1503
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      40,
+      40,
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      12
+    ],
+    "unlockValues": [
+      300
+    ],
+    "position": [
+      9,
+      -15
+    ]
+  },
+  {
+    "name": "T太阳帆寿命",
+    "id": 3102,
+    "description": "太阳帆寿命描述",
+    "conclusion": "太阳帆寿命结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/3102",
+    "isLabTech": true,
+    "preTechs": [
+      3101
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "108000"
+    },
+    "unlockFunctions": [
+      12
+    ],
+    "unlockValues": [
+      300
+    ],
+    "position": [
+      13,
+      -15
+    ]
+  },
+  {
+    "name": "T太阳帆寿命",
+    "id": 3103,
+    "description": "太阳帆寿命描述",
+    "conclusion": "太阳帆寿命结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/3103",
+    "isLabTech": true,
+    "preTechs": [
+      3102
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      12
+    ],
+    "unlockValues": [
+      600
+    ],
+    "position": [
+      17,
+      -15
+    ]
+  },
+  {
+    "name": "T太阳帆寿命",
+    "id": 3104,
+    "description": "太阳帆寿命描述",
+    "conclusion": "太阳帆寿命结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/3104",
+    "isLabTech": true,
+    "preTechs": [
+      3103
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "300000"
+    },
+    "unlockFunctions": [
+      12
+    ],
+    "unlockValues": [
+      600
+    ],
+    "position": [
+      21,
+      -15
+    ]
+  },
+  {
+    "name": "T太阳帆寿命",
+    "id": 3105,
+    "description": "太阳帆寿命描述",
+    "conclusion": "太阳帆寿命结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/3105",
+    "isLabTech": true,
+    "preTechs": [
+      3104
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "480000"
+    },
+    "unlockFunctions": [
+      12
+    ],
+    "unlockValues": [
+      900
+    ],
+    "position": [
+      25,
+      -15
+    ]
+  },
+  {
+    "name": "T太阳帆寿命",
+    "id": 3106,
+    "description": "太阳帆寿命描述",
+    "conclusion": "太阳帆寿命结果",
+    "published": true,
+    "level": 6,
+    "maxLevel": 6,
+    "iconPath": "Icons/Tech/3106",
+    "isLabTech": true,
+    "preTechs": [
+      3105
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1200000"
+    },
+    "unlockFunctions": [
+      12
+    ],
+    "unlockValues": [
+      900
+    ],
+    "position": [
+      29,
+      -15
+    ]
+  },
+  {
+    "name": "T射线传输效率",
+    "id": 3201,
+    "description": "射线传输效率描述",
+    "conclusion": "射线传输效率结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/3201",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1504
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      40,
+      40,
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "54000"
+    },
+    "unlockFunctions": [
+      13
+    ],
+    "unlockValues": [
+      0.9
+    ],
+    "position": [
+      9,
+      -19
+    ]
+  },
+  {
+    "name": "T射线传输效率",
+    "id": 3202,
+    "description": "射线传输效率描述",
+    "conclusion": "射线传输效率结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/3202",
+    "isLabTech": true,
+    "preTechs": [
+      3201
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      13
+    ],
+    "unlockValues": [
+      0.9
+    ],
+    "position": [
+      13,
+      -19
+    ]
+  },
+  {
+    "name": "T射线传输效率",
+    "id": 3203,
+    "description": "射线传输效率描述",
+    "conclusion": "射线传输效率结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/3203",
+    "isLabTech": true,
+    "preTechs": [
+      3202
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockFunctions": [
+      13
+    ],
+    "unlockValues": [
+      0.9
+    ],
+    "position": [
+      17,
+      -19
+    ]
+  },
+  {
+    "name": "T射线传输效率",
+    "id": 3204,
+    "description": "射线传输效率描述",
+    "conclusion": "射线传输效率结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/3204",
+    "isLabTech": true,
+    "preTechs": [
+      3203
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      13
+    ],
+    "unlockValues": [
+      0.9
+    ],
+    "position": [
+      21,
+      -19
+    ]
+  },
+  {
+    "name": "T射线传输效率",
+    "id": 3205,
+    "description": "射线传输效率描述",
+    "conclusion": "射线传输效率结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/3205",
+    "isLabTech": true,
+    "preTechs": [
+      3204
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "420000"
+    },
+    "unlockFunctions": [
+      13
+    ],
+    "unlockValues": [
+      0.9
+    ],
+    "position": [
+      25,
+      -19
+    ]
+  },
+  {
+    "name": "T射线传输效率",
+    "id": 3206,
+    "description": "射线传输效率描述",
+    "conclusion": "射线传输效率结果",
+    "published": true,
+    "level": 6,
+    "maxLevel": 6,
+    "iconPath": "Icons/Tech/3206",
+    "isLabTech": true,
+    "preTechs": [
+      3205
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "480000"
+    },
+    "unlockFunctions": [
+      13
+    ],
+    "unlockValues": [
+      0.9
+    ],
+    "position": [
+      29,
+      -19
+    ]
+  },
+  {
+    "name": "T射线传输效率",
+    "id": 3207,
+    "description": "射线传输效率描述",
+    "conclusion": "射线传输效率结果",
+    "published": true,
+    "level": 7,
+    "maxLevel": 7,
+    "iconPath": "Icons/Tech/3207",
+    "isLabTech": true,
+    "preTechs": [
+      3206
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1620000"
+    },
+    "unlockFunctions": [
+      13
+    ],
+    "unlockValues": [
+      0.85
+    ],
+    "position": [
+      33,
+      -19
+    ]
+  },
+  {
+    "name": "T射线传输效率",
+    "id": 3208,
+    "description": "射线传输效率描述",
+    "conclusion": "射线传输效率结果",
+    "published": true,
+    "level": 8,
+    "maxLevel": 10000,
+    "levelCoef1": 1800000,
+    "iconPath": "Icons/Tech/3208",
+    "isLabTech": true,
+    "preTechs": [
+      3207
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "-12600000"
+    },
+    "unlockFunctions": [
+      13
+    ],
+    "unlockValues": [
+      0.85
+    ],
+    "position": [
+      37,
+      -19
+    ]
+  },
+  {
+    "name": "T分拣器货物叠加",
+    "id": 3301,
+    "description": "分拣器货物叠加描述",
+    "conclusion": "分拣器货物叠加结果",
+    "published": true,
+    "isObsolete": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/3301",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1607
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      40,
+      40,
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      14
+    ],
+    "unlockValues": [
+      4
+    ],
+    "position": [
+      9,
+      -27
+    ]
+  },
+  {
+    "name": "T分拣器货物叠加",
+    "id": 3302,
+    "description": "分拣器货物叠加描述",
+    "conclusion": "分拣器货物叠加结果",
+    "published": true,
+    "isObsolete": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/3302",
+    "isLabTech": true,
+    "preTechs": [
+      3301
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "108000"
+    },
+    "unlockFunctions": [
+      14
+    ],
+    "unlockValues": [
+      5
+    ],
+    "position": [
+      13,
+      -27
+    ]
+  },
+  {
+    "name": "T分拣器货物叠加",
+    "id": 3303,
+    "description": "分拣器货物叠加描述",
+    "conclusion": "分拣器货物叠加结果",
+    "published": true,
+    "isObsolete": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/3303",
+    "isLabTech": true,
+    "preTechs": [
+      3302
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      14
+    ],
+    "unlockValues": [
+      6
+    ],
+    "position": [
+      17,
+      -27
+    ]
+  },
+  {
+    "name": "T分拣器货物叠加",
+    "id": 3304,
+    "description": "分拣器货物叠加描述",
+    "conclusion": "分拣器货物叠加结果",
+    "published": true,
+    "isObsolete": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/3304",
+    "isLabTech": true,
+    "preTechs": [
+      3303
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "300000"
+    },
+    "unlockFunctions": [
+      14
+    ],
+    "unlockValues": [
+      7
+    ],
+    "position": [
+      21,
+      -27
+    ]
+  },
+  {
+    "name": "T分拣器货物叠加",
+    "id": 3305,
+    "description": "分拣器货物叠加描述",
+    "conclusion": "分拣器货物叠加结果",
+    "published": true,
+    "isObsolete": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/3305",
+    "isLabTech": true,
+    "preTechs": [
+      3304
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "900000"
+    },
+    "unlockFunctions": [
+      14
+    ],
+    "unlockValues": [
+      8
+    ],
+    "position": [
+      25,
+      -27
+    ]
+  },
+  {
+    "name": "T分拣器货物集装",
+    "id": 3306,
+    "description": "分拣器货物叠加描述2",
+    "conclusion": "分拣器货物叠加结果2",
+    "published": true,
+    "isObsolete": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/3306",
+    "isLabTech": true,
+    "preTechs": [
+      3305
+    ],
+    "preTechsImplicit": [
+      1607
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1080000"
+    },
+    "unlockFunctions": [
+      39,
+      40
+    ],
+    "unlockValues": [
+      1,
+      1
+    ],
+    "position": [
+      29,
+      -27
+    ]
+  },
+  {
+    "name": "T集装分拣器叠加",
+    "id": 3311,
+    "description": "集装分拣器货物叠加描述",
+    "conclusion": "集装分拣器货物叠加结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/3311",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1607
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      30,
+      30,
+      30
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "60000"
+    },
+    "unlockFunctions": [
+      39
+    ],
+    "unlockValues": [
+      2
+    ],
+    "position": [
+      9,
+      -27
+    ]
+  },
+  {
+    "name": "T集装分拣器叠加",
+    "id": 3312,
+    "description": "集装分拣器货物叠加描述2",
+    "conclusion": "集装分拣器货物叠加结果2",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/3312",
+    "isLabTech": true,
+    "preTechs": [
+      3311
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      30,
+      30,
+      30
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "96000"
+    },
+    "unlockFunctions": [
+      41
+    ],
+    "unlockValues": [
+      3
+    ],
+    "position": [
+      13,
+      -27
+    ]
+  },
+  {
+    "name": "T集装分拣器叠加",
+    "id": 3313,
+    "description": "集装分拣器货物叠加描述4",
+    "conclusion": "集装分拣器货物叠加结果3",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/3313",
+    "isLabTech": true,
+    "preTechs": [
+      3312
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      30,
+      30,
+      30
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "120000"
+    },
+    "unlockFunctions": [
+      39
+    ],
+    "unlockValues": [
+      3
+    ],
+    "position": [
+      17,
+      -27
+    ]
+  },
+  {
+    "name": "T集装分拣器叠加",
+    "id": 3314,
+    "description": "集装分拣器货物叠加描述2",
+    "conclusion": "集装分拣器货物叠加结果4",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/3314",
+    "isLabTech": true,
+    "preTechs": [
+      3313
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      15,
+      15,
+      15
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "288000"
+    },
+    "unlockFunctions": [
+      41
+    ],
+    "unlockValues": [
+      4
+    ],
+    "position": [
+      21,
+      -27
+    ]
+  },
+  {
+    "name": "T集装分拣器叠加",
+    "id": 3315,
+    "description": "集装分拣器货物叠加描述5",
+    "conclusion": "集装分拣器货物叠加结果5",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/3315",
+    "isLabTech": true,
+    "preTechs": [
+      3314
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      15,
+      15,
+      15
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      39
+    ],
+    "unlockValues": [
+      4
+    ],
+    "position": [
+      25,
+      -27
+    ]
+  },
+  {
+    "name": "T集装分拣器叠加",
+    "id": 3316,
+    "description": "集装分拣器货物叠加描述3",
+    "conclusion": "集装分拣器货物叠加结果6",
+    "published": true,
+    "level": 6,
+    "maxLevel": 6,
+    "iconPath": "Icons/Tech/3316",
+    "isLabTech": true,
+    "preTechs": [
+      3315
+    ],
+    "preTechsImplicit": [
+      1607
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6005
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1200000"
+    },
+    "unlockFunctions": [
+      40
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      29,
+      -27
+    ]
+  },
+  {
+    "name": "T配送范围",
+    "id": 4001,
+    "description": "配送范围描述",
+    "conclusion": "配送范围结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/4001",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1608
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      40,
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      36
+    ],
+    "unlockValues": [
+      20
+    ],
+    "position": [
+      9,
+      -31
+    ]
+  },
+  {
+    "name": "T配送范围",
+    "id": 4002,
+    "description": "配送范围描述",
+    "conclusion": "配送范围结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/4002",
+    "isLabTech": true,
+    "preTechs": [
+      4001
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "108000"
+    },
+    "unlockFunctions": [
+      36
+    ],
+    "unlockValues": [
+      20
+    ],
+    "position": [
+      13,
+      -31
+    ]
+  },
+  {
+    "name": "T配送范围",
+    "id": 4003,
+    "description": "配送范围描述",
+    "conclusion": "配送范围结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/4003",
+    "isLabTech": true,
+    "preTechs": [
+      4002
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      36
+    ],
+    "unlockValues": [
+      30
+    ],
+    "position": [
+      17,
+      -31
+    ]
+  },
+  {
+    "name": "T配送范围",
+    "id": 4004,
+    "description": "配送范围描述",
+    "conclusion": "配送范围结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/4004",
+    "isLabTech": true,
+    "preTechs": [
+      4003
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockFunctions": [
+      36
+    ],
+    "unlockValues": [
+      30
+    ],
+    "position": [
+      21,
+      -31
+    ]
+  },
+  {
+    "name": "T配送范围",
+    "id": 4005,
+    "description": "配送范围描述",
+    "conclusion": "配送范围结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/4005",
+    "isLabTech": true,
+    "preTechs": [
+      4004
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      36
+    ],
+    "unlockValues": [
+      40
+    ],
+    "position": [
+      25,
+      -31
+    ]
+  },
+  {
+    "name": "T运输船引擎",
+    "id": 3401,
+    "description": "运输船引擎描述",
+    "conclusion": "运输船引擎结果1",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/3401",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1604
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      40,
+      40,
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      15,
+      34
+    ],
+    "unlockValues": [
+      0.2,
+      0.1
+    ],
+    "position": [
+      9,
+      -35
+    ]
+  },
+  {
+    "name": "T运输船引擎",
+    "id": 3402,
+    "description": "运输船引擎描述",
+    "conclusion": "运输船引擎结果2",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/3402",
+    "isLabTech": true,
+    "preTechs": [
+      3401
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "108000"
+    },
+    "unlockFunctions": [
+      15,
+      34
+    ],
+    "unlockValues": [
+      0.2,
+      0.1
+    ],
+    "position": [
+      13,
+      -35
+    ]
+  },
+  {
+    "name": "T运输船引擎",
+    "id": 3403,
+    "description": "运输船引擎描述2",
+    "conclusion": "运输船引擎结果3",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/3403",
+    "isLabTech": true,
+    "preTechs": [
+      3402
+    ],
+    "preTechsImplicit": [
+      1605
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      15,
+      34,
+      16
+    ],
+    "unlockValues": [
+      0.3,
+      0.15,
+      0.5
+    ],
+    "position": [
+      17,
+      -35
+    ]
+  },
+  {
+    "name": "T运输船引擎",
+    "id": 3404,
+    "description": "运输船引擎描述3",
+    "conclusion": "运输船引擎结果4",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/3404",
+    "isLabTech": true,
+    "preTechs": [
+      3403
+    ],
+    "preTechsImplicit": [
+      2904
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "300000"
+    },
+    "unlockFunctions": [
+      15,
+      34,
+      16,
+      17
+    ],
+    "unlockValues": [
+      0.3,
+      0.15,
+      0.5,
+      1
+    ],
+    "position": [
+      21,
+      -35
+    ]
+  },
+  {
+    "name": "T运输船引擎",
+    "id": 3405,
+    "description": "运输船引擎描述2",
+    "conclusion": "运输船引擎结果5",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/3405",
+    "isLabTech": true,
+    "preTechs": [
+      3404
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      15,
+      34,
+      16
+    ],
+    "unlockValues": [
+      0.4,
+      0.15,
+      0.5
+    ],
+    "position": [
+      25,
+      -35
+    ]
+  },
+  {
+    "name": "T运输船引擎",
+    "id": 3406,
+    "description": "运输船引擎描述2",
+    "conclusion": "运输船引擎结果6",
+    "published": true,
+    "level": 6,
+    "maxLevel": 6,
+    "iconPath": "Icons/Tech/3406",
+    "isLabTech": true,
+    "preTechs": [
+      3405
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1440000"
+    },
+    "unlockFunctions": [
+      15,
+      34,
+      16
+    ],
+    "unlockValues": [
+      0.4,
+      0.15,
+      0.5
+    ],
+    "position": [
+      29,
+      -35
+    ]
+  },
+  {
+    "name": "T运输船引擎",
+    "id": 3407,
+    "description": "运输船引擎描述2",
+    "conclusion": "运输船引擎结果7",
+    "published": true,
+    "level": 7,
+    "maxLevel": 10000,
+    "levelCoef1": -21600000,
+    "levelCoef2": 1800000,
+    "iconPath": "Icons/Tech/3407",
+    "isLabTech": true,
+    "preTechs": [
+      3406
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "64800000"
+    },
+    "unlockFunctions": [
+      15,
+      34,
+      16
+    ],
+    "unlockValues": [
+      0.5,
+      0.2,
+      0.5
+    ],
+    "position": [
+      33,
+      -35
+    ]
+  },
+  {
+    "name": "T运输机舱扩容",
+    "id": 3501,
+    "description": "运输机舱扩容描述",
+    "conclusion": "运输机舱扩容结果1",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/3501",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1604
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      40,
+      40,
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      35,
+      18
+    ],
+    "unlockValues": [
+      1,
+      5
+    ],
+    "position": [
+      9,
+      -39
+    ]
+  },
+  {
+    "name": "T运输机舱扩容",
+    "id": 3502,
+    "description": "运输机舱扩容描述2",
+    "conclusion": "运输机舱扩容结果2",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/3502",
+    "isLabTech": true,
+    "preTechs": [
+      3501
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "108000"
+    },
+    "unlockFunctions": [
+      35,
+      18
+    ],
+    "unlockValues": [
+      1,
+      5
+    ],
+    "position": [
+      13,
+      -39
+    ]
+  },
+  {
+    "name": "T运输机舱扩容",
+    "id": 3503,
+    "description": "运输机舱扩容描述3",
+    "conclusion": "运输机舱扩容结果3",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/3503",
+    "isLabTech": true,
+    "preTechs": [
+      3502
+    ],
+    "preTechsImplicit": [
+      1605
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      35,
+      18,
+      19
+    ],
+    "unlockValues": [
+      2,
+      5,
+      100
+    ],
+    "position": [
+      17,
+      -39
+    ]
+  },
+  {
+    "name": "T运输机舱扩容",
+    "id": 3504,
+    "description": "运输机舱扩容描述4",
+    "conclusion": "运输机舱扩容结果4",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/3504",
+    "isLabTech": true,
+    "preTechs": [
+      3503
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "300000"
+    },
+    "unlockFunctions": [
+      35,
+      18,
+      19
+    ],
+    "unlockValues": [
+      2,
+      10,
+      100
+    ],
+    "position": [
+      21,
+      -39
+    ]
+  },
+  {
+    "name": "T运输机舱扩容",
+    "id": 3505,
+    "description": "运输机舱扩容描述4",
+    "conclusion": "运输机舱扩容结果5",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/3505",
+    "isLabTech": true,
+    "preTechs": [
+      3504
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "720000"
+    },
+    "unlockFunctions": [
+      35,
+      18,
+      19
+    ],
+    "unlockValues": [
+      2,
+      10,
+      100
+    ],
+    "position": [
+      25,
+      -39
+    ]
+  },
+  {
+    "name": "T运输机舱扩容",
+    "id": 3506,
+    "description": "运输机舱扩容描述4",
+    "conclusion": "运输机舱扩容结果5",
+    "published": true,
+    "level": 6,
+    "maxLevel": 6,
+    "iconPath": "Icons/Tech/3506",
+    "isLabTech": true,
+    "preTechs": [
+      3505
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "960000"
+    },
+    "unlockFunctions": [
+      35,
+      18,
+      19
+    ],
+    "unlockValues": [
+      2,
+      10,
+      100
+    ],
+    "position": [
+      29,
+      -39
+    ]
+  },
+  {
+    "name": "T运输机舱扩容",
+    "id": 3507,
+    "description": "运输机舱扩容描述4",
+    "conclusion": "运输机舱扩容结果5",
+    "published": true,
+    "level": 7,
+    "maxLevel": 7,
+    "iconPath": "Icons/Tech/3507",
+    "isLabTech": true,
+    "preTechs": [
+      3506
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "2400000"
+    },
+    "unlockFunctions": [
+      35,
+      18,
+      19
+    ],
+    "unlockValues": [
+      2,
+      10,
+      200
+    ],
+    "position": [
+      33,
+      -39
+    ]
+  },
+  {
+    "name": "T运输机舱扩容",
+    "id": 3508,
+    "description": "运输机舱扩容描述6",
+    "conclusion": "运输机舱扩容结果7",
+    "published": true,
+    "level": 8,
+    "maxLevel": 8,
+    "iconPath": "Icons/Tech/3508",
+    "isLabTech": true,
+    "preTechs": [
+      3507
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "4800000"
+    },
+    "unlockFunctions": [
+      18,
+      19
+    ],
+    "unlockValues": [
+      20,
+      200
+    ],
+    "position": [
+      37,
+      -39
+    ]
+  },
+  {
+    "name": "T运输机舱扩容",
+    "id": 3509,
+    "description": "运输机舱扩容描述5",
+    "conclusion": "运输机舱扩容结果6",
+    "published": true,
+    "level": 9,
+    "maxLevel": 11,
+    "levelCoef1": 2400000,
+    "iconPath": "Icons/Tech/3509",
+    "isLabTech": true,
+    "preTechs": [
+      3508
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      3
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "-14400000"
+    },
+    "unlockFunctions": [
+      18,
+      19,
+      30,
+      31
+    ],
+    "unlockValues": [
+      20,
+      200,
+      1000,
+      2000
+    ],
+    "position": [
+      41,
+      -39
+    ]
+  },
+  {
+    "name": "T运输机舱扩容",
+    "id": 3510,
+    "description": "运输机舱扩容描述5",
+    "conclusion": "运输机舱扩容结果6",
+    "published": true,
+    "level": 12,
+    "maxLevel": 13,
+    "levelCoef1": 4800000,
+    "iconPath": "Icons/Tech/3510",
+    "isLabTech": true,
+    "preTechs": [
+      3509
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      3
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "-43200000"
+    },
+    "unlockFunctions": [
+      18,
+      19,
+      30,
+      31
+    ],
+    "unlockValues": [
+      20,
+      200,
+      1000,
+      2000
+    ],
+    "position": [
+      45,
+      -39
+    ]
+  },
+  {
+    "name": "T运输站集装物流",
+    "id": 3801,
+    "description": "运输站集装物流描述1",
+    "conclusion": "运输站集装物流结果1",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/3801",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      3508
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      3
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "9600000"
+    },
+    "unlockFunctions": [
+      29
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      37,
+      -35
+    ]
+  },
+  {
+    "name": "T运输站集装物流",
+    "id": 3802,
+    "description": "运输站集装物流描述2",
+    "conclusion": "运输站集装物流结果2",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/3802",
+    "isLabTech": true,
+    "preTechs": [
+      3801
+    ],
+    "preTechsImplicit": [
+      3509
+    ],
+    "preTechsMax": true,
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      2
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "28800000"
+    },
+    "unlockFunctions": [
+      29
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      41,
+      -35
+    ]
+  },
+  {
+    "name": "T运输站集装物流",
+    "id": 3803,
+    "description": "运输站集装物流描述2",
+    "conclusion": "运输站集装物流结果2",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/3803",
+    "isLabTech": true,
+    "preTechs": [
+      3802
+    ],
+    "preTechsImplicit": [
+      3510
+    ],
+    "preTechsMax": true,
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      2
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "43200000"
+    },
+    "unlockFunctions": [
+      29
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      45,
+      -35
+    ]
+  },
+  {
+    "name": "T矿物利用",
+    "id": 3601,
+    "description": "矿物利用描述",
+    "conclusion": "矿物利用结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/3601",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1001
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      40,
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      20,
+      21,
+      85
+    ],
+    "unlockValues": [
+      0.94,
+      0.1,
+      0.04
+    ],
+    "position": [
+      9,
+      -43
+    ]
+  },
+  {
+    "name": "T矿物利用",
+    "id": 3602,
+    "description": "矿物利用描述2",
+    "conclusion": "矿物利用结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/3602",
+    "isLabTech": true,
+    "preTechs": [
+      3601
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockFunctions": [
+      20,
+      21,
+      85
+    ],
+    "unlockValues": [
+      0.94,
+      0.1,
+      0.04
+    ],
+    "position": [
+      13,
+      -43
+    ]
+  },
+  {
+    "name": "T矿物利用",
+    "id": 3603,
+    "description": "矿物利用描述2",
+    "conclusion": "矿物利用结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/3603",
+    "isLabTech": true,
+    "preTechs": [
+      3602
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockFunctions": [
+      20,
+      21,
+      85
+    ],
+    "unlockValues": [
+      0.94,
+      0.1,
+      0.04
+    ],
+    "position": [
+      17,
+      -43
+    ]
+  },
+  {
+    "name": "T矿物利用",
+    "id": 3604,
+    "description": "矿物利用描述2",
+    "conclusion": "矿物利用结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/3604",
+    "isLabTech": true,
+    "preTechs": [
+      3603
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "480000"
+    },
+    "unlockFunctions": [
+      20,
+      21,
+      85
+    ],
+    "unlockValues": [
+      0.94,
+      0.1,
+      0.04
+    ],
+    "position": [
+      21,
+      -43
+    ]
+  },
+  {
+    "name": "T矿物利用",
+    "id": 3605,
+    "description": "矿物利用描述2",
+    "conclusion": "矿物利用结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/3605",
+    "isLabTech": true,
+    "preTechs": [
+      3604
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1800000"
+    },
+    "unlockFunctions": [
+      20,
+      21,
+      85
+    ],
+    "unlockValues": [
+      0.94,
+      0.1,
+      0.04
+    ],
+    "position": [
+      25,
+      -43
+    ]
+  },
+  {
+    "name": "T矿物利用",
+    "id": 3606,
+    "description": "矿物利用描述2",
+    "conclusion": "矿物利用结果",
+    "published": true,
+    "level": 6,
+    "maxLevel": 10000,
+    "levelCoef1": 3600000,
+    "iconPath": "Icons/Tech/3606",
+    "isLabTech": true,
+    "preTechs": [
+      3605
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "-18000000"
+    },
+    "unlockFunctions": [
+      20,
+      21,
+      85
+    ],
+    "unlockValues": [
+      0.94,
+      0.1,
+      0.04
+    ],
+    "position": [
+      29,
+      -43
+    ]
+  },
+  {
+    "name": "T垂直建造",
+    "id": 3701,
+    "description": "垂直建造描述",
+    "conclusion": "垂直建造结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/3701",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1601
+    ],
+    "items": [
+      6002
+    ],
+    "itemPoints": [
+      40
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      24,
+      25
+    ],
+    "unlockValues": [
+      1,
+      2
+    ],
+    "position": [
+      9,
+      -23
+    ]
+  },
+  {
+    "name": "T垂直建造",
+    "id": 3702,
+    "description": "垂直建造描述",
+    "conclusion": "垂直建造结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/3702",
+    "isLabTech": true,
+    "preTechs": [
+      3701
+    ],
+    "items": [
+      6002
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "108000"
+    },
+    "unlockFunctions": [
+      24,
+      25
+    ],
+    "unlockValues": [
+      1,
+      2
+    ],
+    "position": [
+      13,
+      -23
+    ]
+  },
+  {
+    "name": "T垂直建造",
+    "id": 3703,
+    "description": "垂直建造描述",
+    "conclusion": "垂直建造结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/3703",
+    "isLabTech": true,
+    "preTechs": [
+      3702
+    ],
+    "items": [
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      24,
+      25
+    ],
+    "unlockValues": [
+      1,
+      2
+    ],
+    "position": [
+      17,
+      -23
+    ]
+  },
+  {
+    "name": "T垂直建造",
+    "id": 3704,
+    "description": "垂直建造描述",
+    "conclusion": "垂直建造结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/3704",
+    "isLabTech": true,
+    "preTechs": [
+      3703
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "300000"
+    },
+    "unlockFunctions": [
+      24,
+      25
+    ],
+    "unlockValues": [
+      1,
+      2
+    ],
+    "position": [
+      21,
+      -23
+    ]
+  },
+  {
+    "name": "T垂直建造",
+    "id": 3705,
+    "description": "垂直建造描述",
+    "conclusion": "垂直建造结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/3705",
+    "isLabTech": true,
+    "preTechs": [
+      3704
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "480000"
+    },
+    "unlockFunctions": [
+      24,
+      25
+    ],
+    "unlockValues": [
+      1,
+      2
+    ],
+    "position": [
+      25,
+      -23
+    ]
+  },
+  {
+    "name": "T垂直建造",
+    "id": 3706,
+    "description": "垂直建造描述",
+    "conclusion": "垂直建造结果",
+    "published": true,
+    "level": 6,
+    "maxLevel": 6,
+    "iconPath": "Icons/Tech/3706",
+    "isLabTech": true,
+    "preTechs": [
+      3705
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6005
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1200000"
+    },
+    "unlockFunctions": [
+      24,
+      25
+    ],
+    "unlockValues": [
+      1,
+      2
+    ],
+    "position": [
+      29,
+      -23
+    ]
+  },
+  {
+    "name": "T研究速度",
+    "id": 3901,
+    "description": "研究速度描述",
+    "conclusion": "研究速度结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/3901",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1312
+    ],
+    "items": [
+      6004
+    ],
+    "itemPoints": [
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "600000"
+    },
+    "unlockFunctions": [
+      22
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      9,
+      -47
+    ]
+  },
+  {
+    "name": "T研究速度",
+    "id": 3902,
+    "description": "研究速度描述",
+    "conclusion": "研究速度结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/3902",
+    "isLabTech": true,
+    "preTechs": [
+      3901
+    ],
+    "items": [
+      6004
+    ],
+    "itemPoints": [
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1200000"
+    },
+    "unlockFunctions": [
+      22
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      13,
+      -47
+    ]
+  },
+  {
+    "name": "T研究速度",
+    "id": 3903,
+    "description": "研究速度描述",
+    "conclusion": "研究速度结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/3903",
+    "isLabTech": true,
+    "preTechs": [
+      3902
+    ],
+    "items": [
+      6004
+    ],
+    "itemPoints": [
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "2400000"
+    },
+    "unlockFunctions": [
+      22
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      17,
+      -47
+    ]
+  },
+  {
+    "name": "T研究速度",
+    "id": 3904,
+    "description": "研究速度描述",
+    "conclusion": "研究速度结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 10000,
+    "levelCoef1": 14400000,
+    "iconPath": "Icons/Tech/3904",
+    "isLabTech": true,
+    "preTechs": [
+      3903
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      2
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "-43200000"
+    },
+    "unlockFunctions": [
+      22
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      21,
+      -47
+    ]
+  },
+  {
+    "name": "T宇宙探索",
+    "id": 4101,
+    "description": "宇宙探索描述1",
+    "conclusion": "宇宙探索结果1",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/4101",
+    "isLabTech": true,
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1800"
+    },
+    "unlockFunctions": [
+      23
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      9,
+      37
+    ]
+  },
+  {
+    "name": "T宇宙探索",
+    "id": 4102,
+    "description": "宇宙探索描述2",
+    "conclusion": "宇宙探索结果2",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/4102",
+    "isLabTech": true,
+    "preTechs": [
+      4101
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      23
+    ],
+    "unlockValues": [
+      2
+    ],
+    "position": [
+      13,
+      37
+    ]
+  },
+  {
+    "name": "T宇宙探索",
+    "id": 4103,
+    "description": "宇宙探索描述3",
+    "conclusion": "宇宙探索结果3",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/4103",
+    "isLabTech": true,
+    "preTechs": [
+      4102
+    ],
+    "preTechsImplicit": [
+      2902
+    ],
+    "items": [
+      6001,
+      6002,
+      6004
+    ],
+    "itemPoints": [
+      12,
+      12,
+      12
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "300000"
+    },
+    "unlockFunctions": [
+      23
+    ],
+    "unlockValues": [
+      3
+    ],
+    "position": [
+      17,
+      37
+    ]
+  },
+  {
+    "name": "T宇宙探索",
+    "id": 4104,
+    "description": "宇宙探索描述4",
+    "conclusion": "宇宙探索结果4",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/4104",
+    "isLabTech": true,
+    "preTechs": [
+      4103
+    ],
+    "items": [
+      6001,
+      6002,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1200000"
+    },
+    "unlockFunctions": [
+      23
+    ],
+    "unlockValues": [
+      4
+    ],
+    "position": [
+      21,
+      37
+    ]
+  },
+  {
+    "name": "T动能武器伤害",
+    "id": 5001,
+    "description": "动能武器伤害描述",
+    "conclusion": "动能武器伤害结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/5001",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1801
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      61
+    ],
+    "unlockValues": [
+      0.1
+    ],
+    "position": [
+      9,
+      -55
+    ]
+  },
+  {
+    "name": "T动能武器伤害",
+    "id": 5002,
+    "description": "动能武器伤害描述",
+    "conclusion": "动能武器伤害结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/5002",
+    "isLabTech": true,
+    "preTechs": [
+      5001
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockFunctions": [
+      61
+    ],
+    "unlockValues": [
+      0.1
+    ],
+    "position": [
+      13,
+      -55
+    ]
+  },
+  {
+    "name": "T动能武器伤害",
+    "id": 5003,
+    "description": "动能武器伤害描述",
+    "conclusion": "动能武器伤害结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/5003",
+    "isLabTech": true,
+    "preTechs": [
+      5002
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      61
+    ],
+    "unlockValues": [
+      0.2
+    ],
+    "position": [
+      17,
+      -55
+    ]
+  },
+  {
+    "name": "T动能武器伤害",
+    "id": 5004,
+    "description": "动能武器伤害描述",
+    "conclusion": "动能武器伤害结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/5004",
+    "isLabTech": true,
+    "preTechs": [
+      5003
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      61
+    ],
+    "unlockValues": [
+      0.3
+    ],
+    "position": [
+      21,
+      -55
+    ]
+  },
+  {
+    "name": "T动能武器伤害",
+    "id": 5005,
+    "description": "动能武器伤害描述",
+    "conclusion": "动能武器伤害结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/5005",
+    "isLabTech": true,
+    "preTechs": [
+      5004
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "720000"
+    },
+    "unlockFunctions": [
+      61
+    ],
+    "unlockValues": [
+      0.3
+    ],
+    "position": [
+      25,
+      -55
+    ]
+  },
+  {
+    "name": "T动能武器伤害",
+    "id": 5006,
+    "description": "动能武器伤害描述",
+    "conclusion": "动能武器伤害结果",
+    "published": true,
+    "level": 6,
+    "maxLevel": 10000,
+    "levelCoef1": -16200000,
+    "levelCoef2": 1800000,
+    "iconPath": "Icons/Tech/5006",
+    "isLabTech": true,
+    "preTechs": [
+      5005
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000000"
+    },
+    "unlockFunctions": [
+      61
+    ],
+    "unlockValues": [
+      0.2
+    ],
+    "position": [
+      29,
+      -55
+    ]
+  },
+  {
+    "name": "T能量武器伤害",
+    "id": 5101,
+    "description": "能量武器伤害描述",
+    "conclusion": "能量武器伤害结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/5101",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1801
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      62
+    ],
+    "unlockValues": [
+      0.1
+    ],
+    "position": [
+      9,
+      -59
+    ]
+  },
+  {
+    "name": "T能量武器伤害",
+    "id": 5102,
+    "description": "能量武器伤害描述",
+    "conclusion": "能量武器伤害结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/5102",
+    "isLabTech": true,
+    "preTechs": [
+      5101
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockFunctions": [
+      62
+    ],
+    "unlockValues": [
+      0.1
+    ],
+    "position": [
+      13,
+      -59
+    ]
+  },
+  {
+    "name": "T能量武器伤害",
+    "id": 5103,
+    "description": "能量武器伤害描述",
+    "conclusion": "能量武器伤害结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/5103",
+    "isLabTech": true,
+    "preTechs": [
+      5102
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      62
+    ],
+    "unlockValues": [
+      0.2
+    ],
+    "position": [
+      17,
+      -59
+    ]
+  },
+  {
+    "name": "T能量武器伤害",
+    "id": 5104,
+    "description": "能量武器伤害描述",
+    "conclusion": "能量武器伤害结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/5104",
+    "isLabTech": true,
+    "preTechs": [
+      5103
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "480000"
+    },
+    "unlockFunctions": [
+      62
+    ],
+    "unlockValues": [
+      0.3
+    ],
+    "position": [
+      21,
+      -59
+    ]
+  },
+  {
+    "name": "T能量武器伤害",
+    "id": 5105,
+    "description": "能量武器伤害描述",
+    "conclusion": "能量武器伤害结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/5105",
+    "isLabTech": true,
+    "preTechs": [
+      5104
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1440000"
+    },
+    "unlockFunctions": [
+      62
+    ],
+    "unlockValues": [
+      0.3
+    ],
+    "position": [
+      25,
+      -59
+    ]
+  },
+  {
+    "name": "T能量武器伤害",
+    "id": 5106,
+    "description": "能量武器伤害描述",
+    "conclusion": "能量武器伤害结果",
+    "published": true,
+    "level": 6,
+    "maxLevel": 10000,
+    "levelCoef1": -54000000,
+    "levelCoef2": 5400000,
+    "iconPath": "Icons/Tech/5106",
+    "isLabTech": true,
+    "preTechs": [
+      5105
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "135000000"
+    },
+    "unlockFunctions": [
+      62
+    ],
+    "unlockValues": [
+      0.2
+    ],
+    "position": [
+      29,
+      -59
+    ]
+  },
+  {
+    "name": "T爆炸武器伤害",
+    "id": 5201,
+    "description": "爆炸武器伤害描述",
+    "conclusion": "爆炸武器伤害结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/5201",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1802
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      63
+    ],
+    "unlockValues": [
+      0.1
+    ],
+    "position": [
+      9,
+      -63
+    ]
+  },
+  {
+    "name": "T爆炸武器伤害",
+    "id": 5202,
+    "description": "爆炸武器伤害描述",
+    "conclusion": "爆炸武器伤害结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/5202",
+    "isLabTech": true,
+    "preTechs": [
+      5201
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockFunctions": [
+      63
+    ],
+    "unlockValues": [
+      0.1
+    ],
+    "position": [
+      13,
+      -63
+    ]
+  },
+  {
+    "name": "T爆炸武器伤害",
+    "id": 5203,
+    "description": "爆炸武器伤害描述",
+    "conclusion": "爆炸武器伤害结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/5203",
+    "isLabTech": true,
+    "preTechs": [
+      5202
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      63
+    ],
+    "unlockValues": [
+      0.2
+    ],
+    "position": [
+      17,
+      -63
+    ]
+  },
+  {
+    "name": "T爆炸武器伤害",
+    "id": 5204,
+    "description": "爆炸武器伤害描述",
+    "conclusion": "爆炸武器伤害结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/5204",
+    "isLabTech": true,
+    "preTechs": [
+      5203
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      63
+    ],
+    "unlockValues": [
+      0.3
+    ],
+    "position": [
+      21,
+      -63
+    ]
+  },
+  {
+    "name": "T爆炸武器伤害",
+    "id": 5205,
+    "description": "爆炸武器伤害描述",
+    "conclusion": "爆炸武器伤害结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/5205",
+    "isLabTech": true,
+    "preTechs": [
+      5204
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "720000"
+    },
+    "unlockFunctions": [
+      63
+    ],
+    "unlockValues": [
+      0.3
+    ],
+    "position": [
+      25,
+      -63
+    ]
+  },
+  {
+    "name": "T爆炸武器伤害",
+    "id": 5206,
+    "description": "爆炸武器伤害描述",
+    "conclusion": "爆炸武器伤害结果",
+    "published": true,
+    "level": 6,
+    "maxLevel": 10000,
+    "levelCoef1": -16200000,
+    "levelCoef2": 1800000,
+    "iconPath": "Icons/Tech/5206",
+    "isLabTech": true,
+    "preTechs": [
+      5205
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000000"
+    },
+    "unlockFunctions": [
+      63
+    ],
+    "unlockValues": [
+      0.2
+    ],
+    "position": [
+      29,
+      -63
+    ]
+  },
+  {
+    "name": "T战斗无人机伤害",
+    "id": 5301,
+    "description": "战斗无人机伤害描述",
+    "conclusion": "战斗无人机伤害结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/5301",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1819
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "108000"
+    },
+    "unlockFunctions": [
+      67
+    ],
+    "unlockValues": [
+      0.1
+    ],
+    "position": [
+      9,
+      -71
+    ]
+  },
+  {
+    "name": "T战斗无人机伤害",
+    "id": 5302,
+    "description": "战斗无人机伤害描述",
+    "conclusion": "战斗无人机伤害结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/5302",
+    "isLabTech": true,
+    "preTechs": [
+      5301
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "180000"
+    },
+    "unlockFunctions": [
+      67
+    ],
+    "unlockValues": [
+      0.1
+    ],
+    "position": [
+      13,
+      -71
+    ]
+  },
+  {
+    "name": "T战斗无人机伤害",
+    "id": 5303,
+    "description": "战斗无人机伤害描述",
+    "conclusion": "战斗无人机伤害结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/5303",
+    "isLabTech": true,
+    "preTechs": [
+      5302
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "480000"
+    },
+    "unlockFunctions": [
+      67,
+      71
+    ],
+    "unlockValues": [
+      0.15,
+      0.25
+    ],
+    "position": [
+      17,
+      -71
+    ]
+  },
+  {
+    "name": "T战斗无人机伤害",
+    "id": 5304,
+    "description": "战斗无人机伤害描述",
+    "conclusion": "战斗无人机伤害结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/5304",
+    "isLabTech": true,
+    "preTechs": [
+      5303
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "720000"
+    },
+    "unlockFunctions": [
+      67,
+      71
+    ],
+    "unlockValues": [
+      0.15,
+      0.25
+    ],
+    "position": [
+      21,
+      -71
+    ]
+  },
+  {
+    "name": "T战斗无人机伤害",
+    "id": 5305,
+    "description": "战斗无人机伤害描述",
+    "conclusion": "战斗无人机伤害结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 10000,
+    "levelCoef1": -43200000,
+    "levelCoef2": 5400000,
+    "iconPath": "Icons/Tech/5305",
+    "isLabTech": true,
+    "preTechs": [
+      5304
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "84600000"
+    },
+    "unlockFunctions": [
+      67,
+      71
+    ],
+    "unlockValues": [
+      0.2,
+      0.2
+    ],
+    "position": [
+      25,
+      -71
+    ]
+  },
+  {
+    "name": "T战斗无人机攻击速度",
+    "id": 5401,
+    "description": "战斗无人机攻击速度描述",
+    "conclusion": "战斗无人机攻击速度结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/5401",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1819
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockFunctions": [
+      68
+    ],
+    "unlockValues": [
+      0.1
+    ],
+    "position": [
+      9,
+      -75
+    ]
+  },
+  {
+    "name": "T战斗无人机攻击速度",
+    "id": 5402,
+    "description": "战斗无人机攻击速度描述",
+    "conclusion": "战斗无人机攻击速度结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/5402",
+    "isLabTech": true,
+    "preTechs": [
+      5401
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      68
+    ],
+    "unlockValues": [
+      0.1
+    ],
+    "position": [
+      13,
+      -75
+    ]
+  },
+  {
+    "name": "T战斗无人机攻击速度",
+    "id": 5403,
+    "description": "战斗无人机攻击速度描述",
+    "conclusion": "战斗无人机攻击速度结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/5403",
+    "isLabTech": true,
+    "preTechs": [
+      5402
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "288000"
+    },
+    "unlockFunctions": [
+      68,
+      72
+    ],
+    "unlockValues": [
+      0.2,
+      0.3
+    ],
+    "position": [
+      17,
+      -75
+    ]
+  },
+  {
+    "name": "T战斗无人机攻击速度",
+    "id": 5404,
+    "description": "战斗无人机攻击速度描述",
+    "conclusion": "战斗无人机攻击速度结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/5404",
+    "isLabTech": true,
+    "preTechs": [
+      5403
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      68,
+      72
+    ],
+    "unlockValues": [
+      0.2,
+      0.3
+    ],
+    "position": [
+      21,
+      -75
+    ]
+  },
+  {
+    "name": "T战斗无人机攻击速度",
+    "id": 5405,
+    "description": "战斗无人机攻击速度描述",
+    "conclusion": "战斗无人机攻击速度结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/5405",
+    "isLabTech": true,
+    "preTechs": [
+      5404
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1440000"
+    },
+    "unlockFunctions": [
+      68,
+      72
+    ],
+    "unlockValues": [
+      0.4,
+      0.4
+    ],
+    "position": [
+      25,
+      -75
+    ]
+  },
+  {
+    "name": "T战斗无人机耐久",
+    "id": 5601,
+    "description": "战斗无人机耐久描述",
+    "conclusion": "战斗无人机耐久结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/5601",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1819
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockFunctions": [
+      69
+    ],
+    "unlockValues": [
+      0.1
+    ],
+    "position": [
+      9,
+      -79
+    ]
+  },
+  {
+    "name": "T战斗无人机耐久",
+    "id": 5602,
+    "description": "战斗无人机耐久描述",
+    "conclusion": "战斗无人机耐久结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/5602",
+    "isLabTech": true,
+    "preTechs": [
+      5601
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      69
+    ],
+    "unlockValues": [
+      0.1
+    ],
+    "position": [
+      13,
+      -79
+    ]
+  },
+  {
+    "name": "T战斗无人机耐久",
+    "id": 5603,
+    "description": "战斗无人机耐久描述",
+    "conclusion": "战斗无人机耐久结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/5603",
+    "isLabTech": true,
+    "preTechs": [
+      5602
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      69,
+      73
+    ],
+    "unlockValues": [
+      0.2,
+      0.3
+    ],
+    "position": [
+      17,
+      -79
+    ]
+  },
+  {
+    "name": "T战斗无人机耐久",
+    "id": 5604,
+    "description": "战斗无人机耐久描述",
+    "conclusion": "战斗无人机耐久结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/5604",
+    "isLabTech": true,
+    "preTechs": [
+      5603
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      69,
+      73
+    ],
+    "unlockValues": [
+      0.2,
+      0.3
+    ],
+    "position": [
+      21,
+      -79
+    ]
+  },
+  {
+    "name": "T战斗无人机耐久",
+    "id": 5605,
+    "description": "战斗无人机耐久描述",
+    "conclusion": "战斗无人机耐久结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/5605",
+    "isLabTech": true,
+    "preTechs": [
+      5604
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1800000"
+    },
+    "unlockFunctions": [
+      69,
+      73
+    ],
+    "unlockValues": [
+      0.4,
+      0.4
+    ],
+    "position": [
+      25,
+      -79
+    ]
+  },
+  {
+    "name": "T行星护盾",
+    "id": 5701,
+    "description": "行星护盾描述",
+    "conclusion": "行星护盾结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/5701",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1809
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      5,
+      5,
+      5
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      74
+    ],
+    "unlockValues": [
+      0.1
+    ],
+    "position": [
+      9,
+      -95
+    ]
+  },
+  {
+    "name": "T行星护盾",
+    "id": 5702,
+    "description": "行星护盾描述",
+    "conclusion": "行星护盾结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/5702",
+    "isLabTech": true,
+    "preTechs": [
+      5701
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      5,
+      5,
+      5
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "288000"
+    },
+    "unlockFunctions": [
+      74
+    ],
+    "unlockValues": [
+      0.15
+    ],
+    "position": [
+      13,
+      -95
+    ]
+  },
+  {
+    "name": "T行星护盾",
+    "id": 5703,
+    "description": "行星护盾描述",
+    "conclusion": "行星护盾结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/5703",
+    "isLabTech": true,
+    "preTechs": [
+      5702
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      74
+    ],
+    "unlockValues": [
+      0.2
+    ],
+    "position": [
+      17,
+      -95
+    ]
+  },
+  {
+    "name": "T行星护盾",
+    "id": 5704,
+    "description": "行星护盾描述",
+    "conclusion": "行星护盾结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/5704",
+    "isLabTech": true,
+    "preTechs": [
+      5703
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      74
+    ],
+    "unlockValues": [
+      0.25
+    ],
+    "position": [
+      21,
+      -95
+    ]
+  },
+  {
+    "name": "T行星护盾",
+    "id": 5705,
+    "description": "行星护盾描述",
+    "conclusion": "行星护盾结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/5705",
+    "isLabTech": true,
+    "preTechs": [
+      5704
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1800000"
+    },
+    "unlockFunctions": [
+      74
+    ],
+    "unlockValues": [
+      0.3
+    ],
+    "position": [
+      25,
+      -95
+    ]
+  },
+  {
+    "name": "T地面编队扩容",
+    "id": 5801,
+    "description": "地面编队扩容描述2",
+    "conclusion": "地面编队扩容结果2",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/5801",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1819
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      78
+    ],
+    "unlockValues": [
+      2
+    ],
+    "position": [
+      9,
+      -83
+    ]
+  },
+  {
+    "name": "T地面编队扩容",
+    "id": 5802,
+    "description": "地面编队扩容描述2",
+    "conclusion": "地面编队扩容结果2",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/5802",
+    "isLabTech": true,
+    "preTechs": [
+      5801
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "108000"
+    },
+    "unlockFunctions": [
+      78
+    ],
+    "unlockValues": [
+      2
+    ],
+    "position": [
+      13,
+      -83
+    ]
+  },
+  {
+    "name": "T地面编队扩容",
+    "id": 5803,
+    "description": "地面编队扩容描述1",
+    "conclusion": "地面编队扩容结果1",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/5803",
+    "isLabTech": true,
+    "preTechs": [
+      5802
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "288000"
+    },
+    "unlockFunctions": [
+      77
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      17,
+      -83
+    ]
+  },
+  {
+    "name": "T地面编队扩容",
+    "id": 5804,
+    "description": "地面编队扩容描述2",
+    "conclusion": "地面编队扩容结果2",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/5804",
+    "isLabTech": true,
+    "preTechs": [
+      5803
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "432000"
+    },
+    "unlockFunctions": [
+      78
+    ],
+    "unlockValues": [
+      4
+    ],
+    "position": [
+      21,
+      -83
+    ]
+  },
+  {
+    "name": "T地面编队扩容",
+    "id": 5805,
+    "description": "地面编队扩容描述1",
+    "conclusion": "地面编队扩容结果1",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/5805",
+    "isLabTech": true,
+    "preTechs": [
+      5804
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "720000"
+    },
+    "unlockFunctions": [
+      77
+    ],
+    "unlockValues": [
+      2
+    ],
+    "position": [
+      25,
+      -83
+    ]
+  },
+  {
+    "name": "T地面编队扩容",
+    "id": 5806,
+    "description": "地面编队扩容描述1",
+    "conclusion": "地面编队扩容结果1",
+    "published": true,
+    "level": 6,
+    "maxLevel": 6,
+    "iconPath": "Icons/Tech/5806",
+    "isLabTech": true,
+    "preTechs": [
+      5805
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1080000"
+    },
+    "unlockFunctions": [
+      77
+    ],
+    "unlockValues": [
+      2
+    ],
+    "position": [
+      29,
+      -83
+    ]
+  },
+  {
+    "name": "T地面编队扩容",
+    "id": 5807,
+    "description": "地面编队扩容描述1",
+    "conclusion": "地面编队扩容结果1",
+    "published": true,
+    "level": 7,
+    "maxLevel": 7,
+    "iconPath": "Icons/Tech/5807",
+    "isLabTech": true,
+    "preTechs": [
+      5806
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1440000"
+    },
+    "unlockFunctions": [
+      77
+    ],
+    "unlockValues": [
+      2
+    ],
+    "position": [
+      33,
+      -83
+    ]
+  },
+  {
+    "name": "T太空编队扩容",
+    "id": 5901,
+    "description": "太空编队扩容描述2",
+    "conclusion": "太空编队扩容结果2",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/5901",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1822
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      80
+    ],
+    "unlockValues": [
+      4
+    ],
+    "position": [
+      9,
+      -87
+    ]
+  },
+  {
+    "name": "T太空编队扩容",
+    "id": 5902,
+    "description": "太空编队扩容描述2",
+    "conclusion": "太空编队扩容结果2",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/5902",
+    "isLabTech": true,
+    "preTechs": [
+      5901
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "288000"
+    },
+    "unlockFunctions": [
+      80
+    ],
+    "unlockValues": [
+      4
+    ],
+    "position": [
+      13,
+      -87
+    ]
+  },
+  {
+    "name": "T太空编队扩容",
+    "id": 5903,
+    "description": "太空编队扩容描述1",
+    "conclusion": "太空编队扩容结果1",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/5903",
+    "isLabTech": true,
+    "preTechs": [
+      5902
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      15,
+      15,
+      15,
+      15
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "432000"
+    },
+    "unlockFunctions": [
+      79
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      17,
+      -87
+    ]
+  },
+  {
+    "name": "T太空编队扩容",
+    "id": 5904,
+    "description": "太空编队扩容描述1",
+    "conclusion": "太空编队扩容结果1",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/5904",
+    "isLabTech": true,
+    "preTechs": [
+      5903
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "720000"
+    },
+    "unlockFunctions": [
+      79
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      21,
+      -87
+    ]
+  },
+  {
+    "name": "T太空编队扩容",
+    "id": 5905,
+    "description": "太空编队扩容描述1",
+    "conclusion": "太空编队扩容结果1",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/5905",
+    "isLabTech": true,
+    "preTechs": [
+      5904
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1080000"
+    },
+    "unlockFunctions": [
+      79
+    ],
+    "unlockValues": [
+      1
+    ],
+    "position": [
+      25,
+      -87
+    ]
+  },
+  {
+    "name": "T太空编队扩容",
+    "id": 5906,
+    "description": "太空编队扩容描述1",
+    "conclusion": "太空编队扩容结果1",
+    "published": true,
+    "level": 6,
+    "maxLevel": 6,
+    "iconPath": "Icons/Tech/5906",
+    "isLabTech": true,
+    "preTechs": [
+      5905
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "1440000"
+    },
+    "unlockFunctions": [
+      79
+    ],
+    "unlockValues": [
+      2
+    ],
+    "position": [
+      29,
+      -87
+    ]
+  },
+  {
+    "name": "T太空编队扩容",
+    "id": 5907,
+    "description": "太空编队扩容描述1",
+    "conclusion": "太空编队扩容结果1",
+    "published": true,
+    "level": 7,
+    "maxLevel": 7,
+    "iconPath": "Icons/Tech/5907",
+    "isLabTech": true,
+    "preTechs": [
+      5906
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      20
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "2160000"
+    },
+    "unlockFunctions": [
+      79
+    ],
+    "unlockValues": [
+      2
+    ],
+    "position": [
+      33,
+      -87
+    ]
+  },
+  {
+    "name": "T全局耐久度提升",
+    "id": 6001,
+    "description": "全局耐久度提升描述1",
+    "conclusion": "全局耐久度提升结果1",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/6001",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      2101
+    ],
+    "items": [
+      6001
+    ],
+    "itemPoints": [
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockFunctions": [
+      84
+    ],
+    "unlockValues": [
+      0.04
+    ],
+    "position": [
+      9,
+      -91
+    ]
+  },
+  {
+    "name": "T全局耐久度提升",
+    "id": 6002,
+    "description": "全局耐久度提升描述1",
+    "conclusion": "全局耐久度提升结果1",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/6002",
+    "isLabTech": true,
+    "preTechs": [
+      6001
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      84
+    ],
+    "unlockValues": [
+      0.04
+    ],
+    "position": [
+      13,
+      -91
+    ]
+  },
+  {
+    "name": "T全局耐久度提升",
+    "id": 6003,
+    "description": "全局耐久度提升描述1",
+    "conclusion": "全局耐久度提升结果1",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/6003",
+    "isLabTech": true,
+    "preTechs": [
+      6002
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "216000"
+    },
+    "unlockFunctions": [
+      84
+    ],
+    "unlockValues": [
+      0.04
+    ],
+    "position": [
+      17,
+      -91
+    ]
+  },
+  {
+    "name": "T全局耐久度提升",
+    "id": 6004,
+    "description": "全局耐久度提升描述1",
+    "conclusion": "全局耐久度提升结果1",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/6004",
+    "isLabTech": true,
+    "preTechs": [
+      6003
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      84
+    ],
+    "unlockValues": [
+      0.04
+    ],
+    "position": [
+      21,
+      -91
+    ]
+  },
+  {
+    "name": "T全局耐久度提升",
+    "id": 6005,
+    "description": "全局耐久度提升描述1",
+    "conclusion": "全局耐久度提升结果1",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/6005",
+    "isLabTech": true,
+    "preTechs": [
+      6004
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "900000"
+    },
+    "unlockFunctions": [
+      84
+    ],
+    "unlockValues": [
+      0.04
+    ],
+    "position": [
+      25,
+      -91
+    ]
+  },
+  {
+    "name": "T全局耐久度提升",
+    "id": 6006,
+    "description": "全局耐久度提升描述1",
+    "conclusion": "全局耐久度提升结果1",
+    "published": true,
+    "level": 6,
+    "maxLevel": 10000,
+    "levelCoef1": -3150000,
+    "levelCoef2": 450000,
+    "iconPath": "Icons/Tech/6006",
+    "isLabTech": true,
+    "preTechs": [
+      6005
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "4500000"
+    },
+    "unlockFunctions": [
+      84
+    ],
+    "unlockValues": [
+      0.04
+    ],
+    "position": [
+      29,
+      -91
+    ]
+  },
+  {
+    "name": "T干扰塔效果",
+    "id": 6101,
+    "description": "干扰塔效果描述",
+    "conclusion": "干扰塔效果结果",
+    "published": true,
+    "level": 1,
+    "maxLevel": 1,
+    "iconPath": "Icons/Tech/6101",
+    "isLabTech": true,
+    "preTechsImplicit": [
+      1810
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "36000"
+    },
+    "unlockFunctions": [
+      64
+    ],
+    "unlockValues": [
+      0.05
+    ],
+    "position": [
+      9,
+      -67
+    ]
+  },
+  {
+    "name": "T干扰塔效果",
+    "id": 6102,
+    "description": "干扰塔效果描述",
+    "conclusion": "干扰塔效果结果",
+    "published": true,
+    "level": 2,
+    "maxLevel": 2,
+    "iconPath": "Icons/Tech/6102",
+    "isLabTech": true,
+    "preTechs": [
+      6101
+    ],
+    "items": [
+      6001,
+      6002
+    ],
+    "itemPoints": [
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "72000"
+    },
+    "unlockFunctions": [
+      64
+    ],
+    "unlockValues": [
+      0.05
+    ],
+    "position": [
+      13,
+      -67
+    ]
+  },
+  {
+    "name": "T干扰塔效果",
+    "id": 6103,
+    "description": "干扰塔效果描述",
+    "conclusion": "干扰塔效果结果",
+    "published": true,
+    "level": 3,
+    "maxLevel": 3,
+    "iconPath": "Icons/Tech/6103",
+    "isLabTech": true,
+    "preTechs": [
+      6102
+    ],
+    "items": [
+      6001,
+      6002,
+      6003
+    ],
+    "itemPoints": [
+      10,
+      10,
+      10
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "144000"
+    },
+    "unlockFunctions": [
+      64
+    ],
+    "unlockValues": [
+      0.1
+    ],
+    "position": [
+      17,
+      -67
+    ]
+  },
+  {
+    "name": "T干扰塔效果",
+    "id": 6104,
+    "description": "干扰塔效果描述",
+    "conclusion": "干扰塔效果结果",
+    "published": true,
+    "level": 4,
+    "maxLevel": 4,
+    "iconPath": "Icons/Tech/6104",
+    "isLabTech": true,
+    "preTechs": [
+      6103
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004
+    ],
+    "itemPoints": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "360000"
+    },
+    "unlockFunctions": [
+      64
+    ],
+    "unlockValues": [
+      0.1
+    ],
+    "position": [
+      21,
+      -67
+    ]
+  },
+  {
+    "name": "T干扰塔效果",
+    "id": 6105,
+    "description": "干扰塔效果描述",
+    "conclusion": "干扰塔效果结果",
+    "published": true,
+    "level": 5,
+    "maxLevel": 5,
+    "iconPath": "Icons/Tech/6105",
+    "isLabTech": true,
+    "preTechs": [
+      6104
+    ],
+    "items": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005
+    ],
+    "itemPoints": [
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "720000"
+    },
+    "unlockFunctions": [
+      64
+    ],
+    "unlockValues": [
+      0.1
+    ],
+    "position": [
+      25,
+      -67
+    ]
+  },
+  {
+    "name": "T干扰塔效果",
+    "id": 6106,
+    "description": "干扰塔效果描述",
+    "conclusion": "干扰塔效果结果",
+    "published": true,
+    "level": 6,
+    "maxLevel": 6,
+    "iconPath": "Icons/Tech/6106",
+    "isLabTech": true,
+    "preTechs": [
+      6105
+    ],
+    "items": [
+      6006
+    ],
+    "itemPoints": [
+      4
+    ],
+    "hashNeeded": {
+      ":type": "BigInt",
+      "value": "3600000"
+    },
+    "unlockFunctions": [
+      64
+    ],
+    "unlockValues": [
+      0.1
+    ],
+    "position": [
+      29,
+      -67
+    ]
+  }
+]
