@@ -9,5 +9,6 @@
  :recompile-dependents false
  :preloads [devtools.preload]
  :optimizations :none
+ :source-map-path "/devcards/js/compiled/out"
  :source-map-timestamp true
  }
