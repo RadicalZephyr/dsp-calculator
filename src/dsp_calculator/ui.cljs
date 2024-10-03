@@ -1,13 +1,33 @@
 (ns dsp-calculator.ui
   (:require
     [reagent.core :as reagent]
+    [re-frame.core :as re-frame]
+    [day8.re-frame.tracing :refer-macros [fn-traced]]
     [spade.core   :refer [defclass defattrs]]))
 
 (defn home []
   [:div [:h2 "Home"]])
 
+(defn home-container []
+  (let [subs []]
+    (fn []
+      [home])))
+
 (defn calculator []
   [:div [:h2 "Calculator"]])
+
+(defn calculator-container []
+  (let [subs []]
+    (fn []
+      [calculator])))
+
+(defn research []
+  [:div [:h2 "Research"]])
+
+(defn research-container []
+  (let [subs []]
+    (fn []
+      [research])))
 
 (defattrs menu-attrs []
   {:background "#333"
@@ -50,3 +70,27 @@
       (for [[idx page] (map-indexed (fn [idx item] [idx item])
                                     [:dsp-ui/home :dsp-ui/calculator :dsp-ui/research])]
         ^{:key idx} [:li [nav-item page current-page change-page]])]]]))
+
+(defn navigation-container [current-page]
+  [navigation current-page
+   (fn [new-page] (re-frame/dispatch [::change-page new-page]))])
+
+(defn content [current-page]
+  (case current-page
+    :dsp-ui/home [home-container]
+    :dsp-ui/calculator [calculator-container]
+    :dsp-ui/research [research-container]
+    [:h2 (str "Unknown page: " (pr-str current-page))]))
+
+(defn setup! []
+  (re-frame/reg-event-db
+   ::change-page
+   (fn-traced
+    change-page-event
+    [app-db [_ new-page]]
+    (assoc app-db ::page new-page)))
+
+  (re-frame/reg-sub
+   ::page
+   (fn [db _]
+     (::page db))))
