@@ -14,7 +14,7 @@
  ;; :ring-handler hello_world.server/handler
 
  :open-file-command "emacsclient"
-
+ :watch-dirs ["src"]
  ;; Logging output gets printed to the REPL, if you want to redirect it to a file:
  ;; :log-file "figwheel-main.log"
 }

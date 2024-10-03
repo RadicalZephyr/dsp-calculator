@@ -1,4 +1,5 @@
 ^{:open-url "http://[[server-hostname]]:[[server-port]]/devcards/index.html"
+  :watch-dirs ["src" "test"]
   }
 {:main "dsp-calculator.devcards"
  :devcards true
