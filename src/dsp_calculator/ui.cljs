@@ -4,7 +4,7 @@
     [re-frame.core :as re-frame]
     [day8.re-frame.tracing :refer-macros [fn-traced]]
     [spade.core   :refer [defclass defattrs]]
-    [dsp-calculator.ui.research :refer [research]]))
+    [dsp-calculator.ui.research :as r]))
 
 (defn home []
   [:div [:h2 "Home"]])
@@ -25,7 +25,7 @@
 (defn research-container []
   (let [subs []]
     (fn []
-      [research])))
+      [r/research])))
 
 (defattrs menu-attrs []
   {:background "#333"

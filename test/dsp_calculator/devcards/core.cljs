@@ -19,10 +19,10 @@
   {:inspect-data true})
 
 (defcard-rg home
-  [dsp-ui/home])
+  [dsp-ui/home-container])
 
 (defcard-rg calculator
-  [dsp-ui/calculator])
+  [dsp-ui/calculator-container])
 
 (defcard-rg research
-  [dsp-ui/research])
+  [dsp-ui/research-container])
