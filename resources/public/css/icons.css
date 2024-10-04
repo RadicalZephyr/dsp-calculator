@@ -2,7 +2,7 @@
   [data-icon^="item"],
   [data-icon^="recipe"],
   [data-icon^="tech"] {
-    width: 80px;
+    width: 40px;
     aspect-ratio: 1;
   }
   [data-icon^="item"],

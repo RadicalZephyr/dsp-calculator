@@ -3,7 +3,8 @@
     [reagent.core :as reagent]
     [re-frame.core :as re-frame]
     [day8.re-frame.tracing :refer-macros [fn-traced]]
-    [spade.core   :refer [defclass defattrs]]))
+    [spade.core   :refer [defclass defattrs]]
+    [dsp-calculator.ui.research :refer [research]]))
 
 (defn home []
   [:div [:h2 "Home"]])
@@ -20,9 +21,6 @@
   (let [subs []]
     (fn []
       [calculator])))
-
-(defn research []
-  [:div [:h2 "Research"]])
 
 (defn research-container []
   (let [subs []]
