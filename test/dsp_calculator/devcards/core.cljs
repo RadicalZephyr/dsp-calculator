@@ -17,3 +17,12 @@
                                       new-page))])
   (reagent/atom :dsp-ui/home)
   {:inspect-data true})
+
+(defcard-rg home
+  [dsp-ui/home])
+
+(defcard-rg calculator
+  [dsp-ui/calculator])
+
+(defcard-rg research
+  [dsp-ui/research])
