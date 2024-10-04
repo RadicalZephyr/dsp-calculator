@@ -1,0 +1,6603 @@
+[{"id" 1001,
+  "descFields" [0 40],
+  "name" "铁矿",
+  "_typeString" "自然资源",
+  "gridIndex" 1101,
+  "miningFrom" "铁矿脉",
+  "type" "RESOURCE",
+  "productive" true,
+  "_descFields"
+  [{"key" "采集自", "value" "铁矿脉"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/iron-ore",
+  "unlockKey" -1,
+  "stackSize" 100,
+  "description" "I铁矿"}
+ {"id" 1002,
+  "descFields" [0 40],
+  "name" "铜矿",
+  "_typeString" "自然资源",
+  "gridIndex" 1102,
+  "miningFrom" "铜矿脉",
+  "type" "RESOURCE",
+  "productive" true,
+  "_descFields"
+  [{"key" "采集自", "value" "铜矿脉"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/copper-ore",
+  "unlockKey" -1,
+  "stackSize" 100,
+  "description" "I铜矿"}
+ {"id" 1003,
+  "descFields" [0 1 40],
+  "name" "硅石",
+  "_typeString" "自然资源",
+  "gridIndex" 1105,
+  "miningFrom" "硅矿脉",
+  "type" "RESOURCE",
+  "productive" true,
+  "_descFields"
+  [{"key" "采集自", "value" "硅矿脉"}
+   {"key" "制造于", "value" "冶炼设备"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/silicium-ore",
+  "unlockKey" 6001,
+  "stackSize" 100,
+  "description" "I硅石"}
+ {"id" 1004,
+  "descFields" [0 40],
+  "name" "钛石",
+  "_typeString" "自然资源",
+  "gridIndex" 1106,
+  "miningFrom" "钛矿脉",
+  "type" "RESOURCE",
+  "productive" true,
+  "_descFields"
+  [{"key" "采集自", "value" "钛矿脉"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/titanium-ore",
+  "unlockKey" 6002,
+  "stackSize" 100,
+  "description" "I钛石"}
+ {"id" 1005,
+  "descFields" [0 40],
+  "name" "石矿",
+  "_typeString" "自然资源",
+  "gridIndex" 1103,
+  "miningFrom" "石矿脉",
+  "type" "RESOURCE",
+  "productive" true,
+  "_descFields"
+  [{"key" "采集自", "value" "石矿脉"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/stone-ore",
+  "unlockKey" -1,
+  "stackSize" 100,
+  "description" "I石矿"}
+ {"heatValue" {":type" "BigInt", "value" "2700000"},
+  "_fuelTypeString" "化学",
+  "fuelType" 1,
+  "id" 1006,
+  "descFields" [2 3 31 0 40],
+  "name" "煤矿",
+  "_typeString" "自然资源",
+  "gridIndex" 1104,
+  "miningFrom" "煤矿脉",
+  "type" "RESOURCE",
+  "productive" true,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "2 MJ"}
+   {"key" "机甲功率提升", "value" "0%"}
+   {"key" "采集自", "value" "煤矿脉"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/coal-ore",
+  "unlockKey" -1,
+  "stackSize" 100,
+  "description" "I煤矿"}
+ {"enemyDropRange" [0 0.003000000026077032],
+  "heatValue" {":type" "BigInt", "value" "1500000"},
+  "_fuelTypeString" "化学",
+  "mechaMaterialId" 7,
+  "fuelType" 1,
+  "id" 1030,
+  "descFields" [2 3 31 0 40],
+  "name" "木材",
+  "enemyDropMask" 2097695762,
+  "_typeString" "自然资源",
+  "enemyDropCount" 4,
+  "gridIndex" 1714,
+  "miningFrom" "树木",
+  "reactorInc" -0.10000000149011612,
+  "type" "RESOURCE",
+  "productive" true,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "1 MJ"}
+   {"key" "机甲功率提升", "value" "0%"}
+   {"key" "采集自", "value" "树木"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/wood",
+  "unlockKey" -1,
+  "stackSize" 100,
+  "description" "I木材"}
+ {"enemyDropRange" [0.003000000026077032 0.003000000026077032],
+  "heatValue" {":type" "BigInt", "value" "500000"},
+  "_fuelTypeString" "化学",
+  "fuelType" 1,
+  "id" 1031,
+  "descFields" [2 3 31 0 40],
+  "name" "植物燃料",
+  "enemyDropMask" 2097695762,
+  "_typeString" "自然资源",
+  "enemyDropCount" 4,
+  "gridIndex" 1814,
+  "miningFrom" "植物",
+  "reactorInc" -0.30000001192092896,
+  "type" "RESOURCE",
+  "productive" true,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "500 KJ"}
+   {"key" "机甲功率提升", "value" "0%"}
+   {"key" "采集自", "value" "植物"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/plant-fuel",
+  "unlockKey" -1,
+  "stackSize" 500,
+  "description" "I植物燃料"}
+ {"heatValue" {":type" "BigInt", "value" "4800000"},
+  "_fuelTypeString" "化学",
+  "fuelType" 1,
+  "id" 1011,
+  "descFields" [2 3 31 0 40],
+  "name" "可燃冰",
+  "_typeString" "自然资源",
+  "gridIndex" 1614,
+  "miningFrom" "可燃冰矿（珍奇）",
+  "reactorInc" 0.4000000059604645,
+  "type" "RESOURCE",
+  "productive" true,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "4 MJ"}
+   {"key" "机甲功率提升", "value" "+0%"}
+   {"key" "采集自", "value" "可燃冰矿（珍奇）"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/gas-hydrate",
+  "unlockKey" 1120,
+  "stackSize" 50,
+  "description" "I可燃冰"}
+ {"id" 1012,
+  "descFields" [0 40],
+  "name" "金伯利矿石",
+  "_typeString" "自然资源",
+  "gridIndex" 1114,
+  "miningFrom" "金伯利矿（珍奇）",
+  "type" "RESOURCE",
+  "productive" true,
+  "_descFields"
+  [{"key" "采集自", "value" "金伯利矿（珍奇）"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/diamond-ore",
+  "unlockKey" 1112,
+  "stackSize" 50,
+  "description" "I金伯利矿石"}
+ {"id" 1013,
+  "descFields" [0 40],
+  "name" "分形硅石",
+  "_typeString" "自然资源",
+  "gridIndex" 1214,
+  "miningFrom" "分形硅矿（珍奇）",
+  "type" "RESOURCE",
+  "productive" true,
+  "_descFields"
+  [{"key" "采集自", "value" "分形硅矿（珍奇）"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/fractal-silica",
+  "unlockKey" 1105,
+  "stackSize" 50,
+  "description" "I分形硅石"}
+ {"enemyDropRange" [0.006000000052154064 0.006000000052154064],
+  "enemyDropLevel" 5,
+  "id" 1014,
+  "descFields" [0 40],
+  "name" "光栅石",
+  "enemyDropMask" 2147483647,
+  "_typeString" "自然资源",
+  "enemyDropCount" 2,
+  "gridIndex" 1314,
+  "miningFrom" "光栅石矿（珍奇）",
+  "type" "RESOURCE",
+  "productive" true,
+  "_descFields"
+  [{"key" "采集自", "value" "光栅石矿（珍奇）"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/grating-ore",
+  "unlockKey" 6002,
+  "stackSize" 50,
+  "description" "I光栅石"}
+ {"id" 1015,
+  "descFields" [0 40],
+  "name" "刺笋结晶",
+  "_typeString" "自然资源",
+  "gridIndex" 1414,
+  "miningFrom" "刺笋矿脉（珍奇）",
+  "type" "RESOURCE",
+  "productive" true,
+  "_descFields"
+  [{"key" "采集自", "value" "刺笋矿脉（珍奇）"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/bamboo-crystal",
+  "unlockKey" 6002,
+  "stackSize" 50,
+  "description" "I刺笋结晶"}
+ {"enemyDropRange" [0.012000000104308128 0.004000000189989805],
+  "mechaMaterialId" 23,
+  "enemyDropLevel" 8,
+  "id" 1016,
+  "descFields" [0 40],
+  "name" "单极磁石",
+  "enemyDropMask" 2147483647,
+  "_typeString" "自然资源",
+  "enemyDropCount" 2,
+  "gridIndex" 1514,
+  "miningFrom" "单极磁矿（珍奇）",
+  "type" "RESOURCE",
+  "productive" true,
+  "_descFields"
+  [{"key" "采集自", "value" "单极磁矿（珍奇）"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/mono-mag-ore",
+  "unlockKey" 1206,
+  "stackSize" 50,
+  "description" "I单极磁石"}
+ {"enemyDropRange" [0.01600000075995922 0.009999999776482582],
+  "mechaMaterialId" 1,
+  "id" 1101,
+  "descFields" [1 40],
+  "name" "铁块",
+  "enemyDropMask" 2147483647,
+  "_typeString" "材料",
+  "enemyDropCount" 2,
+  "gridIndex" 1201,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "冶炼设备"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/iron-plate",
+  "stackSize" 100,
+  "description" "I铁块"}
+ {"enemyDropRange" [0.026000000536441803 0.009999999776482582],
+  "mechaMaterialId" 2,
+  "id" 1104,
+  "descFields" [1 40],
+  "name" "铜块",
+  "enemyDropMask" 2147483647,
+  "_typeString" "材料",
+  "enemyDropCount" 2.4000000953674316,
+  "gridIndex" 1202,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "冶炼设备"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/copper-plate",
+  "stackSize" 100,
+  "description" "I铜块"}
+ {"enemyDropRange" [0.035999998450279236 0.00800000037997961],
+  "mechaMaterialId" 3,
+  "enemyDropLevel" 1,
+  "id" 1105,
+  "descFields" [1 40],
+  "name" "高纯硅块",
+  "enemyDropMask" 2131618808,
+  "_typeString" "材料",
+  "enemyDropCount" 1.7999999523162842,
+  "gridIndex" 1205,
+  "type" "MATERIAL",
+  "productive" true,
+  "enemyDropMaskRatio" 0.30000001192092896,
+  "_descFields"
+  [{"key" "制造于", "value" "冶炼设备"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/silicium-single-crystal",
+  "stackSize" 100,
+  "description" "I高纯硅块"}
+ {"enemyDropRange" [0.04399999976158142 0.00800000037997961],
+  "mechaMaterialId" 4,
+  "enemyDropLevel" 1,
+  "id" 1106,
+  "descFields" [1 40],
+  "name" "钛块",
+  "enemyDropMask" 2131733228,
+  "_typeString" "材料",
+  "enemyDropCount" 2.200000047683716,
+  "gridIndex" 1206,
+  "type" "MATERIAL",
+  "productive" true,
+  "enemyDropMaskRatio" 0.25,
+  "_descFields"
+  [{"key" "制造于", "value" "冶炼设备"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/titanium-plate",
+  "stackSize" 100,
+  "description" "I钛块"}
+ {"enemyDropRange" [0.052000001072883606 0.006000000052154064],
+  "mechaMaterialId" 8,
+  "id" 1108,
+  "descFields" [1 40],
+  "name" "石材",
+  "enemyDropMask" 2147483647,
+  "_typeString" "材料",
+  "enemyDropCount" 1.7999999523162842,
+  "gridIndex" 1203,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "冶炼设备"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/stone-brick",
+  "stackSize" 100,
+  "description" "I石材"}
+ {"enemyDropRange" [0.057999998331069946 0.005499999970197678],
+  "heatValue" {":type" "BigInt", "value" "6750000"},
+  "_fuelTypeString" "化学",
+  "mechaMaterialId" 10,
+  "fuelType" 1,
+  "enemyDropLevel" 1,
+  "id" 1109,
+  "descFields" [2 3 31 1 40],
+  "name" "高能石墨",
+  "enemyDropMask" 2097798226,
+  "_typeString" "材料",
+  "enemyDropCount" 1.600000023841858,
+  "gridIndex" 1204,
+  "reactorInc" 0.5,
+  "type" "MATERIAL",
+  "productive" true,
+  "enemyDropMaskRatio" 0.699999988079071,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "6 MJ"}
+   {"key" "机甲功率提升", "value" "+1%"}
+   {"key" "制造于", "value" "冶炼设备"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/graphite",
+  "stackSize" 100,
+  "description" "I高能石墨"}
+ {"enemyDropRange" [0.06350000202655792 0.007000000216066837],
+  "mechaMaterialId" 5,
+  "enemyDropLevel" 1,
+  "id" 1103,
+  "descFields" [1 40],
+  "name" "钢材",
+  "enemyDropMask" 2147483647,
+  "_typeString" "材料",
+  "enemyDropCount" 1.600000023841858,
+  "gridIndex" 1401,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "冶炼设备"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/steel-plate",
+  "stackSize" 100,
+  "description" "I钢材"}
+ {"enemyDropRange" [0.07050000131130219 0.004999999888241291],
+  "mechaMaterialId" 6,
+  "enemyDropLevel" 4,
+  "id" 1107,
+  "descFields" [1 40],
+  "name" "钛合金",
+  "enemyDropMask" 2131733228,
+  "_typeString" "材料",
+  "enemyDropCount" 1.100000023841858,
+  "gridIndex" 1306,
+  "type" "MATERIAL",
+  "productive" true,
+  "enemyDropMaskRatio" 0.30000001192092896,
+  "_descFields"
+  [{"key" "制造于", "value" "冶炼设备"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/titanium-alloy",
+  "stackSize" 100,
+  "description" "I钛合金"}
+ {"enemyDropRange" [0.0754999965429306 0.006000000052154064],
+  "mechaMaterialId" 13,
+  "enemyDropLevel" 1,
+  "id" 1110,
+  "descFields" [1 40],
+  "name" "玻璃",
+  "enemyDropMask" 2147483647,
+  "_typeString" "材料",
+  "enemyDropCount" 1.7000000476837158,
+  "gridIndex" 1303,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "冶炼设备"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/glass",
+  "stackSize" 100,
+  "description" "I玻璃"}
+ {"enemyDropRange" [0.08150000125169754 0.004000000189989805],
+  "mechaMaterialId" 14,
+  "enemyDropLevel" 4,
+  "id" 1119,
+  "descFields" [1 40],
+  "name" "钛化玻璃",
+  "enemyDropMask" 2131733228,
+  "_typeString" "材料",
+  "enemyDropCount" 1.399999976158142,
+  "gridIndex" 1509,
+  "type" "MATERIAL",
+  "productive" true,
+  "enemyDropMaskRatio" 0.4000000059604645,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/titan-glass",
+  "stackSize" 100,
+  "description" "I钛化玻璃"}
+ {"enemyDropRange" [0.08550000190734863 0.005499999970197678],
+  "mechaMaterialId" 19,
+  "enemyDropLevel" 1,
+  "id" 1111,
+  "descFields" [1 40],
+  "name" "棱镜",
+  "enemyDropMask" 2147483647,
+  "_typeString" "材料",
+  "enemyDropCount" 1.399999976158142,
+  "gridIndex" 1403,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/prism",
+  "stackSize" 100,
+  "description" "I棱镜"}
+ {"enemyDropRange" [0.09099999815225601 0.004000000189989805],
+  "heatValue" {":type" "BigInt", "value" "900000"},
+  "_fuelTypeString" "化学",
+  "mechaMaterialId" 15,
+  "fuelType" 1,
+  "enemyDropLevel" 2,
+  "id" 1112,
+  "descFields" [2 3 31 1 40],
+  "name" "金刚石",
+  "enemyDropMask" 2147483647,
+  "_typeString" "材料",
+  "enemyDropCount" 1,
+  "gridIndex" 1304,
+  "reactorInc" -0.5,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "900 KJ"}
+   {"key" "机甲功率提升", "value" "-1%"}
+   {"key" "制造于", "value" "冶炼设备"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/diamond",
+  "stackSize" 100,
+  "description" "I金刚石"}
+ {"enemyDropRange" [0.0949999988079071 0.004999999888241291],
+  "mechaMaterialId" 16,
+  "enemyDropLevel" 3,
+  "id" 1113,
+  "descFields" [1 40],
+  "name" "晶格硅",
+  "enemyDropMask" 2131618808,
+  "_typeString" "材料",
+  "enemyDropCount" 1.2000000476837158,
+  "gridIndex" 1305,
+  "type" "MATERIAL",
+  "productive" true,
+  "enemyDropMaskRatio" 0.4000000059604645,
+  "_descFields"
+  [{"key" "制造于", "value" "冶炼设备"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/silicium-high-purity",
+  "stackSize" 100,
+  "description" "I晶格硅"}
+ {"enemyDropRange" [0.10000000149011612 0.007000000216066837],
+  "enemyDropLevel" 1,
+  "id" 1201,
+  "descFields" [1 40],
+  "name" "齿轮",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 1.7000000476837158,
+  "gridIndex" 1501,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/gear-wheel",
+  "stackSize" 200,
+  "description" "I齿轮"}
+ {"enemyDropRange" [0.10700000077486038 0.008999999612569809],
+  "mechaMaterialId" 22,
+  "id" 1102,
+  "descFields" [1 40],
+  "name" "磁铁",
+  "enemyDropMask" 2147483647,
+  "_typeString" "材料",
+  "enemyDropCount" 2,
+  "gridIndex" 1301,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "冶炼设备"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/magnet",
+  "stackSize" 200,
+  "description" "I磁铁"}
+ {"enemyDropRange" [0.11599999666213989 0.007000000216066837],
+  "enemyDropLevel" 1,
+  "id" 1202,
+  "descFields" [1 40],
+  "name" "磁线圈",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 2,
+  "gridIndex" 1302,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/magnetism-wire",
+  "stackSize" 200,
+  "description" "I磁线圈"}
+ {"enemyDropRange" [0.12300000339746475 0.006000000052154064],
+  "enemyDropLevel" 2,
+  "id" 1203,
+  "descFields" [1 40],
+  "name" "电动机",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 1.2000000476837158,
+  "gridIndex" 1404,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/electric-motor",
+  "stackSize" 100,
+  "description" "I电动机"}
+ {"enemyDropRange" [0.1289999932050705 0.005499999970197678],
+  "enemyDropLevel" 3,
+  "id" 1204,
+  "descFields" [1 40],
+  "name" "电磁涡轮",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 0.800000011920929,
+  "gridIndex" 1504,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/mag-turbine",
+  "stackSize" 100,
+  "description" "I电磁涡轮"}
+ {"enemyDropRange" [0.13449999690055847 0.004999999888241291],
+  "enemyDropLevel" 4,
+  "id" 1205,
+  "descFields" [1 40],
+  "name" "超级磁场环",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 0.5,
+  "gridIndex" 1604,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/hyper-magnetism-ring",
+  "stackSize" 100,
+  "description" "I超级磁场环"}
+ {"enemyDropRange" [0.13950000703334808 0.004000000189989805],
+  "enemyDropLevel" 5,
+  "id" 1206,
+  "descFields" [1 40],
+  "name" "粒子容器",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 0.4000000059604645,
+  "gridIndex" 1605,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/partical-capacitor",
+  "stackSize" 100,
+  "description" "I粒子容器"}
+ {"enemyDropRange" [0.14350000023841858 0.0035000001080334187],
+  "enemyDropLevel" 6,
+  "id" 1127,
+  "descFields" [1 40],
+  "name" "奇异物质",
+  "enemyDropMask" 2147483647,
+  "_typeString" "材料",
+  "enemyDropCount" 0.4000000059604645,
+  "gridIndex" 1408,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "粒子对撞机"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/strange-matter-generator",
+  "stackSize" 100,
+  "description" "I奇异物质"}
+ {"enemyDropRange" [0.1469999998807907 0.007000000216066837],
+  "enemyDropLevel" 1,
+  "id" 1301,
+  "descFields" [1 40],
+  "name" "电路板",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 2,
+  "gridIndex" 1402,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/circuit-board",
+  "stackSize" 200,
+  "description" "I电路板"}
+ {"enemyDropRange" [0.15399999916553497 0.004000000189989805],
+  "enemyDropLevel" 3,
+  "id" 1303,
+  "descFields" [1 40],
+  "name" "处理器",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 0.75,
+  "gridIndex" 1505,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/processor",
+  "stackSize" 200,
+  "description" "I处理器"}
+ {"enemyDropRange" [0.15800000727176666 0.003000000026077032],
+  "enemyDropLevel" 7,
+  "id" 1305,
+  "descFields" [1 40],
+  "name" "量子芯片",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 0.25,
+  "gridIndex" 1511,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/quantum-processor",
+  "stackSize" 200,
+  "description" "I量子芯片"}
+ {"enemyDropRange" [0.16099999845027924 0.007000000216066837],
+  "enemyDropLevel" 2,
+  "id" 1302,
+  "descFields" [1 40],
+  "name" "微晶元件",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 1,
+  "gridIndex" 1405,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/micro-component",
+  "stackSize" 200,
+  "description" "I微晶元件"}
+ {"enemyDropRange" [0.1679999977350235 0.004000000189989805],
+  "enemyDropLevel" 6,
+  "id" 1304,
+  "descFields" [1 40],
+  "name" "位面过滤器",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 0.4000000059604645,
+  "gridIndex" 1510,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/plane-filter",
+  "stackSize" 200,
+  "description" "I位面过滤器"}
+ {"enemyDropRange" [0.1720000058412552 0.004000000189989805],
+  "enemyDropLevel" 5,
+  "id" 1402,
+  "descFields" [1 40],
+  "name" "粒子宽带",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 0.25,
+  "gridIndex" 1411,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/particle-wide-band",
+  "stackSize" 200,
+  "description" "I粒子宽带"}
+ {"enemyDropRange" [0.17599999904632568 0.0044999998062849045],
+  "enemyDropLevel" 2,
+  "id" 1401,
+  "descFields" [1 40],
+  "name" "电浆激发器",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 1.2999999523162842,
+  "gridIndex" 1502,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/plasma-generator",
+  "stackSize" 200,
+  "description" "I电浆激发器"}
+ {"enemyDropRange" [0.18050000071525574 0.0044999998062849045],
+  "enemyDropLevel" 3,
+  "id" 1404,
+  "descFields" [1 40],
+  "name" "光子合并器",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 1.399999976158142,
+  "gridIndex" 1503,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/photo-shifter",
+  "stackSize" 200,
+  "description" "I光子合并器"}
+ {"id" 1501,
+  "descFields" [36 1 40],
+  "name" "太阳帆",
+  "_typeString" "成品",
+  "gridIndex" 1708,
+  "type" "PRODUCT",
+  "productive" true,
+  "_descFields"
+  [{"key" "使用寿命", "value" ["-" "空格秒"]}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/solar-collector",
+  "stackSize" 200,
+  "description" "I太阳帆"}
+ {"bombType" "LIQUID",
+  "id" 1000,
+  "descFields" [0 71 40],
+  "modelIndex" 494,
+  "isFluid" true,
+  "name" "水",
+  "_typeString" "自然资源",
+  "gridIndex" 1107,
+  "miningFrom" "海洋",
+  "type" "RESOURCE",
+  "productive" true,
+  "_descFields"
+  [{"key" "采集自", "value" "海洋"} nil {"key" "增产剂效果", "value" "额外产出"}],
+  "_AmmoDesc"
+  {"blastRadius0" 9,
+   "blastRadius1" 15,
+   "blastFallof" 0.5,
+   "moveAcc" 0,
+   "turnAcc" 0,
+   "hitIndex" 45,
+   "parameter0" 1},
+  "iconPath" "Icons/ItemRecipe/water",
+  "unlockKey" 2306,
+  "stackSize" 20,
+  "description" "I水"}
+ {"heatValue" {":type" "BigInt", "value" "4050000"},
+  "_fuelTypeString" "化学",
+  "fuelType" 1,
+  "id" 1007,
+  "descFields" [2 3 31 0 40],
+  "isFluid" true,
+  "name" "原油",
+  "_typeString" "自然资源",
+  "gridIndex" 1108,
+  "miningFrom" "原油涌泉",
+  "reactorInc" 0.20000000298023224,
+  "type" "RESOURCE",
+  "productive" true,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "4 MJ"}
+   {"key" "机甲功率提升", "value" "+0%"}
+   {"key" "采集自", "value" "原油涌泉"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/oil",
+  "unlockKey" 2307,
+  "stackSize" 20,
+  "description" "I原油"}
+ {"heatValue" {":type" "BigInt", "value" "4500000"},
+  "_fuelTypeString" "化学",
+  "fuelType" 1,
+  "id" 1114,
+  "descFields" [2 3 31 1 40],
+  "isFluid" true,
+  "name" "精炼油",
+  "_typeString" "材料",
+  "gridIndex" 1208,
+  "reactorInc" 0.30000001192092896,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "4 MJ"}
+   {"key" "机甲功率提升", "value" "+0%"}
+   {"key" "制造于", "value" "精炼设备"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/refined-oil",
+  "stackSize" 20,
+  "description" "I精炼油"}
+ {"id" 1116,
+  "descFields" [1 0 40],
+  "isFluid" true,
+  "name" "硫酸",
+  "_typeString" "材料",
+  "gridIndex" 1207,
+  "miningFrom" "硫酸海洋",
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "化工设备"}
+   {"key" "采集自", "value" "硫酸海洋"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/sulphuric-acid",
+  "stackSize" 20,
+  "description" "I硫酸"}
+ {"enemyDropRange" [0.1850000023841858 0.004000000189989805],
+  "heatValue" {":type" "BigInt", "value" "9000000"},
+  "_fuelTypeString" "化学",
+  "fuelType" 1,
+  "enemyDropLevel" 3,
+  "id" 1120,
+  "descFields" [2 3 31 1 0 40],
+  "isFluid" true,
+  "name" "氢",
+  "enemyDropMask" 2147483647,
+  "_typeString" "材料",
+  "enemyDropCount" 1.5,
+  "gridIndex" 1109,
+  "miningFrom" "气态巨星轨道",
+  "reactorInc" 1,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "9 MJ"}
+   {"key" "机甲功率提升", "value" "+1%"}
+   {"key" "制造于", "value" "精炼设备"}
+   {"key" "采集自", "value" "气态巨星轨道"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/hydrogen",
+  "stackSize" 20,
+  "description" "I氢"}
+ {"enemyDropRange" [0.1889999955892563 0.0020000000949949026],
+  "heatValue" {":type" "BigInt", "value" "9000000"},
+  "_fuelTypeString" "化学",
+  "fuelType" 1,
+  "enemyDropLevel" 5,
+  "id" 1121,
+  "descFields" [2 3 31 1 0 40],
+  "isFluid" true,
+  "name" "重氢",
+  "enemyDropMask" 2147483647,
+  "_typeString" "材料",
+  "produceFrom" "分馏塔",
+  "enemyDropCount" 0.800000011920929,
+  "gridIndex" 1110,
+  "miningFrom" "气态巨星轨道",
+  "reactorInc" 1,
+  "type" "MATERIAL",
+  "productive" true,
+  "preTechOverride" 1134,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "9 MJ"}
+   {"key" "机甲功率提升", "value" "+1%"}
+   {"key" "制造于", "value" "粒子对撞机"}
+   {"key" "采集自", "value" "气态巨星轨道"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/deuterium",
+  "unlockKey" 1120,
+  "stackSize" 20,
+  "description" "I重氢"}
+ {"enemyDropRange" [0.19099999964237213 0.0020000000949949026],
+  "enemyDropLevel" 7,
+  "id" 1122,
+  "descFields" [37 1 40],
+  "name" "反物质",
+  "enemyDropMask" 2147483647,
+  "_typeString" "材料",
+  "enemyDropCount" 0.30000001192092896,
+  "gridIndex" 1111,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "潜在能量", "value" "600 MJ"}
+   {"key" "制造于", "value" "粒子对撞机"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/anti-matter",
+  "stackSize" 20,
+  "description" "I反物质",
+  "potential" {":type" "BigInt", "value" "600000000"}}
+ {"id" 1208,
+  "descFields" [37 1 40],
+  "name" "临界光子",
+  "_typeString" "材料",
+  "produceFrom" "射线接收站",
+  "gridIndex" 1113,
+  "type" "MATERIAL",
+  "preTechOverride" 1506,
+  "_descFields"
+  [{"key" "潜在能量", "value" "1 GJ"}
+   {"key" "制造于", "value" "射线接收站"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "iconPath" "Icons/ItemRecipe/photon-capacitor-full",
+  "unlockKey" 1122,
+  "stackSize" 100,
+  "description" "I临界光子",
+  "potential" {":type" "BigInt", "value" "1200000000"}}
+ {"enemyDropRange" [0.19300000369548798 0.0020000000949949026],
+  "heatValue" {":type" "BigInt", "value" "54000000"},
+  "_fuelTypeString" "化学",
+  "fuelType" 1,
+  "enemyDropLevel" 4,
+  "id" 1801,
+  "descFields" [2 3 31 1 40],
+  "name" "氢燃料棒",
+  "enemyDropMask" 2147483647,
+  "_typeString" "成品",
+  "enemyDropCount" 0.5,
+  "gridIndex" 1209,
+  "reactorInc" 2,
+  "type" "PRODUCT",
+  "productive" true,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "54 MJ"}
+   {"key" "机甲功率提升", "value" "+2%"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/hydrogen-energy-fuel",
+  "stackSize" 30,
+  "description" "I氢燃料棒"}
+ {"enemyDropRange" [0.19499999284744263 0.0010000000474974513],
+  "heatValue" {":type" "BigInt", "value" "600000000"},
+  "_fuelTypeString" "核能",
+  "fuelType" 2,
+  "enemyDropLevel" 6,
+  "id" 1802,
+  "descFields" [2 3 31 1 40],
+  "name" "氘核燃料棒",
+  "enemyDropMask" 2147483647,
+  "_typeString" "成品",
+  "enemyDropCount" 0.4000000059604645,
+  "gridIndex" 1210,
+  "reactorInc" 3,
+  "type" "PRODUCT",
+  "productive" true,
+  "_descFields"
+  [{"key" "燃料类型", "value" "核能"}
+   {"key" "能量", "value" "600 MJ"}
+   {"key" "机甲功率提升", "value" "+3%"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/deuterium-energy-fuel",
+  "stackSize" 30,
+  "description" "I氘核燃料棒"}
+ {"enemyDropRange" [0.19599999487400055 0.0010000000474974513],
+  "heatValue" {":type" "BigInt", "value" "7200000000"},
+  "_fuelTypeString" "质能",
+  "fuelType" 4,
+  "enemyDropLevel" 8,
+  "id" 1803,
+  "descFields" [2 3 31 1 40],
+  "name" "反物质燃料棒",
+  "enemyDropMask" 2147483647,
+  "_typeString" "成品",
+  "enemyDropCount" 0.30000001192092896,
+  "gridIndex" 1211,
+  "reactorInc" 5,
+  "type" "PRODUCT",
+  "_descFields"
+  [{"key" "燃料类型", "value" "质能"}
+   {"key" "能量", "value" "7 GJ"}
+   {"key" "机甲功率提升", "value" "+5%"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "iconPath" "Icons/ItemRecipe/antimatter-energy-fuel",
+  "stackSize" 30,
+  "description" "I反物质燃料棒"}
+ {"heatValue" {":type" "BigInt", "value" "72000000000"},
+  "_fuelTypeString" "质能",
+  "fuelType" 4,
+  "id" 1804,
+  "descFields" [2 3 31 1 40],
+  "name" "金色燃料棒",
+  "_typeString" "成品",
+  "gridIndex" 1212,
+  "reactorInc" 11,
+  "type" "PRODUCT",
+  "_descFields"
+  [{"key" "燃料类型", "value" "质能"}
+   {"key" "能量", "value" "72 GJ"}
+   {"key" "机甲功率提升", "value" "+11%"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "iconPath" "Icons/ItemRecipe/virtual-energy-fuel",
+  "stackSize" 50,
+  "description" "I金色燃料棒"}
+ {"enemyDropRange" [0.19699999690055847 0.003000000026077032],
+  "mechaMaterialId" 9,
+  "enemyDropLevel" 2,
+  "id" 1115,
+  "descFields" [1 40],
+  "name" "塑料",
+  "enemyDropMask" 2097798226,
+  "_typeString" "材料",
+  "enemyDropCount" 1,
+  "gridIndex" 1308,
+  "type" "MATERIAL",
+  "productive" true,
+  "enemyDropMaskRatio" 0.30000001192092896,
+  "_descFields"
+  [{"key" "制造于", "value" "化工设备"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/plastic",
+  "stackSize" 100,
+  "description" "I塑料"}
+ {"enemyDropRange" [0.20000000298023224 0.003000000026077032],
+  "heatValue" {":type" "BigInt", "value" "96000"},
+  "_fuelTypeString" "化学",
+  "mechaMaterialId" 11,
+  "fuelType" 1,
+  "enemyDropLevel" 3,
+  "id" 1123,
+  "descFields" [2 3 31 1 40],
+  "name" "石墨烯",
+  "enemyDropMask" 2097798226,
+  "_typeString" "材料",
+  "enemyDropCount" 1,
+  "gridIndex" 1310,
+  "reactorInc" -0.699999988079071,
+  "type" "MATERIAL",
+  "productive" true,
+  "enemyDropMaskRatio" 0.5,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "96 KJ"}
+   {"key" "机甲功率提升", "value" "-1%"}
+   {"key" "制造于", "value" "化工设备"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/graphene",
+  "stackSize" 100,
+  "description" "I石墨烯"}
+ {"enemyDropRange" [0.2029999941587448 0.0020000000949949026],
+  "heatValue" {":type" "BigInt", "value" "84000"},
+  "_fuelTypeString" "化学",
+  "mechaMaterialId" 12,
+  "fuelType" 1,
+  "enemyDropLevel" 4,
+  "id" 1124,
+  "descFields" [2 3 31 1 40],
+  "name" "碳纳米管",
+  "enemyDropMask" 2097798226,
+  "_typeString" "材料",
+  "enemyDropCount" 0.800000011920929,
+  "gridIndex" 1410,
+  "reactorInc" -0.800000011920929,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "84 KJ"}
+   {"key" "机甲功率提升", "value" "-1%"}
+   {"key" "制造于", "value" "化工设备"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/nanotube",
+  "stackSize" 100,
+  "description" "I碳纳米管"}
+ {"heatValue" {":type" "BigInt", "value" "1800000"},
+  "_fuelTypeString" "化学",
+  "mechaMaterialId" 17,
+  "fuelType" 1,
+  "id" 1117,
+  "descFields" [2 3 31 1 0 40],
+  "name" "有机晶体",
+  "_typeString" "材料",
+  "gridIndex" 1309,
+  "miningFrom" "有机晶体矿（珍奇）",
+  "reactorInc" -0.20000000298023224,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "1 MJ"}
+   {"key" "机甲功率提升", "value" "0%"}
+   {"key" "制造于", "value" "化工设备"}
+   {"key" "采集自", "value" "有机晶体矿（珍奇）"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/crystal-rubber",
+  "stackSize" 100,
+  "description" "I有机晶体"}
+ {"enemyDropRange" [0.20499999821186066 0.003000000026077032],
+  "mechaMaterialId" 20,
+  "enemyDropLevel" 3,
+  "id" 1118,
+  "descFields" [1 40],
+  "name" "钛晶石",
+  "enemyDropMask" 2131733228,
+  "_typeString" "材料",
+  "enemyDropCount" 0.800000011920929,
+  "gridIndex" 1409,
+  "type" "MATERIAL",
+  "productive" true,
+  "enemyDropMaskRatio" 0.5,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/titan-crystal",
+  "stackSize" 100,
+  "description" "I钛晶石"}
+ {"enemyDropRange" [0.20800000429153442 0.003000000026077032],
+  "mechaMaterialId" 18,
+  "enemyDropLevel" 5,
+  "id" 1126,
+  "descFields" [1 40],
+  "name" "卡西米尔晶体",
+  "enemyDropMask" 2147483647,
+  "_typeString" "材料",
+  "enemyDropCount" 0.550000011920929,
+  "gridIndex" 1508,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/casimir-crystal",
+  "stackSize" 100,
+  "description" "I卡西米尔晶体"}
+ {"enemyDropRange" [0.210999995470047 0.004000000189989805],
+  "ability" 10000,
+  "heatValue" {":type" "BigInt", "value" "9720000"},
+  "_fuelTypeString" "化学",
+  "fuelType" 1,
+  "enemyDropLevel" 2,
+  "bombType" "EXPLOSIVE_UNIT",
+  "id" 1128,
+  "descFields" [2 3 31 1 40 71 55 61],
+  "modelIndex" 489,
+  "name" "燃烧单元",
+  "enemyDropMask" 2097798226,
+  "_typeString" "组件",
+  "enemyDropCount" 1,
+  "gridIndex" 1307,
+  "reactorInc" 0.800000011920929,
+  "type" "COMPONENT",
+  "productive" true,
+  "enemyDropMaskRatio" 0.699999988079071,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "9 MJ"}
+   {"key" "机甲功率提升", "value" "+1%"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}
+   nil
+   {"key" "伤害类型", "value" "-"}
+   nil],
+  "_AmmoDesc"
+  {"blastRadius0" 9,
+   "blastRadius1" 13,
+   "blastFallof" 0.5,
+   "moveAcc" 0,
+   "turnAcc" 0,
+   "hitIndex" 40,
+   "parameter0" 1},
+  "iconPath" "Icons/ItemRecipe/explosive",
+  "stackSize" 100,
+  "description" "I燃烧单元"}
+ {"enemyDropRange" [0.2150000035762787 0.003000000026077032],
+  "ability" 32000,
+  "heatValue" {":type" "BigInt", "value" "21600000"},
+  "_fuelTypeString" "化学",
+  "fuelType" 1,
+  "enemyDropLevel" 4,
+  "bombType" "EXPLOSIVE_UNIT",
+  "id" 1129,
+  "descFields" [2 3 31 1 40 71 55 61],
+  "modelIndex" 490,
+  "name" "爆破单元",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 0.699999988079071,
+  "gridIndex" 1407,
+  "reactorInc" 1.2000000476837158,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "21 MJ"}
+   {"key" "机甲功率提升", "value" "+1%"}
+   {"key" "制造于", "value" "化工设备"}
+   {"key" "增产剂效果", "value" "额外产出"}
+   nil
+   {"key" "伤害类型", "value" "-"}
+   nil],
+  "_AmmoDesc"
+  {"blastRadius0" 9,
+   "blastRadius1" 15,
+   "blastFallof" 0.5,
+   "moveAcc" 0,
+   "turnAcc" 0,
+   "hitIndex" 41,
+   "parameter0" 2},
+  "iconPath" "Icons/ItemRecipe/high-explosive",
+  "stackSize" 100,
+  "description" "I爆破单元"}
+ {"enemyDropRange" [0.21799999475479126 0.0020000000949949026],
+  "ability" 75000,
+  "heatValue" {":type" "BigInt", "value" "54000000"},
+  "_fuelTypeString" "化学",
+  "fuelType" 1,
+  "enemyDropLevel" 6,
+  "bombType" "EXPLOSIVE_UNIT",
+  "id" 1130,
+  "descFields" [2 3 31 1 40 71 55 61],
+  "modelIndex" 491,
+  "name" "晶石爆破单元",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 0.5,
+  "gridIndex" 1507,
+  "reactorInc" 2,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "54 MJ"}
+   {"key" "机甲功率提升", "value" "+2%"}
+   {"key" "制造于", "value" "化工设备"}
+   {"key" "增产剂效果", "value" "额外产出"}
+   nil
+   {"key" "伤害类型", "value" "-"}
+   nil],
+  "_AmmoDesc"
+  {"blastRadius0" 9,
+   "blastRadius1" 17,
+   "blastFallof" 0.5,
+   "moveAcc" 0,
+   "turnAcc" 0,
+   "hitIndex" 42,
+   "parameter0" 3},
+  "iconPath" "Icons/ItemRecipe/particle-explosive",
+  "stackSize" 100,
+  "description" "I晶石爆破单元"}
+ {"enemyDropRange" [0.2199999988079071 0.0020000000949949026],
+  "mechaMaterialId" 21,
+  "enemyDropLevel" 7,
+  "id" 1209,
+  "descFields" [1 40],
+  "name" "引力透镜",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 0.4000000059604645,
+  "gridIndex" 1705,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/gravity-lens",
+  "stackSize" 100,
+  "description" "I引力透镜"}
+ {"enemyDropRange" [0.22200000286102295 0.0020000000949949026],
+  "enemyDropLevel" 7,
+  "id" 1210,
+  "descFields" [1 40],
+  "name" "空间翘曲器",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 0.30000001192092896,
+  "gridIndex" 1704,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/space-warper",
+  "stackSize" 100,
+  "description" "I空间翘曲器"}
+ {"enemyDropRange" [0.2240000069141388 0.001500000013038516],
+  "enemyDropLevel" 7,
+  "id" 1403,
+  "descFields" [1 40],
+  "name" "湮灭约束球",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 0.30000001192092896,
+  "gridIndex" 1311,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/fusion-capacitor",
+  "stackSize" 20,
+  "description" "I湮灭约束球"}
+ {"enemyDropRange" [0.22550000250339508 0.007000000216066837],
+  "enemyDropLevel" 1,
+  "id" 1407,
+  "descFields" [1 40],
+  "name" "动力引擎",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 1,
+  "gridIndex" 1601,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/engine",
+  "stackSize" 200,
+  "description" "I动力引擎"}
+ {"enemyDropRange" [0.23250000178813934 0.006000000052154064],
+  "enemyDropLevel" 3,
+  "id" 1405,
+  "descFields" [1 40],
+  "name" "推进器2",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 0.6000000238418579,
+  "gridIndex" 1602,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/fuel-thruster",
+  "stackSize" 200,
+  "description" "I推进器"}
+ {"enemyDropRange" [0.23849999904632568 0.004999999888241291],
+  "enemyDropLevel" 5,
+  "id" 1406,
+  "descFields" [1 40],
+  "name" "加力推进器",
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 0.30000001192092896,
+  "gridIndex" 1603,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/ion-thruster",
+  "stackSize" 100,
+  "description" "I加力推进器"}
+ {"modelCount" 1,
+  "id" 5003,
+  "descFields" [45 46 1 40],
+  "modelIndex" 372,
+  "name" "配送运输机",
+  "_typeString" "物流运输",
+  "gridIndex" 1701,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "船运载量", "value" "-"}
+   {"key" "飞行速度", "value" "- m/s"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/delivery-drone",
+  "stackSize" 200,
+  "hpMax" 200,
+  "description" "I配送运输机"}
+ {"modelCount" 1,
+  "id" 5001,
+  "descFields" [25 27 1 40],
+  "modelIndex" 47,
+  "name" "物流运输机",
+  "_typeString" "物流运输",
+  "gridIndex" 1702,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "船运载量", "value" "-"}
+   {"key" "飞行速度", "value" "- m/s"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/logistic-drone",
+  "stackSize" 200,
+  "hpMax" 300,
+  "description" "I物流运输机"}
+ {"modelCount" 1,
+  "id" 5002,
+  "descFields" [26 1 40],
+  "modelIndex" 48,
+  "name" "星际物流运输船",
+  "_typeString" "物流运输",
+  "gridIndex" 1703,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "船运载量", "value" "-"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/logistic-vessel",
+  "stackSize" 50,
+  "hpMax" 800,
+  "description" "I星际物流运输船"}
+ {"mechaMaterialId" 24,
+  "id" 1125,
+  "descFields" [1 40],
+  "name" "框架材料",
+  "_typeString" "材料",
+  "gridIndex" 1709,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/frame-material",
+  "stackSize" 100,
+  "description" "I框架材料"}
+ {"id" 1502,
+  "descFields" [1 40],
+  "name" "戴森球组件",
+  "_typeString" "组件",
+  "gridIndex" 1710,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/dyson-sphere-component",
+  "stackSize" 100,
+  "description" "I戴森球组件"}
+ {"id" 1503,
+  "descFields" [1 40],
+  "modelIndex" 75,
+  "name" "小型运载火箭",
+  "_typeString" "成品",
+  "gridIndex" 1711,
+  "type" "PRODUCT",
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/rocket",
+  "stackSize" 20,
+  "description" "I小型运载火箭"}
+ {"enemyDropRange" [0.2434999942779541 0.004999999888241291],
+  "enemyDropLevel" 2,
+  "id" 1131,
+  "descFields" [1 40],
+  "name" "地基",
+  "buildMode" 4,
+  "enemyDropMask" 2147483647,
+  "_typeString" "组件",
+  "enemyDropCount" 2,
+  "gridIndex" 1706,
+  "type" "COMPONENT",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "制造台"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/terrain-tool",
+  "stackSize" 1000,
+  "description" "I地基",
+  "canBuild" true,
+  "buildIndex" 901}
+ {"ability" 1,
+  "heatValue" {":type" "BigInt", "value" "3240000"},
+  "_fuelTypeString" "化学",
+  "fuelType" 1,
+  "id" 1141,
+  "descFields" [29 41 42 43 2 3 31 1 40],
+  "name" "增产剂 Mk.I",
+  "_typeString" "材料",
+  "gridIndex" 1406,
+  "reactorInc" 0.30000001192092896,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "喷涂次数", "value" [12 "喷涂次数的后缀"]}
+   {"key" "喷涂增产效果", "value" "+12.5%"}
+   {"key" "喷涂加速效果", "value" "+25%"}
+   {"key" "额外电力消耗", "value" "+30%"}
+   {"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "3 MJ"}
+   {"key" "机甲功率提升", "value" "+0%"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/accelerator-1",
+  "stackSize" 200,
+  "hpMax" 12,
+  "description" "I增产剂 Mk.I"}
+ {"ability" 2,
+  "heatValue" {":type" "BigInt", "value" "8856000"},
+  "_fuelTypeString" "化学",
+  "fuelType" 1,
+  "id" 1142,
+  "descFields" [29 41 42 43 2 3 31 1 40],
+  "name" "增产剂 Mk.II",
+  "_typeString" "材料",
+  "gridIndex" 1506,
+  "reactorInc" 0.6000000238418579,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "喷涂次数", "value" [24 "喷涂次数的后缀"]}
+   {"key" "喷涂增产效果", "value" "+20%"}
+   {"key" "喷涂加速效果", "value" "+50%"}
+   {"key" "额外电力消耗", "value" "+70%"}
+   {"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "8 MJ"}
+   {"key" "机甲功率提升", "value" "+1%"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/accelerator-2",
+  "stackSize" 200,
+  "hpMax" 24,
+  "description" "I增产剂 Mk.II"}
+ {"ability" 4,
+  "heatValue" {":type" "BigInt", "value" "21255000"},
+  "_fuelTypeString" "化学",
+  "fuelType" 1,
+  "id" 1143,
+  "descFields" [29 41 42 43 2 3 31 1 40],
+  "name" "增产剂 Mk.III",
+  "_typeString" "材料",
+  "gridIndex" 1606,
+  "reactorInc" 1.5,
+  "type" "MATERIAL",
+  "productive" true,
+  "_descFields"
+  [{"key" "喷涂次数", "value" [60 "喷涂次数的后缀"]}
+   {"key" "喷涂增产效果", "value" "+25%"}
+   {"key" "喷涂加速效果", "value" "+100%"}
+   {"key" "额外电力消耗", "value" "+150%"}
+   {"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "21 MJ"}
+   {"key" "机甲功率提升", "value" "+2%"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/accelerator-3",
+  "stackSize" 200,
+  "hpMax" 60,
+  "description" "I增产剂 Mk.III"}
+ {"ability" 700,
+  "id" 1601,
+  "descFields" [48 55 52 47 1 40],
+  "name" "机枪弹箱",
+  "_typeString" "成品",
+  "gridIndex" 1312,
+  "type" "PRODUCT",
+  "productive" true,
+  "ammoType" "BULLET",
+  "_descFields"
+  [{"key" "伤害", "value" "7 hp"}
+   {"key" "伤害类型", "value" "子弹伤害类型"}
+   {"key" "弹药类型", "value" "子弹"}
+   {"key" "弹药数量", "value" [30 "弹药数量单位"]}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/bullet",
+  "stackSize" 100,
+  "hpMax" 30,
+  "description" "I机枪弹箱"}
+ {"ability" 1600,
+  "id" 1602,
+  "descFields" [48 55 52 47 1 40],
+  "name" "钛化弹箱",
+  "_typeString" "成品",
+  "gridIndex" 1412,
+  "type" "PRODUCT",
+  "productive" true,
+  "ammoType" "BULLET",
+  "_descFields"
+  [{"key" "伤害", "value" "16 hp"}
+   {"key" "伤害类型", "value" "子弹伤害类型"}
+   {"key" "弹药类型", "value" "子弹"}
+   {"key" "弹药数量", "value" [30 "弹药数量单位"]}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/bullet-titanium",
+  "stackSize" 100,
+  "hpMax" 30,
+  "description" "I钛化弹箱"}
+ {"ability" 3600,
+  "id" 1603,
+  "descFields" [48 55 52 47 1 40],
+  "name" "超合金弹箱",
+  "_typeString" "成品",
+  "gridIndex" 1512,
+  "type" "PRODUCT",
+  "productive" true,
+  "ammoType" "BULLET",
+  "_descFields"
+  [{"key" "伤害", "value" "36 hp"}
+   {"key" "伤害类型", "value" "子弹伤害类型"}
+   {"key" "弹药类型", "value" "子弹"}
+   {"key" "弹药数量", "value" [30 "弹药数量单位"]}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/bullet-alloy",
+  "stackSize" 100,
+  "hpMax" 30,
+  "description" "I超合金弹箱"}
+ {"ability" 4500,
+  "id" 1604,
+  "descFields" [48 55 52 61 47 1 40],
+  "modelIndex" 486,
+  "name" "炮弹组",
+  "_typeString" "成品",
+  "gridIndex" 1513,
+  "type" "PRODUCT",
+  "productive" true,
+  "ammoType" "CANNON",
+  "_descFields"
+  [{"key" "伤害", "value" "45 hp"}
+   {"key" "伤害类型", "value" "炮弹伤害类型"}
+   {"key" "弹药类型", "value" "炮弹"}
+   {"key" "爆炸半径", "value" "13 m"}
+   {"key" "弹药数量", "value" [12 "弹药数量单位"]}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "_AmmoDesc"
+  {"blastRadius0" 4.5,
+   "blastRadius1" 11,
+   "blastFallof" 0.5,
+   "moveAcc" 0,
+   "turnAcc" 0,
+   "hitIndex" 10,
+   "parameter0" 0},
+  "iconPath" "Icons/ItemRecipe/cannonball",
+  "stackSize" 100,
+  "hpMax" 12,
+  "description" "I炮弹组"}
+ {"ability" 10000,
+  "id" 1605,
+  "descFields" [48 55 52 61 47 1 40],
+  "modelIndex" 487,
+  "name" "高爆炮弹组",
+  "_typeString" "成品",
+  "gridIndex" 1613,
+  "type" "PRODUCT",
+  "productive" true,
+  "ammoType" "CANNON",
+  "_descFields"
+  [{"key" "伤害", "value" "100 hp"}
+   {"key" "伤害类型", "value" "炮弹伤害类型"}
+   {"key" "弹药类型", "value" "炮弹"}
+   {"key" "爆炸半径", "value" "13 m"}
+   {"key" "弹药数量", "value" [12 "弹药数量单位"]}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "_AmmoDesc"
+  {"blastRadius0" 6,
+   "blastRadius1" 13,
+   "blastFallof" 0.30000001192092896,
+   "moveAcc" 0,
+   "turnAcc" 0,
+   "hitIndex" 10,
+   "parameter0" 0},
+  "iconPath" "Icons/ItemRecipe/cannonball-cluster",
+  "stackSize" 100,
+  "hpMax" 12,
+  "description" "I高爆炮弹组"}
+ {"ability" 22000,
+  "id" 1606,
+  "descFields" [48 55 52 61 47 1 40],
+  "modelIndex" 488,
+  "name" "晶石炮弹组",
+  "_typeString" "成品",
+  "gridIndex" 1713,
+  "type" "PRODUCT",
+  "productive" true,
+  "ammoType" "CANNON",
+  "_descFields"
+  [{"key" "伤害", "value" "220 hp"}
+   {"key" "伤害类型", "value" "炮弹伤害类型"}
+   {"key" "弹药类型", "value" "炮弹"}
+   {"key" "爆炸半径", "value" "13 m"}
+   {"key" "弹药数量", "value" [12 "弹药数量单位"]}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "_AmmoDesc"
+  {"blastRadius0" 7,
+   "blastRadius1" 15,
+   "blastFallof" 0.15000000596046448,
+   "moveAcc" 0,
+   "turnAcc" 0,
+   "hitIndex" 10,
+   "parameter0" 0},
+  "iconPath" "Icons/ItemRecipe/cannonball-alloy",
+  "stackSize" 100,
+  "hpMax" 12,
+  "description" "I晶石炮弹组"}
+ {"ability" 30000,
+  "id" 1607,
+  "descFields" [48 55 52 61 47 1 40],
+  "name" "等离子胶囊",
+  "_typeString" "成品",
+  "gridIndex" 1612,
+  "type" "PRODUCT",
+  "productive" true,
+  "ammoType" "PLASMA",
+  "_descFields"
+  [{"key" "伤害", "value" "300 hp"}
+   {"key" "伤害类型", "value" "能量胶囊伤害类型"}
+   {"key" "弹药类型", "value" "能量胶囊"}
+   {"key" "爆炸半径", "value" "8 m"}
+   {"key" "弹药数量", "value" [10 "弹药数量单位"]}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/capsule-energy",
+  "stackSize" 100,
+  "hpMax" 10,
+  "description" "I等离子胶囊"}
+ {"ability" 150000,
+  "id" 1608,
+  "descFields" [48 55 52 61 47 1 40],
+  "name" "反物质胶囊",
+  "_typeString" "成品",
+  "gridIndex" 1712,
+  "type" "PRODUCT",
+  "productive" true,
+  "ammoType" "PLASMA",
+  "_descFields"
+  [{"key" "伤害", "value" "1500 hp"}
+   {"key" "伤害类型", "value" "能量胶囊伤害类型"}
+   {"key" "弹药类型", "value" "能量胶囊"}
+   {"key" "爆炸半径", "value" "20 m"}
+   {"key" "弹药数量", "value" [10 "弹药数量单位"]}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/capsule-antimatter",
+  "stackSize" 100,
+  "hpMax" 10,
+  "description" "I反物质胶囊"}
+ {"ability" 2100,
+  "id" 1609,
+  "descFields" [48 55 52 61 47 1 40],
+  "modelIndex" 432,
+  "name" "导弹组",
+  "_typeString" "成品",
+  "gridIndex" 1213,
+  "type" "PRODUCT",
+  "productive" true,
+  "ammoType" "MISSILE",
+  "_descFields"
+  [{"key" "伤害", "value" "21 hp"}
+   {"key" "伤害类型", "value" "导弹伤害类型"}
+   {"key" "弹药类型", "value" "导弹"}
+   {"key" "爆炸半径", "value" "7.5 m"}
+   {"key" "弹药数量", "value" [24 "弹药数量单位"]}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "_AmmoDesc"
+  {"blastRadius0" 3,
+   "blastRadius1" 7.5,
+   "blastFallof" 1.100000023841858,
+   "moveAcc" 1,
+   "turnAcc" 1,
+   "hitIndex" 12,
+   "parameter0" 0},
+  "iconPath" "Icons/ItemRecipe/missile",
+  "stackSize" 100,
+  "hpMax" 24,
+  "description" "I导弹组"}
+ {"ability" 5400,
+  "id" 1610,
+  "descFields" [48 55 52 61 47 1 40],
+  "modelIndex" 433,
+  "name" "超音速导弹组",
+  "_typeString" "成品",
+  "gridIndex" 1313,
+  "type" "PRODUCT",
+  "productive" true,
+  "ammoType" "MISSILE",
+  "_descFields"
+  [{"key" "伤害", "value" "54 hp"}
+   {"key" "伤害类型", "value" "导弹伤害类型"}
+   {"key" "弹药类型", "value" "导弹"}
+   {"key" "爆炸半径", "value" "9 m"}
+   {"key" "弹药数量", "value" [24 "弹药数量单位"]}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "_AmmoDesc"
+  {"blastRadius0" 4,
+   "blastRadius1" 9,
+   "blastFallof" 0.8500000238418579,
+   "moveAcc" 3,
+   "turnAcc" 3,
+   "hitIndex" 12,
+   "parameter0" 0},
+  "iconPath" "Icons/ItemRecipe/missile-supersonic",
+  "stackSize" 100,
+  "hpMax" 24,
+  "description" "I超音速导弹组"}
+ {"ability" 12000,
+  "id" 1611,
+  "descFields" [48 55 52 61 47 1 40],
+  "modelIndex" 434,
+  "name" "引力导弹组",
+  "_typeString" "成品",
+  "gridIndex" 1413,
+  "type" "PRODUCT",
+  "productive" true,
+  "ammoType" "MISSILE",
+  "_descFields"
+  [{"key" "伤害", "value" "120 hp"}
+   {"key" "伤害类型", "value" "导弹伤害类型"}
+   {"key" "弹药类型", "value" "导弹"}
+   {"key" "爆炸半径", "value" "10 m"}
+   {"key" "弹药数量", "value" [24 "弹药数量单位"]}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "_AmmoDesc"
+  {"blastRadius0" 4.5,
+   "blastRadius1" 10,
+   "blastFallof" 0.75,
+   "moveAcc" 5,
+   "turnAcc" 5,
+   "hitIndex" 12,
+   "parameter0" 0},
+  "iconPath" "Icons/ItemRecipe/missile-graviton",
+  "stackSize" 100,
+  "hpMax" 24,
+  "description" "I引力导弹组"}
+ {"ability" 50,
+  "bombType" "EMCAPSULE",
+  "id" 1612,
+  "descFields" [68 69 70 52 1 40 71],
+  "modelIndex" 492,
+  "name" "电磁干扰胶囊",
+  "_typeString" "成品",
+  "gridIndex" 1812,
+  "type" "PRODUCT",
+  "productive" true,
+  "_descFields"
+  [nil
+   nil
+   nil
+   {"key" "弹药类型", "value" "-"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}
+   nil],
+  "_AmmoDesc"
+  {"blastRadius0" 15,
+   "blastRadius1" 25,
+   "blastFallof" 0.5,
+   "moveAcc" 0,
+   "turnAcc" 0,
+   "hitIndex" 43,
+   "parameter0" 1},
+  "iconPath" "Icons/ItemRecipe/em-disturb",
+  "stackSize" 100,
+  "hpMax" 60,
+  "description" "I电磁干扰胶囊"}
+ {"ability" 80,
+  "bombType" "EMCAPSULE",
+  "id" 1613,
+  "descFields" [68 69 70 52 1 40 71],
+  "modelIndex" 493,
+  "name" "电磁压制胶囊",
+  "_typeString" "成品",
+  "gridIndex" 1813,
+  "type" "PRODUCT",
+  "productive" true,
+  "_descFields"
+  [nil
+   nil
+   nil
+   {"key" "弹药类型", "value" "-"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}
+   nil],
+  "_AmmoDesc"
+  {"blastRadius0" 16,
+   "blastRadius1" 28,
+   "blastFallof" 0.5,
+   "moveAcc" 0,
+   "turnAcc" 0,
+   "hitIndex" 44,
+   "parameter0" 2},
+  "iconPath" "Icons/ItemRecipe/em-suppress",
+  "stackSize" 100,
+  "hpMax" 60,
+  "description" "I电磁压制胶囊"}
+ {"modelCount" 1,
+  "id" 5101,
+  "descFields" [53 48 55 49 60 59 1 40],
+  "modelIndex" 448,
+  "name" "地面战斗机-E型",
+  "craftType" 1,
+  "_typeString" "成品",
+  "gridIndex" 1607,
+  "type" "PRODUCT",
+  "productive" true,
+  "_descFields"
+  [{"key" "最大耐久度", "value" "15 hp"}
+   nil
+   {"key" "伤害类型", "value" "-"}
+   nil
+   {"key" "射击距离", "value" "-"}
+   {"key" "飞行速度", "value" "-"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/fighter-shield",
+  "stackSize" 100,
+  "hpMax" 1500,
+  "description" "I地面战斗机-E型"}
+ {"modelCount" 1,
+  "id" 5102,
+  "descFields" [53 48 55 49 60 59 1 40],
+  "modelIndex" 449,
+  "name" "地面战斗机-A型",
+  "craftType" 1,
+  "_typeString" "成品",
+  "gridIndex" 1608,
+  "type" "PRODUCT",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "15 hp"}
+   nil
+   {"key" "伤害类型", "value" "-"}
+   nil
+   {"key" "射击距离", "value" "-"}
+   {"key" "飞行速度", "value" "-"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/fighter-plasma",
+  "stackSize" 100,
+  "hpMax" 1500,
+  "description" "I地面战斗机-A型"}
+ {"modelCount" 1,
+  "id" 5103,
+  "descFields" [53 48 55 49 60 59 1 40],
+  "modelIndex" 450,
+  "name" "地面战斗机-F型",
+  "craftType" 1,
+  "_typeString" "成品",
+  "gridIndex" 1609,
+  "type" "PRODUCT",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "15 hp"}
+   nil
+   {"key" "伤害类型", "value" "-"}
+   nil
+   {"key" "射击距离", "value" "-"}
+   {"key" "飞行速度", "value" "-"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/fighter-laser",
+  "stackSize" 100,
+  "hpMax" 1500,
+  "description" "I地面战斗机-F型"}
+ {"modelCount" 1,
+  "id" 5111,
+  "descFields" [53 48 55 49 60 59 1 40],
+  "modelIndex" 451,
+  "name" "太空战斗机-A型",
+  "craftType" 3,
+  "_typeString" "成品",
+  "gridIndex" 1610,
+  "type" "PRODUCT",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "80 hp"}
+   nil
+   {"key" "伤害类型", "value" "-"}
+   nil
+   {"key" "射击距离", "value" "-"}
+   {"key" "飞行速度", "value" "-"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/warship-plasma",
+  "stackSize" 50,
+  "hpMax" 8000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 0 0],
+   "insertPoses" [],
+   "selectAlpha" 0,
+   "addonAreaCol" [],
+   "overrideBarWidth" 10,
+   "selectSize" [1 1 1],
+   "signHeight" 0,
+   "slotPoses" [nil nil nil nil],
+   "signSize" 0,
+   "selectDistance" 0,
+   "overrideBarHeight" 5},
+  "description" "I太空战斗机-A型"}
+ {"modelCount" 1,
+  "id" 5112,
+  "descFields" [53 55 62 63 64 65 66 67 59 1 40],
+  "modelIndex" 452,
+  "name" "太空战斗机-F型",
+  "craftType" 7,
+  "_typeString" "成品",
+  "gridIndex" 1611,
+  "type" "PRODUCT",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "80 hp"}
+   {"key" "伤害类型", "value" "-"}
+   nil
+   nil
+   nil
+   nil
+   nil
+   nil
+   {"key" "飞行速度", "value" "-"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/warship-laser",
+  "stackSize" 50,
+  "hpMax" 8000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 0 0],
+   "insertPoses" [],
+   "selectAlpha" 0,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize" [1 1 1],
+   "signHeight" 0,
+   "slotPoses" [nil nil nil nil nil nil],
+   "signSize" 0,
+   "selectDistance" 0,
+   "overrideBarHeight" 0},
+  "description" "I太空战斗机-F型"}
+ {"enemyDropRange" [0.2485000044107437 0.009999999776482582],
+  "enemyDropLevel" 4,
+  "id" 5201,
+  "descFields" [0 40],
+  "name" "存储单元",
+  "enemyDropMask" 2147483647,
+  "_typeString" "黑雾物品",
+  "enemyDropCount" 2.5,
+  "gridIndex" 1807,
+  "miningFrom" "黑雾残骸",
+  "type" "DARKFOG",
+  "productive" true,
+  "_descFields"
+  [{"key" "采集自", "value" "黑雾残骸"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/memory",
+  "unlockKey" -2,
+  "stackSize" 200,
+  "description" "I存储单元"}
+ {"enemyDropRange" [0.25850000977516174 0.008999999612569809],
+  "enemyDropLevel" 6,
+  "id" 5202,
+  "descFields" [0 40],
+  "name" "硅基神经元",
+  "enemyDropMask" 2147483647,
+  "_typeString" "黑雾物品",
+  "enemyDropCount" 1.5,
+  "gridIndex" 1809,
+  "miningFrom" "黑雾残骸",
+  "type" "DARKFOG",
+  "productive" true,
+  "_descFields"
+  [{"key" "采集自", "value" "黑雾残骸"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/silicon-neuron",
+  "unlockKey" -2,
+  "stackSize" 100,
+  "description" "I硅基神经元"}
+ {"enemyDropRange" [0.26750001311302185 0.00800000037997961],
+  "enemyDropLevel" 5,
+  "id" 5203,
+  "descFields" [0 40],
+  "name" "物质重组器",
+  "enemyDropMask" 2147483647,
+  "_typeString" "黑雾物品",
+  "enemyDropCount" 1.5,
+  "gridIndex" 1811,
+  "miningFrom" "黑雾残骸",
+  "type" "DARKFOG",
+  "productive" true,
+  "_descFields"
+  [{"key" "采集自", "value" "黑雾残骸"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/reassembler",
+  "unlockKey" -2,
+  "stackSize" 100,
+  "description" "I物质重组器"}
+ {"enemyDropRange" [0.27549999952316284 0.006000000052154064],
+  "enemyDropLevel" 7,
+  "id" 5204,
+  "descFields" [0 40],
+  "name" "负熵奇点",
+  "enemyDropMask" 2147483647,
+  "_typeString" "黑雾物品",
+  "enemyDropCount" 1.399999976158142,
+  "gridIndex" 1810,
+  "miningFrom" "黑雾残骸",
+  "type" "DARKFOG",
+  "productive" true,
+  "_descFields"
+  [{"key" "采集自", "value" "黑雾残骸"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/negentropy",
+  "unlockKey" -2,
+  "stackSize" 50,
+  "description" "I负熵奇点"}
+ {"enemyDropRange" [0.2815000116825104 0.006500000134110451],
+  "enemyDropLevel" 8,
+  "id" 5205,
+  "descFields" [0 40],
+  "name" "虚粒子",
+  "enemyDropMask" 2147483647,
+  "_typeString" "黑雾物品",
+  "enemyDropCount" 1.5,
+  "gridIndex" 1112,
+  "miningFrom" "黑雾残骸",
+  "type" "DARKFOG",
+  "productive" true,
+  "_descFields"
+  [{"key" "采集自", "value" "黑雾残骸"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/virtual-particle",
+  "unlockKey" -2,
+  "stackSize" 50,
+  "description" "I共振粒子"}
+ {"enemyDropRange" [0.2879999876022339 0.012000000104308128],
+  "ability" 50,
+  "heatValue" {":type" "BigInt", "value" "3600000"},
+  "_fuelTypeString" "化学",
+  "fuelType" 1,
+  "enemyDropLevel" 1,
+  "id" 5206,
+  "descFields" [2 3 31 54 0 40],
+  "name" "能量碎片",
+  "enemyDropMask" 2147483647,
+  "_typeString" "黑雾物品",
+  "enemyDropCount" 2.5,
+  "gridIndex" 1808,
+  "miningFrom" "黑雾残骸",
+  "reactorInc" 0.20000000298023224,
+  "type" "DARKFOG",
+  "productive" true,
+  "_descFields"
+  [{"key" "燃料类型", "value" "化学"}
+   {"key" "能量", "value" "3 MJ"}
+   {"key" "机甲功率提升", "value" "+0%"}
+   {"key" "手动制造速度", "value" "+50%"}
+   {"key" "采集自", "value" "黑雾残骸"}
+   {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/energy-fragment",
+  "unlockKey" -2,
+  "stackSize" 100,
+  "description" "I能量碎片"}
+ {"_BeltDesc" {"beltPrototype" 2001, "speed" 1},
+  "upgrades" [2001 2002 2003],
+  "grade" 1,
+  "modelCount" 1,
+  "subId" 1,
+  "id" 2001,
+  "descFields" [53 15 1 40],
+  "modelIndex" 35,
+  "name" "低速传送带",
+  "buildMode" 2,
+  "_typeString" "物流运输",
+  "gridIndex" 2201,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "3 hp"}
+   {"key" "运载速度", "value" "6/s"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/belt-1",
+  "stackSize" 300,
+  "hpMax" 300,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 0.10000000149011612 0],
+   "insertPoses" [],
+   "selectAlpha" 0.800000011920929,
+   "addonAreaCol" [],
+   "overrideBarWidth" 1,
+   "selectSize" [1 0.5 1],
+   "signHeight" 1.2000000476837158,
+   "slotPoses" [],
+   "signSize" 1.600000023841858,
+   "selectDistance" 34,
+   "overrideBarHeight" 0.20000000298023224},
+  "description" "I低速传送带",
+  "canBuild" true,
+  "buildIndex" 301}
+ {"_BeltDesc" {"beltPrototype" 2002, "speed" 2},
+  "upgrades" [2001 2002 2003],
+  "grade" 2,
+  "modelCount" 1,
+  "subId" 2,
+  "id" 2002,
+  "descFields" [53 15 1 40],
+  "modelIndex" 36,
+  "name" "高速传送带",
+  "buildMode" 2,
+  "_typeString" "物流运输",
+  "gridIndex" 2202,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "3 hp"}
+   {"key" "运载速度", "value" "12/s"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/belt-2",
+  "stackSize" 300,
+  "hpMax" 300,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 0.10000000149011612 0],
+   "insertPoses" [],
+   "selectAlpha" 0.800000011920929,
+   "addonAreaCol" [],
+   "overrideBarWidth" 1,
+   "selectSize" [1 0.5 1],
+   "signHeight" 1.2000000476837158,
+   "slotPoses" [],
+   "signSize" 1.600000023841858,
+   "selectDistance" 34,
+   "overrideBarHeight" 0.20000000298023224},
+  "description" "I高速传送带",
+  "canBuild" true,
+  "buildIndex" 302}
+ {"_BeltDesc" {"beltPrototype" 2003, "speed" 5},
+  "upgrades" [2001 2002 2003],
+  "grade" 3,
+  "modelCount" 1,
+  "subId" 3,
+  "id" 2003,
+  "descFields" [53 15 1 40],
+  "modelIndex" 37,
+  "name" "极速传送带",
+  "buildMode" 2,
+  "_typeString" "物流运输",
+  "gridIndex" 2203,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "3 hp"}
+   {"key" "运载速度", "value" "30/s"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/belt-3",
+  "stackSize" 300,
+  "hpMax" 300,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 0.10000000149011612 0],
+   "insertPoses" [],
+   "selectAlpha" 0.800000011920929,
+   "addonAreaCol" [],
+   "overrideBarWidth" 1,
+   "selectSize" [1 0.5 1],
+   "signHeight" 1.2000000476837158,
+   "slotPoses" [],
+   "signSize" 1.600000023841858,
+   "selectDistance" 34,
+   "overrideBarHeight" 0.20000000298023224},
+  "description" "I极速传送带",
+  "canBuild" true,
+  "buildIndex" 303}
+ {"upgrades" [2011 2012 2013 2014],
+  "grade" 1,
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 0},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "300"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "150"}},
+  "subId" 1,
+  "id" 2011,
+  "descFields" [53 20 21 11 12 1 40],
+  "modelIndex" 41,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints" [],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "低速分拣器",
+  "buildMode" 3,
+  "_typeString" "物流运输",
+  "_InserterDesc"
+  {"stt" 200000, "delay" 0, "canStack" false, "stackSize" 1},
+  "gridIndex" 2301,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "3 hp"}
+   {"key" "运送速度", "value" [2 "往返每秒每格"]}
+   {"key" "货物堆叠", "value" 1}
+   {"key" "工作功率", "value" "18 KW"}
+   {"key" "待机功率", "value" "9000W"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/inserter-1",
+  "stackSize" 200,
+  "hpMax" 300,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 0.5 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 1,
+   "selectSize" [1 1 1],
+   "signHeight" 0.8999999761581421,
+   "slotPoses" [],
+   "signSize" 0.8999999761581421,
+   "selectDistance" 34,
+   "overrideBarHeight" 0.699999988079071},
+  "description" "I低速分拣器",
+  "canBuild" true,
+  "buildIndex" 304}
+ {"upgrades" [2011 2012 2013 2014],
+  "grade" 2,
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 0},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "600"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "150"}},
+  "subId" 2,
+  "id" 2012,
+  "descFields" [53 20 21 11 12 1 40],
+  "modelIndex" 42,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints" [],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "高速分拣器",
+  "buildMode" 3,
+  "_typeString" "物流运输",
+  "_InserterDesc"
+  {"stt" 100000, "delay" 0, "canStack" false, "stackSize" 1},
+  "gridIndex" 2302,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "3 hp"}
+   {"key" "运送速度", "value" [3 "往返每秒每格"]}
+   {"key" "货物堆叠", "value" 1}
+   {"key" "工作功率", "value" "36 KW"}
+   {"key" "待机功率", "value" "9000W"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/inserter-2",
+  "stackSize" 200,
+  "hpMax" 300,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 0.5 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 1,
+   "selectSize" [1 1 1],
+   "signHeight" 0.8999999761581421,
+   "slotPoses" [],
+   "signSize" 0.8999999761581421,
+   "selectDistance" 34,
+   "overrideBarHeight" 0.699999988079071},
+  "description" "I高速分拣器",
+  "canBuild" true,
+  "buildIndex" 305}
+ {"upgrades" [2011 2012 2013 2014],
+  "grade" 3,
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 0},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "1200"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "150"}},
+  "subId" 3,
+  "id" 2013,
+  "descFields" [53 20 21 11 12 1 40],
+  "modelIndex" 43,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints" [],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "极速分拣器",
+  "buildMode" 3,
+  "_typeString" "物流运输",
+  "_InserterDesc"
+  {"stt" 50000, "delay" 0, "canStack" true, "stackSize" 1},
+  "gridIndex" 2303,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "3 hp"}
+   {"key" "运送速度", "value" [6 "往返每秒每格"]}
+   {"key" "货物堆叠", "value" 1}
+   {"key" "工作功率", "value" "72 KW"}
+   {"key" "待机功率", "value" "9000W"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/inserter-3",
+  "stackSize" 200,
+  "hpMax" 300,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 0.5 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 1,
+   "selectSize" [1 1 1],
+   "signHeight" 0.8999999761581421,
+   "slotPoses" [],
+   "signSize" 0.8999999761581421,
+   "selectDistance" 34,
+   "overrideBarHeight" 0.699999988079071},
+  "description" "I极速分拣器",
+  "canBuild" true,
+  "buildIndex" 306}
+ {"upgrades" [2011 2012 2013 2014],
+  "grade" 4,
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 0},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "2400"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "150"}},
+  "subId" 4,
+  "id" 2014,
+  "descFields" [53 20 72 73 11 12 1 40],
+  "modelIndex" 483,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints" [],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "集装分拣器",
+  "buildMode" 3,
+  "_typeString" "物流运输",
+  "_InserterDesc"
+  {"stt" 30000, "delay" 0, "canStack" true, "stackSize" 2},
+  "gridIndex" 2304,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "3 hp"}
+   {"key" "运送速度", "value" [10 "往返每秒每格"]}
+   nil
+   nil
+   {"key" "工作功率", "value" "144 KW"}
+   {"key" "待机功率", "value" "9000W"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/inserter-4",
+  "stackSize" 200,
+  "hpMax" 300,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 0.5 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 1,
+   "selectSize" [1 1 1],
+   "signHeight" 0.8999999761581421,
+   "slotPoses" [],
+   "signSize" 0.8999999761581421,
+   "selectDistance" 34,
+   "overrideBarHeight" 0.699999988079071},
+  "description" "I集装分拣器",
+  "canBuild" true,
+  "buildIndex" 307}
+ {"modelCount" 3,
+  "_MinimapConfig" {"type" 3},
+  "id" 2020,
+  "descFields" [53 16 1 40],
+  "modelIndex" 38,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 2.6666669845581055 0],
+   "addonType" "NONE",
+   "dragBuild" false,
+   "multiLevelAllowRotate" true,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[0 0.09000000357627869 1.2799999713897705]
+    [1.2799999713897705 0.09000000357627869 0]
+    [0 0.09000000357627869 -1.2799999713897705]
+    [-1.2799999713897705 0.09000000357627869 0]],
+   "multiLevel" true,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" true,
+   "landOffset" 0},
+  "name" "四向分流器",
+  "buildMode" 1,
+  "_typeString" "物流运输",
+  "gridIndex" 2204,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "5 hp"}
+   {"key" "接口数量", "value" 4}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/splitter-4dir",
+  "stackSize" 50,
+  "hpMax" 500,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 1.2000000476837158 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 2.200000047683716,
+   "selectSize"
+   [2.700000047683716 2.4000000953674316 2.700000047683716],
+   "signHeight" 3,
+   "slotPoses" [nil nil nil nil],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 2},
+  "description" "I四向分流器",
+  "canBuild" true,
+  "buildIndex" 308}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 3},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "2400"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "150"}},
+  "id" 2040,
+  "descFields" [53 11 12 1 40],
+  "modelIndex" 257,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 2.6659998893737793 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[1.100000023841858 0.30000001192092896 1.5]
+    [-1.100000023841858 0.30000001192092896 1.5]
+    [1.100000023841858 0.30000001192092896 -1.5]
+    [-1.100000023841858 0.30000001192092896 -1.5]],
+   "multiLevel" true,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" true,
+   "landOffset" 0},
+  "name" "自动集装机",
+  "buildMode" 1,
+  "_typeString" "物流运输",
+  "gridIndex" 2205,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "5 hp"}
+   {"key" "工作功率", "value" "144 KW"}
+   {"key" "待机功率", "value" "9000W"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/piler",
+  "stackSize" 50,
+  "hpMax" 500,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 1 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 2.200000047683716,
+   "selectSize" [2.200000047683716 2 3],
+   "signHeight" 1,
+   "slotPoses" [nil nil],
+   "signSize" 1.25,
+   "selectDistance" 34,
+   "overrideBarHeight" 2},
+  "description" "I自动集装机",
+  "canBuild" true,
+  "buildIndex" 602}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 0},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "600"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "150"}},
+  "id" 2030,
+  "descFields" [53 11 12 1 40],
+  "modelIndex" 208,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "BELT",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints" [[0 0 0]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "流速器",
+  "buildMode" 5,
+  "_typeString" "物流运输",
+  "gridIndex" 2206,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "3 hp"}
+   {"key" "工作功率", "value" "36 KW"}
+   {"key" "待机功率", "value" "9000W"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/monitor",
+  "stackSize" 100,
+  "hpMax" 300,
+  "_SlotConfig"
+  {"addonAreaCenter" [[0 0 0]],
+   "selectCenter" [0 0.699999988079071 0.05000000074505806],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [nil],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [1.2999999523162842 1.399999976158142 2.299999952316284],
+   "signHeight" 0.5,
+   "slotPoses" [],
+   "signSize" 1,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I流速监测器",
+  "canBuild" true,
+  "buildIndex" 309}
+ {"_SpraycoaterDesc"
+  {"incCapacity" 600, "incItemId" [1141 1142 1143]},
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 3},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "1500"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "75"}},
+  "id" 2313,
+  "descFields" [53 11 12 1 40],
+  "modelIndex" 120,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "BELT",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[0.3499999940395355 0.30000001192092896 -2]
+    [-0.3499999940395355 0.30000001192092896 -2]
+    [0.3499999940395355 0.30000001192092896 2]
+    [-0.3499999940395355 0.30000001192092896 2]],
+   "multiLevel" true,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "喷涂机",
+  "buildMode" 5,
+  "_typeString" "生产设备",
+  "gridIndex" 2207,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "8 hp"}
+   {"key" "工作功率", "value" "90 KW"}
+   {"key" "待机功率", "value" "4500W"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/spray-coater",
+  "stackSize" 50,
+  "hpMax" 800,
+  "_SlotConfig"
+  {"addonAreaCenter" [[0 0 0] [0 1.333299994468689 -1.25]],
+   "selectCenter" [0 1.25 -0.20000000298023224],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [nil nil],
+   "overrideBarWidth" 2.799999952316284,
+   "selectSize" [1.2999999523162842 2.5 4.800000190734863],
+   "signHeight" 1,
+   "slotPoses" [],
+   "signSize" 1,
+   "selectDistance" 34,
+   "overrideBarHeight" 1.899999976158142},
+  "description" "I喷涂机",
+  "canBuild" true,
+  "buildIndex" 310}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 3},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "30000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "300"}},
+  "id" 2107,
+  "descFields" [53 38 12 10 44 1 40],
+  "modelIndex" 371,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "STORAGE",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints" [],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "物流配送器",
+  "buildMode" 5,
+  "_typeString" "物流运输",
+  "gridIndex" 2211,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "12 hp"}
+   {"key" "最大充能功率", "value" "9 MW"}
+   {"key" "待机功率", "value" "18 KW"}
+   {"key" "蓄电量", "value" "0J"}
+   {"key" "配送范围", "value" "-"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/delivery-machine",
+  "stackSize" 50,
+  "hpMax" 1200,
+  "_SlotConfig"
+  {"addonAreaCenter" [[0 0 0]],
+   "selectCenter" [0 1.100000023841858 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [nil],
+   "overrideBarWidth" 0,
+   "selectSize" [3 1.899999976158142 3.200000047683716],
+   "signHeight" 0.6000000238418579,
+   "slotPoses" [],
+   "signSize" 1.5,
+   "selectDistance" 800,
+   "overrideBarHeight" 0},
+  "description" "I物流配送器",
+  "canBuild" true,
+  "buildIndex" 601}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "dropRate" 0.5,
+  "subId" 1,
+  "id" 2101,
+  "descFields" [53 17 1 40],
+  "modelIndex" 51,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 2.6666665077209473 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [2020],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[1.4500000476837158 0.30000001192092896 -1.4500000476837158]
+    [-1.4500000476837158 0.30000001192092896 -1.4500000476837158]
+    [-1.4500000476837158 0.30000001192092896 1.4500000476837158]
+    [1.4500000476837158 0.30000001192092896 1.4500000476837158]],
+   "multiLevel" true,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" true,
+   "landOffset" 0},
+  "name" "小型储物仓",
+  "buildMode" 1,
+  "_typeString" "物流运输",
+  "gridIndex" 2208,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "8 hp"}
+   {"key" "仓储空间", "value" [30 "仓储空间的后缀"]}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/storage-1",
+  "stackSize" 50,
+  "_StorageDesc" {"colCount" 10, "rowCount" 3},
+  "hpMax" 800,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 1.3300000429153442 0],
+   "insertPoses" [nil nil nil nil nil nil nil nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 2.5,
+   "selectSize"
+   [3.200000047683716 2.6700000762939453 3.200000047683716],
+   "signHeight" 1.25,
+   "slotPoses" [],
+   "signSize" 2.299999952316284,
+   "selectDistance" 34,
+   "overrideBarHeight" 1.9500000476837158},
+  "description" "I小型储物仓",
+  "canBuild" true,
+  "buildIndex" 401}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "dropRate" 0.5,
+  "subId" 2,
+  "id" 2102,
+  "descFields" [53 17 1 40],
+  "modelIndex" 52,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 4 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [3009],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[2.8499999046325684 0.30000001192092896 1.899999976158142]
+    [2.8499999046325684 0.30000001192092896 -1.899999976158142]
+    [-2.8499999046325684 0.30000001192092896 -1.899999976158142]
+    [-2.8499999046325684 0.30000001192092896 1.899999976158142]],
+   "multiLevel" true,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [true],
+   "multiLevelAllowInserter" true,
+   "landOffset" 0},
+  "name" "大型储物仓",
+  "buildMode" 1,
+  "_typeString" "物流运输",
+  "gridIndex" 2209,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "16 hp"}
+   {"key" "仓储空间", "value" [60 "仓储空间的后缀"]}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/storage-2",
+  "stackSize" 50,
+  "_StorageDesc" {"colCount" 10, "rowCount" 6},
+  "hpMax" 1600,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 2 0],
+   "insertPoses" [nil nil nil nil nil nil nil nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 4.5,
+   "selectSize" [6.199999809265137 4 4.199999809265137],
+   "signHeight" 1.899999976158142,
+   "slotPoses" [],
+   "signSize" 2.299999952316284,
+   "selectDistance" 34,
+   "overrideBarHeight" 2.799999952316284},
+  "description" "I大型储物仓",
+  "canBuild" true,
+  "buildIndex" 402}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "id" 2106,
+  "descFields" [53 30 1 40],
+  "modelIndex" 121,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 4 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[0 0.09000000357627869 2.3299999237060547]
+    [2.3299999237060547 0.09000000357627869 0]
+    [0 0.09000000357627869 -2.3299999237060547]
+    [-2.3299999237060547 0.09000000357627869 0]],
+   "multiLevel" true,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "储液罐",
+  "buildMode" 1,
+  "_typeString" "物流运输",
+  "gridIndex" 2210,
+  "type" "LOGISTICS",
+  "_TankDesc" {"fluidStorageCount" 10000},
+  "_descFields"
+  [{"key" "最大耐久度", "value" "12 hp"}
+   {"key" "流体容量", "value" 10000}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/storage-tank",
+  "stackSize" 50,
+  "hpMax" 1200,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 2 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 4,
+   "selectSize" [4.800000190734863 4 4.800000190734863],
+   "signHeight" 3,
+   "slotPoses" [nil nil nil nil],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 2.9000000953674316},
+  "description" "I储液罐",
+  "canBuild" true,
+  "buildIndex" 403}
+ {"upgrades" [2303 2304 2305 2318],
+  "grade" 1,
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "4500"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "200"}},
+  "id" 2303,
+  "descFields" [53 22 11 12 1 40],
+  "modelIndex" 65,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[-2 0.30000001192092896 2]
+    [2 0.30000001192092896 2]
+    [2 0.30000001192092896 -2]
+    [-2 0.30000001192092896 -2]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "制造台 Mk.I",
+  "buildMode" 1,
+  "_AssemblerDesc" {"speed" 7500, "recipeType" "ASSEMBLE"},
+  "_typeString" "生产设备",
+  "gridIndex" 2404,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "10 hp"}
+   {"key" "制造速度", "value" "0.75x"}
+   {"key" "工作功率", "value" "270 KW"}
+   {"key" "待机功率", "value" "12 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/assembler-1",
+  "stackSize" 50,
+  "hpMax" 1000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 2.299999952316284 0],
+   "insertPoses" [nil nil nil nil nil nil nil nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [4.199999809265137 4.599999904632568 4.199999809265137],
+   "signHeight" 2,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I制造台 Mk.I",
+  "canBuild" true,
+  "buildIndex" 503}
+ {"upgrades" [2303 2304 2305 2318],
+  "grade" 2,
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "9000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "300"}},
+  "id" 2304,
+  "descFields" [53 22 11 12 1 40],
+  "modelIndex" 66,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[-2 0.30000001192092896 2]
+    [2 0.30000001192092896 2]
+    [2 0.30000001192092896 -2]
+    [-2 0.30000001192092896 -2]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "制造台 Mk.II",
+  "buildMode" 1,
+  "_AssemblerDesc" {"speed" 10000, "recipeType" "ASSEMBLE"},
+  "_typeString" "生产设备",
+  "gridIndex" 2405,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "10 hp"}
+   {"key" "制造速度", "value" "1x"}
+   {"key" "工作功率", "value" "540 KW"}
+   {"key" "待机功率", "value" "18 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/assembler-2",
+  "stackSize" 50,
+  "hpMax" 1000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 2.299999952316284 0],
+   "insertPoses" [nil nil nil nil nil nil nil nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [4.199999809265137 4.599999904632568 4.199999809265137],
+   "signHeight" 2,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I制造台 Mk.II",
+  "canBuild" true,
+  "buildIndex" 504}
+ {"upgrades" [2303 2304 2305 2318],
+  "grade" 3,
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "18000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "400"}},
+  "id" 2305,
+  "descFields" [53 22 11 12 1 40],
+  "modelIndex" 67,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[-2 0.30000001192092896 2]
+    [2 0.30000001192092896 2]
+    [2 0.30000001192092896 -2]
+    [-2 0.30000001192092896 -2]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "制造台 Mk.III",
+  "buildMode" 1,
+  "_AssemblerDesc" {"speed" 15000, "recipeType" "ASSEMBLE"},
+  "_typeString" "生产设备",
+  "gridIndex" 2406,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "10 hp"}
+   {"key" "制造速度", "value" "1.5x"}
+   {"key" "工作功率", "value" "1 MW"}
+   {"key" "待机功率", "value" "24 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/assembler-3",
+  "stackSize" 50,
+  "hpMax" 1000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 2.299999952316284 0],
+   "insertPoses" [nil nil nil nil nil nil nil nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [4.199999809265137 4.599999904632568 4.199999809265137],
+   "signHeight" 2,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I制造台 Mk.III",
+  "canBuild" true,
+  "buildIndex" 505}
+ {"upgrades" [2303 2304 2305 2318],
+  "grade" 4,
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "45000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "900"}},
+  "id" 2318,
+  "descFields" [53 22 11 12 1 40],
+  "modelIndex" 456,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[-2 0.30000001192092896 2]
+    [2 0.30000001192092896 2]
+    [2 0.30000001192092896 -2]
+    [-2 0.30000001192092896 -2]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "制造台 Mk.IV",
+  "buildMode" 1,
+  "_AssemblerDesc" {"speed" 30000, "recipeType" "ASSEMBLE"},
+  "_typeString" "生产设备",
+  "gridIndex" 2407,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "30 hp"}
+   {"key" "制造速度", "value" "3x"}
+   {"key" "工作功率", "value" "2 MW"}
+   {"key" "待机功率", "value" "54 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/assembler-4",
+  "stackSize" 50,
+  "hpMax" 3000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 2.299999952316284 0],
+   "insertPoses" [nil nil nil nil nil nil nil nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [4.199999809265137 4.599999904632568 4.199999809265137],
+   "signHeight" 2,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I制造台 Mk.IV",
+  "canBuild" true,
+  "buildIndex" 808}
+ {"modelCount" 1,
+  "_PowerDesc"
+  {"node" true,
+   "connectDistance" 22.5,
+   "coverRadius" 10.5,
+   "powerPoint" [0 4 0]},
+  "subId" 1,
+  "id" 2201,
+  "descFields" [53 13 14 1 40],
+  "modelIndex" 44,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints" [[0 0.20000000298023224 0]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "电力感应塔",
+  "buildMode" 1,
+  "_typeString" "电力运输",
+  "gridIndex" 2101,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "5 hp"}
+   {"key" "连接长度", "value" "22 m"}
+   {"key" "覆盖范围", "value" "10 m"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/tesla-coil",
+  "stackSize" 100,
+  "hpMax" 500,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 3 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize" [1.25 6 1.25],
+   "signHeight" 3,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I电力感应塔",
+  "canBuild" true,
+  "buildIndex" 101}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 1},
+  "_PowerDesc"
+  {"node" true,
+   "connectDistance" 45.5,
+   "coverRadius" 6.5,
+   "powerPoint" [0 6.599999904632568 0]},
+  "subId" 2,
+  "id" 2202,
+  "descFields" [53 13 14 11 12 1 40],
+  "modelIndex" 71,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints" [[0 0.20000000298023224 0]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "无线输电塔",
+  "buildMode" 1,
+  "_typeString" "电力运输",
+  "gridIndex" 2102,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "6 hp"}
+   {"key" "连接长度", "value" "45 m"}
+   {"key" "覆盖范围", "value" "6 m"}
+   {"key" "工作功率", "value" "0W"}
+   {"key" "待机功率", "value" "0W"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/charging-pole",
+  "stackSize" 100,
+  "hpMax" 600,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 4.599999904632568 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [2.299999952316284 9.199999809265137 2.299999952316284],
+   "signHeight" 3,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I无线输电塔",
+  "canBuild" true,
+  "buildIndex" 102}
+ {"modelCount" 1,
+  "_PowerDesc"
+  {"node" true,
+   "connectDistance" 53.5,
+   "coverRadius" 26.5,
+   "powerPoint" [0 4 0]},
+  "subId" 3,
+  "id" 2212,
+  "descFields" [53 13 14 12 1 40],
+  "modelIndex" 68,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[0 0.30000001192092896 1.850000023841858]
+    [1.850000023841858 0.30000001192092896 0]
+    [0 0.30000001192092896 -1.850000023841858]
+    [-1.850000023841858 0.30000001192092896 0]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "卫星配电站",
+  "buildMode" 1,
+  "_typeString" "电力运输",
+  "gridIndex" 2103,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "8 hp"}
+   {"key" "连接长度", "value" "53 m"}
+   {"key" "覆盖范围", "value" "26 m"}
+   {"key" "待机功率", "value" "0W"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/orbital-substation",
+  "stackSize" 30,
+  "hpMax" 800,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 3.5 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize" [3.5 7 3.5],
+   "signHeight" 3,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I卫星配电站",
+  "canBuild" true,
+  "buildIndex" 103}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 1},
+  "_PowerDesc"
+  {"genEnergyPerTick" {":type" "BigInt", "value" "5000"},
+   "connectDistance" 16.5,
+   "gamma" false,
+   "fuelMask" 0,
+   "photovoltaic" false,
+   "geothermal" false,
+   "productId" 0,
+   "catalystId" 0,
+   "useFuelPerTick" {":type" "BigInt", "value" "0"},
+   "powerPoint" [0 0.4000000059604645 0],
+   "generator" true,
+   "productHeat" {":type" "BigInt", "value" "0"},
+   "coverRadius" 7.699999809265137,
+   "wind" true,
+   "node" true},
+  "subId" 4,
+  "id" 2203,
+  "descFields" [53 4 5 13 14 1 40],
+  "modelIndex" 53,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" true,
+   "needBuildInWaterTech" true,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [1000],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [10.5 10.5],
+   "landPoints"
+   [[-2 0.12999999523162842 0]
+    [1 0.12999999523162842 1.7300000190734863]
+    [1 0.12999999523162842 -1.7300000190734863]
+    [-0.6000000238418579 0.12999999523162842 -1]
+    [1.1200000047683716 0.12999999523162842 0]
+    [-0.6000000238418579 0.12999999523162842 1]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0.15000000596046448},
+  "name" "风力涡轮机",
+  "buildMode" 1,
+  "_typeString" "电力设备",
+  "gridIndex" 2104,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "8 hp"}
+   {"key" "发电类型", "value" "离子流"}
+   {"key" "发电功率", "value" "300 KW"}
+   {"key" "连接长度", "value" "16 m"}
+   {"key" "覆盖范围", "value" "7.2 m"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/wind-turbine",
+  "stackSize" 50,
+  "hpMax" 800,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0.30000001192092896 3.700000047683716 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize" [3.5 7.400000095367432 3.799999952316284],
+   "signHeight" 3,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I风力涡轮机",
+  "canBuild" true,
+  "buildIndex" 104}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 1},
+  "_PowerDesc"
+  {"genEnergyPerTick" {":type" "BigInt", "value" "36000"},
+   "connectDistance" 11.75,
+   "gamma" false,
+   "fuelMask" 1,
+   "photovoltaic" false,
+   "geothermal" false,
+   "productId" 0,
+   "catalystId" 0,
+   "useFuelPerTick" {":type" "BigInt", "value" "45000"},
+   "powerPoint" [0 1.8799999952316284 0],
+   "generator" true,
+   "productHeat" {":type" "BigInt", "value" "0"},
+   "coverRadius" 4.5,
+   "wind" false,
+   "node" true},
+  "subId" 5,
+  "id" 2204,
+  "descFields" [53 4 5 6 1 40],
+  "modelIndex" 54,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[-2.4000000953674316 0.30000001192092896 3.700000047683716]
+    [-2.4000000953674316 0.30000001192092896 -2.799999952316284]
+    [-2.4000000953674316 0.30000001192092896 0]
+    [0.800000011920929 0.30000001192092896 3.799999952316284]
+    [1.600000023841858 0.30000001192092896 -2.799999952316284]
+    [1 0.30000001192092896 0]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "火力发电厂",
+  "buildMode" 1,
+  "_typeString" "电力设备",
+  "gridIndex" 2105,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "20 hp"}
+   {"key" "发电类型", "value" "离子流"}
+   {"key" "发电功率", "value" "2 MW"}
+   {"key" "热效率", "value" "0 %"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/fuel-plant",
+  "stackSize" 50,
+  "hpMax" 2000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter"
+   [-0.4000000059604645 2.0999999046325684 0.44999998807907104],
+   "insertPoses" [nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize" [4.800000190734863 4.199999809265137 9],
+   "signHeight" 2,
+   "slotPoses" [],
+   "signSize" 2.200000047683716,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I火力发电厂",
+  "canBuild" true,
+  "buildIndex" 105}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 1},
+  "_PowerDesc"
+  {"genEnergyPerTick" {":type" "BigInt", "value" "250000"},
+   "connectDistance" 11.75,
+   "gamma" false,
+   "fuelMask" 2,
+   "photovoltaic" false,
+   "geothermal" false,
+   "productId" 0,
+   "catalystId" 0,
+   "useFuelPerTick" {":type" "BigInt", "value" "250000"},
+   "powerPoint" [0 1.8799999952316284 0],
+   "generator" true,
+   "productHeat" {":type" "BigInt", "value" "0"},
+   "coverRadius" 4.5,
+   "wind" false,
+   "node" true},
+  "subId" 6,
+  "id" 2211,
+  "descFields" [53 4 5 1 40],
+  "modelIndex" 118,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[-2.4000000953674316 0.30000001192092896 3.700000047683716]
+    [-2.4000000953674316 0.30000001192092896 -2.799999952316284]
+    [-2.4000000953674316 0.30000001192092896 0]
+    [0.800000011920929 0.30000001192092896 3.799999952316284]
+    [1.600000023841858 0.30000001192092896 -2.799999952316284]
+    [1 0.30000001192092896 0]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "微型聚变发电站",
+  "buildMode" 1,
+  "_typeString" "电力设备",
+  "gridIndex" 2108,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "20 hp"}
+   {"key" "发电类型", "value" "离子流"}
+   {"key" "发电功率", "value" "15 MW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/fusion-power-station",
+  "stackSize" 50,
+  "hpMax" 2000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter"
+   [-0.4000000059604645 2.0999999046325684 0.44999998807907104],
+   "insertPoses" [nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize" [4.800000190734863 4.199999809265137 9],
+   "signHeight" 2,
+   "slotPoses" [],
+   "signSize" 2.200000047683716,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I微型聚变发电站",
+  "canBuild" true,
+  "buildIndex" 108}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 1},
+  "_PowerDesc"
+  {"genEnergyPerTick" {":type" "BigInt", "value" "80000"},
+   "connectDistance" 22,
+   "gamma" false,
+   "fuelMask" 0,
+   "photovoltaic" false,
+   "geothermal" true,
+   "productId" 0,
+   "catalystId" 0,
+   "useFuelPerTick" {":type" "BigInt", "value" "0"},
+   "powerPoint" [0 1.2000000476837158 0],
+   "generator" true,
+   "productHeat" {":type" "BigInt", "value" "0"},
+   "coverRadius" 0,
+   "wind" false,
+   "node" true},
+  "subId" 12,
+  "id" 2213,
+  "descFields" [53 4 39 1 40],
+  "modelIndex" 255,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [-1],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [12 12],
+   "landPoints" [],
+   "multiLevel" false,
+   "waterPoints"
+   [[0 -0.5 -1.2999999523162842]
+    [0.5 -0.5 1.2999999523162842]
+    [-0.5 -0.5 1.2999999523162842]],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "地热发电站",
+  "buildMode" 1,
+  "_typeString" "电力设备",
+  "gridIndex" 2107,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "20 hp"}
+   {"key" "发电类型", "value" "地热"}
+   {"key" "基础发电功率", "value" "4 MW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/geothermal-power-station",
+  "stackSize" 50,
+  "hpMax" 2000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 2 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize" [6 10 8],
+   "signHeight" 3,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I地热发电站",
+  "canBuild" true,
+  "buildIndex" 107}
+ {"_MinerDesc" {"minerType" "VEIN", "period" 1200000},
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 2},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "7000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "400"}},
+  "subId" 1,
+  "id" 2301,
+  "descFields" [53 18 19 11 12 1 40],
+  "modelIndex" 57,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" true,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[-2.6500000953674316 0.20000000298023224 -4.300000190734863]
+    [2.6500000953674316 0.20000000298023224 -4.300000190734863]
+    [0 0.20000000298023224 -3.200000047683716]
+    [-1.899999976158142 0.20000000298023224 2.0999999046325684]
+    [1.899999976158142 0.20000000298023224 2.0999999046325684]
+    [1.899999976158142 0.11999999731779099 3.5999999046325684]
+    [-1.899999976158142 0.11999999731779099 3.5999999046325684]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "采矿机",
+  "buildMode" 1,
+  "_typeString" "采矿设备",
+  "gridIndex" 2305,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "12 hp"}
+   {"key" "开采对象", "value" "-"}
+   {"key" "开采速度", "value" "-"}
+   {"key" "工作功率", "value" "420 KW"}
+   {"key" "待机功率", "value" "24 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/mining-drill",
+  "stackSize" 50,
+  "hpMax" 1200,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 1.7999999523162842 0.30000001192092896],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [3.799999952316284 3.5999999046325684 6.800000190734863],
+   "signHeight" 0.800000011920929,
+   "slotPoses" [nil],
+   "signSize" 2.4000000953674316,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I采矿机",
+  "canBuild" true,
+  "buildIndex" 201}
+ {"_MinerDesc" {"minerType" "VEIN", "period" 600000},
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 2},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "49000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "2800"}},
+  "subId" 2,
+  "id" 2316,
+  "descFields" [53 18 19 11 12 1 40],
+  "modelIndex" 256,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" true,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[3.200000047683716 0.20000000298023224 0]
+    [-3.200000047683716 0.20000000298023224 0]
+    [0 0.20000000298023224 -3.200000047683716]
+    [0 0.20000000298023224 3.200000047683716]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "大型采矿机",
+  "buildMode" 1,
+  "_typeString" "采矿设备",
+  "gridIndex" 2306,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "20 hp"}
+   {"key" "开采对象", "value" "-"}
+   {"key" "开采速度", "value" "-"}
+   {"key" "工作功率", "value" "2 MW"}
+   {"key" "待机功率", "value" "168 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "_StationDesc"
+  {"maxShipCount" 0,
+   "maxDroneCount" 0,
+   "isVeinCollector" true,
+   "isCollector" false,
+   "maxEnergyAcc" {":type" "BigInt", "value" "0"},
+   "isStellar" false,
+   "maxItemKinds" 1,
+   "collectSpeed" 0,
+   "maxItemCount" 5000,
+   "shipPoint" [0 0 0],
+   "dronePoint" [0 10 -2]},
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/mining-drill-mk2",
+  "stackSize" 30,
+  "hpMax" 2000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 8 -0.4000000059604645],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 8,
+   "selectSize" [5 16 8],
+   "signHeight" 4.199999809265137,
+   "slotPoses" [nil nil nil nil nil nil nil nil nil],
+   "signSize" 3,
+   "selectDistance" 600,
+   "overrideBarHeight" 14},
+  "description" "I大型采矿机",
+  "canBuild" true,
+  "buildIndex" 202}
+ {"_MinerDesc" {"minerType" "WATER", "period" 720000},
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 2},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "5000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "200"}},
+  "id" 2306,
+  "descFields" [53 18 19 11 12 1 40],
+  "modelIndex" 60,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [1000 1116],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[-0.699999988079071 0.5 2.799999952316284]
+    [0.699999988079071 0.5 2.799999952316284]
+    [1.0499999523162842 0.5 1.9500000476837158]
+    [-1.0499999523162842 0.5 1.9500000476837158]],
+   "multiLevel" false,
+   "waterPoints"
+   [[-0.4000000059604645 0.029999999329447746 -2.5999999046325684]
+    [0.4000000059604645 0.029999999329447746 -2.5999999046325684]
+    [-1.25 0.029999999329447746 -1.7999999523162842]
+    [1.25 0.029999999329447746 -1.7999999523162842]],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "抽水站",
+  "buildMode" 1,
+  "_typeString" "抽水设备",
+  "gridIndex" 2307,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "10 hp"}
+   {"key" "开采对象", "value" "-"}
+   {"key" "开采速度", "value" "-"}
+   {"key" "工作功率", "value" "300 KW"}
+   {"key" "待机功率", "value" "12 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/water-pump",
+  "stackSize" 30,
+  "hpMax" 1000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 3 0.10000000149011612],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize" [2.5999999046325684 6 5.599999904632568],
+   "signHeight" 3,
+   "slotPoses" [nil],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I抽水站",
+  "canBuild" true,
+  "buildIndex" 203}
+ {"upgrades" [2302 2315 2319],
+  "grade" 1,
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "6000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "200"}},
+  "id" 2302,
+  "descFields" [53 22 11 12 1 40],
+  "modelIndex" 62,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[-1.5 0.30000001192092896 1.5]
+    [1.5 0.30000001192092896 1.5]
+    [-1.5 0.30000001192092896 -1.5]
+    [1.5 0.30000001192092896 -1.5]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "电弧熔炉",
+  "buildMode" 1,
+  "_AssemblerDesc" {"speed" 10000, "recipeType" "SMELT"},
+  "_typeString" "生产设备",
+  "gridIndex" 2401,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "10 hp"}
+   {"key" "制造速度", "value" "1x"}
+   {"key" "工作功率", "value" "360 KW"}
+   {"key" "待机功率", "value" "12 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/smelter",
+  "stackSize" 50,
+  "hpMax" 1000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 1.899999976158142 0],
+   "insertPoses" [nil nil nil nil nil nil nil nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [3.200000047683716 3.799999952316284 3.200000047683716],
+   "signHeight" 1.100000023841858,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I电弧熔炉",
+  "canBuild" true,
+  "buildIndex" 501}
+ {"upgrades" [2302 2315 2319],
+  "grade" 2,
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "24000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "800"}},
+  "id" 2315,
+  "descFields" [53 22 11 12 1 40],
+  "modelIndex" 194,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[-1.5 0.30000001192092896 1.5]
+    [1.5 0.30000001192092896 1.5]
+    [-1.5 0.30000001192092896 -1.5]
+    [1.5 0.30000001192092896 -1.5]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "位面熔炉",
+  "buildMode" 1,
+  "_AssemblerDesc" {"speed" 20000, "recipeType" "SMELT"},
+  "_typeString" "生产设备",
+  "gridIndex" 2402,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "15 hp"}
+   {"key" "制造速度", "value" "2x"}
+   {"key" "工作功率", "value" "1 MW"}
+   {"key" "待机功率", "value" "48 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/smelter-2",
+  "stackSize" 50,
+  "hpMax" 1500,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 1.899999976158142 0],
+   "insertPoses" [nil nil nil nil nil nil nil nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [3.200000047683716 3.799999952316284 3.200000047683716],
+   "signHeight" 1.100000023841858,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I位面熔炉",
+  "canBuild" true,
+  "buildIndex" 502}
+ {"upgrades" [2302 2315 2319],
+  "grade" 3,
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "48000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "1600"}},
+  "id" 2319,
+  "descFields" [53 22 11 12 1 40],
+  "modelIndex" 457,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[-1.5 0.30000001192092896 1.5]
+    [1.5 0.30000001192092896 1.5]
+    [-1.5 0.30000001192092896 -1.5]
+    [1.5 0.30000001192092896 -1.5]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "熔炉 Mk.III",
+  "buildMode" 1,
+  "_AssemblerDesc" {"speed" 30000, "recipeType" "SMELT"},
+  "_typeString" "生产设备",
+  "gridIndex" 2403,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "30 hp"}
+   {"key" "制造速度", "value" "3x"}
+   {"key" "工作功率", "value" "2 MW"}
+   {"key" "待机功率", "value" "96 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/smelter-3",
+  "stackSize" 50,
+  "hpMax" 3000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 1.899999976158142 0],
+   "insertPoses" [nil nil nil nil nil nil nil nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [3.200000047683716 3.799999952316284 3.200000047683716],
+   "signHeight" 1.100000023841858,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I熔炉 Mk.III",
+  "canBuild" true,
+  "buildIndex" 807}
+ {"_MinerDesc" {"minerType" "OIL", "period" 600000},
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 2},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "14000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "400"}},
+  "id" 2307,
+  "descFields" [53 18 19 11 12 1 40],
+  "modelIndex" 61,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[0 1 5.5]
+    [-2.700000047683716 1 4.800000190734863]
+    [2.700000047683716 1 4.800000190734863]
+    [-3.3499999046325684 1 2.950000047683716]
+    [3.3499999046325684 1 2.950000047683716]
+    [1.399999976158142 1 -3.3499999046325684]
+    [-1.399999976158142 1 -3.3499999046325684]
+    [0 1 -5.28000020980835]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" true,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "原油萃取站",
+  "buildMode" 1,
+  "_typeString" "抽油设备",
+  "gridIndex" 2308,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "20 hp"}
+   {"key" "开采对象", "value" "-"}
+   {"key" "开采速度", "value" "-"}
+   {"key" "工作功率", "value" "840 KW"}
+   {"key" "待机功率", "value" "24 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/oil-extractor",
+  "stackSize" 20,
+  "hpMax" 2000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 5.800000190734863 0.20000000298023224],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [6.900000095367432 11.600000381469727 12.600000381469727],
+   "signHeight" 4,
+   "slotPoses" [nil],
+   "signSize" 2.200000047683716,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I原油萃取站",
+  "canBuild" true,
+  "buildIndex" 204}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "16000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "400"}},
+  "id" 2308,
+  "descFields" [53 22 11 12 1 40],
+  "modelIndex" 63,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[0 0.30000001192092896 3.299999952316284]
+    [1.9800000190734863 0.30000001192092896 2]
+    [-1.9800000190734863 0.30000001192092896 2]
+    [-2.049999952316284 0.30000001192092896 -1]
+    [2.049999952316284 0.30000001192092896 -1]
+    [1.2000000476837158 0.30000001192092896 -3.950000047683716]
+    [-1.2000000476837158 0.30000001192092896 -3.950000047683716]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "原油精炼厂",
+  "buildMode" 1,
+  "_AssemblerDesc" {"speed" 10000, "recipeType" "REFINE"},
+  "_typeString" "生产设备",
+  "gridIndex" 2309,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "18 hp"}
+   {"key" "制造速度", "value" "1x"}
+   {"key" "工作功率", "value" "960 KW"}
+   {"key" "待机功率", "value" "24 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/oil-refinery",
+  "stackSize" 30,
+  "hpMax" 1800,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 5.300000190734863 -0.3199999928474426],
+   "insertPoses" [nil nil nil nil nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [4.199999809265137 10.600000381469727 7.400000095367432],
+   "signHeight" 4,
+   "slotPoses" [],
+   "signSize" 2.200000047683716,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I原油精炼厂",
+  "canBuild" true,
+  "buildIndex" 506}
+ {"upgrades" [2309 2317],
+  "grade" 1,
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "12000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "400"}},
+  "id" 2309,
+  "descFields" [53 22 11 12 1 40],
+  "modelIndex" 64,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [8.399999618530273 4.5],
+   "landPoints"
+   [[-4.199999809265137 0.30000001192092896 0]
+    [-2 0.30000001192092896 3.380000114440918]
+    [2.799999952316284 0.30000001192092896 2.799999952316284]
+    [4.800000190734863 0.30000001192092896 0.5]
+    [2.819999933242798 0.30000001192092896 -1.5499999523162842]
+    [-2.200000047683716 0.30000001192092896 -1.7999999523162842]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "化工厂",
+  "buildMode" 1,
+  "_AssemblerDesc" {"speed" 10000, "recipeType" "CHEMICAL"},
+  "_typeString" "生产设备",
+  "gridIndex" 2311,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "12 hp"}
+   {"key" "制造速度", "value" "1x"}
+   {"key" "工作功率", "value" "720 KW"}
+   {"key" "待机功率", "value" "24 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/chemical-plant",
+  "stackSize" 30,
+  "hpMax" 1200,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter"
+   [0.47999998927116394 3.1500000953674316 0.7799999713897705],
+   "insertPoses" [nil nil nil nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [9.199999809265137 6.300000190734863 5.300000190734863],
+   "signHeight" 3.5,
+   "slotPoses" [],
+   "signSize" 2.200000047683716,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I化工厂",
+  "canBuild" true,
+  "buildIndex" 508}
+ {"upgrades" [2309 2317],
+  "grade" 2,
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "36000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "600"}},
+  "id" 2317,
+  "descFields" [53 22 11 12 1 40],
+  "modelIndex" 376,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [8.399999618530273 4.5],
+   "landPoints"
+   [[-4.199999809265137 0.30000001192092896 0]
+    [-2 0.30000001192092896 3.380000114440918]
+    [2.799999952316284 0.30000001192092896 2.799999952316284]
+    [4.800000190734863 0.30000001192092896 0.5]
+    [2.819999933242798 0.30000001192092896 -1.5499999523162842]
+    [-2.200000047683716 0.30000001192092896 -1.7999999523162842]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "化工厂 Mk.II",
+  "buildMode" 1,
+  "_AssemblerDesc" {"speed" 20000, "recipeType" "CHEMICAL"},
+  "_typeString" "生产设备",
+  "gridIndex" 2312,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "12 hp"}
+   {"key" "制造速度", "value" "2x"}
+   {"key" "工作功率", "value" "2 MW"}
+   {"key" "待机功率", "value" "36 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/chemical-plant-2",
+  "stackSize" 30,
+  "hpMax" 1200,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter"
+   [0.23000000417232513 3.1500000953674316 0.7799999713897705],
+   "insertPoses" [nil nil nil nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [9.699999809265137 6.300000190734863 5.300000190734863],
+   "signHeight" 3.5,
+   "slotPoses" [],
+   "signSize" 2.200000047683716,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I化工厂 Mk.II",
+  "canBuild" true,
+  "buildIndex" 509}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "12000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "300"}},
+  "id" 2314,
+  "descFields" [53 11 12 1 40],
+  "modelIndex" 119,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [5.5 5.5],
+   "landPoints"
+   [[0 0.09000000357627869 2.3299999237060547]
+    [2.3299999237060547 0.09000000357627869 0]
+    [0 0.09000000357627869 -2.3299999237060547]
+    [-2.3299999237060547 0.09000000357627869 0]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "分馏塔",
+  "buildMode" 1,
+  "_typeString" "生产设备",
+  "gridIndex" 2310,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "12 hp"}
+   {"key" "工作功率", "value" "720 KW"}
+   {"key" "待机功率", "value" "18 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/fractionator",
+  "stackSize" 30,
+  "_FractionatorDesc"
+  {"recipeType" "FRACTIONATE",
+   "fluidInputMax" 40,
+   "productOutputMax" 20,
+   "fluidOutputMax" 20},
+  "hpMax" 1200,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 4.699999809265137 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [4.800000190734863 9.399999618530273 4.800000190734863],
+   "signHeight" 4.5,
+   "slotPoses" [nil nil nil],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I分馏塔",
+  "canBuild" true,
+  "buildIndex" 507}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 1},
+  "_PowerDesc"
+  {"genEnergyPerTick" {":type" "BigInt", "value" "6000"},
+   "connectDistance" 6.75,
+   "gamma" false,
+   "fuelMask" 0,
+   "photovoltaic" true,
+   "geothermal" false,
+   "productId" 0,
+   "catalystId" 0,
+   "useFuelPerTick" {":type" "BigInt", "value" "0"},
+   "powerPoint" [0 0.5 0],
+   "generator" true,
+   "productHeat" {":type" "BigInt", "value" "0"},
+   "coverRadius" 0,
+   "wind" false,
+   "node" true},
+  "subId" 7,
+  "id" 2205,
+  "descFields" [53 4 39 1 40],
+  "modelIndex" 55,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[0 0.10999999940395355 -1.649999976158142]
+    [-1.649999976158142 0.10999999940395355 0]
+    [0 0.10999999940395355 1.649999976158142]
+    [1.649999976158142 0.10999999940395355 0]
+    [0.5 0.10999999940395355 -0.5]
+    [-0.5 0.10999999940395355 -0.5]
+    [-0.5 0.10999999940395355 0.5]
+    [0.5 0.10999999940395355 0.5]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "太阳能板",
+  "buildMode" 1,
+  "_typeString" "电力设备",
+  "gridIndex" 2106,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "10 hp"}
+   {"key" "发电类型", "value" "离子流"}
+   {"key" "基础发电功率", "value" "360 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/solar-panel",
+  "stackSize" 50,
+  "hpMax" 1000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 2 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 3.5999999046325684,
+   "selectSize" [3.5999999046325684 4 3.5999999046325684],
+   "signHeight" 3,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 3.5999999046325684},
+  "description" "I太阳能板",
+  "canBuild" true,
+  "buildIndex" 106}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 1},
+  "_PowerDesc"
+  {"node" true,
+   "connectDistance" 4.199999809265137,
+   "coverRadius" 0,
+   "powerPoint" [0 1.7000000476837158 0],
+   "accumulator" true,
+   "inputEnergyPerTick" {":type" "BigInt", "value" "25000"},
+   "outputEnergyPerTick" {":type" "BigInt", "value" "37500"},
+   "maxAcuEnergy" {":type" "BigInt", "value" "540000000"}},
+  "subId" 8,
+  "id" 2206,
+  "descFields" [53 8 9 10 1 40],
+  "modelIndex" 46,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[1.25 0.30000001192092896 1.25]
+    [-1.25 0.30000001192092896 1.25]
+    [-1.649999976158142 0.30000001192092896 0]
+    [1.649999976158142 0.30000001192092896 0]
+    [1.25 0.30000001192092896 -1.4500000476837158]
+    [-1.25 0.30000001192092896 -1.4500000476837158]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "蓄电器",
+  "buildMode" 1,
+  "_typeString" "电力储存",
+  "gridIndex" 2110,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "12 hp"}
+   {"key" "输入功率", "value" "1 MW"}
+   {"key" "输出功率", "value" "2 MW"}
+   {"key" "蓄电量", "value" "540 MJ"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/accumulator",
+  "stackSize" 50,
+  "hpMax" 1200,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 2.2300000190734863 -0.09000000357627869],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [3.2699999809265137 4.460000038146973 2.9800000190734863],
+   "signHeight" 3,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I蓄电器",
+  "canBuild" true,
+  "buildIndex" 109}
+ {"heatValue" {":type" "BigInt", "value" "540000000"},
+  "_fuelTypeString" "储存",
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 1},
+  "_PowerDesc"
+  {"node" true,
+   "connectDistance" 4.199999809265137,
+   "coverRadius" 0,
+   "powerPoint" [0 1.7000000476837158 0],
+   "accumulator" true,
+   "inputEnergyPerTick" {":type" "BigInt", "value" "25000"},
+   "outputEnergyPerTick" {":type" "BigInt", "value" "37500"},
+   "maxAcuEnergy" {":type" "BigInt", "value" "540000000"}},
+  "fuelType" 8,
+  "subId" 8,
+  "id" 2207,
+  "descFields" [53 2 3 31 8 9 10 1 40],
+  "modelIndex" 46,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[1.25 0.30000001192092896 1.25]
+    [-1.25 0.30000001192092896 1.25]
+    [-1.649999976158142 0.30000001192092896 0]
+    [1.649999976158142 0.30000001192092896 0]
+    [1.25 0.30000001192092896 -1.4500000476837158]
+    [-1.25 0.30000001192092896 -1.4500000476837158]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "蓄电器（满）",
+  "buildMode" 1,
+  "_typeString" "电力储存",
+  "produceFrom" "能量枢纽",
+  "gridIndex" 2111,
+  "reactorInc" 1,
+  "type" "LOGISTICS",
+  "preTechOverride" 1511,
+  "_descFields"
+  [{"key" "最大耐久度", "value" "12 hp"}
+   {"key" "燃料类型", "value" "储存"}
+   {"key" "能量", "value" "540 MJ"}
+   {"key" "机甲功率提升", "value" "+1%"}
+   {"key" "输入功率", "value" "1 MW"}
+   {"key" "输出功率", "value" "2 MW"}
+   {"key" "蓄电量", "value" "540 MJ"}
+   {"key" "制造于", "value" "能量枢纽"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/accumulator-full",
+  "unlockKey" 2206,
+  "stackSize" 50,
+  "hpMax" 1200,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 2.2300000190734863 -0.09000000357627869],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [3.2699999809265137 4.460000038146973 2.9800000190734863],
+   "signHeight" 3,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I蓄电器（满）",
+  "canBuild" true}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "30000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "1000"}},
+  "id" 2311,
+  "descFields" [53 34 11 12 1 40],
+  "modelIndex" 72,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [10.600000381469727 10.600000381469727],
+   "landPoints"
+   [[-2.4000000953674316 0.30000001192092896 2.4000000953674316]
+    [2.4000000953674316 0.30000001192092896 2.4000000953674316]
+    [2.4000000953674316 0.30000001192092896 -2.4000000953674316]
+    [-2.4000000953674316 0.30000001192092896 -2.4000000953674316]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "电磁轨道弹射器",
+  "buildMode" 1,
+  "_EjectorDesc"
+  {"pivotY" 2.5999999046325684,
+   "muzzleY" 5.400000095367432,
+   "chargeFrame" 120,
+   "coldFrame" 60,
+   "bulletProtoId" 1501},
+  "_typeString" "生产设备",
+  "gridIndex" 2410,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "20 hp"}
+   {"key" "弹射速度", "value" "20/min"}
+   {"key" "工作功率", "value" "1 MW"}
+   {"key" "待机功率", "value" "60 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/em-rail-ejector",
+  "stackSize" 30,
+  "hpMax" 2000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 3 0],
+   "insertPoses" [nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 6,
+   "selectSize" [5 6 5],
+   "signHeight" 2.5,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 6.199999809265137},
+  "description" "I电磁轨道弹射器",
+  "canBuild" true,
+  "buildIndex" 802}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 1},
+  "_PowerDesc"
+  {"genEnergyPerTick" {":type" "BigInt", "value" "100000"},
+   "connectDistance" 22.5,
+   "gamma" true,
+   "fuelMask" 0,
+   "photovoltaic" false,
+   "geothermal" false,
+   "productId" 1208,
+   "catalystId" 1209,
+   "useFuelPerTick" {":type" "BigInt", "value" "0"},
+   "powerPoint" [0 3 0],
+   "generator" true,
+   "productHeat" {":type" "BigInt", "value" "1200000000"},
+   "coverRadius" 10.5,
+   "wind" false,
+   "node" true},
+  "subId" 9,
+  "id" 2208,
+  "descFields" [53 4 39 1 40],
+  "modelIndex" 73,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [9.404999732971191 9.404999732971191],
+   "landPoints"
+   [[-3.799999952316284 0.30000001192092896 0]
+    [3.799999952316284 0.30000001192092896 0]
+    [0 0.30000001192092896 2.9000000953674316]
+    [0 0.30000001192092896 -2.9000000953674316]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "射线接收站",
+  "buildMode" 1,
+  "_typeString" "电力设备",
+  "gridIndex" 2112,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "30 hp"}
+   {"key" "发电类型", "value" "离子流"}
+   {"key" "基础发电功率", "value" "6 MW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/ray-receiver",
+  "stackSize" 20,
+  "hpMax" 3000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 5 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 8,
+   "selectSize" [7 10 5],
+   "signHeight" 3,
+   "slotPoses" [nil nil],
+   "signSize" 2,
+   "selectDistance" 39,
+   "overrideBarHeight" 9.5},
+  "description" "I射线接收站",
+  "canBuild" true,
+  "buildIndex" 803}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "300000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "1000"}},
+  "id" 2312,
+  "descFields" [53 35 11 12 1 40],
+  "modelIndex" 74,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[-8.619999885559082 0.30000001192092896 8.5]
+    [8.619999885559082 0.30000001192092896 8.5]
+    [0 0.30000001192092896 5.800000190734863]
+    [5.949999809265137 0.30000001192092896 0]
+    [-5.949999809265137 0.30000001192092896 0]
+    [-3.700000047683716 0.30000001192092896 -7]
+    [3.700000047683716 0.30000001192092896 -7]
+    [0 0.30000001192092896 -9.649999618530273]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "垂直发射井",
+  "buildMode" 1,
+  "_typeString" "生产设备",
+  "gridIndex" 2411,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "80 hp"}
+   {"key" "发射速度", "value" "5/min"}
+   {"key" "工作功率", "value" "18 MW"}
+   {"key" "待机功率", "value" "60 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "_SiloDesc"
+  {"chargeFrame" 480, "coldFrame" 240, "bulletProtoId" 1503},
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/vertical-launching-silo",
+  "stackSize" 10,
+  "hpMax" 8000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 9.5 0],
+   "insertPoses" [nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize" [15 19 18.200000762939453],
+   "signHeight" 6.599999904632568,
+   "slotPoses" [],
+   "signSize" 2.4000000953674316,
+   "selectDistance" 50,
+   "overrideBarHeight" 0},
+  "description" "I垂直发射井",
+  "canBuild" true,
+  "buildIndex" 804}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 1},
+  "_PowerDesc"
+  {"connectDistance" 15.5,
+   "maxExcEnergy" {":type" "BigInt", "value" "540000000"},
+   "fullId" 2207,
+   "exchanger" true,
+   "powerPoint" [0 3.549999952316284 0],
+   "coverRadius" 7,
+   "emptyId" 2206,
+   "exchangeEnergyPerTick" {":type" "BigInt", "value" "900000"},
+   "node" true},
+  "subId" 10,
+  "id" 2209,
+  "descFields" [53 8 9 10 1 40],
+  "modelIndex" 45,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [12.149999618530273 12.149999618530273],
+   "landPoints"
+   [[3.799999952316284 0.30000001192092896 3.799999952316284]
+    [3.799999952316284 0.30000001192092896 -3.799999952316284]
+    [-3.799999952316284 0.30000001192092896 -3.799999952316284]
+    [-3.799999952316284 0.30000001192092896 3.799999952316284]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "能量枢纽",
+  "buildMode" 1,
+  "_typeString" "电力运输",
+  "gridIndex" 2109,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "30 hp"}
+   {"key" "输入功率", "value" "54 MW"}
+   {"key" "输出功率", "value" "54 MW"}
+   {"key" "蓄电量", "value" "0J"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/energy-exchanger",
+  "stackSize" 20,
+  "hpMax" 3000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 6 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize" [8.300000190734863 12 8.300000190734863],
+   "signHeight" 3,
+   "slotPoses" [nil nil nil nil],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I能量枢纽",
+  "canBuild" true,
+  "buildIndex" 606}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "200000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "2000"}},
+  "id" 2310,
+  "descFields" [53 22 11 12 1 40],
+  "modelIndex" 69,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [12 6],
+   "landPoints"
+   [[4.650000095367432 0.30000001192092896 2.799999952316284]
+    [4.5 0.30000001192092896 0.4000000059604645]
+    [3.8499999046325684 0.30000001192092896 -1.899999976158142]
+    [0.25 0.30000001192092896 -2.5]
+    [0.25 0.30000001192092896 2.6500000953674316]
+    [-5.150000095367432 0.30000001192092896 2.5]
+    [-5.150000095367432 0.30000001192092896 -2.5999999046325684]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "微型粒子对撞机",
+  "buildMode" 1,
+  "_AssemblerDesc" {"speed" 10000, "recipeType" "PARTICLE"},
+  "_typeString" "生产设备",
+  "gridIndex" 2313,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "30 hp"}
+   {"key" "制造速度", "value" "1x"}
+   {"key" "工作功率", "value" "12 MW"}
+   {"key" "待机功率", "value" "120 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/hadron-collider",
+  "stackSize" 20,
+  "hpMax" 3000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [-0.699999988079071 6.5 0],
+   "insertPoses" [nil nil nil nil nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize" [11.199999809265137 13 6.099999904632568],
+   "signHeight" 4.5,
+   "slotPoses" [],
+   "signSize" 2.200000047683716,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I微型粒子对撞机",
+  "canBuild" true,
+  "buildIndex" 510}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 1},
+  "_PowerDesc"
+  {"genEnergyPerTick" {":type" "BigInt", "value" "1200000"},
+   "connectDistance" 15,
+   "gamma" false,
+   "fuelMask" 4,
+   "photovoltaic" false,
+   "geothermal" false,
+   "productId" 0,
+   "catalystId" 0,
+   "useFuelPerTick" {":type" "BigInt", "value" "1200000"},
+   "powerPoint" [0 1.440000057220459 0],
+   "generator" true,
+   "productHeat" {":type" "BigInt", "value" "0"},
+   "coverRadius" 5,
+   "wind" false,
+   "node" true},
+  "subId" 11,
+  "id" 2210,
+  "descFields" [53 4 5 6 1 40],
+  "modelIndex" 56,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[0 0.30000001192092896 3.5199999809265137]
+    [3.5199999809265137 0.30000001192092896 0]
+    [0 0.30000001192092896 -3.5199999809265137]
+    [-3.5199999809265137 0.30000001192092896 0]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "人造恒星",
+  "buildMode" 1,
+  "_typeString" "电力设备",
+  "gridIndex" 2113,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "20 hp"}
+   {"key" "发电类型", "value" "离子流"}
+   {"key" "发电功率", "value" "72 MW"}
+   {"key" "热效率", "value" "1 %"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/fusion-reactor",
+  "stackSize" 20,
+  "hpMax" 2000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 5.099999904632568 0],
+   "insertPoses" [nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [5.599999904632568 10.199999809265137 5.599999904632568],
+   "signHeight" 5.5,
+   "slotPoses" [],
+   "signSize" 2.200000047683716,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I人造恒星",
+  "canBuild" true,
+  "buildIndex" 805}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 3},
+  "dropRate" 0.5,
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "200000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "1000"}},
+  "id" 2103,
+  "descFields" [53 24 38 12 10 1 40],
+  "modelIndex" 49,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[4 0.30000001192092896 -2]
+    [-4 0.30000001192092896 -2]
+    [-4 0.30000001192092896 2]
+    [4 0.30000001192092896 2]
+    [2 0.30000001192092896 -4]
+    [-2 0.30000001192092896 -4]
+    [-2 0.30000001192092896 4]
+    [2 0.30000001192092896 4]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "物流运输站",
+  "buildMode" 1,
+  "_typeString" "物流运输",
+  "gridIndex" 2212,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "50 hp"}
+   {"key" "仓储物品", "value" [4 "仓储物品种类后缀"]}
+   {"key" "最大充能功率", "value" "60 MW"}
+   {"key" "待机功率", "value" "60 KW"}
+   {"key" "蓄电量", "value" "180 MJ"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "_StationDesc"
+  {"maxShipCount" 0,
+   "maxDroneCount" 50,
+   "isVeinCollector" false,
+   "isCollector" false,
+   "maxEnergyAcc" {":type" "BigInt", "value" "180000000"},
+   "isStellar" false,
+   "maxItemKinds" 4,
+   "collectSpeed" 0,
+   "maxItemCount" 5000,
+   "shipPoint" [0 26 0],
+   "dronePoint" [0 26 0]},
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/logistic-station",
+  "stackSize" 10,
+  "hpMax" 5000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 12.5 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 12,
+   "selectSize" [7.599999904632568 25 7.599999904632568],
+   "signHeight" 10.5,
+   "slotPoses" [nil nil nil nil nil nil nil nil nil nil nil nil],
+   "signSize" 2.200000047683716,
+   "selectDistance" 800,
+   "overrideBarHeight" 24},
+  "description" "I物流运输站",
+  "canBuild" true,
+  "buildIndex" 603}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 3},
+  "dropRate" 0.5,
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "1000000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "1000"}},
+  "id" 2104,
+  "descFields" [53 24 38 12 10 1 40],
+  "modelIndex" 50,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[4 0.30000001192092896 -2]
+    [-4 0.30000001192092896 -2]
+    [-4 0.30000001192092896 2]
+    [4 0.30000001192092896 2]
+    [2 0.30000001192092896 -4]
+    [-2 0.30000001192092896 -4]
+    [-2 0.30000001192092896 4]
+    [2 0.30000001192092896 4]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "星际物流运输站",
+  "buildMode" 1,
+  "_typeString" "物流运输",
+  "gridIndex" 2213,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "80 hp"}
+   {"key" "仓储物品", "value" [5 "仓储物品种类后缀"]}
+   {"key" "最大充能功率", "value" "300 MW"}
+   {"key" "待机功率", "value" "60 KW"}
+   {"key" "蓄电量", "value" "12 GJ"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "_StationDesc"
+  {"maxShipCount" 10,
+   "maxDroneCount" 100,
+   "isVeinCollector" false,
+   "isCollector" false,
+   "maxEnergyAcc" {":type" "BigInt", "value" "12000000000"},
+   "isStellar" true,
+   "maxItemKinds" 5,
+   "collectSpeed" 0,
+   "maxItemCount" 10000,
+   "shipPoint" [0 30.350000381469727 0],
+   "dronePoint" [0 26 0]},
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/interstellar-logistic-station",
+  "stackSize" 10,
+  "hpMax" 8000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 17 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 24,
+   "selectSize" [8 34 8],
+   "signHeight" 11.5,
+   "slotPoses" [nil nil nil nil nil nil nil nil nil nil nil nil],
+   "signSize" 2.200000047683716,
+   "selectDistance" 800,
+   "overrideBarHeight" 31},
+  "description" "I星际物流运输站",
+  "canBuild" true,
+  "buildIndex" 604}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 3},
+  "_PowerDesc" {},
+  "id" 2105,
+  "descFields" [53 18 11 32 1 40],
+  "modelIndex" 117,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[4 0.30000001192092896 -2]
+    [-4 0.30000001192092896 -2]
+    [-4 0.30000001192092896 2]
+    [4 0.30000001192092896 2]
+    [2 0.30000001192092896 -4]
+    [-2 0.30000001192092896 -4]
+    [-2 0.30000001192092896 4]
+    [2 0.30000001192092896 4]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "轨道采集器",
+  "buildMode" 1,
+  "_typeString" "物流运输",
+  "gridIndex" 2214,
+  "buildInGas" true,
+  "type" "LOGISTICS",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "80 hp"}
+   {"key" "开采对象", "value" "气态行星"}
+   {"key" "工作功率", "value" "0W"}
+   {"key" "采集速度", "value" [8 "x"]}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "_StationDesc"
+  {"maxShipCount" 10,
+   "maxDroneCount" 50,
+   "isVeinCollector" false,
+   "isCollector" true,
+   "maxEnergyAcc" {":type" "BigInt", "value" "8000000000"},
+   "isStellar" true,
+   "maxItemKinds" 6,
+   "collectSpeed" 8,
+   "maxItemCount" 5000,
+   "shipPoint" [0 30.350000381469727 0],
+   "dronePoint" [0 26 0]},
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/orbital-collector",
+  "stackSize" 10,
+  "hpMax" 8000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 17 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 24,
+   "selectSize" [8 34 8],
+   "signHeight" 11.5,
+   "slotPoses" [],
+   "signSize" 2.200000047683716,
+   "selectDistance" 2400,
+   "overrideBarHeight" 31},
+  "description" "I轨道采集器",
+  "canBuild" true,
+  "buildIndex" 605}
+ {"upgrades" [2901 2902],
+  "grade" 1,
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "8000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "200"}},
+  "id" 2901,
+  "descFields" [53 22 33 11 12 1 40],
+  "modelIndex" 70,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 4 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [2902],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[-2.799999952316284 0.4000000059604645 2.799999952316284]
+    [2.799999952316284 0.4000000059604645 2.799999952316284]
+    [2.799999952316284 0.4000000059604645 -2.799999952316284]
+    [-2.799999952316284 0.4000000059604645 -2.799999952316284]],
+   "multiLevel" true,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "_LabDesc" {"assembleSpeed" 10000, "researchSpeed" 1},
+  "name" "矩阵研究站",
+  "buildMode" 1,
+  "_typeString" "科研设备",
+  "gridIndex" 2408,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "12 hp"}
+   {"key" "制造速度", "value" "NaNx"}
+   {"key" "研究速度", "value" [60 " Hash/s"]}
+   {"key" "工作功率", "value" "480 KW"}
+   {"key" "待机功率", "value" "12 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/lab",
+  "stackSize" 50,
+  "hpMax" 1200,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 1.5499999523162842 0],
+   "insertPoses" [nil nil nil nil nil nil nil nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 4.5,
+   "selectSize"
+   [6.099999904632568 3.0999999046325684 6.099999904632568],
+   "signHeight" 1.399999976158142,
+   "slotPoses" [],
+   "signSize" 1.399999976158142,
+   "selectDistance" 34,
+   "overrideBarHeight" 3},
+  "description" "I矩阵研究站",
+  "canBuild" true,
+  "buildIndex" 801}
+ {"upgrades" [2901 2902],
+  "grade" 2,
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "32000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "800"}},
+  "id" 2902,
+  "descFields" [53 22 33 11 12 1 40],
+  "modelIndex" 455,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 4 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [2901],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[-2.799999952316284 0.4000000059604645 2.799999952316284]
+    [2.799999952316284 0.4000000059604645 2.799999952316284]
+    [2.799999952316284 0.4000000059604645 -2.799999952316284]
+    [-2.799999952316284 0.4000000059604645 -2.799999952316284]],
+   "multiLevel" true,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "_LabDesc" {"assembleSpeed" 30000, "researchSpeed" 1},
+  "name" "矩阵研究站 Mk.II",
+  "buildMode" 1,
+  "_typeString" "科研设备",
+  "gridIndex" 2409,
+  "type" "PRODUCTION",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "30 hp"}
+   {"key" "制造速度", "value" "NaNx"}
+   {"key" "研究速度", "value" [60 " Hash/s"]}
+   {"key" "工作功率", "value" "1 MW"}
+   {"key" "待机功率", "value" "48 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/lab-2",
+  "stackSize" 50,
+  "hpMax" 3000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 1.5499999523162842 0],
+   "insertPoses" [nil nil nil nil nil nil nil nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 4.5,
+   "selectSize"
+   [6.099999904632568 3.0999999046325684 6.099999904632568],
+   "signHeight" 1.399999976158142,
+   "slotPoses" [],
+   "signSize" 1.399999976158142,
+   "selectDistance" 34,
+   "overrideBarHeight" 3},
+  "description" "I矩阵研究站 Mk.II",
+  "canBuild" true,
+  "buildIndex" 806}
+ {"_TurretDesc"
+  {"spaceAttackRange" 0,
+   "addEnemyExpCoef" 0.20000000298023224,
+   "angleAcc" 0,
+   "addEnemyThreatBase" 2,
+   "addEnemyThreatCoef" 0.0010000000474974513,
+   "minAttackRange" 0,
+   "vsCaps" 15,
+   "muzzleY" 3.700000047683716,
+   "addEnemyExpBase" 700,
+   "ROF" 15000,
+   "maxAttackRange" 44,
+   "muzzleInterval" 105000,
+   "roundInterval" 285000,
+   "pitchUpMax" 70,
+   "damageScale" 1,
+   "type" "GAUSS",
+   "addEnemyHatredCoef" 0.004999999888241291,
+   "ammoType" "BULLET",
+   "aimSpeed" 1.2000000476837158,
+   "muzzleCount" 4,
+   "defaultDir" [0 0 1],
+   "uniformAngleSpeed" 0,
+   "pitchDownMax" 90,
+   "addEnemyHatredBase" 30},
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 3},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "3500"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "150"}},
+  "id" 3001,
+  "descFields" [53 51 56 57 52 49 11 12 1 40],
+  "modelIndex" 374,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "BELT",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[2 0.30000001192092896 2]
+    [-2 0.30000001192092896 2]
+    [2 0.30000001192092896 -2]
+    [-2 0.30000001192092896 -2]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "高斯机枪塔",
+  "buildMode" 5,
+  "_typeString" "武器",
+  "gridIndex" 2501,
+  "type" "TURRET",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "30 hp"}
+   {"key" "防御塔类型", "value" "动能武器"}
+   {"key" "目标类型", "value" "对地"}
+   {"key" "对地防御范围", "value" "44 m"}
+   {"key" "弹药类型", "value" "子弹"}
+   {"key" "射击速度", "value" [6 "发每秒"]}
+   {"key" "工作功率", "value" "210 KW"}
+   {"key" "待机功率", "value" "9000W"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/turret-gauss",
+  "stackSize" 50,
+  "hpMax" 3000,
+  "_SlotConfig"
+  {"addonAreaCenter" [[0 0 0]],
+   "selectCenter" [0 2.200000047683716 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [nil],
+   "overrideBarWidth" 0,
+   "selectSize" [4.5 4.5 4.5],
+   "signHeight" 3,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 50,
+   "overrideBarHeight" 0},
+  "description" "I高斯机枪塔",
+  "canBuild" true,
+  "buildIndex" 701}
+ {"_TurretDesc"
+  {"spaceAttackRange" 0,
+   "addEnemyExpCoef" 0.20000000298023224,
+   "angleAcc" 0,
+   "addEnemyThreatBase" 1,
+   "addEnemyThreatCoef" 0.0010000000474974513,
+   "minAttackRange" 0,
+   "vsCaps" 15,
+   "muzzleY" 4.5,
+   "addEnemyExpBase" 24,
+   "ROF" 600000,
+   "maxAttackRange" 40,
+   "muzzleInterval" 0,
+   "roundInterval" 600000,
+   "pitchUpMax" 70,
+   "damageScale" 2,
+   "type" "LASER",
+   "addEnemyHatredCoef" 0.004999999888241291,
+   "ammoType" "LASER",
+   "aimSpeed" 1.399999976158142,
+   "muzzleCount" 1,
+   "defaultDir" [0 0 1],
+   "uniformAngleSpeed" 0,
+   "pitchDownMax" 90,
+   "addEnemyHatredBase" 5},
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 3},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "50000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "2000"}},
+  "id" 3002,
+  "descFields" [53 51 56 57 50 11 12 1 40],
+  "modelIndex" 373,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[2 0.30000001192092896 2]
+    [-2 0.30000001192092896 2]
+    [2 0.30000001192092896 -2]
+    [-2 0.30000001192092896 -2]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "高频激光塔",
+  "buildMode" 1,
+  "_typeString" "武器",
+  "gridIndex" 2504,
+  "type" "TURRET",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "30 hp"}
+   {"key" "防御塔类型", "value" "能量武器"}
+   {"key" "目标类型", "value" "对地"}
+   {"key" "对地防御范围", "value" "40 m"}
+   {"key" "每秒伤害", "value" "120 hp"}
+   {"key" "工作功率", "value" "3 MW"}
+   {"key" "待机功率", "value" "120 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/turret-laser",
+  "stackSize" 50,
+  "hpMax" 3000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 3.5 0.25],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize" [5.199999809265137 7.400000095367432 5.5],
+   "signHeight" 3,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 50,
+   "overrideBarHeight" 0},
+  "description" "I高频激光塔",
+  "canBuild" true,
+  "buildIndex" 704}
+ {"_TurretDesc"
+  {"spaceAttackRange" 0,
+   "addEnemyExpCoef" 0.20000000298023224,
+   "angleAcc" 0,
+   "addEnemyThreatBase" 2,
+   "addEnemyThreatCoef" 0.0010000000474974513,
+   "minAttackRange" 12,
+   "vsCaps" 15,
+   "muzzleY" 4.099999904632568,
+   "addEnemyExpBase" 2400,
+   "ROF" 10000,
+   "maxAttackRange" 58,
+   "muzzleInterval" 0,
+   "roundInterval" 600000,
+   "pitchUpMax" 70,
+   "damageScale" 1,
+   "type" "CANNON",
+   "addEnemyHatredCoef" 0.004999999888241291,
+   "ammoType" "CANNON",
+   "aimSpeed" 0.8999999761581421,
+   "muzzleCount" 1,
+   "defaultDir" [0 0 1],
+   "uniformAngleSpeed" 0,
+   "pitchDownMax" 20,
+   "addEnemyHatredBase" 50},
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 3},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "12500"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "500"}},
+  "id" 3003,
+  "descFields" [53 51 56 57 52 49 11 12 1 40],
+  "modelIndex" 375,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "BELT",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [7.599999904632568 7.599999904632568],
+   "landPoints"
+   [[2.5 0.30000001192092896 3]
+    [-2.5 0.30000001192092896 3]
+    [2.5 0.30000001192092896 -3]
+    [-2.5 0.30000001192092896 -3]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "聚爆加农炮",
+  "buildMode" 5,
+  "_typeString" "武器",
+  "gridIndex" 2503,
+  "type" "TURRET",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "30 hp"}
+   {"key" "防御塔类型", "value" "动能加爆破武器"}
+   {"key" "目标类型", "value" "对地"}
+   {"key" "对地防御范围", "value" "12 ~ 58 m"}
+   {"key" "弹药类型", "value" "炮弹"}
+   {"key" "射击速度", "value" [1 "发每秒"]}
+   {"key" "工作功率", "value" "750 KW"}
+   {"key" "待机功率", "value" "30 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/turret-cannon",
+  "stackSize" 50,
+  "hpMax" 3000,
+  "_SlotConfig"
+  {"addonAreaCenter" [[0 0 0]],
+   "selectCenter" [0 2.799999952316284 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [nil],
+   "overrideBarWidth" 0,
+   "selectSize"
+   [5.800000190734863 5.599999904632568 7.199999809265137],
+   "signHeight" 3,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 64,
+   "overrideBarHeight" 0},
+  "description" "I聚爆加农炮",
+  "canBuild" true,
+  "buildIndex" 703}
+ {"_TurretDesc"
+  {"spaceAttackRange" 6500,
+   "addEnemyExpCoef" 0.20000000298023224,
+   "angleAcc" 0,
+   "addEnemyThreatBase" 3,
+   "addEnemyThreatCoef" 0.0010000000474974513,
+   "minAttackRange" 0,
+   "vsCaps" 240,
+   "muzzleY" 5.849999904632568,
+   "addEnemyExpBase" 1200,
+   "ROF" 10000,
+   "maxAttackRange" 0,
+   "muzzleInterval" 0,
+   "roundInterval" 600000,
+   "pitchUpMax" 80,
+   "damageScale" 1,
+   "type" "PLASMA",
+   "addEnemyHatredCoef" 0.004999999888241291,
+   "ammoType" "PLASMA",
+   "aimSpeed" 0.4000000059604645,
+   "muzzleCount" 1,
+   "defaultDir" [0 0.371390700340271 0.9284768104553223],
+   "uniformAngleSpeed" 0,
+   "pitchDownMax" 0,
+   "addEnemyHatredBase" 80},
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 3},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "28000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "1400"}},
+  "id" 3004,
+  "descFields" [53 51 56 58 52 49 11 12 1 40],
+  "modelIndex" 408,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "BELT",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [11.5 11.5],
+   "landPoints"
+   [[4 0.30000001192092896 4]
+    [-4 0.30000001192092896 4]
+    [4 0.30000001192092896 -4]
+    [-4 0.30000001192092896 -4]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "磁化电浆炮",
+  "buildMode" 5,
+  "_typeString" "武器",
+  "gridIndex" 2505,
+  "type" "TURRET",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "30 hp"}
+   {"key" "防御塔类型", "value" "能量武器"}
+   {"key" "目标类型", "value" "对天"}
+   {"key" "对天防御范围", "value" "-"}
+   {"key" "弹药类型", "value" "能量胶囊"}
+   {"key" "射击速度", "value" [1 "发每秒"]}
+   {"key" "工作功率", "value" "1 MW"}
+   {"key" "待机功率", "value" "84 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/turret-plasma",
+  "stackSize" 50,
+  "hpMax" 3000,
+  "_SlotConfig"
+  {"addonAreaCenter" [[0 0 0]],
+   "selectCenter" [0 4.5 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [nil],
+   "overrideBarWidth" 0,
+   "selectSize" [8 9 8],
+   "signHeight" 3,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 100,
+   "overrideBarHeight" 0},
+  "description" "I磁化电浆炮",
+  "canBuild" true,
+  "buildIndex" 705}
+ {"_TurretDesc"
+  {"spaceAttackRange" 4200,
+   "addEnemyExpCoef" 0.10000000149011612,
+   "angleAcc" 360,
+   "addEnemyThreatBase" 3,
+   "addEnemyThreatCoef" 0.0010000000474974513,
+   "minAttackRange" 0,
+   "vsCaps" 255,
+   "muzzleY" 4.96999979019165,
+   "addEnemyExpBase" 1500,
+   "ROF" 5000,
+   "maxAttackRange" 60,
+   "muzzleInterval" 75000,
+   "roundInterval" 300000,
+   "pitchUpMax" 90,
+   "damageScale" 1,
+   "type" "MISSILE",
+   "addEnemyHatredCoef" 0.004999999888241291,
+   "ammoType" "MISSILE",
+   "aimSpeed" 0.800000011920929,
+   "muzzleCount" 5,
+   "defaultDir" [0 0.5 0.8660253882408142],
+   "uniformAngleSpeed" 180,
+   "pitchDownMax" 20,
+   "addEnemyHatredBase" 70},
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 3},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "10000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "300"}},
+  "id" 3005,
+  "descFields" [53 51 56 57 58 52 49 11 12 1 40],
+  "modelIndex" 407,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "BELT",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[3 0.30000001192092896 3]
+    [-3 0.30000001192092896 3]
+    [3 0.30000001192092896 -3]
+    [-3 0.30000001192092896 -3]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "导弹防御塔",
+  "buildMode" 5,
+  "_typeString" "武器",
+  "gridIndex" 2502,
+  "type" "TURRET",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "30 hp"}
+   {"key" "防御塔类型", "value" "爆破武器"}
+   {"key" "目标类型", "value" "对地且对天"}
+   {"key" "对地防御范围", "value" "60 m"}
+   {"key" "对天防御范围", "value" "-"}
+   {"key" "弹药类型", "value" "导弹"}
+   {"key" "射击速度", "value" [2.5 "发每秒"]}
+   {"key" "工作功率", "value" "600 KW"}
+   {"key" "待机功率", "value" "18 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/turret-missile",
+  "stackSize" 50,
+  "hpMax" 3000,
+  "_SlotConfig"
+  {"addonAreaCenter" [[0 0 0]],
+   "selectCenter" [0 3.5 0.30000001192092896],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [nil],
+   "overrideBarWidth" 0,
+   "selectSize" [7 7 7.5],
+   "signHeight" 3,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 64,
+   "overrideBarHeight" 0},
+  "description" "I导弹防御塔",
+  "canBuild" true,
+  "buildIndex" 702}
+ {"_TurretDesc"
+  {"spaceAttackRange" 0,
+   "addEnemyExpCoef" 0,
+   "angleAcc" 0,
+   "addEnemyThreatBase" 0,
+   "addEnemyThreatCoef" 0,
+   "minAttackRange" 0,
+   "vsCaps" 15,
+   "muzzleY" 0,
+   "addEnemyExpBase" 0,
+   "ROF" 2000,
+   "maxAttackRange" 40,
+   "muzzleInterval" 0,
+   "roundInterval" 600000,
+   "pitchUpMax" 90,
+   "damageScale" 1,
+   "addEnemyHatredCoef" 0,
+   "aimSpeed" 0,
+   "muzzleCount" 1,
+   "defaultDir" [0 0 1],
+   "uniformAngleSpeed" 0,
+   "pitchDownMax" 90,
+   "addEnemyHatredBase" 0},
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 3},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "20000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "1500"}},
+  "id" 3006,
+  "descFields" [53 51 56 57 52 49 11 12 1 40],
+  "modelIndex" 422,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "BELT",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [6.5 6.5],
+   "landPoints"
+   [[2.5 0.30000001192092896 2.5]
+    [-2.5 0.30000001192092896 2.5]
+    [2.5 0.30000001192092896 -2.5]
+    [-2.5 0.30000001192092896 -2.5]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "干扰塔",
+  "buildMode" 5,
+  "_typeString" "武器",
+  "gridIndex" 2508,
+  "type" "TURRET",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "30 hp"}
+   {"key" "防御塔类型", "value" "-"}
+   {"key" "目标类型", "value" "对地"}
+   {"key" "对地防御范围", "value" "40 m"}
+   {"key" "弹药类型", "value" "-"}
+   {"key" "射击速度", "value" [0.2 "发每秒"]}
+   {"key" "工作功率", "value" "1 MW"}
+   {"key" "待机功率", "value" "90 KW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/turret-disturb",
+  "stackSize" 50,
+  "hpMax" 3000,
+  "_SlotConfig"
+  {"addonAreaCenter" [[0 0 0]],
+   "selectCenter" [0 3.5 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [nil],
+   "overrideBarWidth" 0,
+   "selectSize" [6 7 6],
+   "signHeight" 3,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I干扰塔",
+  "canBuild" true,
+  "buildIndex" 708}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 3},
+  "_PowerDesc"
+  {"node" true,
+   "connectDistance" 60.5,
+   "coverRadius" 14.5,
+   "powerPoint" [0 4 0]},
+  "id" 3007,
+  "descFields" [53 13 14 11 12 1 40],
+  "modelIndex" 403,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[2 0.30000001192092896 2]
+    [-2 0.30000001192092896 2]
+    [2 0.30000001192092896 -2]
+    [-2 0.30000001192092896 -2]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "信标",
+  "buildMode" 1,
+  "_typeString" "防御设施",
+  "gridIndex" 2509,
+  "type" "DEFENSE",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "30 hp"}
+   {"key" "连接长度", "value" "60 m"}
+   {"key" "覆盖范围", "value" ["电力" "14 m / " "信号" "64 m"]}
+   {"key" "工作功率", "value" "0W"}
+   {"key" "待机功率", "value" "0W"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/turret-signal",
+  "stackSize" 20,
+  "hpMax" 3000,
+  "_BeaconDesc"
+  {"signalRadius" 64,
+   "ROF" 5000,
+   "spaceSignalRange" 4200,
+   "pitchUpMax" 90,
+   "pitchDownMax" 20},
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 7.800000190734863 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 9,
+   "selectSize" [6 16 6],
+   "signHeight" 3,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 64,
+   "overrideBarHeight" 0},
+  "description" "I信标",
+  "canBuild" true,
+  "buildIndex" 709}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 3},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "400000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "200000"}},
+  "id" 3008,
+  "descFields" [53 11 12 1 40],
+  "modelIndex" 402,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "NONE",
+   "dragBuild" false,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [0 0],
+   "landPoints"
+   [[3.5 0.30000001192092896 3.5]
+    [-3.5 0.30000001192092896 3.5]
+    [3.5 0.30000001192092896 -3.5]
+    [-3.5 0.30000001192092896 -3.5]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "护盾发生器",
+  "buildMode" 1,
+  "_typeString" "防御设施",
+  "gridIndex" 2510,
+  "type" "DEFENSE",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "30 hp"}
+   {"key" "工作功率", "value" "24 MW"}
+   {"key" "待机功率", "value" "12 MW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "_FieldGeneratorDesc"
+  {"energyCapacity" {":type" "BigInt", "value" "8640000000"},
+   "energyRequire0" {":type" "BigInt", "value" "1440000000"},
+   "energyRequire1" {":type" "BigInt", "value" "2880000000"}},
+  "iconPath" "Icons/ItemRecipe/turret-shield",
+  "stackSize" 20,
+  "hpMax" 3000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 7 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 0,
+   "selectSize" [7 14.199999809265137 7],
+   "signHeight" 3,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 80,
+   "overrideBarHeight" 0},
+  "description" "I护盾发生器",
+  "canBuild" true,
+  "buildIndex" 710}
+ {"modelCount" 1,
+  "_MinimapConfig" {"type" 4},
+  "dropRate" 0.5,
+  "_BattleBaseDesc"
+  {"maxEnergyAcc" {":type" "BigInt", "value" "120000000"},
+   "pickRange" 90},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "40000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "1000"}},
+  "id" 3009,
+  "descFields" [53 11 12 14 1 40],
+  "modelIndex" 453,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 8 0],
+   "addonType" "NONE",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [10 10],
+   "landPoints"
+   [[3 0.30000001192092896 2.299999952316284]
+    [3 0.30000001192092896 -2.299999952316284]
+    [-3 0.30000001192092896 2.299999952316284]
+    [-3 0.30000001192092896 -2.299999952316284]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "战场分析基站",
+  "buildMode" 1,
+  "_typeString" "防御设施",
+  "gridIndex" 2507,
+  "type" "DEFENSE",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "30 hp"}
+   {"key" "工作功率", "value" "2 MW"}
+   {"key" "待机功率", "value" "60 KW"}
+   {"key" "覆盖范围", "value" ["建造" "60 m / " "拾取" "90 m"]}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "_ConstructionModuleDesc"
+  {"droneCount" 12, "buildRange" 60, "droneEjectPos" [0 6.5 0]},
+  "iconPath" "Icons/ItemRecipe/battle-base",
+  "stackSize" 20,
+  "_StorageDesc" {"colCount" 10, "rowCount" 6},
+  "hpMax" 3000,
+  "_SlotConfig"
+  {"addonAreaCenter" [],
+   "selectCenter" [0 4 0],
+   "insertPoses" [nil nil nil nil nil nil nil nil nil],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [],
+   "overrideBarWidth" 6,
+   "selectSize" [5 8 7],
+   "signHeight" 4,
+   "slotPoses" [],
+   "signSize" 2.299999952316284,
+   "selectDistance" 64,
+   "overrideBarHeight" 7.199999809265137},
+  "description" "I战场分析基站",
+  "canBuild" true,
+  "buildIndex" 707}
+ {"_TurretDesc"
+  {"spaceAttackRange" 0,
+   "addEnemyExpCoef" 0.20000000298023224,
+   "angleAcc" 0,
+   "addEnemyThreatBase" 3,
+   "addEnemyThreatCoef" 0.0010000000474974513,
+   "minAttackRange" 8,
+   "vsCaps" 15,
+   "muzzleY" 11,
+   "addEnemyExpBase" 1200,
+   "ROF" 5000,
+   "maxAttackRange" 55,
+   "muzzleInterval" 0,
+   "roundInterval" 600000,
+   "pitchUpMax" 90,
+   "damageScale" 1,
+   "addEnemyHatredCoef" 0.004999999888241291,
+   "ammoType" "PLASMA",
+   "aimSpeed" 0,
+   "muzzleCount" 1,
+   "defaultDir" [0 0 1],
+   "uniformAngleSpeed" 0,
+   "pitchDownMax" 90,
+   "addEnemyHatredBase" 80},
+  "modelCount" 1,
+  "_MinimapConfig" {"type" 3},
+  "_PowerDesc"
+  {"consumer" true,
+   "charger" false,
+   "workEnergyPerTick" {":type" "BigInt", "value" "70000"},
+   "idleEnergyPerTick" {":type" "BigInt", "value" "35000"}},
+  "id" 3010,
+  "descFields" [53 51 56 57 52 49 11 12 1 40],
+  "modelIndex" 482,
+  "_BuildConditionConfig"
+  {"allowBuildInWater" false,
+   "needBuildInWaterTech" false,
+   "blueprintBoxSizeOverride" [0 0],
+   "veinMiner" false,
+   "lapJoint" [0 0 0],
+   "addonType" "BELT",
+   "dragBuild" true,
+   "multiLevelAllowRotate" false,
+   "waterTypes" [],
+   "multiLevelAlternativeIds" [],
+   "dragBuildDistOverride" [10.5 10.5],
+   "landPoints"
+   [[2 0.30000001192092896 2]
+    [-2 0.30000001192092896 2]
+    [2 0.30000001192092896 -2]
+    [-2 0.30000001192092896 -2]],
+   "multiLevel" false,
+   "waterPoints" [],
+   "oilMiner" false,
+   "multiLevelAlternativeYawTransposes" [],
+   "multiLevelAllowInserter" false,
+   "landOffset" 0},
+  "name" "地面电浆炮",
+  "buildMode" 5,
+  "_typeString" "武器",
+  "gridIndex" 2506,
+  "type" "TURRET",
+  "_descFields"
+  [{"key" "最大耐久度", "value" "30 hp"}
+   {"key" "防御塔类型", "value" "-"}
+   {"key" "目标类型", "value" "对地"}
+   {"key" "对地防御范围", "value" "8 ~ 55 m"}
+   {"key" "弹药类型", "value" "能量胶囊"}
+   {"key" "射击速度", "value" [0.5 "发每秒"]}
+   {"key" "工作功率", "value" "4 MW"}
+   {"key" "待机功率", "value" "2 MW"}
+   {"key" "制造于", "value" "制造台"}
+   {"key" "增产剂效果", "value" "加速生产"}],
+  "isEntity" true,
+  "iconPath" "Icons/ItemRecipe/turret-plasma-ground",
+  "stackSize" 20,
+  "hpMax" 3000,
+  "_SlotConfig"
+  {"addonAreaCenter" [[0 0 0]],
+   "selectCenter" [0 7.5 0],
+   "insertPoses" [],
+   "selectAlpha" 0.6000000238418579,
+   "addonAreaCol" [nil],
+   "overrideBarWidth" 0,
+   "selectSize" [2.5 15 2.5],
+   "signHeight" 3,
+   "slotPoses" [],
+   "signSize" 2,
+   "selectDistance" 34,
+   "overrideBarHeight" 0},
+  "description" "I地面电浆炮",
+  "canBuild" true,
+  "buildIndex" 706}
+ {"mechaMaterialId" 25,
+  "id" 6001,
+  "descFields" [1 40],
+  "name" "电磁矩阵",
+  "_typeString" "科学矩阵",
+  "gridIndex" 1801,
+  "type" "MATRIX",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "科研设备"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/t-matrix",
+  "stackSize" 200,
+  "description" "I电磁矩阵"}
+ {"mechaMaterialId" 26,
+  "id" 6002,
+  "descFields" [1 40],
+  "name" "能量矩阵",
+  "_typeString" "科学矩阵",
+  "gridIndex" 1802,
+  "type" "MATRIX",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "科研设备"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/e-matrix",
+  "stackSize" 200,
+  "description" "I能量矩阵"}
+ {"mechaMaterialId" 27,
+  "id" 6003,
+  "descFields" [1 40],
+  "name" "结构矩阵",
+  "_typeString" "科学矩阵",
+  "gridIndex" 1803,
+  "type" "MATRIX",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "科研设备"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/c-matrix",
+  "stackSize" 200,
+  "description" "I结构矩阵"}
+ {"mechaMaterialId" 28,
+  "id" 6004,
+  "descFields" [1 40],
+  "name" "信息矩阵",
+  "_typeString" "科学矩阵",
+  "gridIndex" 1804,
+  "type" "MATRIX",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "科研设备"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/i-matrix",
+  "stackSize" 200,
+  "description" "I信息矩阵"}
+ {"mechaMaterialId" 29,
+  "id" 6005,
+  "descFields" [1 40],
+  "name" "引力矩阵",
+  "_typeString" "科学矩阵",
+  "gridIndex" 1805,
+  "type" "MATRIX",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "科研设备"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/g-matrix",
+  "stackSize" 200,
+  "description" "I引力矩阵"}
+ {"mechaMaterialId" 30,
+  "id" 6006,
+  "descFields" [1 40],
+  "name" "宇宙矩阵",
+  "_typeString" "科学矩阵",
+  "gridIndex" 1806,
+  "type" "MATRIX",
+  "productive" true,
+  "_descFields"
+  [{"key" "制造于", "value" "科研设备"} {"key" "增产剂效果", "value" "额外产出"}],
+  "iconPath" "Icons/ItemRecipe/u-matrix",
+  "stackSize" 200,
+  "description" "I宇宙矩阵"}]
