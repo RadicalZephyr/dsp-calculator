@@ -3,7 +3,7 @@
   "description" "戴森球计划描述",
   "published" true,
   "iconPath" "Icons/Tech/1",
-  "hashNeeded" {":type" "BigInt", "value" "1"},
+  "hashNeeded" 1,
   "position" [5 1]}
  {"propertyItemCounts" [10],
   "preTechs" [1],
@@ -20,7 +20,7 @@
   "iconPath" "Icons/Tech/1001",
   "addItems" [2203 2201 2301],
   "description" "电磁学描述",
-  "hashNeeded" {":type" "BigInt", "value" "1200"}}
+  "hashNeeded" 1200}
  {"propertyItemCounts" [40],
   "preTechs" [1001],
   "id" 1002,
@@ -36,7 +36,7 @@
   "iconPath" "Icons/Tech/1002",
   "addItems" [2901],
   "description" "电磁矩阵描述",
-  "hashNeeded" {":type" "BigInt", "value" "1800"}}
+  "hashNeeded" 1800}
  {"preTechs" [1001],
   "id" 1101,
   "conclusion" "高效电浆控制结果",
@@ -50,7 +50,7 @@
   "iconPath" "Icons/Tech/1101",
   "addItems" [1401],
   "description" "高效电浆控制描述",
-  "hashNeeded" {":type" "BigInt", "value" "9000"},
+  "hashNeeded" 9000,
   "isLabTech" true}
  {"preTechs" [1120 1101],
   "id" 1102,
@@ -63,7 +63,7 @@
   "itemPoints" [10],
   "iconPath" "Icons/Tech/1102",
   "description" "等离子萃取精炼描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [1121 1102],
   "id" 1103,
@@ -76,7 +76,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/1103",
   "description" "X射线裂解描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechs" [1103],
   "id" 1104,
@@ -89,7 +89,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/1104",
   "description" "重整精炼描述",
-  "hashNeeded" {":type" "BigInt", "value" "90000"},
+  "hashNeeded" 90000,
   "isLabTech" true}
  {"preTechs" [1102],
   "id" 1111,
@@ -102,7 +102,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/1111",
   "description" "能量矩阵描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [1111],
   "id" 1112,
@@ -115,7 +115,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/1112",
   "description" "氢燃料棒描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechs" [1112],
   "id" 1113,
@@ -128,7 +128,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/1113",
   "description" "推进器描述",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechs" [1113],
   "id" 1114,
@@ -141,7 +141,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/1114",
   "description" "加力推进器描述",
-  "hashNeeded" {":type" "BigInt", "value" "288000"},
+  "hashNeeded" 288000,
   "isLabTech" true}
  {"preTechs" [1001],
   "id" 1120,
@@ -156,7 +156,7 @@
   "iconPath" "Icons/Tech/1120",
   "addItems" [2106],
   "description" "流体储存封装描述",
-  "hashNeeded" {":type" "BigInt", "value" "9000"},
+  "hashNeeded" 9000,
   "isLabTech" true}
  {"preTechs" [1120 1102],
   "id" 1121,
@@ -169,7 +169,7 @@
   "itemPoints" [10],
   "iconPath" "Icons/Tech/1121",
   "description" "基础化工描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechs" [1121],
   "id" 1122,
@@ -182,7 +182,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/1122",
   "description" "高分子化工描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechs" [1122],
   "id" 1123,
@@ -195,7 +195,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/1123",
   "description" "高强度晶体描述",
-  "hashNeeded" {":type" "BigInt", "value" "108000"},
+  "hashNeeded" 108000,
   "isLabTech" true}
  {"preTechs" [1123],
   "id" 1124,
@@ -208,7 +208,7 @@
   "itemPoints" [12 12],
   "iconPath" "Icons/Tech/1124",
   "description" "结构矩阵描述",
-  "hashNeeded" {":type" "BigInt", "value" "240000"},
+  "hashNeeded" 240000,
   "isLabTech" true}
  {"preTechs" [1124],
   "id" 1125,
@@ -221,7 +221,7 @@
   "itemPoints" [12 12 12],
   "iconPath" "Icons/Tech/1125",
   "description" "卡西米尔晶体描述",
-  "hashNeeded" {":type" "BigInt", "value" "240000"},
+  "hashNeeded" 240000,
   "isLabTech" true}
  {"preTechs" [1132],
   "id" 1126,
@@ -234,7 +234,7 @@
   "itemPoints" [12 6],
   "iconPath" "Icons/Tech/1126",
   "description" "高强度玻璃描述",
-  "hashNeeded" {":type" "BigInt", "value" "240000"},
+  "hashNeeded" 240000,
   "isLabTech" true}
  {"preTechs" [1121],
   "id" 1131,
@@ -247,7 +247,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/1131",
   "description" "应用型超导体描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechs" [1131],
   "id" 1132,
@@ -260,7 +260,7 @@
   "itemPoints" [16 4],
   "iconPath" "Icons/Tech/1132",
   "description" "高强度材料描述",
-  "hashNeeded" {":type" "BigInt", "value" "135000"},
+  "hashNeeded" 135000,
   "isLabTech" true}
  {"preTechs" [1132],
   "id" 1133,
@@ -273,7 +273,7 @@
   "itemPoints" [16 16 4],
   "iconPath" "Icons/Tech/1133",
   "description" "粒子可控技术描述",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechs" [1412 1102],
   "id" 1134,
@@ -286,7 +286,7 @@
   "itemPoints" [20 30],
   "iconPath" "Icons/Tech/1134",
   "description" "重氢分馏描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [1126 1125],
   "id" 1141,
@@ -299,7 +299,7 @@
   "itemPoints" [12 12 2],
   "iconPath" "Icons/Tech/1141",
   "description" "波函数干扰描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [1124],
   "id" 1142,
@@ -312,7 +312,7 @@
   "itemPoints" [12 12 12],
   "iconPath" "Icons/Tech/1142",
   "description" "微型粒子对撞机描述",
-  "hashNeeded" {":type" "BigInt", "value" "240000"},
+  "hashNeeded" 240000,
   "isLabTech" true}
  {"preTechs" [1142],
   "id" 1143,
@@ -325,7 +325,7 @@
   "itemPoints" [12 12 12],
   "iconPath" "Icons/Tech/1143",
   "description" "奇异物质描述",
-  "hashNeeded" {":type" "BigInt", "value" "300000"},
+  "hashNeeded" 300000,
   "isLabTech" true}
  {"preTechs" [1145],
   "id" 1144,
@@ -338,7 +338,7 @@
   "itemPoints" [10 10 10 10 10],
   "iconPath" "Icons/Tech/1144",
   "description" "人造恒星描述",
-  "hashNeeded" {":type" "BigInt", "value" "432000"},
+  "hashNeeded" 432000,
   "isLabTech" true}
  {"preTechs" [1506],
   "id" 1145,
@@ -351,7 +351,7 @@
   "itemPoints" [24 12],
   "iconPath" "Icons/Tech/1145",
   "description" "可控湮灭反应描述",
-  "hashNeeded" {":type" "BigInt", "value" "600000"},
+  "hashNeeded" 600000,
   "isLabTech" true}
  {"preTechs" [1311 1101],
   "id" 1151,
@@ -364,7 +364,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/1151",
   "description" "增产剂 Mk.I描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [1302 1151],
   "id" 1152,
@@ -377,7 +377,7 @@
   "itemPoints" [16 12],
   "iconPath" "Icons/Tech/1152",
   "description" "增产剂 Mk.II描述",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechs" [1152 1132],
   "id" 1153,
@@ -390,7 +390,7 @@
   "itemPoints" [8 6 4],
   "iconPath" "Icons/Tech/1153",
   "description" "增产剂 Mk.III描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"propertyItemCounts" [40],
   "preTechs" [1001],
@@ -407,7 +407,7 @@
   "iconPath" "Icons/Tech/1201",
   "addItems" [2303],
   "description" "基础制造工艺描述",
-  "hashNeeded" {":type" "BigInt", "value" "1800"}}
+  "hashNeeded" 1800}
  {"preTechs" [1201 1302],
   "unlockFunctions" [7],
   "unlockValues" [0.5],
@@ -421,7 +421,7 @@
   "itemPoints" [20 10],
   "iconPath" "Icons/Tech/1202",
   "description" "高速制造工艺描述",
-  "hashNeeded" {":type" "BigInt", "value" "108000"},
+  "hashNeeded" 108000,
   "isLabTech" true}
  {"preTechs" [1202 1303],
   "unlockFunctions" [7],
@@ -436,7 +436,7 @@
   "itemPoints" [10 10 10 10],
   "iconPath" "Icons/Tech/1203",
   "description" "量子打印技术描述",
-  "hashNeeded" {":type" "BigInt", "value" "288000"},
+  "hashNeeded" 288000,
   "isLabTech" true}
  {"preTechs" [1311],
   "id" 1302,
@@ -449,7 +449,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/1302",
   "description" "处理器描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [1312 1141],
   "id" 1303,
@@ -462,7 +462,7 @@
   "itemPoints" [10 10 10],
   "iconPath" "Icons/Tech/1303",
   "description" "量子芯片描述",
-  "hashNeeded" {":type" "BigInt", "value" "288000"},
+  "hashNeeded" 288000,
   "isLabTech" true}
  {"preTechs" [1303],
   "id" 1304,
@@ -475,7 +475,7 @@
   "itemPoints" [10 10 10 10 6],
   "iconPath" "Icons/Tech/1304",
   "description" "大型采矿机描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [1303 1143],
   "id" 1305,
@@ -488,7 +488,7 @@
   "itemPoints" [10 10 10 10],
   "iconPath" "Icons/Tech/1305",
   "description" "高级化工描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [1201],
   "id" 1311,
@@ -501,7 +501,7 @@
   "itemPoints" [40],
   "iconPath" "Icons/Tech/1311",
   "description" "半导体材料描述",
-  "hashNeeded" {":type" "BigInt", "value" "18000"},
+  "hashNeeded" 18000,
   "isLabTech" true}
  {"preTechs" [1302 1133],
   "id" 1312,
@@ -514,7 +514,7 @@
   "itemPoints" [10 10],
   "iconPath" "Icons/Tech/1312",
   "description" "信息矩阵描述",
-  "hashNeeded" {":type" "BigInt", "value" "288000"},
+  "hashNeeded" 288000,
   "isLabTech" true}
  {"propertyItemCounts" [40],
   "preTechs" [1001],
@@ -531,7 +531,7 @@
   "iconPath" "Icons/Tech/1401",
   "addItems" [2302],
   "description" "自动化冶金描述",
-  "hashNeeded" {":type" "BigInt", "value" "1800"}}
+  "hashNeeded" 1800}
  {"preTechs" [1401],
   "id" 1402,
   "conclusion" "冶炼提纯结果",
@@ -543,7 +543,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/1402",
   "description" "冶炼提纯描述",
-  "hashNeeded" {":type" "BigInt", "value" "18000"},
+  "hashNeeded" 18000,
   "isLabTech" true}
  {"preTechs" [1402],
   "id" 1403,
@@ -556,7 +556,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/1403",
   "description" "晶体冶炼描述",
-  "hashNeeded" {":type" "BigInt", "value" "90000"},
+  "hashNeeded" 90000,
   "isLabTech" true}
  {"preTechs" [1401],
   "unlockFunctions" [37],
@@ -571,7 +571,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/1411",
   "description" "钢材冶炼描述",
-  "hashNeeded" {":type" "BigInt", "value" "21600"},
+  "hashNeeded" 21600,
   "isLabTech" true}
  {"preTechs" [1201],
   "id" 1412,
@@ -586,7 +586,7 @@
   "iconPath" "Icons/Tech/1412",
   "addItems" [2204],
   "description" "火力发电描述",
-  "hashNeeded" {":type" "BigInt", "value" "5400"},
+  "hashNeeded" 5400,
   "isLabTech" true}
  {"preTechs" [1411],
   "id" 1413,
@@ -599,7 +599,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/1413",
   "description" "钛矿冶炼描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [1413],
   "id" 1414,
@@ -612,7 +612,7 @@
   "itemPoints" [20 20 2],
   "iconPath" "Icons/Tech/1414",
   "description" "高强度钛合金描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [1411],
   "id" 1415,
@@ -625,7 +625,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/1415",
   "description" "移山填海工程描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechsImplicit" [1414],
   "preTechs" [1134],
@@ -639,7 +639,7 @@
   "itemPoints" [20 10 5],
   "iconPath" "Icons/Tech/1416",
   "description" "微型核聚变发电描述",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechsImplicit" [1403],
   "preTechs" [1141],
@@ -653,7 +653,7 @@
   "itemPoints" [10 10 10 10],
   "iconPath" "Icons/Tech/1417",
   "description" "位面冶金描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [1402 1002 1201],
   "id" 1501,
@@ -668,7 +668,7 @@
   "iconPath" "Icons/Tech/1501",
   "addItems" [2205],
   "description" "太阳能收集描述",
-  "hashNeeded" {":type" "BigInt", "value" "18000"},
+  "hashNeeded" 18000,
   "isLabTech" true}
  {"preTechs" [1501],
   "id" 1502,
@@ -681,7 +681,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/1502",
   "description" "光子变频描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechsImplicit" [1711],
   "preTechs" [1502],
@@ -695,7 +695,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/1503",
   "description" "太阳帆轨道系统描述",
-  "hashNeeded" {":type" "BigInt", "value" "54000"},
+  "hashNeeded" 54000,
   "isLabTech" true}
  {"preTechs" [1503],
   "id" 1504,
@@ -708,7 +708,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/1504",
   "description" "射线接收站描述",
-  "hashNeeded" {":type" "BigInt", "value" "108000"},
+  "hashNeeded" 108000,
   "isLabTech" true}
  {"preTechsImplicit" [1704],
   "preTechs" [1504],
@@ -723,7 +723,7 @@
   "itemPoints" [20 20 20 20],
   "iconPath" "Icons/Tech/1505",
   "description" "行星电离层利用描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [1505],
   "id" 1506,
@@ -736,7 +736,7 @@
   "itemPoints" [20 20 5 5 10],
   "iconPath" "Icons/Tech/1506",
   "description" "狄拉克逆变机制描述",
-  "hashNeeded" {":type" "BigInt", "value" "540000"},
+  "hashNeeded" 540000,
   "isLabTech" true}
  {"preTechs" [1506],
   "id" 1507,
@@ -749,7 +749,7 @@
   "itemPoints" [10 10 10 10 10],
   "iconPath" "Icons/Tech/1507",
   "description" "宇宙矩阵描述",
-  "hashNeeded" {":type" "BigInt", "value" "720000"},
+  "hashNeeded" 720000,
   "isLabTech" true}
  {"preTechs" [1507],
   "unlockFunctions" [99],
@@ -763,7 +763,7 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/1508",
   "description" "任务完成描述",
-  "hashNeeded" {":type" "BigInt", "value" "3600000"},
+  "hashNeeded" 3600000,
   "isLabTech" true}
  {"preTechsImplicit" [1711],
   "preTechs" [1403 1501],
@@ -777,7 +777,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/1511",
   "description" "能量储存描述",
-  "hashNeeded" {":type" "BigInt", "value" "108000"},
+  "hashNeeded" 108000,
   "isLabTech" true}
  {"preTechs" [1414 1511],
   "id" 1512,
@@ -790,7 +790,7 @@
   "itemPoints" [20 20 2],
   "iconPath" "Icons/Tech/1512",
   "description" "星际电力运输描述",
-  "hashNeeded" {":type" "BigInt", "value" "216000"},
+  "hashNeeded" 216000,
   "isLabTech" true}
  {"preTechsImplicit" [1711],
   "preTechs" [1502],
@@ -804,7 +804,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/1513",
   "description" "地热开采描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechsImplicit" [1132],
   "preTechs" [1503],
@@ -818,7 +818,7 @@
   "itemPoints" [12 2],
   "iconPath" "Icons/Tech/1521",
   "description" "高强度轻质结构描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechsImplicit" [1303],
   "preTechs" [1521],
@@ -832,7 +832,7 @@
   "itemPoints" [10 10 10 10],
   "iconPath" "Icons/Tech/1522",
   "description" "垂直发射井描述",
-  "hashNeeded" {":type" "BigInt", "value" "576000"},
+  "hashNeeded" 576000,
   "isLabTech" true}
  {"preTechs" [1522],
   "unlockFunctions" [26],
@@ -849,7 +849,7 @@
   "itemPoints" [20 20 20 20 20],
   "iconPath" "Icons/Tech/1523",
   "description" "戴森球应力系统描述",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"propertyItemCounts" [40],
   "preTechs" [1001],
@@ -866,7 +866,7 @@
   "iconPath" "Icons/Tech/1601",
   "addItems" [2001 2011],
   "description" "基础物流系统描述",
-  "hashNeeded" {":type" "BigInt", "value" "1800"}}
+  "hashNeeded" 1800}
  {"preTechs" [1601],
   "id" 1602,
   "conclusion" "改良物流系统结果",
@@ -880,7 +880,7 @@
   "iconPath" "Icons/Tech/1602",
   "addItems" [2020 2012 2030],
   "description" "改良物流系统描述",
-  "hashNeeded" {":type" "BigInt", "value" "18000"},
+  "hashNeeded" 18000,
   "isLabTech" true}
  {"preTechsImplicit" [1702],
   "preTechs" [1602],
@@ -894,7 +894,7 @@
   "itemPoints" [20 5],
   "iconPath" "Icons/Tech/1603",
   "description" "高效物流系统描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechsImplicit" [1113 3701],
   "preTechs" [1603],
@@ -908,7 +908,7 @@
   "itemPoints" [20 10],
   "iconPath" "Icons/Tech/1604",
   "description" "行星物流系统描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechsImplicit" [1114],
   "preTechs" [1604 1414],
@@ -922,7 +922,7 @@
   "itemPoints" [20 20 2],
   "iconPath" "Icons/Tech/1605",
   "description" "星际物流系统描述",
-  "hashNeeded" {":type" "BigInt", "value" "216000"},
+  "hashNeeded" 216000,
   "isLabTech" true}
  {"preTechs" [1605 1512],
   "id" 1606,
@@ -935,7 +935,7 @@
   "itemPoints" [10 10 10],
   "iconPath" "Icons/Tech/1606",
   "description" "气态行星开采描述",
-  "hashNeeded" {":type" "BigInt", "value" "432000"},
+  "hashNeeded" 432000,
   "isLabTech" true}
  {"preTechsImplicit" [1711],
   "preTechs" [1603],
@@ -949,7 +949,7 @@
   "itemPoints" [20 10 1],
   "iconPath" "Icons/Tech/1607",
   "description" "集装物流系统描述",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechsImplicit" [1702],
   "preTechs" [1602],
@@ -965,7 +965,7 @@
   "itemPoints" [20 10],
   "iconPath" "Icons/Tech/1608",
   "description" "配送物流系统描述",
-  "hashNeeded" {":type" "BigInt", "value" "108000"},
+  "hashNeeded" 108000,
   "isLabTech" true}
  {"preTechs" [1001],
   "id" 1701,
@@ -978,7 +978,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/1701",
   "description" "电磁驱动描述",
-  "hashNeeded" {":type" "BigInt", "value" "9000"},
+  "hashNeeded" 9000,
   "isLabTech" true}
  {"preTechs" [1701],
   "id" 1702,
@@ -991,7 +991,7 @@
   "itemPoints" [20 5],
   "iconPath" "Icons/Tech/1702",
   "description" "磁悬浮技术描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechs" [1702],
   "id" 1703,
@@ -1004,7 +1004,7 @@
   "itemPoints" [20 10],
   "iconPath" "Icons/Tech/1703",
   "description" "粒子磁力阱描述",
-  "hashNeeded" {":type" "BigInt", "value" "288000"},
+  "hashNeeded" 288000,
   "isLabTech" true}
  {"preTechs" [1143 1703],
   "id" 1704,
@@ -1017,7 +1017,7 @@
   "itemPoints" [12 12 12],
   "iconPath" "Icons/Tech/1704",
   "description" "引力波折射描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [1303 1704],
   "id" 1705,
@@ -1030,7 +1030,7 @@
   "itemPoints" [10 10 10],
   "iconPath" "Icons/Tech/1705",
   "description" "引力矩阵描述",
-  "hashNeeded" {":type" "BigInt", "value" "576000"},
+  "hashNeeded" 576000,
   "isLabTech" true}
  {"preTechs" [1702],
   "id" 1711,
@@ -1043,7 +1043,7 @@
   "itemPoints" [20 5],
   "iconPath" "Icons/Tech/1711",
   "description" "超级磁场发生器描述",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechsImplicit" [1521],
   "preTechs" [1711],
@@ -1057,7 +1057,7 @@
   "itemPoints" [12 12 12],
   "iconPath" "Icons/Tech/1712",
   "description" "卫星配电系统描述",
-  "hashNeeded" {":type" "BigInt", "value" "240000"},
+  "hashNeeded" 240000,
   "isLabTech" true}
  {"preTechsImplicit" [1401],
   "preTechs" [1001],
@@ -1073,7 +1073,7 @@
   "iconPath" "Icons/Tech/1801",
   "addItems" [1601],
   "description" "武器系统描述",
-  "hashNeeded" {":type" "BigInt", "value" "7200"},
+  "hashNeeded" 7200,
   "isLabTech" true}
  {"preTechs" [1401],
   "id" 1802,
@@ -1086,7 +1086,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/1802",
   "description" "燃烧单元描述",
-  "hashNeeded" {":type" "BigInt", "value" "21600"},
+  "hashNeeded" 21600,
   "isLabTech" true}
  {"preTechs" [1123],
   "id" 1803,
@@ -1099,7 +1099,7 @@
   "itemPoints" [20 10],
   "iconPath" "Icons/Tech/1803",
   "description" "爆破单元描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechs" [1125],
   "id" 1804,
@@ -1112,7 +1112,7 @@
   "itemPoints" [10 10 10 5],
   "iconPath" "Icons/Tech/1804",
   "description" "晶石爆破单元描述",
-  "hashNeeded" {":type" "BigInt", "value" "216000"},
+  "hashNeeded" 216000,
   "isLabTech" true}
  {"preTechs" [1001],
   "id" 1805,
@@ -1125,7 +1125,7 @@
   "itemPoints" [10],
   "iconPath" "Icons/Tech/1805",
   "description" "动力引擎描述",
-  "hashNeeded" {":type" "BigInt", "value" "7200"},
+  "hashNeeded" 7200,
   "isLabTech" true}
  {"preTechsImplicit" [1802],
   "preTechs" [1805 1801],
@@ -1139,7 +1139,7 @@
   "itemPoints" [10],
   "iconPath" "Icons/Tech/1806",
   "description" "导弹防御塔描述",
-  "hashNeeded" {":type" "BigInt", "value" "54000"},
+  "hashNeeded" 54000,
   "isLabTech" true}
  {"preTechsImplicit" [1702],
   "preTechs" [1806],
@@ -1153,7 +1153,7 @@
   "itemPoints" [10 10],
   "iconPath" "Icons/Tech/1807",
   "description" "聚爆加农炮描述",
-  "hashNeeded" {":type" "BigInt", "value" "108000"},
+  "hashNeeded" 108000,
   "isLabTech" true}
  {"preTechsImplicit" [1101],
   "preTechs" [1806],
@@ -1167,7 +1167,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/1808",
   "description" "信号塔描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechsImplicit" [1703],
   "preTechs" [1807],
@@ -1181,7 +1181,7 @@
   "itemPoints" [12 12],
   "iconPath" "Icons/Tech/1809",
   "description" "行星防御系统描述",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechsImplicit" [1302],
   "preTechs" [1806],
@@ -1195,7 +1195,7 @@
   "itemPoints" [10 20],
   "iconPath" "Icons/Tech/1810",
   "description" "干扰塔描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechsImplicit" [1126],
   "preTechs" [1809],
@@ -1209,7 +1209,7 @@
   "itemPoints" [12 12 12 6],
   "iconPath" "Icons/Tech/1811",
   "description" "磁化电浆炮描述",
-  "hashNeeded" {":type" "BigInt", "value" "300000"},
+  "hashNeeded" 300000,
   "isLabTech" true}
  {"preTechsImplicit" [1413],
   "preTechs" [1801],
@@ -1223,7 +1223,7 @@
   "itemPoints" [12 12],
   "iconPath" "Icons/Tech/1812",
   "description" "钛化弹箱描述",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechsImplicit" [1414],
   "preTechs" [1812],
@@ -1237,7 +1237,7 @@
   "itemPoints" [10 10 5],
   "iconPath" "Icons/Tech/1813",
   "description" "超合金弹箱描述",
-  "hashNeeded" {":type" "BigInt", "value" "216000"},
+  "hashNeeded" 216000,
   "isLabTech" true}
  {"preTechsImplicit" [1413],
   "preTechs" [1807],
@@ -1251,7 +1251,7 @@
   "itemPoints" [10 10],
   "iconPath" "Icons/Tech/1814",
   "description" "高爆炮弹组描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechsImplicit" [1113],
   "preTechs" [1814],
@@ -1265,7 +1265,7 @@
   "itemPoints" [12 12 3],
   "iconPath" "Icons/Tech/1815",
   "description" "超音速导弹组描述",
-  "hashNeeded" {":type" "BigInt", "value" "240000"},
+  "hashNeeded" 240000,
   "isLabTech" true}
  {"preTechsImplicit" [1414],
   "preTechs" [1815],
@@ -1279,7 +1279,7 @@
   "itemPoints" [10 10 10 10],
   "iconPath" "Icons/Tech/1816",
   "description" "晶石炮弹组描述",
-  "hashNeeded" {":type" "BigInt", "value" "288000"},
+  "hashNeeded" 288000,
   "isLabTech" true}
  {"preTechsImplicit" [1143],
   "preTechs" [1816],
@@ -1293,7 +1293,7 @@
   "itemPoints" [10 10 10 10 10],
   "iconPath" "Icons/Tech/1817",
   "description" "引力导弹组描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [1145 1811],
   "id" 1818,
@@ -1306,7 +1306,7 @@
   "itemPoints" [20 20 20 20 20],
   "iconPath" "Icons/Tech/1818",
   "description" "反物质胶囊描述",
-  "hashNeeded" {":type" "BigInt", "value" "540000"},
+  "hashNeeded" 540000,
   "isLabTech" true}
  {"preTechsImplicit" [1101],
   "preTechs" [1826],
@@ -1322,7 +1322,7 @@
   "itemPoints" [10],
   "iconPath" "Icons/Tech/1819",
   "description" "地面战斗机-E型描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechsImplicit" [1502],
   "preTechs" [1819],
@@ -1336,7 +1336,7 @@
   "itemPoints" [10 10],
   "iconPath" "Icons/Tech/1820",
   "description" "地面战斗机-A型描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechsImplicit" [1703],
   "preTechs" [1819],
@@ -1350,7 +1350,7 @@
   "itemPoints" [10 10 10],
   "iconPath" "Icons/Tech/1821",
   "description" "地面战斗机-F型描述",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechs" [1809 1820],
   "unlockFunctions" [79 80],
@@ -1365,7 +1365,7 @@
   "itemPoints" [10 10 10 10],
   "iconPath" "Icons/Tech/1822",
   "description" "太空战斗机-A型描述",
-  "hashNeeded" {":type" "BigInt", "value" "216000"},
+  "hashNeeded" 216000,
   "isLabTech" true}
  {"preTechs" [1822 1821],
   "id" 1823,
@@ -1378,7 +1378,7 @@
   "itemPoints" [10 10 10 10 10],
   "iconPath" "Icons/Tech/1823",
   "description" "太空战斗机-F型描述",
-  "hashNeeded" {":type" "BigInt", "value" "288000"},
+  "hashNeeded" 288000,
   "isLabTech" true}
  {"preTechs" [1810],
   "id" 1824,
@@ -1391,7 +1391,7 @@
   "itemPoints" [10 10 10],
   "iconPath" "Icons/Tech/1824",
   "description" "电磁胶囊II描述",
-  "hashNeeded" {":type" "BigInt", "value" "216000"},
+  "hashNeeded" 216000,
   "isLabTech" true}
  {"preTechs" [1801 1805],
   "id" 1826,
@@ -1404,7 +1404,7 @@
   "itemPoints" [10],
   "iconPath" "Icons/Tech/1826",
   "description" "战场分析基站描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [1312],
   "id" 1901,
@@ -1419,7 +1419,7 @@
   "itemPoints" [120],
   "iconPath" "Icons/Tech/1901",
   "description" "数字模拟计算描述",
-  "hashNeeded" {":type" "BigInt", "value" "24000"}}
+  "hashNeeded" 24000}
  {"preTechs" [1203],
   "id" 1902,
   "preItem" [5203],
@@ -1433,7 +1433,7 @@
   "itemPoints" [120],
   "iconPath" "Icons/Tech/1902",
   "description" "物质重组技术描述",
-  "hashNeeded" {":type" "BigInt", "value" "18000"}}
+  "hashNeeded" 18000}
  {"preTechs" [1417],
   "id" 1903,
   "preItem" [5204],
@@ -1447,7 +1447,7 @@
   "itemPoints" [120],
   "iconPath" "Icons/Tech/1903",
   "description" "负熵递归描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"}}
+  "hashNeeded" 36000}
  {"preTechs" [1145],
   "id" 1904,
   "preItem" [5205],
@@ -1461,7 +1461,7 @@
   "itemPoints" [120],
   "iconPath" "Icons/Tech/1904",
   "description" "金色燃料棒描述",
-  "hashNeeded" {":type" "BigInt", "value" "60000"}}
+  "hashNeeded" 60000}
  {"propertyItemCounts" [20],
   "unlockFunctions" [6 81 82],
   "unlockValues" [80000000 30000 1],
@@ -1477,7 +1477,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/2101",
   "description" "机甲核心描述",
-  "hashNeeded" {":type" "BigInt", "value" "3600"}}
+  "hashNeeded" 3600}
  {"preTechs" [2101],
   "unlockFunctions" [6 81 82 83],
   "unlockValues" [200000000 30000 1 200],
@@ -1492,7 +1492,7 @@
   "itemPoints" [10 10],
   "iconPath" "Icons/Tech/2102",
   "description" "机甲核心描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [2102],
   "unlockFunctions" [6 81 82 83],
@@ -1508,7 +1508,7 @@
   "itemPoints" [10 10 10],
   "iconPath" "Icons/Tech/2103",
   "description" "机甲核心描述",
-  "hashNeeded" {":type" "BigInt", "value" "108000"},
+  "hashNeeded" 108000,
   "isLabTech" true}
  {"preTechs" [2103],
   "unlockFunctions" [6 81 82 83],
@@ -1524,7 +1524,7 @@
   "itemPoints" [6 6 6 6],
   "iconPath" "Icons/Tech/2104",
   "description" "机甲核心描述",
-  "hashNeeded" {":type" "BigInt", "value" "300000"},
+  "hashNeeded" 300000,
   "isLabTech" true}
  {"preTechs" [2104],
   "unlockFunctions" [6 81 82 83],
@@ -1540,7 +1540,7 @@
   "itemPoints" [2 2 2 2 2],
   "iconPath" "Icons/Tech/2105",
   "description" "机甲核心描述",
-  "hashNeeded" {":type" "BigInt", "value" "1440000"},
+  "hashNeeded" 1440000,
   "isLabTech" true}
  {"preTechs" [2105],
   "unlockFunctions" [6 81 83],
@@ -1558,7 +1558,7 @@
   "itemPoints" [2],
   "iconPath" "Icons/Tech/2106",
   "description" "机甲核心描述2",
-  "hashNeeded" {":type" "BigInt", "value" "18000000"},
+  "hashNeeded" 18000000,
   "isLabTech" true}
  {"propertyItemCounts" [100],
   "preTechsImplicit" [2101],
@@ -1576,7 +1576,7 @@
   "itemPoints" [30],
   "iconPath" "Icons/Tech/2201",
   "description" "机械骨骼描述",
-  "hashNeeded" {":type" "BigInt", "value" "7200"}}
+  "hashNeeded" 7200}
  {"preTechsImplicit" [2101],
   "preTechs" [2201],
   "unlockFunctions" [3],
@@ -1592,7 +1592,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/2202",
   "description" "机械骨骼描述2",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechsImplicit" [2102],
   "preTechs" [2202],
@@ -1609,7 +1609,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/2203",
   "description" "机械骨骼描述2",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechsImplicit" [2102],
   "preTechs" [2203],
@@ -1626,7 +1626,7 @@
   "itemPoints" [12 12 12],
   "iconPath" "Icons/Tech/2204",
   "description" "机械骨骼描述2",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechsImplicit" [2103],
   "preTechs" [2204],
@@ -1643,7 +1643,7 @@
   "itemPoints" [12 12 12],
   "iconPath" "Icons/Tech/2205",
   "description" "机械骨骼描述2",
-  "hashNeeded" {":type" "BigInt", "value" "240000"},
+  "hashNeeded" 240000,
   "isLabTech" true}
  {"preTechsImplicit" [2104],
   "preTechs" [2205],
@@ -1660,7 +1660,7 @@
   "itemPoints" [12 12 12 12],
   "iconPath" "Icons/Tech/2206",
   "description" "机械骨骼描述2",
-  "hashNeeded" {":type" "BigInt", "value" "300000"},
+  "hashNeeded" 300000,
   "isLabTech" true}
  {"preTechsImplicit" [2104],
   "preTechs" [2206],
@@ -1677,7 +1677,7 @@
   "itemPoints" [12 12 12 12],
   "iconPath" "Icons/Tech/2207",
   "description" "机械骨骼描述2",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechsImplicit" [2105],
   "preTechs" [2207],
@@ -1694,7 +1694,7 @@
   "itemPoints" [6 6 6 6 6],
   "iconPath" "Icons/Tech/2208",
   "description" "机械骨骼描述2",
-  "hashNeeded" {":type" "BigInt", "value" "1200000"},
+  "hashNeeded" 1200000,
   "isLabTech" true}
  {"propertyItemCounts" [100],
   "preTechsImplicit" [2101],
@@ -1712,7 +1712,7 @@
   "itemPoints" [60 60],
   "iconPath" "Icons/Tech/2301",
   "description" "机舱容量描述",
-  "hashNeeded" {":type" "BigInt", "value" "7200"}}
+  "hashNeeded" 7200}
  {"preTechsImplicit" [2101],
   "preTechs" [2301],
   "unlockFunctions" [5],
@@ -1728,7 +1728,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/2302",
   "description" "机舱容量描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechsImplicit" [2102],
   "preTechs" [2302],
@@ -1745,7 +1745,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/2303",
   "description" "机舱容量描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechsImplicit" [2102],
   "preTechs" [2303],
@@ -1762,7 +1762,7 @@
   "itemPoints" [12 12 12],
   "iconPath" "Icons/Tech/2304",
   "description" "机舱容量描述2",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechsImplicit" [2103],
   "preTechs" [2304],
@@ -1779,7 +1779,7 @@
   "itemPoints" [12 12 12],
   "iconPath" "Icons/Tech/2305",
   "description" "机舱容量描述2",
-  "hashNeeded" {":type" "BigInt", "value" "240000"},
+  "hashNeeded" 240000,
   "isLabTech" true}
  {"preTechsImplicit" [2105],
   "preTechs" [2305],
@@ -1796,7 +1796,7 @@
   "itemPoints" [6 6 6 6 6],
   "iconPath" "Icons/Tech/2306",
   "description" "机舱容量描述2",
-  "hashNeeded" {":type" "BigInt", "value" "600000"},
+  "hashNeeded" 600000,
   "isLabTech" true}
  {"preTechs" [2306],
   "unlockFunctions" [38 32],
@@ -1812,7 +1812,7 @@
   "itemPoints" [6],
   "iconPath" "Icons/Tech/2307",
   "description" "机舱容量描述2",
-  "hashNeeded" {":type" "BigInt", "value" "900000"},
+  "hashNeeded" 900000,
   "isLabTech" true}
  {"preTechsImplicit" [2101],
   "unlockFunctions" [1],
@@ -1828,7 +1828,7 @@
   "itemPoints" [40],
   "iconPath" "Icons/Tech/2401",
   "description" "通讯控制描述",
-  "hashNeeded" {":type" "BigInt", "value" "9000"},
+  "hashNeeded" 9000,
   "isLabTech" true}
  {"preTechsImplicit" [2101],
   "preTechs" [2401],
@@ -1845,7 +1845,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/2402",
   "description" "通讯控制描述2",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechsImplicit" [2102],
   "preTechs" [2402],
@@ -1862,7 +1862,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/2403",
   "description" "通讯控制描述3",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechsImplicit" [2103],
   "preTechs" [2403],
@@ -1879,7 +1879,7 @@
   "itemPoints" [12 12 12],
   "iconPath" "Icons/Tech/2404",
   "description" "通讯控制描述2",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechsImplicit" [2104],
   "preTechs" [2404],
@@ -1896,7 +1896,7 @@
   "itemPoints" [12 12 12 12],
   "iconPath" "Icons/Tech/2405",
   "description" "通讯控制描述2",
-  "hashNeeded" {":type" "BigInt", "value" "300000"},
+  "hashNeeded" 300000,
   "isLabTech" true}
  {"preTechsImplicit" [2105],
   "preTechs" [2405],
@@ -1913,7 +1913,7 @@
   "itemPoints" [4 4 4 4 4],
   "iconPath" "Icons/Tech/2406",
   "description" "通讯控制描述3",
-  "hashNeeded" {":type" "BigInt", "value" "1440000"},
+  "hashNeeded" 1440000,
   "isLabTech" true}
  {"preTechsImplicit" [2105],
   "preTechs" [2406],
@@ -1932,7 +1932,7 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/2407",
   "description" "通讯控制描述2",
-  "hashNeeded" {":type" "BigInt", "value" "64800000"},
+  "hashNeeded" 64800000,
   "isLabTech" true}
  {"propertyItemCounts" [200],
   "preTechsImplicit" [2101],
@@ -1950,7 +1950,7 @@
   "itemPoints" [30 30 30],
   "iconPath" "Icons/Tech/2501",
   "description" "能量回路描述",
-  "hashNeeded" {":type" "BigInt", "value" "7200"}}
+  "hashNeeded" 7200}
  {"preTechsImplicit" [2102],
   "preTechs" [2501],
   "unlockFunctions" [2],
@@ -1966,7 +1966,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/2502",
   "description" "能量回路描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechsImplicit" [2103],
   "preTechs" [2502],
@@ -1983,7 +1983,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/2503",
   "description" "能量回路描述",
-  "hashNeeded" {":type" "BigInt", "value" "216000"},
+  "hashNeeded" 216000,
   "isLabTech" true}
  {"preTechsImplicit" [2104],
   "preTechs" [2503],
@@ -2000,7 +2000,7 @@
   "itemPoints" [12 12 12],
   "iconPath" "Icons/Tech/2504",
   "description" "能量回路描述",
-  "hashNeeded" {":type" "BigInt", "value" "600000"},
+  "hashNeeded" 600000,
   "isLabTech" true}
  {"preTechsImplicit" [2105],
   "preTechs" [2504],
@@ -2017,7 +2017,7 @@
   "itemPoints" [4 4 4 4 4],
   "iconPath" "Icons/Tech/2505",
   "description" "能量回路描述",
-  "hashNeeded" {":type" "BigInt", "value" "2700000"},
+  "hashNeeded" 2700000,
   "isLabTech" true}
  {"preTechsImplicit" [2105],
   "preTechs" [2505],
@@ -2036,7 +2036,7 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/2506",
   "description" "能量回路描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000000"},
+  "hashNeeded" 36000000,
   "isLabTech" true}
  {"preTechsImplicit" [2101],
   "unlockFunctions" [10],
@@ -2052,7 +2052,7 @@
   "itemPoints" [40],
   "iconPath" "Icons/Tech/2601",
   "description" "无人机引擎描述",
-  "hashNeeded" {":type" "BigInt", "value" "18000"},
+  "hashNeeded" 18000,
   "isLabTech" true}
  {"preTechsImplicit" [2102],
   "preTechs" [2601],
@@ -2069,7 +2069,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/2602",
   "description" "无人机引擎描述2",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechsImplicit" [2103],
   "preTechs" [2602],
@@ -2086,7 +2086,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/2603",
   "description" "无人机引擎描述2",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechsImplicit" [2104],
   "preTechs" [2603],
@@ -2103,7 +2103,7 @@
   "itemPoints" [12 12 12 12],
   "iconPath" "Icons/Tech/2604",
   "description" "无人机引擎描述2",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechsImplicit" [2105],
   "preTechs" [2604],
@@ -2120,7 +2120,7 @@
   "itemPoints" [4 4 4 4 4],
   "iconPath" "Icons/Tech/2605",
   "description" "无人机引擎描述2",
-  "hashNeeded" {":type" "BigInt", "value" "1440000"},
+  "hashNeeded" 1440000,
   "isLabTech" true}
  {"preTechsImplicit" [2105],
   "preTechs" [2605],
@@ -2139,7 +2139,7 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/2606",
   "description" "无人机引擎描述2",
-  "hashNeeded" {":type" "BigInt", "value" "45000000"},
+  "hashNeeded" 45000000,
   "isLabTech" true}
  {"propertyItemCounts" [100],
   "preTechsImplicit" [2101],
@@ -2157,7 +2157,7 @@
   "itemPoints" [30],
   "iconPath" "Icons/Tech/2701",
   "description" "批量建造描述",
-  "hashNeeded" {":type" "BigInt", "value" "12000"}}
+  "hashNeeded" 12000}
  {"preTechsImplicit" [2101],
   "preTechs" [2701],
   "unlockFunctions" [28],
@@ -2173,7 +2173,7 @@
   "itemPoints" [30],
   "iconPath" "Icons/Tech/2702",
   "description" "批量建造描述2",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechsImplicit" [2102],
   "preTechs" [2702],
@@ -2190,7 +2190,7 @@
   "itemPoints" [30 30],
   "iconPath" "Icons/Tech/2703",
   "description" "批量建造描述2",
-  "hashNeeded" {":type" "BigInt", "value" "60000"},
+  "hashNeeded" 60000,
   "isLabTech" true}
  {"preTechsImplicit" [2103],
   "preTechs" [2703],
@@ -2207,7 +2207,7 @@
   "itemPoints" [15 15 15],
   "iconPath" "Icons/Tech/2704",
   "description" "批量建造描述2",
-  "hashNeeded" {":type" "BigInt", "value" "192000"},
+  "hashNeeded" 192000,
   "isLabTech" true}
  {"preTechsImplicit" [2104],
   "preTechs" [2704],
@@ -2224,7 +2224,7 @@
   "itemPoints" [15 15 15 15],
   "iconPath" "Icons/Tech/2705",
   "description" "批量建造描述5",
-  "hashNeeded" {":type" "BigInt", "value" "240000"},
+  "hashNeeded" 240000,
   "isLabTech" true}
  {"preTechsImplicit" [1001],
   "unlockFunctions" [75 65 66],
@@ -2240,7 +2240,7 @@
   "itemPoints" [40],
   "iconPath" "Icons/Tech/2801",
   "description" "解锁能量护盾描述",
-  "hashNeeded" {":type" "BigInt", "value" "9000"},
+  "hashNeeded" 9000,
   "isLabTech" true}
  {"preTechsImplicit" [2102],
   "preTechs" [2801],
@@ -2257,7 +2257,7 @@
   "itemPoints" [10 10],
   "iconPath" "Icons/Tech/2802",
   "description" "能量护盾描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechsImplicit" [2103],
   "preTechs" [2802],
@@ -2274,7 +2274,7 @@
   "itemPoints" [5 5 5],
   "iconPath" "Icons/Tech/2803",
   "description" "能量护盾描述3",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [2803],
   "unlockFunctions" [65 66],
@@ -2290,7 +2290,7 @@
   "itemPoints" [6 6 6 6],
   "iconPath" "Icons/Tech/2804",
   "description" "能量护盾描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechsImplicit" [2104],
   "preTechs" [2804],
@@ -2307,7 +2307,7 @@
   "itemPoints" [5 5 5 5 5],
   "iconPath" "Icons/Tech/2805",
   "description" "能量护盾描述",
-  "hashNeeded" {":type" "BigInt", "value" "720000"},
+  "hashNeeded" 720000,
   "isLabTech" true}
  {"preTechsImplicit" [2105],
   "preTechs" [2805],
@@ -2326,7 +2326,7 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/2806",
   "description" "能量护盾描述",
-  "hashNeeded" {":type" "BigInt", "value" "18000000"},
+  "hashNeeded" 18000000,
   "isLabTech" true}
  {"preTechs" [2806],
   "unlockFunctions" [66],
@@ -2344,7 +2344,7 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/2807",
   "description" "能量护盾描述7",
-  "hashNeeded" {":type" "BigInt", "value" "18000000"},
+  "hashNeeded" 18000000,
   "isLabTech" true}
  {"propertyItemCounts" [200],
   "preTechsImplicit" [2101],
@@ -2362,7 +2362,7 @@
   "itemPoints" [30 10],
   "iconPath" "Icons/Tech/2901",
   "description" "驱动引擎描述",
-  "hashNeeded" {":type" "BigInt", "value" "18000"}}
+  "hashNeeded" 18000}
  {"preTechsImplicit" [2102],
   "preTechs" [2901],
   "unlockFunctions" [4],
@@ -2378,7 +2378,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/2902",
   "description" "驱动引擎描述2",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechsImplicit" [2103],
   "preTechs" [2902],
@@ -2395,7 +2395,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/2903",
   "description" "驱动引擎描述3",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechsImplicit" [2104 1704],
   "preTechs" [2903],
@@ -2412,7 +2412,7 @@
   "itemPoints" [10 10 10],
   "iconPath" "Icons/Tech/2904",
   "description" "驱动引擎描述4",
-  "hashNeeded" {":type" "BigInt", "value" "720000"},
+  "hashNeeded" 720000,
   "isLabTech" true}
  {"preTechs" [2904],
   "unlockFunctions" [27],
@@ -2428,7 +2428,7 @@
   "itemPoints" [10 10 10 10],
   "iconPath" "Icons/Tech/2904",
   "description" "驱动引擎描述5",
-  "hashNeeded" {":type" "BigInt", "value" "1080000"},
+  "hashNeeded" 1080000,
   "isLabTech" true}
  {"preTechs" [2905],
   "unlockFunctions" [27],
@@ -2461,7 +2461,7 @@
   "itemPoints" [40],
   "iconPath" "Icons/Tech/2951",
   "description" "自动重建描述",
-  "hashNeeded" {":type" "BigInt", "value" "18000"},
+  "hashNeeded" 18000,
   "isLabTech" true}
  {"preTechs" [2951],
   "unlockFunctions" [76],
@@ -2477,7 +2477,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/2952",
   "description" "自动重建描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechs" [2952],
   "unlockFunctions" [76],
@@ -2493,7 +2493,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/2953",
   "description" "自动重建描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [2953],
   "unlockFunctions" [76],
@@ -2509,7 +2509,7 @@
   "itemPoints" [12 12 12 12],
   "iconPath" "Icons/Tech/2954",
   "description" "自动重建描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [2954],
   "unlockFunctions" [76],
@@ -2525,7 +2525,7 @@
   "itemPoints" [8 8 8 8 8],
   "iconPath" "Icons/Tech/2955",
   "description" "自动重建描述",
-  "hashNeeded" {":type" "BigInt", "value" "720000"},
+  "hashNeeded" 720000,
   "isLabTech" true}
  {"preTechs" [2955],
   "unlockFunctions" [76],
@@ -2541,7 +2541,7 @@
   "itemPoints" [8],
   "iconPath" "Icons/Tech/2956",
   "description" "自动重建描述6",
-  "hashNeeded" {":type" "BigInt", "value" "1440000"},
+  "hashNeeded" 1440000,
   "isLabTech" true}
  {"preTechsImplicit" [1503],
   "unlockFunctions" [12],
@@ -2557,7 +2557,7 @@
   "itemPoints" [40 40 40],
   "iconPath" "Icons/Tech/3101",
   "description" "太阳帆寿命描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [3101],
   "unlockFunctions" [12],
@@ -2573,7 +2573,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/3102",
   "description" "太阳帆寿命描述",
-  "hashNeeded" {":type" "BigInt", "value" "108000"},
+  "hashNeeded" 108000,
   "isLabTech" true}
  {"preTechs" [3102],
   "unlockFunctions" [12],
@@ -2589,7 +2589,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/3103",
   "description" "太阳帆寿命描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [3103],
   "unlockFunctions" [12],
@@ -2605,7 +2605,7 @@
   "itemPoints" [12 12 12 12],
   "iconPath" "Icons/Tech/3104",
   "description" "太阳帆寿命描述",
-  "hashNeeded" {":type" "BigInt", "value" "300000"},
+  "hashNeeded" 300000,
   "isLabTech" true}
  {"preTechs" [3104],
   "unlockFunctions" [12],
@@ -2621,7 +2621,7 @@
   "itemPoints" [12 12 12 12],
   "iconPath" "Icons/Tech/3105",
   "description" "太阳帆寿命描述",
-  "hashNeeded" {":type" "BigInt", "value" "480000"},
+  "hashNeeded" 480000,
   "isLabTech" true}
  {"preTechs" [3105],
   "unlockFunctions" [12],
@@ -2637,7 +2637,7 @@
   "itemPoints" [6 6 6 6],
   "iconPath" "Icons/Tech/3106",
   "description" "太阳帆寿命描述",
-  "hashNeeded" {":type" "BigInt", "value" "1200000"},
+  "hashNeeded" 1200000,
   "isLabTech" true}
  {"preTechsImplicit" [1504],
   "unlockFunctions" [13],
@@ -2653,7 +2653,7 @@
   "itemPoints" [40 40 40],
   "iconPath" "Icons/Tech/3201",
   "description" "射线传输效率描述",
-  "hashNeeded" {":type" "BigInt", "value" "54000"},
+  "hashNeeded" 54000,
   "isLabTech" true}
  {"preTechs" [3201],
   "unlockFunctions" [13],
@@ -2669,7 +2669,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/3202",
   "description" "射线传输效率描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [3202],
   "unlockFunctions" [13],
@@ -2685,7 +2685,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/3203",
   "description" "射线传输效率描述",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechs" [3203],
   "unlockFunctions" [13],
@@ -2701,7 +2701,7 @@
   "itemPoints" [12 12 12 12],
   "iconPath" "Icons/Tech/3204",
   "description" "射线传输效率描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [3204],
   "unlockFunctions" [13],
@@ -2717,7 +2717,7 @@
   "itemPoints" [12 12 12 12],
   "iconPath" "Icons/Tech/3205",
   "description" "射线传输效率描述",
-  "hashNeeded" {":type" "BigInt", "value" "420000"},
+  "hashNeeded" 420000,
   "isLabTech" true}
  {"preTechs" [3205],
   "unlockFunctions" [13],
@@ -2733,7 +2733,7 @@
   "itemPoints" [12 12 12 12 12],
   "iconPath" "Icons/Tech/3206",
   "description" "射线传输效率描述",
-  "hashNeeded" {":type" "BigInt", "value" "480000"},
+  "hashNeeded" 480000,
   "isLabTech" true}
  {"preTechs" [3206],
   "unlockFunctions" [13],
@@ -2749,7 +2749,7 @@
   "itemPoints" [4 4 4 4 4],
   "iconPath" "Icons/Tech/3207",
   "description" "射线传输效率描述",
-  "hashNeeded" {":type" "BigInt", "value" "1620000"},
+  "hashNeeded" 1620000,
   "isLabTech" true}
  {"preTechs" [3207],
   "unlockFunctions" [13],
@@ -2766,7 +2766,7 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/3208",
   "description" "射线传输效率描述",
-  "hashNeeded" {":type" "BigInt", "value" "-12600000"},
+  "hashNeeded" -12600000,
   "isLabTech" true}
  {"preTechsImplicit" [1607],
   "unlockFunctions" [14],
@@ -2783,7 +2783,7 @@
   "itemPoints" [40 40 40],
   "iconPath" "Icons/Tech/3301",
   "description" "分拣器货物叠加描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [3301],
   "unlockFunctions" [14],
@@ -2800,7 +2800,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/3302",
   "description" "分拣器货物叠加描述",
-  "hashNeeded" {":type" "BigInt", "value" "108000"},
+  "hashNeeded" 108000,
   "isLabTech" true}
  {"preTechs" [3302],
   "unlockFunctions" [14],
@@ -2817,7 +2817,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/3303",
   "description" "分拣器货物叠加描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [3303],
   "unlockFunctions" [14],
@@ -2834,7 +2834,7 @@
   "itemPoints" [12 12 12],
   "iconPath" "Icons/Tech/3304",
   "description" "分拣器货物叠加描述",
-  "hashNeeded" {":type" "BigInt", "value" "300000"},
+  "hashNeeded" 300000,
   "isLabTech" true}
  {"preTechs" [3304],
   "unlockFunctions" [14],
@@ -2851,7 +2851,7 @@
   "itemPoints" [6 6 6],
   "iconPath" "Icons/Tech/3305",
   "description" "分拣器货物叠加描述",
-  "hashNeeded" {":type" "BigInt", "value" "900000"},
+  "hashNeeded" 900000,
   "isLabTech" true}
  {"preTechsImplicit" [1607],
   "preTechs" [3305],
@@ -2869,7 +2869,7 @@
   "itemPoints" [6 6 6],
   "iconPath" "Icons/Tech/3306",
   "description" "分拣器货物叠加描述2",
-  "hashNeeded" {":type" "BigInt", "value" "1080000"},
+  "hashNeeded" 1080000,
   "isLabTech" true}
  {"preTechsImplicit" [1607],
   "unlockFunctions" [39],
@@ -2885,7 +2885,7 @@
   "itemPoints" [30 30 30],
   "iconPath" "Icons/Tech/3311",
   "description" "集装分拣器货物叠加描述",
-  "hashNeeded" {":type" "BigInt", "value" "60000"},
+  "hashNeeded" 60000,
   "isLabTech" true}
  {"preTechs" [3311],
   "unlockFunctions" [41],
@@ -2901,7 +2901,7 @@
   "itemPoints" [30 30 30],
   "iconPath" "Icons/Tech/3312",
   "description" "集装分拣器货物叠加描述2",
-  "hashNeeded" {":type" "BigInt", "value" "96000"},
+  "hashNeeded" 96000,
   "isLabTech" true}
  {"preTechs" [3312],
   "unlockFunctions" [39],
@@ -2917,7 +2917,7 @@
   "itemPoints" [30 30 30],
   "iconPath" "Icons/Tech/3313",
   "description" "集装分拣器货物叠加描述4",
-  "hashNeeded" {":type" "BigInt", "value" "120000"},
+  "hashNeeded" 120000,
   "isLabTech" true}
  {"preTechs" [3313],
   "unlockFunctions" [41],
@@ -2933,7 +2933,7 @@
   "itemPoints" [15 15 15],
   "iconPath" "Icons/Tech/3314",
   "description" "集装分拣器货物叠加描述2",
-  "hashNeeded" {":type" "BigInt", "value" "288000"},
+  "hashNeeded" 288000,
   "isLabTech" true}
  {"preTechs" [3314],
   "unlockFunctions" [39],
@@ -2949,7 +2949,7 @@
   "itemPoints" [15 15 15],
   "iconPath" "Icons/Tech/3315",
   "description" "集装分拣器货物叠加描述5",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechsImplicit" [1607],
   "preTechs" [3315],
@@ -2966,7 +2966,7 @@
   "itemPoints" [6 6 6 6],
   "iconPath" "Icons/Tech/3316",
   "description" "集装分拣器货物叠加描述3",
-  "hashNeeded" {":type" "BigInt", "value" "1200000"},
+  "hashNeeded" 1200000,
   "isLabTech" true}
  {"preTechsImplicit" [1608],
   "unlockFunctions" [36],
@@ -2982,7 +2982,7 @@
   "itemPoints" [40 40],
   "iconPath" "Icons/Tech/4001",
   "description" "配送范围描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [4001],
   "unlockFunctions" [36],
@@ -2998,7 +2998,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/4002",
   "description" "配送范围描述",
-  "hashNeeded" {":type" "BigInt", "value" "108000"},
+  "hashNeeded" 108000,
   "isLabTech" true}
  {"preTechs" [4002],
   "unlockFunctions" [36],
@@ -3014,7 +3014,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/4003",
   "description" "配送范围描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [4003],
   "unlockFunctions" [36],
@@ -3030,7 +3030,7 @@
   "itemPoints" [20 20 20 20],
   "iconPath" "Icons/Tech/4004",
   "description" "配送范围描述",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechs" [4004],
   "unlockFunctions" [36],
@@ -3046,7 +3046,7 @@
   "itemPoints" [12 12 12 12 12],
   "iconPath" "Icons/Tech/4005",
   "description" "配送范围描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechsImplicit" [1604],
   "unlockFunctions" [15 34],
@@ -3062,7 +3062,7 @@
   "itemPoints" [40 40 40],
   "iconPath" "Icons/Tech/3401",
   "description" "运输船引擎描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [3401],
   "unlockFunctions" [15 34],
@@ -3078,7 +3078,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/3402",
   "description" "运输船引擎描述",
-  "hashNeeded" {":type" "BigInt", "value" "108000"},
+  "hashNeeded" 108000,
   "isLabTech" true}
  {"preTechsImplicit" [1605],
   "preTechs" [3402],
@@ -3095,7 +3095,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/3403",
   "description" "运输船引擎描述2",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechsImplicit" [2904],
   "preTechs" [3403],
@@ -3112,7 +3112,7 @@
   "itemPoints" [12 12 12 12],
   "iconPath" "Icons/Tech/3404",
   "description" "运输船引擎描述3",
-  "hashNeeded" {":type" "BigInt", "value" "300000"},
+  "hashNeeded" 300000,
   "isLabTech" true}
  {"preTechs" [3404],
   "unlockFunctions" [15 34 16],
@@ -3128,7 +3128,7 @@
   "itemPoints" [12 12 12 12 12],
   "iconPath" "Icons/Tech/3405",
   "description" "运输船引擎描述2",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [3405],
   "unlockFunctions" [15 34 16],
@@ -3144,7 +3144,7 @@
   "itemPoints" [4 4 4 4 4],
   "iconPath" "Icons/Tech/3406",
   "description" "运输船引擎描述2",
-  "hashNeeded" {":type" "BigInt", "value" "1440000"},
+  "hashNeeded" 1440000,
   "isLabTech" true}
  {"preTechs" [3406],
   "unlockFunctions" [15 34 16],
@@ -3162,7 +3162,7 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/3407",
   "description" "运输船引擎描述2",
-  "hashNeeded" {":type" "BigInt", "value" "64800000"},
+  "hashNeeded" 64800000,
   "isLabTech" true}
  {"preTechsImplicit" [1604],
   "unlockFunctions" [35 18],
@@ -3178,7 +3178,7 @@
   "itemPoints" [40 40 40],
   "iconPath" "Icons/Tech/3501",
   "description" "运输机舱扩容描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [3501],
   "unlockFunctions" [35 18],
@@ -3194,7 +3194,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/3502",
   "description" "运输机舱扩容描述2",
-  "hashNeeded" {":type" "BigInt", "value" "108000"},
+  "hashNeeded" 108000,
   "isLabTech" true}
  {"preTechsImplicit" [1605],
   "preTechs" [3502],
@@ -3211,7 +3211,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/3503",
   "description" "运输机舱扩容描述3",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [3503],
   "unlockFunctions" [35 18 19],
@@ -3227,7 +3227,7 @@
   "itemPoints" [12 12 12],
   "iconPath" "Icons/Tech/3504",
   "description" "运输机舱扩容描述4",
-  "hashNeeded" {":type" "BigInt", "value" "300000"},
+  "hashNeeded" 300000,
   "isLabTech" true}
  {"preTechs" [3504],
   "unlockFunctions" [35 18 19],
@@ -3243,7 +3243,7 @@
   "itemPoints" [6 6 6 6],
   "iconPath" "Icons/Tech/3505",
   "description" "运输机舱扩容描述4",
-  "hashNeeded" {":type" "BigInt", "value" "720000"},
+  "hashNeeded" 720000,
   "isLabTech" true}
  {"preTechs" [3505],
   "unlockFunctions" [35 18 19],
@@ -3259,7 +3259,7 @@
   "itemPoints" [6 6 6 6],
   "iconPath" "Icons/Tech/3506",
   "description" "运输机舱扩容描述4",
-  "hashNeeded" {":type" "BigInt", "value" "960000"},
+  "hashNeeded" 960000,
   "isLabTech" true}
  {"preTechs" [3506],
   "unlockFunctions" [35 18 19],
@@ -3275,7 +3275,7 @@
   "itemPoints" [3 3 3 3 3],
   "iconPath" "Icons/Tech/3507",
   "description" "运输机舱扩容描述4",
-  "hashNeeded" {":type" "BigInt", "value" "2400000"},
+  "hashNeeded" 2400000,
   "isLabTech" true}
  {"preTechs" [3507],
   "unlockFunctions" [18 19],
@@ -3291,7 +3291,7 @@
   "itemPoints" [3 3 3 3 3],
   "iconPath" "Icons/Tech/3508",
   "description" "运输机舱扩容描述6",
-  "hashNeeded" {":type" "BigInt", "value" "4800000"},
+  "hashNeeded" 4800000,
   "isLabTech" true}
  {"preTechs" [3508],
   "unlockFunctions" [18 19 30 31],
@@ -3308,7 +3308,7 @@
   "itemPoints" [3],
   "iconPath" "Icons/Tech/3509",
   "description" "运输机舱扩容描述5",
-  "hashNeeded" {":type" "BigInt", "value" "-14400000"},
+  "hashNeeded" -14400000,
   "isLabTech" true}
  {"preTechs" [3509],
   "unlockFunctions" [18 19 30 31],
@@ -3325,7 +3325,7 @@
   "itemPoints" [3],
   "iconPath" "Icons/Tech/3510",
   "description" "运输机舱扩容描述5",
-  "hashNeeded" {":type" "BigInt", "value" "-43200000"},
+  "hashNeeded" -43200000,
   "isLabTech" true}
  {"preTechsImplicit" [3508],
   "unlockFunctions" [29],
@@ -3341,7 +3341,7 @@
   "itemPoints" [3],
   "iconPath" "Icons/Tech/3801",
   "description" "运输站集装物流描述1",
-  "hashNeeded" {":type" "BigInt", "value" "9600000"},
+  "hashNeeded" 9600000,
   "isLabTech" true}
  {"preTechsMax" true,
   "preTechsImplicit" [3509],
@@ -3359,7 +3359,7 @@
   "itemPoints" [2],
   "iconPath" "Icons/Tech/3802",
   "description" "运输站集装物流描述2",
-  "hashNeeded" {":type" "BigInt", "value" "28800000"},
+  "hashNeeded" 28800000,
   "isLabTech" true}
  {"preTechsMax" true,
   "preTechsImplicit" [3510],
@@ -3377,7 +3377,7 @@
   "itemPoints" [2],
   "iconPath" "Icons/Tech/3803",
   "description" "运输站集装物流描述2",
-  "hashNeeded" {":type" "BigInt", "value" "43200000"},
+  "hashNeeded" 43200000,
   "isLabTech" true}
  {"preTechsImplicit" [1001],
   "unlockFunctions" [20 21 85],
@@ -3393,7 +3393,7 @@
   "itemPoints" [40 40],
   "iconPath" "Icons/Tech/3601",
   "description" "矿物利用描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [3601],
   "unlockFunctions" [20 21 85],
@@ -3409,7 +3409,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/3602",
   "description" "矿物利用描述2",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechs" [3602],
   "unlockFunctions" [20 21 85],
@@ -3425,7 +3425,7 @@
   "itemPoints" [20 20 20 20],
   "iconPath" "Icons/Tech/3603",
   "description" "矿物利用描述2",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechs" [3603],
   "unlockFunctions" [20 21 85],
@@ -3441,7 +3441,7 @@
   "itemPoints" [12 12 12 12],
   "iconPath" "Icons/Tech/3604",
   "description" "矿物利用描述2",
-  "hashNeeded" {":type" "BigInt", "value" "480000"},
+  "hashNeeded" 480000,
   "isLabTech" true}
  {"preTechs" [3604],
   "unlockFunctions" [20 21 85],
@@ -3457,7 +3457,7 @@
   "itemPoints" [4 4 4 4 4],
   "iconPath" "Icons/Tech/3605",
   "description" "矿物利用描述2",
-  "hashNeeded" {":type" "BigInt", "value" "1800000"},
+  "hashNeeded" 1800000,
   "isLabTech" true}
  {"preTechs" [3605],
   "unlockFunctions" [20 21 85],
@@ -3474,7 +3474,7 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/3606",
   "description" "矿物利用描述2",
-  "hashNeeded" {":type" "BigInt", "value" "-18000000"},
+  "hashNeeded" -18000000,
   "isLabTech" true}
  {"preTechsImplicit" [1601],
   "unlockFunctions" [24 25],
@@ -3490,7 +3490,7 @@
   "itemPoints" [40],
   "iconPath" "Icons/Tech/3701",
   "description" "垂直建造描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [3701],
   "unlockFunctions" [24 25],
@@ -3506,7 +3506,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/3702",
   "description" "垂直建造描述",
-  "hashNeeded" {":type" "BigInt", "value" "108000"},
+  "hashNeeded" 108000,
   "isLabTech" true}
  {"preTechs" [3702],
   "unlockFunctions" [24 25],
@@ -3522,7 +3522,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/3703",
   "description" "垂直建造描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [3703],
   "unlockFunctions" [24 25],
@@ -3538,7 +3538,7 @@
   "itemPoints" [12 12 12],
   "iconPath" "Icons/Tech/3704",
   "description" "垂直建造描述",
-  "hashNeeded" {":type" "BigInt", "value" "300000"},
+  "hashNeeded" 300000,
   "isLabTech" true}
  {"preTechs" [3704],
   "unlockFunctions" [24 25],
@@ -3554,7 +3554,7 @@
   "itemPoints" [12 12 12],
   "iconPath" "Icons/Tech/3705",
   "description" "垂直建造描述",
-  "hashNeeded" {":type" "BigInt", "value" "480000"},
+  "hashNeeded" 480000,
   "isLabTech" true}
  {"preTechs" [3705],
   "unlockFunctions" [24 25],
@@ -3570,7 +3570,7 @@
   "itemPoints" [6 6 6 6],
   "iconPath" "Icons/Tech/3706",
   "description" "垂直建造描述",
-  "hashNeeded" {":type" "BigInt", "value" "1200000"},
+  "hashNeeded" 1200000,
   "isLabTech" true}
  {"preTechsImplicit" [1312],
   "unlockFunctions" [22],
@@ -3586,7 +3586,7 @@
   "itemPoints" [6],
   "iconPath" "Icons/Tech/3901",
   "description" "研究速度描述",
-  "hashNeeded" {":type" "BigInt", "value" "600000"},
+  "hashNeeded" 600000,
   "isLabTech" true}
  {"preTechs" [3901],
   "unlockFunctions" [22],
@@ -3602,7 +3602,7 @@
   "itemPoints" [6],
   "iconPath" "Icons/Tech/3902",
   "description" "研究速度描述",
-  "hashNeeded" {":type" "BigInt", "value" "1200000"},
+  "hashNeeded" 1200000,
   "isLabTech" true}
  {"preTechs" [3902],
   "unlockFunctions" [22],
@@ -3618,7 +3618,7 @@
   "itemPoints" [6],
   "iconPath" "Icons/Tech/3903",
   "description" "研究速度描述",
-  "hashNeeded" {":type" "BigInt", "value" "2400000"},
+  "hashNeeded" 2400000,
   "isLabTech" true}
  {"preTechs" [3903],
   "unlockFunctions" [22],
@@ -3635,7 +3635,7 @@
   "itemPoints" [2],
   "iconPath" "Icons/Tech/3904",
   "description" "研究速度描述",
-  "hashNeeded" {":type" "BigInt", "value" "-43200000"},
+  "hashNeeded" -43200000,
   "isLabTech" true}
  {"unlockFunctions" [23],
   "unlockValues" [1],
@@ -3650,7 +3650,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/4101",
   "description" "宇宙探索描述1",
-  "hashNeeded" {":type" "BigInt", "value" "1800"},
+  "hashNeeded" 1800,
   "isLabTech" true}
  {"preTechs" [4101],
   "unlockFunctions" [23],
@@ -3666,7 +3666,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/4102",
   "description" "宇宙探索描述2",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechsImplicit" [2902],
   "preTechs" [4102],
@@ -3683,7 +3683,7 @@
   "itemPoints" [12 12 12],
   "iconPath" "Icons/Tech/4103",
   "description" "宇宙探索描述3",
-  "hashNeeded" {":type" "BigInt", "value" "300000"},
+  "hashNeeded" 300000,
   "isLabTech" true}
  {"preTechs" [4103],
   "unlockFunctions" [23],
@@ -3699,7 +3699,7 @@
   "itemPoints" [6 6 6 6],
   "iconPath" "Icons/Tech/4104",
   "description" "宇宙探索描述4",
-  "hashNeeded" {":type" "BigInt", "value" "1200000"},
+  "hashNeeded" 1200000,
   "isLabTech" true}
  {"preTechsImplicit" [1801],
   "unlockFunctions" [61],
@@ -3715,7 +3715,7 @@
   "itemPoints" [10],
   "iconPath" "Icons/Tech/5001",
   "description" "动能武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [5001],
   "unlockFunctions" [61],
@@ -3731,7 +3731,7 @@
   "itemPoints" [10 10],
   "iconPath" "Icons/Tech/5002",
   "description" "动能武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechs" [5002],
   "unlockFunctions" [61],
@@ -3747,7 +3747,7 @@
   "itemPoints" [10 10 10],
   "iconPath" "Icons/Tech/5003",
   "description" "动能武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [5003],
   "unlockFunctions" [61],
@@ -3763,7 +3763,7 @@
   "itemPoints" [6 6 6 6],
   "iconPath" "Icons/Tech/5004",
   "description" "动能武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [5004],
   "unlockFunctions" [61],
@@ -3779,7 +3779,7 @@
   "itemPoints" [5 5 5 5 5],
   "iconPath" "Icons/Tech/5005",
   "description" "动能武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "720000"},
+  "hashNeeded" 720000,
   "isLabTech" true}
  {"preTechs" [5005],
   "unlockFunctions" [61],
@@ -3797,7 +3797,7 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/5006",
   "description" "动能武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000000"},
+  "hashNeeded" 36000000,
   "isLabTech" true}
  {"preTechsImplicit" [1801],
   "unlockFunctions" [62],
@@ -3813,7 +3813,7 @@
   "itemPoints" [10],
   "iconPath" "Icons/Tech/5101",
   "description" "能量武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [5101],
   "unlockFunctions" [62],
@@ -3829,7 +3829,7 @@
   "itemPoints" [10 10],
   "iconPath" "Icons/Tech/5102",
   "description" "能量武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechs" [5102],
   "unlockFunctions" [62],
@@ -3845,7 +3845,7 @@
   "itemPoints" [10 10 10],
   "iconPath" "Icons/Tech/5103",
   "description" "能量武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [5103],
   "unlockFunctions" [62],
@@ -3861,7 +3861,7 @@
   "itemPoints" [6 6 6 6],
   "iconPath" "Icons/Tech/5104",
   "description" "能量武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "480000"},
+  "hashNeeded" 480000,
   "isLabTech" true}
  {"preTechs" [5104],
   "unlockFunctions" [62],
@@ -3877,7 +3877,7 @@
   "itemPoints" [5 5 5 5 5],
   "iconPath" "Icons/Tech/5105",
   "description" "能量武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "1440000"},
+  "hashNeeded" 1440000,
   "isLabTech" true}
  {"preTechs" [5105],
   "unlockFunctions" [62],
@@ -3895,7 +3895,7 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/5106",
   "description" "能量武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "135000000"},
+  "hashNeeded" 135000000,
   "isLabTech" true}
  {"preTechsImplicit" [1802],
   "unlockFunctions" [63],
@@ -3911,7 +3911,7 @@
   "itemPoints" [10],
   "iconPath" "Icons/Tech/5201",
   "description" "爆炸武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [5201],
   "unlockFunctions" [63],
@@ -3927,7 +3927,7 @@
   "itemPoints" [10 10],
   "iconPath" "Icons/Tech/5202",
   "description" "爆炸武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechs" [5202],
   "unlockFunctions" [63],
@@ -3943,7 +3943,7 @@
   "itemPoints" [10 10 10],
   "iconPath" "Icons/Tech/5203",
   "description" "爆炸武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [5203],
   "unlockFunctions" [63],
@@ -3959,7 +3959,7 @@
   "itemPoints" [6 6 6 6],
   "iconPath" "Icons/Tech/5204",
   "description" "爆炸武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [5204],
   "unlockFunctions" [63],
@@ -3975,7 +3975,7 @@
   "itemPoints" [5 5 5 5 5],
   "iconPath" "Icons/Tech/5205",
   "description" "爆炸武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "720000"},
+  "hashNeeded" 720000,
   "isLabTech" true}
  {"preTechs" [5205],
   "unlockFunctions" [63],
@@ -3993,7 +3993,7 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/5206",
   "description" "爆炸武器伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000000"},
+  "hashNeeded" 36000000,
   "isLabTech" true}
  {"preTechsImplicit" [1819],
   "unlockFunctions" [67],
@@ -4009,7 +4009,7 @@
   "itemPoints" [10 10],
   "iconPath" "Icons/Tech/5301",
   "description" "战斗无人机伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "108000"},
+  "hashNeeded" 108000,
   "isLabTech" true}
  {"preTechs" [5301],
   "unlockFunctions" [67],
@@ -4025,7 +4025,7 @@
   "itemPoints" [10 10 10],
   "iconPath" "Icons/Tech/5302",
   "description" "战斗无人机伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "180000"},
+  "hashNeeded" 180000,
   "isLabTech" true}
  {"preTechs" [5302],
   "unlockFunctions" [67 71],
@@ -4041,7 +4041,7 @@
   "itemPoints" [6 6 6 6],
   "iconPath" "Icons/Tech/5303",
   "description" "战斗无人机伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "480000"},
+  "hashNeeded" 480000,
   "isLabTech" true}
  {"preTechs" [5303],
   "unlockFunctions" [67 71],
@@ -4057,7 +4057,7 @@
   "itemPoints" [5 5 5 5 5],
   "iconPath" "Icons/Tech/5304",
   "description" "战斗无人机伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "720000"},
+  "hashNeeded" 720000,
   "isLabTech" true}
  {"preTechs" [5304],
   "unlockFunctions" [67 71],
@@ -4075,7 +4075,7 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/5305",
   "description" "战斗无人机伤害描述",
-  "hashNeeded" {":type" "BigInt", "value" "84600000"},
+  "hashNeeded" 84600000,
   "isLabTech" true}
  {"preTechsImplicit" [1819],
   "unlockFunctions" [68],
@@ -4091,7 +4091,7 @@
   "itemPoints" [10 10],
   "iconPath" "Icons/Tech/5401",
   "description" "战斗无人机攻击速度描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechs" [5401],
   "unlockFunctions" [68],
@@ -4107,7 +4107,7 @@
   "itemPoints" [10 10 10],
   "iconPath" "Icons/Tech/5402",
   "description" "战斗无人机攻击速度描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [5402],
   "unlockFunctions" [68 72],
@@ -4123,7 +4123,7 @@
   "itemPoints" [10 10 10 10],
   "iconPath" "Icons/Tech/5403",
   "description" "战斗无人机攻击速度描述",
-  "hashNeeded" {":type" "BigInt", "value" "288000"},
+  "hashNeeded" 288000,
   "isLabTech" true}
  {"preTechs" [5403],
   "unlockFunctions" [68 72],
@@ -4139,7 +4139,7 @@
   "itemPoints" [10 10 10 10 10],
   "iconPath" "Icons/Tech/5404",
   "description" "战斗无人机攻击速度描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [5404],
   "unlockFunctions" [68 72],
@@ -4155,7 +4155,7 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/5405",
   "description" "战斗无人机攻击速度描述",
-  "hashNeeded" {":type" "BigInt", "value" "1440000"},
+  "hashNeeded" 1440000,
   "isLabTech" true}
  {"preTechsImplicit" [1819],
   "unlockFunctions" [69],
@@ -4171,7 +4171,7 @@
   "itemPoints" [10 10],
   "iconPath" "Icons/Tech/5601",
   "description" "战斗无人机耐久描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechs" [5601],
   "unlockFunctions" [69],
@@ -4187,7 +4187,7 @@
   "itemPoints" [10 10 10],
   "iconPath" "Icons/Tech/5602",
   "description" "战斗无人机耐久描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [5602],
   "unlockFunctions" [69 73],
@@ -4203,7 +4203,7 @@
   "itemPoints" [6 6 6 6],
   "iconPath" "Icons/Tech/5603",
   "description" "战斗无人机耐久描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [5603],
   "unlockFunctions" [69 73],
@@ -4219,7 +4219,7 @@
   "itemPoints" [10 10 10 10 10],
   "iconPath" "Icons/Tech/5604",
   "description" "战斗无人机耐久描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [5604],
   "unlockFunctions" [69 73],
@@ -4235,7 +4235,7 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/5605",
   "description" "战斗无人机耐久描述",
-  "hashNeeded" {":type" "BigInt", "value" "1800000"},
+  "hashNeeded" 1800000,
   "isLabTech" true}
  {"preTechsImplicit" [1809],
   "unlockFunctions" [74],
@@ -4251,7 +4251,7 @@
   "itemPoints" [5 5 5],
   "iconPath" "Icons/Tech/5701",
   "description" "行星护盾描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [5701],
   "unlockFunctions" [74],
@@ -4267,7 +4267,7 @@
   "itemPoints" [5 5 5],
   "iconPath" "Icons/Tech/5702",
   "description" "行星护盾描述",
-  "hashNeeded" {":type" "BigInt", "value" "288000"},
+  "hashNeeded" 288000,
   "isLabTech" true}
  {"preTechs" [5702],
   "unlockFunctions" [74],
@@ -4283,7 +4283,7 @@
   "itemPoints" [6 6 6 6],
   "iconPath" "Icons/Tech/5703",
   "description" "行星护盾描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [5703],
   "unlockFunctions" [74],
@@ -4299,7 +4299,7 @@
   "itemPoints" [10 10 10 10 10],
   "iconPath" "Icons/Tech/5704",
   "description" "行星护盾描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [5704],
   "unlockFunctions" [74],
@@ -4315,7 +4315,7 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/5705",
   "description" "行星护盾描述",
-  "hashNeeded" {":type" "BigInt", "value" "1800000"},
+  "hashNeeded" 1800000,
   "isLabTech" true}
  {"preTechsImplicit" [1819],
   "unlockFunctions" [78],
@@ -4331,7 +4331,7 @@
   "itemPoints" [20 20],
   "iconPath" "Icons/Tech/5801",
   "description" "地面编队扩容描述2",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [5801],
   "unlockFunctions" [78],
@@ -4347,7 +4347,7 @@
   "itemPoints" [20 20 20],
   "iconPath" "Icons/Tech/5802",
   "description" "地面编队扩容描述2",
-  "hashNeeded" {":type" "BigInt", "value" "108000"},
+  "hashNeeded" 108000,
   "isLabTech" true}
  {"preTechs" [5802],
   "unlockFunctions" [77],
@@ -4363,7 +4363,7 @@
   "itemPoints" [20 20 20 20],
   "iconPath" "Icons/Tech/5803",
   "description" "地面编队扩容描述1",
-  "hashNeeded" {":type" "BigInt", "value" "288000"},
+  "hashNeeded" 288000,
   "isLabTech" true}
  {"preTechs" [5803],
   "unlockFunctions" [78],
@@ -4379,7 +4379,7 @@
   "itemPoints" [20 20 20 20],
   "iconPath" "Icons/Tech/5804",
   "description" "地面编队扩容描述2",
-  "hashNeeded" {":type" "BigInt", "value" "432000"},
+  "hashNeeded" 432000,
   "isLabTech" true}
  {"preTechs" [5804],
   "unlockFunctions" [77],
@@ -4395,7 +4395,7 @@
   "itemPoints" [20 20 20 20 20],
   "iconPath" "Icons/Tech/5805",
   "description" "地面编队扩容描述1",
-  "hashNeeded" {":type" "BigInt", "value" "720000"},
+  "hashNeeded" 720000,
   "isLabTech" true}
  {"preTechs" [5805],
   "unlockFunctions" [77],
@@ -4411,7 +4411,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/5806",
   "description" "地面编队扩容描述1",
-  "hashNeeded" {":type" "BigInt", "value" "1080000"},
+  "hashNeeded" 1080000,
   "isLabTech" true}
  {"preTechs" [5806],
   "unlockFunctions" [77],
@@ -4427,7 +4427,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/5807",
   "description" "地面编队扩容描述1",
-  "hashNeeded" {":type" "BigInt", "value" "1440000"},
+  "hashNeeded" 1440000,
   "isLabTech" true}
  {"preTechsImplicit" [1822],
   "unlockFunctions" [80],
@@ -4443,7 +4443,7 @@
   "itemPoints" [10 10 10 10],
   "iconPath" "Icons/Tech/5901",
   "description" "太空编队扩容描述2",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [5901],
   "unlockFunctions" [80],
@@ -4459,7 +4459,7 @@
   "itemPoints" [10 10 10 10],
   "iconPath" "Icons/Tech/5902",
   "description" "太空编队扩容描述2",
-  "hashNeeded" {":type" "BigInt", "value" "288000"},
+  "hashNeeded" 288000,
   "isLabTech" true}
  {"preTechs" [5902],
   "unlockFunctions" [79],
@@ -4475,7 +4475,7 @@
   "itemPoints" [15 15 15 15],
   "iconPath" "Icons/Tech/5903",
   "description" "太空编队扩容描述1",
-  "hashNeeded" {":type" "BigInt", "value" "432000"},
+  "hashNeeded" 432000,
   "isLabTech" true}
  {"preTechs" [5903],
   "unlockFunctions" [79],
@@ -4491,7 +4491,7 @@
   "itemPoints" [20 20 20 20 20],
   "iconPath" "Icons/Tech/5904",
   "description" "太空编队扩容描述1",
-  "hashNeeded" {":type" "BigInt", "value" "720000"},
+  "hashNeeded" 720000,
   "isLabTech" true}
  {"preTechs" [5904],
   "unlockFunctions" [79],
@@ -4507,7 +4507,7 @@
   "itemPoints" [20 20 20 20 20],
   "iconPath" "Icons/Tech/5905",
   "description" "太空编队扩容描述1",
-  "hashNeeded" {":type" "BigInt", "value" "1080000"},
+  "hashNeeded" 1080000,
   "isLabTech" true}
  {"preTechs" [5905],
   "unlockFunctions" [79],
@@ -4523,7 +4523,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/5906",
   "description" "太空编队扩容描述1",
-  "hashNeeded" {":type" "BigInt", "value" "1440000"},
+  "hashNeeded" 1440000,
   "isLabTech" true}
  {"preTechs" [5906],
   "unlockFunctions" [79],
@@ -4539,7 +4539,7 @@
   "itemPoints" [20],
   "iconPath" "Icons/Tech/5907",
   "description" "太空编队扩容描述1",
-  "hashNeeded" {":type" "BigInt", "value" "2160000"},
+  "hashNeeded" 2160000,
   "isLabTech" true}
  {"preTechsImplicit" [2101],
   "unlockFunctions" [84],
@@ -4555,7 +4555,7 @@
   "itemPoints" [10],
   "iconPath" "Icons/Tech/6001",
   "description" "全局耐久度提升描述1",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechs" [6001],
   "unlockFunctions" [84],
@@ -4571,7 +4571,7 @@
   "itemPoints" [10 10],
   "iconPath" "Icons/Tech/6002",
   "description" "全局耐久度提升描述1",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [6002],
   "unlockFunctions" [84],
@@ -4587,7 +4587,7 @@
   "itemPoints" [10 10 10],
   "iconPath" "Icons/Tech/6003",
   "description" "全局耐久度提升描述1",
-  "hashNeeded" {":type" "BigInt", "value" "216000"},
+  "hashNeeded" 216000,
   "isLabTech" true}
  {"preTechs" [6003],
   "unlockFunctions" [84],
@@ -4603,7 +4603,7 @@
   "itemPoints" [10 10 10 10],
   "iconPath" "Icons/Tech/6004",
   "description" "全局耐久度提升描述1",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [6004],
   "unlockFunctions" [84],
@@ -4619,7 +4619,7 @@
   "itemPoints" [6 6 6 6 6],
   "iconPath" "Icons/Tech/6005",
   "description" "全局耐久度提升描述1",
-  "hashNeeded" {":type" "BigInt", "value" "900000"},
+  "hashNeeded" 900000,
   "isLabTech" true}
  {"preTechs" [6005],
   "unlockFunctions" [84],
@@ -4637,7 +4637,7 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/6006",
   "description" "全局耐久度提升描述1",
-  "hashNeeded" {":type" "BigInt", "value" "4500000"},
+  "hashNeeded" 4500000,
   "isLabTech" true}
  {"preTechsImplicit" [1810],
   "unlockFunctions" [64],
@@ -4653,7 +4653,7 @@
   "itemPoints" [10 10],
   "iconPath" "Icons/Tech/6101",
   "description" "干扰塔效果描述",
-  "hashNeeded" {":type" "BigInt", "value" "36000"},
+  "hashNeeded" 36000,
   "isLabTech" true}
  {"preTechs" [6101],
   "unlockFunctions" [64],
@@ -4669,7 +4669,7 @@
   "itemPoints" [10 10],
   "iconPath" "Icons/Tech/6102",
   "description" "干扰塔效果描述",
-  "hashNeeded" {":type" "BigInt", "value" "72000"},
+  "hashNeeded" 72000,
   "isLabTech" true}
  {"preTechs" [6102],
   "unlockFunctions" [64],
@@ -4685,7 +4685,7 @@
   "itemPoints" [10 10 10],
   "iconPath" "Icons/Tech/6103",
   "description" "干扰塔效果描述",
-  "hashNeeded" {":type" "BigInt", "value" "144000"},
+  "hashNeeded" 144000,
   "isLabTech" true}
  {"preTechs" [6103],
   "unlockFunctions" [64],
@@ -4701,7 +4701,7 @@
   "itemPoints" [6 6 6 6],
   "iconPath" "Icons/Tech/6104",
   "description" "干扰塔效果描述",
-  "hashNeeded" {":type" "BigInt", "value" "360000"},
+  "hashNeeded" 360000,
   "isLabTech" true}
  {"preTechs" [6104],
   "unlockFunctions" [64],
@@ -4717,7 +4717,7 @@
   "itemPoints" [5 5 5 5 5],
   "iconPath" "Icons/Tech/6105",
   "description" "干扰塔效果描述",
-  "hashNeeded" {":type" "BigInt", "value" "720000"},
+  "hashNeeded" 720000,
   "isLabTech" true}
  {"preTechs" [6105],
   "unlockFunctions" [64],
@@ -4733,5 +4733,5 @@
   "itemPoints" [4],
   "iconPath" "Icons/Tech/6106",
   "description" "干扰塔效果描述",
-  "hashNeeded" {":type" "BigInt", "value" "3600000"},
+  "hashNeeded" 3600000,
   "isLabTech" true}]
