@@ -15,6 +15,7 @@
 
  :open-file-command "emacsclient"
  :watch-dirs ["src"]
+ :css-dirs ["resources/public/css"]
  ;; Logging output gets printed to the REPL, if you want to redirect it to a file:
  ;; :log-file "figwheel-main.log"
 }
