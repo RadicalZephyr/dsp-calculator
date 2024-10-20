@@ -31,10 +31,17 @@
         en-locale (first (filter #(str/starts-with? (get % "locale") "en-") locales))
         en-strings (get en-locale "strings")]
     (for [file files]
-      (with-open [reader (io/reader (io/resource (str root-path file ".json")))
-                  writer (io/writer (io/file (io/resource root-path) (str file ".edn")))
-                  writer-en (io/writer (io/file (io/resource root-path) (str file "_EN.edn")))]
-        (let [json (walk/prewalk revive (json/read reader))
-              json-en (walk/prewalk-replace en-strings json)]
+      (let [raw-json (with-open [reader (io/reader
+                                         (io/resource
+                                          (str root-path file ".json")))]
+                       (json/read reader))
+            json (walk/prewalk revive raw-json)
+            json-en (walk/prewalk-replace en-strings json)]
+        (with-open [writer (io/writer
+                            (io/file
+                             (io/resource root-path) (str file ".edn")))
+                    writer-en (io/writer
+                               (io/file
+                                (io/resource root-path) (str file "_EN.edn")))]
           (pp/pprint json writer)
           (pp/pprint json-en writer-en))))))
