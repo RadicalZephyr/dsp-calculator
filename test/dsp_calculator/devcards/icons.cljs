@@ -13,7 +13,6 @@
 (declare icons)
 
 (defn receive-edn [ratom response]
-  (.log js/console (str response))
   (reset! ratom response))
 
 (defn error-handler [type {:keys [status status-text]}]
@@ -30,7 +29,7 @@
 (defn icons-list [type xs]
   [:div (icons-attrs)
    (for [x xs]
-     [:div.icon {:data-icon (str type "." (:id x))}])])
+     ^{:key (:id x)} [:div.icon {:data-icon (str type "." (:id x))}])])
 
 (defn fetch-label [type ratom]
   (when (not (seq @ratom))
