@@ -94,7 +94,7 @@
                   (json/read reader))
         en-locale (first (filter #(str/starts-with? (get % "locale") "en-") locales))
         en-strings (get en-locale "strings")]
-    (for [[filename key-replacements] files]
+    (doseq [[filename key-replacements] files]
       (let [raw-json (with-open [reader (io/reader
                                          (io/resource
                                           (str root-path filename ".json")))]
@@ -109,5 +109,4 @@
                                (io/file
                                 (io/resource root-path) (str filename "_EN.edn")))]
           (pp/pprint json writer)
-          (pp/pprint json-en writer-en))))
-    nil))
+          (pp/pprint json-en writer-en))))))
