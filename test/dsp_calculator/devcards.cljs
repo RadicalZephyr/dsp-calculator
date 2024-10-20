@@ -2,6 +2,7 @@
   (:require
     [devcards.core]
     [dsp-calculator.devcards.core]
+    [dsp-calculator.devcards.calculator]
     [dsp-calculator.devcards.icons]
     [dsp-calculator.devcards.research]))
 
