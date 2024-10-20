@@ -43,6 +43,6 @@ mineral veins that need to be used.")
 (defcard-rg tech-square
   (fn [researched _]
     [:div (tech-bg-attrs)
-     [:link {:rel "stylesheet" :href "/css/icons.css"}]
+     [:link {:rel "stylesheet" :href "/css/dev-icons.css"}]
      [r/technology em-matrix-tech @researched (fn [] (swap! researched not))]])
   (reagent/atom false))
