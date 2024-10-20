@@ -32,14 +32,13 @@
    (for [x xs]
      [:div.icon {:data-icon (str type "." (:id x))}])])
 
-(defn fetch-button [type ratom]
+(defn fetch-label [type ratom]
   (when (not (seq @ratom))
-    [:button {:type "button"
-              :on-click (fn [] (GET (str "/data/" type ".edn")
-                                 {:handler #(receive-edn ratom %)
-                                  :error-handler #(error-handler type %)
-                                  :response-format (ajax.edn/edn-response-format)}))}
-     (str "Fetch " (str/capitalize type))]))
+    (GET (str "/data/" type ".edn")
+      {:handler #(receive-edn ratom %)
+       :error-handler #(error-handler type %)
+       :response-format (ajax.edn/edn-response-format)})
+    [:span (str "Fetching " type)]))
 
 (defcard-rg icons-css
   "This includes the css for displaying icons into the page."
@@ -52,20 +51,20 @@
 (defcard-rg recipe-icons
   (fn [recipes _]
     [:div
-     [fetch-button "recipes" recipes]
+     [fetch-label "recipes" recipes]
      [icons-list "recipe" (filter #(valid-recipe-icons (:id %))@recipes)]])
   (reagent/atom []))
 
 (defcard-rg item-icons
   (fn [items _]
     [:div
-     [fetch-button "items" items]
+     [fetch-label "items" items]
      [icons-list "item" @items]])
   (reagent/atom []))
 
 (defcard-rg tech-icons
   (fn [tech _]
     [:div
-     [fetch-button "tech" tech]
+     [fetch-label "tech" tech]
      [icons-list "tech" @tech]])
   (reagent/atom []))
