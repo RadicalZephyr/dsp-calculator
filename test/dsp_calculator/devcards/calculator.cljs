@@ -24,29 +24,31 @@ The calculator interface, the most important part of the site.")
    [:link {:rel "stylesheet" :href "/css/components/recipe.css"}]])
 
 (defcard-rg combo-selector
-  [:div.combo-selector
-   [:div.recipe-picker
-    [:div.icon {:data-icon "ui.select-recipe" :title "Select a recipe"}]
-    [:span.hint "Please select a recipe"]]])
+  [:main.calculator
+   [:div.combo-selector
+    [:div.recipe-picker
+     [:div.icon {:data-icon "ui.select-recipe" :title "Select a recipe"}]
+     [:span.hint "Please select a recipe"]]]])
 
 (defcard-rg recipe-picker-dialog
-  [:div.combo-selector
-   [:dialog.window.recipes {:open true
-                            :style {:position "relative"}}
-    [:header "Select a Recipe"]
-    [:div.tablist {:role "tablist"}
-     [:button#tab-0.tab {:type "button" :role "tab" :tabIndex "0"}
-      "Items"]
-     [:button#tab-1.tab {:type "button" :role "tab" :tabIndex "-1"}
-      "Buildings"]]
-    [:div#tabpanel-0.tabpanel.is-visible {:role "tabpanel"}
-     [:ul.recipe-grid {:role "listbox"}
-      (for [item [{:id 1101 :name "Iron Ingot"}]]
-        ^{:key item}
-        [:li {:role "option"
-              :style {:grid-area "1 / 1"}}
-         [:span.recipe.icon {:data-icon (str "item." item)
-                             :title (:name item)}]])]]
-    [:div#tabpanel-1.tabpanel.is-hidden {:role "tabpanel"}]
-    [:div.corner-nav
-     [:button.close]]]])
+  [:main.calculator
+   [:div.combo-selector
+    [:dialog.window.recipes {:open true
+                             :style {:position "relative"}}
+     [:header "Select a Recipe"]
+     [:div.tablist {:role "tablist"}
+      [:button#tab-0.tab {:type "button" :role "tab" :tabIndex "0"}
+       "Items"]
+      [:button#tab-1.tab {:type "button" :role "tab" :tabIndex "-1"}
+       "Buildings"]]
+     [:div#tabpanel-0.tabpanel.is-visible {:role "tabpanel"}
+      [:ul.recipe-grid {:role "listbox"}
+       (for [item [{:id 1101 :name "Iron Ingot"}]]
+         ^{:key item}
+         [:li {:role "option"
+               :style {:grid-area "1 / 1"}}
+          [:span.recipe.icon {:data-icon (str "item." item)
+                              :title (:name item)}]])]]
+     [:div#tabpanel-1.tabpanel.is-hidden {:role "tabpanel"}]
+     [:div.corner-nav
+      [:button.close]]]]])
