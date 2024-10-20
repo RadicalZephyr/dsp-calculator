@@ -1,0 +1,39 @@
+:root {
+        --neon-white: lch(100 0 0 / 0.76);
+        --neon-red: lch(75 45.02 40.39 / 0.78);
+        --neon-orange: lch(72 58.89 52.09 / 0.8);
+        --neon-orange2: lch(84 44.1 74.07);
+        --neon-yellow: lch(97 79.89 103.3 / 0.76);
+        --neon-green: lch(89 78.97 147.57 / 0.83);
+        --neon-cyan: lch(88 36.65 209.6 / 0.78);
+        --neon-blue: lch(87 21.33 249.3 / 0.77);
+        --neon-purple: lch(67 74.83 318.61 / 0.85);
+
+
+        --tech-unavailable: lch(30 0.01 0);
+        --tech-available: lch(24 16.68 233.76);
+        --tech-available-border: white;
+        --tech-researched: lch(30 16.84 158.35);
+        --tech-researched-border: var(--neon-orange2);
+        --tech-hovered: lch(70 0 0);
+        --tech-link-unavailable: lch(30 0.01 0);
+        --tech-link-researched: lch(46 41.43 51.34);
+        --tech-link-hovered: lch(70 0 0);
+        --tech-link-researched-hovered: lch(60 41.43 51.34);
+
+
+        --jello-none: lch(50 6.53 269.61);
+        --jello-blue: lch(64 38.07 237.02);
+        --jello-red: lch(59 57.06 18.87);
+        --jello-yellow: lch(90 86.79 91.46);
+        --jello-purple: lch(51 80.13 307.82);
+        --jello-green: lch(74 70.36 139.05);
+        --jello-white: lch(87 6.53 269.61);
+
+        /* --jello-blue: lch(33 56.72 285.61);
+        --jello-red: lch(35 46.94 20.19);
+        --jello-yellow: lch(74 83 69.34);
+        --jello-purple: lch(33 74.1 303.26);
+        --jello-green: lch(43 50.6 137.12);
+        --jello-white: lch(87 6.53 269.61); */
+}

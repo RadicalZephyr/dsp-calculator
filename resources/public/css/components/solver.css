@@ -1,0 +1,238 @@
+@layer components {
+        .solver {
+                position: relative;
+                z-index: 0;
+        }
+
+        .solver .node {
+                position: relative;
+                color: lch(61 48.55 302.46 / 0.55);
+                font-size: 20px;
+                --indent: 40px;
+                --depth-indent: 30px;
+        }
+
+        @media(max-width: 920px) {
+                .solver .node {
+                        --indent: 25px;
+                        --depth-indent: 15px;
+                        font-size: 14px;
+                }
+        }
+
+        @media (max-width: 420px) {
+                .solver .node {
+                        font-stretch: 80%;
+                }
+        }
+
+        .solver .node-header {
+                display: inline-grid;
+                grid-template-columns: 4fr 0.5fr 2fr;
+                padding: 0px 20px 0 var(--indent);
+                width: 100%;
+                background-color: lch(0 0 0 / calc(5% * var(--depth, 0)));
+        }
+
+        .solver.has-proliferators .node-header {
+                grid-template-columns: 4fr 0.5fr 0.5fr 2fr;
+        }
+
+        @media(max-width: 920px) {
+                .solver .node-header {
+                        padding-right: 10px;
+                        grid-template-columns: 1.5fr 0.25fr 0.5fr;
+                }
+
+                .solver.has-proliferators .node-header {
+                        grid-template-columns: 1.5fr 0.25fr 0.25fr 0.5fr;
+                }
+        }
+
+        .solver .node > summary:hover::after {
+                content: '';
+                position: absolute;
+                inset: -2px -0px;
+                left: calc(0px + var(--depth-indent) * var(--depth, 0));
+                right: calc(100% * (2/6));
+                z-index: -1;
+                border-radius: 10px;
+                background-color: lch(0 0 0 / 0.1);
+                background:
+                        radial-gradient(circle at center, lch(100 0 0 / 0.05), 40%, transparent),
+                        radial-gradient(circle at left top, lch(60 107.7 329.15 / 0.15), transparent),
+                        radial-gradient(circle at right bottom, lch(43 102.42 299.92 / 0.15), transparent)
+                ;
+                background-blend-mode: overlay;
+        }
+
+        .solver .node:is(details)::before {
+                content: '';
+                position: absolute;
+                top: calc(6px + 0.5em);
+                left: calc((var(--indent) - 1em) + var(--depth-indent) * var(--depth, 0));
+                border-left: 0.6em solid;
+                border-bottom: 0.3em solid transparent;
+                border-top: 0.3em solid transparent;
+                transition: transform 200ms;
+        }
+
+        @media (max-width: 420px) {
+                .solver .node:is(details)::before {
+                        top: calc(8px + 0.5em);
+                }
+        }
+
+        .solver .node[open]::before {
+                transform: rotate(0.25turn);
+        }
+
+
+
+        .solver .solver-header {
+                padding: 20px 10px 4px;
+                border-bottom: 4px solid lch(100 0 0 / 0.05);
+                margin-bottom: 10px;
+                font-size: 14px;
+        }
+
+        .solver .solver-header div {
+                padding: 0 20px;
+        }
+
+
+
+
+
+        .solver .meta {
+                padding: 6px 0;
+                margin-left: calc(var(--depth-indent) * var(--depth, 0));
+        }
+
+        @media (max-width: 420px) {
+                .solver .meta {
+                        padding: 8px 0;
+                }
+        }
+
+        .solver .proliferator {}
+
+        .solver .proliferator .icon {
+                width: auto;
+                height: 2.5em;
+                padding: 0 1em 1em 0;
+        }
+
+        .solver .proliferator .icon[data-count]::before,
+        .solver .proliferator .icon[data-count] select {
+                font-size: 0.9em;
+        }
+
+        .solver .logistics {}
+
+        .solver .logistics .belt {
+                display: flex;
+                align-items: center;
+                height: 2.5em;
+                vertical-align: middle;
+        }
+
+        .solver .logistics .factor {
+                display: inline-block;
+                min-width: 5ch;
+                text-align: right;
+        }
+
+        .solver .proliferator,
+        .solver .logistics,
+        .solver .products {
+                align-self: center;
+                padding: 3px 0px;
+                font-size: 14px;
+                line-height: 1.2;
+        }
+        .solver .proliferator {
+                padding-top: 0px;
+        }
+
+        @media(max-width: 640px) {
+                .solver .proliferator,
+                .solver .logistics,
+                .solver .products{
+                        font-weight: 500;
+                        font-size: 12px;
+                        font-stretch: 80%;
+                }
+        }
+
+        .solver .throughput {}
+
+
+
+
+
+
+        .solver .node .byproduct:not(:hover) :is(.perMinute, .item) {
+                filter: contrast(0.5);
+                opacity: 0.5;
+        }
+
+        .solver .node .recipe,
+        .solver .node .item {
+                color: white;
+        }
+
+        .solver .node .products .item.icon {
+                width: 2.5em;
+                margin: 0 0.5em;
+        }
+
+        .solver .node .perMinute {
+                display: inline-block;
+                min-width: 5ch;
+                text-align: right;
+        }
+
+        .solver .node .throughput.is-ingredient .perMinute {
+                color: var(--neon-green);
+        }
+
+        .solver .node .throughput:not(.is-ingredient) .item {
+                opacity: 0.5;
+        }
+
+        .solver .node .factor {
+                color: var(--neon-blue);
+        }
+
+        .solver .node .process {
+                /* display: none; */
+                color: lch(100 0 0 / 0.4);
+                /* color: hsl(338.6deg 81.13% 68.82% / 37%); */
+        }
+
+        .solver .node .timeScale {}
+
+        @media(max-width: 920px) {
+                .solver .node .timeScale {
+                        display: none;
+                }
+        }
+
+
+
+
+
+        .solver .stats {
+                margin-top: 20px;
+                padding: 10px 20px;
+        }
+
+
+        .solver .repeat {
+                text-decoration-line: overline;
+                text-decoration-style: solid;
+                text-decoration-thickness: 2px;
+                text-underline-offset: 0;
+        }
+}

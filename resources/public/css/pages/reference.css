@@ -1,0 +1,302 @@
+@layer pages {
+        main.reference {
+                padding: 0;
+                overflow-x: auto;
+                background-color: lch(6 1.65 328.72);
+        }
+
+        main.reference .instruction {
+                padding: 15px 20px 5px;
+                background-color: lch(20 1.65 328.72);
+        }
+
+        main.reference .instruction .per {
+                color: var(--neon-green);
+                filter: drop-shadow(0 0 3px currentColor);
+        }
+
+        main.reference .instruction .quantity {
+                color: var(--neon-blue);
+                filter: drop-shadow(0 0 3px currentColor);
+        }
+
+
+        .sheet {
+                --gap: 2px;
+                --gutter: 10px;
+                /* width: min-content; */
+                padding: 20px;
+        }
+
+        @media (max-width: 540px) {
+                .sheet {
+                        width: min-content;
+                }
+        }
+
+        .sheet > * + * {
+                margin-top: 30px;
+        }
+
+
+        .sheet header {
+                display: flex;
+                border-bottom: 1px solid;
+        }
+
+        .sheet header .sheet-tab {
+                position: relative;
+                display: flex;
+                align-content: center;
+                align-items: center;
+                /* height: calc(60px - var(--gutter)); */
+                margin-bottom: -1px;
+                /* background: lch(59 18.91 232.08 / 0.2); */
+        }
+
+        .sheet header .name {
+                padding: 10px 10px 10px 20px;
+                color: inherit;
+                font-weight: 300;
+                font-size: 24px;
+                text-decoration: none;
+        }
+
+        .sheet header .sheet-tab:has(.name.active) {
+                color: var(--neon-yellow);
+        }
+
+        .sheet header .sheet-tab:has(.name.active) .name {
+                filter: drop-shadow(0 0 3px currentColor);
+        }
+
+        .sheet header .sheet-tab:has(.name.active)::before {
+                position: absolute;
+                top: calc(100% - 1px);
+                left: 0;
+                right: 0;
+                content: '';
+                border-bottom: 8px solid;
+                filter: drop-shadow(0 0 3px currentColor);
+                clip-path: polygon(
+                        0% 0%,
+                        100% 0%,
+                        100% calc(100% - 4px),
+                        calc(50% + 16px) calc(100% - 4px),
+                        50% 100%,
+                        calc(50% - 16px) calc(100% - 4px),
+                        0% calc(100% - 4px)
+                );
+                view-transition-name: ref-active-tab-underline;
+        }
+
+        .sheet .preferred {
+                display: flex;
+                overflow: auto;
+                /* max-width: 0;
+                transition: max-width 200ms; */
+        }
+
+        /* .sheet .sheet-tab:has(.active) .preferred {
+                max-width: 200px;
+        } */
+
+        .sheet .preferred .name {
+                margin-right: 0.5em;
+        }
+
+        .sheet .preferred label {
+                position: relative;
+        }
+
+        .sheet .preferred input[type="radio"] {
+                position: absolute;
+                aspect-ratio: 1;
+                width: 100%;
+                opacity: 0;
+                cursor: var(--cursor-pointer);
+        }
+
+        .sheet .preferred .icon {
+                width: 40px;
+                margin: 4px;
+                pointer-events: none;
+        }
+
+        .sheet .preferred .icon[data-count] {
+                padding: 0px 10px 10px 0px;
+        }
+
+        .sheet .preferred label:has(:checked) {
+                /* background-color: var(--neon-blue); */
+        }
+
+        .sheet .preferred label:hover {
+                background-color: color-mix(in lch, var(--neon-purple) 20%, transparent);
+                cursor: var(--cursor-pointer);
+        }
+
+        .sheet .preferred label:has(:checked)::before {
+                position: absolute;
+                inset: 0;
+                content: '';
+                aspect-ratio: 1;
+                width: 48px;
+                background: url('../../images/textures/window-border-2.avif') 0 0 / 100% 100% repeat;
+        }
+
+        .sheet .preferred label:has(:disabled) {
+                filter: grayscale();
+        }
+
+        .sheet .preferred label:has(:disabled)::before {
+                display: none;
+        }
+
+        .sheet .preferred label:has(:disabled) input {
+                cursor: var(--cursor-default);
+        }
+
+        .sheet .preferred label:has(:disabled) .icon {
+                filter: contrast(0) brightness(0);
+                opacity: 0.2;
+                cursor: var(--cursor-default);
+        }
+
+        .sheet .preferred label:has(:disabled):hover {
+                background: none;
+        }
+
+
+
+        .sheet table {
+                position: relative;
+
+                /* display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+                grid-template-rows: masonry;
+                grid-gap: 10px; */
+
+                display: block;
+                columns: 1 480px;
+                column-gap: var(--gutter);
+        }
+
+        .sheet table.assemble {
+                columns: 3 480px;
+        }
+
+        .sheet table.smelt {
+                columns: 3 200px;
+        }
+
+        .sheet tbody {
+                position: relative;
+                display: grid;
+                grid-gap: var(--gap);
+                break-inside: avoid;
+        }
+
+        .sheet tbody[data-label] {
+                /* padding-left: 1.5em; */
+        }
+
+        .sheet tbody[data-label]::before {
+                /* position: absolute;
+                top: 0;
+                right: 100%; */
+                content: attr(data-label);
+                font-weight: 100;
+                font-size: 14px;
+                font-stretch: 120%;
+                white-space: nowrap;
+                /* transform: rotate(-0.25turn);
+                transform-origin: top right; */
+        }
+
+        .sheet tbody + tbody {
+                margin-top: var(--gutter);
+        }
+
+        .sheet tbody tr {
+                display: inline-grid;
+                grid-auto-flow: column;
+                grid-template-columns: auto 1fr;
+                grid-gap: calc(var(--gap) * 2);
+                width: fit-content;
+        }
+
+        .sheet tbody th {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                background: lch(70 0 0 / 0.2);
+        }
+
+        .sheet tbody td {
+                display: flex;
+                align-items: center;
+                background: lch(90 0 0 / 0.1);
+        }
+
+        .sheet .node {
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                padding: 2px 10px;
+        }
+
+        .sheet .icon {
+                width: 60px;
+                padding: 4px;
+                background-origin: content-box;
+                background-clip: content-box;
+        }
+
+        .sheet .per {
+                color: var(--neon-green);
+                font-weight: 300;
+                font-size: 18px;
+                font-stretch: 90%;
+                white-space: nowrap;
+                filter: drop-shadow(0 0 3px currentColor);
+        }
+
+        .sheet .alternates {
+                display: flex;
+        }
+
+        .sheet .alternates:empty {
+                display: none;
+        }
+
+        .sheet .alternates::before,
+        .sheet .alternates::after {
+                content: '';
+                width: 6px;
+                border-top: 1px solid;
+                border-bottom: 1px solid;
+                margin: 6px 0;
+        }
+
+        .sheet .alternates::before {
+                border-left: 1px solid;
+                margin-left: 10px;
+        }
+
+        .sheet .alternates::after {
+                border-right: 1px solid;
+                margin-right: 10px;
+        }
+
+        .sheet .alternate {
+                display: flex;
+        }
+
+        .sheet .alternate + .alternate::before {
+                content: '';
+                border-left: 1px dashed;
+                margin: 6px 0;
+        }
+}
