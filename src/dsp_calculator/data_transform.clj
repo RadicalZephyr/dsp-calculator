@@ -100,7 +100,7 @@
                                           (str root-path filename ".json")))]
                        (json/read reader))
             revive (make-revive key-replacements)
-            json (walk/prewalk revive raw-json)
+            json (walk/postwalk revive raw-json)
             json-en (walk/prewalk-replace en-strings json)]
         (with-open [writer (io/writer
                             (io/file
