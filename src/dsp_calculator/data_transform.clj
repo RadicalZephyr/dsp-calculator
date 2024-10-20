@@ -85,6 +85,7 @@
 (defn make-revive [replace-keys]
   (fn revive [item]
     (cond (type-map? item) (simplify item)
+          (map? item) (into (sorted-map) item)
           (contains? replace-keys item) (replace-keys item)
           :else item)))
 
@@ -108,4 +109,5 @@
                                (io/file
                                 (io/resource root-path) (str filename "_EN.edn")))]
           (pp/pprint json writer)
-          (pp/pprint json-en writer-en))))))
+          (pp/pprint json-en writer-en))))
+    nil))
