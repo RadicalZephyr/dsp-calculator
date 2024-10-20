@@ -28,7 +28,13 @@ The calculator interface, the most important part of the site.")
    [:div.combo-selector
     [:div.recipe-picker
      [:div.icon {:data-icon "ui.select-recipe" :title "Select a recipe"}]
-     [:span.hint "Please select a recipe"]]]])
+     [:span.hint "Please select a recipe"]]]
+   [:div]
+   [:div.combo-selector
+    [:div.recipe-picker
+     (let [item {:id 1101 :name "Iron Ingot"}]
+       [:span.recipe.icon {:data-icon (str "item." item)
+                           :title (:name item)}])]]])
 
 (defcard-rg recipe-picker-dialog
   [:main.calculator
