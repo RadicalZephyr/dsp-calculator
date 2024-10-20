@@ -22,6 +22,7 @@
                                   [org.clojars.earthlingzephyr/devcards "0.3.0-SNAPSHOT"]
                                   ;; Specifically for processing DSP JSON data into EDN.
                                   [org.clojure/data.json "2.5.0"]
+                                  [camel-snake-kebab "0.4.3"]
                                   [org.slf4j/slf4j-nop "1.7.30"]]
                    :resource-paths ["target" "dev-resources"]
                    :clean-targets ^{:protect false} ["resources/public/js/compiled/"

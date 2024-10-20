@@ -3,75 +3,15 @@
     [clojure.data.json :as json]
     [clojure.java.io :as io]
     [clojure.pprint :as pp]
-    [clojure.tools.reader.edn :as edn]
+    [clojure.set :as set]
     [clojure.string :as str]
-    [clojure.walk :as walk]))
-
-(defn json-string->key
-  "Extract the keys of a string-keyed JSON map and create a mapping from
-  that string to the keywordized version."
-  [json]
-  (->> (keys json)
-       (map (fn [k] [k (keyword k)]))
-       (reduce conj {})))
-
-(def meta-key-renames
-  {"generatedAt" :generated-at,
-   "version" :version})
-
-(def locale-key-renames
-  {"lcid" :lcid,
-   "name" :name,
-   "locale" :locale,
-   "fallback" :fallback,
-   "glyph" :glyph,
-   "strings" :strings})
-
-(def item-key-renames
-  {"id" :id,
-   "name" :name,
-   "gridIndex" :grid-index,
-   "miningFrom" :mining-from,
-   "type" :type,
-   "productive" :productive,
-   "iconPath" :icon-path,
-   "unlockKey" :unlock-key,
-   "stackSize" :stack-size,
-   "_typeString" :type-string,
-   "descFields" :desc-fields,
-   "_descFields" :_desc-fields,
-   "description" :description})
-
-(def recipe-key-renames
-  {"id" :id,
-   "name" :name,
-   "type" :type,
-   "timeSpend" :time-spend,
-   "items" :items,
-   "itemCounts" :item-counts,
-   "results" :results,
-   "sid" :sid,
-   "gridIndex" :grid-index,
-   "resultCounts" :result-counts,
-   "_madeFromString" :made-from-string,
-   "handcraft" :handcraft})
-
-(def tech-key-renames
-  {"id" :id,
-   "name" :name,
-   "published" :published,
-   "iconPath" :icon-path,
-   "hashNeeded" :hash-needed,
-   "position" :position,
-   "description" :description})
+    [clojure.tools.reader.edn :as edn]
+    [clojure.walk :as walk]
+    [camel-snake-kebab.core :as csk]))
 
 (def root-path "public/data/")
 
-(def files [["meta" meta-key-renames]
-            ["locale" locale-key-renames]
-            ["items" item-key-renames]
-            ["recipes" recipe-key-renames]
-            ["tech" tech-key-renames]])
+(def files ["meta" "locale" "items" "recipes" "tech"])
 
 (defn type-map? [item]
   (and (map? item)
@@ -82,24 +22,30 @@
     (edn/read-string value)
     item))
 
-(defn make-revive [replace-keys]
-  (fn revive [item]
-    (cond (type-map? item) (simplify item)
-          (map? item) (into (sorted-map) item)
-          (contains? replace-keys item) (replace-keys item)
-          :else item)))
+(defn kebab-keywordify [k]
+  [k (keyword (csk/->kebab-case k))])
+
+(defn cljify-map [m]
+  (let [smap (into {} (map kebab-keywordify (keys m)))]
+    (set/rename-keys m smap)))
+
+(defn revive [item]
+  (cond (type-map? item) (simplify item)
+        (map? item) (cljify-map item)
+        :else item))
+
 
 (defn main []
   (let [locales (with-open [reader (io/reader (io/resource (str root-path "locale.json")))]
                   (json/read reader))
         en-locale (first (filter #(str/starts-with? (get % "locale") "en-") locales))
         en-strings (get en-locale "strings")]
-    (doseq [[filename key-replacements] files]
+    (doseq [filename files]
+      (prn filename)
       (let [raw-json (with-open [reader (io/reader
                                          (io/resource
                                           (str root-path filename ".json")))]
                        (json/read reader))
-            revive (make-revive key-replacements)
             json (walk/postwalk revive raw-json)
             json-en (walk/prewalk-replace en-strings json)]
         (with-open [writer (io/writer
