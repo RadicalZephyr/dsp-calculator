@@ -12,6 +12,8 @@
                  [cljsjs/react-dom "18.2.0-1"]
                  [reagent "1.2.0"]
                  [re-frame "1.4.3"]
+                 [day8.re-frame/http-fx "0.2.4"]
+                 [cljs-ajax "0.8.4"]
                  [garden "1.3.10"]
                  [net.dhleong/spade "1.1.0"]]
   :repl-options {:init-ns dsp-calculator.core}

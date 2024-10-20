@@ -1,12 +1,23 @@
 (ns dsp-calculator.devcards.icons
-  (:require [devcards.core :as dc]
+  (:require [clojure.tools.reader.edn :as edn]
+            [devcards.core :as dc]
             [reagent.core :as reagent]
             [dsp-calculator.data :as dsp-data]
-            [spade.core :refer [defattrs]])
+            [spade.core :refer [defattrs]]
+            [ajax.core :refer [GET]]
+            [ajax.edn]
+            [clojure.string :as str])
   (:require-macros
    [devcards.core :as dc :refer [defcard defcard-rg]]))
 
 (declare icons)
+
+(defn receive-edn [ratom response]
+  (.log js/console (str response))
+  (reset! ratom response))
+
+(defn error-handler [type {:keys [status status-text]}]
+  (.log js/console (str "Error fetching " type ". " status " " status-text)))
 
 (defattrs icons-attrs []
   {:background "black"
@@ -16,9 +27,51 @@
    :grid-gap "20px"
    :padding "30px"})
 
+(defn icons-list [type xs]
+  [:div (icons-attrs)
+   (for [x xs]
+     [:div.icon {:data-icon (str type "." (:id x))}])])
+
+(defn fetch-button [type ratom]
+  (when (not (seq @ratom))
+    [:button {:type "button"
+              :on-click (fn [] (GET (str "/data/" type ".edn")
+                                 {:handler #(receive-edn ratom %)
+                                  :error-handler #(error-handler type %)
+                                  :response-format (ajax.edn/edn-response-format)}))}
+     (str "Fetch " (str/capitalize type))]))
+
+(defcard-rg icons-css
+  "This includes the css for displaying icons into the page."
+  [:div
+   [:link {:rel "stylesheet" :href "/css/icons.css"}]])
+
+(def valid-recipe-icons
+  #{16 29 32 35 54 58 61 62 69 74 79 100 115 121})
+
+(defcard-rg recipe-icons
+  (fn [recipes _]
+    [:div
+     [fetch-button "recipes" recipes]
+     [icons-list "recipe" (filter #(valid-recipe-icons (:id %))@recipes)]])
+  (reagent/atom []))
+
+(defcard-rg item-icons
+  (fn [items _]
+    [:div
+     [fetch-button "items" items]
+     [icons-list "item" @items]])
+  (reagent/atom []))
+
+(defcard-rg tech-icons
+  (fn [tech _]
+    [:div
+     [fetch-button "tech" tech]
+     [icons-list "tech" @tech]])
+  (reagent/atom []))
+
 (defcard-rg icons
   [:div (icons-attrs)
-   [:link {:rel "stylesheet" :href "/css/icons.css"}]
    (for [icon icons]
      [:div.icon {:data-icon icon}])])
 
