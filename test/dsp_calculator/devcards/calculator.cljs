@@ -60,3 +60,32 @@ The calculator interface, the most important part of the site.")
      [:div#tabpanel-1.tabpanel.is-hidden {:role "tabpanel"}]
      [:div.corner-nav
       [:button.close]]]]])
+
+(defcard-rg controls
+  [:main.calculator
+   [:div.combo-selector
+    [:label.ratio
+     [:input.factor {:type "number" :min "0"}]
+     [:div.steppers
+      [:button.increment]
+      [:button.decrement]]
+     [:span.text "× Smelting Facility"]]
+    [:label.specific
+     [:input.factor {:type "number" :min "0"}]
+     [:div.steppers
+      [:button.increment]
+      [:button.decrement]]
+     [:span.text "items"
+      [:select.timescale
+       [:option {:value "minute"} "per minute"]
+       [:option {:value "second"} "per second"]]]]
+    [:label.proliferator
+     (let [max-proliferator "Proliferator Mk.III"]
+       [:span {:title (str "Highest unlocked tier will be used." max-proliferator)}
+        "Proliferator: "])
+     [:select {:title "No proliferator to be used"}
+      [:option {:value "none"} "None"]
+      [:option {:value "mixed.tsp"} "Mix by The Superior Tentacle"]
+      [:option {:value "mixed.ab"} "Mix by Aaronbog"]
+      [:option {:value "speedup"} "Production Speedup"]
+      [:option {:value "extra"} "Extra Products"]]]]])
