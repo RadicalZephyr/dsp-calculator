@@ -25,14 +25,18 @@
 (defn kebab-keywordify [k]
   [k (keyword (csk/->kebab-case k))])
 
+(defn assoc-desc-field [m {:strs [key value position]}]
+  (assoc m key {:value value :position position}))
+
 (defn merge-desc-fields [m]
   (if (and (contains? m "descFields")
            (contains? m "_descFields"))
     (let [num-d-fields (get m "descFields")
           map-d-fields (get m "_descFields")
-          desc-fields (vec (map #(assoc %1 "position" %2)
+          desc-fields (->> (map #(assoc %1 "position" %2)
                                 map-d-fields
-                                num-d-fields))]
+                                num-d-fields)
+                           (reduce assoc-desc-field (sorted-map)))]
       (-> m
           (dissoc "descFields" "_descFields")
           (assoc "descFields" desc-fields)))
