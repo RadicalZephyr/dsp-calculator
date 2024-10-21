@@ -27,12 +27,12 @@ The calculator interface, the most important part of the site.")
    [:link {:rel "stylesheet" :href "/css/components/tabs.css"}]])
 
 (defcard-rg combo-selector
-  [:main.calculator
+  [:main.page.calculator
    [:div.combo-selector
     [:div.recipe-picker
      [:div.icon {:data-icon "ui.select-recipe" :title "Select a recipe"}]
      [:span.hint "Please select a recipe"]]]
-   [:div]
+   [:br]
    [:div.combo-selector
     [:div.recipe-picker
      (let [item {:id 1101 :name "Iron Ingot"}]
@@ -40,7 +40,7 @@ The calculator interface, the most important part of the site.")
                            :title (:name item)}])]]])
 
 (defcard-rg recipe-picker-dialog
-  [:main.calculator
+  [:main.page.calculator
    [:div.combo-selector
     [:dialog.window.recipes {:open true
                              :style {:position "relative"}}
@@ -63,7 +63,7 @@ The calculator interface, the most important part of the site.")
       [:button.close]]]]])
 
 (defcard-rg controls
-  [:main.calculator
+  [:main.page.calculator
    [:div.combo-selector
     [:label.ratio
      [:input.factor {:type "number" :min "0"}]
@@ -108,7 +108,7 @@ The calculator interface, the most important part of the site.")
                      :lang "en-US"}]])
 
 (defcard-rg preferred-buildings
-  [:main.calculator
+  [:main.page.calculator
    [:div.combo-selector
     [:details.preferred.preferred-buildings {:open true}
      [:summary "Preferred Buildings"]
