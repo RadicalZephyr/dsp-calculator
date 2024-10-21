@@ -22,8 +22,13 @@
     (edn/read-string value)
     item))
 
+
+(defn ascii? [s]
+  (re-matches #"\p{ASCII}+" s))
+
 (defn kebab-keywordify [k]
-  [k (keyword (csk/->kebab-case k))])
+  (when (ascii? k)
+    [k (keyword (csk/->kebab-case k))]))
 
 (defn assoc-desc-field [m {:strs [key value position]}]
   (if (some? key)
