@@ -23,13 +23,13 @@
            :class (grid-pos x y)}
       [recipe-icon item]])])
 
-(defn recipe-picker [items buildings]
+(defn recipe-picker [items buildings {:keys [open? close]}]
   (let [first-tab? (reagent/atom true)
         first-tab (fn [] (reset! first-tab? true))
         second-tab (fn [] (reset! first-tab? false))]
     (fn [items buildings]
       (let [first-tab? @first-tab?]
-       [:dialog.window.recipes {:open true
+       [:dialog#recipe-picker.window.recipes {:open open?
                                 :style {:position "relative"}}
         [:header "Select a Recipe"]
         [:div.tablist {:role "tablist"}
@@ -54,19 +54,30 @@
           :class [(if (not first-tab?) "is-visible" "is-hidden")]}
          [recipe-grid buildings]]
         [:div.corner-nav
-         [:button.close]]]))))
+         [:button.close {:on-click close}]]]))))
 
-(defn empty-selector []
+(defn empty-selector [open-dialog]
   [:div.recipe-picker
-   [:div.icon {:data-icon "ui.select-recipe" :title "Select a recipe"}]
+   [:div.icon {:data-icon "ui.select-recipe"
+               :title "Select a recipe"
+               :on-click open-dialog}]
    [:span.hint "Please select a recipe"]])
 
 (defn selected-recipe [selected]
   [recipe-icon selected])
 
-(defn combo-selector [selected]
-  [:div.combo-selector
-   (if selected
-     [:div.recipe-picker
-      [selected-recipe selected]]
-     [empty-selector])])
+(defn combo-selector [items buildings selected]
+  (let [open-dialog (fn []
+                      (let [dialog (.getElementById js/document "recipe-picker")]
+                        (.show dialog)))
+        close-dialog (fn []
+                       (let [dialog (.getElementById js/document "recipe-picker")]
+                         (.close dialog)))]
+    (fn [items buildings selected]
+      [:div.combo-selector
+       [recipe-picker items buildings {:open? false
+                                       :close close-dialog}]
+       (if selected
+         [:div.recipe-picker
+          [selected-recipe selected]]
+         [empty-selector open-dialog])])))

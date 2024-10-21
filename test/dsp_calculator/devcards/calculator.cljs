@@ -28,6 +28,17 @@ The calculator interface, the most important part of the site.")
    [:link {:rel "stylesheet" :href "/css/components/tabs.css"}]
    [:style "@layer reset,skeleton,components,pages;"]])
 
+(defcard-rg full-calculator-control
+  [:main.page.calculator
+   [calc/combo-selector
+    [{:id 1101 :name "Iron Ingot" :pos [1 1]}
+     {:id 1104 :name "Copper Ingot" :pos [1 2]}
+     {:id 1102 :name "Magnet" :pos [2 1]}]
+    [{:id 2201 :name "Tesla Tower" :pos [1 1]}
+     {:id 2202 :name "Wireless Power Tower" :pos [1 2]}
+     {:id 2001 :name "Conveyor Belt Mk.I" :pos [2 1]}]
+    nil]])
+
 (defcard-rg combo-selector
   [:main.calculator
    [:div.combo-selector
@@ -47,7 +58,8 @@ The calculator interface, the most important part of the site.")
       {:id 1102 :name "Magnet" :pos [2 1]}]
      [{:id 2201 :name "Tesla Tower" :pos [1 1]}
       {:id 2202 :name "Wireless Power Tower" :pos [1 2]}
-      {:id 2001 :name "Conveyor Belt Mk.I" :pos [2 1]}]]]])
+      {:id 2001 :name "Conveyor Belt Mk.I" :pos [2 1]}]
+     {:open? true :close (fn [])}]]])
 
 (defcard-rg controls
   [:main.page.calculator
