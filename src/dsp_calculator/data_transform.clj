@@ -9,10 +9,6 @@
     [clojure.walk :as walk]
     [camel-snake-kebab.core :as csk]))
 
-(def root-path "public/data/")
-
-(def files ["meta" "locale" "items" "recipes" "tech"])
-
 (defn type-map? [item]
   (and (map? item)
        (= #{":type" "value"} (set (keys item)))))
@@ -59,6 +55,8 @@
         (map? item) (cljify-map item)
         :else item))
 
+(def root-path "public/data/")
+
 (defn read-json-resource [filename]
   (with-open [reader (io/reader
                       (io/file
@@ -79,6 +77,8 @@
   (def recipe-json (read-json-resource "recipes"))
   (def tech-json (read-json-resource "tech")))
 
+(def files ["meta" "items" "recipes" "tech"])
+
 (defn main []
   (let [locales (read-json-resource "locale")
         en-locale (first (filter #(str/starts-with? (get % "locale") "en-") locales))
@@ -91,4 +91,10 @@
         (with-open [writer (resource-writer (str filename ".edn"))
                     writer-en (resource-writer (str filename "_EN.edn"))]
           (pp/pprint json writer)
-          (pp/pprint json-en writer-en))))))
+          (pp/pprint json-en writer-en))))
+    (prn "locale")
+    (let [filename "locale"
+          raw-json (read-json-resource filename)
+          json (vec (map transform raw-json))]
+      (with-open [writer (resource-writer (str filename ".edn"))]
+        (pp/pprint json writer)))))
