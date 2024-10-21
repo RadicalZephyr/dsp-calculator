@@ -1,7 +1,8 @@
 (ns dsp-calculator.devcards.calculator
   (:require [devcards.core]
             [spade.core :refer [defclass]]
-            [dsp-calculator.ui.calculator :as calc])
+            [dsp-calculator.ui.calculator :as calc]
+            [reagent.core :as reagent])
   (:require-macros
    [devcards.core :as dc :refer [defcard defcard-rg]]))
 
@@ -61,34 +62,43 @@ The calculator interface, the most important part of the site.")
       {:id 2001 :name "Conveyor Belt Mk.I" :pos [2 1]}]
      {:open? true :close (fn [])}]]])
 
+(defcard-rg ratio-control
+  (fn [state _]
+    [:main.page.calculator
+     [:div.combo-selector
+      [calc/ratio-control state "Smelting Facility"]]])
+  (reagent/atom 1)
+  {:inspect-data true})
+
+(defcard-rg specific-control
+  (fn [state _]
+    (let [specific (reagent/cursor state [:specific])
+          timescale (reagent/cursor state [:timescale])]
+      [:main.page.calculator
+       [:div.combo-selector
+        [calc/specific-control specific timescale]]]))
+  (reagent/atom {:specific 1
+                 :timescale "minute"})
+  {:inspect-data true})
+
 (defcard-rg controls
-  [:main.page.calculator
-   [:div.combo-selector
-    [:label.ratio
-     [:input.factor {:type "number" :min "0"}]
-     [:div.steppers
-      [:button.increment]
-      [:button.decrement]]
-     [:span.text "× Smelting Facility"]]
-    [:label.specific
-     [:input.factor {:type "number" :min "0"}]
-     [:div.steppers
-      [:button.increment]
-      [:button.decrement]]
-     [:span.text "items"
-      [:select.timescale
-       [:option {:value "minute"} "per minute"]
-       [:option {:value "second"} "per second"]]]]
-    [:label.proliferator
-     (let [max-proliferator "Proliferator Mk.III"]
-       [:span {:title (str "Highest unlocked tier will be used." max-proliferator)}
-        "Proliferator: "])
-     [:select {:title "No proliferator to be used"}
-      [:option {:value "none"} "None"]
-      [:option {:value "mixed.tsp"} "Mix by The Superior Tentacle"]
-      [:option {:value "mixed.ab"} "Mix by Aaronbog"]
-      [:option {:value "speedup"} "Production Speedup"]
-      [:option {:value "extra"} "Extra Products"]]]]])
+  (fn [state _]
+    (let [ratio (reagent/cursor state [:ratio])
+          production-facility (:production-facility @state)
+          specific (reagent/cursor state [:specific])
+          timescale (reagent/cursor state [:timescale])
+          proliferator (reagent/cursor state [:proliferator])]
+      (fn [state _]
+        [:main.page.calculator
+         [:div.combo-selector
+          [calc/controls ratio production-facility specific timescale proliferator]]])))
+  (reagent/atom
+   {:ratio 1
+    :production-facility "Smelting Facility"
+    :specific 1
+    :timescale "minute"
+    :proliferator "none"})
+  {:inspect-data true})
 
 (defclass grid-pos [x y]
   {:grid-row (str x " / " y)})
