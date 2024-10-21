@@ -23,38 +23,39 @@
            :class (grid-pos x y)}
       [recipe-icon item]])])
 
-(defn recipe-picker [items buildings {:keys [open? close]}]
+(defn recipe-picker [dialog-id items buildings {:keys [open? close]}]
   (let [first-tab? (reagent/atom true)
         first-tab (fn [] (reset! first-tab? true))
         second-tab (fn [] (reset! first-tab? false))]
-    (fn [items buildings]
+    (fn [dialog-id items buildings]
       (let [first-tab? @first-tab?]
-       [:dialog#recipe-picker.window.recipes {:open open?
-                                :style {:position "relative"}}
-        [:header "Select a Recipe"]
-        [:div.tablist {:role "tablist"}
-         [:button#tab-0.tab {:type "button"
-                             :role "tab"
-                             :on-click first-tab
-                             :aria-selected (str first-tab?)
-                             :aria-controls "tabpanel-0"}
-          "Items"]
-         [:button#tab-1.tab {:type "button"
-                             :role "tab"
-                             :on-click second-tab
-                             :aria-selected (str (not first-tab?))
-                             :aria-controls "tabpanel-1"}
-          "Buildings"]]
-        [:div#tabpanel-0.tabpanel
-         {:role "tabpanel"
-          :class [(if first-tab? "is-visible" "is-hidden")]}
-         [recipe-grid items]]
-        [:div#tabpanel-1.tabpanel.
-         {:role "tabpanel"
-          :class [(if (not first-tab?) "is-visible" "is-hidden")]}
-         [recipe-grid buildings]]
-        [:div.corner-nav
-         [:button.close {:on-click close}]]]))))
+        [:dialog.window.recipes {:id dialog-id
+                                 :open open?
+                                 :style {:position "relative"}}
+         [:header "Select a Recipe"]
+         [:div.tablist {:role "tablist"}
+          [:button#tab-0.tab {:type "button"
+                              :role "tab"
+                              :on-click first-tab
+                              :aria-selected (str first-tab?)
+                              :aria-controls "tabpanel-0"}
+           "Items"]
+          [:button#tab-1.tab {:type "button"
+                              :role "tab"
+                              :on-click second-tab
+                              :aria-selected (str (not first-tab?))
+                              :aria-controls "tabpanel-1"}
+           "Buildings"]]
+         [:div#tabpanel-0.tabpanel
+          {:role "tabpanel"
+           :class [(if first-tab? "is-visible" "is-hidden")]}
+          [recipe-grid items]]
+         [:div#tabpanel-1.tabpanel.
+          {:role "tabpanel"
+           :class [(if (not first-tab?) "is-visible" "is-hidden")]}
+          [recipe-grid buildings]]
+         [:div.corner-nav
+          [:button.close {:on-click close}]]]))))
 
 (defn empty-selector [open-dialog]
   [:div.recipe-picker
@@ -115,16 +116,17 @@
   [recipe-icon selected])
 
 (defn combo-selector [items buildings selected]
-  (let [open-dialog (fn []
-                      (let [dialog (.getElementById js/document "recipe-picker")]
+  (let [dialog-id (str (gensym "recipe-picker"))
+        open-dialog (fn []
+                      (let [dialog (.getElementById js/document dialog-id)]
                         (.show dialog)))
         close-dialog (fn []
-                       (let [dialog (.getElementById js/document "recipe-picker")]
+                       (let [dialog (.getElementById js/document dialog-id)]
                          (.close dialog)))]
     (fn [items buildings selected]
       [:div.combo-selector
-       [recipe-picker items buildings {:open? false
-                                       :close close-dialog}]
+       [recipe-picker dialog-id items buildings {:open? false
+                                                 :close close-dialog}]
        (if selected
          [:div.recipe-picker
           [selected-recipe selected]]

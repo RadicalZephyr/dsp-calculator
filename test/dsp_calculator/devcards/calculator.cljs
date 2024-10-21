@@ -54,6 +54,7 @@ The calculator interface, the most important part of the site.")
   [:main.page.calculator
    [:div.combo-selector
     [calc/recipe-picker
+     (str (gensym "recipe-picker"))
      [{:id 1101 :name "Iron Ingot" :pos [1 1]}
       {:id 1104 :name "Copper Ingot" :pos [1 2]}
       {:id 1102 :name "Magnet" :pos [2 1]}]
