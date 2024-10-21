@@ -1,5 +1,6 @@
 (ns dsp-calculator.devcards.calculator
-  (:require [devcards.core])
+  (:require [devcards.core]
+            [spade.core :refer [defclass]])
   (:require-macros
    [devcards.core :as dc :refer [defcard defcard-rg]]))
 
@@ -89,3 +90,53 @@ The calculator interface, the most important part of the site.")
       [:option {:value "mixed.ab"} "Mix by Aaronbog"]
       [:option {:value "speedup"} "Production Speedup"]
       [:option {:value "extra"} "Extra Products"]]]]])
+
+(defclass grid-pos [x y]
+  {:grid-row (str x " / " y)})
+
+
+(defn preferred-building-option [[x y] type selected building]
+  [:label {:class [(grid-pos x y)
+                   (when (= selected (:id building)) "is-selected")]}
+   [:input {:type "radio"
+            :name type
+            :value (str (:id building))
+            :title (str (:name building) " - Production Speed: " (:count building))}]
+   [:span.item.icon {:data-icon (str "item." (:id building))
+                     :title (:name building)
+                     :data-count (:count building)
+                     :lang "en-US"}]])
+
+(defcard-rg preferred-buildings
+  [:main.calculator
+   [:div.combo-selector
+    [:details.preferred.preferred-buildings {:open true}
+     [:summary "Preferred Buildings"]
+     [:div.fields]]]
+   [:br]
+   [:div.combo-selector
+    [:details.preferred.preferred-buildings {:open true}
+     [:summary "Preferred Buildings"]
+     [:div.fields
+      [:span.name {:class (grid-pos 1 2)} "Smelting Facility"]
+      [preferred-building-option
+       [1 2]
+       "smelter"
+       2302
+       {:id 2302
+        :name "Arc Smelter"
+        :count "1×"}]
+      [preferred-building-option
+       [1 2]
+       "smelter"
+       2302
+       {:id 2315
+        :name "Plane Smelter"
+        :count "2×"}]
+      [preferred-building-option
+       [1 2]
+       "smelter"
+       2302
+       {:id 2319
+        :name "Negentropy Smelter"
+        :count "3×"}]]]]])
