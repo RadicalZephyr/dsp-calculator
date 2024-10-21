@@ -47,6 +47,11 @@
     m))
 
 (defn cljify-map [m]
+  (let [ascii-keys (map ascii? (keys m))]
+    (when (and (some identity ascii-keys)
+               (not (every? identity ascii-keys)))
+      (println "found a map with mixed ASCII and non-ASCII keys")
+      (prn m)))
   (let [m (merge-desc-fields m)
         smap (into {} (map kebab-keywordify (keys m)))]
     (into (sorted-map) (set/rename-keys m smap))))
