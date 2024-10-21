@@ -52,24 +52,36 @@
         (map? item) (cljify-map item)
         :else item))
 
+(defn read-json-resource [filename]
+  (with-open [reader (io/reader
+                      (io/file
+                       (io/resource root-path)
+                       (str  filename ".json")))]
+    (json/read reader)))
+
+(defn resource-writer [filename]
+  (io/writer
+   (io/file
+    (io/resource root-path)
+    filename)))
+
+(defn repl-load-json []
+  (def meta-json (read-json-resource "meta"))
+  (def locale-json (read-json-resource "locale"))
+  (def item-json (read-json-resource "items"))
+  (def recipe-json (read-json-resource "recipes"))
+  (def tech-json (read-json-resource "tech")))
+
 (defn main []
-  (let [locales (with-open [reader (io/reader (io/resource (str root-path "locale.json")))]
-                  (json/read reader))
+  (let [locales (read-json-resource "locale")
         en-locale (first (filter #(str/starts-with? (get % "locale") "en-") locales))
         en-strings (get en-locale "strings")]
     (doseq [filename files]
       (prn filename)
-      (let [raw-json (with-open [reader (io/reader
-                                         (io/resource
-                                          (str root-path filename ".json")))]
-                       (json/read reader))
+      (let [raw-json (read-json-resource filename)
             json (walk/prewalk transform raw-json)
             json-en (walk/prewalk-replace en-strings json)]
-        (with-open [writer (io/writer
-                            (io/file
-                             (io/resource root-path) (str filename ".edn")))
-                    writer-en (io/writer
-                               (io/file
-                                (io/resource root-path) (str filename "_EN.edn")))]
+        (with-open [writer (resource-writer (str filename ".edn"))
+                    writer-en (resource-writer (str filename "_EN.edn"))]
           (pp/pprint json writer)
           (pp/pprint json-en writer-en))))))
