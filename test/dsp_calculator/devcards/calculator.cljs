@@ -25,7 +25,8 @@ The calculator interface, the most important part of the site.")
    [:link {:rel "stylesheet" :href "/css/components/dialog.css"}]
    [:link {:rel "stylesheet" :href "/css/components/item.css"}]
    [:link {:rel "stylesheet" :href "/css/components/recipe.css"}]
-   [:link {:rel "stylesheet" :href "/css/components/tabs.css"}]])
+   [:link {:rel "stylesheet" :href "/css/components/tabs.css"}]
+   [:style "@layer reset,skeleton,components,pages;"]])
 
 (defcard-rg combo-selector
   [:main.calculator
