@@ -14,7 +14,15 @@
   [:span.recipe.icon {:data-icon (str "item." (:id item))
                       :title (:name item)}])
 
-(defn recipe-picker [items]
+(defn recipe-grid [items]
+  [:ul.recipe-grid {:role "listbox"}
+   (for [{[x y] :pos :as item} items]
+     ^{:key (:id item)}
+     [:li {:role "option"
+           :class (grid-pos x y)}
+      [recipe-icon item]])])
+
+(defn recipe-picker [items buildings]
   [:dialog.window.recipes {:open true
                            :style {:position "relative"}}
    [:header "Select a Recipe"]
