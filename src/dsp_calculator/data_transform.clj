@@ -20,7 +20,8 @@
 
 
 (defn ascii? [s]
-  (re-matches #"\p{ASCII}+" s))
+  (if (string? s)
+    (re-matches #"\p{ASCII}+" s)))
 
 (defn kebab-keywordify [k]
   (when (ascii? k)
@@ -28,7 +29,7 @@
 
 (defn assoc-desc-field [m {:strs [key value position]}]
   (if (some? key)
-    (assoc m key {:value value :position position})
+    (assoc m key {"value" value "position" position})
     m))
 
 (defn merge-desc-fields [m]
