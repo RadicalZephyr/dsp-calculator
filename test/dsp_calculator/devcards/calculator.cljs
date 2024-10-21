@@ -41,25 +41,9 @@ The calculator interface, the most important part of the site.")
 (defcard-rg recipe-picker-dialog
   [:main.page.calculator
    [:div.combo-selector
-    [:dialog.window.recipes {:open true
-                             :style {:position "relative"}}
-     [:header "Select a Recipe"]
-     [:div.tablist {:role "tablist"}
-      [:button#tab-0.tab {:type "button" :role "tab" :tabIndex "0"}
-       "Items"]
-      [:button#tab-1.tab {:type "button" :role "tab" :tabIndex "-1"}
-       "Buildings"]]
-     [:div#tabpanel-0.tabpanel.is-visible {:role "tabpanel"}
-      [:ul.recipe-grid {:role "listbox"}
-       (for [item [{:id 1101 :name "Iron Ingot"}]]
-         ^{:key item}
-         [:li {:role "option"
-               :style {:grid-area "1 / 1"}}
-          [:span.recipe.icon {:data-icon (str "item." item)
-                              :title (:name item)}]])]]
-     [:div#tabpanel-1.tabpanel.is-hidden {:role "tabpanel"}]
-     [:div.corner-nav
-      [:button.close]]]]])
+    [calc/recipe-picker [{:id 1101 :name "Iron Ingot" :pos [1 1]}
+                         {:id 1102 :name "Magnet" :pos [2 1]}
+                         {:id 1104 :name "Copper Ingot" :pos [1 2]}]]]])
 
 (defcard-rg controls
   [:main.page.calculator
