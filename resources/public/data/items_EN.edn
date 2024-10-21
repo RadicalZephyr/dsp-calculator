@@ -1,8 +1,6 @@
 [{:desc-fields
-  [{:key "Collected From", :position 0, :value "Iron Veins"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Iron Veins"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is collected from mining the iron veins and used for smelting iron ingots and magnets.",
   :grid-index 1101,
@@ -16,10 +14,8 @@
   :type-string "Natural Resource",
   :unlock-key -1}
  {:desc-fields
-  [{:key "Collected From", :position 0, :value "Copper Veins"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Copper Veins"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is collected from mining the copper veins and can be smelted directly into copper ingots.",
   :grid-index 1102,
@@ -33,11 +29,9 @@
   :type-string "Natural Resource",
   :unlock-key -1}
  {:desc-fields
-  [{:key "Collected From", :position 0, :value "Silicon Veins"}
-   {:key "Made in", :position 1, :value "Smelting Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Silicon Veins"},
+   "Made in" {:position 1, :value "Smelting Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a high-purity silicon ore harvested from mining the silicon veins. It is used to make high-purity silicon.",
   :grid-index 1105,
@@ -51,10 +45,8 @@
   :type-string "Natural Resource",
   :unlock-key 6001}
  {:desc-fields
-  [{:key "Collected From", :position 0, :value "Titanium Veins"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Titanium Veins"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a type of ore with a unique molecular structure created under intense heat.",
   :grid-index 1106,
@@ -68,10 +60,8 @@
   :type-string "Natural Resource",
   :unlock-key 6002}
  {:desc-fields
-  [{:key "Collected From", :position 0, :value "Stone Veins"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Stone Veins"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a common type of ore and an important raw material for production. It can also be harvested from rocks.",
   :grid-index 1103,
@@ -85,13 +75,11 @@
   :type-string "Natural Resource",
   :unlock-key -1}
  {:desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "2 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "0%"}
-   {:key "Collected From", :position 0, :value "Coal Veins"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Coal Veins"},
+   "Energy" {:position 3, :value "2 MJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "0%"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a solid combustible ore. It is gradually formed by plants through complex physiological and bio-mechanical changes. It is an energy source and a vital raw material for smelting and chemical production.",
   :fuel-type 1,
@@ -108,13 +96,11 @@
   :type-string "Natural Resource",
   :unlock-key -1}
  {:desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "1 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "0%"}
-   {:key "Collected From", :position 0, :value "Tree"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Tree"},
+   "Energy" {:position 3, :value "1 MJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "0%"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a normal fuel that has a lower energy and is collected from trees,",
   :enemy-drop-count 4,
@@ -136,13 +122,11 @@
   :type-string "Natural Resource",
   :unlock-key -1}
  {:desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "500 KJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "0%"}
-   {:key "Collected From", :position 0, :value "Plant"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Plant"},
+   "Energy" {:position 3, :value "500 KJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "0%"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It contains lower energy compared to wood, but it is easier to harvest.",
   :enemy-drop-count 4,
@@ -163,15 +147,13 @@
   :type-string "Natural Resource",
   :unlock-key -1}
  {:desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "4 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+0%"}
-   {:key "Collected From",
-    :position 0,
-    :value "Fire ice vein <color=\"#FFFFFFC1\">(rare)</color>"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From"
+   {:position 0,
+    :value "Fire ice vein <color=\"#FFFFFFC1\">(rare)</color>"},
+   "Energy" {:position 3, :value "4 MJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "+0%"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a rare ore and an ice-like white solid matter having cage-like micro-structures. Its covalent bonds are at a critical state, which make them the ideal material for more efficient grapheme production.",
   :fuel-type 1,
@@ -189,12 +171,10 @@
   :type-string "Natural Resource",
   :unlock-key 1120}
  {:desc-fields
-  [{:key "Collected From",
-    :position 0,
-    :value "Kimberlite vein <color=\"#B9DFFFC4\">(rare)</color>"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From"
+   {:position 0,
+    :value "Kimberlite vein <color=\"#B9DFFFC4\">(rare)</color>"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a rare ore formed and crystallized directly from kimberlite magmas under CO₂-rich conditions. Smelting it yield diamonds.",
   :grid-index 1114,
@@ -208,12 +188,11 @@
   :type-string "Natural Resource",
   :unlock-key 1112}
  {:desc-fields
-  [{:key "Collected From",
-    :position 0,
-    :value "Fractal silicium vein <color=\"#43FF89D4\">(rare)</color>"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From"
+   {:position 0,
+    :value
+    "Fractal silicium vein <color=\"#43FF89D4\">(rare)</color>"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a rare natural silicon ore with a unique geometric fractal structure. When a single crystal grows to a certain size, it is notable that a small twig of silicon crystals grow out of the matrix. Crystal fractalization is a natural occurring process. The higher in fractal generations, the greater in purity. Fractal silicon with more than six fractal generations can be used directly as a raw material for producing crystal silicon.",
   :grid-index 1214,
@@ -228,12 +207,10 @@
   :type-string "Natural Resource",
   :unlock-key 1105}
  {:desc-fields
-  [{:key "Collected From",
-    :position 0,
-    :value "Grating Crystal vein <color=\"#E37AFFDA\">(rare)</color>"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From"
+   {:position 0,
+    :value "Grating Crystal vein <color=\"#E37AFFDA\">(rare)</color>"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a rare ore with naturally formed grooves distributed across the surface. It is used to produce precision optical components and high-power exciters.",
   :enemy-drop-count 2,
@@ -252,13 +229,11 @@
   :type-string "Natural Resource",
   :unlock-key 6002}
  {:desc-fields
-  [{:key "Collected From",
-    :position 0,
+  {"Collected From"
+   {:position 0,
     :value
-    "Stalagmite Crystal Vein <color=\"#7AF0FFC8\">(rare)</color>"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+    "Stalagmite Crystal Vein <color=\"#7AF0FFC8\">(rare)</color>"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "They were rare creatures that once widely existed on this living planet in the ocean at a depth of 100,000 meters. After the marine life on these planets die, their bodies sink to the bottom of the ocean, and mineralize with seawater under the deep pressure of the ocean. If there is a stable, smooth, slow and hot ocean current, stalagmite crystals may form as a result of this occurrence.",
   :grid-index 1414,
@@ -273,12 +248,10 @@
   :type-string "Natural Resource",
   :unlock-key 6002}
  {:desc-fields
-  [{:key "Collected From",
-    :position 0,
-    :value "Unipolar magnet vein <color=\"#FFA086C8\">(rare)</color>"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From"
+   {:position 0,
+    :value "Unipolar magnet vein <color=\"#FFA086C8\">(rare)</color>"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a rare ore with a pyrochlore lattice. In order to separate the \"magnetic monopoles\", a magnetic field can be applied to affect the symmetry and orientation of the string by lowering the density of the string network.",
   :enemy-drop-count 2,
@@ -298,10 +271,8 @@
   :type-string "Natural Resource",
   :unlock-key 1206}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Smelting Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Smelting Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a basic raw material used to produce various iron components.",
   :enemy-drop-count 2,
@@ -317,10 +288,8 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Smelting Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Smelting Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a basic raw material used to produce various copper components.",
   :enemy-drop-count 2.4000000953674316,
@@ -336,10 +305,8 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Smelting Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Smelting Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "After melting and re-crystallization of the crude silicon, analytically pure silicon crystals are formed. The photovoltaic materials and semiconductor components made from them can fulfill a variety of needs.",
   :enemy-drop-count 1.7999999523162842,
@@ -357,10 +324,8 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Smelting Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Smelting Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Obtained from smelting titanium ores, it is light in weight and highly dense, making it an essential raw material for producing high-density materials.",
   :enemy-drop-count 2.200000047683716,
@@ -378,10 +343,8 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Smelting Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Smelting Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a common material obtained by smelting stones and used to produce the foundation of the facilities.",
   :enemy-drop-count 1.7999999523162842,
@@ -397,13 +360,11 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "6 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+1%"}
-   {:key "Made in", :position 1, :value "Smelting Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Energy" {:position 3, :value "6 MJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "+1%"},
+   "Made in" {:position 1, :value "Smelting Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Impurities such as hydrogen in coal is directly removed from the ion current, followed by a compaction process to yield crystalline graphite that has superior application performance.",
   :enemy-drop-count 1.600000023841858,
@@ -425,10 +386,8 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Smelting Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Smelting Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Iron ingots as raw materials are smelted under strict temperature control to improve the crystal structure of the materials, and yield a higher mechanical properties.",
   :enemy-drop-count 1.600000023841858,
@@ -445,10 +404,8 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Smelting Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Smelting Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Utilizing the uniqueness of the lattice structure in titanium at different temperatures, adding precise and proportional amount of alloying elements can achieve the perfect balance of phase transition temperature and phase content, resulting a new type of alloy material with superior strength and density.",
   :enemy-drop-count 1.100000023841858,
@@ -466,10 +423,8 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Smelting Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Smelting Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is an irregularly structured amorphous optical medium. It can be used to make various optical components such as prisms and lenses, and it can also be used to build a variety of facilities.",
   :enemy-drop-count 1.7000000476837158,
@@ -486,10 +441,8 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Blending a proportional amount of titanium into molten glass can greatly strengthen the glass to withstand hostile environments.",
   :enemy-drop-count 1.399999976158142,
@@ -507,10 +460,8 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a polyhedron surrounded by two intersecting glass planes. It splits light or disperses light beams, making it a key component for producing more precise optical instruments.",
   :enemy-drop-count 1.399999976158142,
@@ -527,13 +478,11 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "900 KJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "-1%"}
-   {:key "Made in", :position 1, :value "Smelting Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Energy" {:position 3, :value "900 KJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "-1%"},
+   "Made in" {:position 1, :value "Smelting Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Diamonds are formed by using extreme high pressure and heat to alter the structure of graphite. Not only does it preserve the parallel hexagonal lattice of graphite but also form a cubic hexagonal lattice, and it is a very hard crystal.",
   :enemy-drop-count 1,
@@ -554,10 +503,8 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Smelting Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Smelting Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Melting high-purity silicon and passing it through a strong electric field at a certain speed will yield a spectrally pure silicon crystal. This process can further remove any dissolved ionic impurities. Lattice silicon is almost free of crystal defects, and so it is primarily used to produce ultra-high-precision optical instruments.",
   :enemy-drop-count 1.2000000476837158,
@@ -575,10 +522,8 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a standard component deployed in a wide range of mechanical structures and used for transmission and other functions.",
   :enemy-drop-count 1.7000000476837158,
@@ -594,10 +539,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Smelting Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Smelting Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a basic magnetic material obtained directly by smelting iron ores.",
   :enemy-drop-count 2,
@@ -613,10 +556,8 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is an extremely useful basic electromagnetic component.",
   :enemy-drop-count 2,
@@ -632,10 +573,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a basic power system component that can improve mechanical performance.",
   :enemy-drop-count 1.2000000476837158,
@@ -651,10 +590,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It can defy gravity to levitate objects and is commonly used to create more advanced magnetic field generators.",
   :enemy-drop-count 0.800000011920929,
@@ -670,10 +607,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a device to generate super magnetic fields. The resulting super-strong magnetic fields can work at the atomic scale directly and cause distortions in the material lattice, creating high-performance materials and devices.",
   :enemy-drop-count 0.5,
@@ -689,10 +624,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It can cause particles to exhibit specific characteristics while firmly binding them.",
   :enemy-drop-count 0.4000000059604645,
@@ -708,10 +641,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Particle Collider"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Particle Collider"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Strange Matter carries great negative gravitational pressure that outweighs its energy density. This allows the space around it to warp and generates negative energy that the warp drive needs.",
   :enemy-drop-count 0.4000000059604645,
@@ -727,10 +658,8 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description "It is a highly versatile basic electrical component.",
   :enemy-drop-count 2,
   :enemy-drop-level 1,
@@ -745,10 +674,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a large-scale integrated circuit device. Using semiconductor materials enables better data processing and processing control.",
   :enemy-drop-count 0.75,
@@ -764,10 +691,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "With robust computing power and ultra-fast computation, it can predict if a quantum jump would cause an error and prevent it by promptly reversing a jump process that may result in an error.",
   :enemy-drop-count 0.25,
@@ -783,10 +708,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a microcrystalline component, which is the basis for achieving high-speed computing functions in processors. Its production involves carving and fabricating \"city-like\" three-dimensional nanostructures on high-purity silicon wafers.",
   :enemy-drop-count 1,
@@ -802,10 +725,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Studying the probability oscillation in time with the Rabi frequency as the particle wave function evolves makes it possible to artificially interfere with it during a quantum jump to steer the quantum in the desired direction.",
   :enemy-drop-count 0.4000000059604645,
@@ -821,10 +742,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Controlling the particles so that they maintain a certain regularity significantly increases the printing speed of the particles.",
   :enemy-drop-count 0.25,
@@ -840,10 +759,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "The plasma generated by the high-power Plasma Exciter can be used to extract and refine crude oil or create wireless power towers for remote power transmission and charging the mecha.",
   :enemy-drop-count 1.2999999523162842,
@@ -859,10 +776,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "The prism surface is cut into nano-gratings and then reassembled so that a single high-energy photon is emitted after continuously absorbing multiple low-energy photons in a specific combination of structures. Amazingly, the natural Grating Crystals within the cluster can accomplish this directly.",
   :enemy-drop-count 1.399999976158142,
@@ -878,11 +793,9 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Life", :position 36, :value ["-" " sec"]}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Life" {:position 36, :value ["-" " sec"]},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "The EM-Rail Ejector can launch large numbers of Solar Sails to create a Dyson Swarm, enabling more efficient radiant energy acquisition from a star.",
   :grid-index 1708,
@@ -903,11 +816,8 @@
    :turn-acc 0},
   :bomb-type "LIQUID",
   :desc-fields
-  [{:key "Collected From", :position 0, :value "Ocean"}
-   {:position 71}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Ocean"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is obtained from using the Water Pump, widely used in chemical production. It can also be used as throwable item to practice but it has no damage or effect.",
   :grid-index 1107,
@@ -923,13 +833,11 @@
   :type-string "Natural Resource",
   :unlock-key 2306}
  {:desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "4 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+0%"}
-   {:key "Collected From", :position 0, :value "Crude Oil Seep"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Crude Oil Seep"},
+   "Energy" {:position 3, :value "4 MJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "+0%"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a type of fossil formed from marine organisms and can be mined as a liquid mineral. It contains chemical energy stored within marine organisms during their life-time, and can be used as fuel or as a raw chemical material.",
   :fuel-type 1,
@@ -948,13 +856,11 @@
   :type-string "Natural Resource",
   :unlock-key 2307}
  {:desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "4 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+0%"}
-   {:key "Made in", :position 1, :value "Refining Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Energy" {:position 3, :value "4 MJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "+0%"},
+   "Made in" {:position 1, :value "Refining Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a primary product of crude oil refining. It is a chemical fuel used to manufacture various chemical products.",
   :fuel-type 1,
@@ -971,11 +877,9 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Chemical Facility"}
-   {:key "Collected From", :position 0, :value "Sulfuric acid ocean"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Sulfuric acid ocean"},
+   "Made in" {:position 1, :value "Chemical Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a primary chemical product of crude oil. It can be directly obtained from the sulfuric acid ocean using a water pump.",
   :grid-index 1207,
@@ -989,14 +893,12 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "9 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+1%"}
-   {:key "Made in", :position 1, :value "Refining Facility"}
-   {:key "Collected From", :position 0, :value "Gas Giant Orbit"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Gas Giant Orbit"},
+   "Energy" {:position 3, :value "9 MJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "+1%"},
+   "Made in" {:position 1, :value "Refining Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "The most abundant element in the universe and the lightest gas.",
   :enemy-drop-count 1.5,
@@ -1018,14 +920,12 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "9 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+1%"}
-   {:key "Made in", :position 1, :value "Particle Collider"}
-   {:key "Collected From", :position 0, :value "Gas Giant Orbit"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Gas Giant Orbit"},
+   "Energy" {:position 3, :value "9 MJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "+1%"},
+   "Made in" {:position 1, :value "Particle Collider"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a stable isotope of hydrogen. Rarely found under natural conditions, most of them are from reprocessed hydrogen, or collected from the gas giants.",
   :enemy-drop-count 0.800000011920929,
@@ -1050,11 +950,9 @@
   :type-string "Material",
   :unlock-key 1120}
  {:desc-fields
-  [{:key "Energy Potential", :position 37, :value "600 MJ"}
-   {:key "Made in", :position 1, :value "Particle Collider"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Energy Potential" {:position 37, :value "600 MJ"},
+   "Made in" {:position 1, :value "Particle Collider"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is generated by inverting photons at a critical state. When Matter and Antimatter meet, they annihilate each other, and produce a massive burst of energy.",
   :enemy-drop-count 0.30000001192092896,
@@ -1071,11 +969,9 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Energy Potential", :position 37, :value "1 GJ"}
-   {:key "Made in", :position 1, :value "Ray Receiver"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Energy Potential" {:position 37, :value "1 GJ"},
+   "Made in" {:position 1, :value "Ray Receiver"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "It is a critical state photon that can be converted into Antimatter and hydrogen under the effect of a super magnetic field.",
   :grid-index 1113,
@@ -1090,13 +986,11 @@
   :type-string "Material",
   :unlock-key 1122}
  {:desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "54 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+2%"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Energy" {:position 3, :value "54 MJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "+2%"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Due to the improvement of cryogenic technology, gaseous hydrogen can condense itself into a fluid to make liquid hydrogen fuel rods with a higher combustion efficiency. Using it as a fuel for the mecha can dramatically improve its combustion output.",
   :enemy-drop-count 0.5,
@@ -1116,13 +1010,11 @@
   :type "PRODUCT",
   :type-string "End Product"}
  {:desc-fields
-  [{:key "Fuel Type", :position 2, :value "Nuclear Energy"}
-   {:key "Energy", :position 3, :value "600 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+3%"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Energy" {:position 3, :value "600 MJ"},
+   "Fuel Type" {:position 2, :value "Nuclear Energy"},
+   "Fuel chamber gen." {:position 31, :value "+3%"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Under a magnetic field, deuterium can be made into deuteron fuel rods that can yield more powerful energy. These can be used as a fuel source for small fusion systems.",
   :enemy-drop-count 0.4000000059604645,
@@ -1142,13 +1034,11 @@
   :type "PRODUCT",
   :type-string "End Product"}
  {:desc-fields
-  [{:key "Fuel Type", :position 2, :value "Mass-Energy"}
-   {:key "Energy", :position 3, :value "7 GJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+5%"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Energy" {:position 3, :value "7 GJ"},
+   "Fuel Type" {:position 2, :value "Mass-Energy"},
+   "Fuel chamber gen." {:position 31, :value "+5%"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "The Annihilation Constraint Sphere’s strong restraints act on Antimatter to form a more stable fuel rod. This powerful energy is then safer to harness.",
   :enemy-drop-count 0.30000001192092896,
@@ -1167,13 +1057,11 @@
   :type "PRODUCT",
   :type-string "End Product"}
  {:desc-fields
-  [{:key "Fuel Type", :position 2, :value "Mass-Energy"}
-   {:key "Energy", :position 3, :value "72 GJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+11%"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Energy" {:position 3, :value "72 GJ"},
+   "Fuel Type" {:position 2, :value "Mass-Energy"},
+   "Fuel chamber gen." {:position 31, :value "+11%"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "If Strange Matter is used as the main raw material for the annihilation reaction, both the energy density and the output power will rise significantly.",
   :fuel-type 4,
@@ -1188,10 +1076,8 @@
   :type "PRODUCT",
   :type-string "End Product"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Chemical Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Chemical Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a primary chemical product, which is highly versatile. It is used to make more advanced chemical products.",
   :enemy-drop-count 1,
@@ -1209,13 +1095,11 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "96 KJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "-1%"}
-   {:key "Made in", :position 1, :value "Chemical Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Energy" {:position 3, :value "96 KJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "-1%"},
+   "Made in" {:position 1, :value "Chemical Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "If one layer of graphene is laid on top of another layer of graphene, through rotation, the double-layer graphene will form a complex repeating structure - a superlattice. Upon rotation to a certain \"Magic Angle\", the double-layer graphene will become superconductive and become a new type of nano-superconducting material.",
   :enemy-drop-count 1,
@@ -1237,13 +1121,11 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "84 KJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "-1%"}
-   {:key "Made in", :position 1, :value "Chemical Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Energy" {:position 3, :value "84 KJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "-1%"},
+   "Made in" {:position 1, :value "Chemical Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is very lightweight, and has a precisely interconnected hexagonal lattice structure. Such structure imparts exceptional strength and an impressive resistance to deformation, so it is ideally suited for the production of high-performance apparatuses.",
   :enemy-drop-count 0.800000011920929,
@@ -1264,16 +1146,14 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "1 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "0%"}
-   {:key "Made in", :position 1, :value "Chemical Facility"}
-   {:key "Collected From",
-    :position 0,
-    :value "Organic crystal vein <color=\"#F5FF4FC1\">(rare)</color>"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From"
+   {:position 0,
+    :value "Organic crystal vein <color=\"#F5FF4FC1\">(rare)</color>"},
+   "Energy" {:position 3, :value "1 MJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "0%"},
+   "Made in" {:position 1, :value "Chemical Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a high-graded chemical product of crude oil with crystal structure. It can also be sourced directly from rare organic crystal veins, and it is used to produce crystals with higher density.",
   :fuel-type 1,
@@ -1292,10 +1172,8 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Adding precise, proportional organic crystals in titanium can further strengthen its lattice structure, forming special titanium atomic crystals with greater density.",
   :enemy-drop-count 0.800000011920929,
@@ -1313,10 +1191,8 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "The ion trap’s electric field holds charged particles in place, and Coulomb repulsion between the particles causes them to spontaneously form a spatial ring crystal. The zero-point energy of the particles inside the crystal can be stimulated by imposing a weak static magnetic field, resulting in a noticeable Casimir effect.",
   :enemy-drop-count 0.550000011920929,
@@ -1343,14 +1219,12 @@
    :turn-acc 0},
   :bomb-type "EXPLOSIVE_UNIT",
   :desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "9 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+1%"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect", :position 40, :value "Extra products"}
-   {:position 71}
-   {:key "Damage Type", :position 55, :value "-"}
-   {:position 61}],
+  {"Damage Type" {:position 55, :value "-"},
+   "Energy" {:position 3, :value "9 MJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "+1%"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "As a fuel, it can efficiently combust and generate enormous energy, while as an explosive component it can be used to craft shells and Explosive Units.",
   :enemy-drop-count 1,
@@ -1382,14 +1256,12 @@
    :turn-acc 0},
   :bomb-type "EXPLOSIVE_UNIT",
   :desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "21 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+1%"}
-   {:key "Made in", :position 1, :value "Chemical Facility"}
-   {:key "Proliferator Effect", :position 40, :value "Extra products"}
-   {:position 71}
-   {:key "Damage Type", :position 55, :value "-"}
-   {:position 61}],
+  {"Damage Type" {:position 55, :value "-"},
+   "Energy" {:position 3, :value "21 MJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "+1%"},
+   "Made in" {:position 1, :value "Chemical Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a powerful explosive crafted from Combustible Units. Sophisticated design and strict production control will ensure its optimal explosive capacity and stability. As a raw material used in the making of High-explosive Shell Sets, it offers powerful explosiveness and the ability to inflict heavy damage.",
   :enemy-drop-count 0.699999988079071,
@@ -1420,14 +1292,12 @@
    :turn-acc 0},
   :bomb-type "EXPLOSIVE_UNIT",
   :desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "54 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+2%"}
-   {:key "Made in", :position 1, :value "Chemical Facility"}
-   {:key "Proliferator Effect", :position 40, :value "Extra products"}
-   {:position 71}
-   {:key "Damage Type", :position 55, :value "-"}
-   {:position 61}],
+  {"Damage Type" {:position 55, :value "-"},
+   "Energy" {:position 3, :value "54 MJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "+2%"},
+   "Made in" {:position 1, :value "Chemical Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "By inducing resonance of Casimir Crystals, its explosiveness is tremendously enhanced by a chainreaction-like effect in a small range.",
   :enemy-drop-count 0.5,
@@ -1448,10 +1318,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a piece of neutron star material encapsulated after processing. Its distorted and powerful gravitational field is shielded within. It is normally used to manipulate and change the spatial structure, but this does not stop some folks from using it to focus the sun’s rays and ignite a fire.",
   :enemy-drop-count 0.4000000059604645,
@@ -1468,10 +1336,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a consumable item that activates warp flight for the mecha and Logistics Vessels.\r\nUse the <color=\"#FD965ECC\">CAPSLOCK</color> key to activate the warp drive.",
   :enemy-drop-count 0.30000001192092896,
@@ -1487,10 +1353,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Confining the annihilation reaction within the sphere to obtain a stable and controlled energy output is a key component of Artificial Stars.",
   :enemy-drop-count 0.30000001192092896,
@@ -1506,10 +1370,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "A small aerodynamic component, used as basic part in many aircrafts. This engine can be crafted easily from cheap raw materials.",
   :enemy-drop-count 1,
@@ -1525,10 +1387,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description "It can supply power to the Logistics Drones.",
   :enemy-drop-count 0.6000000238418579,
   :enemy-drop-level 3,
@@ -1543,10 +1403,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is an upgraded version of the thruster that can power the Logistics Vessel.",
   :enemy-drop-count 0.30000001192092896,
@@ -1562,12 +1420,10 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Carrying Capacity", :position 45, :value "-"}
-   {:key "Flight Speed", :position 46, :value "- m/s"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Carrying Capacity" {:position 45, :value "-"},
+   "Flight Speed" {:position 46, :value "- m/s"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "It actively balances the supply and demand of items in the distribution logistics system, but it will not deliver to destinations beyond the distribution scope.",
   :grid-index 1701,
@@ -1582,12 +1438,10 @@
   :type "LOGISTICS",
   :type-string "Logistics"}
  {:desc-fields
-  [{:key "Carrying Capacity", :position 25, :value "-"}
-   {:key "Flight Speed", :position 27, :value "- m/s"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Carrying Capacity" {:position 25, :value "-"},
+   "Flight Speed" {:position 27, :value "- m/s"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "It functions to dynamically balance the supply and demand of items in the planetary logistics system. It only works with the Logistics Station it comes from.",
   :grid-index 1702,
@@ -1602,11 +1456,9 @@
   :type "LOGISTICS",
   :type-string "Logistics"}
  {:desc-fields
-  [{:key "Carrying Capacity", :position 26, :value "-"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Carrying Capacity" {:position 26, :value "-"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "It functions to actively balance the supply and demand of items between planets. Consuming Space Warpers can enable Logistics Vessels to launch warp flights.",
   :grid-index 1703,
@@ -1621,10 +1473,8 @@
   :type "LOGISTICS",
   :type-string "Logistics"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a new type of high-density, lightweight structure. It is more resistant to the strong gravitational pull of stars than traditional structural materials, making it ideal for building Dyson Sphere components.",
   :grid-index 1709,
@@ -1637,10 +1487,8 @@
   :type "MATERIAL",
   :type-string "Material"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Small Carrier Rockets can transport the components to the planned Dyson Sphere, where they will form the Dyson Sphere’s Nodes and Frames.",
   :grid-index 1710,
@@ -1652,10 +1500,8 @@
   :type "COMPONENT",
   :type-string "Component"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "The delivery vehicle for Dyson Sphere Components. More rockets should be launched if a Dyson Sphere needs to be built faster.",
   :grid-index 1711,
@@ -1671,10 +1517,8 @@
   :build-mode 4,
   :can-build true,
   :desc-fields
-  [{:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "It is a terrain leveling tool. But it can’t be used to alter the planet's topography. You can only level the terrain to zero elevation. If the foundation is used for highlands, soil piles will be obtained. However, if the foundation is used for ocean or low-lying areas, soil piles will be consumed. When laying the Foundation, you can choose a decoration option or leave it plain and just level the terrain.",
   :enemy-drop-count 2,
@@ -1691,17 +1535,15 @@
   :type-string "Component"}
  {:ability 1,
   :desc-fields
-  [{:key "Number of Sprays", :position 29, :value [12 " times"]}
-   {:key "Extra Products", :position 41, :value "+12.5%"}
-   {:key "Production Speedup", :position 42, :value "+25%"}
-   {:key "Energy Consumption", :position 43, :value "+30%"}
-   {:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "3 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+0%"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Energy" {:position 3, :value "3 MJ"},
+   "Energy Consumption" {:position 43, :value "+30%"},
+   "Extra Products" {:position 41, :value "+12.5%"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "+0%"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Number of Sprays" {:position 29, :value [12 " times"]},
+   "Production Speedup" {:position 42, :value "+25%"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Proliferator is input into the port above the Spray Coater and sprayed on cargo. When the sprayed cargo is used as raw materials to make the next-level products, it can yield extra products or speed up production. However, it will increase the power consumption for the entire production process.",
   :fuel-type 1,
@@ -1719,17 +1561,15 @@
   :type-string "Material"}
  {:ability 2,
   :desc-fields
-  [{:key "Number of Sprays", :position 29, :value [24 " times"]}
-   {:key "Extra Products", :position 41, :value "+20%"}
-   {:key "Production Speedup", :position 42, :value "+50%"}
-   {:key "Energy Consumption", :position 43, :value "+70%"}
-   {:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "8 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+1%"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Energy" {:position 3, :value "8 MJ"},
+   "Energy Consumption" {:position 43, :value "+70%"},
+   "Extra Products" {:position 41, :value "+20%"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "+1%"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Number of Sprays" {:position 29, :value [24 " times"]},
+   "Production Speedup" {:position 42, :value "+50%"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Compared to Proliferator MK.I, the Proliferator MK.II ingredient formula is upgraded. When cargo sprayed with Proliferator MK.II is used as raw materials to produce the next-level products, the extra products or production speedup effect can be dramatically improved.",
   :fuel-type 1,
@@ -1747,17 +1587,15 @@
   :type-string "Material"}
  {:ability 4,
   :desc-fields
-  [{:key "Number of Sprays", :position 29, :value [60 " times"]}
-   {:key "Extra Products", :position 41, :value "+25%"}
-   {:key "Production Speedup", :position 42, :value "+100%"}
-   {:key "Energy Consumption", :position 43, :value "+150%"}
-   {:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "21 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+2%"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Energy" {:position 3, :value "21 MJ"},
+   "Energy Consumption" {:position 43, :value "+150%"},
+   "Extra Products" {:position 41, :value "+25%"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "+2%"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Number of Sprays" {:position 29, :value [60 " times"]},
+   "Production Speedup" {:position 42, :value "+100%"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "With a newly upgraded formula, when cargo sprayed with Proliferator MK.III is used as raw materials to produce the next-level products, it can help maximize the extra products and production speedup effect. However, the power consumption will increase during the production process, and it requires a higher-capacity production line.",
   :fuel-type 1,
@@ -1776,14 +1614,12 @@
  {:ability 700,
   :ammo-type "BULLET",
   :desc-fields
-  [{:key "Damage", :position 48, :value "7 hp"}
-   {:key "Damage Type", :position 55, :value "Kinetic Damage"}
-   {:key "Ammo Type", :position 52, :value "Bullet"}
-   {:key "Ammo Amount", :position 47, :value [30 " shots"]}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Ammo Amount" {:position 47, :value [30 " shots"]},
+   "Ammo Type" {:position 52, :value "Bullet"},
+   "Damage" {:position 48, :value "7 hp"},
+   "Damage Type" {:position 55, :value "Kinetic Damage"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Magnum ammo crafted from copper ingots at low cost. Copper is self-lubricating, so it can maintain its shape and still reduce the risks of deformation and fracturing when shooting. An ammo box contains 30 bullets.",
   :grid-index 1312,
@@ -1798,14 +1634,12 @@
  {:ability 1600,
   :ammo-type "BULLET",
   :desc-fields
-  [{:key "Damage", :position 48, :value "16 hp"}
-   {:key "Damage Type", :position 55, :value "Kinetic Damage"}
-   {:key "Ammo Type", :position 52, :value "Bullet"}
-   {:key "Ammo Amount", :position 47, :value [30 " shots"]}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Ammo Amount" {:position 47, :value [30 " shots"]},
+   "Ammo Type" {:position 52, :value "Bullet"},
+   "Damage" {:position 48, :value "16 hp"},
+   "Damage Type" {:position 55, :value "Kinetic Damage"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Magnum Ammo Boxes improved with titanium ingots. Now their sharper warheads can pierce Dark Fog's armor easily. An ammo box contains 30 bullets.",
   :grid-index 1412,
@@ -1820,14 +1654,12 @@
  {:ability 3600,
   :ammo-type "BULLET",
   :desc-fields
-  [{:key "Damage", :position 48, :value "36 hp"}
-   {:key "Damage Type", :position 55, :value "Kinetic Damage"}
-   {:key "Ammo Type", :position 52, :value "Bullet"}
-   {:key "Ammo Amount", :position 47, :value [30 " shots"]}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Ammo Amount" {:position 47, :value [30 " shots"]},
+   "Ammo Type" {:position 52, :value "Bullet"},
+   "Damage" {:position 48, :value "36 hp"},
+   "Damage Type" {:position 55, :value "Kinetic Damage"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Magnum Ammo Boxs enhanced with titanium alloy. The shape and structure of their cases are modified based on a lightweight titanium alloy, resulting in a higher initial speed, stabler flight capability, and greater power. An ammo box contains 30 bullets.",
   :grid-index 1512,
@@ -1850,15 +1682,13 @@
    :turn-acc 0},
   :ammo-type "CANNON",
   :desc-fields
-  [{:key "Damage", :position 48, :value "45 hp"}
-   {:key "Damage Type", :position 55, :value "Kinetic 50% + Blast 50%"}
-   {:key "Ammo Type", :position 52, :value "Shell"}
-   {:key "Blast Radius", :position 61, :value "13 m"}
-   {:key "Ammo Amount", :position 47, :value [12 " shots"]}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Ammo Amount" {:position 47, :value [12 " shots"]},
+   "Ammo Type" {:position 52, :value "Shell"},
+   "Blast Radius" {:position 61, :value "13 m"},
+   "Damage" {:position 48, :value "45 hp"},
+   "Damage Type" {:position 55, :value "Kinetic 50% + Blast 50%"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Basic shells contain efficient Combustible Units. Once shot to a target position, they will explode immediately and inflict Kinetic and Explosive Damage in the area. A Shell Set contains 12 shells.",
   :grid-index 1513,
@@ -1882,15 +1712,13 @@
    :turn-acc 0},
   :ammo-type "CANNON",
   :desc-fields
-  [{:key "Damage", :position 48, :value "100 hp"}
-   {:key "Damage Type", :position 55, :value "Kinetic 50% + Blast 50%"}
-   {:key "Ammo Type", :position 52, :value "Shell"}
-   {:key "Blast Radius", :position 61, :value "13 m"}
-   {:key "Ammo Amount", :position 47, :value [12 " shots"]}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Ammo Amount" {:position 47, :value [12 " shots"]},
+   "Ammo Type" {:position 52, :value "Shell"},
+   "Blast Radius" {:position 61, :value "13 m"},
+   "Damage" {:position 48, :value "100 hp"},
+   "Damage Type" {:position 55, :value "Kinetic 50% + Blast 50%"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Advanced high-energy Explosive Unit technology powerfully enhances shells. A Shell Set contains 12 shells.",
   :grid-index 1613,
@@ -1914,15 +1742,13 @@
    :turn-acc 0},
   :ammo-type "CANNON",
   :desc-fields
-  [{:key "Damage", :position 48, :value "220 hp"}
-   {:key "Damage Type", :position 55, :value "Kinetic 50% + Blast 50%"}
-   {:key "Ammo Type", :position 52, :value "Shell"}
-   {:key "Blast Radius", :position 61, :value "13 m"}
-   {:key "Ammo Amount", :position 47, :value [12 " shots"]}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Ammo Amount" {:position 47, :value [12 " shots"]},
+   "Ammo Type" {:position 52, :value "Shell"},
+   "Blast Radius" {:position 61, :value "13 m"},
+   "Damage" {:position 48, :value "220 hp"},
+   "Damage Type" {:position 55, :value "Kinetic 50% + Blast 50%"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Crystal Explosive Units release greater energy with a more powerful smashing effect, inflicting considerable damage to even the toughest enemy units. A Shell Set contains 12 shells.",
   :grid-index 1713,
@@ -1938,15 +1764,13 @@
  {:ability 30000,
   :ammo-type "PLASMA",
   :desc-fields
-  [{:key "Damage", :position 48, :value "300 hp"}
-   {:key "Damage Type", :position 55, :value "Energy damage"}
-   {:key "Ammo Type", :position 52, :value "Energy Capsule"}
-   {:key "Blast Radius", :position 61, :value "8 m"}
-   {:key "Ammo Amount", :position 47, :value [10 " shots"]}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Ammo Amount" {:position 47, :value [10 " shots"]},
+   "Ammo Type" {:position 52, :value "Energy Capsule"},
+   "Blast Radius" {:position 61, :value "8 m"},
+   "Damage" {:position 48, :value "300 hp"},
+   "Damage Type" {:position 55, :value "Energy damage"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Filled with deuterium that, when stimulated by a Plasma Turret, can transform into a high-temperature plasmoid to effectively damage space targets. Each capsule can be stimulated 10 times.",
   :grid-index 1612,
@@ -1961,15 +1785,13 @@
  {:ability 150000,
   :ammo-type "PLASMA",
   :desc-fields
-  [{:key "Damage", :position 48, :value "1500 hp"}
-   {:key "Damage Type", :position 55, :value "Energy damage"}
-   {:key "Ammo Type", :position 52, :value "Energy Capsule"}
-   {:key "Blast Radius", :position 61, :value "20 m"}
-   {:key "Ammo Amount", :position 47, :value [10 " shots"]}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Ammo Amount" {:position 47, :value [10 " shots"]},
+   "Ammo Type" {:position 52, :value "Energy Capsule"},
+   "Blast Radius" {:position 61, :value "20 m"},
+   "Damage" {:position 48, :value "1500 hp"},
+   "Damage Type" {:position 55, :value "Energy damage"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "The ultimate energy weapon that was once prohibited by COSMO. The target is destroyed instantly due to the enormous amount of energy generated from the annihilation reaction as matter and antimatter collide. Each capsule can be stimulated 10 times.",
   :grid-index 1712,
@@ -1992,15 +1814,13 @@
    :turn-acc 1},
   :ammo-type "MISSILE",
   :desc-fields
-  [{:key "Damage", :position 48, :value "21 hp"}
-   {:key "Damage Type", :position 55, :value "Explosive Damage"}
-   {:key "Ammo Type", :position 52, :value "Missile"}
-   {:key "Blast Radius", :position 61, :value "7.5 m"}
-   {:key "Ammo Amount", :position 47, :value [24 " shots"]}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Ammo Amount" {:position 47, :value [24 " shots"]},
+   "Ammo Type" {:position 52, :value "Missile"},
+   "Blast Radius" {:position 61, :value "7.5 m"},
+   "Damage" {:position 48, :value "21 hp"},
+   "Damage Type" {:position 55, :value "Explosive Damage"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "The target identification system on the head can adjust its attack trajectory in real time during flight to hit targets. A Missile Set contains 24 missiles.",
   :grid-index 1213,
@@ -2024,15 +1844,13 @@
    :turn-acc 3},
   :ammo-type "MISSILE",
   :desc-fields
-  [{:key "Damage", :position 48, :value "54 hp"}
-   {:key "Damage Type", :position 55, :value "Explosive Damage"}
-   {:key "Ammo Type", :position 52, :value "Missile"}
-   {:key "Blast Radius", :position 61, :value "9 m"}
-   {:key "Ammo Amount", :position 47, :value [24 " shots"]}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Ammo Amount" {:position 47, :value [24 " shots"]},
+   "Ammo Type" {:position 52, :value "Missile"},
+   "Blast Radius" {:position 61, :value "9 m"},
+   "Damage" {:position 48, :value "54 hp"},
+   "Damage Type" {:position 55, :value "Explosive Damage"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "The thruster's dynamism massively accelerates the missile beyond the speed of sound and the upgraded warhead and payload recipe increases the damage. A Missile Set contains 24 missiles.",
   :grid-index 1313,
@@ -2056,15 +1874,13 @@
    :turn-acc 5},
   :ammo-type "MISSILE",
   :desc-fields
-  [{:key "Damage", :position 48, :value "120 hp"}
-   {:key "Damage Type", :position 55, :value "Explosive Damage"}
-   {:key "Ammo Type", :position 52, :value "Missile"}
-   {:key "Blast Radius", :position 61, :value "10 m"}
-   {:key "Ammo Amount", :position 47, :value [24 " shots"]}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Ammo Amount" {:position 47, :value [24 " shots"]},
+   "Ammo Type" {:position 52, :value "Missile"},
+   "Blast Radius" {:position 61, :value "10 m"},
+   "Damage" {:position 48, :value "120 hp"},
+   "Damage Type" {:position 55, :value "Explosive Damage"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Strange Matter's negative gravitational pressure is used to warp the surrounding space, thus increasing missile speed. The warping space increases explosive damage. A Missile Set contains 24 missiles.",
   :grid-index 1413,
@@ -2088,13 +1904,9 @@
    :turn-acc 0},
   :bomb-type "EMCAPSULE",
   :desc-fields
-  [{:position 68}
-   {:position 69}
-   {:position 70}
-   {:key "Ammo Type", :position 52, :value "-"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect", :position 40, :value "Extra products"}
-   {:position 71}],
+  {"Ammo Type" {:position 52, :value "-"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "A Jammer Tower can interfere with the enemies within the range by consuming Jamming Capsule, reducing their movement speed and rate of fire. Each Jamming Capsule can interfere with 60 units.",
   :grid-index 1812,
@@ -2118,13 +1930,9 @@
    :turn-acc 0},
   :bomb-type "EMCAPSULE",
   :desc-fields
-  [{:position 68}
-   {:position 69}
-   {:position 70}
-   {:key "Ammo Type", :position 52, :value "-"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect", :position 40, :value "Extra products"}
-   {:position 71}],
+  {"Ammo Type" {:position 52, :value "-"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Suppressing Capsule can slow down even suppress enemies. Each Suppressing Capsule can interfere with 60 units. ",
   :grid-index 1813,
@@ -2139,16 +1947,12 @@
   :type-string "End Product"}
  {:craft-type 1,
   :desc-fields
-  [{:key "Durability", :position 53, :value "15 hp"}
-   {:position 48}
-   {:key "Damage Type", :position 55, :value "-"}
-   {:position 49}
-   {:key "Shoot Range", :position 60, :value "-"}
-   {:key "Flight Speed", :position 59, :value "-"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Damage Type" {:position 55, :value "-"},
+   "Durability" {:position 53, :value "15 hp"},
+   "Flight Speed" {:position 59, :value "-"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Extra products"},
+   "Shoot Range" {:position 60, :value "-"}},
   :description
   "Ground forces, prototypes of Combat Drones, that can assist Icarus in fights on planet surfaces. Though simple and crude, it represents a decent start. You can get a better Combat Drone by modifying and upgrading the prototype.\r\n\r\nNote: Ground fighters cannot be deployed in space!",
   :grid-index 1607,
@@ -2165,16 +1969,12 @@
   :type-string "End Product"}
  {:craft-type 1,
   :desc-fields
-  [{:key "Durability", :position 53, :value "15 hp"}
-   {:position 48}
-   {:key "Damage Type", :position 55, :value "-"}
-   {:position 49}
-   {:key "Shoot Range", :position 60, :value "-"}
-   {:key "Flight Speed", :position 59, :value "-"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Damage Type" {:position 55, :value "-"},
+   "Durability" {:position 53, :value "15 hp"},
+   "Flight Speed" {:position 59, :value "-"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Shoot Range" {:position 60, :value "-"}},
   :description
   "Ground forces, which can assist Icarus in fights on planet surfaces. Based on a prototype and with a built-in Photon Combiner, it can continuously absorb low-energy photons and convert them to high-energy ones. This type of laser weapon can accurately hit and damage targets without needing to be near them. It is suitable for assaulting distant enemy units.\r\n\r\nNote: Ground fighters cannot be deployed in space!",
   :grid-index 1608,
@@ -2190,16 +1990,12 @@
   :type-string "End Product"}
  {:craft-type 1,
   :desc-fields
-  [{:key "Durability", :position 53, :value "15 hp"}
-   {:position 48}
-   {:key "Damage Type", :position 55, :value "-"}
-   {:position 49}
-   {:key "Shoot Range", :position 60, :value "-"}
-   {:key "Flight Speed", :position 59, :value "-"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Damage Type" {:position 55, :value "-"},
+   "Durability" {:position 53, :value "15 hp"},
+   "Flight Speed" {:position 59, :value "-"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Shoot Range" {:position 60, :value "-"}},
   :description
   "Ground forces, which can assist Icarus in fights on planet surfaces. Based on a prototype and with a stronger, built-in EM weapon system, it can only attack close targets. You can enhance its survival capabilities by upgrading its armor.\r\n\r\nNote: Ground fighters cannot be deployed in space!",
   :grid-index 1609,
@@ -2215,16 +2011,12 @@
   :type-string "End Product"}
  {:craft-type 3,
   :desc-fields
-  [{:key "Durability", :position 53, :value "80 hp"}
-   {:position 48}
-   {:key "Damage Type", :position 55, :value "-"}
-   {:position 49}
-   {:key "Shoot Range", :position 60, :value "-"}
-   {:key "Flight Speed", :position 59, :value "-"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Damage Type" {:position 55, :value "-"},
+   "Durability" {:position 53, :value "80 hp"},
+   "Flight Speed" {:position 59, :value "-"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Shoot Range" {:position 60, :value "-"}},
   :description
   "Space forces, which consist of small vessels, that can assist Icarus in fights in space and hit distant targets.",
   :grid-index 1610,
@@ -2253,19 +2045,11 @@
   :type-string "End Product"}
  {:craft-type 7,
   :desc-fields
-  [{:key "Durability", :position 53, :value "80 hp"}
-   {:key "Damage Type", :position 55, :value "-"}
-   {:position 62}
-   {:position 63}
-   {:position 64}
-   {:position 65}
-   {:position 66}
-   {:position 67}
-   {:key "Flight Speed", :position 59, :value "-"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Damage Type" {:position 55, :value "-"},
+   "Durability" {:position 53, :value "80 hp"},
+   "Flight Speed" {:position 59, :value "-"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "Space forces which consist of medium Warships. Destroyers are larger and more aggressive. They are used to attack enemy units nearby and exert a more suppressive and destructive effect. It costs 4 Command Pts to command a Destroyer. This means a Space Fleet can only have a maximum of 3 Destroyers at a time.",
   :grid-index 1611,
@@ -2293,10 +2077,8 @@
   :type "PRODUCT",
   :type-string "End Product"}
  {:desc-fields
-  [{:key "Collected From", :position 0, :value "Dark Fog Debris"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Dark Fog Debris"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "A mystery substance collected from Dark Fog Debris. Deep scanning reveals that this substance has a topological structure that we have never seen before. Vaguely familiar yet also different, it appears to contain unusual information. We might be able to obtain something different by solving the mystery that surrounds it.",
   :enemy-drop-count 2.5,
@@ -2314,10 +2096,8 @@
   :type-string "Dark Fog",
   :unlock-key -2}
  {:desc-fields
-  [{:key "Collected From", :position 0, :value "Dark Fog Debris"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Dark Fog Debris"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Obtained from Dark Fog Debris. These silicon-based neurons have both storage and computing capabilities. When several silicon-based neurons are combined, they can simulate the brain operation of a carbon-based life form.",
   :enemy-drop-count 1.5,
@@ -2335,10 +2115,8 @@
   :type-string "Dark Fog",
   :unlock-key -2}
  {:desc-fields
-  [{:key "Collected From", :position 0, :value "Dark Fog Debris"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Dark Fog Debris"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Obtained from Dark Fog Debris. Research reveals that this substance has powerful decomposing and re-composing capabilities. It can instantly decompose matter into particles, and then re-compose these particles as designed to generate a different type of matter.\r\n",
   :enemy-drop-count 1.5,
@@ -2356,10 +2134,8 @@
   :type-string "Dark Fog",
   :unlock-key -2}
  {:desc-fields
-  [{:key "Collected From", :position 0, :value "Dark Fog Debris"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Dark Fog Debris"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Initial experiments hadn't identified any special properties of the substance. Yet when we keep inputting energy, it spontaneously shows weak negentropy.",
   :enemy-drop-count 1.399999976158142,
@@ -2377,10 +2153,8 @@
   :type-string "Dark Fog",
   :unlock-key -2}
  {:desc-fields
-  [{:key "Collected From", :position 0, :value "Dark Fog Debris"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Dark Fog Debris"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "A Core Element is a novel type of matter which can be found in the debris of advanced Dark Fog. It has been discovered in experiments that a Core Element can efficiently and spontaneously combine itself with other types of matter, but it can't be singularized by Strange Matter. Therefore, adding a Core Element to the singularization reaction of Strange Matter can slow down that reaction and make it more orderly.",
   :enemy-drop-count 1.5,
@@ -2399,14 +2173,12 @@
   :unlock-key -2}
  {:ability 50,
   :desc-fields
-  [{:key "Fuel Type", :position 2, :value "Chemical"}
-   {:key "Energy", :position 3, :value "3 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+0%"}
-   {:key "Replicator Speed", :position 54, :value "+50%"}
-   {:key "Collected From", :position 0, :value "Dark Fog Debris"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Collected From" {:position 0, :value "Dark Fog Debris"},
+   "Energy" {:position 3, :value "3 MJ"},
+   "Fuel Type" {:position 2, :value "Chemical"},
+   "Fuel chamber gen." {:position 31, :value "+0%"},
+   "Proliferator Effect" {:position 40, :value "Extra products"},
+   "Replicator Speed" {:position 54, :value "+50%"}},
   :description
   "A chemical fuel obtained from Dark Fog Debris. When providing energy to Icarus, its internal molecular stimulation mechanism can accelerate the speed of the Replicator.",
   :enemy-drop-count 2.5,
@@ -2432,12 +2204,10 @@
   :build-mode 2,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "3 hp"}
-   {:key "Transport Speed", :position 15, :value "6/s"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "3 hp"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Transport Speed" {:position 15, :value "6/s"}},
   :description
   "We need automation! Conveyor Belts are the most basic components of automated production. They can transport cargo from one location to another.",
   :grade 1,
@@ -2472,12 +2242,10 @@
   :build-mode 2,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "3 hp"}
-   {:key "Transport Speed", :position 15, :value "12/s"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "3 hp"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Transport Speed" {:position 15, :value "12/s"}},
   :description
   "This Conveyor Belt type allows for faster cargo transportation and has higher throughput.",
   :grade 2,
@@ -2512,12 +2280,10 @@
   :build-mode 2,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "3 hp"}
-   {:key "Transport Speed", :position 15, :value "30/s"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "3 hp"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Transport Speed" {:position 15, :value "30/s"}},
   :description
   "It can maximize the speed and throughput of transported cargo.",
   :grade 3,
@@ -2570,15 +2336,13 @@
   :build-mode 3,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "3 hp"}
-   {:key "Cycle Speed", :position 20, :value [2 " trip/s/grid"]}
-   {:key "Cargo Stacking", :position 21, :value 1}
-   {:key "Work Consumption", :position 11, :value "18 KW"}
-   {:key "Idle Consumption", :position 12, :value "9000W"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Cargo Stacking" {:position 21, :value 1},
+   "Cycle Speed" {:position 20, :value [2 " trip/s/grid"]},
+   "Durability" {:position 53, :value "3 hp"},
+   "Idle Consumption" {:position 12, :value "9000W"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "18 KW"}},
   :description
   "It can transport cargo into a facility via Conveyor Belts, or between facilities. Filters can be configured to filter the cargo.",
   :grade 1,
@@ -2639,15 +2403,13 @@
   :build-mode 3,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "3 hp"}
-   {:key "Cycle Speed", :position 20, :value [3 " trip/s/grid"]}
-   {:key "Cargo Stacking", :position 21, :value 1}
-   {:key "Work Consumption", :position 11, :value "36 KW"}
-   {:key "Idle Consumption", :position 12, :value "9000W"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Cargo Stacking" {:position 21, :value 1},
+   "Cycle Speed" {:position 20, :value [3 " trip/s/grid"]},
+   "Durability" {:position 53, :value "3 hp"},
+   "Idle Consumption" {:position 12, :value "9000W"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "36 KW"}},
   :description "It enables faster cargo picking and sorting.",
   :grade 2,
   :grid-index 2302,
@@ -2707,15 +2469,13 @@
   :build-mode 3,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "3 hp"}
-   {:key "Cycle Speed", :position 20, :value [6 " trip/s/grid"]}
-   {:key "Cargo Stacking", :position 21, :value 1}
-   {:key "Work Consumption", :position 11, :value "72 KW"}
-   {:key "Idle Consumption", :position 12, :value "9000W"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Cargo Stacking" {:position 21, :value 1},
+   "Cycle Speed" {:position 20, :value [6 " trip/s/grid"]},
+   "Durability" {:position 53, :value "3 hp"},
+   "Idle Consumption" {:position 12, :value "9000W"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "72 KW"}},
   :description
   "It can maximize cargo sorting speed. A Sorter Mk.III at maximum cycle speed can satisfy a Conveyor Belt.",
   :grade 3,
@@ -2776,16 +2536,12 @@
   :build-mode 3,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "3 hp"}
-   {:key "Cycle Speed", :position 20, :value [10 " trip/s/grid"]}
-   {:position 72}
-   {:position 73}
-   {:key "Work Consumption", :position 11, :value "144 KW"}
-   {:key "Idle Consumption", :position 12, :value "9000W"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Cycle Speed" {:position 20, :value [10 " trip/s/grid"]},
+   "Durability" {:position 53, :value "3 hp"},
+   "Idle Consumption" {:position 12, :value "9000W"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "144 KW"}},
   :description
   "After upgrading it, the Pile Sorter can integrate multiple cargos into one and feed out it. Even it is slightly expensive but it is a good deal for those engineers who are dedicated to run the Conveyor Belt at full speed.",
   :grade 4,
@@ -2850,12 +2606,10 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "5 hp"}
-   {:key "Number of Ports", :position 16, :value 4}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "5 hp"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Number of Ports" {:position 16, :value 4},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "It is designed to distribute cargo to different Conveyor Belts or balance out multiple Conveyor Belts. Filters and infeed/outfeed priority can be set on any port.",
   :grid-index 2204,
@@ -2911,13 +2665,11 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "5 hp"}
-   {:key "Work Consumption", :position 11, :value "144 KW"}
-   {:key "Idle Consumption", :position 12, :value "9000W"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "5 hp"},
+   "Idle Consumption" {:position 12, :value "9000W"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "144 KW"}},
   :description
   "Building an Auto-piler on a Conveyor Belt automatically merges two cargoes on the belt into one, which significantly enhances the belt's carrying capacity.",
   :grid-index 2205,
@@ -2973,13 +2725,11 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "3 hp"}
-   {:key "Work Consumption", :position 11, :value "36 KW"}
-   {:key "Idle Consumption", :position 12, :value "9000W"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "3 hp"},
+   "Idle Consumption" {:position 12, :value "9000W"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "36 KW"}},
   :description
   "Building a Flow Meter on a Conveyor Belt monitors the real-time flow rate at a corresponding location on the belt. Criteria can be specified to trigger an alarm.",
   :grid-index 2206,
@@ -3040,13 +2790,11 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "8 hp"}
-   {:key "Work Consumption", :position 11, :value "90 KW"}
-   {:key "Idle Consumption", :position 12, :value "4500W"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "8 hp"},
+   "Idle Consumption" {:position 12, :value "4500W"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "90 KW"}},
   :description
   "Fitting the Spray Coater to a Conveyor Belt and feeding it to the Proliferator through the upper port allows cargo on the Conveyor Belt to be sprayed. Production is either accelerated or extra products gained when cargo sprayed with the Proliferator is used as raw material to create next-level products.",
   :grid-index 2207,
@@ -3103,15 +2851,13 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "12 hp"}
-   {:key "Max Charging Power", :position 38, :value "9 MW"}
-   {:key "Idle Consumption", :position 12, :value "18 KW"}
-   {:key "Accumulated", :position 10, :value "0J"}
-   {:key "Distribution Range", :position 44, :value "-"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Accumulated" {:position 10, :value "0J"},
+   "Distribution Range" {:position 44, :value "-"},
+   "Durability" {:position 53, :value "12 hp"},
+   "Idle Consumption" {:position 12, :value "18 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Max Charging Power" {:position 38, :value "9 MW"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "After the Logistics Distributor is installed on the top floor of a Depot, the Logistics Bot will automatically deliver the Depot's contents to Icarus' Inventory or other Logistics Distributors. This greatly helps Icarus to access various items in a short distance.",
   :grid-index 2211,
@@ -3171,12 +2917,10 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "8 hp"}
-   {:key "Storage Size", :position 17, :value [30 " Slots"]}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "8 hp"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Storage Size" {:position 17, :value [30 " Slots"]}},
   :description
   "Storage space for products, although its capacity is limited.",
   :drop-rate 0.5,
@@ -3235,12 +2979,10 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "16 hp"}
-   {:key "Storage Size", :position 17, :value [60 " Slots"]}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "16 hp"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Storage Size" {:position 17, :value [60 " Slots"]}},
   :description
   "It has double the capacity of a Depot Mk.I, but requires steel to produce.",
   :drop-rate 0.5,
@@ -3298,12 +3040,10 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "12 hp"}
-   {:key "Fluid capacity", :position 30, :value 10000}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "12 hp"},
+   "Fluid capacity" {:position 30, :value 10000},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "Storage Tank has a larger capacity for containing fluids than a Depot. Dismantling a tank will destroy the fluid stored within.",
   :grid-index 2210,
@@ -3360,14 +3100,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "10 hp"}
-   {:key "Production Speed", :position 22, :value "0.75x"}
-   {:key "Work Consumption", :position 11, :value "270 KW"}
-   {:key "Idle Consumption", :position 12, :value "12 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "10 hp"},
+   "Idle Consumption" {:position 12, :value "12 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Production Speed" {:position 22, :value "0.75x"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "270 KW"}},
   :description
   "The basic assembler can transform primary items such as iron and copper ingots into more advanced products.",
   :grade 1,
@@ -3431,14 +3169,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "10 hp"}
-   {:key "Production Speed", :position 22, :value "1x"}
-   {:key "Work Consumption", :position 11, :value "540 KW"}
-   {:key "Idle Consumption", :position 12, :value "18 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "10 hp"},
+   "Idle Consumption" {:position 12, :value "18 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Production Speed" {:position 22, :value "1x"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "540 KW"}},
   :description
   "With significantly improved production speed, items can be produced more quickly.",
   :grade 2,
@@ -3502,14 +3238,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "10 hp"}
-   {:key "Production Speed", :position 22, :value "1.5x"}
-   {:key "Work Consumption", :position 11, :value "1 MW"}
-   {:key "Idle Consumption", :position 12, :value "24 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "10 hp"},
+   "Idle Consumption" {:position 12, :value "24 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Production Speed" {:position 22, :value "1.5x"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "1 MW"}},
   :description
   "It maximizes the production speed. Conveyor Belts and Sorters of different speeds can be combined to avoid empty assemblers or product overflow.",
   :grade 3,
@@ -3573,14 +3307,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "30 hp"}
-   {:key "Production Speed", :position 22, :value "3x"}
-   {:key "Work Consumption", :position 11, :value "2 MW"}
-   {:key "Idle Consumption", :position 12, :value "54 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "30 hp"},
+   "Idle Consumption" {:position 12, :value "54 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Production Speed" {:position 22, :value "3x"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "2 MW"}},
   :description
   "The AI module can analyze the recipe of an item in real time and decompose raw materials into particles by precisely controlling the structure and compound mode of molecules. After that, it then re-composes particles to form required items and performs Quantum Printing, greatly improving manufacturing speed.",
   :grade 4,
@@ -3639,13 +3371,11 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "5 hp"}
-   {:key "Connection Length", :position 13, :value "22 m"}
-   {:key "Coverage", :position 14, :value "10 m"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Connection Length" {:position 13, :value "22 m"},
+   "Coverage" {:position 14, :value "10 m"},
+   "Durability" {:position 53, :value "5 hp"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "It is a power transmission facility with a particular connection length and coverage that can extend the supply range of the Power Grid.",
   :grid-index 2101,
@@ -3701,15 +3431,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "6 hp"}
-   {:key "Connection Length", :position 13, :value "45 m"}
-   {:key "Coverage", :position 14, :value "6 m"}
-   {:key "Work Consumption", :position 11, :value "0W"}
-   {:key "Idle Consumption", :position 12, :value "0W"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Connection Length" {:position 13, :value "45 m"},
+   "Coverage" {:position 14, :value "6 m"},
+   "Durability" {:position 53, :value "6 hp"},
+   "Idle Consumption" {:position 12, :value "0W"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "0W"}},
   :description
   "It is a remote power transmission facility that can draw electricity from the Power Grid and charge the mecha.",
   :grid-index 2102,
@@ -3771,14 +3499,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "8 hp"}
-   {:key "Connection Length", :position 13, :value "53 m"}
-   {:key "Coverage", :position 14, :value "26 m"}
-   {:key "Idle Consumption", :position 12, :value "0W"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Connection Length" {:position 13, :value "53 m"},
+   "Coverage" {:position 14, :value "26 m"},
+   "Durability" {:position 53, :value "8 hp"},
+   "Idle Consumption" {:position 12, :value "0W"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "It is a wide-area distribution facility capable of transmitting power over a longer range, thereby enabling broader coverage.",
   :grid-index 2103,
@@ -3840,15 +3566,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "8 hp"}
-   {:key "Energy Type", :position 4, :value "Ion Current"}
-   {:key "Power", :position 5, :value "300 KW"}
-   {:key "Connection Length", :position 13, :value "16 m"}
-   {:key "Coverage", :position 14, :value "7.2 m"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Connection Length" {:position 13, :value "16 m"},
+   "Coverage" {:position 14, :value "7.2 m"},
+   "Durability" {:position 53, :value "8 hp"},
+   "Energy Type" {:position 4, :value "Ion Current"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Power" {:position 5, :value "300 KW"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "It is a primary power generator that converts wind energy into electrical energy. The actual power generation performance depends on the planet’s wind energy utilization.",
   :grid-index 2104,
@@ -3922,14 +3646,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "20 hp"}
-   {:key "Energy Type", :position 4, :value "Ion Current"}
-   {:key "Power", :position 5, :value "2 MW"}
-   {:key "Energy Efficiency", :position 6, :value "0 %"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "20 hp"},
+   "Energy Efficiency" {:position 6, :value "0 %"},
+   "Energy Type" {:position 4, :value "Ion Current"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Power" {:position 5, :value "2 MW"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "It is a facility that generates electricity using combustible materials, such as coal, as fuel. The energy output to heat generation ratio depends on the fuel consumption.",
   :grid-index 2105,
@@ -4004,13 +3726,11 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "20 hp"}
-   {:key "Energy Type", :position 4, :value "Ion Current"}
-   {:key "Power", :position 5, :value "15 MW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "20 hp"},
+   "Energy Type" {:position 4, :value "Ion Current"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Power" {:position 5, :value "15 MW"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "Under the effect of a high-intensity, high-density magnetic field, this facility can turn the enormous energy emitted by Deuteron Fuel Rods via a controlled fusion reaction into electricity.",
   :grid-index 2108,
@@ -4082,13 +3802,11 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "20 hp"}
-   {:key "Energy Type", :position 4, :value "Geothermal"}
-   {:key "Basic Generation", :position 39, :value "4 MW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Basic Generation" {:position 39, :value "4 MW"},
+   "Durability" {:position 53, :value "20 hp"},
+   "Energy Type" {:position 4, :value "Geothermal"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "It is a power generation facility fueled by magma, where multiple successive low-energy photons are merged into a single high-energy photon and the energy is steadily transmitted to the Power Grid. The generation output directly correlates to the concentration of magma.",
   :grid-index 2107,
@@ -4163,15 +3881,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "12 hp"}
-   {:key "Collecting Target", :position 18, :value "-"}
-   {:key "Collecting Speed", :position 19, :value "-"}
-   {:key "Work Consumption", :position 11, :value "420 KW"}
-   {:key "Idle Consumption", :position 12, :value "24 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Collecting Speed" {:position 19, :value "-"},
+   "Collecting Target" {:position 18, :value "-"},
+   "Durability" {:position 53, :value "12 hp"},
+   "Idle Consumption" {:position 12, :value "24 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "420 KW"}},
   :description
   "The more ore veins covered by a Mining Machine, the faster the extraction speed. Multiple Mining Rings can cover the same vein, but the more Mining Rings covering a vein, the faster the loss.",
   :grid-index 2305,
@@ -4234,15 +3950,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "20 hp"}
-   {:key "Collecting Target", :position 18, :value "-"}
-   {:key "Collecting Speed", :position 19, :value "-"}
-   {:key "Work Consumption", :position 11, :value "2 MW"}
-   {:key "Idle Consumption", :position 12, :value "168 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Collecting Speed" {:position 19, :value "-"},
+   "Collecting Target" {:position 18, :value "-"},
+   "Durability" {:position 53, :value "20 hp"},
+   "Idle Consumption" {:position 12, :value "168 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "2 MW"}},
   :description
   "The Quantum Chip is used to manipulate the photon groups generated by the Exciter during the quantum jump process, causing the laser beam to focus intensely. The focused laser beam rapidly heats the ore veins along a predetermined path in a special gravitational field. If ores are transported and contained in particle form, building is easier and ores are collected faster. The collected ores can be shipped out by Conveyor Belts or Logistics Drones.",
   :grid-index 2306,
@@ -4320,15 +4034,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "10 hp"}
-   {:key "Collecting Target", :position 18, :value "-"}
-   {:key "Collecting Speed", :position 19, :value "-"}
-   {:key "Work Consumption", :position 11, :value "300 KW"}
-   {:key "Idle Consumption", :position 12, :value "12 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Collecting Speed" {:position 19, :value "-"},
+   "Collecting Target" {:position 18, :value "-"},
+   "Durability" {:position 53, :value "10 hp"},
+   "Idle Consumption" {:position 12, :value "12 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "300 KW"}},
   :description
   "It is a facility that pumps liquids directly from oceans, including the sulfuric acid ocean.",
   :grid-index 2307,
@@ -4390,14 +4102,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "10 hp"}
-   {:key "Production Speed", :position 22, :value "1x"}
-   {:key "Work Consumption", :position 11, :value "360 KW"}
-   {:key "Idle Consumption", :position 12, :value "12 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "10 hp"},
+   "Idle Consumption" {:position 12, :value "12 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Production Speed" {:position 22, :value "1x"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "360 KW"}},
   :description
   "It smelts ores and metals at high temperatures generated by the electrode arc and is also useful for purification and crystal smelting.",
   :grade 1,
@@ -4461,14 +4171,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "15 hp"}
-   {:key "Production Speed", :position 22, :value "2x"}
-   {:key "Work Consumption", :position 11, :value "1 MW"}
-   {:key "Idle Consumption", :position 12, :value "48 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "15 hp"},
+   "Idle Consumption" {:position 12, :value "48 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Production Speed" {:position 22, :value "2x"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "1 MW"}},
   :description
   "When magnetic monopoles travel through the Plane Filter, they generate quantum effects, which can produce thermodynamic negative temperature flow. Ores can be smelted or purified at accelerated rates using this principle.",
   :grade 2,
@@ -4532,14 +4240,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "30 hp"}
-   {:key "Production Speed", :position 22, :value "3x"}
-   {:key "Work Consumption", :position 11, :value "2 MW"}
-   {:key "Idle Consumption", :position 12, :value "96 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "30 hp"},
+   "Idle Consumption" {:position 12, :value "96 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Production Speed" {:position 22, :value "3x"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "2 MW"}},
   :description
   "After energy has been put in continuously, the stimulated negentropy singularity in the Smelter can steadily give off negentropy. Despite the fact that little negentropy is obtained, after being repeated and repeated the process can efficiently restore ores to their elemental states from impure ones.",
   :grade 3,
@@ -4606,15 +4312,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "20 hp"}
-   {:key "Collecting Target", :position 18, :value "-"}
-   {:key "Collecting Speed", :position 19, :value "-"}
-   {:key "Work Consumption", :position 11, :value "840 KW"}
-   {:key "Idle Consumption", :position 12, :value "24 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Collecting Speed" {:position 19, :value "-"},
+   "Collecting Target" {:position 18, :value "-"},
+   "Durability" {:position 53, :value "20 hp"},
+   "Idle Consumption" {:position 12, :value "24 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "840 KW"}},
   :description
   "It uses focusing plasma to extract crude oil from oil seeps. The extraction speed is dependent on the yield of the oil seep and the level of Resource Utilization.",
   :grid-index 2308,
@@ -4680,14 +4384,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "18 hp"}
-   {:key "Production Speed", :position 22, :value "1x"}
-   {:key "Work Consumption", :position 11, :value "960 KW"}
-   {:key "Idle Consumption", :position 12, :value "24 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "18 hp"},
+   "Idle Consumption" {:position 12, :value "24 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Production Speed" {:position 22, :value "1x"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "960 KW"}},
   :description
   "Refined oil and hydrogen are obtained by further refining extracted crude oil.",
   :grid-index 2309,
@@ -4751,14 +4453,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "12 hp"}
-   {:key "Production Speed", :position 22, :value "1x"}
-   {:key "Work Consumption", :position 11, :value "720 KW"}
-   {:key "Idle Consumption", :position 12, :value "24 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "12 hp"},
+   "Idle Consumption" {:position 12, :value "24 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Production Speed" {:position 22, :value "1x"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "720 KW"}},
   :description
   "It is a chemical production facility that can process the primary products of crude oil into more advanced chemical products.",
   :grade 1,
@@ -4825,14 +4525,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "12 hp"}
-   {:key "Production Speed", :position 22, :value "2x"}
-   {:key "Work Consumption", :position 11, :value "2 MW"}
-   {:key "Idle Consumption", :position 12, :value "36 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "12 hp"},
+   "Idle Consumption" {:position 12, :value "36 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Production Speed" {:position 22, :value "2x"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "2 MW"}},
   :description
   "Quantum entanglement formed via Strange Matter at specific points could decouple the most complicated part of the chaos phenomenon in chemical reactions. This may lead the reactions toward a predetermined direction. If these magic points could evolve, they could catalyze the corresponding chemical reactions.",
   :grade 2,
@@ -4896,13 +4594,11 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "12 hp"}
-   {:key "Work Consumption", :position 11, :value "720 KW"}
-   {:key "Idle Consumption", :position 12, :value "18 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "12 hp"},
+   "Idle Consumption" {:position 12, :value "18 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "720 KW"}},
   :description
   "Deuterium can be fractionated from liquid hydrogen efficiently by utilizing the high vapor pressure ratio of liquid hydrogen to liquid deuterium at a certain temperature. A Conveyor Belt is used to import hydrogen from one side. After fractionation, the hydrogen will be exported from the other side, and the fractionated deuterium will be exported from the front port.",
   :fractionator-desc
@@ -4972,13 +4668,11 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "10 hp"}
-   {:key "Energy Type", :position 4, :value "Ion Current"}
-   {:key "Basic Generation", :position 39, :value "360 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Basic Generation" {:position 39, :value "360 KW"},
+   "Durability" {:position 53, :value "10 hp"},
+   "Energy Type" {:position 4, :value "Ion Current"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "It generates electricity from sunlight. The actual power generation performance is linked with the planet’s light energy utilization. Stops running at night. Accumulators can be used to store surplus electricity during the day.",
   :grid-index 2106,
@@ -5052,14 +4746,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "12 hp"}
-   {:key "Input Power", :position 8, :value "1 MW"}
-   {:key "Output Power", :position 9, :value "2 MW"}
-   {:key "Accumulated", :position 10, :value "540 MJ"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Accumulated" {:position 10, :value "540 MJ"},
+   "Durability" {:position 53, :value "12 hp"},
+   "Input Power" {:position 8, :value "1 MW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Output Power" {:position 9, :value "2 MW"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "It is an electric power storage device. When surplus power is available in the Power Grid, excess power will be automatically stored. When the power supply is insufficient, stored power will be automatically released to operate the facility.",
   :grid-index 2110,
@@ -5126,17 +4818,15 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "12 hp"}
-   {:key "Fuel Type", :position 2, :value "Storage"}
-   {:key "Energy", :position 3, :value "540 MJ"}
-   {:key "Fuel chamber gen.", :position 31, :value "+1%"}
-   {:key "Input Power", :position 8, :value "1 MW"}
-   {:key "Output Power", :position 9, :value "2 MW"}
-   {:key "Accumulated", :position 10, :value "540 MJ"}
-   {:key "Made in", :position 1, :value "Energy Exchanger"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Accumulated" {:position 10, :value "540 MJ"},
+   "Durability" {:position 53, :value "12 hp"},
+   "Energy" {:position 3, :value "540 MJ"},
+   "Fuel Type" {:position 2, :value "Storage"},
+   "Fuel chamber gen." {:position 31, :value "+1%"},
+   "Input Power" {:position 8, :value "1 MW"},
+   "Made in" {:position 1, :value "Energy Exchanger"},
+   "Output Power" {:position 9, :value "2 MW"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "It is an Accumulator with full charge. It can either be used as a facility to automatically release power when the power is insufficient, or it can be placed in an Energy Exchanger to release electricity.",
   :fuel-type 8,
@@ -5209,14 +4899,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "20 hp"}
-   {:key "Eject Speed", :position 34, :value "20/min"}
-   {:key "Work Consumption", :position 11, :value "1 MW"}
-   {:key "Idle Consumption", :position 12, :value "60 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "20 hp"},
+   "Eject Speed" {:position 34, :value "20/min"},
+   "Idle Consumption" {:position 12, :value "60 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "1 MW"}},
   :description
   "It ejects considerable Solar Sails to integrate with the Dyson Swarm.",
   :ejector-desc
@@ -5282,13 +4970,11 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "30 hp"}
-   {:key "Energy Type", :position 4, :value "Ion Current"}
-   {:key "Basic Generation", :position 39, :value "6 MW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Basic Generation" {:position 39, :value "6 MW"},
+   "Durability" {:position 53, :value "30 hp"},
+   "Energy Type" {:position 4, :value "Ion Current"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "It receives high-energy rays transmitted from the Dyson Swarm or Dyson Sphere. The received energy can be transmitted directly to the Power Grid or stored as Critical Photons.",
   :grid-index 2112,
@@ -5364,14 +5050,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "80 hp"}
-   {:key "Launch Speed", :position 35, :value "5/min"}
-   {:key "Work Consumption", :position 11, :value "18 MW"}
-   {:key "Idle Consumption", :position 12, :value "60 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "80 hp"},
+   "Idle Consumption" {:position 12, :value "60 KW"},
+   "Launch Speed" {:position 35, :value "5/min"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "18 MW"}},
   :description
   "It launches Small Carrier Rockets carrying components into the Dyson Sphere orbit to form Nodes and Frames.",
   :grid-index 2411,
@@ -5433,14 +5117,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "30 hp"}
-   {:key "Input Power", :position 8, :value "54 MW"}
-   {:key "Output Power", :position 9, :value "54 MW"}
-   {:key "Accumulated", :position 10, :value "0J"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Accumulated" {:position 10, :value "0J"},
+   "Durability" {:position 53, :value "30 hp"},
+   "Input Power" {:position 8, :value "54 MW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Output Power" {:position 9, :value "54 MW"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "It is a facility that can convert electric power. It can either deposit surplus power from the Power Grid into an empty Accumulator to fully charge it, or release the power stored in a fully charged Accumulator.",
   :grid-index 2109,
@@ -5510,14 +5192,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "30 hp"}
-   {:key "Production Speed", :position 22, :value "1x"}
-   {:key "Work Consumption", :position 11, :value "12 MW"}
-   {:key "Idle Consumption", :position 12, :value "120 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "30 hp"},
+   "Idle Consumption" {:position 12, :value "120 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Production Speed" {:position 22, :value "1x"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "12 MW"}},
   :description
   "New particles can be produced when two streams of accelerated particles, upon reaching a certain intensity and energy, collide. It is usually employed to create stable deuterium and antimatter, but consumes considerable energy.",
   :grid-index 2313,
@@ -5577,14 +5257,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "20 hp"}
-   {:key "Energy Type", :position 4, :value "Ion Current"}
-   {:key "Power", :position 5, :value "72 MW"}
-   {:key "Energy Efficiency", :position 6, :value "1 %"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "20 hp"},
+   "Energy Efficiency" {:position 6, :value "1 %"},
+   "Energy Type" {:position 4, :value "Ion Current"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Power" {:position 5, :value "72 MW"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"}},
   :description
   "\"Just allow the positive and negative proton beams to pass silently through the magnetic field from both ends into the Constraint Sphere, nice and easy!\" It is simple but effective and is called the Artificial Sun.",
   :grid-index 2113,
@@ -5661,15 +5339,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "50 hp"}
-   {:key "Storage", :position 24, :value [4 " types"]}
-   {:key "Max Charging Power", :position 38, :value "60 MW"}
-   {:key "Idle Consumption", :position 12, :value "60 KW"}
-   {:key "Accumulated", :position 10, :value "180 MJ"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Accumulated" {:position 10, :value "180 MJ"},
+   "Durability" {:position 53, :value "50 hp"},
+   "Idle Consumption" {:position 12, :value "60 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Max Charging Power" {:position 38, :value "60 MW"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Storage" {:position 24, :value [4 " types"]}},
   :description
   "It is the hub of the planetary logistics system. Logistics Drones will automatically deliver the cargo to the respective stations once you have specified the supply/demand requirements.\r\n(Transportation is limited to its own planet)",
   :drop-rate 0.5,
@@ -5746,15 +5422,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "80 hp"}
-   {:key "Storage", :position 24, :value [5 " types"]}
-   {:key "Max Charging Power", :position 38, :value "300 MW"}
-   {:key "Idle Consumption", :position 12, :value "60 KW"}
-   {:key "Accumulated", :position 10, :value "12 GJ"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Accumulated" {:position 10, :value "12 GJ"},
+   "Durability" {:position 53, :value "80 hp"},
+   "Idle Consumption" {:position 12, :value "60 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Max Charging Power" {:position 38, :value "300 MW"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Storage" {:position 24, :value [5 " types"]}},
   :description
   "Giant space elevators make it easier to transport materials between planets. They can connect factories on different planets to form a massive industrial empire.",
   :drop-rate 0.5,
@@ -5832,14 +5506,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "80 hp"}
-   {:key "Collecting Target", :position 18, :value "Gas giant"}
-   {:key "Work Consumption", :position 11, :value "0W"}
-   {:key "Collecting Speed", :position 32, :value [8 "x"]}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Collecting Speed" {:position 32, :value [8 "x"]},
+   "Collecting Target" {:position 18, :value "Gas giant"},
+   "Durability" {:position 53, :value "80 hp"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "0W"}},
   :description
   "It is used to collect resources from gas giants. It needs to consume the collected fuel materials to power the collector to work in orbit.",
   :grid-index 2214,
@@ -5907,15 +5579,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "12 hp"}
-   {:key "Production Speed", :position 22, :value "NaNx"}
-   {:key "Research Speed", :position 33, :value [60 " Hash/s"]}
-   {:key "Work Consumption", :position 11, :value "480 KW"}
-   {:key "Idle Consumption", :position 12, :value "12 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "12 hp"},
+   "Idle Consumption" {:position 12, :value "12 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Production Speed" {:position 22, :value "NaNx"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Research Speed" {:position 33, :value [60 " Hash/s"]},
+   "Work Consumption" {:position 11, :value "480 KW"}},
   :description
   "It is a type of connector for the CentreBrain, which can either produce matrices or conduct research. The more Matrix Labs, the faster the production and research speeds.",
   :grade 1,
@@ -5979,15 +5649,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "30 hp"}
-   {:key "Production Speed", :position 22, :value "NaNx"}
-   {:key "Research Speed", :position 33, :value [60 " Hash/s"]}
-   {:key "Work Consumption", :position 11, :value "1 MW"}
-   {:key "Idle Consumption", :position 12, :value "48 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "30 hp"},
+   "Idle Consumption" {:position 12, :value "48 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Production Speed" {:position 22, :value "NaNx"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Research Speed" {:position 33, :value [60 " Hash/s"]},
+   "Work Consumption" {:position 11, :value "1 MW"}},
   :description
   "A Self-evolution Lab allows silicon-based neurons to autonomously adjust and improve neural networking while constantly learning and adapting, similar to the synaptic plasticity of biological neurons. Over time, silicon-based neurons can keep optimizing their own structures and function through self-evolution to solve problems more effectively.",
   :grade 2,
@@ -6051,18 +5719,16 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "30 hp"}
-   {:key "Turret Type", :position 51, :value "Kinetic Weapon"}
-   {:key "Target Type", :position 56, :value "VS Ground & Air"}
-   {:key "Range of Ground Defense", :position 57, :value "44 m"}
-   {:key "Ammo Type", :position 52, :value "Bullet"}
-   {:key "Fire Rate", :position 49, :value [6 " shots/s"]}
-   {:key "Work Consumption", :position 11, :value "210 KW"}
-   {:key "Idle Consumption", :position 12, :value "9000W"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Ammo Type" {:position 52, :value "Bullet"},
+   "Durability" {:position 53, :value "30 hp"},
+   "Fire Rate" {:position 49, :value [6 " shots/s"]},
+   "Idle Consumption" {:position 12, :value "9000W"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Range of Ground Defense" {:position 57, :value "44 m"},
+   "Target Type" {:position 56, :value "VS Ground & Air"},
+   "Turret Type" {:position 51, :value "Kinetic Weapon"},
+   "Work Consumption" {:position 11, :value "210 KW"}},
   :description
   "An EM field is used to accelerate bullet speed. 48mm bullets form dense and intense firepower. The damage inflicted to low-air units as a result should not be underestimated.",
   :grid-index 2501,
@@ -6147,17 +5813,15 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "30 hp"}
-   {:key "Turret Type", :position 51, :value "Energy Weapon"}
-   {:key "Target Type", :position 56, :value "VS Ground & Air"}
-   {:key "Range of Ground Defense", :position 57, :value "40 m"}
-   {:key "DPS", :position 50, :value "120 hp"}
-   {:key "Work Consumption", :position 11, :value "3 MW"}
-   {:key "Idle Consumption", :position 12, :value "120 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"DPS" {:position 50, :value "120 hp"},
+   "Durability" {:position 53, :value "30 hp"},
+   "Idle Consumption" {:position 12, :value "120 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Range of Ground Defense" {:position 57, :value "40 m"},
+   "Target Type" {:position 56, :value "VS Ground & Air"},
+   "Turret Type" {:position 51, :value "Energy Weapon"},
+   "Work Consumption" {:position 11, :value "3 MW"}},
   :description
   "High-energy laser beams will be emitted to keep strafing enemy units when they enter the defensive range. High temperatures lead to sustained damage to targets. Laser Towers' high-frequency lasers can hit targets precisely and in a short period of time, but they consume a lot of energy.",
   :grid-index 2504,
@@ -6242,20 +5906,17 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "30 hp"}
-   {:key "Turret Type",
-    :position 51,
-    :value "Kinetic and Explosive Weapons"}
-   {:key "Target Type", :position 56, :value "VS Ground & Air"}
-   {:key "Range of Ground Defense", :position 57, :value "12 ~ 58 m"}
-   {:key "Ammo Type", :position 52, :value "Shell"}
-   {:key "Fire Rate", :position 49, :value [1 " shots/s"]}
-   {:key "Work Consumption", :position 11, :value "750 KW"}
-   {:key "Idle Consumption", :position 12, :value "30 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Ammo Type" {:position 52, :value "Shell"},
+   "Durability" {:position 53, :value "30 hp"},
+   "Fire Rate" {:position 49, :value [1 " shots/s"]},
+   "Idle Consumption" {:position 12, :value "30 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Range of Ground Defense" {:position 57, :value "12 ~ 58 m"},
+   "Target Type" {:position 56, :value "VS Ground & Air"},
+   "Turret Type"
+   {:position 51, :value "Kinetic and Explosive Weapons"},
+   "Work Consumption" {:position 11, :value "750 KW"}},
   :description
   "After hitting a target, a 280mm shell can cause a wide-ranging explosive blast and inflict Explosive Damage to units and facilities in the vicinity. Additionally, due to its design characteristics Implosion Cannon can't be used to attack close targets.",
   :grid-index 2503,
@@ -6341,18 +6002,16 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "30 hp"}
-   {:key "Turret Type", :position 51, :value "Energy Weapon"}
-   {:key "Target Type", :position 56, :value "VS Space"}
-   {:key "Range of Space Defense", :position 58, :value "-"}
-   {:key "Ammo Type", :position 52, :value "Energy Capsule"}
-   {:key "Fire Rate", :position 49, :value [1 " shots/s"]}
-   {:key "Work Consumption", :position 11, :value "1 MW"}
-   {:key "Idle Consumption", :position 12, :value "84 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Ammo Type" {:position 52, :value "Energy Capsule"},
+   "Durability" {:position 53, :value "30 hp"},
+   "Fire Rate" {:position 49, :value [1 " shots/s"]},
+   "Idle Consumption" {:position 12, :value "84 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Range of Space Defense" {:position 58, :value "-"},
+   "Target Type" {:position 56, :value "VS Space"},
+   "Turret Type" {:position 51, :value "Energy Weapon"},
+   "Work Consumption" {:position 11, :value "1 MW"}},
   :description
   "After being stimulated, the matter inside an energy capsule will be in a high-energy plasma state. It will then be quickly emitted by the Plasma Turret's accelerator to generate high-speed plasma beams. Such beams are extremely penetrating and destructive, and can effectively destroy space targets.",
   :grid-index 2505,
@@ -6437,21 +6096,17 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "30 hp"}
-   {:key "Turret Type", :position 51, :value "Explosive Weapon"}
-   {:key "Target Type",
-    :position 56,
-    :value "VS Ground & Air and Space"}
-   {:key "Range of Ground Defense", :position 57, :value "60 m"}
-   {:key "Range of Space Defense", :position 58, :value "-"}
-   {:key "Ammo Type", :position 52, :value "Missile"}
-   {:key "Fire Rate", :position 49, :value [2.5 " shots/s"]}
-   {:key "Work Consumption", :position 11, :value "600 KW"}
-   {:key "Idle Consumption", :position 12, :value "18 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Ammo Type" {:position 52, :value "Missile"},
+   "Durability" {:position 53, :value "30 hp"},
+   "Fire Rate" {:position 49, :value [2.5 " shots/s"]},
+   "Idle Consumption" {:position 12, :value "18 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Range of Ground Defense" {:position 57, :value "60 m"},
+   "Range of Space Defense" {:position 58, :value "-"},
+   "Target Type" {:position 56, :value "VS Ground & Air and Space"},
+   "Turret Type" {:position 51, :value "Explosive Weapon"},
+   "Work Consumption" {:position 11, :value "600 KW"}},
   :description
   "Equipped with an advanced missile launcher and a target identification system, Turrets can quickly identify and locate both ground and space targets. Once they lock onto a target, they will then launch missiles. They are designed to respond to multiple threats with all-around defense.",
   :grid-index 2502,
@@ -6536,18 +6191,16 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "30 hp"}
-   {:key "Turret Type", :position 51, :value "-"}
-   {:key "Target Type", :position 56, :value "VS Ground & Air"}
-   {:key "Range of Ground Defense", :position 57, :value "40 m"}
-   {:key "Ammo Type", :position 52, :value "-"}
-   {:key "Fire Rate", :position 49, :value [0.2 " shots/s"]}
-   {:key "Work Consumption", :position 11, :value "1 MW"}
-   {:key "Idle Consumption", :position 12, :value "90 KW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Ammo Type" {:position 52, :value "-"},
+   "Durability" {:position 53, :value "30 hp"},
+   "Fire Rate" {:position 49, :value [0.2 " shots/s"]},
+   "Idle Consumption" {:position 12, :value "90 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Range of Ground Defense" {:position 57, :value "40 m"},
+   "Target Type" {:position 56, :value "VS Ground & Air"},
+   "Turret Type" {:position 51, :value "-"},
+   "Work Consumption" {:position 11, :value "1 MW"}},
   :description
   "It can interfere with nearby enemy units periodically, decreasing their movement speed and rate of fire. Each interference consumes EM capsule once. ",
   :grid-index 2508,
@@ -6636,17 +6289,14 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "30 hp"}
-   {:key "Connection Length", :position 13, :value "60 m"}
-   {:key "Coverage",
-    :position 14,
-    :value ["Power" "14 m / " "Signal" "64 m"]}
-   {:key "Work Consumption", :position 11, :value "0W"}
-   {:key "Idle Consumption", :position 12, :value "0W"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Connection Length" {:position 13, :value "60 m"},
+   "Coverage"
+   {:position 14, :value ["Power" "14 m / " "Signal" "64 m"]},
+   "Durability" {:position 53, :value "30 hp"},
+   "Idle Consumption" {:position 12, :value "0W"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "0W"}},
   :description
   "A tactical defensive facility that periodically sends out signals at a specific frequency to induce Dark Fog, change the direction of an attack and increase the unit assembling speed. Signal Towers can form a data chain with Missile Turrets for information sharing, thus expanding the attack range of Missile Turrets.",
   :grid-index 2509,
@@ -6706,13 +6356,11 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "30 hp"}
-   {:key "Work Consumption", :position 11, :value "24 MW"}
-   {:key "Idle Consumption", :position 12, :value "12 MW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Durability" {:position 53, :value "30 hp"},
+   "Idle Consumption" {:position 12, :value "12 MW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "24 MW"}},
   :description
   "They can create Planetary Shields on planets to resist attacks from space. Massive amounts of energy are required for a Planetary Shield. If the shield becomes ineffective, it will leave the planet exposed to serious threats from space. Additionally, the number of Shield Generators that can be built on a planet is limited.\r\nPlanetary Shield can only resist damage from space, it cannot defend ground damage.",
   :field-generator-desc
@@ -6779,16 +6427,13 @@
   :construction-module-desc
   {:build-range 60, :drone-count 12, :drone-eject-pos [0 6.5 0]},
   :desc-fields
-  [{:key "Durability", :position 53, :value "30 hp"}
-   {:key "Work Consumption", :position 11, :value "2 MW"}
-   {:key "Idle Consumption", :position 12, :value "60 KW"}
-   {:key "Coverage",
-    :position 14,
-    :value ["Construction" "60 m / " "Pick Up" "90 m"]}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Coverage"
+   {:position 14, :value ["Construction" "60 m / " "Pick Up" "90 m"]},
+   "Durability" {:position 53, :value "30 hp"},
+   "Idle Consumption" {:position 12, :value "60 KW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Work Consumption" {:position 11, :value "2 MW"}},
   :description
   "The core for battlefield controlling with powerful real-time battlefield analysis and command capabilities. Self-equipped Fighters can be dispatched for base defense. A destroyed building will automatically be marked with a hologram. Construction Drones will then be dispatched for building and repair to provide support on the battlefield. A Battlefield Analysis Base can also collect enemy debris for analysis and acquire useful intelligence and resources from battlefield residues.",
   :drop-rate 0.5,
@@ -6850,18 +6495,16 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "Durability", :position 53, :value "30 hp"}
-   {:key "Turret Type", :position 51, :value "-"}
-   {:key "Target Type", :position 56, :value "VS Ground & Air"}
-   {:key "Range of Ground Defense", :position 57, :value "8 ~ 55 m"}
-   {:key "Ammo Type", :position 52, :value "Energy Capsule"}
-   {:key "Fire Rate", :position 49, :value [0.5 " shots/s"]}
-   {:key "Work Consumption", :position 11, :value "4 MW"}
-   {:key "Idle Consumption", :position 12, :value "2 MW"}
-   {:key "Made in", :position 1, :value "Assembler"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Production speedup"}],
+  {"Ammo Type" {:position 52, :value "Energy Capsule"},
+   "Durability" {:position 53, :value "30 hp"},
+   "Fire Rate" {:position 49, :value [0.5 " shots/s"]},
+   "Idle Consumption" {:position 12, :value "2 MW"},
+   "Made in" {:position 1, :value "Assembler"},
+   "Proliferator Effect" {:position 40, :value "Production speedup"},
+   "Range of Ground Defense" {:position 57, :value "8 ~ 55 m"},
+   "Target Type" {:position 56, :value "VS Ground & Air"},
+   "Turret Type" {:position 51, :value "-"},
+   "Work Consumption" {:position 11, :value "4 MW"}},
   :description
   "The powerful high-temperature plasma can melt enemies within its range, but maintaining such a device on the ground is not easy. To be able to attack nearby targets, constantly maintaining the excited plasma makes this facility very fragile and requires a large amount of power.",
   :grid-index 2506,
@@ -6919,10 +6562,8 @@
   :type "TURRET",
   :type-string "Turret"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Research Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Research Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "The foundation of all technological research as one of the five basic source codes for maintaining the CentreBrain simulation.",
   :grid-index 1801,
@@ -6935,10 +6576,8 @@
   :type "MATRIX",
   :type-string "Science Matrix"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Research Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Research Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "The Energy Matrix is a major driver of further technological development as one of the five basic source codes for maintaining the CentreBrain simulation.",
   :grid-index 1802,
@@ -6951,10 +6590,8 @@
   :type "MATRIX",
   :type-string "Science Matrix"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Research Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Research Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "Useful for obtaining new and improved structural materials as one of the five basic source codes for maintaining the CentreBrain simulation.",
   :grid-index 1803,
@@ -6967,10 +6604,8 @@
   :type "MATRIX",
   :type-string "Science Matrix"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Research Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Research Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "One of the five basic source codes for maintaining the CentreBrain simulation. The level of computerization significantly affects how well the Homebase operates.",
   :grid-index 1804,
@@ -6983,10 +6618,8 @@
   :type "MATRIX",
   :type-string "Science Matrix"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Research Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Research Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "One of the five basic source codes for maintaining the CentreBrain simulation. It finds a way to make quantum field theory and general relativity compatible.",
   :grid-index 1805,
@@ -6999,10 +6632,8 @@
   :type "MATRIX",
   :type-string "Science Matrix"}
  {:desc-fields
-  [{:key "Made in", :position 1, :value "Research Facility"}
-   {:key "Proliferator Effect",
-    :position 40,
-    :value "Extra products"}],
+  {"Made in" {:position 1, :value "Research Facility"},
+   "Proliferator Effect" {:position 40, :value "Extra products"}},
   :description
   "The triumphant, all-encompassing culmination of the theory of everything, revealing the ultimate secret of the universe!",
   :grid-index 1806,

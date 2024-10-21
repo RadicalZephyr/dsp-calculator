@@ -1,6 +1,6 @@
 [{:desc-fields
-  [{:key "采集自", :position 0, :value "铁矿脉"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "采集自" {:position 0, :value "铁矿脉"}},
   :description "I铁矿",
   :grid-index 1101,
   :icon-path "Icons/ItemRecipe/iron-ore",
@@ -13,8 +13,8 @@
   :type-string "自然资源",
   :unlock-key -1}
  {:desc-fields
-  [{:key "采集自", :position 0, :value "铜矿脉"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "采集自" {:position 0, :value "铜矿脉"}},
   :description "I铜矿",
   :grid-index 1102,
   :icon-path "Icons/ItemRecipe/copper-ore",
@@ -27,9 +27,9 @@
   :type-string "自然资源",
   :unlock-key -1}
  {:desc-fields
-  [{:key "采集自", :position 0, :value "硅矿脉"}
-   {:key "制造于", :position 1, :value "冶炼设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "冶炼设备"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "采集自" {:position 0, :value "硅矿脉"}},
   :description "I硅石",
   :grid-index 1105,
   :icon-path "Icons/ItemRecipe/silicium-ore",
@@ -42,8 +42,8 @@
   :type-string "自然资源",
   :unlock-key 6001}
  {:desc-fields
-  [{:key "采集自", :position 0, :value "钛矿脉"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "采集自" {:position 0, :value "钛矿脉"}},
   :description "I钛石",
   :grid-index 1106,
   :icon-path "Icons/ItemRecipe/titanium-ore",
@@ -56,8 +56,8 @@
   :type-string "自然资源",
   :unlock-key 6002}
  {:desc-fields
-  [{:key "采集自", :position 0, :value "石矿脉"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "采集自" {:position 0, :value "石矿脉"}},
   :description "I石矿",
   :grid-index 1103,
   :icon-path "Icons/ItemRecipe/stone-ore",
@@ -70,11 +70,11 @@
   :type-string "自然资源",
   :unlock-key -1}
  {:desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "2 MJ"}
-   {:key "机甲功率提升", :position 31, :value "0%"}
-   {:key "采集自", :position 0, :value "煤矿脉"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "0%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "2 MJ"},
+   "采集自" {:position 0, :value "煤矿脉"}},
   :description "I煤矿",
   :fuel-type 1,
   :fuel-type-string "化学",
@@ -90,11 +90,11 @@
   :type-string "自然资源",
   :unlock-key -1}
  {:desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "1 MJ"}
-   {:key "机甲功率提升", :position 31, :value "0%"}
-   {:key "采集自", :position 0, :value "树木"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "0%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "1 MJ"},
+   "采集自" {:position 0, :value "树木"}},
   :description "I木材",
   :enemy-drop-count 4,
   :enemy-drop-mask 2097695762,
@@ -115,11 +115,11 @@
   :type-string "自然资源",
   :unlock-key -1}
  {:desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "500 KJ"}
-   {:key "机甲功率提升", :position 31, :value "0%"}
-   {:key "采集自", :position 0, :value "植物"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "0%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "500 KJ"},
+   "采集自" {:position 0, :value "植物"}},
   :description "I植物燃料",
   :enemy-drop-count 4,
   :enemy-drop-mask 2097695762,
@@ -139,11 +139,11 @@
   :type-string "自然资源",
   :unlock-key -1}
  {:desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "4 MJ"}
-   {:key "机甲功率提升", :position 31, :value "+0%"}
-   {:key "采集自", :position 0, :value "可燃冰矿（珍奇）"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "+0%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "4 MJ"},
+   "采集自" {:position 0, :value "可燃冰矿（珍奇）"}},
   :description "I可燃冰",
   :fuel-type 1,
   :fuel-type-string "化学",
@@ -160,8 +160,8 @@
   :type-string "自然资源",
   :unlock-key 1120}
  {:desc-fields
-  [{:key "采集自", :position 0, :value "金伯利矿（珍奇）"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "采集自" {:position 0, :value "金伯利矿（珍奇）"}},
   :description "I金伯利矿石",
   :grid-index 1114,
   :icon-path "Icons/ItemRecipe/diamond-ore",
@@ -174,8 +174,8 @@
   :type-string "自然资源",
   :unlock-key 1112}
  {:desc-fields
-  [{:key "采集自", :position 0, :value "分形硅矿（珍奇）"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "采集自" {:position 0, :value "分形硅矿（珍奇）"}},
   :description "I分形硅石",
   :grid-index 1214,
   :icon-path "Icons/ItemRecipe/fractal-silica",
@@ -188,8 +188,8 @@
   :type-string "自然资源",
   :unlock-key 1105}
  {:desc-fields
-  [{:key "采集自", :position 0, :value "光栅石矿（珍奇）"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "采集自" {:position 0, :value "光栅石矿（珍奇）"}},
   :description "I光栅石",
   :enemy-drop-count 2,
   :enemy-drop-level 5,
@@ -206,8 +206,8 @@
   :type-string "自然资源",
   :unlock-key 6002}
  {:desc-fields
-  [{:key "采集自", :position 0, :value "刺笋矿脉（珍奇）"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "采集自" {:position 0, :value "刺笋矿脉（珍奇）"}},
   :description "I刺笋结晶",
   :grid-index 1414,
   :icon-path "Icons/ItemRecipe/bamboo-crystal",
@@ -220,8 +220,8 @@
   :type-string "自然资源",
   :unlock-key 6002}
  {:desc-fields
-  [{:key "采集自", :position 0, :value "单极磁矿（珍奇）"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "采集自" {:position 0, :value "单极磁矿（珍奇）"}},
   :description "I单极磁石",
   :enemy-drop-count 2,
   :enemy-drop-level 8,
@@ -239,8 +239,8 @@
   :type-string "自然资源",
   :unlock-key 1206}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "冶炼设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "冶炼设备"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I铁块",
   :enemy-drop-count 2,
   :enemy-drop-mask 2147483647,
@@ -255,8 +255,8 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "冶炼设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "冶炼设备"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I铜块",
   :enemy-drop-count 2.4000000953674316,
   :enemy-drop-mask 2147483647,
@@ -271,8 +271,8 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "冶炼设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "冶炼设备"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I高纯硅块",
   :enemy-drop-count 1.7999999523162842,
   :enemy-drop-level 1,
@@ -289,8 +289,8 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "冶炼设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "冶炼设备"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I钛块",
   :enemy-drop-count 2.200000047683716,
   :enemy-drop-level 1,
@@ -307,8 +307,8 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "冶炼设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "冶炼设备"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I石材",
   :enemy-drop-count 1.7999999523162842,
   :enemy-drop-mask 2147483647,
@@ -323,11 +323,11 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "6 MJ"}
-   {:key "机甲功率提升", :position 31, :value "+1%"}
-   {:key "制造于", :position 1, :value "冶炼设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "冶炼设备"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "+1%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "6 MJ"}},
   :description "I高能石墨",
   :enemy-drop-count 1.600000023841858,
   :enemy-drop-level 1,
@@ -348,8 +348,8 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "冶炼设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "冶炼设备"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I钢材",
   :enemy-drop-count 1.600000023841858,
   :enemy-drop-level 1,
@@ -365,8 +365,8 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "冶炼设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "冶炼设备"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I钛合金",
   :enemy-drop-count 1.100000023841858,
   :enemy-drop-level 4,
@@ -383,8 +383,8 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "冶炼设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "冶炼设备"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I玻璃",
   :enemy-drop-count 1.7000000476837158,
   :enemy-drop-level 1,
@@ -400,8 +400,8 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I钛化玻璃",
   :enemy-drop-count 1.399999976158142,
   :enemy-drop-level 4,
@@ -418,8 +418,8 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I棱镜",
   :enemy-drop-count 1.399999976158142,
   :enemy-drop-level 1,
@@ -435,11 +435,11 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "900 KJ"}
-   {:key "机甲功率提升", :position 31, :value "-1%"}
-   {:key "制造于", :position 1, :value "冶炼设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "冶炼设备"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "-1%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "900 KJ"}},
   :description "I金刚石",
   :enemy-drop-count 1,
   :enemy-drop-level 2,
@@ -459,8 +459,8 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "冶炼设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "冶炼设备"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I晶格硅",
   :enemy-drop-count 1.2000000476837158,
   :enemy-drop-level 3,
@@ -477,8 +477,8 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I齿轮",
   :enemy-drop-count 1.7000000476837158,
   :enemy-drop-level 1,
@@ -493,8 +493,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "冶炼设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "冶炼设备"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I磁铁",
   :enemy-drop-count 2,
   :enemy-drop-mask 2147483647,
@@ -509,8 +509,8 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I磁线圈",
   :enemy-drop-count 2,
   :enemy-drop-level 1,
@@ -525,8 +525,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I电动机",
   :enemy-drop-count 1.2000000476837158,
   :enemy-drop-level 2,
@@ -541,8 +541,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I电磁涡轮",
   :enemy-drop-count 0.800000011920929,
   :enemy-drop-level 3,
@@ -557,8 +557,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I超级磁场环",
   :enemy-drop-count 0.5,
   :enemy-drop-level 4,
@@ -573,8 +573,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I粒子容器",
   :enemy-drop-count 0.4000000059604645,
   :enemy-drop-level 5,
@@ -589,8 +589,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "粒子对撞机"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "粒子对撞机"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I奇异物质",
   :enemy-drop-count 0.4000000059604645,
   :enemy-drop-level 6,
@@ -605,8 +605,8 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I电路板",
   :enemy-drop-count 2,
   :enemy-drop-level 1,
@@ -621,8 +621,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I处理器",
   :enemy-drop-count 0.75,
   :enemy-drop-level 3,
@@ -637,8 +637,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I量子芯片",
   :enemy-drop-count 0.25,
   :enemy-drop-level 7,
@@ -653,8 +653,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I微晶元件",
   :enemy-drop-count 1,
   :enemy-drop-level 2,
@@ -669,8 +669,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I位面过滤器",
   :enemy-drop-count 0.4000000059604645,
   :enemy-drop-level 6,
@@ -685,8 +685,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I粒子宽带",
   :enemy-drop-count 0.25,
   :enemy-drop-level 5,
@@ -701,8 +701,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I电浆激发器",
   :enemy-drop-count 1.2999999523162842,
   :enemy-drop-level 2,
@@ -717,8 +717,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I光子合并器",
   :enemy-drop-count 1.399999976158142,
   :enemy-drop-level 3,
@@ -733,9 +733,9 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "使用寿命", :position 36, :value ["-" "空格秒"]}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"使用寿命" {:position 36, :value ["-" "空格秒"]},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I太阳帆",
   :grid-index 1708,
   :icon-path "Icons/ItemRecipe/solar-collector",
@@ -755,9 +755,8 @@
    :turn-acc 0},
   :bomb-type "LIQUID",
   :desc-fields
-  [{:key "采集自", :position 0, :value "海洋"}
-   {:position 71}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "采集自" {:position 0, :value "海洋"}},
   :description "I水",
   :grid-index 1107,
   :icon-path "Icons/ItemRecipe/water",
@@ -772,11 +771,11 @@
   :type-string "自然资源",
   :unlock-key 2306}
  {:desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "4 MJ"}
-   {:key "机甲功率提升", :position 31, :value "+0%"}
-   {:key "采集自", :position 0, :value "原油涌泉"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "+0%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "4 MJ"},
+   "采集自" {:position 0, :value "原油涌泉"}},
   :description "I原油",
   :fuel-type 1,
   :fuel-type-string "化学",
@@ -794,11 +793,11 @@
   :type-string "自然资源",
   :unlock-key 2307}
  {:desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "4 MJ"}
-   {:key "机甲功率提升", :position 31, :value "+0%"}
-   {:key "制造于", :position 1, :value "精炼设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "精炼设备"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "+0%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "4 MJ"}},
   :description "I精炼油",
   :fuel-type 1,
   :fuel-type-string "化学",
@@ -814,9 +813,9 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "化工设备"}
-   {:key "采集自", :position 0, :value "硫酸海洋"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "化工设备"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "采集自" {:position 0, :value "硫酸海洋"}},
   :description "I硫酸",
   :grid-index 1207,
   :icon-path "Icons/ItemRecipe/sulphuric-acid",
@@ -829,12 +828,12 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "9 MJ"}
-   {:key "机甲功率提升", :position 31, :value "+1%"}
-   {:key "制造于", :position 1, :value "精炼设备"}
-   {:key "采集自", :position 0, :value "气态巨星轨道"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "精炼设备"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "+1%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "9 MJ"},
+   "采集自" {:position 0, :value "气态巨星轨道"}},
   :description "I氢",
   :enemy-drop-count 1.5,
   :enemy-drop-level 3,
@@ -855,12 +854,12 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "9 MJ"}
-   {:key "机甲功率提升", :position 31, :value "+1%"}
-   {:key "制造于", :position 1, :value "粒子对撞机"}
-   {:key "采集自", :position 0, :value "气态巨星轨道"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "粒子对撞机"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "+1%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "9 MJ"},
+   "采集自" {:position 0, :value "气态巨星轨道"}},
   :description "I重氢",
   :enemy-drop-count 0.800000011920929,
   :enemy-drop-level 5,
@@ -884,9 +883,9 @@
   :type-string "材料",
   :unlock-key 1120}
  {:desc-fields
-  [{:key "潜在能量", :position 37, :value "600 MJ"}
-   {:key "制造于", :position 1, :value "粒子对撞机"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "粒子对撞机"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "潜在能量" {:position 37, :value "600 MJ"}},
   :description "I反物质",
   :enemy-drop-count 0.30000001192092896,
   :enemy-drop-level 7,
@@ -902,9 +901,9 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "潜在能量", :position 37, :value "1 GJ"}
-   {:key "制造于", :position 1, :value "射线接收站"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "射线接收站"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "潜在能量" {:position 37, :value "1 GJ"}},
   :description "I临界光子",
   :grid-index 1113,
   :icon-path "Icons/ItemRecipe/photon-capacitor-full",
@@ -918,11 +917,11 @@
   :type-string "材料",
   :unlock-key 1122}
  {:desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "54 MJ"}
-   {:key "机甲功率提升", :position 31, :value "+2%"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "+2%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "54 MJ"}},
   :description "I氢燃料棒",
   :enemy-drop-count 0.5,
   :enemy-drop-level 4,
@@ -941,11 +940,11 @@
   :type "PRODUCT",
   :type-string "成品"}
  {:desc-fields
-  [{:key "燃料类型", :position 2, :value "核能"}
-   {:key "能量", :position 3, :value "600 MJ"}
-   {:key "机甲功率提升", :position 31, :value "+3%"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "+3%"},
+   "燃料类型" {:position 2, :value "核能"},
+   "能量" {:position 3, :value "600 MJ"}},
   :description "I氘核燃料棒",
   :enemy-drop-count 0.4000000059604645,
   :enemy-drop-level 6,
@@ -964,11 +963,11 @@
   :type "PRODUCT",
   :type-string "成品"}
  {:desc-fields
-  [{:key "燃料类型", :position 2, :value "质能"}
-   {:key "能量", :position 3, :value "7 GJ"}
-   {:key "机甲功率提升", :position 31, :value "+5%"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "机甲功率提升" {:position 31, :value "+5%"},
+   "燃料类型" {:position 2, :value "质能"},
+   "能量" {:position 3, :value "7 GJ"}},
   :description "I反物质燃料棒",
   :enemy-drop-count 0.30000001192092896,
   :enemy-drop-level 8,
@@ -986,11 +985,11 @@
   :type "PRODUCT",
   :type-string "成品"}
  {:desc-fields
-  [{:key "燃料类型", :position 2, :value "质能"}
-   {:key "能量", :position 3, :value "72 GJ"}
-   {:key "机甲功率提升", :position 31, :value "+11%"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "机甲功率提升" {:position 31, :value "+11%"},
+   "燃料类型" {:position 2, :value "质能"},
+   "能量" {:position 3, :value "72 GJ"}},
   :description "I金色燃料棒",
   :fuel-type 4,
   :fuel-type-string "质能",
@@ -1004,8 +1003,8 @@
   :type "PRODUCT",
   :type-string "成品"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "化工设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "化工设备"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I塑料",
   :enemy-drop-count 1,
   :enemy-drop-level 2,
@@ -1022,11 +1021,11 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "96 KJ"}
-   {:key "机甲功率提升", :position 31, :value "-1%"}
-   {:key "制造于", :position 1, :value "化工设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "化工设备"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "-1%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "96 KJ"}},
   :description "I石墨烯",
   :enemy-drop-count 1,
   :enemy-drop-level 3,
@@ -1047,11 +1046,11 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "84 KJ"}
-   {:key "机甲功率提升", :position 31, :value "-1%"}
-   {:key "制造于", :position 1, :value "化工设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "化工设备"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "-1%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "84 KJ"}},
   :description "I碳纳米管",
   :enemy-drop-count 0.800000011920929,
   :enemy-drop-level 4,
@@ -1071,12 +1070,12 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "1 MJ"}
-   {:key "机甲功率提升", :position 31, :value "0%"}
-   {:key "制造于", :position 1, :value "化工设备"}
-   {:key "采集自", :position 0, :value "有机晶体矿（珍奇）"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "化工设备"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "0%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "1 MJ"},
+   "采集自" {:position 0, :value "有机晶体矿（珍奇）"}},
   :description "I有机晶体",
   :fuel-type 1,
   :fuel-type-string "化学",
@@ -1093,8 +1092,8 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I钛晶石",
   :enemy-drop-count 0.800000011920929,
   :enemy-drop-level 3,
@@ -1111,8 +1110,8 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I卡西米尔晶体",
   :enemy-drop-count 0.550000011920929,
   :enemy-drop-level 5,
@@ -1138,14 +1137,12 @@
    :turn-acc 0},
   :bomb-type "EXPLOSIVE_UNIT",
   :desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "9 MJ"}
-   {:key "机甲功率提升", :position 31, :value "+1%"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}
-   {:position 71}
-   {:key "伤害类型", :position 55, :value "-"}
-   {:position 61}],
+  {"伤害类型" {:position 55, :value "-"},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "+1%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "9 MJ"}},
   :description "I燃烧单元",
   :enemy-drop-count 1,
   :enemy-drop-level 2,
@@ -1176,14 +1173,12 @@
    :turn-acc 0},
   :bomb-type "EXPLOSIVE_UNIT",
   :desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "21 MJ"}
-   {:key "机甲功率提升", :position 31, :value "+1%"}
-   {:key "制造于", :position 1, :value "化工设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}
-   {:position 71}
-   {:key "伤害类型", :position 55, :value "-"}
-   {:position 61}],
+  {"伤害类型" {:position 55, :value "-"},
+   "制造于" {:position 1, :value "化工设备"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "+1%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "21 MJ"}},
   :description "I爆破单元",
   :enemy-drop-count 0.699999988079071,
   :enemy-drop-level 4,
@@ -1213,14 +1208,12 @@
    :turn-acc 0},
   :bomb-type "EXPLOSIVE_UNIT",
   :desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "54 MJ"}
-   {:key "机甲功率提升", :position 31, :value "+2%"}
-   {:key "制造于", :position 1, :value "化工设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}
-   {:position 71}
-   {:key "伤害类型", :position 55, :value "-"}
-   {:position 61}],
+  {"伤害类型" {:position 55, :value "-"},
+   "制造于" {:position 1, :value "化工设备"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "+2%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "54 MJ"}},
   :description "I晶石爆破单元",
   :enemy-drop-count 0.5,
   :enemy-drop-level 6,
@@ -1240,8 +1233,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I引力透镜",
   :enemy-drop-count 0.4000000059604645,
   :enemy-drop-level 7,
@@ -1257,8 +1250,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I空间翘曲器",
   :enemy-drop-count 0.30000001192092896,
   :enemy-drop-level 7,
@@ -1273,8 +1266,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I湮灭约束球",
   :enemy-drop-count 0.30000001192092896,
   :enemy-drop-level 7,
@@ -1289,8 +1282,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I动力引擎",
   :enemy-drop-count 1,
   :enemy-drop-level 1,
@@ -1305,8 +1298,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I推进器",
   :enemy-drop-count 0.6000000238418579,
   :enemy-drop-level 3,
@@ -1321,8 +1314,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I加力推进器",
   :enemy-drop-count 0.30000001192092896,
   :enemy-drop-level 5,
@@ -1337,10 +1330,10 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "船运载量", :position 45, :value "-"}
-   {:key "飞行速度", :position 46, :value "- m/s"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "船运载量" {:position 45, :value "-"},
+   "飞行速度" {:position 46, :value "- m/s"}},
   :description "I配送运输机",
   :grid-index 1701,
   :hp-max 200,
@@ -1354,10 +1347,10 @@
   :type "LOGISTICS",
   :type-string "物流运输"}
  {:desc-fields
-  [{:key "船运载量", :position 25, :value "-"}
-   {:key "飞行速度", :position 27, :value "- m/s"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "船运载量" {:position 25, :value "-"},
+   "飞行速度" {:position 27, :value "- m/s"}},
   :description "I物流运输机",
   :grid-index 1702,
   :hp-max 300,
@@ -1371,9 +1364,9 @@
   :type "LOGISTICS",
   :type-string "物流运输"}
  {:desc-fields
-  [{:key "船运载量", :position 26, :value "-"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "船运载量" {:position 26, :value "-"}},
   :description "I星际物流运输船",
   :grid-index 1703,
   :hp-max 800,
@@ -1387,8 +1380,8 @@
   :type "LOGISTICS",
   :type-string "物流运输"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I框架材料",
   :grid-index 1709,
   :icon-path "Icons/ItemRecipe/frame-material",
@@ -1400,8 +1393,8 @@
   :type "MATERIAL",
   :type-string "材料"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I戴森球组件",
   :grid-index 1710,
   :icon-path "Icons/ItemRecipe/dyson-sphere-component",
@@ -1412,8 +1405,8 @@
   :type "COMPONENT",
   :type-string "组件"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"}},
   :description "I小型运载火箭",
   :grid-index 1711,
   :icon-path "Icons/ItemRecipe/rocket",
@@ -1428,8 +1421,8 @@
   :build-mode 4,
   :can-build true,
   :desc-fields
-  [{:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I地基",
   :enemy-drop-count 2,
   :enemy-drop-level 2,
@@ -1445,15 +1438,15 @@
   :type-string "组件"}
  {:ability 1,
   :desc-fields
-  [{:key "喷涂次数", :position 29, :value [12 "喷涂次数的后缀"]}
-   {:key "喷涂增产效果", :position 41, :value "+12.5%"}
-   {:key "喷涂加速效果", :position 42, :value "+25%"}
-   {:key "额外电力消耗", :position 43, :value "+30%"}
-   {:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "3 MJ"}
-   {:key "机甲功率提升", :position 31, :value "+0%"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "喷涂加速效果" {:position 42, :value "+25%"},
+   "喷涂增产效果" {:position 41, :value "+12.5%"},
+   "喷涂次数" {:position 29, :value [12 "喷涂次数的后缀"]},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "+0%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "3 MJ"},
+   "额外电力消耗" {:position 43, :value "+30%"}},
   :description "I增产剂 Mk.I",
   :fuel-type 1,
   :fuel-type-string "化学",
@@ -1470,15 +1463,15 @@
   :type-string "材料"}
  {:ability 2,
   :desc-fields
-  [{:key "喷涂次数", :position 29, :value [24 "喷涂次数的后缀"]}
-   {:key "喷涂增产效果", :position 41, :value "+20%"}
-   {:key "喷涂加速效果", :position 42, :value "+50%"}
-   {:key "额外电力消耗", :position 43, :value "+70%"}
-   {:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "8 MJ"}
-   {:key "机甲功率提升", :position 31, :value "+1%"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "喷涂加速效果" {:position 42, :value "+50%"},
+   "喷涂增产效果" {:position 41, :value "+20%"},
+   "喷涂次数" {:position 29, :value [24 "喷涂次数的后缀"]},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "+1%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "8 MJ"},
+   "额外电力消耗" {:position 43, :value "+70%"}},
   :description "I增产剂 Mk.II",
   :fuel-type 1,
   :fuel-type-string "化学",
@@ -1495,15 +1488,15 @@
   :type-string "材料"}
  {:ability 4,
   :desc-fields
-  [{:key "喷涂次数", :position 29, :value [60 "喷涂次数的后缀"]}
-   {:key "喷涂增产效果", :position 41, :value "+25%"}
-   {:key "喷涂加速效果", :position 42, :value "+100%"}
-   {:key "额外电力消耗", :position 43, :value "+150%"}
-   {:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "21 MJ"}
-   {:key "机甲功率提升", :position 31, :value "+2%"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "喷涂加速效果" {:position 42, :value "+100%"},
+   "喷涂增产效果" {:position 41, :value "+25%"},
+   "喷涂次数" {:position 29, :value [60 "喷涂次数的后缀"]},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "机甲功率提升" {:position 31, :value "+2%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "21 MJ"},
+   "额外电力消耗" {:position 43, :value "+150%"}},
   :description "I增产剂 Mk.III",
   :fuel-type 1,
   :fuel-type-string "化学",
@@ -1521,12 +1514,12 @@
  {:ability 700,
   :ammo-type "BULLET",
   :desc-fields
-  [{:key "伤害", :position 48, :value "7 hp"}
-   {:key "伤害类型", :position 55, :value "子弹伤害类型"}
-   {:key "弹药类型", :position 52, :value "子弹"}
-   {:key "弹药数量", :position 47, :value [30 "弹药数量单位"]}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"伤害" {:position 48, :value "7 hp"},
+   "伤害类型" {:position 55, :value "子弹伤害类型"},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "弹药数量" {:position 47, :value [30 "弹药数量单位"]},
+   "弹药类型" {:position 52, :value "子弹"}},
   :description "I机枪弹箱",
   :grid-index 1312,
   :hp-max 30,
@@ -1540,12 +1533,12 @@
  {:ability 1600,
   :ammo-type "BULLET",
   :desc-fields
-  [{:key "伤害", :position 48, :value "16 hp"}
-   {:key "伤害类型", :position 55, :value "子弹伤害类型"}
-   {:key "弹药类型", :position 52, :value "子弹"}
-   {:key "弹药数量", :position 47, :value [30 "弹药数量单位"]}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"伤害" {:position 48, :value "16 hp"},
+   "伤害类型" {:position 55, :value "子弹伤害类型"},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "弹药数量" {:position 47, :value [30 "弹药数量单位"]},
+   "弹药类型" {:position 52, :value "子弹"}},
   :description "I钛化弹箱",
   :grid-index 1412,
   :hp-max 30,
@@ -1559,12 +1552,12 @@
  {:ability 3600,
   :ammo-type "BULLET",
   :desc-fields
-  [{:key "伤害", :position 48, :value "36 hp"}
-   {:key "伤害类型", :position 55, :value "子弹伤害类型"}
-   {:key "弹药类型", :position 52, :value "子弹"}
-   {:key "弹药数量", :position 47, :value [30 "弹药数量单位"]}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"伤害" {:position 48, :value "36 hp"},
+   "伤害类型" {:position 55, :value "子弹伤害类型"},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "弹药数量" {:position 47, :value [30 "弹药数量单位"]},
+   "弹药类型" {:position 52, :value "子弹"}},
   :description "I超合金弹箱",
   :grid-index 1512,
   :hp-max 30,
@@ -1586,13 +1579,13 @@
    :turn-acc 0},
   :ammo-type "CANNON",
   :desc-fields
-  [{:key "伤害", :position 48, :value "45 hp"}
-   {:key "伤害类型", :position 55, :value "炮弹伤害类型"}
-   {:key "弹药类型", :position 52, :value "炮弹"}
-   {:key "爆炸半径", :position 61, :value "13 m"}
-   {:key "弹药数量", :position 47, :value [12 "弹药数量单位"]}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"伤害" {:position 48, :value "45 hp"},
+   "伤害类型" {:position 55, :value "炮弹伤害类型"},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "弹药数量" {:position 47, :value [12 "弹药数量单位"]},
+   "弹药类型" {:position 52, :value "炮弹"},
+   "爆炸半径" {:position 61, :value "13 m"}},
   :description "I炮弹组",
   :grid-index 1513,
   :hp-max 12,
@@ -1615,13 +1608,13 @@
    :turn-acc 0},
   :ammo-type "CANNON",
   :desc-fields
-  [{:key "伤害", :position 48, :value "100 hp"}
-   {:key "伤害类型", :position 55, :value "炮弹伤害类型"}
-   {:key "弹药类型", :position 52, :value "炮弹"}
-   {:key "爆炸半径", :position 61, :value "13 m"}
-   {:key "弹药数量", :position 47, :value [12 "弹药数量单位"]}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"伤害" {:position 48, :value "100 hp"},
+   "伤害类型" {:position 55, :value "炮弹伤害类型"},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "弹药数量" {:position 47, :value [12 "弹药数量单位"]},
+   "弹药类型" {:position 52, :value "炮弹"},
+   "爆炸半径" {:position 61, :value "13 m"}},
   :description "I高爆炮弹组",
   :grid-index 1613,
   :hp-max 12,
@@ -1644,13 +1637,13 @@
    :turn-acc 0},
   :ammo-type "CANNON",
   :desc-fields
-  [{:key "伤害", :position 48, :value "220 hp"}
-   {:key "伤害类型", :position 55, :value "炮弹伤害类型"}
-   {:key "弹药类型", :position 52, :value "炮弹"}
-   {:key "爆炸半径", :position 61, :value "13 m"}
-   {:key "弹药数量", :position 47, :value [12 "弹药数量单位"]}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"伤害" {:position 48, :value "220 hp"},
+   "伤害类型" {:position 55, :value "炮弹伤害类型"},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "弹药数量" {:position 47, :value [12 "弹药数量单位"]},
+   "弹药类型" {:position 52, :value "炮弹"},
+   "爆炸半径" {:position 61, :value "13 m"}},
   :description "I晶石炮弹组",
   :grid-index 1713,
   :hp-max 12,
@@ -1665,13 +1658,13 @@
  {:ability 30000,
   :ammo-type "PLASMA",
   :desc-fields
-  [{:key "伤害", :position 48, :value "300 hp"}
-   {:key "伤害类型", :position 55, :value "能量胶囊伤害类型"}
-   {:key "弹药类型", :position 52, :value "能量胶囊"}
-   {:key "爆炸半径", :position 61, :value "8 m"}
-   {:key "弹药数量", :position 47, :value [10 "弹药数量单位"]}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"伤害" {:position 48, :value "300 hp"},
+   "伤害类型" {:position 55, :value "能量胶囊伤害类型"},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "弹药数量" {:position 47, :value [10 "弹药数量单位"]},
+   "弹药类型" {:position 52, :value "能量胶囊"},
+   "爆炸半径" {:position 61, :value "8 m"}},
   :description "I等离子胶囊",
   :grid-index 1612,
   :hp-max 10,
@@ -1685,13 +1678,13 @@
  {:ability 150000,
   :ammo-type "PLASMA",
   :desc-fields
-  [{:key "伤害", :position 48, :value "1500 hp"}
-   {:key "伤害类型", :position 55, :value "能量胶囊伤害类型"}
-   {:key "弹药类型", :position 52, :value "能量胶囊"}
-   {:key "爆炸半径", :position 61, :value "20 m"}
-   {:key "弹药数量", :position 47, :value [10 "弹药数量单位"]}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"伤害" {:position 48, :value "1500 hp"},
+   "伤害类型" {:position 55, :value "能量胶囊伤害类型"},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "弹药数量" {:position 47, :value [10 "弹药数量单位"]},
+   "弹药类型" {:position 52, :value "能量胶囊"},
+   "爆炸半径" {:position 61, :value "20 m"}},
   :description "I反物质胶囊",
   :grid-index 1712,
   :hp-max 10,
@@ -1713,13 +1706,13 @@
    :turn-acc 1},
   :ammo-type "MISSILE",
   :desc-fields
-  [{:key "伤害", :position 48, :value "21 hp"}
-   {:key "伤害类型", :position 55, :value "导弹伤害类型"}
-   {:key "弹药类型", :position 52, :value "导弹"}
-   {:key "爆炸半径", :position 61, :value "7.5 m"}
-   {:key "弹药数量", :position 47, :value [24 "弹药数量单位"]}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"伤害" {:position 48, :value "21 hp"},
+   "伤害类型" {:position 55, :value "导弹伤害类型"},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "弹药数量" {:position 47, :value [24 "弹药数量单位"]},
+   "弹药类型" {:position 52, :value "导弹"},
+   "爆炸半径" {:position 61, :value "7.5 m"}},
   :description "I导弹组",
   :grid-index 1213,
   :hp-max 24,
@@ -1742,13 +1735,13 @@
    :turn-acc 3},
   :ammo-type "MISSILE",
   :desc-fields
-  [{:key "伤害", :position 48, :value "54 hp"}
-   {:key "伤害类型", :position 55, :value "导弹伤害类型"}
-   {:key "弹药类型", :position 52, :value "导弹"}
-   {:key "爆炸半径", :position 61, :value "9 m"}
-   {:key "弹药数量", :position 47, :value [24 "弹药数量单位"]}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"伤害" {:position 48, :value "54 hp"},
+   "伤害类型" {:position 55, :value "导弹伤害类型"},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "弹药数量" {:position 47, :value [24 "弹药数量单位"]},
+   "弹药类型" {:position 52, :value "导弹"},
+   "爆炸半径" {:position 61, :value "9 m"}},
   :description "I超音速导弹组",
   :grid-index 1313,
   :hp-max 24,
@@ -1771,13 +1764,13 @@
    :turn-acc 5},
   :ammo-type "MISSILE",
   :desc-fields
-  [{:key "伤害", :position 48, :value "120 hp"}
-   {:key "伤害类型", :position 55, :value "导弹伤害类型"}
-   {:key "弹药类型", :position 52, :value "导弹"}
-   {:key "爆炸半径", :position 61, :value "10 m"}
-   {:key "弹药数量", :position 47, :value [24 "弹药数量单位"]}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"伤害" {:position 48, :value "120 hp"},
+   "伤害类型" {:position 55, :value "导弹伤害类型"},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "弹药数量" {:position 47, :value [24 "弹药数量单位"]},
+   "弹药类型" {:position 52, :value "导弹"},
+   "爆炸半径" {:position 61, :value "10 m"}},
   :description "I引力导弹组",
   :grid-index 1413,
   :hp-max 24,
@@ -1800,13 +1793,9 @@
    :turn-acc 0},
   :bomb-type "EMCAPSULE",
   :desc-fields
-  [{:position 68}
-   {:position 69}
-   {:position 70}
-   {:key "弹药类型", :position 52, :value "-"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}
-   {:position 71}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "弹药类型" {:position 52, :value "-"}},
   :description "I电磁干扰胶囊",
   :grid-index 1812,
   :hp-max 60,
@@ -1829,13 +1818,9 @@
    :turn-acc 0},
   :bomb-type "EMCAPSULE",
   :desc-fields
-  [{:position 68}
-   {:position 69}
-   {:position 70}
-   {:key "弹药类型", :position 52, :value "-"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}
-   {:position 71}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "弹药类型" {:position 52, :value "-"}},
   :description "I电磁压制胶囊",
   :grid-index 1813,
   :hp-max 60,
@@ -1849,14 +1834,12 @@
   :type-string "成品"}
  {:craft-type 1,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "15 hp"}
-   {:position 48}
-   {:key "伤害类型", :position 55, :value "-"}
-   {:position 49}
-   {:key "射击距离", :position 60, :value "-"}
-   {:key "飞行速度", :position 59, :value "-"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"伤害类型" {:position 55, :value "-"},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "额外产出"},
+   "射击距离" {:position 60, :value "-"},
+   "最大耐久度" {:position 53, :value "15 hp"},
+   "飞行速度" {:position 59, :value "-"}},
   :description "I地面战斗机-E型",
   :grid-index 1607,
   :hp-max 1500,
@@ -1872,14 +1855,12 @@
   :type-string "成品"}
  {:craft-type 1,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "15 hp"}
-   {:position 48}
-   {:key "伤害类型", :position 55, :value "-"}
-   {:position 49}
-   {:key "射击距离", :position 60, :value "-"}
-   {:key "飞行速度", :position 59, :value "-"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"伤害类型" {:position 55, :value "-"},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "射击距离" {:position 60, :value "-"},
+   "最大耐久度" {:position 53, :value "15 hp"},
+   "飞行速度" {:position 59, :value "-"}},
   :description "I地面战斗机-A型",
   :grid-index 1608,
   :hp-max 1500,
@@ -1894,14 +1875,12 @@
   :type-string "成品"}
  {:craft-type 1,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "15 hp"}
-   {:position 48}
-   {:key "伤害类型", :position 55, :value "-"}
-   {:position 49}
-   {:key "射击距离", :position 60, :value "-"}
-   {:key "飞行速度", :position 59, :value "-"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"伤害类型" {:position 55, :value "-"},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "射击距离" {:position 60, :value "-"},
+   "最大耐久度" {:position 53, :value "15 hp"},
+   "飞行速度" {:position 59, :value "-"}},
   :description "I地面战斗机-F型",
   :grid-index 1609,
   :hp-max 1500,
@@ -1916,14 +1895,12 @@
   :type-string "成品"}
  {:craft-type 3,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "80 hp"}
-   {:position 48}
-   {:key "伤害类型", :position 55, :value "-"}
-   {:position 49}
-   {:key "射击距离", :position 60, :value "-"}
-   {:key "飞行速度", :position 59, :value "-"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"伤害类型" {:position 55, :value "-"},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "射击距离" {:position 60, :value "-"},
+   "最大耐久度" {:position 53, :value "80 hp"},
+   "飞行速度" {:position 59, :value "-"}},
   :description "I太空战斗机-A型",
   :grid-index 1610,
   :hp-max 8000,
@@ -1951,17 +1928,11 @@
   :type-string "成品"}
  {:craft-type 7,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "80 hp"}
-   {:key "伤害类型", :position 55, :value "-"}
-   {:position 62}
-   {:position 63}
-   {:position 64}
-   {:position 65}
-   {:position 66}
-   {:position 67}
-   {:key "飞行速度", :position 59, :value "-"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"伤害类型" {:position 55, :value "-"},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "80 hp"},
+   "飞行速度" {:position 59, :value "-"}},
   :description "I太空战斗机-F型",
   :grid-index 1611,
   :hp-max 8000,
@@ -1988,8 +1959,8 @@
   :type "PRODUCT",
   :type-string "成品"}
  {:desc-fields
-  [{:key "采集自", :position 0, :value "黑雾残骸"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "采集自" {:position 0, :value "黑雾残骸"}},
   :description "I存储单元",
   :enemy-drop-count 2.5,
   :enemy-drop-level 4,
@@ -2006,8 +1977,8 @@
   :type-string "黑雾物品",
   :unlock-key -2}
  {:desc-fields
-  [{:key "采集自", :position 0, :value "黑雾残骸"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "采集自" {:position 0, :value "黑雾残骸"}},
   :description "I硅基神经元",
   :enemy-drop-count 1.5,
   :enemy-drop-level 6,
@@ -2024,8 +1995,8 @@
   :type-string "黑雾物品",
   :unlock-key -2}
  {:desc-fields
-  [{:key "采集自", :position 0, :value "黑雾残骸"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "采集自" {:position 0, :value "黑雾残骸"}},
   :description "I物质重组器",
   :enemy-drop-count 1.5,
   :enemy-drop-level 5,
@@ -2042,8 +2013,8 @@
   :type-string "黑雾物品",
   :unlock-key -2}
  {:desc-fields
-  [{:key "采集自", :position 0, :value "黑雾残骸"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "采集自" {:position 0, :value "黑雾残骸"}},
   :description "I负熵奇点",
   :enemy-drop-count 1.399999976158142,
   :enemy-drop-level 7,
@@ -2060,8 +2031,8 @@
   :type-string "黑雾物品",
   :unlock-key -2}
  {:desc-fields
-  [{:key "采集自", :position 0, :value "黑雾残骸"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "采集自" {:position 0, :value "黑雾残骸"}},
   :description "I共振粒子",
   :enemy-drop-count 1.5,
   :enemy-drop-level 8,
@@ -2079,12 +2050,12 @@
   :unlock-key -2}
  {:ability 50,
   :desc-fields
-  [{:key "燃料类型", :position 2, :value "化学"}
-   {:key "能量", :position 3, :value "3 MJ"}
-   {:key "机甲功率提升", :position 31, :value "+0%"}
-   {:key "手动制造速度", :position 54, :value "+50%"}
-   {:key "采集自", :position 0, :value "黑雾残骸"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"增产剂效果" {:position 40, :value "额外产出"},
+   "手动制造速度" {:position 54, :value "+50%"},
+   "机甲功率提升" {:position 31, :value "+0%"},
+   "燃料类型" {:position 2, :value "化学"},
+   "能量" {:position 3, :value "3 MJ"},
+   "采集自" {:position 0, :value "黑雾残骸"}},
   :description "I能量碎片",
   :enemy-drop-count 2.5,
   :enemy-drop-level 1,
@@ -2109,10 +2080,10 @@
   :build-mode 2,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "3 hp"}
-   {:key "运载速度", :position 15, :value "6/s"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "3 hp"},
+   "运载速度" {:position 15, :value "6/s"}},
   :description "I低速传送带",
   :grade 1,
   :grid-index 2201,
@@ -2146,10 +2117,10 @@
   :build-mode 2,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "3 hp"}
-   {:key "运载速度", :position 15, :value "12/s"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "3 hp"},
+   "运载速度" {:position 15, :value "12/s"}},
   :description "I高速传送带",
   :grade 2,
   :grid-index 2202,
@@ -2183,10 +2154,10 @@
   :build-mode 2,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "3 hp"}
-   {:key "运载速度", :position 15, :value "30/s"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "3 hp"},
+   "运载速度" {:position 15, :value "30/s"}},
   :description "I极速传送带",
   :grade 3,
   :grid-index 2203,
@@ -2238,13 +2209,13 @@
   :build-mode 3,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "3 hp"}
-   {:key "运送速度", :position 20, :value [2 "往返每秒每格"]}
-   {:key "货物堆叠", :position 21, :value 1}
-   {:key "工作功率", :position 11, :value "18 KW"}
-   {:key "待机功率", :position 12, :value "9000W"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "18 KW"},
+   "待机功率" {:position 12, :value "9000W"},
+   "最大耐久度" {:position 53, :value "3 hp"},
+   "货物堆叠" {:position 21, :value 1},
+   "运送速度" {:position 20, :value [2 "往返每秒每格"]}},
   :description "I低速分拣器",
   :grade 1,
   :grid-index 2301,
@@ -2304,13 +2275,13 @@
   :build-mode 3,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "3 hp"}
-   {:key "运送速度", :position 20, :value [3 "往返每秒每格"]}
-   {:key "货物堆叠", :position 21, :value 1}
-   {:key "工作功率", :position 11, :value "36 KW"}
-   {:key "待机功率", :position 12, :value "9000W"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "36 KW"},
+   "待机功率" {:position 12, :value "9000W"},
+   "最大耐久度" {:position 53, :value "3 hp"},
+   "货物堆叠" {:position 21, :value 1},
+   "运送速度" {:position 20, :value [3 "往返每秒每格"]}},
   :description "I高速分拣器",
   :grade 2,
   :grid-index 2302,
@@ -2370,13 +2341,13 @@
   :build-mode 3,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "3 hp"}
-   {:key "运送速度", :position 20, :value [6 "往返每秒每格"]}
-   {:key "货物堆叠", :position 21, :value 1}
-   {:key "工作功率", :position 11, :value "72 KW"}
-   {:key "待机功率", :position 12, :value "9000W"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "72 KW"},
+   "待机功率" {:position 12, :value "9000W"},
+   "最大耐久度" {:position 53, :value "3 hp"},
+   "货物堆叠" {:position 21, :value 1},
+   "运送速度" {:position 20, :value [6 "往返每秒每格"]}},
   :description "I极速分拣器",
   :grade 3,
   :grid-index 2303,
@@ -2436,14 +2407,12 @@
   :build-mode 3,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "3 hp"}
-   {:key "运送速度", :position 20, :value [10 "往返每秒每格"]}
-   {:position 72}
-   {:position 73}
-   {:key "工作功率", :position 11, :value "144 KW"}
-   {:key "待机功率", :position 12, :value "9000W"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "144 KW"},
+   "待机功率" {:position 12, :value "9000W"},
+   "最大耐久度" {:position 53, :value "3 hp"},
+   "运送速度" {:position 20, :value [10 "往返每秒每格"]}},
   :description "I集装分拣器",
   :grade 4,
   :grid-index 2304,
@@ -2507,10 +2476,10 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "5 hp"}
-   {:key "接口数量", :position 16, :value 4}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "接口数量" {:position 16, :value 4},
+   "最大耐久度" {:position 53, :value "5 hp"}},
   :description "I四向分流器",
   :grid-index 2204,
   :hp-max 500,
@@ -2565,11 +2534,11 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "5 hp"}
-   {:key "工作功率", :position 11, :value "144 KW"}
-   {:key "待机功率", :position 12, :value "9000W"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "144 KW"},
+   "待机功率" {:position 12, :value "9000W"},
+   "最大耐久度" {:position 53, :value "5 hp"}},
   :description "I自动集装机",
   :grid-index 2205,
   :hp-max 500,
@@ -2624,11 +2593,11 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "3 hp"}
-   {:key "工作功率", :position 11, :value "36 KW"}
-   {:key "待机功率", :position 12, :value "9000W"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "36 KW"},
+   "待机功率" {:position 12, :value "9000W"},
+   "最大耐久度" {:position 53, :value "3 hp"}},
   :description "I流速监测器",
   :grid-index 2206,
   :hp-max 300,
@@ -2688,11 +2657,11 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "8 hp"}
-   {:key "工作功率", :position 11, :value "90 KW"}
-   {:key "待机功率", :position 12, :value "4500W"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "90 KW"},
+   "待机功率" {:position 12, :value "4500W"},
+   "最大耐久度" {:position 53, :value "8 hp"}},
   :description "I喷涂机",
   :grid-index 2207,
   :hp-max 800,
@@ -2748,13 +2717,13 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "12 hp"}
-   {:key "最大充能功率", :position 38, :value "9 MW"}
-   {:key "待机功率", :position 12, :value "18 KW"}
-   {:key "蓄电量", :position 10, :value "0J"}
-   {:key "配送范围", :position 44, :value "-"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "待机功率" {:position 12, :value "18 KW"},
+   "最大充能功率" {:position 38, :value "9 MW"},
+   "最大耐久度" {:position 53, :value "12 hp"},
+   "蓄电量" {:position 10, :value "0J"},
+   "配送范围" {:position 44, :value "-"}},
   :description "I物流配送器",
   :grid-index 2211,
   :hp-max 1200,
@@ -2813,10 +2782,10 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "8 hp"}
-   {:key "仓储空间", :position 17, :value [30 "仓储空间的后缀"]}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"仓储空间" {:position 17, :value [30 "仓储空间的后缀"]},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "8 hp"}},
   :description "I小型储物仓",
   :drop-rate 0.5,
   :grid-index 2208,
@@ -2874,10 +2843,10 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "16 hp"}
-   {:key "仓储空间", :position 17, :value [60 "仓储空间的后缀"]}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"仓储空间" {:position 17, :value [60 "仓储空间的后缀"]},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "16 hp"}},
   :description "I大型储物仓",
   :drop-rate 0.5,
   :grid-index 2209,
@@ -2934,10 +2903,10 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "12 hp"}
-   {:key "流体容量", :position 30, :value 10000}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "12 hp"},
+   "流体容量" {:position 30, :value 10000}},
   :description "I储液罐",
   :grid-index 2210,
   :hp-max 1200,
@@ -2993,12 +2962,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "10 hp"}
-   {:key "制造速度", :position 22, :value "0.75x"}
-   {:key "工作功率", :position 11, :value "270 KW"}
-   {:key "待机功率", :position 12, :value "12 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "制造速度" {:position 22, :value "0.75x"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "270 KW"},
+   "待机功率" {:position 12, :value "12 KW"},
+   "最大耐久度" {:position 53, :value "10 hp"}},
   :description "I制造台 Mk.I",
   :grade 1,
   :grid-index 2404,
@@ -3061,12 +3030,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "10 hp"}
-   {:key "制造速度", :position 22, :value "1x"}
-   {:key "工作功率", :position 11, :value "540 KW"}
-   {:key "待机功率", :position 12, :value "18 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "制造速度" {:position 22, :value "1x"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "540 KW"},
+   "待机功率" {:position 12, :value "18 KW"},
+   "最大耐久度" {:position 53, :value "10 hp"}},
   :description "I制造台 Mk.II",
   :grade 2,
   :grid-index 2405,
@@ -3129,12 +3098,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "10 hp"}
-   {:key "制造速度", :position 22, :value "1.5x"}
-   {:key "工作功率", :position 11, :value "1 MW"}
-   {:key "待机功率", :position 12, :value "24 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "制造速度" {:position 22, :value "1.5x"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "1 MW"},
+   "待机功率" {:position 12, :value "24 KW"},
+   "最大耐久度" {:position 53, :value "10 hp"}},
   :description "I制造台 Mk.III",
   :grade 3,
   :grid-index 2406,
@@ -3197,12 +3166,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "30 hp"}
-   {:key "制造速度", :position 22, :value "3x"}
-   {:key "工作功率", :position 11, :value "2 MW"}
-   {:key "待机功率", :position 12, :value "54 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "制造速度" {:position 22, :value "3x"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "2 MW"},
+   "待机功率" {:position 12, :value "54 KW"},
+   "最大耐久度" {:position 53, :value "30 hp"}},
   :description "I制造台 Mk.IV",
   :grade 4,
   :grid-index 2407,
@@ -3260,11 +3229,11 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "5 hp"}
-   {:key "连接长度", :position 13, :value "22 m"}
-   {:key "覆盖范围", :position 14, :value "10 m"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "5 hp"},
+   "覆盖范围" {:position 14, :value "10 m"},
+   "连接长度" {:position 13, :value "22 m"}},
   :description "I电力感应塔",
   :grid-index 2101,
   :hp-max 500,
@@ -3319,13 +3288,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "6 hp"}
-   {:key "连接长度", :position 13, :value "45 m"}
-   {:key "覆盖范围", :position 14, :value "6 m"}
-   {:key "工作功率", :position 11, :value "0W"}
-   {:key "待机功率", :position 12, :value "0W"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "0W"},
+   "待机功率" {:position 12, :value "0W"},
+   "最大耐久度" {:position 53, :value "6 hp"},
+   "覆盖范围" {:position 14, :value "6 m"},
+   "连接长度" {:position 13, :value "45 m"}},
   :description "I无线输电塔",
   :grid-index 2102,
   :hp-max 600,
@@ -3386,12 +3355,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "8 hp"}
-   {:key "连接长度", :position 13, :value "53 m"}
-   {:key "覆盖范围", :position 14, :value "26 m"}
-   {:key "待机功率", :position 12, :value "0W"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "待机功率" {:position 12, :value "0W"},
+   "最大耐久度" {:position 53, :value "8 hp"},
+   "覆盖范围" {:position 14, :value "26 m"},
+   "连接长度" {:position 13, :value "53 m"}},
   :description "I卫星配电站",
   :grid-index 2103,
   :hp-max 800,
@@ -3452,13 +3421,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "8 hp"}
-   {:key "发电类型", :position 4, :value "离子流"}
-   {:key "发电功率", :position 5, :value "300 KW"}
-   {:key "连接长度", :position 13, :value "16 m"}
-   {:key "覆盖范围", :position 14, :value "7.2 m"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "发电功率" {:position 5, :value "300 KW"},
+   "发电类型" {:position 4, :value "离子流"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "8 hp"},
+   "覆盖范围" {:position 14, :value "7.2 m"},
+   "连接长度" {:position 13, :value "16 m"}},
   :description "I风力涡轮机",
   :grid-index 2104,
   :hp-max 800,
@@ -3531,12 +3500,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "20 hp"}
-   {:key "发电类型", :position 4, :value "离子流"}
-   {:key "发电功率", :position 5, :value "2 MW"}
-   {:key "热效率", :position 6, :value "0 %"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "发电功率" {:position 5, :value "2 MW"},
+   "发电类型" {:position 4, :value "离子流"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "20 hp"},
+   "热效率" {:position 6, :value "0 %"}},
   :description "I火力发电厂",
   :grid-index 2105,
   :hp-max 2000,
@@ -3610,11 +3579,11 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "20 hp"}
-   {:key "发电类型", :position 4, :value "离子流"}
-   {:key "发电功率", :position 5, :value "15 MW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "发电功率" {:position 5, :value "15 MW"},
+   "发电类型" {:position 4, :value "离子流"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "20 hp"}},
   :description "I微型聚变发电站",
   :grid-index 2108,
   :hp-max 2000,
@@ -3685,11 +3654,11 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "20 hp"}
-   {:key "发电类型", :position 4, :value "地热"}
-   {:key "基础发电功率", :position 39, :value "4 MW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "发电类型" {:position 4, :value "地热"},
+   "基础发电功率" {:position 39, :value "4 MW"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "20 hp"}},
   :description "I地热发电站",
   :grid-index 2107,
   :hp-max 2000,
@@ -3763,13 +3732,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "12 hp"}
-   {:key "开采对象", :position 18, :value "-"}
-   {:key "开采速度", :position 19, :value "-"}
-   {:key "工作功率", :position 11, :value "420 KW"}
-   {:key "待机功率", :position 12, :value "24 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "420 KW"},
+   "开采对象" {:position 18, :value "-"},
+   "开采速度" {:position 19, :value "-"},
+   "待机功率" {:position 12, :value "24 KW"},
+   "最大耐久度" {:position 53, :value "12 hp"}},
   :description "I采矿机",
   :grid-index 2305,
   :hp-max 1200,
@@ -3831,13 +3800,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "20 hp"}
-   {:key "开采对象", :position 18, :value "-"}
-   {:key "开采速度", :position 19, :value "-"}
-   {:key "工作功率", :position 11, :value "2 MW"}
-   {:key "待机功率", :position 12, :value "168 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "2 MW"},
+   "开采对象" {:position 18, :value "-"},
+   "开采速度" {:position 19, :value "-"},
+   "待机功率" {:position 12, :value "168 KW"},
+   "最大耐久度" {:position 53, :value "20 hp"}},
   :description "I大型采矿机",
   :grid-index 2306,
   :hp-max 2000,
@@ -3914,13 +3883,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "10 hp"}
-   {:key "开采对象", :position 18, :value "-"}
-   {:key "开采速度", :position 19, :value "-"}
-   {:key "工作功率", :position 11, :value "300 KW"}
-   {:key "待机功率", :position 12, :value "12 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "300 KW"},
+   "开采对象" {:position 18, :value "-"},
+   "开采速度" {:position 19, :value "-"},
+   "待机功率" {:position 12, :value "12 KW"},
+   "最大耐久度" {:position 53, :value "10 hp"}},
   :description "I抽水站",
   :grid-index 2307,
   :hp-max 1000,
@@ -3981,12 +3950,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "10 hp"}
-   {:key "制造速度", :position 22, :value "1x"}
-   {:key "工作功率", :position 11, :value "360 KW"}
-   {:key "待机功率", :position 12, :value "12 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "制造速度" {:position 22, :value "1x"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "360 KW"},
+   "待机功率" {:position 12, :value "12 KW"},
+   "最大耐久度" {:position 53, :value "10 hp"}},
   :description "I电弧熔炉",
   :grade 1,
   :grid-index 2401,
@@ -4049,12 +4018,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "15 hp"}
-   {:key "制造速度", :position 22, :value "2x"}
-   {:key "工作功率", :position 11, :value "1 MW"}
-   {:key "待机功率", :position 12, :value "48 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "制造速度" {:position 22, :value "2x"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "1 MW"},
+   "待机功率" {:position 12, :value "48 KW"},
+   "最大耐久度" {:position 53, :value "15 hp"}},
   :description "I位面熔炉",
   :grade 2,
   :grid-index 2402,
@@ -4117,12 +4086,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "30 hp"}
-   {:key "制造速度", :position 22, :value "3x"}
-   {:key "工作功率", :position 11, :value "2 MW"}
-   {:key "待机功率", :position 12, :value "96 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "制造速度" {:position 22, :value "3x"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "2 MW"},
+   "待机功率" {:position 12, :value "96 KW"},
+   "最大耐久度" {:position 53, :value "30 hp"}},
   :description "I熔炉 Mk.III",
   :grade 3,
   :grid-index 2403,
@@ -4188,13 +4157,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "20 hp"}
-   {:key "开采对象", :position 18, :value "-"}
-   {:key "开采速度", :position 19, :value "-"}
-   {:key "工作功率", :position 11, :value "840 KW"}
-   {:key "待机功率", :position 12, :value "24 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "840 KW"},
+   "开采对象" {:position 18, :value "-"},
+   "开采速度" {:position 19, :value "-"},
+   "待机功率" {:position 12, :value "24 KW"},
+   "最大耐久度" {:position 53, :value "20 hp"}},
   :description "I原油萃取站",
   :grid-index 2308,
   :hp-max 2000,
@@ -4259,12 +4228,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "18 hp"}
-   {:key "制造速度", :position 22, :value "1x"}
-   {:key "工作功率", :position 11, :value "960 KW"}
-   {:key "待机功率", :position 12, :value "24 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "制造速度" {:position 22, :value "1x"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "960 KW"},
+   "待机功率" {:position 12, :value "24 KW"},
+   "最大耐久度" {:position 53, :value "18 hp"}},
   :description "I原油精炼厂",
   :grid-index 2309,
   :hp-max 1800,
@@ -4327,12 +4296,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "12 hp"}
-   {:key "制造速度", :position 22, :value "1x"}
-   {:key "工作功率", :position 11, :value "720 KW"}
-   {:key "待机功率", :position 12, :value "24 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "制造速度" {:position 22, :value "1x"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "720 KW"},
+   "待机功率" {:position 12, :value "24 KW"},
+   "最大耐久度" {:position 53, :value "12 hp"}},
   :description "I化工厂",
   :grade 1,
   :grid-index 2311,
@@ -4398,12 +4367,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "12 hp"}
-   {:key "制造速度", :position 22, :value "2x"}
-   {:key "工作功率", :position 11, :value "2 MW"}
-   {:key "待机功率", :position 12, :value "36 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "制造速度" {:position 22, :value "2x"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "2 MW"},
+   "待机功率" {:position 12, :value "36 KW"},
+   "最大耐久度" {:position 53, :value "12 hp"}},
   :description "I化工厂 Mk.II",
   :grade 2,
   :grid-index 2312,
@@ -4466,11 +4435,11 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "12 hp"}
-   {:key "工作功率", :position 11, :value "720 KW"}
-   {:key "待机功率", :position 12, :value "18 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "720 KW"},
+   "待机功率" {:position 12, :value "18 KW"},
+   "最大耐久度" {:position 53, :value "12 hp"}},
   :description "I分馏塔",
   :fractionator-desc
   {:fluid-input-max 40,
@@ -4539,11 +4508,11 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "10 hp"}
-   {:key "发电类型", :position 4, :value "离子流"}
-   {:key "基础发电功率", :position 39, :value "360 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "发电类型" {:position 4, :value "离子流"},
+   "基础发电功率" {:position 39, :value "360 KW"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "10 hp"}},
   :description "I太阳能板",
   :grid-index 2106,
   :hp-max 1000,
@@ -4616,12 +4585,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "12 hp"}
-   {:key "输入功率", :position 8, :value "1 MW"}
-   {:key "输出功率", :position 9, :value "2 MW"}
-   {:key "蓄电量", :position 10, :value "540 MJ"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "12 hp"},
+   "蓄电量" {:position 10, :value "540 MJ"},
+   "输入功率" {:position 8, :value "1 MW"},
+   "输出功率" {:position 9, :value "2 MW"}},
   :description "I蓄电器",
   :grid-index 2110,
   :hp-max 1200,
@@ -4687,15 +4656,15 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "12 hp"}
-   {:key "燃料类型", :position 2, :value "储存"}
-   {:key "能量", :position 3, :value "540 MJ"}
-   {:key "机甲功率提升", :position 31, :value "+1%"}
-   {:key "输入功率", :position 8, :value "1 MW"}
-   {:key "输出功率", :position 9, :value "2 MW"}
-   {:key "蓄电量", :position 10, :value "540 MJ"}
-   {:key "制造于", :position 1, :value "能量枢纽"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "能量枢纽"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "12 hp"},
+   "机甲功率提升" {:position 31, :value "+1%"},
+   "燃料类型" {:position 2, :value "储存"},
+   "能量" {:position 3, :value "540 MJ"},
+   "蓄电量" {:position 10, :value "540 MJ"},
+   "输入功率" {:position 8, :value "1 MW"},
+   "输出功率" {:position 9, :value "2 MW"}},
   :description "I蓄电器（满）",
   :fuel-type 8,
   :fuel-type-string "储存",
@@ -4767,12 +4736,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "20 hp"}
-   {:key "弹射速度", :position 34, :value "20/min"}
-   {:key "工作功率", :position 11, :value "1 MW"}
-   {:key "待机功率", :position 12, :value "60 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "1 MW"},
+   "弹射速度" {:position 34, :value "20/min"},
+   "待机功率" {:position 12, :value "60 KW"},
+   "最大耐久度" {:position 53, :value "20 hp"}},
   :description "I电磁轨道弹射器",
   :ejector-desc
   {:bullet-proto-id 1501,
@@ -4837,11 +4806,11 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "30 hp"}
-   {:key "发电类型", :position 4, :value "离子流"}
-   {:key "基础发电功率", :position 39, :value "6 MW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "发电类型" {:position 4, :value "离子流"},
+   "基础发电功率" {:position 39, :value "6 MW"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "30 hp"}},
   :description "I射线接收站",
   :grid-index 2112,
   :hp-max 3000,
@@ -4916,12 +4885,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "80 hp"}
-   {:key "发射速度", :position 35, :value "5/min"}
-   {:key "工作功率", :position 11, :value "18 MW"}
-   {:key "待机功率", :position 12, :value "60 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "发射速度" {:position 35, :value "5/min"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "18 MW"},
+   "待机功率" {:position 12, :value "60 KW"},
+   "最大耐久度" {:position 53, :value "80 hp"}},
   :description "I垂直发射井",
   :grid-index 2411,
   :hp-max 8000,
@@ -4982,12 +4951,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "30 hp"}
-   {:key "输入功率", :position 8, :value "54 MW"}
-   {:key "输出功率", :position 9, :value "54 MW"}
-   {:key "蓄电量", :position 10, :value "0J"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "30 hp"},
+   "蓄电量" {:position 10, :value "0J"},
+   "输入功率" {:position 8, :value "54 MW"},
+   "输出功率" {:position 9, :value "54 MW"}},
   :description "I能量枢纽",
   :grid-index 2109,
   :hp-max 3000,
@@ -5056,12 +5025,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "30 hp"}
-   {:key "制造速度", :position 22, :value "1x"}
-   {:key "工作功率", :position 11, :value "12 MW"}
-   {:key "待机功率", :position 12, :value "120 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "制造速度" {:position 22, :value "1x"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "12 MW"},
+   "待机功率" {:position 12, :value "120 KW"},
+   "最大耐久度" {:position 53, :value "30 hp"}},
   :description "I微型粒子对撞机",
   :grid-index 2313,
   :hp-max 3000,
@@ -5120,12 +5089,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "20 hp"}
-   {:key "发电类型", :position 4, :value "离子流"}
-   {:key "发电功率", :position 5, :value "72 MW"}
-   {:key "热效率", :position 6, :value "1 %"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "发电功率" {:position 5, :value "72 MW"},
+   "发电类型" {:position 4, :value "离子流"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "最大耐久度" {:position 53, :value "20 hp"},
+   "热效率" {:position 6, :value "1 %"}},
   :description "I人造恒星",
   :grid-index 2113,
   :hp-max 2000,
@@ -5201,13 +5170,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "50 hp"}
-   {:key "仓储物品", :position 24, :value [4 "仓储物品种类后缀"]}
-   {:key "最大充能功率", :position 38, :value "60 MW"}
-   {:key "待机功率", :position 12, :value "60 KW"}
-   {:key "蓄电量", :position 10, :value "180 MJ"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"仓储物品" {:position 24, :value [4 "仓储物品种类后缀"]},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "待机功率" {:position 12, :value "60 KW"},
+   "最大充能功率" {:position 38, :value "60 MW"},
+   "最大耐久度" {:position 53, :value "50 hp"},
+   "蓄电量" {:position 10, :value "180 MJ"}},
   :description "I物流运输站",
   :drop-rate 0.5,
   :grid-index 2212,
@@ -5283,13 +5252,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "80 hp"}
-   {:key "仓储物品", :position 24, :value [5 "仓储物品种类后缀"]}
-   {:key "最大充能功率", :position 38, :value "300 MW"}
-   {:key "待机功率", :position 12, :value "60 KW"}
-   {:key "蓄电量", :position 10, :value "12 GJ"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"仓储物品" {:position 24, :value [5 "仓储物品种类后缀"]},
+   "制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "待机功率" {:position 12, :value "60 KW"},
+   "最大充能功率" {:position 38, :value "300 MW"},
+   "最大耐久度" {:position 53, :value "80 hp"},
+   "蓄电量" {:position 10, :value "12 GJ"}},
   :description "I星际物流运输站",
   :drop-rate 0.5,
   :grid-index 2213,
@@ -5366,12 +5335,12 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "80 hp"}
-   {:key "开采对象", :position 18, :value "气态行星"}
-   {:key "工作功率", :position 11, :value "0W"}
-   {:key "采集速度", :position 32, :value [8 "x"]}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "0W"},
+   "开采对象" {:position 18, :value "气态行星"},
+   "最大耐久度" {:position 53, :value "80 hp"},
+   "采集速度" {:position 32, :value [8 "x"]}},
   :description "I轨道采集器",
   :grid-index 2214,
   :hp-max 8000,
@@ -5438,13 +5407,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "12 hp"}
-   {:key "制造速度", :position 22, :value "NaNx"}
-   {:key "研究速度", :position 33, :value [60 " Hash/s"]}
-   {:key "工作功率", :position 11, :value "480 KW"}
-   {:key "待机功率", :position 12, :value "12 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "制造速度" {:position 22, :value "NaNx"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "480 KW"},
+   "待机功率" {:position 12, :value "12 KW"},
+   "最大耐久度" {:position 53, :value "12 hp"},
+   "研究速度" {:position 33, :value [60 " Hash/s"]}},
   :description "I矩阵研究站",
   :grade 1,
   :grid-index 2408,
@@ -5507,13 +5476,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "30 hp"}
-   {:key "制造速度", :position 22, :value "NaNx"}
-   {:key "研究速度", :position 33, :value [60 " Hash/s"]}
-   {:key "工作功率", :position 11, :value "1 MW"}
-   {:key "待机功率", :position 12, :value "48 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "制造速度" {:position 22, :value "NaNx"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "1 MW"},
+   "待机功率" {:position 12, :value "48 KW"},
+   "最大耐久度" {:position 53, :value "30 hp"},
+   "研究速度" {:position 33, :value [60 " Hash/s"]}},
   :description "I矩阵研究站 Mk.II",
   :grade 2,
   :grid-index 2409,
@@ -5576,16 +5545,16 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "30 hp"}
-   {:key "防御塔类型", :position 51, :value "动能武器"}
-   {:key "目标类型", :position 56, :value "对地"}
-   {:key "对地防御范围", :position 57, :value "44 m"}
-   {:key "弹药类型", :position 52, :value "子弹"}
-   {:key "射击速度", :position 49, :value [6 "发每秒"]}
-   {:key "工作功率", :position 11, :value "210 KW"}
-   {:key "待机功率", :position 12, :value "9000W"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "对地防御范围" {:position 57, :value "44 m"},
+   "射击速度" {:position 49, :value [6 "发每秒"]},
+   "工作功率" {:position 11, :value "210 KW"},
+   "弹药类型" {:position 52, :value "子弹"},
+   "待机功率" {:position 12, :value "9000W"},
+   "最大耐久度" {:position 53, :value "30 hp"},
+   "目标类型" {:position 56, :value "对地"},
+   "防御塔类型" {:position 51, :value "动能武器"}},
   :description "I高斯机枪塔",
   :grid-index 2501,
   :hp-max 3000,
@@ -5669,15 +5638,15 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "30 hp"}
-   {:key "防御塔类型", :position 51, :value "能量武器"}
-   {:key "目标类型", :position 56, :value "对地"}
-   {:key "对地防御范围", :position 57, :value "40 m"}
-   {:key "每秒伤害", :position 50, :value "120 hp"}
-   {:key "工作功率", :position 11, :value "3 MW"}
-   {:key "待机功率", :position 12, :value "120 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "对地防御范围" {:position 57, :value "40 m"},
+   "工作功率" {:position 11, :value "3 MW"},
+   "待机功率" {:position 12, :value "120 KW"},
+   "最大耐久度" {:position 53, :value "30 hp"},
+   "每秒伤害" {:position 50, :value "120 hp"},
+   "目标类型" {:position 56, :value "对地"},
+   "防御塔类型" {:position 51, :value "能量武器"}},
   :description "I高频激光塔",
   :grid-index 2504,
   :hp-max 3000,
@@ -5761,16 +5730,16 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "30 hp"}
-   {:key "防御塔类型", :position 51, :value "动能加爆破武器"}
-   {:key "目标类型", :position 56, :value "对地"}
-   {:key "对地防御范围", :position 57, :value "12 ~ 58 m"}
-   {:key "弹药类型", :position 52, :value "炮弹"}
-   {:key "射击速度", :position 49, :value [1 "发每秒"]}
-   {:key "工作功率", :position 11, :value "750 KW"}
-   {:key "待机功率", :position 12, :value "30 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "对地防御范围" {:position 57, :value "12 ~ 58 m"},
+   "射击速度" {:position 49, :value [1 "发每秒"]},
+   "工作功率" {:position 11, :value "750 KW"},
+   "弹药类型" {:position 52, :value "炮弹"},
+   "待机功率" {:position 12, :value "30 KW"},
+   "最大耐久度" {:position 53, :value "30 hp"},
+   "目标类型" {:position 56, :value "对地"},
+   "防御塔类型" {:position 51, :value "动能加爆破武器"}},
   :description "I聚爆加农炮",
   :grid-index 2503,
   :hp-max 3000,
@@ -5855,16 +5824,16 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "30 hp"}
-   {:key "防御塔类型", :position 51, :value "能量武器"}
-   {:key "目标类型", :position 56, :value "对天"}
-   {:key "对天防御范围", :position 58, :value "-"}
-   {:key "弹药类型", :position 52, :value "能量胶囊"}
-   {:key "射击速度", :position 49, :value [1 "发每秒"]}
-   {:key "工作功率", :position 11, :value "1 MW"}
-   {:key "待机功率", :position 12, :value "84 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "对天防御范围" {:position 58, :value "-"},
+   "射击速度" {:position 49, :value [1 "发每秒"]},
+   "工作功率" {:position 11, :value "1 MW"},
+   "弹药类型" {:position 52, :value "能量胶囊"},
+   "待机功率" {:position 12, :value "84 KW"},
+   "最大耐久度" {:position 53, :value "30 hp"},
+   "目标类型" {:position 56, :value "对天"},
+   "防御塔类型" {:position 51, :value "能量武器"}},
   :description "I磁化电浆炮",
   :grid-index 2505,
   :hp-max 3000,
@@ -5948,17 +5917,17 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "30 hp"}
-   {:key "防御塔类型", :position 51, :value "爆破武器"}
-   {:key "目标类型", :position 56, :value "对地且对天"}
-   {:key "对地防御范围", :position 57, :value "60 m"}
-   {:key "对天防御范围", :position 58, :value "-"}
-   {:key "弹药类型", :position 52, :value "导弹"}
-   {:key "射击速度", :position 49, :value [2.5 "发每秒"]}
-   {:key "工作功率", :position 11, :value "600 KW"}
-   {:key "待机功率", :position 12, :value "18 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "对地防御范围" {:position 57, :value "60 m"},
+   "对天防御范围" {:position 58, :value "-"},
+   "射击速度" {:position 49, :value [2.5 "发每秒"]},
+   "工作功率" {:position 11, :value "600 KW"},
+   "弹药类型" {:position 52, :value "导弹"},
+   "待机功率" {:position 12, :value "18 KW"},
+   "最大耐久度" {:position 53, :value "30 hp"},
+   "目标类型" {:position 56, :value "对地且对天"},
+   "防御塔类型" {:position 51, :value "爆破武器"}},
   :description "I导弹防御塔",
   :grid-index 2502,
   :hp-max 3000,
@@ -6042,16 +6011,16 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "30 hp"}
-   {:key "防御塔类型", :position 51, :value "-"}
-   {:key "目标类型", :position 56, :value "对地"}
-   {:key "对地防御范围", :position 57, :value "40 m"}
-   {:key "弹药类型", :position 52, :value "-"}
-   {:key "射击速度", :position 49, :value [0.2 "发每秒"]}
-   {:key "工作功率", :position 11, :value "1 MW"}
-   {:key "待机功率", :position 12, :value "90 KW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "对地防御范围" {:position 57, :value "40 m"},
+   "射击速度" {:position 49, :value [0.2 "发每秒"]},
+   "工作功率" {:position 11, :value "1 MW"},
+   "弹药类型" {:position 52, :value "-"},
+   "待机功率" {:position 12, :value "90 KW"},
+   "最大耐久度" {:position 53, :value "30 hp"},
+   "目标类型" {:position 56, :value "对地"},
+   "防御塔类型" {:position 51, :value "-"}},
   :description "I干扰塔",
   :grid-index 2508,
   :hp-max 3000,
@@ -6139,13 +6108,13 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "30 hp"}
-   {:key "连接长度", :position 13, :value "60 m"}
-   {:key "覆盖范围", :position 14, :value ["电力" "14 m / " "信号" "64 m"]}
-   {:key "工作功率", :position 11, :value "0W"}
-   {:key "待机功率", :position 12, :value "0W"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "0W"},
+   "待机功率" {:position 12, :value "0W"},
+   "最大耐久度" {:position 53, :value "30 hp"},
+   "覆盖范围" {:position 14, :value ["电力" "14 m / " "信号" "64 m"]},
+   "连接长度" {:position 13, :value "60 m"}},
   :description "I信标",
   :grid-index 2509,
   :hp-max 3000,
@@ -6204,11 +6173,11 @@
   :build-mode 1,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "30 hp"}
-   {:key "工作功率", :position 11, :value "24 MW"}
-   {:key "待机功率", :position 12, :value "12 MW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "24 MW"},
+   "待机功率" {:position 12, :value "12 MW"},
+   "最大耐久度" {:position 53, :value "30 hp"}},
   :description "I护盾发生器",
   :field-generator-desc
   {:energy-capacity 8640000000,
@@ -6274,12 +6243,12 @@
   :construction-module-desc
   {:build-range 60, :drone-count 12, :drone-eject-pos [0 6.5 0]},
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "30 hp"}
-   {:key "工作功率", :position 11, :value "2 MW"}
-   {:key "待机功率", :position 12, :value "60 KW"}
-   {:key "覆盖范围", :position 14, :value ["建造" "60 m / " "拾取" "90 m"]}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "工作功率" {:position 11, :value "2 MW"},
+   "待机功率" {:position 12, :value "60 KW"},
+   "最大耐久度" {:position 53, :value "30 hp"},
+   "覆盖范围" {:position 14, :value ["建造" "60 m / " "拾取" "90 m"]}},
   :description "I战场分析基站",
   :drop-rate 0.5,
   :grid-index 2507,
@@ -6340,16 +6309,16 @@
   :build-mode 5,
   :can-build true,
   :desc-fields
-  [{:key "最大耐久度", :position 53, :value "30 hp"}
-   {:key "防御塔类型", :position 51, :value "-"}
-   {:key "目标类型", :position 56, :value "对地"}
-   {:key "对地防御范围", :position 57, :value "8 ~ 55 m"}
-   {:key "弹药类型", :position 52, :value "能量胶囊"}
-   {:key "射击速度", :position 49, :value [0.5 "发每秒"]}
-   {:key "工作功率", :position 11, :value "4 MW"}
-   {:key "待机功率", :position 12, :value "2 MW"}
-   {:key "制造于", :position 1, :value "制造台"}
-   {:key "增产剂效果", :position 40, :value "加速生产"}],
+  {"制造于" {:position 1, :value "制造台"},
+   "增产剂效果" {:position 40, :value "加速生产"},
+   "对地防御范围" {:position 57, :value "8 ~ 55 m"},
+   "射击速度" {:position 49, :value [0.5 "发每秒"]},
+   "工作功率" {:position 11, :value "4 MW"},
+   "弹药类型" {:position 52, :value "能量胶囊"},
+   "待机功率" {:position 12, :value "2 MW"},
+   "最大耐久度" {:position 53, :value "30 hp"},
+   "目标类型" {:position 56, :value "对地"},
+   "防御塔类型" {:position 51, :value "-"}},
   :description "I地面电浆炮",
   :grid-index 2506,
   :hp-max 3000,
@@ -6406,8 +6375,8 @@
   :type "TURRET",
   :type-string "武器"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "科研设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "科研设备"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I电磁矩阵",
   :grid-index 1801,
   :icon-path "Icons/ItemRecipe/t-matrix",
@@ -6419,8 +6388,8 @@
   :type "MATRIX",
   :type-string "科学矩阵"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "科研设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "科研设备"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I能量矩阵",
   :grid-index 1802,
   :icon-path "Icons/ItemRecipe/e-matrix",
@@ -6432,8 +6401,8 @@
   :type "MATRIX",
   :type-string "科学矩阵"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "科研设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "科研设备"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I结构矩阵",
   :grid-index 1803,
   :icon-path "Icons/ItemRecipe/c-matrix",
@@ -6445,8 +6414,8 @@
   :type "MATRIX",
   :type-string "科学矩阵"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "科研设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "科研设备"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I信息矩阵",
   :grid-index 1804,
   :icon-path "Icons/ItemRecipe/i-matrix",
@@ -6458,8 +6427,8 @@
   :type "MATRIX",
   :type-string "科学矩阵"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "科研设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "科研设备"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I引力矩阵",
   :grid-index 1805,
   :icon-path "Icons/ItemRecipe/g-matrix",
@@ -6471,8 +6440,8 @@
   :type "MATRIX",
   :type-string "科学矩阵"}
  {:desc-fields
-  [{:key "制造于", :position 1, :value "科研设备"}
-   {:key "增产剂效果", :position 40, :value "额外产出"}],
+  {"制造于" {:position 1, :value "科研设备"},
+   "增产剂效果" {:position 40, :value "额外产出"}},
   :description "I宇宙矩阵",
   :grid-index 1806,
   :icon-path "Icons/ItemRecipe/u-matrix",
