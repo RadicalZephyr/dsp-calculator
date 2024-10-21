@@ -26,7 +26,9 @@
   [k (keyword (csk/->kebab-case k))])
 
 (defn assoc-desc-field [m {:strs [key value position]}]
-  (assoc m key {:value value :position position}))
+  (if (some? key)
+    (assoc m key {:value value :position position})
+    m))
 
 (defn merge-desc-fields [m]
   (if (and (contains? m "descFields")
