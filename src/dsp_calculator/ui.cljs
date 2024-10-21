@@ -4,6 +4,7 @@
     [re-frame.core :as re-frame]
     [day8.re-frame.tracing :refer-macros [fn-traced]]
     [spade.core   :refer [defclass defattrs]]
+    [dsp-calculator.ui.calculator :as c]
     [dsp-calculator.ui.research :as r]))
 
 (defn home []
@@ -14,13 +15,10 @@
     (fn []
       [home])))
 
-(defn calculator []
-  [:div [:h2 "Calculator"]])
-
 (defn calculator-container []
   (let [subs []]
     (fn []
-      [calculator])))
+      [c/calculator])))
 
 (defn research-container []
   (let [subs []]

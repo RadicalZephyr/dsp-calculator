@@ -1,6 +1,7 @@
 (ns dsp-calculator.devcards.calculator
   (:require [devcards.core]
-            [spade.core :refer [defclass]])
+            [spade.core :refer [defclass]]
+            [dsp-calculator.ui.calculator :as calc])
   (:require-macros
    [devcards.core :as dc :refer [defcard defcard-rg]]))
 
@@ -27,17 +28,14 @@ The calculator interface, the most important part of the site.")
    [:link {:rel "stylesheet" :href "/css/components/tabs.css"}]])
 
 (defcard-rg combo-selector
-  [:main.page.calculator
+  [:main.calculator
    [:div.combo-selector
-    [:div.recipe-picker
-     [:div.icon {:data-icon "ui.select-recipe" :title "Select a recipe"}]
-     [:span.hint "Please select a recipe"]]]
+    [calc/empty-selector]]
    [:br]
    [:div.combo-selector
     [:div.recipe-picker
      (let [item {:id 1101 :name "Iron Ingot"}]
-       [:span.recipe.icon {:data-icon (str "item." item)
-                           :title (:name item)}])]]])
+       [calc/selected-recipe item])]]])
 
 (defcard-rg recipe-picker-dialog
   [:main.page.calculator
