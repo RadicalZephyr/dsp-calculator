@@ -81,12 +81,23 @@
   Each node in the tree is a map representing a specific production
   stage for one item. Each map has these keys:
 
-  - :id - The item id of this node.
-  - :recipe - The id of the recipe this node is using.
+  - :id          - The item id of this node.
+  - :recipe      - The id of the recipe this node is using.
   - :alt-recipes - A vector of alternate recipe ids that could be used.
+  - :items       - A map of item ids to a node for each item needed to
+                   produce this recipe.
 
   Note, because this tree shows the full production chain, there can
   be multiple instances of any given product. Each individual stage
   for that item can use a different recipe."
-  [recipe]
-  )
+  [recipes item-id]
+  (let [item-recipes (get recipes item-id)
+        first-recipe (first item-recipes)
+        alt-recipes (vec (map :id (rest item-recipes)))]
+    {:id item-id
+     :recipe (:id first-recipe)
+     :alt-recipes alt-recipes
+     :items (->> (:items first-recipe)
+                 (map #(production-tree recipes (:id %)))
+                 (map (juxt :id identity))
+                 (into {}))}))
