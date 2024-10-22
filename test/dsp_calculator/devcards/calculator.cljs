@@ -30,15 +30,19 @@ The calculator interface, the most important part of the site.")
    [:style "@layer reset,skeleton,components,pages;"]])
 
 (defcard-rg full-calculator-control
-  [:main.page.calculator
-   [calc/combo-selector
-    [{:id 1101 :name "Iron Ingot" :pos [1 1]}
-     {:id 1104 :name "Copper Ingot" :pos [1 2]}
-     {:id 1102 :name "Magnet" :pos [2 1]}]
-    [{:id 2201 :name "Tesla Tower" :pos [1 1]}
-     {:id 2202 :name "Wireless Power Tower" :pos [1 2]}
-     {:id 2001 :name "Conveyor Belt Mk.I" :pos [2 1]}]
-    nil]])
+  (fn [state _]
+    (let [selected (reagent/cursor state [:selected])]
+      [:main.page.calculator
+       [calc/combo-selector
+        [{:id 1101 :name "Iron Ingot" :pos [1 1]}
+         {:id 1104 :name "Copper Ingot" :pos [1 2]}
+         {:id 1102 :name "Magnet" :pos [2 1]}]
+        [{:id 2201 :name "Tesla Tower" :pos [1 1]}
+         {:id 2202 :name "Wireless Power Tower" :pos [1 2]}
+         {:id 2001 :name "Conveyor Belt Mk.I" :pos [2 1]}]
+        selected]]))
+  (reagent/atom {:selected nil})
+  {:inspect-data true})
 
 (defcard-rg combo-selector
   [:main.calculator

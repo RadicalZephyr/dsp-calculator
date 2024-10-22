@@ -131,7 +131,7 @@
         :buildings buildings
         :open? false
         :close close-dialog]
-       (if selected
+       (if-let [selected @selected]
          [:div.recipe-picker
           [selected-recipe selected]]
          [empty-selector open-dialog])])))
