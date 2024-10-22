@@ -15,15 +15,18 @@
   [:span.recipe.icon {:data-icon (str "item." (:id item))
                       :title (:name item)}])
 
-(defn recipe-grid [items]
+(defn recipe-grid [items selected close]
   [:ul.recipe-grid {:role "listbox"}
    (for [{[x y] :pos :as item} items]
      ^{:key (:id item)}
      [:li {:role "option"
-           :class (grid-pos x y)}
+           :class (grid-pos x y)
+           :on-click (fn []
+                       (reset! selected item)
+                       (close))}
       [recipe-icon item]])])
 
-(defn recipe-picker [& {:keys [id items buildings open? close]}]
+(defn recipe-picker [& {:keys [id items buildings selected open? close]}]
   (let [first-tab? (reagent/atom true)
         first-tab (fn [] (reset! first-tab? true))
         second-tab (fn [] (reset! first-tab? false))]
@@ -49,11 +52,11 @@
          [:div#tabpanel-0.tabpanel
           {:role "tabpanel"
            :class [(if first-tab? "is-visible" "is-hidden")]}
-          [recipe-grid items]]
+          [recipe-grid items selected close]]
          [:div#tabpanel-1.tabpanel.
           {:role "tabpanel"
            :class [(if (not first-tab?) "is-visible" "is-hidden")]}
-          [recipe-grid buildings]]
+          [recipe-grid buildings selected close]]
          [:div.corner-nav
           [:button.close {:on-click close}]]]))))
 
@@ -129,6 +132,7 @@
         :id dialog-id
         :items items
         :buildings buildings
+        :selected selected
         :open? false
         :close close-dialog]
        (if-let [selected @selected]
