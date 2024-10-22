@@ -23,13 +23,13 @@
            :class (grid-pos x y)}
       [recipe-icon item]])])
 
-(defn recipe-picker [dialog-id items buildings {:keys [open? close]}]
+(defn recipe-picker [& {:keys [id items buildings open? close]}]
   (let [first-tab? (reagent/atom true)
         first-tab (fn [] (reset! first-tab? true))
         second-tab (fn [] (reset! first-tab? false))]
-    (fn [dialog-id items buildings]
+    (fn [& {:keys [id items buildings open? close]}]
       (let [first-tab? @first-tab?]
-        [:dialog.window.recipes {:id dialog-id
+        [:dialog.window.recipes {:id id
                                  :open open?
                                  :style {:position "relative"}}
          [:header "Select a Recipe"]
@@ -125,8 +125,12 @@
                          (.close dialog)))]
     (fn [items buildings selected]
       [:div.combo-selector
-       [recipe-picker dialog-id items buildings {:open? false
-                                                 :close close-dialog}]
+       [recipe-picker
+        :id dialog-id
+        :items items
+        :buildings buildings
+        :open? false
+        :close close-dialog]
        (if selected
          [:div.recipe-picker
           [selected-recipe selected]]
