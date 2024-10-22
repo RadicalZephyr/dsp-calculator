@@ -30,6 +30,33 @@
    "Fractionator"
    "Miniature Particle Collider"])
 
+(def raw-resources
+  [[1001 "Iron Ore"]
+   [1002 "Copper Ore"]
+   [1004 "Titanium Ore"]
+   [1005 "Stone"]
+   [1006 "Coal"]
+   [1030 "Log"]
+   [1031 "Plant Fuel"]
+   [1011 "Fire Ice"]
+   [1012 "Kimberlite Ore"]
+   [1013 "Fractal Silicon"]
+   [1014 "Grating Crystal"]
+   [1015 "Stalagmite Crystal"]
+   [1016 "Unipolar Magnet"]
+   [1000 "Water"]
+   [1007 "Crude Oil"]
+   [1208 "Critical Photon"]
+   [5201 "Dark Fog Matrix"]
+   [5202 "Silicon-based Neuron"]
+   [5203 "Matter Recombinator"]
+   [5204 "Negentropy Singularity"]
+   [5205 "Core Element"]
+   [5206 "Energy Shard"]
+   [2207 "Accumulator (full)"] ;; TODO: write a recipe for this and
+                               ;; include it in the EDN file.
+   ])
+
 (defn group-by-outputs [recipes]
   (persistent!
    (reduce
