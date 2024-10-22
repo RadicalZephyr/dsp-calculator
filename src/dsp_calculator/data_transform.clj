@@ -46,13 +46,35 @@
           (assoc "descFields" desc-fields)))
     m))
 
+(defn recipe-map? [m]
+  (and (contains? m "items")
+       (contains? m "itemCounts")
+       (contains? m "results")
+       (contains? m "resultCounts")))
+
+(defn merge-split-recipe-fields [m]
+  (if (recipe-map? m)
+    (let [items (get m "items")
+          item-counts (get m "itemCounts")
+          new-items (mapv (fn [i c] {"id" i "count" c}) items item-counts)
+          results (get m "results")
+          result-counts (get m "resultCounts")
+          new-results (mapv (fn [i c] {"id" i "count" c}) results result-counts)]
+      (-> m
+          (dissoc "items" "itemCounts" "results" "resultCounts")
+          (assoc "items" new-items
+                 "results" new-results)))
+    m))
+
 (defn cljify-map [m]
   (let [ascii-keys (map ascii? (keys m))]
     (when (and (some identity ascii-keys)
                (not (every? identity ascii-keys)))
       (println "found a map with mixed ASCII and non-ASCII keys")
       (prn m)))
-  (let [m (merge-desc-fields m)
+  (let [m (-> m
+              merge-desc-fields
+              merge-split-recipe-fields)
         smap (into {} (map kebab-keywordify (keys m)))]
     (into (sorted-map) (set/rename-keys m smap))))
 

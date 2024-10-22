@@ -12,10 +12,8 @@
   {1 {:id 1
       :name "Iron Ingot"
       :time-spend 60
-      :items [1001]
-      :item-counts [1]
-      :results [1101]
-      :result-counts [1]}})
+      :items [{:id 1001 :count 1}]
+      :results [{:id 1101 :count 1}]}})
 
 (t/deftest test-solver
   (t/is (= 1 2)))

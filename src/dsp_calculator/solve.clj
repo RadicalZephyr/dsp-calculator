@@ -34,7 +34,7 @@
   (persistent!
    (reduce
     (fn [ret r]
-      (let [outs (:results r)]
+      (let [outs (map :id (:results r))]
         (reduce (fn [ret k]
                   (assoc! ret k
                           (conj (get ret k []) r)))
