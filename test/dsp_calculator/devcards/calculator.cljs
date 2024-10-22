@@ -31,7 +31,12 @@ The calculator interface, the most important part of the site.")
 
 (defcard-rg full-calculator-control
   (fn [state _]
-    (let [selected (reagent/cursor state [:selected])]
+    (let [selected (reagent/cursor state [:selected])
+          ratio (reagent/cursor state [:ratio])
+          production-facility (reagent/cursor state [:production-facility])
+          specific (reagent/cursor state [:specific])
+          timescale (reagent/cursor state [:timescale])
+          proliferator (reagent/cursor state [:proliferator])]
       [:main.page.calculator
        [calc/combo-selector
         [{:id 1101 :name "Iron Ingot" :pos [1 1]}
@@ -40,8 +45,19 @@ The calculator interface, the most important part of the site.")
         [{:id 2201 :name "Tesla Tower" :pos [1 1]}
          {:id 2202 :name "Wireless Power Tower" :pos [1 2]}
          {:id 2001 :name "Conveyor Belt Mk.I" :pos [2 1]}]
-        selected]]))
-  (reagent/atom {:selected nil})
+        :selected            selected
+        :ratio               ratio
+        :production-facility @production-facility
+        :specific            specific
+        :timescale           timescale
+        :proliferator        proliferator]]))
+  (reagent/atom
+   {:selected nil
+    :ratio 1
+    :specific nil
+    :production-facility "Smelting Facility" ; TODO: FIXME!
+    :timescale "minute"
+    :proliferator "none"})
   {:inspect-data true})
 
 (defcard-rg selector-button
@@ -98,7 +114,9 @@ The calculator interface, the most important part of the site.")
       (fn [state _]
         [:main.page.calculator
          [:div.combo-selector
-          [calc/controls ratio production-facility specific timescale proliferator]]])))
+          [calc/ratio-control ratio production-facility]
+          [calc/specific-control specific timescale]
+          [calc/proliferator-control proliferator]]])))
   (reagent/atom
    {:ratio 1
     :production-facility "Smelting Facility"

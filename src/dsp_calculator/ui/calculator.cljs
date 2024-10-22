@@ -102,12 +102,6 @@
     [:option {:value "extra"} "Extra Products"]
     [:option {:value "custom"} "Customized"]]])
 
-(defn controls [ratio production-facility specific timescale proliferator]
-  [:div
-   [ratio-control ratio production-facility]
-   [specific-control specific timescale]
-   [proliferator-control proliferator]])
-
 (defn selector-button [selected open-dialog]
   (let [[class icon title] (if selected
                              [".recipe" (str "item." (:id selected)) (:name selected)]
@@ -118,7 +112,12 @@
                 :on-click open-dialog}
      (when (nil? selected) [:span.hint "Please select a recipe"])]))
 
-(defn combo-selector [items buildings selected]
+(defn combo-selector [items buildings & {:keys [selected
+                                                ratio
+                                                production-facility
+                                                specific
+                                                timescale
+                                                proliferator]}]
   (let [dialog-id (str (gensym "recipe-picker"))
         open-dialog (fn []
                       (let [dialog (.getElementById js/document dialog-id)]
@@ -126,15 +125,24 @@
         close-dialog (fn []
                        (let [dialog (.getElementById js/document dialog-id)]
                          (.close dialog)))]
-    (fn [items buildings selected]
-      [:div.combo-selector
-       [recipe-picker
-        :id dialog-id
-        :items items
-        :buildings buildings
-        :selected selected
-        :open? false
-        :close close-dialog]
-       (let [selected @selected]
-        [:div.recipe-picker
-         [selector-button selected open-dialog]])])))
+    (fn [items buildings & {:keys [selected
+                                   ratio
+                                   production-facility
+                                   specific
+                                   timescale
+                                   proliferator]}]
+      (let [selected-val @selected]
+        `[:div.combo-selector
+          ~[recipe-picker
+            :id dialog-id
+            :items items
+            :buildings buildings
+            :selected selected
+            :open? false
+            :close close-dialog]
+          ~[:div.recipe-picker
+            [selector-button selected-val open-dialog]]
+          ~@(when selected-val
+              [[ratio-control ratio production-facility]
+               [specific-control specific timescale]
+               [proliferator-control proliferator]])]))))
