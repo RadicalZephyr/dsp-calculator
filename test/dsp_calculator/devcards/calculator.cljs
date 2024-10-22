@@ -44,15 +44,16 @@ The calculator interface, the most important part of the site.")
   (reagent/atom {:selected nil})
   {:inspect-data true})
 
-(defcard-rg combo-selector
+(defcard-rg selector-button
   [:main.calculator
    [:div.combo-selector
-    [calc/empty-selector]]
+    [:div.recipe-picker
+     [calc/selector-button nil]]]
    [:br]
    [:div.combo-selector
     [:div.recipe-picker
      (let [item {:id 1101 :name "Iron Ingot"}]
-       [calc/selected-recipe item])]]])
+       [calc/selector-button item])]]])
 
 (defcard-rg recipe-picker-dialog
   [:main.page.calculator

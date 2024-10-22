@@ -60,13 +60,6 @@
          [:div.corner-nav
           [:button.close {:on-click close}]]]))))
 
-(defn empty-selector [open-dialog]
-  [:div.recipe-picker
-   [:div.icon {:data-icon "ui.select-recipe"
-               :title "Select a recipe"
-               :on-click open-dialog}]
-   [:span.hint "Please select a recipe"]])
-
 (defn inc-dec-buttons [ratom]
   [:div.steppers
    [:button.increment {:on-click #(swap! ratom inc)}]
@@ -115,8 +108,15 @@
    [specific-control specific timescale]
    [proliferator-control proliferator]])
 
-(defn selected-recipe [selected]
-  [recipe-icon selected])
+(defn selector-button [selected open-dialog]
+  (let [[class icon title] (if selected
+                             [".recipe" (str "item." (:id selected)) (:name selected)]
+                             [nil "ui.select-recipe" "Select a recipe"])]
+    [:div.icon {:class [class]
+                :data-icon icon
+                :title title
+                :on-click open-dialog}
+     (when (nil? selected) [:span.hint "Please select a recipe"])]))
 
 (defn combo-selector [items buildings selected]
   (let [dialog-id (str (gensym "recipe-picker"))
@@ -135,7 +135,6 @@
         :selected selected
         :open? false
         :close close-dialog]
-       (if-let [selected @selected]
-         [:div.recipe-picker
-          [selected-recipe selected]]
-         [empty-selector open-dialog])])))
+       (let [selected @selected]
+        [:div.recipe-picker
+         [selector-button selected open-dialog]])])))
