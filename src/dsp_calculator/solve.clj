@@ -76,6 +76,11 @@
 
 (def ^:dynamic *max-depth* 10)
 
+(def production-summary
+  {:alt-recipes #{}
+   :facilities #{}
+   :raw-resources {}})
+
 (defn production-tree
   "Produce a production tree describing the ratios needed to produce a
   given recipe.
@@ -93,18 +98,23 @@
   be multiple instances of any given product. Each individual stage
   for that item can use a different recipe."
   [recipes item-id]
-  (letfn [(r [depth recipes item-id]
+  (letfn [(r [summary depth recipes item-id]
             (if (< depth *max-depth*)
               (let [item-recipes (get recipes item-id)
                     first-recipe (first item-recipes)
-                    alt-recipes (mapv :id (rest item-recipes))]
+                    alt-recipes (map :id (rest item-recipes))]
+                (when (seq alt-recipes)
+                  (swap! summary update :alt-recipes
+                         conj (vec (cons (:id first-recipe) alt-recipes))))
                 {:id item-id
                  :recipe (:id first-recipe)
-                 :alt-recipes alt-recipes
+                 :alt-recipes (vec alt-recipes)
                  :items (let [depth (inc depth)]
                           (->> (:items first-recipe)
-                               (map #(r depth recipes (:id %)))
+                               (map #(r summary depth recipes (:id %)))
                                (map (juxt :id identity))
                                (into {})))})
               {:error "max depth reached"}))]
-    (r 0 recipes item-id)))
+    (let [summary (atom production-summary)
+          tree (r summary 0 recipes item-id)]
+      [@summary tree])))
