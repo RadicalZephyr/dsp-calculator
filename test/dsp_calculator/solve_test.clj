@@ -45,4 +45,10 @@
                                         :recipe nil
                                         :alt-recipes []
                                         :items {}}}}}}
-           (sut/production-tree test-recipes 1103))))
+           (sut/production-tree test-recipes 1103)))
+  (t/is (= {:id 1101,
+            :recipe 1,
+            :alt-recipes [],
+            :items {nil {:error "max depth reached"}}}
+           (binding [sut/*max-depth* 1]
+             (sut/production-tree test-recipes 1101)))))

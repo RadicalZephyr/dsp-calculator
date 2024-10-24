@@ -74,6 +74,8 @@
   (def recipes (read-edn-resource "recipes_EN"))
   (def recipes-by-output (group-by-outputs recipes)))
 
+(def ^:dynamic *max-depth* 10)
+
 (defn production-tree
   "Produce a production tree describing the ratios needed to produce a
   given recipe.
@@ -91,13 +93,18 @@
   be multiple instances of any given product. Each individual stage
   for that item can use a different recipe."
   [recipes item-id]
-  (let [item-recipes (get recipes item-id)
-        first-recipe (first item-recipes)
-        alt-recipes (vec (map :id (rest item-recipes)))]
-    {:id item-id
-     :recipe (:id first-recipe)
-     :alt-recipes alt-recipes
-     :items (->> (:items first-recipe)
-                 (map #(production-tree recipes (:id %)))
-                 (map (juxt :id identity))
-                 (into {}))}))
+  (letfn [(r [depth recipes item-id]
+            (if (< depth *max-depth*)
+              (let [item-recipes (get recipes item-id)
+                    first-recipe (first item-recipes)
+                    alt-recipes (mapv :id (rest item-recipes))]
+                {:id item-id
+                 :recipe (:id first-recipe)
+                 :alt-recipes alt-recipes
+                 :items (let [depth (inc depth)]
+                          (->> (:items first-recipe)
+                               (map #(r depth recipes (:id %)))
+                               (map (juxt :id identity))
+                               (into {})))})
+              {:error "max depth reached"}))]
+    (r 0 recipes item-id)))
