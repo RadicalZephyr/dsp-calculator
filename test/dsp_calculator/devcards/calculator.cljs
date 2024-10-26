@@ -125,12 +125,12 @@ The calculator interface, the most important part of the site.")
     :proliferator "none"})
   {:inspect-data true})
 
-(defclass grid-pos [x y]
+(defclass grid-row [x y]
   {:grid-row (str x " / " y)})
 
 
 (defn preferred-building-option [[x y] type selected building]
-  [:label {:class [(grid-pos x y)
+  [:label {:class [(grid-row x y)
                    (when (= selected (:id building)) "is-selected")]}
    [:input {:type "radio"
             :name type
@@ -152,7 +152,7 @@ The calculator interface, the most important part of the site.")
     [:details.preferred.preferred-buildings {:open true}
      [:summary "Preferred Buildings"]
      [:div.fields
-      [:span.name {:class (grid-pos 1 2)} "Smelting Facility"]
+      [:span.name {:class (grid-row 1 2)} "Smelting Facility"]
       [preferred-building-option
        [1 2]
        "smelter"
