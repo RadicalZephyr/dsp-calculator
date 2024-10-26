@@ -138,7 +138,7 @@ The calculator interface, the most important part of the site.")
             :title (str (:name building) " - Production Speed: " (:count building))}]
    [:span.item.icon {:data-icon (str "item." (:id building))
                      :title (:name building)
-                     :data-count (:count building)
+                     :data-count (str (:count building) "×")
                      :lang "en-US"}]])
 
 (defcard-rg preferred-buildings
@@ -159,18 +159,18 @@ The calculator interface, the most important part of the site.")
        2302
        {:id 2302
         :name "Arc Smelter"
-        :count "1×"}]
+        :count "1"}]
       [preferred-building-option
        [1 2]
        "smelter"
        2302
        {:id 2315
         :name "Plane Smelter"
-        :count "2×"}]
+        :count "2"}]
       [preferred-building-option
        [1 2]
        "smelter"
        2302
        {:id 2319
         :name "Negentropy Smelter"
-        :count "3×"}]]]]])
+        :count "3"}]]]]])
