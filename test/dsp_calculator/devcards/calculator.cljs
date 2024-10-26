@@ -27,6 +27,7 @@ The calculator interface, the most important part of the site.")
    [:link {:rel "stylesheet" :href "/css/components/item.css"}]
    [:link {:rel "stylesheet" :href "/css/components/recipe.css"}]
    [:link {:rel "stylesheet" :href "/css/components/tabs.css"}]
+   [:link {:rel "stylesheet" :href "/css/components/solver.css"}]
    [:style "@layer reset,skeleton,components,pages;"]])
 
 (defcard-rg full-calculator-control
@@ -174,3 +175,8 @@ The calculator interface, the most important part of the site.")
        {:id 2319
         :name "Negentropy Smelter"
         :count "3"}]]]]])
+
+(defcard-rg production-tree-header
+  [:main.page.calculator
+   [:div.solver.has-proliferators
+    [calc/production-tree-header]]])

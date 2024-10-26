@@ -146,3 +146,10 @@
               [[ratio-control ratio production-facility]
                [specific-control specific timescale]
                [proliferator-control proliferator]])]))))
+
+(defn production-tree-header []
+  [:div.solver-header.node-header
+   [:div "Buildings × Recipe"]
+   [:div "Proliferator"]
+   [:div "Belts"]
+   [:div "Throughput"]])
