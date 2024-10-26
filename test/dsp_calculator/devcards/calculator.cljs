@@ -1,6 +1,6 @@
 (ns dsp-calculator.devcards.calculator
   (:require [devcards.core]
-            [spade.core :refer [defclass]]
+            [spade.core :refer [defattrs defclass]]
             [dsp-calculator.ui.calculator :as calc]
             [reagent.core :as reagent])
   (:require-macros
@@ -176,7 +176,52 @@ The calculator interface, the most important part of the site.")
         :name "Negentropy Smelter"
         :count "3"}]]]]])
 
+(defattrs depth-attrs [x]
+  {:--depth x})
+
 (defcard-rg production-tree-header
   [:main.page.calculator
    [:div.solver.has-proliferators
     [calc/production-tree-header]]])
+
+(defcard-rg production-tree
+  [:main.page.calculator
+   [:div.solver.has-proliferators
+    [:details.node.solve
+     [:summary
+      [:div.node-header
+       [:div.meta
+        [:span {:title "10× Smelting Facility"}
+         [:span.factor "10"] "×"]
+        [:span.recipe
+         [:span.icon {:data-icon "item.1101"}]
+         [:span.name "Iron Ingot"]]]
+       [:div.proliferator
+        [:div.icon {:data-icon "ui.inc-0" :data-count "" :data-inc "none" :title "None"}
+         [:select.count
+          [:option {:value "none"} "none"]
+          [:option {:value "speedup"} "+100% speed"]
+          [:option {:value "extra"} "+25% extra"]]]]
+       [:div.logistics
+        [:span.belt [:span.factor "1." [:span.repeat "6"]] "×"]]
+       [:ul.products
+        [:li.throughput.is-ingredient
+         [:span.perMinute "600"]
+         "×"
+         [:span.item.icon {:data-icon "item.1101" :title "Iron Ingot"}]
+         [:span.timeScale "per minute"]]]]]
+     [:div.node.solve (depth-attrs 1)
+      [:div.node-header
+       [:div.meta
+        [:span.item.named
+         [:span.icon.item {:data-icon "item.1001"}]
+         [:span.name "Iron Ore"]]]
+       [:div.proliferator]
+       [:div.logistics
+        [:span.belt [:span.factor "1." [:span.repeat "6"]] "×"]]
+       [:ul.products
+        [:li.throughput.is-ingredient
+         [:span.perMinute "600"]
+         "×"
+         [:span.item.icon {:data-icon "item.1101" :title "Iron Ingot"}]
+         [:span.timeScale "per minute"]]]]]]]])
