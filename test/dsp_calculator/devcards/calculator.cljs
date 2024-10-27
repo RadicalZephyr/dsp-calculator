@@ -129,6 +129,8 @@ The calculator interface, the most important part of the site.")
 (defclass grid-row [x y]
   {:grid-row (str x " / " y)})
 
+(defn item-id [item]
+  (str "item." (:id item)))
 
 (defn preferred-building-option [[x y] type selected building]
   [:label {:class [(grid-row x y)
@@ -139,9 +141,24 @@ The calculator interface, the most important part of the site.")
             :title (str (:name building)
                         " - Production&nbsp;Speed:&nbsp;"
                         (:count building))}]
-   [:span.item.icon {:data-icon (str "item." (:id building))
-                     :title (:name building)
+   [:span.item.icon {:title (:name building)
+                     :data-icon (item-id building)
                      :data-count (str (:count building) "×")
+                     :lang "en-US"}]])
+
+(defn preferred-belt-option [[x y] selected building]
+  [:label {:class [(grid-row x y)
+                   (when (= selected (:id building)) "is-selected")]}
+   [:input {:type "radio"
+            :name "belt"
+            :value (str (:id building))
+            :title (str (:name building)
+                        " — Transport&nbsp;Speed:&nbsp;"
+                        (:speed building)
+                        "&nbsp;items&nbsp;per&nbsp;minute")}]
+   [:span.item.icon {:title (:name building)
+                     :data-icon (item-id building)
+                     :data-per (str (:speed building))
                      :lang "en-US"}]])
 
 (defcard-rg preferred-buildings
@@ -155,28 +172,94 @@ The calculator interface, the most important part of the site.")
     [:details.preferred.preferred-buildings {:open true}
      [:summary "Preferred Buildings"]
      [:div.fields
-      [:span.name {:class (grid-row 1 2)} "Smelting Facility"]
+      [:span.name {:class (grid-row 1 2)} "Assembler"]
       [preferred-building-option
        [1 2]
+       "assembler"
+       2303
+       {:id 2303
+        :name "Assembling Machine Mk.I"
+        :count "0.75"}]
+      [preferred-building-option
+       [1 2]
+       "assembler"
+       2303
+       {:id 2304
+        :name "Assembling Machine Mk.II"
+        :count "1"}]
+      [preferred-building-option
+       [1 2]
+       "assembler"
+       2303
+       {:id 2305
+        :name "Assembling Machine Mk.III"
+        :count "2"}]
+      [preferred-building-option
+       [1 2]
+       "assembler"
+       2303
+       {:id 2318
+        :name "Re-composing Assembler"
+        :count "3"}]
+
+      [:span.name {:class (grid-row 2 3)} "Smelting Facility"]
+      [preferred-building-option
+       [2 3]
        "smelter"
        2302
        {:id 2302
         :name "Arc Smelter"
         :count "1"}]
       [preferred-building-option
-       [1 2]
+       [2 3]
        "smelter"
        2302
        {:id 2315
         :name "Plane Smelter"
         :count "2"}]
       [preferred-building-option
-       [1 2]
+       [2 3]
        "smelter"
        2302
        {:id 2319
         :name "Negentropy Smelter"
-        :count "3"}]]]]])
+        :count "3"}]
+
+      [:span.name {:class (grid-row 3 4)} "Chemical Facility"]
+      [preferred-building-option
+       [3 4]
+       "chemical"
+       2309
+       {:id 2309
+        :name "Chemical Plant"
+        :count 1}]
+      [preferred-building-option
+       [3 4]
+       "chemical"
+       2309
+       {:id 2317
+        :name "Quantum Chemical Plant"
+        :count 2}]
+
+      [:span.name {:class (grid-row 4 5)} "Logistics"]
+      [preferred-belt-option
+       [4 5]
+       2001
+       {:id 2001
+        :name "Conveyor Belt MK.I"
+        :speed 360}]
+      [preferred-belt-option
+       [4 5]
+       2001
+       {:id 2002
+        :name "Conveyor Belt MK.II"
+        :speed 720}]
+      [preferred-belt-option
+       [4 5]
+       2001
+       {:id 2003
+        :name "Conveyor Belt MK.III"
+        :speed 1800}]]]]])
 
 (defcard-rg production-tree-header
   [:main.page.calculator
