@@ -225,4 +225,5 @@
 
 (defn production-tree [tree]
   [:div.solver
+   [production-tree-header]
    [production-tree-node 0 tree]])

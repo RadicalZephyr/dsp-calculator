@@ -176,17 +176,26 @@ The calculator interface, the most important part of the site.")
         :name "Negentropy Smelter"
         :count "3"}]]]]])
 
-(defattrs depth-attrs [x]
-  {:--depth x})
-
 (defcard-rg production-tree-header
   [:main.page.calculator
    [:div.solver.has-proliferators
     [calc/production-tree-header]]])
 
+(defcard-rg production-summary
+  [:main.page.calculator
+   [:div.solver.has-proliferators
+    [:div.solver-header.node-header
+     [:div "Buildings × Recipe"]
+     [:div]
+     [:div "Belts"]
+     [:div "Throughput"]]
+    [calc/production-tree-leaf-node 0 {:id 1001
+                                       :name "Iron Ore"}]]])
+
 (defcard-rg production-tree
   [:main.page.calculator
    [:div.solver.has-proliferators
+    [calc/production-tree-header]
     [calc/production-tree-node 0 {:id 1101
                                   :name "Iron Ingot"
                                   :items [{:id 1001
