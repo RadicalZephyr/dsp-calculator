@@ -301,7 +301,7 @@
     [:summary
      [:div.node-header
       [:div.meta
-       [:span {:title "10× Smelting Facility"}
+       [:span {:title (str "10" "×&nbsp;" (:facility tree))}
         [:span.factor "10"] "×"]
        ~[:span.recipe
          [item-icon tree]

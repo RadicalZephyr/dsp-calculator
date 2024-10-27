@@ -42,6 +42,7 @@
              :raw-resources {}}
             {:id 1001
              :recipe nil
+             :facility nil
              :alt-recipes []
              :items {}}]
            (sut/production-tree test-recipes 1001)))
@@ -50,9 +51,11 @@
              :raw-resources {}}
             {:id 1101
              :recipe 1
+             :facility "Smelting Facility"
              :alt-recipes []
              :items {1001 {:id 1001
                            :recipe nil
+                           :facility nil
                            :alt-recipes []
                            :items {}}}}]
            (sut/production-tree test-recipes 1101)))
@@ -61,12 +64,15 @@
              :raw-resources {}}
             {:id 1103
              :recipe 63
+             :facility "Smelting Facility"
              :alt-recipes []
              :items {1101 {:id 1101
                            :recipe 1
+                           :facility "Smelting Facility"
                            :alt-recipes []
                            :items {1001 {:id 1001
                                          :recipe nil
+                                         :facility nil
                                          :alt-recipes []
                                          :items {}}}}}}]
            (sut/production-tree test-recipes 1103)))
@@ -75,6 +81,7 @@
              :raw-resources {}}
             {:id 1101,
              :recipe 1,
+             :facility "Smelting Facility"
              :alt-recipes [],
              :items {nil {:error "max depth reached"}}}]
            (binding [sut/*max-depth* 1]
@@ -84,9 +91,11 @@
              :raw-resources {}}
             {:id 1112
              :recipe 60
+             :facility "Smelting Facility"
              :alt-recipes [61]
              :items {1109 {:id 1109
                            :recipe nil
+                           :facility nil
                            :alt-recipes []
                            :items {}}}}]
            (sut/production-tree test-recipes 1112))))

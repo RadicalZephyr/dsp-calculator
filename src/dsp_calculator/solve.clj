@@ -111,6 +111,7 @@
                          into (map :made-from-string item-recipes)))
                 {:id item-id
                  :recipe (:id first-recipe)
+                 :facility (:made-from-string first-recipe)
                  :alt-recipes (vec alt-recipes)
                  :items (let [depth (inc depth)]
                           (->> (:items first-recipe)
