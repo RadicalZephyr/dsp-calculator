@@ -153,3 +153,43 @@
    [:div "Proliferator"]
    [:div "Belts"]
    [:div "Throughput"]])
+
+(defclass depth-class [x]
+  {:--depth x})
+
+(defn depth-attrs [depth]
+  (if (> depth 0)
+    {:class (depth-class depth)}
+    {}))
+
+(defn item-icon [item]
+  [:span.item.icon {:data-icon (str "item." (:id item))
+                    :title (:name item)}])
+
+(defn production-tree-node [depth tree]
+  [:div.node.solve (depth-attrs depth)
+   [:div.node-header
+    [:div.meta
+     [:span.item.named
+      [item-icon (:item tree)]
+      [:span.name (get-in tree [:item :name])]]]
+    [:div.proliferator]
+    [:div.logistics
+     [:span.belt [:span.factor "1." [:span.repeat "6"]] "×"]]
+    [:ul.products
+     [:li.throughput.is-ingredient
+      [:span.perMinute "600"]
+      "×"
+      [item-icon (:item tree)]
+      [:span.timeScale "per minute"]]]]])
+
+#_(if (raw-resource? tree)
+    [:details.node.solve (depth-attrs depth)
+     [:summary
+      [:div.node-header
+       [:div.meta]]]
+     ])
+
+(defn production-tree [tree]
+  [:div.solver
+   [production-tree-node 0 tree]])

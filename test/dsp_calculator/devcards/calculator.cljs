@@ -210,18 +210,4 @@ The calculator interface, the most important part of the site.")
          "×"
          [:span.item.icon {:data-icon "item.1101" :title "Iron Ingot"}]
          [:span.timeScale "per minute"]]]]]
-     [:div.node.solve (depth-attrs 1)
-      [:div.node-header
-       [:div.meta
-        [:span.item.named
-         [:span.icon.item {:data-icon "item.1001"}]
-         [:span.name "Iron Ore"]]]
-       [:div.proliferator]
-       [:div.logistics
-        [:span.belt [:span.factor "1." [:span.repeat "6"]] "×"]]
-       [:ul.products
-        [:li.throughput.is-ingredient
-         [:span.perMinute "600"]
-         "×"
-         [:span.item.icon {:data-icon "item.1101" :title "Iron Ingot"}]
-         [:span.timeScale "per minute"]]]]]]]])
+     [calc/production-tree-node 1 {:item {:id 1001 :name "Iron Ore"}}]]]])
