@@ -185,6 +185,14 @@
 
 (declare production-tree-node)
 
+(defn proliferator-node-control []
+  [:div.proliferator
+   [:div.icon {:data-icon "ui.inc-0" :data-count "" :data-inc "none" :title "None"}
+    [:select.count
+     [:option {:value "none"} "none"]
+     [:option {:value "speedup"} "+100% speed"]
+     [:option {:value "extra"} "+25% extra"]]]])
+
 (defn production-tree-interior-node [depth tree]
   `[:details.node.solve ~(depth-attrs depth)
     [:summary
@@ -195,12 +203,7 @@
        ~[:span.recipe
          [item-icon tree]
          [:span.name (:name tree)]]]
-      [:div.proliferator
-       [:div.icon {:data-icon "ui.inc-0" :data-count "" :data-inc "none" :title "None"}
-        [:select.count
-         [:option {:value "none"} "none"]
-         [:option {:value "speedup"} "+100% speed"]
-         [:option {:value "extra"} "+25% extra"]]]]
+      ~[proliferator-node-control]
       [:div.logistics
        [:span.belt [:span.factor "1." [:span.repeat "6"]] "×"]]
       [:ul.products
