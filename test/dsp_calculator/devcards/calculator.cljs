@@ -127,39 +127,67 @@ The calculator interface, the most important part of the site.")
   {:inspect-data true})
 
 (defcard-rg preferred-buildings
-  [:main.page.calculator
-   [:div.combo-selector
-    [:details.preferred.preferred-buildings {:open true}
-     [:summary "Preferred Buildings"]
-     [:div.fields]]]
-   [:br]
-   [:div.combo-selector
-    [calc/preferred-buildings #{"Smelting Facility"}]]
-   [:br]
-   [:div.combo-selector
-    [calc/preferred-buildings #{"Assembler"}]]
-   [:br]
-   [:div.combo-selector
-    [calc/preferred-buildings #{"Chemical Facility"}]]
+  (fn [state _]
+    (let [belt (reagent/cursor state [:belt])
+          smelter (reagent/cursor state [:smelter])
+          assembler (reagent/cursor state [:assembler])
+          chemical (reagent/cursor state [:chemical])]
+      (fn [state _]
+        [:main.page.calculator
+         [:div.combo-selector
+          [:details.preferred.preferred-buildings {:open true}
+           [:summary "Preferred Buildings"]
+           [:div.fields]]]
+         [:br]
+         [:div.combo-selector
+          [calc/preferred-buildings #{"Smelting Facility"} belt smelter assembler chemical]]
+         [:br]
+         [:div.combo-selector
+          [calc/preferred-buildings #{"Assembler"} belt smelter assembler chemical]]
+         [:br]
+         [:div.combo-selector
+          [calc/preferred-buildings #{"Chemical Facility"} belt smelter assembler chemical]]
 
-   [:br]
-   [:div.combo-selector
-    [calc/preferred-buildings #{"Smelting Facility"
-                                "Assembler"}]]
-   [:br]
-   [:div.combo-selector
-    [calc/preferred-buildings #{"Smelting Facility"
-                                "Chemical Facility"}]]
-   [:br]
-   [:div.combo-selector
-    [calc/preferred-buildings #{"Assembler"
-                                "Chemical Facility"}]]
+         [:br]
+         [:div.combo-selector
+          [calc/preferred-buildings
+           #{"Smelting Facility"
+             "Assembler"}
+           belt smelter assembler chemical]]
+         [:br]
+         [:div.combo-selector
+          [calc/preferred-buildings
+           #{"Smelting Facility"
+             "Chemical Facility"}
+           belt smelter assembler chemical]]
+         [:br]
+         [:div.combo-selector
+          [calc/preferred-buildings
+           #{"Assembler"
+             "Chemical Facility"}
+           belt smelter assembler chemical]]
 
-   [:br]
-   [:div.combo-selector
-    [calc/preferred-buildings #{"Smelting Facility"
-                                "Assembler"
-                                "Chemical Facility"}]]])
+         [:br]
+         [:div.combo-selector
+          [calc/preferred-buildings
+           #{"Smelting Facility"
+             "Assembler"
+             "Chemical Facility"}
+           belt smelter assembler chemical]]])))
+  (reagent/atom
+   {:belt {:id 2001
+           :name "Conveyor Belt MK.I"
+           :speed 360}
+    :smelter {:id 2302
+              :name "Arc Smelter"
+              :count "1"}
+    :assembler {:id 2303
+                :name "Assembling Machine Mk.I"
+                :count "0.75"}
+    :chemical {:id 2309
+               :name "Chemical Plant"
+               :count 1}})
+  {:inspect-data true})
 
 (defcard-rg production-tree-header
   [:main.page.calculator

@@ -153,12 +153,14 @@
 (defn item-id [item]
   (str "item." (:id item)))
 
-(defn preferred-building-option [[x y] type selected building]
+(defn preferred-building-option [[x y] type selected change building]
   [:label {:class [(grid-row x y)
-                   (when (= selected (:id building)) "is-selected")]}
+                   (when (= (:id selected) (:id building)) "is-selected")]}
    [:input {:type "radio"
             :name type
             :value (str (:id building))
+            :selected (= (:id selected) (:id building))
+            :on-change #(change building)
             :title (str (:name building)
                         " - Production&nbsp;Speed:&nbsp;"
                         (:count building))}]
@@ -167,12 +169,14 @@
                      :data-count (str (:count building) "×")
                      :lang "en-US"}]])
 
-(defn preferred-belt-option [[x y] selected building]
+(defn preferred-belt-option [[x y] selected change building]
   [:label {:class [(grid-row x y)
-                   (when (= selected (:id building)) "is-selected")]}
+                   (when (= (:id selected) (:id building)) "is-selected")]}
    [:input {:type "radio"
             :name "belt"
             :value (str (:id building))
+            :selected (= (:id selected) (:id building))
+            :on-change #(change building)
             :title (str (:name building)
                         " — Transport&nbsp;Speed:&nbsp;"
                         (:speed building)
@@ -182,65 +186,69 @@
                      :data-per (str (:speed building))
                      :lang "en-US"}]])
 
-(defn preferred-buildings [facilities]
-  [:details.preferred.preferred-buildings {:open true}
-   [:summary "Preferred Buildings"]
-   `[:div.fields
-     [:span.name {:class ~(grid-row 1 2)} "Logistics"]
-     ~@(->> [{:id 2001
-              :name "Conveyor Belt MK.I"
-              :speed 360}
-             {:id 2002
-              :name "Conveyor Belt MK.II"
-              :speed 720}
-             {:id 2003
-              :name "Conveyor Belt MK.III"
-              :speed 1800}]
-            (map
-             (fn [item]
-               [preferred-belt-option [1 2] 2001 item])))
+(defn preferred-buildings [facilities belt smelter assembler chemical]
+  (let [belt-val @belt
+        smelter-val @smelter
+        assembler-val @assembler
+        chemical-val @chemical]
+    [:details.preferred.preferred-buildings {:open true}
+     [:summary "Preferred Buildings"]
+     `[:div.fields
+       [:span.name {:class ~(grid-row 1 2)} "Logistics"]
+       ~@(->> [{:id 2001
+                :name "Conveyor Belt MK.I"
+                :speed 360}
+               {:id 2002
+                :name "Conveyor Belt MK.II"
+                :speed 720}
+               {:id 2003
+                :name "Conveyor Belt MK.III"
+                :speed 1800}]
+              (map
+               (fn [item]
+                 [preferred-belt-option [1 2] belt-val #(reset! belt %) item])))
 
-     ~@(when (contains? facilities "Smelting Facility")
-         (->> [{:id 2302
-                :name "Arc Smelter"
-                :count "1"}
-               {:id 2315
-                :name "Plane Smelter"
-                :count "2"}
-               {:id 2319
-                :name "Negentropy Smelter"
-                :count "3"}]
-              (map (fn [item]
-                     [preferred-building-option [2 3] "smelter" 2302 item]))
-              (into [[:span.name {:class (grid-row 2 3)} "Smelting Facility"]])))
+       ~@(when (contains? facilities "Smelting Facility")
+           (->> [{:id 2302
+                  :name "Arc Smelter"
+                  :count "1"}
+                 {:id 2315
+                  :name "Plane Smelter"
+                  :count "2"}
+                 {:id 2319
+                  :name "Negentropy Smelter"
+                  :count "3"}]
+                (map (fn [item]
+                       [preferred-building-option [2 3] "smelter" smelter-val #(reset! smelter %) item]))
+                (into [[:span.name {:class (grid-row 2 3)} "Smelting Facility"]])))
 
-     ~@(when (contains? facilities "Assembler")
-         (->> [{:id 2303
-                :name "Assembling Machine Mk.I"
-                :count "0.75"}
-               {:id 2304
-                :name "Assembling Machine Mk.II"
-                :count "1"}
-               {:id 2305
-                :name "Assembling Machine Mk.III"
-                :count "2"}
-               {:id 2318
-                :name "Re-composing Assembler"
-                :count "3"}]
-              (map (fn [item]
-                     [preferred-building-option [3 4] "assembler" 2303 item]))
-              (into [[:span.name {:class (grid-row 3 4)} "Assembler"]])))
+       ~@(when (contains? facilities "Assembler")
+           (->> [{:id 2303
+                  :name "Assembling Machine Mk.I"
+                  :count "0.75"}
+                 {:id 2304
+                  :name "Assembling Machine Mk.II"
+                  :count "1"}
+                 {:id 2305
+                  :name "Assembling Machine Mk.III"
+                  :count "2"}
+                 {:id 2318
+                  :name "Re-composing Assembler"
+                  :count "3"}]
+                (map (fn [item]
+                       [preferred-building-option [3 4] "assembler" assembler-val #(reset! assembler %) item]))
+                (into [[:span.name {:class (grid-row 3 4)} "Assembler"]])))
 
-     ~@(when (contains? facilities "Chemical Facility")
-         (->> [{:id 2309
-                :name "Chemical Plant"
-                :count 1}
-               {:id 2317
-                :name "Quantum Chemical Plant"
-                :count 2}]
-              (map (fn [item]
-                     [preferred-building-option [4 5] "chemical" 2309 item]))
-              (into [[:span.name {:class (grid-row 4 5)} "Chemical Facility"]])))]])
+       ~@(when (contains? facilities "Chemical Facility")
+           (->> [{:id 2309
+                  :name "Chemical Plant"
+                  :count 1}
+                 {:id 2317
+                  :name "Quantum Chemical Plant"
+                  :count 2}]
+                (map (fn [item]
+                       [preferred-building-option [4 5] "chemical" chemical-val #(reset! chemical %) item]))
+                (into [[:span.name {:class (grid-row 4 5)} "Chemical Facility"]])))]]))
 
 (defn production-tree-header []
   [:div.solver-header.node-header
