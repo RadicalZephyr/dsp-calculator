@@ -166,13 +166,13 @@
   [:span.item.icon {:data-icon (str "item." (:id item))
                     :title (:name item)}])
 
-(defn production-tree-node [depth tree]
+(defn production-tree-leaf-node [depth tree]
   [:div.node.solve (depth-attrs depth)
    [:div.node-header
     [:div.meta
      [:span.item.named
-      [item-icon (:item tree)]
-      [:span.name (get-in tree [:item :name])]]]
+      [item-icon tree]
+      [:span.name (:name tree)]]]
     [:div.proliferator]
     [:div.logistics
      [:span.belt [:span.factor "1." [:span.repeat "6"]] "×"]]
@@ -180,15 +180,45 @@
      [:li.throughput.is-ingredient
       [:span.perMinute "600"]
       "×"
-      [item-icon (:item tree)]
+      [item-icon tree]
       [:span.timeScale "per minute"]]]]])
 
-#_(if (raw-resource? tree)
-    [:details.node.solve (depth-attrs depth)
-     [:summary
-      [:div.node-header
-       [:div.meta]]]
-     ])
+(declare production-tree-node)
+
+(defn production-tree-interior-node [depth tree]
+  `[:details.node.solve ~(depth-attrs depth)
+    [:summary
+     [:div.node-header
+      [:div.meta
+       [:span {:title "10× Smelting Facility"}
+        [:span.factor "10"] "×"]
+       ~[:span.recipe
+         [item-icon tree]
+         [:span.name (:name tree)]]]
+      [:div.proliferator
+       [:div.icon {:data-icon "ui.inc-0" :data-count "" :data-inc "none" :title "None"}
+        [:select.count
+         [:option {:value "none"} "none"]
+         [:option {:value "speedup"} "+100% speed"]
+         [:option {:value "extra"} "+25% extra"]]]]
+      [:div.logistics
+       [:span.belt [:span.factor "1." [:span.repeat "6"]] "×"]]
+      [:ul.products
+       [:li.throughput.is-ingredient
+        [:span.perMinute "600"]
+        "×"
+        ~[item-icon tree]
+        [:span.timeScale "per minute"]]]]]
+    ~@(for [item (:items tree)]
+        [production-tree-node 1 item])])
+
+(defn raw-resource? [node]
+  (empty? (:items node)))
+
+(defn production-tree-node [depth tree]
+  (if (raw-resource? tree)
+    [production-tree-leaf-node (inc depth) tree]
+    [production-tree-interior-node (inc depth) tree]))
 
 (defn production-tree [tree]
   [:div.solver

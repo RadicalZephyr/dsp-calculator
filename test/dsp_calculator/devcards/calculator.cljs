@@ -187,27 +187,7 @@ The calculator interface, the most important part of the site.")
 (defcard-rg production-tree
   [:main.page.calculator
    [:div.solver.has-proliferators
-    [:details.node.solve
-     [:summary
-      [:div.node-header
-       [:div.meta
-        [:span {:title "10× Smelting Facility"}
-         [:span.factor "10"] "×"]
-        [:span.recipe
-         [:span.icon {:data-icon "item.1101"}]
-         [:span.name "Iron Ingot"]]]
-       [:div.proliferator
-        [:div.icon {:data-icon "ui.inc-0" :data-count "" :data-inc "none" :title "None"}
-         [:select.count
-          [:option {:value "none"} "none"]
-          [:option {:value "speedup"} "+100% speed"]
-          [:option {:value "extra"} "+25% extra"]]]]
-       [:div.logistics
-        [:span.belt [:span.factor "1." [:span.repeat "6"]] "×"]]
-       [:ul.products
-        [:li.throughput.is-ingredient
-         [:span.perMinute "600"]
-         "×"
-         [:span.item.icon {:data-icon "item.1101" :title "Iron Ingot"}]
-         [:span.timeScale "per minute"]]]]]
-     [calc/production-tree-node 1 {:item {:id 1001 :name "Iron Ore"}}]]]])
+    [calc/production-tree-node 0 {:id 1101
+                                  :name "Iron Ingot"
+                                  :items [{:id 1001
+                                           :name "Iron Ore"}]}]]])
