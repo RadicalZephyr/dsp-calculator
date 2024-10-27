@@ -211,13 +211,13 @@
        ~@(when (contains? facilities "Smelting Facility")
            (->> [{:id 2302
                   :name "Arc Smelter"
-                  :count "1"}
+                  :count 1}
                  {:id 2315
                   :name "Plane Smelter"
-                  :count "2"}
+                  :count 2}
                  {:id 2319
                   :name "Negentropy Smelter"
-                  :count "3"}]
+                  :count 3}]
                 (map (fn [item]
                        [preferred-building-option [2 3] "smelter" smelter-val #(reset! smelter %) item]))
                 (into [[:span.name {:class (grid-row 2 3)} "Smelting Facility"]])))
@@ -225,16 +225,16 @@
        ~@(when (contains? facilities "Assembler")
            (->> [{:id 2303
                   :name "Assembling Machine Mk.I"
-                  :count "0.75"}
+                  :count 0.75}
                  {:id 2304
                   :name "Assembling Machine Mk.II"
-                  :count "1"}
+                  :count 1}
                  {:id 2305
                   :name "Assembling Machine Mk.III"
-                  :count "2"}
+                  :count 2}
                  {:id 2318
                   :name "Re-composing Assembler"
-                  :count "3"}]
+                  :count 3}]
                 (map (fn [item]
                        [preferred-building-option [3 4] "assembler" assembler-val #(reset! assembler %) item]))
                 (into [[:span.name {:class (grid-row 3 4)} "Assembler"]])))

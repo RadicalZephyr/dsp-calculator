@@ -180,10 +180,10 @@ The calculator interface, the most important part of the site.")
            :speed 360}
     :smelter {:id 2302
               :name "Arc Smelter"
-              :count "1"}
+              :count 1}
     :assembler {:id 2303
                 :name "Assembling Machine Mk.I"
-                :count "0.75"}
+                :count 0.75}
     :chemical {:id 2309
                :name "Chemical Plant"
                :count 1}})
