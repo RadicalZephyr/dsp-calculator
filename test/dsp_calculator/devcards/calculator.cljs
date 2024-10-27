@@ -136,7 +136,9 @@ The calculator interface, the most important part of the site.")
    [:input {:type "radio"
             :name type
             :value (str (:id building))
-            :title (str (:name building) " - Production Speed: " (:count building))}]
+            :title (str (:name building)
+                        " - Production&nbsp;Speed:&nbsp;"
+                        (:count building))}]
    [:span.item.icon {:data-icon (str "item." (:id building))
                      :title (:name building)
                      :data-count (str (:count building) "×")
