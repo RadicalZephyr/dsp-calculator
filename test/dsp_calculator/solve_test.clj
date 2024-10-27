@@ -14,18 +14,25 @@
   {1101 [{:id 1
           :name "Iron Ingot"
           :time-spend 60
+          :made-from-string "Smelting Facility"
           :items [{:id 1001 :count 1}]
           :results [{:id 1101 :count 1}]}]
    1103 [{:id 63
           :name "Steel"
+          :time-spend 180
+          :made-from-string "Smelting Facility"
           :items [{:id 1101 :count 3}]
           :results [{:id 1103 :count 1 }]}]
    1112 [{:id 60
+          :name "Diamond"
           :time-spend 120
+          :made-from-string "Smelting Facility"
           :items [{:id 1109 :count 1}]
           :results [{:id 1112 :count 1}]}
          {:id 61
+          :name "Diamond"
           :time-spend 90
+          :made-from-string "Smelting Facility"
           :items [{:id 1012 :count 1}]
           :results [{:id 1112 :count 2}]}]})
 
@@ -39,7 +46,7 @@
              :items {}}]
            (sut/production-tree test-recipes 1001)))
   (t/is (= [{:alt-recipes #{}
-             :facilities #{}
+             :facilities #{"Smelting Facility"}
              :raw-resources {}}
             {:id 1101
              :recipe 1
@@ -50,7 +57,7 @@
                            :items {}}}}]
            (sut/production-tree test-recipes 1101)))
   (t/is (= [{:alt-recipes #{}
-             :facilities #{}
+             :facilities #{"Smelting Facility"}
              :raw-resources {}}
             {:id 1103
              :recipe 63
@@ -64,7 +71,7 @@
                                          :items {}}}}}}]
            (sut/production-tree test-recipes 1103)))
   (t/is (= [{:alt-recipes #{}
-             :facilities #{}
+             :facilities #{"Smelting Facility"}
              :raw-resources {}}
             {:id 1101,
              :recipe 1,
@@ -73,7 +80,7 @@
            (binding [sut/*max-depth* 1]
              (sut/production-tree test-recipes 1101))))
   (t/is (= [{:alt-recipes #{[60 61]}
-             :facilities #{}
+             :facilities #{"Smelting Facility"}
              :raw-resources {}}
             {:id 1112
              :recipe 60

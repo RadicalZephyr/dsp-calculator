@@ -106,6 +106,9 @@
                 (when (seq alt-recipes)
                   (swap! summary update :alt-recipes
                          conj (vec (cons (:id first-recipe) alt-recipes))))
+                (when (seq item-recipes)
+                  (swap! summary update :facilities
+                         into (map :made-from-string item-recipes)))
                 {:id item-id
                  :recipe (:id first-recipe)
                  :alt-recipes (vec alt-recipes)
