@@ -172,35 +172,25 @@ The calculator interface, the most important part of the site.")
     [:details.preferred.preferred-buildings {:open true}
      [:summary "Preferred Buildings"]
      [:div.fields
-      [:span.name {:class (grid-row 1 2)} "Assembler"]
-      [preferred-building-option
+      [:span.name {:class (grid-row 1 2)} "Logistics"]
+      [preferred-belt-option
        [1 2]
-       "assembler"
-       2303
-       {:id 2303
-        :name "Assembling Machine Mk.I"
-        :count "0.75"}]
-      [preferred-building-option
+       2001
+       {:id 2001
+        :name "Conveyor Belt MK.I"
+        :speed 360}]
+      [preferred-belt-option
        [1 2]
-       "assembler"
-       2303
-       {:id 2304
-        :name "Assembling Machine Mk.II"
-        :count "1"}]
-      [preferred-building-option
+       2001
+       {:id 2002
+        :name "Conveyor Belt MK.II"
+        :speed 720}]
+      [preferred-belt-option
        [1 2]
-       "assembler"
-       2303
-       {:id 2305
-        :name "Assembling Machine Mk.III"
-        :count "2"}]
-      [preferred-building-option
-       [1 2]
-       "assembler"
-       2303
-       {:id 2318
-        :name "Re-composing Assembler"
-        :count "3"}]
+       2001
+       {:id 2003
+        :name "Conveyor Belt MK.III"
+        :speed 1800}]
 
       [:span.name {:class (grid-row 2 3)} "Smelting Facility"]
       [preferred-building-option
@@ -225,41 +215,51 @@ The calculator interface, the most important part of the site.")
         :name "Negentropy Smelter"
         :count "3"}]
 
-      [:span.name {:class (grid-row 3 4)} "Chemical Facility"]
+      [:span.name {:class (grid-row 3 4)} "Assembler"]
       [preferred-building-option
        [3 4]
+       "assembler"
+       2303
+       {:id 2303
+        :name "Assembling Machine Mk.I"
+        :count "0.75"}]
+      [preferred-building-option
+       [3 4]
+       "assembler"
+       2303
+       {:id 2304
+        :name "Assembling Machine Mk.II"
+        :count "1"}]
+      [preferred-building-option
+       [3 4]
+       "assembler"
+       2303
+       {:id 2305
+        :name "Assembling Machine Mk.III"
+        :count "2"}]
+      [preferred-building-option
+       [3 4]
+       "assembler"
+       2303
+       {:id 2318
+        :name "Re-composing Assembler"
+        :count "3"}]
+
+      [:span.name {:class (grid-row 4 5)} "Chemical Facility"]
+      [preferred-building-option
+       [4 5]
        "chemical"
        2309
        {:id 2309
         :name "Chemical Plant"
         :count 1}]
       [preferred-building-option
-       [3 4]
+       [4 5]
        "chemical"
        2309
        {:id 2317
         :name "Quantum Chemical Plant"
-        :count 2}]
-
-      [:span.name {:class (grid-row 4 5)} "Logistics"]
-      [preferred-belt-option
-       [4 5]
-       2001
-       {:id 2001
-        :name "Conveyor Belt MK.I"
-        :speed 360}]
-      [preferred-belt-option
-       [4 5]
-       2001
-       {:id 2002
-        :name "Conveyor Belt MK.II"
-        :speed 720}]
-      [preferred-belt-option
-       [4 5]
-       2001
-       {:id 2003
-        :name "Conveyor Belt MK.III"
-        :speed 1800}]]]]])
+        :count 2}]]]]])
 
 (defcard-rg production-tree-header
   [:main.page.calculator
