@@ -73,6 +73,7 @@
 
 #?(:clj (defn repl-load-edn []
           (def items (read-edn-resource "items_EN"))
+          (def items-zh (read-edn-resource "items"))
           (def tech (read-edn-resource "tech_EN"))
           (def recipes (read-edn-resource "recipes_EN"))
           (def recipes-by-output (group-by-outputs recipes))))
