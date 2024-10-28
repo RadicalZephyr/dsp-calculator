@@ -197,13 +197,8 @@ The calculator interface, the most important part of the site.")
 (defcard-rg production-summary
   [:main.page.calculator
    [:div.solver.has-proliferators
-    [:div.solver-header.node-header
-     [:div "Buildings × Recipe"]
-     [:div]
-     [:div "Belts"]
-     [:div "Throughput"]]
-    [calc/production-tree-leaf-node 0 {:id 1001
-                                       :name "Iron Ore"}]]])
+    [calc/production-tree-summary [{:id 1001
+                                    :name "Iron Ore"}]]]])
 
 (defcard-rg production-tree
   [:main.page.calculator

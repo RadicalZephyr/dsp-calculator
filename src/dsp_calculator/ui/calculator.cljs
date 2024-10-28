@@ -326,6 +326,22 @@
     [production-tree-leaf-node (inc depth) tree]
     [production-tree-interior-node (inc depth) tree]))
 
+(defn production-tree-summary [raw-resources]
+  [:details.node.solve
+   [:summary
+    [:div.node-header
+     [:div.meta
+      [:span.recipe
+       [:span.tech.icon {:data-icon "tech.1102"}]
+       [:span.name "Raw Resources Summary"]]]]]
+   [:div.solver-header.node-header
+    [:div "Buildings × Recipe"]
+    [:div]
+    [:div "Belts"]
+    [:div "Throughput"]]
+   (for [resource raw-resources]
+     ^{:key (:id resource)} [production-tree-leaf-node 0 resource])])
+
 (defn production-tree [tree]
   [:div.solver
    [production-tree-header]
