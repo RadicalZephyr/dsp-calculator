@@ -101,11 +101,25 @@
   be multiple instances of any given product. Each individual stage
   for that item can use a different recipe."
   [items recipes item-id]
-  (letfn [(r [recipes summary depth scale item-id]
+  (letfn [(process-recipe [summary depth scale recipe item-id]
+            {:id item-id
+             :name (get-in items [item-id :name] "")
+             :count (* scale (get-item-count recipe item-id))
+             :recipe (:id recipe)
+             :facility (:made-from-string recipe)
+             :items (let [depth (inc depth)]
+                      (->> (:items recipe)
+                           (keys)
+                           (map #(r summary
+                                    depth
+                                    (* scale (get-item-count recipe %))
+                                    %))
+                           (map (juxt :id identity))
+                           (into {})))})
+          (r [summary depth scale item-id]
             (if (< depth *max-depth*)
               (let [item-recipes (get recipes item-id)
                     first-recipe (first item-recipes)
-                    output-count (get-item-count first-recipe item-id)
                     alt-recipes (map :id (rest item-recipes))]
                 (when (seq alt-recipes)
                   (swap! summary update :alt-recipes
@@ -113,23 +127,10 @@
                 (when (seq item-recipes)
                   (swap! summary update :facilities
                          into (map :made-from-string item-recipes)))
-                {:id item-id
-                 :name (get-in items [item-id :name] "")
-                 :count (* scale output-count)
-                 :recipe (:id first-recipe)
-                 :facility (:made-from-string first-recipe)
-                 :alt-recipes (vec alt-recipes)
-                 :items (let [depth (inc depth)]
-                          (->> (:items first-recipe)
-                               (keys)
-                               (map #(r recipes
-                                        summary
-                                        depth
-                                        (* scale (get-item-count first-recipe %))
-                                        %))
-                               (map (juxt :id identity))
-                               (into {})))})
+                (let [recipe first-recipe
+                      node (process-recipe summary depth scale recipe item-id)]
+                  (assoc node :alt-recipes alt-recipes)))
               {:error "max depth reached"}))]
     (let [summary (atom production-summary)
-          tree (r recipes summary 0 1 item-id)]
+          tree (r summary 0 1 item-id)]
       [@summary tree])))
