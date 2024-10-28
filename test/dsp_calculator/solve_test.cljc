@@ -90,7 +90,7 @@
 (deftest test-solver
   (t/is (= {:id 1001
             :name "Iron Ore"
-            :count 1
+            :count (e/native->integer 1)
             :recipe nil
             :facility nil
             :alt-recipes {}
@@ -98,13 +98,13 @@
            (sut/production-tree test-items test-recipes 1001)))
   (t/is (= {:id 1101
             :name "Iron Ingot"
-            :count 1
+            :count (e/native->integer 1)
             :recipe 1
             :facility "Smelting Facility"
             :alt-recipes {}
             :items {1001 {:id 1001
                           :name "Iron Ore"
-                          :count 1
+                          :count (e/native->integer 1)
                           :recipe nil
                           :facility nil
                           :alt-recipes {}
@@ -112,19 +112,19 @@
            (sut/production-tree test-items test-recipes 1101)))
   (t/is (= {:id 1103
             :name "Steel"
-            :count 1
+            :count (e/native->integer 1)
             :recipe 63
             :facility "Smelting Facility"
             :alt-recipes {}
             :items {1101 {:id 1101
                           :name "Iron Ingot"
-                          :count 1
+                          :count (e/native->integer 1)
                           :recipe 1
                           :facility "Smelting Facility"
                           :alt-recipes {}
                           :items {1001 {:id 1001
                                         :name "Iron Ore"
-                                        :count 1
+                                        :count (e/native->integer 1)
                                         :recipe nil
                                         :facility nil
                                         :alt-recipes {}
@@ -132,7 +132,7 @@
            (sut/production-tree test-items test-recipes 1103)))
   (t/is (= {:id 1101
             :name "Iron Ingot"
-            :count 1
+            :count (e/native->integer 1)
             :recipe 1
             :facility "Smelting Facility"
             :alt-recipes {}
@@ -141,12 +141,12 @@
              (sut/production-tree test-items test-recipes 1101))))
   (t/is (= {:id 1112
             :name "Diamond"
-            :count 1
+            :count (e/native->integer 1)
             :recipe 60
             :facility "Smelting Facility"
             :alt-recipes {61 {:id 1112
                               :name "Diamond"
-                              :count 1
+                              :count (e/native->integer 1)
                               :recipe 61
                               :facility "Smelting Facility"
                               :items {1012 {:id 1012
@@ -158,13 +158,13 @@
                                             :items {}}}}}
             :items {1109 {:id 1109
                           :name "Energetic Graphite"
-                          :count 1
+                          :count (e/native->integer 1)
                           :recipe 17
                           :facility "Smelting Facility"
                           :alt-recipes {}
                           :items {1006 {:id 1006
                                         :name "Coal"
-                                        :count 1
+                                        :count (e/native->integer 1)
                                         :recipe nil
                                         :facility nil
                                         :alt-recipes {}
@@ -172,32 +172,32 @@
            (sut/production-tree test-items test-recipes 1112)))
   (t/is (= {:id 1202
             :name "Magnetic Coil"
-            :count 1
+            :count (e/native->integer 1)
             :recipe 6
             :facility "Assembler"
             :alt-recipes {}
             :items {1104 {:id 1104
                           :name "Copper Ingot"
-                          :count 1
+                          :count (e/native->integer 1)
                           :recipe 3
                           :facility "Smelting Facility"
                           :alt-recipes {}
                           :items {1002 {:id 1002
                                         :name "Copper Ore"
-                                        :count 1
+                                        :count (e/native->integer 1)
                                         :recipe nil
                                         :facility nil
                                         :alt-recipes {}
                                         :items {}}}}
                     1102 {:id 1102
                           :name "Magnet"
-                          :count 3
+                          :count (e/native->integer 3)
                           :recipe 2
                           :facility "Smelting Facility"
                           :alt-recipes {}
                           :items {1001 {:id 1001
                                         :name "Iron Ore"
-                                        :count 2
+                                        :count (e/native->integer 2)
                                         :recipe nil
                                         :facility nil
                                         :alt-recipes {}
