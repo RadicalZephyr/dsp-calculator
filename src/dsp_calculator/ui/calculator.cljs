@@ -248,6 +248,12 @@
     :name "Quantum Chemical Plant"
     :count 2}])
 
+(defn preferred-building-row [data [x y :as row] type selected ra label]
+  (->> data
+       (map (fn [item]
+              [preferred-building-option row type selected #(reset! ra %) item]))
+       (into [[:span.name {:class (grid-row x y)} label]])))
+
 (defn preferred-buildings [facilities belt smelter assembler chemical]
   (let [belt-val @belt
         smelter-val @smelter
@@ -256,29 +262,41 @@
     [:details.preferred.preferred-buildings {:open true}
      [:summary "Preferred Buildings"]
      `[:div.fields
-       [:span.name {:class ~(grid-row 1 2)} "Logistics"]
-       ~@(->> conveyor-belts
-              (map
-               (fn [item]
-                 [preferred-belt-option [1 2] belt-val #(reset! belt %) item])))
+       ~@(let [data conveyor-belts
+               [x y :as row] [1 2]
+               selected belt-val
+               ra belt
+               label "Logistics"]
+           (->> data
+                (map (fn [item]
+                       [preferred-belt-option row selected #(reset! ra %) item]))
+                (into [[:span.name {:class (grid-row x y)} label]])))
 
        ~@(when (contains? facilities "Smelting Facility")
-           (->> smelters
-                (map (fn [item]
-                       [preferred-building-option [2 3] "smelter" smelter-val #(reset! smelter %) item]))
-                (into [[:span.name {:class (grid-row 2 3)} "Smelting Facility"]])))
+           (preferred-building-row smelters
+                                   [2 3]
+                                   "smelter"
+                                   smelter-val
+                                   smelter
+                                   "Smelting Facility"))
 
        ~@(when (contains? facilities "Assembler")
-           (->> assemblers
-                (map (fn [item]
-                       [preferred-building-option [3 4] "assembler" assembler-val #(reset! assembler %) item]))
-                (into [[:span.name {:class (grid-row 3 4)} "Assembler"]])))
+           (preferred-building-row assemblers
+                                   [3 4]
+                                   "assembler"
+                                   assembler-val
+                                   assembler
+                                   "Assembler"))
 
        ~@(when (contains? facilities "Chemical Facility")
-           (->> chemical-plants
-                (map (fn [item]
-                       [preferred-building-option [4 5] "chemical" chemical-val #(reset! chemical %) item]))
-                (into [[:span.name {:class (grid-row 4 5)} "Chemical Facility"]])))]]))
+           (preferred-building-row chemical-plants
+                                   [4 5]
+                                   "chemical"
+                                   chemical-val
+                                   chemical
+                                   "Chemical Facility"))]]))
+
+
 
 (defn production-tree-header []
   [:div.solver-header.node-header
