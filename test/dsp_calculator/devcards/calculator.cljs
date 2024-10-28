@@ -208,3 +208,13 @@ The calculator interface, the most important part of the site.")
                                   :name "Iron Ingot"
                                   :items [{:id 1001
                                            :name "Iron Ore"}]}]]])
+
+(defcard-rg whole-production
+  [:main.page.calculator
+   [calc/production-tree
+    {:raw-resources [{:id 1001
+                      :name "Iron Ore"}]}
+    {:id 1101
+     :name "Iron Ingot"
+     :items [{:id 1001
+              :name "Iron Ore"}]}]])

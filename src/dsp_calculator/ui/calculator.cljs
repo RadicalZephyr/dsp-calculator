@@ -334,15 +334,17 @@
       [:span.recipe
        [:span.tech.icon {:data-icon "tech.1102"}]
        [:span.name "Raw Resources Summary"]]]]]
-   [:div.solver-header.node-header
-    [:div "Buildings × Recipe"]
-    [:div]
-    [:div "Belts"]
-    [:div "Throughput"]]
-   (for [resource raw-resources]
-     ^{:key (:id resource)} [production-tree-leaf-node 0 resource])])
+   [:div.solver.has-proliferators
+    [:div.solver-header.node-header
+     [:div "Buildings × Recipe"]
+     [:div]
+     [:div "Belts"]
+     [:div "Throughput"]]
+    (for [resource raw-resources]
+      ^{:key (:id resource)} [production-tree-leaf-node 0 resource])]])
 
-(defn production-tree [tree]
-  [:div.solver
+(defn production-tree [summary tree]
+  [:div.solver.has-proliferators
+   [production-tree-summary (:raw-resources summary)]
    [production-tree-header]
    [production-tree-node 0 tree]])
