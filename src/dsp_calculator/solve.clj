@@ -77,8 +77,7 @@
 (def ^:dynamic *max-depth* 10)
 
 (def production-summary
-  {:alt-recipes #{}
-   :facilities #{}
+  {:facilities #{}
    :raw-resources {}})
 
 (defn get-item-count [recipe item-id]
@@ -102,6 +101,9 @@
   for that item can use a different recipe."
   [items recipes item-id]
   (letfn [(process-recipe [summary depth scale recipe item-id]
+            (when recipe
+              (swap! summary update :facilities
+                     conj (:made-from-string recipe)))
             {:id item-id
              :name (get-in items [item-id :name] "")
              :count (* scale (get-item-count recipe item-id))
@@ -120,16 +122,11 @@
             (if (< depth *max-depth*)
               (let [item-recipes (get recipes item-id)
                     first-recipe (first item-recipes)
-                    alt-recipes (map :id (rest item-recipes))]
-                (when (seq alt-recipes)
-                  (swap! summary update :alt-recipes
-                         conj (vec (cons (:id first-recipe) alt-recipes))))
-                (when (seq item-recipes)
-                  (swap! summary update :facilities
-                         into (map :made-from-string item-recipes)))
-                (let [recipe first-recipe
-                      node (process-recipe summary depth scale recipe item-id)]
-                  (assoc node :alt-recipes alt-recipes)))
+                    alt-recipes (map :id (rest item-recipes))
+                    node (process-recipe summary depth scale first-recipe item-id)
+                    alt-recipes (->> alt-recipes
+                                     vec)]
+                (assoc node :alt-recipes alt-recipes))
               {:error "max depth reached"}))]
     (let [summary (atom production-summary)
           tree (r summary 0 1 item-id)]

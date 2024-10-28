@@ -51,8 +51,7 @@
           :results {1112 2}}]})
 
 (t/deftest test-solver
-  (t/is (= [{:alt-recipes #{}
-             :facilities #{}
+  (t/is (= [{:facilities #{}
              :raw-resources {}}
             {:id 1001
              :name "Iron Ore"
@@ -62,8 +61,7 @@
              :alt-recipes []
              :items {}}]
            (sut/production-tree test-items test-recipes 1001)))
-  (t/is (= [{:alt-recipes #{}
-             :facilities #{"Smelting Facility"}
+  (t/is (= [{:facilities #{"Smelting Facility"}
              :raw-resources {}}
             {:id 1101
              :name "Iron Ingot"
@@ -79,8 +77,7 @@
                            :alt-recipes []
                            :items {}}}}]
            (sut/production-tree test-items test-recipes 1101)))
-  (t/is (= [{:alt-recipes #{}
-             :facilities #{"Smelting Facility"}
+  (t/is (= [{:facilities #{"Smelting Facility"}
              :raw-resources {}}
             {:id 1103
              :name "Steel"
@@ -102,8 +99,7 @@
                                          :alt-recipes []
                                          :items {}}}}}}]
            (sut/production-tree test-items test-recipes 1103)))
-  (t/is (= [{:alt-recipes #{}
-             :facilities #{"Smelting Facility"}
+  (t/is (= [{:facilities #{"Smelting Facility"}
              :raw-resources {}}
             {:id 1101,
              :name "Iron Ingot"
@@ -114,8 +110,7 @@
              :items {nil {:error "max depth reached"}}}]
            (binding [sut/*max-depth* 1]
              (sut/production-tree test-items test-recipes 1101))))
-  (t/is (= [{:alt-recipes #{[60 61]}
-             :facilities #{"Smelting Facility"}
+  (t/is (= [{:facilities #{"Smelting Facility"}
              :raw-resources {}}
             {:id 1112
              :name "Diamond"
