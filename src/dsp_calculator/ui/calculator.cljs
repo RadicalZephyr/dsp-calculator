@@ -171,38 +171,42 @@
 (defn item-id [item]
   (str "item." (:id item)))
 
-(defn preferred-building-option [[x y] type selected change building]
-  [:label {:class [(grid-row x y)
-                   (when (= (:id selected) (:id building)) "is-selected")]}
-   [:input {:type "radio"
-            :name type
-            :value (str (:id building))
-            :selected (= (:id selected) (:id building))
-            :on-change #(change building)
-            :title (str (:name building)
-                        " - Production&nbsp;Speed:&nbsp;"
-                        (:count building))}]
-   [:span.item.icon {:title (:name building)
-                     :data-icon (item-id building)
-                     :data-count (str (:count building) "×")
-                     :lang "en-US"}]])
+(def preferred-building-customizations
+  {"belt" (fn [building]
+            {:title-suffix (str " — Transport&nbsp;Speed:&nbsp;"
+                                (:speed building)
+                                "&nbsp;items&nbsp;per&nbsp;minute")
+             :data-key :data-per
+             :data-val (str (:speed building))})
+   :else (fn [building]
+           {:title-suffix (str " - Production&nbsp;Speed:&nbsp;"
+                               (:count building))
+            :data-key :data-count
+            :data-val (str (:count building) "×")})})
 
-(defn preferred-belt-option [[x y] selected change building]
-  [:label {:class [(grid-row x y)
-                   (when (= (:id selected) (:id building)) "is-selected")]}
-   [:input {:type "radio"
-            :name "belt"
-            :value (str (:id building))
-            :selected (= (:id selected) (:id building))
-            :on-change #(change building)
-            :title (str (:name building)
-                        " — Transport&nbsp;Speed:&nbsp;"
-                        (:speed building)
-                        "&nbsp;items&nbsp;per&nbsp;minute")}]
-   [:span.item.icon {:title (:name building)
-                     :data-icon (item-id building)
-                     :data-per (str (:speed building))
-                     :lang "en-US"}]])
+(defn get-pb-customizations [type building]
+  (let [k (if (contains? preferred-building-customizations type)
+            type
+            :else)]
+    ((get preferred-building-customizations k) building)))
+
+(defn preferred-building-option [[x y] type selected change building]
+  (let [{:keys [title-suffix
+                data-key
+                data-val]} (get-pb-customizations type building)]
+    [:label {:class [(grid-row x y)
+                     (when (= (:id selected) (:id building)) "is-selected")]}
+     [:input {:type "radio"
+              :name type
+              :value (str (:id building))
+              :selected (= (:id selected) (:id building))
+              :on-change #(change building)
+              :title (str (:name building)
+                          title-suffix)}]
+     [:span.item.icon {:title (:name building)
+                       :data-icon (item-id building)
+                       data-key data-val
+                       :lang "en-US"}]]))
 
 (def conveyor-belts
   [{:id 2001
@@ -262,15 +266,12 @@
     [:details.preferred.preferred-buildings {:open true}
      [:summary "Preferred Buildings"]
      `[:div.fields
-       ~@(let [data conveyor-belts
-               [x y :as row] [1 2]
-               selected belt-val
-               ra belt
-               label "Logistics"]
-           (->> data
-                (map (fn [item]
-                       [preferred-belt-option row selected #(reset! ra %) item]))
-                (into [[:span.name {:class (grid-row x y)} label]])))
+       ~@(preferred-building-row conveyor-belts
+                                 [1 2]
+                                 "belt"
+                                 belt-val
+                                 belt
+                                 "Logistics")
 
        ~@(when (contains? facilities "Smelting Facility")
            (preferred-building-row smelters
