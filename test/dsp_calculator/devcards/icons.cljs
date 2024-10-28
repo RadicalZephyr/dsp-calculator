@@ -51,19 +51,19 @@
   (fn [recipes _]
     [:div
      [fetch-label "recipes" recipes]
-     [icons-list "recipe" (filter #(valid-recipe-icons (:id %))@recipes)]])
+     [icons-list "recipe" (filter #(valid-recipe-icons (:id %)) (vals @recipes))]])
   (reagent/atom []))
 
 (defcard-rg item-icons
   (fn [items _]
     [:div
      [fetch-label "items" items]
-     [icons-list "item" @items]])
+     [icons-list "item" (vals @items)]])
   (reagent/atom []))
 
 (defcard-rg tech-icons
   (fn [tech _]
     [:div
      [fetch-label "tech" tech]
-     [icons-list "tech" @tech]])
+     [icons-list "tech" (vals @tech)]])
   (reagent/atom []))

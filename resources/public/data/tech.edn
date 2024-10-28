@@ -1,10 +1,12 @@
-[{:description "戴森球计划描述",
+{1
+ {:description "戴森球计划描述",
   :hash-needed 1,
   :icon-path "Icons/Tech/1",
   :id 1,
   :name "T戴森球计划",
   :position [5 1],
-  :published true}
+  :published true},
+ 1001
  {:add-item-counts [1 1 1],
   :add-items [2203 2201 2301],
   :conclusion "电磁学结果",
@@ -20,7 +22,8 @@
   :property-item-counts [10],
   :property-override-items [6001],
   :published true,
-  :unlock-recipes [7 8 48]}
+  :unlock-recipes [7 8 48]},
+ 1002
  {:add-item-counts [1],
   :add-items [2901],
   :conclusion "电磁矩阵结果",
@@ -36,7 +39,8 @@
   :property-item-counts [40],
   :property-override-items [6001],
   :published true,
-  :unlock-recipes [9 10]}
+  :unlock-recipes [9 10]},
+ 1101
  {:add-item-counts [10],
   :add-items [1401],
   :conclusion "高效电浆控制结果",
@@ -51,7 +55,8 @@
   :position [13 -27],
   :pre-techs [1001],
   :published true,
-  :unlock-recipes [11 12 13]}
+  :unlock-recipes [11 12 13]},
+ 1102
  {:conclusion "等离子萃取精炼结果",
   :description "等离子萃取精炼描述",
   :hash-needed 36000,
@@ -64,7 +69,8 @@
   :position [17 -27],
   :pre-techs [1120 1101],
   :published true,
-  :unlock-recipes [14 15 16]}
+  :unlock-recipes [14 15 16]},
+ 1103
  {:conclusion "X射线裂解结果",
   :description "X射线裂解描述",
   :hash-needed 72000,
@@ -77,7 +83,8 @@
   :position [25 -27],
   :pre-techs [1121 1102],
   :published true,
-  :unlock-recipes [58]}
+  :unlock-recipes [58]},
+ 1104
  {:conclusion "重整精炼结果",
   :description "重整精炼描述",
   :hash-needed 90000,
@@ -90,7 +97,8 @@
   :position [29 -27],
   :pre-techs [1103],
   :published true,
-  :unlock-recipes [121]}
+  :unlock-recipes [121]},
+ 1111
  {:conclusion "能量矩阵结果",
   :description "能量矩阵描述",
   :hash-needed 36000,
@@ -103,7 +111,8 @@
   :position [21 -31],
   :pre-techs [1102],
   :published true,
-  :unlock-recipes [18]}
+  :unlock-recipes [18]},
+ 1112
  {:conclusion "氢燃料棒结果",
   :description "氢燃料棒描述",
   :hash-needed 72000,
@@ -116,7 +125,8 @@
   :position [25 -31],
   :pre-techs [1111],
   :published true,
-  :unlock-recipes [19]}
+  :unlock-recipes [19]},
+ 1113
  {:conclusion "推进器结果",
   :description "推进器描述",
   :hash-needed 180000,
@@ -129,7 +139,8 @@
   :position [29 -31],
   :pre-techs [1112],
   :published true,
-  :unlock-recipes [20]}
+  :unlock-recipes [20]},
+ 1114
  {:conclusion "加力推进器结果",
   :description "加力推进器描述",
   :hash-needed 288000,
@@ -142,7 +153,8 @@
   :position [33 -31],
   :pre-techs [1113],
   :published true,
-  :unlock-recipes [21]}
+  :unlock-recipes [21]},
+ 1120
  {:add-item-counts [1],
   :add-items [2106],
   :conclusion "流体储存封装结果",
@@ -157,7 +169,8 @@
   :position [13 -23],
   :pre-techs [1001],
   :published true,
-  :unlock-recipes [114 49]}
+  :unlock-recipes [114 49]},
+ 1121
  {:conclusion "基础化工结果",
   :description "基础化工描述",
   :hash-needed 72000,
@@ -170,7 +183,8 @@
   :position [21 -23],
   :pre-techs [1120 1102],
   :published true,
-  :unlock-recipes [22 23 24]}
+  :unlock-recipes [22 23 24]},
+ 1122
  {:conclusion "高分子化工结果",
   :description "高分子化工描述",
   :hash-needed 72000,
@@ -183,7 +197,8 @@
   :position [25 -23],
   :pre-techs [1121],
   :published true,
-  :unlock-recipes [25 54]}
+  :unlock-recipes [25 54]},
+ 1123
  {:conclusion "高强度晶体结果",
   :description "高强度晶体描述",
   :hash-needed 108000,
@@ -196,7 +211,8 @@
   :position [29 -23],
   :pre-techs [1122],
   :published true,
-  :unlock-recipes [26]}
+  :unlock-recipes [26]},
+ 1124
  {:conclusion "结构矩阵结果",
   :description "结构矩阵描述",
   :hash-needed 240000,
@@ -209,7 +225,8 @@
   :position [33 -23],
   :pre-techs [1123],
   :published true,
-  :unlock-recipes [27]}
+  :unlock-recipes [27]},
+ 1125
  {:conclusion "卡西米尔晶体结果",
   :description "卡西米尔晶体描述",
   :hash-needed 240000,
@@ -222,7 +239,8 @@
   :position [37 -23],
   :pre-techs [1124],
   :published true,
-  :unlock-recipes [28 29]}
+  :unlock-recipes [28 29]},
+ 1126
  {:conclusion "高强度玻璃结果",
   :description "高强度玻璃描述",
   :hash-needed 240000,
@@ -235,7 +253,8 @@
   :position [37 -19],
   :pre-techs [1132],
   :published true,
-  :unlock-recipes [30]}
+  :unlock-recipes [30]},
+ 1131
  {:conclusion "应用型超导体结果",
   :description "应用型超导体描述",
   :hash-needed 72000,
@@ -248,7 +267,8 @@
   :position [25 -19],
   :pre-techs [1121],
   :published true,
-  :unlock-recipes [31 32]}
+  :unlock-recipes [31 32]},
+ 1132
  {:conclusion "高强度材料结果",
   :description "高强度材料描述",
   :hash-needed 135000,
@@ -261,7 +281,8 @@
   :position [33 -19],
   :pre-techs [1131],
   :published true,
-  :unlock-recipes [33 35]}
+  :unlock-recipes [33 35]},
+ 1133
  {:conclusion "粒子可控技术结果",
   :description "粒子可控技术描述",
   :hash-needed 180000,
@@ -274,7 +295,8 @@
   :position [37 -15],
   :pre-techs [1132],
   :published true,
-  :unlock-recipes [36 62]}
+  :unlock-recipes [36 62]},
+ 1134
  {:conclusion "重氢分馏结果",
   :description "重氢分馏描述",
   :hash-needed 36000,
@@ -287,7 +309,8 @@
   :position [21 -15],
   :pre-techs [1412 1102],
   :published true,
-  :unlock-recipes [110 115]}
+  :unlock-recipes [110 115]},
+ 1141
  {:conclusion "波函数干扰结果",
   :description "波函数干扰描述",
   :hash-needed 360000,
@@ -300,7 +323,8 @@
   :position [41 -23],
   :pre-techs [1126 1125],
   :published true,
-  :unlock-recipes [38]}
+  :unlock-recipes [38]},
+ 1142
  {:conclusion "微型粒子对撞机结果",
   :description "微型粒子对撞机描述",
   :hash-needed 240000,
@@ -313,7 +337,8 @@
   :position [37 -31],
   :pre-techs [1124],
   :published true,
-  :unlock-recipes [39 40]}
+  :unlock-recipes [39 40]},
+ 1143
  {:conclusion "奇异物质结果",
   :description "奇异物质描述",
   :hash-needed 300000,
@@ -326,7 +351,8 @@
   :position [41 -31],
   :pre-techs [1142],
   :published true,
-  :unlock-recipes [104]}
+  :unlock-recipes [104]},
+ 1144
  {:conclusion "人造恒星结果",
   :description "人造恒星描述",
   :hash-needed 432000,
@@ -339,7 +365,8 @@
   :position [61 -3],
   :pre-techs [1145],
   :published true,
-  :unlock-recipes [43]}
+  :unlock-recipes [43]},
+ 1145
  {:conclusion "可控湮灭反应结果",
   :description "可控湮灭反应描述",
   :hash-needed 600000,
@@ -352,7 +379,8 @@
   :position [57 -3],
   :pre-techs [1506],
   :published true,
-  :unlock-recipes [42 44]}
+  :unlock-recipes [42 44]},
+ 1151
  {:conclusion "增产剂 Mk.I结果",
   :description "增产剂 Mk.I描述",
   :hash-needed 36000,
@@ -365,7 +393,8 @@
   :position [21 -11],
   :pre-techs [1311 1101],
   :published true,
-  :unlock-recipes [106 109]}
+  :unlock-recipes [106 109]},
+ 1152
  {:conclusion "增产剂 Mk.II结果",
   :description "增产剂 Mk.II描述",
   :hash-needed 180000,
@@ -378,7 +407,8 @@
   :position [29 -11],
   :pre-techs [1302 1151],
   :published true,
-  :unlock-recipes [107]}
+  :unlock-recipes [107]},
+ 1153
  {:conclusion "增产剂 Mk.III结果",
   :description "增产剂 Mk.III描述",
   :hash-needed 360000,
@@ -391,7 +421,8 @@
   :position [37 -11],
   :pre-techs [1152 1132],
   :published true,
-  :unlock-recipes [108]}
+  :unlock-recipes [108]},
+ 1201
  {:add-item-counts [1],
   :add-items [2303],
   :conclusion "基础制造工艺结果",
@@ -407,7 +438,8 @@
   :property-item-counts [40],
   :property-override-items [6001],
   :published true,
-  :unlock-recipes [45]}
+  :unlock-recipes [45]},
+ 1202
  {:conclusion "高速制造工艺结果",
   :description "高速制造工艺描述",
   :hash-needed 108000,
@@ -422,7 +454,8 @@
   :published true,
   :unlock-functions [7],
   :unlock-recipes [46],
-  :unlock-values [0.5]}
+  :unlock-values [0.5]},
+ 1203
  {:conclusion "量子打印技术结果",
   :description "量子打印技术描述",
   :hash-needed 288000,
@@ -437,7 +470,8 @@
   :published true,
   :unlock-functions [7],
   :unlock-recipes [47],
-  :unlock-values [0.5]}
+  :unlock-values [0.5]},
+ 1302
  {:conclusion "处理器结果",
   :description "处理器描述",
   :hash-needed 144000,
@@ -450,7 +484,8 @@
   :position [25 -7],
   :pre-techs [1311],
   :published true,
-  :unlock-recipes [51]}
+  :unlock-recipes [51]},
+ 1303
  {:conclusion "量子芯片结果",
   :description "量子芯片描述",
   :hash-needed 288000,
@@ -463,7 +498,8 @@
   :position [45 -19],
   :pre-techs [1312 1141],
   :published true,
-  :unlock-recipes [52]}
+  :unlock-recipes [52]},
+ 1304
  {:conclusion "大型采矿机结果",
   :description "大型采矿机描述",
   :hash-needed 360000,
@@ -476,7 +512,8 @@
   :position [49 -19],
   :pre-techs [1303],
   :published true,
-  :unlock-recipes [119]}
+  :unlock-recipes [119]},
+ 1305
  {:conclusion "高级化工结果",
   :description "高级化工描述",
   :hash-needed 360000,
@@ -489,7 +526,8 @@
   :position [49 -31],
   :pre-techs [1303 1143],
   :published true,
-  :unlock-recipes [124]}
+  :unlock-recipes [124]},
+ 1311
  {:conclusion "半导体材料结果",
   :description "半导体材料描述",
   :hash-needed 18000,
@@ -502,7 +540,8 @@
   :position [17 -7],
   :pre-techs [1201],
   :published true,
-  :unlock-recipes [53]}
+  :unlock-recipes [53]},
+ 1312
  {:conclusion "信息矩阵结果",
   :description "信息矩阵描述",
   :hash-needed 288000,
@@ -515,7 +554,8 @@
   :position [41 -7],
   :pre-techs [1302 1133],
   :published true,
-  :unlock-recipes [55]}
+  :unlock-recipes [55]},
+ 1401
  {:add-item-counts [3],
   :add-items [2302],
   :conclusion "自动化冶金结果",
@@ -531,7 +571,8 @@
   :property-item-counts [40],
   :property-override-items [6001],
   :published true,
-  :unlock-recipes [56 57]}
+  :unlock-recipes [56 57]},
+ 1402
  {:conclusion "冶炼提纯结果",
   :description "冶炼提纯描述",
   :hash-needed 18000,
@@ -544,7 +585,8 @@
   :position [17 5],
   :pre-techs [1401],
   :published true,
-  :unlock-recipes [34 17 59]}
+  :unlock-recipes [34 17 59]},
+ 1403
  {:conclusion "晶体冶炼结果",
   :description "晶体冶炼描述",
   :hash-needed 90000,
@@ -557,7 +599,8 @@
   :position [21 5],
   :pre-techs [1402],
   :published true,
-  :unlock-recipes [60 61 37]}
+  :unlock-recipes [60 61 37]},
+ 1411
  {:conclusion "钢材冶炼结果",
   :description "钢材冶炼描述",
   :hash-needed 21600,
@@ -572,7 +615,8 @@
   :published true,
   :unlock-functions [37],
   :unlock-recipes [63],
-  :unlock-values [2203]}
+  :unlock-values [2203]},
+ 1412
  {:add-item-counts [1],
   :add-items [2204],
   :conclusion "火力发电结果",
@@ -587,7 +631,8 @@
   :position [17 -15],
   :pre-techs [1201],
   :published true,
-  :unlock-recipes [64]}
+  :unlock-recipes [64]},
+ 1413
  {:conclusion "钛矿冶炼结果",
   :description "钛矿冶炼描述",
   :hash-needed 36000,
@@ -600,7 +645,8 @@
   :position [25 13],
   :pre-techs [1411],
   :published true,
-  :unlock-recipes [65]}
+  :unlock-recipes [65]},
+ 1414
  {:conclusion "高强度钛合金结果",
   :description "高强度钛合金描述",
   :hash-needed 144000,
@@ -613,7 +659,8 @@
   :position [33 13],
   :pre-techs [1413],
   :published true,
-  :unlock-recipes [66]}
+  :unlock-recipes [66]},
+ 1415
  {:conclusion "移山填海工程结果",
   :description "移山填海工程描述",
   :hash-needed 72000,
@@ -626,7 +673,8 @@
   :position [21 9],
   :pre-techs [1411],
   :published true,
-  :unlock-recipes [112]}
+  :unlock-recipes [112]},
+ 1416
  {:conclusion "微型核聚变发电结果",
   :description "微型核聚变发电描述",
   :hash-needed 180000,
@@ -640,7 +688,8 @@
   :pre-techs [1134],
   :pre-techs-implicit [1414],
   :published true,
-  :unlock-recipes [113 41]}
+  :unlock-recipes [113 41]},
+ 1417
  {:conclusion "位面冶金结果",
   :description "位面冶金描述",
   :hash-needed 360000,
@@ -654,7 +703,8 @@
   :pre-techs [1141],
   :pre-techs-implicit [1403],
   :published true,
-  :unlock-recipes [116]}
+  :unlock-recipes [116]},
+ 1501
  {:add-item-counts [1],
   :add-items [2205],
   :conclusion "太阳能收集结果",
@@ -669,7 +719,8 @@
   :position [21 1],
   :pre-techs [1402 1002 1201],
   :published true,
-  :unlock-recipes [67]}
+  :unlock-recipes [67]},
+ 1502
  {:conclusion "光子变频结果",
   :description "光子变频描述",
   :hash-needed 36000,
@@ -682,7 +733,8 @@
   :position [25 1],
   :pre-techs [1501],
   :published true,
-  :unlock-recipes [68 69]}
+  :unlock-recipes [68 69]},
+ 1503
  {:conclusion "太阳帆轨道系统结果",
   :description "太阳帆轨道系统描述",
   :hash-needed 54000,
@@ -696,7 +748,8 @@
   :pre-techs [1502],
   :pre-techs-implicit [1711],
   :published true,
-  :unlock-recipes [70 71]}
+  :unlock-recipes [70 71]},
+ 1504
  {:conclusion "射线接收站结果",
   :description "射线接收站描述",
   :hash-needed 108000,
@@ -709,7 +762,8 @@
   :position [33 1],
   :pre-techs [1503],
   :published true,
-  :unlock-recipes [72]}
+  :unlock-recipes [72]},
+ 1505
  {:conclusion "行星电离层利用结果",
   :description "行星电离层利用描述",
   :hash-needed 360000,
@@ -724,7 +778,8 @@
   :pre-techs-implicit [1704],
   :published true,
   :unlock-functions [8],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 1506
  {:conclusion "狄拉克逆变机制结果",
   :description "狄拉克逆变机制描述",
   :hash-needed 540000,
@@ -737,7 +792,8 @@
   :position [53 1],
   :pre-techs [1505],
   :published true,
-  :unlock-recipes [74]}
+  :unlock-recipes [74]},
+ 1507
  {:conclusion "宇宙矩阵结果",
   :description "宇宙矩阵描述",
   :hash-needed 720000,
@@ -750,7 +806,8 @@
   :position [65 1],
   :pre-techs [1506],
   :published true,
-  :unlock-recipes [75]}
+  :unlock-recipes [75]},
+ 1508
  {:conclusion "任务完成结果",
   :description "任务完成描述",
   :hash-needed 3600000,
@@ -764,7 +821,8 @@
   :pre-techs [1507],
   :published true,
   :unlock-functions [99],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 1511
  {:conclusion "能量储存结果",
   :description "能量储存描述",
   :hash-needed 108000,
@@ -778,7 +836,8 @@
   :pre-techs [1403 1501],
   :pre-techs-implicit [1711],
   :published true,
-  :unlock-recipes [76]}
+  :unlock-recipes [76]},
+ 1512
  {:conclusion "星际电力运输结果",
   :description "星际电力运输描述",
   :hash-needed 216000,
@@ -791,7 +850,8 @@
   :position [37 9],
   :pre-techs [1414 1511],
   :published true,
-  :unlock-recipes [77]}
+  :unlock-recipes [77]},
+ 1513
  {:conclusion "地热开采结果",
   :description "地热开采描述",
   :hash-needed 144000,
@@ -805,7 +865,8 @@
   :pre-techs [1502],
   :pre-techs-implicit [1711],
   :published true,
-  :unlock-recipes [118]}
+  :unlock-recipes [118]},
+ 1521
  {:conclusion "高强度轻质结构结果",
   :description "高强度轻质结构描述",
   :hash-needed 360000,
@@ -819,7 +880,8 @@
   :pre-techs [1503],
   :pre-techs-implicit [1132],
   :published true,
-  :unlock-recipes [80 81]}
+  :unlock-recipes [80 81]},
+ 1522
  {:conclusion "垂直发射井结果",
   :description "垂直发射井描述",
   :hash-needed 576000,
@@ -833,7 +895,8 @@
   :pre-techs [1521],
   :pre-techs-implicit [1303],
   :published true,
-  :unlock-recipes [82 83]}
+  :unlock-recipes [82 83]},
+ 1523
  {:conclusion "戴森球应力系统结果",
   :description "戴森球应力系统描述",
   :hash-needed 180000,
@@ -850,7 +913,8 @@
   :pre-techs [1522],
   :published true,
   :unlock-functions [26],
-  :unlock-values [15]}
+  :unlock-values [15]},
+ 1601
  {:add-item-counts [20 5],
   :add-items [2001 2011],
   :conclusion "基础物流系统结果",
@@ -866,7 +930,8 @@
   :property-item-counts [40],
   :property-override-items [6001],
   :published true,
-  :unlock-recipes [84 85 86]}
+  :unlock-recipes [84 85 86]},
+ 1602
  {:add-item-counts [1 5 5],
   :add-items [2020 2012 2030],
   :conclusion "改良物流系统结果",
@@ -881,7 +946,8 @@
   :position [21 21],
   :pre-techs [1601],
   :published true,
-  :unlock-recipes [87 88 117]}
+  :unlock-recipes [87 88 117]},
+ 1603
  {:conclusion "高效物流系统结果",
   :description "高效物流系统描述",
   :hash-needed 72000,
@@ -895,7 +961,8 @@
   :pre-techs [1602],
   :pre-techs-implicit [1702],
   :published true,
-  :unlock-recipes [89 90 91]}
+  :unlock-recipes [89 90 91]},
+ 1604
  {:conclusion "行星物流系统结果",
   :description "行星物流系统描述",
   :hash-needed 144000,
@@ -909,7 +976,8 @@
   :pre-techs [1603],
   :pre-techs-implicit [1113 3701],
   :published true,
-  :unlock-recipes [92 93 94]}
+  :unlock-recipes [92 93 94]},
+ 1605
  {:conclusion "星际物流系统结果",
   :description "星际物流系统描述",
   :hash-needed 216000,
@@ -923,7 +991,8 @@
   :pre-techs [1604 1414],
   :pre-techs-implicit [1114],
   :published true,
-  :unlock-recipes [95 96]}
+  :unlock-recipes [95 96]},
+ 1606
  {:conclusion "气态行星开采结果",
   :description "气态行星开采描述",
   :hash-needed 432000,
@@ -936,7 +1005,8 @@
   :position [41 13],
   :pre-techs [1605 1512],
   :published true,
-  :unlock-recipes [111]}
+  :unlock-recipes [111]},
+ 1607
  {:conclusion "集装物流系统结果",
   :description "集装物流系统描述",
   :hash-needed 180000,
@@ -950,7 +1020,8 @@
   :pre-techs [1603],
   :pre-techs-implicit [1711],
   :published true,
-  :unlock-recipes [120 160]}
+  :unlock-recipes [120 160]},
+ 1608
  {:conclusion "配送物流系统结果",
   :description "配送物流系统描述",
   :hash-needed 108000,
@@ -966,7 +1037,8 @@
   :published true,
   :unlock-functions [32],
   :unlock-recipes [122 123],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 1701
  {:conclusion "电磁驱动结果",
   :description "电磁驱动描述",
   :hash-needed 9000,
@@ -979,7 +1051,8 @@
   :position [13 -35],
   :pre-techs [1001],
   :published true,
-  :unlock-recipes [97]}
+  :unlock-recipes [97]},
+ 1702
  {:conclusion "磁悬浮技术结果",
   :description "磁悬浮技术描述",
   :hash-needed 72000,
@@ -992,7 +1065,8 @@
   :position [21 -35],
   :pre-techs [1701],
   :published true,
-  :unlock-recipes [98]}
+  :unlock-recipes [98]},
+ 1703
  {:conclusion "粒子磁力阱结果",
   :description "粒子磁力阱描述",
   :hash-needed 288000,
@@ -1005,7 +1079,8 @@
   :position [29 -35],
   :pre-techs [1702],
   :published true,
-  :unlock-recipes [99 100]}
+  :unlock-recipes [99 100]},
+ 1704
  {:conclusion "引力波折射结果",
   :description "引力波折射描述",
   :hash-needed 360000,
@@ -1018,7 +1093,8 @@
   :position [45 -35],
   :pre-techs [1143 1703],
   :published true,
-  :unlock-recipes [101 78]}
+  :unlock-recipes [101 78]},
+ 1705
  {:conclusion "引力矩阵结果",
   :description "引力矩阵描述",
   :hash-needed 576000,
@@ -1031,7 +1107,8 @@
   :position [49 -35],
   :pre-techs [1303 1704],
   :published true,
-  :unlock-recipes [102 79]}
+  :unlock-recipes [102 79]},
+ 1711
  {:conclusion "超级磁场发生器结果",
   :description "超级磁场发生器描述",
   :hash-needed 180000,
@@ -1044,7 +1121,8 @@
   :position [25 -39],
   :pre-techs [1702],
   :published true,
-  :unlock-recipes [103]}
+  :unlock-recipes [103]},
+ 1712
  {:conclusion "卫星配电系统结果",
   :description "卫星配电系统描述",
   :hash-needed 240000,
@@ -1058,7 +1136,8 @@
   :pre-techs [1711],
   :pre-techs-implicit [1521],
   :published true,
-  :unlock-recipes [73]}
+  :unlock-recipes [73]},
+ 1801
  {:add-item-counts [10],
   :add-items [1601],
   :conclusion "武器系统结果",
@@ -1074,7 +1153,8 @@
   :pre-techs [1001],
   :pre-techs-implicit [1401],
   :published true,
-  :unlock-recipes [125 136]}
+  :unlock-recipes [125 136]},
+ 1802
  {:conclusion "燃烧单元结果",
   :description "燃烧单元描述",
   :hash-needed 21600,
@@ -1087,7 +1167,8 @@
   :position [17 9],
   :pre-techs [1401],
   :published true,
-  :unlock-recipes [133]}
+  :unlock-recipes [133]},
+ 1803
  {:conclusion "爆破单元结果",
   :description "爆破单元描述",
   :hash-needed 72000,
@@ -1100,7 +1181,8 @@
   :position [33 -27],
   :pre-techs [1123],
   :published true,
-  :unlock-recipes [134]}
+  :unlock-recipes [134]},
+ 1804
  {:conclusion "晶石爆破单元结果",
   :description "晶石爆破单元描述",
   :hash-needed 216000,
@@ -1113,7 +1195,8 @@
   :position [41 -27],
   :pre-techs [1125],
   :published true,
-  :unlock-recipes [135]}
+  :unlock-recipes [135]},
+ 1805
  {:conclusion "动力引擎结果",
   :description "动力引擎描述",
   :hash-needed 7200,
@@ -1126,7 +1209,8 @@
   :position [13 -43],
   :pre-techs [1001],
   :published true,
-  :unlock-recipes [105]}
+  :unlock-recipes [105]},
+ 1806
  {:conclusion "导弹防御塔结果",
   :description "导弹防御塔描述",
   :hash-needed 54000,
@@ -1140,7 +1224,8 @@
   :pre-techs [1805 1801],
   :pre-techs-implicit [1802],
   :published true,
-  :unlock-recipes [129 144]}
+  :unlock-recipes [129 144]},
+ 1807
  {:conclusion "聚爆加农炮结果",
   :description "聚爆加农炮描述",
   :hash-needed 108000,
@@ -1154,7 +1239,8 @@
   :pre-techs [1806],
   :pre-techs-implicit [1702],
   :published true,
-  :unlock-recipes [127 139]}
+  :unlock-recipes [127 139]},
+ 1808
  {:conclusion "信号塔结果",
   :description "信号塔描述",
   :hash-needed 72000,
@@ -1168,7 +1254,8 @@
   :pre-techs [1806],
   :pre-techs-implicit [1101],
   :published true,
-  :unlock-recipes [131]}
+  :unlock-recipes [131]},
+ 1809
  {:conclusion "行星防御系统结果",
   :description "行星防御系统描述",
   :hash-needed 180000,
@@ -1182,7 +1269,8 @@
   :pre-techs [1807],
   :pre-techs-implicit [1703],
   :published true,
-  :unlock-recipes [126 132]}
+  :unlock-recipes [126 132]},
+ 1810
  {:conclusion "干扰塔结果",
   :description "干扰塔描述",
   :hash-needed 144000,
@@ -1196,7 +1284,8 @@
   :pre-techs [1806],
   :pre-techs-implicit [1302],
   :published true,
-  :unlock-recipes [130 158]}
+  :unlock-recipes [130 158]},
+ 1811
  {:conclusion "磁化电浆炮结果",
   :description "磁化电浆炮描述",
   :hash-needed 300000,
@@ -1210,7 +1299,8 @@
   :pre-techs [1809],
   :pre-techs-implicit [1126],
   :published true,
-  :unlock-recipes [128 142 157]}
+  :unlock-recipes [128 142 157]},
+ 1812
  {:conclusion "钛化弹箱结果",
   :description "钛化弹箱描述",
   :hash-needed 180000,
@@ -1224,7 +1314,8 @@
   :pre-techs [1801],
   :pre-techs-implicit [1413],
   :published true,
-  :unlock-recipes [137]}
+  :unlock-recipes [137]},
+ 1813
  {:conclusion "超合金弹箱结果",
   :description "超合金弹箱描述",
   :hash-needed 216000,
@@ -1238,7 +1329,8 @@
   :pre-techs [1812],
   :pre-techs-implicit [1414],
   :published true,
-  :unlock-recipes [138]}
+  :unlock-recipes [138]},
+ 1814
  {:conclusion "高爆炮弹组结果",
   :description "高爆炮弹组描述",
   :hash-needed 144000,
@@ -1252,7 +1344,8 @@
   :pre-techs [1807],
   :pre-techs-implicit [1413],
   :published true,
-  :unlock-recipes [140]}
+  :unlock-recipes [140]},
+ 1815
  {:conclusion "超音速导弹组结果",
   :description "超音速导弹组描述",
   :hash-needed 240000,
@@ -1266,7 +1359,8 @@
   :pre-techs [1814],
   :pre-techs-implicit [1113],
   :published true,
-  :unlock-recipes [145]}
+  :unlock-recipes [145]},
+ 1816
  {:conclusion "晶石炮弹组结果",
   :description "晶石炮弹组描述",
   :hash-needed 288000,
@@ -1280,7 +1374,8 @@
   :pre-techs [1815],
   :pre-techs-implicit [1414],
   :published true,
-  :unlock-recipes [141]}
+  :unlock-recipes [141]},
+ 1817
  {:conclusion "引力导弹组结果",
   :description "引力导弹组描述",
   :hash-needed 360000,
@@ -1294,7 +1389,8 @@
   :pre-techs [1816],
   :pre-techs-implicit [1143],
   :published true,
-  :unlock-recipes [146]}
+  :unlock-recipes [146]},
+ 1818
  {:conclusion "反物质胶囊结果",
   :description "反物质胶囊描述",
   :hash-needed 540000,
@@ -1307,7 +1403,8 @@
   :position [61 -47],
   :pre-techs [1145 1811],
   :published true,
-  :unlock-recipes [143]}
+  :unlock-recipes [143]},
+ 1819
  {:conclusion "地面战斗机-E型结果",
   :description "地面战斗机-E型描述",
   :hash-needed 72000,
@@ -1323,7 +1420,8 @@
   :published true,
   :unlock-functions [77 78],
   :unlock-recipes [147],
-  :unlock-values [1 4]}
+  :unlock-values [1 4]},
+ 1820
  {:conclusion "地面战斗机-A型结果",
   :description "地面战斗机-A型描述",
   :hash-needed 144000,
@@ -1337,7 +1435,8 @@
   :pre-techs [1819],
   :pre-techs-implicit [1502],
   :published true,
-  :unlock-recipes [148]}
+  :unlock-recipes [148]},
+ 1821
  {:conclusion "地面战斗机-F型结果",
   :description "地面战斗机-F型描述",
   :hash-needed 180000,
@@ -1351,7 +1450,8 @@
   :pre-techs [1819],
   :pre-techs-implicit [1703],
   :published true,
-  :unlock-recipes [149]}
+  :unlock-recipes [149]},
+ 1822
  {:conclusion "太空战斗机-A型结果",
   :description "太空战斗机-A型描述",
   :hash-needed 216000,
@@ -1366,7 +1466,8 @@
   :published true,
   :unlock-functions [79 80],
   :unlock-recipes [150],
-  :unlock-values [1 4]}
+  :unlock-values [1 4]},
+ 1823
  {:conclusion "太空战斗机-F型结果",
   :description "太空战斗机-F型描述",
   :hash-needed 288000,
@@ -1379,7 +1480,8 @@
   :position [49 -63],
   :pre-techs [1822 1821],
   :published true,
-  :unlock-recipes [151]}
+  :unlock-recipes [151]},
+ 1824
  {:conclusion "电磁胶囊II结果",
   :description "电磁胶囊II描述",
   :hash-needed 216000,
@@ -1392,7 +1494,8 @@
   :position [41 -51],
   :pre-techs [1810],
   :published true,
-  :unlock-recipes [159]}
+  :unlock-recipes [159]},
+ 1826
  {:conclusion "战场分析基站结果",
   :description "战场分析基站描述",
   :hash-needed 36000,
@@ -1405,7 +1508,8 @@
   :position [17 -59],
   :pre-techs [1801 1805],
   :published true,
-  :unlock-recipes [152]}
+  :unlock-recipes [152]},
+ 1901
  {:conclusion "数字模拟计算结果",
   :description "数字模拟计算描述",
   :hash-needed 24000,
@@ -1419,7 +1523,8 @@
   :pre-item [5202],
   :pre-techs [1312],
   :published true,
-  :unlock-recipes [153]}
+  :unlock-recipes [153]},
+ 1902
  {:conclusion "物质重组技术结果",
   :description "物质重组技术描述",
   :hash-needed 18000,
@@ -1433,7 +1538,8 @@
   :pre-item [5203],
   :pre-techs [1203],
   :published true,
-  :unlock-recipes [154]}
+  :unlock-recipes [154]},
+ 1903
  {:conclusion "负熵递归结果",
   :description "负熵递归描述",
   :hash-needed 36000,
@@ -1447,7 +1553,8 @@
   :pre-item [5204],
   :pre-techs [1417],
   :published true,
-  :unlock-recipes [155]}
+  :unlock-recipes [155]},
+ 1904
  {:conclusion "金色燃料棒结果",
   :description "金色燃料棒描述",
   :hash-needed 60000,
@@ -1461,7 +1568,8 @@
   :pre-item [5205],
   :pre-techs [1145],
   :published true,
-  :unlock-recipes [156]}
+  :unlock-recipes [156]},
+ 2101
  {:conclusion "机甲核心结果",
   :description "机甲核心描述",
   :hash-needed 3600,
@@ -1477,7 +1585,8 @@
   :property-override-items [6001],
   :published true,
   :unlock-functions [6 81 82],
-  :unlock-values [80000000 30000 1]}
+  :unlock-values [80000000 30000 1]},
+ 2102
  {:conclusion "机甲核心结果",
   :description "机甲核心描述",
   :hash-needed 36000,
@@ -1493,7 +1602,8 @@
   :pre-techs [2101],
   :published true,
   :unlock-functions [6 81 82 83],
-  :unlock-values [200000000 30000 1 200]}
+  :unlock-values [200000000 30000 1 200]},
+ 2103
  {:conclusion "机甲核心结果",
   :description "机甲核心描述",
   :hash-needed 108000,
@@ -1509,7 +1619,8 @@
   :pre-techs [2102],
   :published true,
   :unlock-functions [6 81 82 83],
-  :unlock-values [400000000 30000 2 200]}
+  :unlock-values [400000000 30000 2 200]},
+ 2104
  {:conclusion "机甲核心结果",
   :description "机甲核心描述",
   :hash-needed 300000,
@@ -1525,7 +1636,8 @@
   :pre-techs [2103],
   :published true,
   :unlock-functions [6 81 82 83],
-  :unlock-values [800000000 30000 2 200]}
+  :unlock-values [800000000 30000 2 200]},
+ 2105
  {:conclusion "机甲核心结果",
   :description "机甲核心描述",
   :hash-needed 1440000,
@@ -1541,7 +1653,8 @@
   :pre-techs [2104],
   :published true,
   :unlock-functions [6 81 82 83],
-  :unlock-values [1600000000 30000 2 200]}
+  :unlock-values [1600000000 30000 2 200]},
+ 2106
  {:conclusion "机甲核心结果2",
   :description "机甲核心描述2",
   :hash-needed 18000000,
@@ -1559,7 +1672,8 @@
   :pre-techs [2105],
   :published true,
   :unlock-functions [6 81 83],
-  :unlock-values [2400000000 20000 200]}
+  :unlock-values [2400000000 20000 200]},
+ 2201
  {:conclusion "机械骨骼结果",
   :description "机械骨骼描述",
   :hash-needed 7200,
@@ -1576,7 +1690,8 @@
   :property-override-items [6001],
   :published true,
   :unlock-functions [3],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 2202
  {:conclusion "机械骨骼结果",
   :description "机械骨骼描述2",
   :hash-needed 36000,
@@ -1593,7 +1708,8 @@
   :pre-techs-implicit [2101],
   :published true,
   :unlock-functions [3],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 2203
  {:conclusion "机械骨骼结果",
   :description "机械骨骼描述2",
   :hash-needed 72000,
@@ -1610,7 +1726,8 @@
   :pre-techs-implicit [2102],
   :published true,
   :unlock-functions [3],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 2204
  {:conclusion "机械骨骼结果",
   :description "机械骨骼描述2",
   :hash-needed 180000,
@@ -1627,7 +1744,8 @@
   :pre-techs-implicit [2102],
   :published true,
   :unlock-functions [3],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 2205
  {:conclusion "机械骨骼结果",
   :description "机械骨骼描述2",
   :hash-needed 240000,
@@ -1644,7 +1762,8 @@
   :pre-techs-implicit [2103],
   :published true,
   :unlock-functions [3],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 2206
  {:conclusion "机械骨骼结果",
   :description "机械骨骼描述2",
   :hash-needed 300000,
@@ -1661,7 +1780,8 @@
   :pre-techs-implicit [2104],
   :published true,
   :unlock-functions [3],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 2207
  {:conclusion "机械骨骼结果",
   :description "机械骨骼描述2",
   :hash-needed 360000,
@@ -1678,7 +1798,8 @@
   :pre-techs-implicit [2104],
   :published true,
   :unlock-functions [3],
-  :unlock-values [2]}
+  :unlock-values [2]},
+ 2208
  {:conclusion "机械骨骼结果",
   :description "机械骨骼描述2",
   :hash-needed 1200000,
@@ -1695,7 +1816,8 @@
   :pre-techs-implicit [2105],
   :published true,
   :unlock-functions [3],
-  :unlock-values [2]}
+  :unlock-values [2]},
+ 2301
  {:conclusion "机舱容量结果",
   :description "机舱容量描述",
   :hash-needed 7200,
@@ -1712,7 +1834,8 @@
   :property-override-items [6001],
   :published true,
   :unlock-functions [5],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 2302
  {:conclusion "机舱容量结果",
   :description "机舱容量描述",
   :hash-needed 36000,
@@ -1729,7 +1852,8 @@
   :pre-techs-implicit [2101],
   :published true,
   :unlock-functions [5],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 2303
  {:conclusion "机舱容量结果",
   :description "机舱容量描述",
   :hash-needed 72000,
@@ -1746,7 +1870,8 @@
   :pre-techs-implicit [2102],
   :published true,
   :unlock-functions [5 33],
-  :unlock-values [1 2]}
+  :unlock-values [1 2]},
+ 2304
  {:conclusion "机舱容量结果",
   :description "机舱容量描述2",
   :hash-needed 180000,
@@ -1763,7 +1888,8 @@
   :pre-techs-implicit [2102],
   :published true,
   :unlock-functions [5 32 33],
-  :unlock-values [1 1 2]}
+  :unlock-values [1 1 2]},
+ 2305
  {:conclusion "机舱容量结果",
   :description "机舱容量描述2",
   :hash-needed 240000,
@@ -1780,7 +1906,8 @@
   :pre-techs-implicit [2103],
   :published true,
   :unlock-functions [5 33],
-  :unlock-values [2 2]}
+  :unlock-values [2 2]},
+ 2306
  {:conclusion "机舱容量结果",
   :description "机舱容量描述2",
   :hash-needed 600000,
@@ -1797,7 +1924,8 @@
   :pre-techs-implicit [2105],
   :published true,
   :unlock-functions [5 33],
-  :unlock-values [2 2]}
+  :unlock-values [2 2]},
+ 2307
  {:conclusion "机舱容量结果",
   :description "机舱容量描述2",
   :hash-needed 900000,
@@ -1813,7 +1941,8 @@
   :pre-techs [2306],
   :published true,
   :unlock-functions [38 32],
-  :unlock-values [2 1]}
+  :unlock-values [2 1]},
+ 2401
  {:conclusion "通讯控制结果1",
   :description "通讯控制描述",
   :hash-needed 9000,
@@ -1829,7 +1958,8 @@
   :pre-techs-implicit [2101],
   :published true,
   :unlock-functions [1],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 2402
  {:conclusion "通讯控制结果2",
   :description "通讯控制描述2",
   :hash-needed 36000,
@@ -1846,7 +1976,8 @@
   :pre-techs-implicit [2101],
   :published true,
   :unlock-functions [1],
-  :unlock-values [2]}
+  :unlock-values [2]},
+ 2403
  {:conclusion "通讯控制结果3",
   :description "通讯控制描述3",
   :hash-needed 72000,
@@ -1863,7 +1994,8 @@
   :pre-techs-implicit [2102],
   :published true,
   :unlock-functions [9],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 2404
  {:conclusion "通讯控制结果4",
   :description "通讯控制描述2",
   :hash-needed 180000,
@@ -1880,7 +2012,8 @@
   :pre-techs-implicit [2103],
   :published true,
   :unlock-functions [1],
-  :unlock-values [3]}
+  :unlock-values [3]},
+ 2405
  {:conclusion "通讯控制结果5",
   :description "通讯控制描述2",
   :hash-needed 300000,
@@ -1897,7 +2030,8 @@
   :pre-techs-implicit [2104],
   :published true,
   :unlock-functions [1],
-  :unlock-values [3]}
+  :unlock-values [3]},
+ 2406
  {:conclusion "通讯控制结果6",
   :description "通讯控制描述3",
   :hash-needed 1440000,
@@ -1914,7 +2048,8 @@
   :pre-techs-implicit [2105],
   :published true,
   :unlock-functions [9],
-  :unlock-values [2]}
+  :unlock-values [2]},
+ 2407
  {:conclusion "通讯控制结果7",
   :description "通讯控制描述2",
   :hash-needed 64800000,
@@ -1933,7 +2068,8 @@
   :pre-techs-implicit [2105],
   :published true,
   :unlock-functions [1],
-  :unlock-values [3]}
+  :unlock-values [3]},
+ 2501
  {:conclusion "能量回路结果",
   :description "能量回路描述",
   :hash-needed 7200,
@@ -1950,7 +2086,8 @@
   :property-override-items [6001],
   :published true,
   :unlock-functions [2],
-  :unlock-values [200000]}
+  :unlock-values [200000]},
+ 2502
  {:conclusion "能量回路结果",
   :description "能量回路描述",
   :hash-needed 72000,
@@ -1967,7 +2104,8 @@
   :pre-techs-implicit [2102],
   :published true,
   :unlock-functions [2],
-  :unlock-values [200000]}
+  :unlock-values [200000]},
+ 2503
  {:conclusion "能量回路结果",
   :description "能量回路描述",
   :hash-needed 216000,
@@ -1984,7 +2122,8 @@
   :pre-techs-implicit [2103],
   :published true,
   :unlock-functions [2],
-  :unlock-values [200000]}
+  :unlock-values [200000]},
+ 2504
  {:conclusion "能量回路结果",
   :description "能量回路描述",
   :hash-needed 600000,
@@ -2001,7 +2140,8 @@
   :pre-techs-implicit [2104],
   :published true,
   :unlock-functions [2],
-  :unlock-values [200000]}
+  :unlock-values [200000]},
+ 2505
  {:conclusion "能量回路结果",
   :description "能量回路描述",
   :hash-needed 2700000,
@@ -2018,7 +2158,8 @@
   :pre-techs-implicit [2105],
   :published true,
   :unlock-functions [2],
-  :unlock-values [800000]}
+  :unlock-values [800000]},
+ 2506
  {:conclusion "能量回路结果",
   :description "能量回路描述",
   :hash-needed 36000000,
@@ -2037,7 +2178,8 @@
   :pre-techs-implicit [2105],
   :published true,
   :unlock-functions [2],
-  :unlock-values [1000000]}
+  :unlock-values [1000000]},
+ 2601
  {:conclusion "无人机引擎结果",
   :description "无人机引擎描述",
   :hash-needed 18000,
@@ -2053,7 +2195,8 @@
   :pre-techs-implicit [2101],
   :published true,
   :unlock-functions [10],
-  :unlock-values [2]}
+  :unlock-values [2]},
+ 2602
  {:conclusion "无人机引擎结果",
   :description "无人机引擎描述2",
   :hash-needed 72000,
@@ -2070,7 +2213,8 @@
   :pre-techs-implicit [2102],
   :published true,
   :unlock-functions [10],
-  :unlock-values [2]}
+  :unlock-values [2]},
+ 2603
  {:conclusion "无人机引擎结果",
   :description "无人机引擎描述2",
   :hash-needed 144000,
@@ -2087,7 +2231,8 @@
   :pre-techs-implicit [2103],
   :published true,
   :unlock-functions [10],
-  :unlock-values [2]}
+  :unlock-values [2]},
+ 2604
  {:conclusion "无人机引擎结果",
   :description "无人机引擎描述2",
   :hash-needed 360000,
@@ -2104,7 +2249,8 @@
   :pre-techs-implicit [2104],
   :published true,
   :unlock-functions [10],
-  :unlock-values [3]}
+  :unlock-values [3]},
+ 2605
  {:conclusion "无人机引擎结果",
   :description "无人机引擎描述2",
   :hash-needed 1440000,
@@ -2121,7 +2267,8 @@
   :pre-techs-implicit [2105],
   :published true,
   :unlock-functions [10],
-  :unlock-values [3]}
+  :unlock-values [3]},
+ 2606
  {:conclusion "无人机引擎结果",
   :description "无人机引擎描述2",
   :hash-needed 45000000,
@@ -2140,7 +2287,8 @@
   :pre-techs-implicit [2105],
   :published true,
   :unlock-functions [10],
-  :unlock-values [3]}
+  :unlock-values [3]},
+ 2701
  {:conclusion "批量建造结果",
   :description "批量建造描述",
   :hash-needed 12000,
@@ -2157,7 +2305,8 @@
   :property-override-items [6001],
   :published true,
   :unlock-functions [28],
-  :unlock-values [150]}
+  :unlock-values [150]},
+ 2702
  {:conclusion "批量建造结果2",
   :description "批量建造描述2",
   :hash-needed 36000,
@@ -2174,7 +2323,8 @@
   :pre-techs-implicit [2101],
   :published true,
   :unlock-functions [28],
-  :unlock-values [300]}
+  :unlock-values [300]},
+ 2703
  {:conclusion "批量建造结果2",
   :description "批量建造描述2",
   :hash-needed 60000,
@@ -2191,7 +2341,8 @@
   :pre-techs-implicit [2102],
   :published true,
   :unlock-functions [28],
-  :unlock-values [900]}
+  :unlock-values [900]},
+ 2704
  {:conclusion "批量建造结果2",
   :description "批量建造描述2",
   :hash-needed 192000,
@@ -2208,7 +2359,8 @@
   :pre-techs-implicit [2103],
   :published true,
   :unlock-functions [28],
-  :unlock-values [3600]}
+  :unlock-values [3600]},
+ 2705
  {:conclusion "批量建造结果5",
   :description "批量建造描述5",
   :hash-needed 240000,
@@ -2225,7 +2377,8 @@
   :pre-techs-implicit [2104],
   :published true,
   :unlock-functions [28],
-  :unlock-values [1048576]}
+  :unlock-values [1048576]},
+ 2801
  {:conclusion "解锁能量护盾结果",
   :description "解锁能量护盾描述",
   :hash-needed 9000,
@@ -2241,7 +2394,8 @@
   :pre-techs-implicit [1001],
   :published true,
   :unlock-functions [75 65 66],
-  :unlock-values [1 2 100000000]}
+  :unlock-values [1 2 100000000]},
+ 2802
  {:conclusion "能量护盾结果",
   :description "能量护盾描述",
   :hash-needed 36000,
@@ -2258,7 +2412,8 @@
   :pre-techs-implicit [2102],
   :published true,
   :unlock-functions [65 66],
-  :unlock-values [0.5 200000000]}
+  :unlock-values [0.5 200000000]},
+ 2803
  {:conclusion "能量护盾结果3",
   :description "能量护盾描述3",
   :hash-needed 144000,
@@ -2275,7 +2430,8 @@
   :pre-techs-implicit [2103],
   :published true,
   :unlock-functions [65 66 86],
-  :unlock-values [0.5 200000000 1]}
+  :unlock-values [0.5 200000000 1]},
+ 2804
  {:conclusion "能量护盾结果",
   :description "能量护盾描述",
   :hash-needed 360000,
@@ -2291,7 +2447,8 @@
   :pre-techs [2803],
   :published true,
   :unlock-functions [65 66],
-  :unlock-values [1 200000000]}
+  :unlock-values [1 200000000]},
+ 2805
  {:conclusion "能量护盾结果",
   :description "能量护盾描述",
   :hash-needed 720000,
@@ -2308,7 +2465,8 @@
   :pre-techs-implicit [2104],
   :published true,
   :unlock-functions [65 66],
-  :unlock-values [1 300000000]}
+  :unlock-values [1 300000000]},
+ 2806
  {:conclusion "能量护盾结果",
   :description "能量护盾描述",
   :hash-needed 18000000,
@@ -2327,7 +2485,8 @@
   :pre-techs-implicit [2105],
   :published true,
   :unlock-functions [65 66],
-  :unlock-values [1 500000000]}
+  :unlock-values [1 500000000]},
+ 2807
  {:conclusion "能量护盾结果7",
   :description "能量护盾描述7",
   :hash-needed 18000000,
@@ -2345,7 +2504,8 @@
   :pre-techs [2806],
   :published true,
   :unlock-functions [66],
-  :unlock-values [500000000]}
+  :unlock-values [500000000]},
+ 2901
  {:conclusion "驱动引擎结果1",
   :description "驱动引擎描述",
   :hash-needed 18000,
@@ -2362,7 +2522,8 @@
   :property-override-items [6001],
   :published true,
   :unlock-functions [4],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 2902
  {:conclusion "驱动引擎结果2",
   :description "驱动引擎描述2",
   :hash-needed 36000,
@@ -2379,7 +2540,8 @@
   :pre-techs-implicit [2102],
   :published true,
   :unlock-functions [4],
-  :unlock-values [2]}
+  :unlock-values [2]},
+ 2903
  {:conclusion "驱动引擎结果3",
   :description "驱动引擎描述3",
   :hash-needed 180000,
@@ -2396,7 +2558,8 @@
   :pre-techs-implicit [2103],
   :published true,
   :unlock-functions [11],
-  :unlock-values [1000]}
+  :unlock-values [1000]},
+ 2904
  {:conclusion "驱动引擎结果4",
   :description "驱动引擎描述4",
   :hash-needed 720000,
@@ -2413,7 +2576,8 @@
   :pre-techs-implicit [2104 1704],
   :published true,
   :unlock-functions [4],
-  :unlock-values [3]}
+  :unlock-values [3]},
+ 2905
  {:conclusion "驱动引擎结果5",
   :description "驱动引擎描述5",
   :hash-needed 1080000,
@@ -2429,7 +2593,8 @@
   :pre-techs [2904],
   :published true,
   :unlock-functions [27],
-  :unlock-values [3]}
+  :unlock-values [3]},
+ 2906
  {:conclusion "驱动引擎结果5",
   :description "驱动引擎描述5",
   :icon-path "Icons/Tech/2904",
@@ -2446,7 +2611,8 @@
   :pre-techs [2905],
   :published true,
   :unlock-functions [27],
-  :unlock-values [3]}
+  :unlock-values [3]},
+ 2951
  {:conclusion "自动重建结果",
   :description "自动重建描述",
   :hash-needed 18000,
@@ -2462,7 +2628,8 @@
   :pre-techs-implicit [2101],
   :published true,
   :unlock-functions [76],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 2952
  {:conclusion "自动重建结果",
   :description "自动重建描述",
   :hash-needed 72000,
@@ -2478,7 +2645,8 @@
   :pre-techs [2951],
   :published true,
   :unlock-functions [76],
-  :unlock-values [3]}
+  :unlock-values [3]},
+ 2953
  {:conclusion "自动重建结果",
   :description "自动重建描述",
   :hash-needed 144000,
@@ -2494,7 +2662,8 @@
   :pre-techs [2952],
   :published true,
   :unlock-functions [76],
-  :unlock-values [6]}
+  :unlock-values [6]},
+ 2954
  {:conclusion "自动重建结果",
   :description "自动重建描述",
   :hash-needed 360000,
@@ -2510,7 +2679,8 @@
   :pre-techs [2953],
   :published true,
   :unlock-functions [76],
-  :unlock-values [15]}
+  :unlock-values [15]},
+ 2955
  {:conclusion "自动重建结果",
   :description "自动重建描述",
   :hash-needed 720000,
@@ -2526,7 +2696,8 @@
   :pre-techs [2954],
   :published true,
   :unlock-functions [76],
-  :unlock-values [30]}
+  :unlock-values [30]},
+ 2956
  {:conclusion "自动重建结果6",
   :description "自动重建描述6",
   :hash-needed 1440000,
@@ -2542,7 +2713,8 @@
   :pre-techs [2955],
   :published true,
   :unlock-functions [76],
-  :unlock-values [9999]}
+  :unlock-values [9999]},
+ 3101
  {:conclusion "太阳帆寿命结果",
   :description "太阳帆寿命描述",
   :hash-needed 36000,
@@ -2558,7 +2730,8 @@
   :pre-techs-implicit [1503],
   :published true,
   :unlock-functions [12],
-  :unlock-values [300]}
+  :unlock-values [300]},
+ 3102
  {:conclusion "太阳帆寿命结果",
   :description "太阳帆寿命描述",
   :hash-needed 108000,
@@ -2574,7 +2747,8 @@
   :pre-techs [3101],
   :published true,
   :unlock-functions [12],
-  :unlock-values [300]}
+  :unlock-values [300]},
+ 3103
  {:conclusion "太阳帆寿命结果",
   :description "太阳帆寿命描述",
   :hash-needed 144000,
@@ -2590,7 +2764,8 @@
   :pre-techs [3102],
   :published true,
   :unlock-functions [12],
-  :unlock-values [600]}
+  :unlock-values [600]},
+ 3104
  {:conclusion "太阳帆寿命结果",
   :description "太阳帆寿命描述",
   :hash-needed 300000,
@@ -2606,7 +2781,8 @@
   :pre-techs [3103],
   :published true,
   :unlock-functions [12],
-  :unlock-values [600]}
+  :unlock-values [600]},
+ 3105
  {:conclusion "太阳帆寿命结果",
   :description "太阳帆寿命描述",
   :hash-needed 480000,
@@ -2622,7 +2798,8 @@
   :pre-techs [3104],
   :published true,
   :unlock-functions [12],
-  :unlock-values [900]}
+  :unlock-values [900]},
+ 3106
  {:conclusion "太阳帆寿命结果",
   :description "太阳帆寿命描述",
   :hash-needed 1200000,
@@ -2638,7 +2815,8 @@
   :pre-techs [3105],
   :published true,
   :unlock-functions [12],
-  :unlock-values [900]}
+  :unlock-values [900]},
+ 3201
  {:conclusion "射线传输效率结果",
   :description "射线传输效率描述",
   :hash-needed 54000,
@@ -2654,7 +2832,8 @@
   :pre-techs-implicit [1504],
   :published true,
   :unlock-functions [13],
-  :unlock-values [0.9]}
+  :unlock-values [0.9]},
+ 3202
  {:conclusion "射线传输效率结果",
   :description "射线传输效率描述",
   :hash-needed 144000,
@@ -2670,7 +2849,8 @@
   :pre-techs [3201],
   :published true,
   :unlock-functions [13],
-  :unlock-values [0.9]}
+  :unlock-values [0.9]},
+ 3203
  {:conclusion "射线传输效率结果",
   :description "射线传输效率描述",
   :hash-needed 180000,
@@ -2686,7 +2866,8 @@
   :pre-techs [3202],
   :published true,
   :unlock-functions [13],
-  :unlock-values [0.9]}
+  :unlock-values [0.9]},
+ 3204
  {:conclusion "射线传输效率结果",
   :description "射线传输效率描述",
   :hash-needed 360000,
@@ -2702,7 +2883,8 @@
   :pre-techs [3203],
   :published true,
   :unlock-functions [13],
-  :unlock-values [0.9]}
+  :unlock-values [0.9]},
+ 3205
  {:conclusion "射线传输效率结果",
   :description "射线传输效率描述",
   :hash-needed 420000,
@@ -2718,7 +2900,8 @@
   :pre-techs [3204],
   :published true,
   :unlock-functions [13],
-  :unlock-values [0.9]}
+  :unlock-values [0.9]},
+ 3206
  {:conclusion "射线传输效率结果",
   :description "射线传输效率描述",
   :hash-needed 480000,
@@ -2734,7 +2917,8 @@
   :pre-techs [3205],
   :published true,
   :unlock-functions [13],
-  :unlock-values [0.9]}
+  :unlock-values [0.9]},
+ 3207
  {:conclusion "射线传输效率结果",
   :description "射线传输效率描述",
   :hash-needed 1620000,
@@ -2750,7 +2934,8 @@
   :pre-techs [3206],
   :published true,
   :unlock-functions [13],
-  :unlock-values [0.85]}
+  :unlock-values [0.85]},
+ 3208
  {:conclusion "射线传输效率结果",
   :description "射线传输效率描述",
   :hash-needed -12600000,
@@ -2767,7 +2952,8 @@
   :pre-techs [3207],
   :published true,
   :unlock-functions [13],
-  :unlock-values [0.85]}
+  :unlock-values [0.85]},
+ 3301
  {:conclusion "分拣器货物叠加结果",
   :description "分拣器货物叠加描述",
   :hash-needed 36000,
@@ -2784,7 +2970,8 @@
   :pre-techs-implicit [1607],
   :published true,
   :unlock-functions [14],
-  :unlock-values [4]}
+  :unlock-values [4]},
+ 3302
  {:conclusion "分拣器货物叠加结果",
   :description "分拣器货物叠加描述",
   :hash-needed 108000,
@@ -2801,7 +2988,8 @@
   :pre-techs [3301],
   :published true,
   :unlock-functions [14],
-  :unlock-values [5]}
+  :unlock-values [5]},
+ 3303
  {:conclusion "分拣器货物叠加结果",
   :description "分拣器货物叠加描述",
   :hash-needed 144000,
@@ -2818,7 +3006,8 @@
   :pre-techs [3302],
   :published true,
   :unlock-functions [14],
-  :unlock-values [6]}
+  :unlock-values [6]},
+ 3304
  {:conclusion "分拣器货物叠加结果",
   :description "分拣器货物叠加描述",
   :hash-needed 300000,
@@ -2835,7 +3024,8 @@
   :pre-techs [3303],
   :published true,
   :unlock-functions [14],
-  :unlock-values [7]}
+  :unlock-values [7]},
+ 3305
  {:conclusion "分拣器货物叠加结果",
   :description "分拣器货物叠加描述",
   :hash-needed 900000,
@@ -2852,7 +3042,8 @@
   :pre-techs [3304],
   :published true,
   :unlock-functions [14],
-  :unlock-values [8]}
+  :unlock-values [8]},
+ 3306
  {:conclusion "分拣器货物叠加结果2",
   :description "分拣器货物叠加描述2",
   :hash-needed 1080000,
@@ -2870,7 +3061,8 @@
   :pre-techs-implicit [1607],
   :published true,
   :unlock-functions [39 40],
-  :unlock-values [1 1]}
+  :unlock-values [1 1]},
+ 3311
  {:conclusion "集装分拣器货物叠加结果",
   :description "集装分拣器货物叠加描述",
   :hash-needed 60000,
@@ -2886,7 +3078,8 @@
   :pre-techs-implicit [1607],
   :published true,
   :unlock-functions [39],
-  :unlock-values [2]}
+  :unlock-values [2]},
+ 3312
  {:conclusion "集装分拣器货物叠加结果2",
   :description "集装分拣器货物叠加描述2",
   :hash-needed 96000,
@@ -2902,7 +3095,8 @@
   :pre-techs [3311],
   :published true,
   :unlock-functions [41],
-  :unlock-values [3]}
+  :unlock-values [3]},
+ 3313
  {:conclusion "集装分拣器货物叠加结果3",
   :description "集装分拣器货物叠加描述4",
   :hash-needed 120000,
@@ -2918,7 +3112,8 @@
   :pre-techs [3312],
   :published true,
   :unlock-functions [39],
-  :unlock-values [3]}
+  :unlock-values [3]},
+ 3314
  {:conclusion "集装分拣器货物叠加结果4",
   :description "集装分拣器货物叠加描述2",
   :hash-needed 288000,
@@ -2934,7 +3129,8 @@
   :pre-techs [3313],
   :published true,
   :unlock-functions [41],
-  :unlock-values [4]}
+  :unlock-values [4]},
+ 3315
  {:conclusion "集装分拣器货物叠加结果5",
   :description "集装分拣器货物叠加描述5",
   :hash-needed 360000,
@@ -2950,7 +3146,8 @@
   :pre-techs [3314],
   :published true,
   :unlock-functions [39],
-  :unlock-values [4]}
+  :unlock-values [4]},
+ 3316
  {:conclusion "集装分拣器货物叠加结果6",
   :description "集装分拣器货物叠加描述3",
   :hash-needed 1200000,
@@ -2967,87 +3164,8 @@
   :pre-techs-implicit [1607],
   :published true,
   :unlock-functions [40],
-  :unlock-values [1]}
- {:conclusion "配送范围结果",
-  :description "配送范围描述",
-  :hash-needed 36000,
-  :icon-path "Icons/Tech/4001",
-  :id 4001,
-  :is-lab-tech true,
-  :item-points [40 40],
-  :items [6001 6002],
-  :level 1,
-  :max-level 1,
-  :name "T配送范围",
-  :position [9 -31],
-  :pre-techs-implicit [1608],
-  :published true,
-  :unlock-functions [36],
-  :unlock-values [20]}
- {:conclusion "配送范围结果",
-  :description "配送范围描述",
-  :hash-needed 108000,
-  :icon-path "Icons/Tech/4002",
-  :id 4002,
-  :is-lab-tech true,
-  :item-points [20 20 20],
-  :items [6001 6002 6003],
-  :level 2,
-  :max-level 2,
-  :name "T配送范围",
-  :position [13 -31],
-  :pre-techs [4001],
-  :published true,
-  :unlock-functions [36],
-  :unlock-values [20]}
- {:conclusion "配送范围结果",
-  :description "配送范围描述",
-  :hash-needed 144000,
-  :icon-path "Icons/Tech/4003",
-  :id 4003,
-  :is-lab-tech true,
-  :item-points [20 20 20],
-  :items [6001 6002 6003],
-  :level 3,
-  :max-level 3,
-  :name "T配送范围",
-  :position [17 -31],
-  :pre-techs [4002],
-  :published true,
-  :unlock-functions [36],
-  :unlock-values [30]}
- {:conclusion "配送范围结果",
-  :description "配送范围描述",
-  :hash-needed 180000,
-  :icon-path "Icons/Tech/4004",
-  :id 4004,
-  :is-lab-tech true,
-  :item-points [20 20 20 20],
-  :items [6001 6002 6003 6004],
-  :level 4,
-  :max-level 4,
-  :name "T配送范围",
-  :position [21 -31],
-  :pre-techs [4003],
-  :published true,
-  :unlock-functions [36],
-  :unlock-values [30]}
- {:conclusion "配送范围结果",
-  :description "配送范围描述",
-  :hash-needed 360000,
-  :icon-path "Icons/Tech/4005",
-  :id 4005,
-  :is-lab-tech true,
-  :item-points [12 12 12 12 12],
-  :items [6001 6002 6003 6004 6005],
-  :level 5,
-  :max-level 5,
-  :name "T配送范围",
-  :position [25 -31],
-  :pre-techs [4004],
-  :published true,
-  :unlock-functions [36],
-  :unlock-values [40]}
+  :unlock-values [1]},
+ 3401
  {:conclusion "运输船引擎结果1",
   :description "运输船引擎描述",
   :hash-needed 36000,
@@ -3063,7 +3181,8 @@
   :pre-techs-implicit [1604],
   :published true,
   :unlock-functions [15 34],
-  :unlock-values [0.2 0.1]}
+  :unlock-values [0.2 0.1]},
+ 3402
  {:conclusion "运输船引擎结果2",
   :description "运输船引擎描述",
   :hash-needed 108000,
@@ -3079,7 +3198,8 @@
   :pre-techs [3401],
   :published true,
   :unlock-functions [15 34],
-  :unlock-values [0.2 0.1]}
+  :unlock-values [0.2 0.1]},
+ 3403
  {:conclusion "运输船引擎结果3",
   :description "运输船引擎描述2",
   :hash-needed 144000,
@@ -3096,7 +3216,8 @@
   :pre-techs-implicit [1605],
   :published true,
   :unlock-functions [15 34 16],
-  :unlock-values [0.3 0.15 0.5]}
+  :unlock-values [0.3 0.15 0.5]},
+ 3404
  {:conclusion "运输船引擎结果4",
   :description "运输船引擎描述3",
   :hash-needed 300000,
@@ -3113,7 +3234,8 @@
   :pre-techs-implicit [2904],
   :published true,
   :unlock-functions [15 34 16 17],
-  :unlock-values [0.3 0.15 0.5 1]}
+  :unlock-values [0.3 0.15 0.5 1]},
+ 3405
  {:conclusion "运输船引擎结果5",
   :description "运输船引擎描述2",
   :hash-needed 360000,
@@ -3129,7 +3251,8 @@
   :pre-techs [3404],
   :published true,
   :unlock-functions [15 34 16],
-  :unlock-values [0.4 0.15 0.5]}
+  :unlock-values [0.4 0.15 0.5]},
+ 3406
  {:conclusion "运输船引擎结果6",
   :description "运输船引擎描述2",
   :hash-needed 1440000,
@@ -3145,7 +3268,8 @@
   :pre-techs [3405],
   :published true,
   :unlock-functions [15 34 16],
-  :unlock-values [0.4 0.15 0.5]}
+  :unlock-values [0.4 0.15 0.5]},
+ 3407
  {:conclusion "运输船引擎结果7",
   :description "运输船引擎描述2",
   :hash-needed 64800000,
@@ -3163,7 +3287,8 @@
   :pre-techs [3406],
   :published true,
   :unlock-functions [15 34 16],
-  :unlock-values [0.5 0.2 0.5]}
+  :unlock-values [0.5 0.2 0.5]},
+ 3501
  {:conclusion "运输机舱扩容结果1",
   :description "运输机舱扩容描述",
   :hash-needed 36000,
@@ -3179,7 +3304,8 @@
   :pre-techs-implicit [1604],
   :published true,
   :unlock-functions [35 18],
-  :unlock-values [1 5]}
+  :unlock-values [1 5]},
+ 3502
  {:conclusion "运输机舱扩容结果2",
   :description "运输机舱扩容描述2",
   :hash-needed 108000,
@@ -3195,7 +3321,8 @@
   :pre-techs [3501],
   :published true,
   :unlock-functions [35 18],
-  :unlock-values [1 5]}
+  :unlock-values [1 5]},
+ 3503
  {:conclusion "运输机舱扩容结果3",
   :description "运输机舱扩容描述3",
   :hash-needed 144000,
@@ -3212,7 +3339,8 @@
   :pre-techs-implicit [1605],
   :published true,
   :unlock-functions [35 18 19],
-  :unlock-values [2 5 100]}
+  :unlock-values [2 5 100]},
+ 3504
  {:conclusion "运输机舱扩容结果4",
   :description "运输机舱扩容描述4",
   :hash-needed 300000,
@@ -3228,7 +3356,8 @@
   :pre-techs [3503],
   :published true,
   :unlock-functions [35 18 19],
-  :unlock-values [2 10 100]}
+  :unlock-values [2 10 100]},
+ 3505
  {:conclusion "运输机舱扩容结果5",
   :description "运输机舱扩容描述4",
   :hash-needed 720000,
@@ -3244,7 +3373,8 @@
   :pre-techs [3504],
   :published true,
   :unlock-functions [35 18 19],
-  :unlock-values [2 10 100]}
+  :unlock-values [2 10 100]},
+ 3506
  {:conclusion "运输机舱扩容结果5",
   :description "运输机舱扩容描述4",
   :hash-needed 960000,
@@ -3260,7 +3390,8 @@
   :pre-techs [3505],
   :published true,
   :unlock-functions [35 18 19],
-  :unlock-values [2 10 100]}
+  :unlock-values [2 10 100]},
+ 3507
  {:conclusion "运输机舱扩容结果5",
   :description "运输机舱扩容描述4",
   :hash-needed 2400000,
@@ -3276,7 +3407,8 @@
   :pre-techs [3506],
   :published true,
   :unlock-functions [35 18 19],
-  :unlock-values [2 10 200]}
+  :unlock-values [2 10 200]},
+ 3508
  {:conclusion "运输机舱扩容结果7",
   :description "运输机舱扩容描述6",
   :hash-needed 4800000,
@@ -3292,7 +3424,8 @@
   :pre-techs [3507],
   :published true,
   :unlock-functions [18 19],
-  :unlock-values [20 200]}
+  :unlock-values [20 200]},
+ 3509
  {:conclusion "运输机舱扩容结果6",
   :description "运输机舱扩容描述5",
   :hash-needed -14400000,
@@ -3309,7 +3442,8 @@
   :pre-techs [3508],
   :published true,
   :unlock-functions [18 19 30 31],
-  :unlock-values [20 200 1000 2000]}
+  :unlock-values [20 200 1000 2000]},
+ 3510
  {:conclusion "运输机舱扩容结果6",
   :description "运输机舱扩容描述5",
   :hash-needed -43200000,
@@ -3326,7 +3460,213 @@
   :pre-techs [3509],
   :published true,
   :unlock-functions [18 19 30 31],
-  :unlock-values [20 200 1000 2000]}
+  :unlock-values [20 200 1000 2000]},
+ 3601
+ {:conclusion "矿物利用结果",
+  :description "矿物利用描述",
+  :hash-needed 36000,
+  :icon-path "Icons/Tech/3601",
+  :id 3601,
+  :is-lab-tech true,
+  :item-points [40 40],
+  :items [6001 6002],
+  :level 1,
+  :max-level 1,
+  :name "T矿物利用",
+  :position [9 -43],
+  :pre-techs-implicit [1001],
+  :published true,
+  :unlock-functions [20 21 85],
+  :unlock-values [0.94 0.1 0.04]},
+ 3602
+ {:conclusion "矿物利用结果",
+  :description "矿物利用描述2",
+  :hash-needed 180000,
+  :icon-path "Icons/Tech/3602",
+  :id 3602,
+  :is-lab-tech true,
+  :item-points [20 20 20],
+  :items [6001 6002 6003],
+  :level 2,
+  :max-level 2,
+  :name "T矿物利用",
+  :position [13 -43],
+  :pre-techs [3601],
+  :published true,
+  :unlock-functions [20 21 85],
+  :unlock-values [0.94 0.1 0.04]},
+ 3603
+ {:conclusion "矿物利用结果",
+  :description "矿物利用描述2",
+  :hash-needed 180000,
+  :icon-path "Icons/Tech/3603",
+  :id 3603,
+  :is-lab-tech true,
+  :item-points [20 20 20 20],
+  :items [6001 6002 6003 6004],
+  :level 3,
+  :max-level 3,
+  :name "T矿物利用",
+  :position [17 -43],
+  :pre-techs [3602],
+  :published true,
+  :unlock-functions [20 21 85],
+  :unlock-values [0.94 0.1 0.04]},
+ 3604
+ {:conclusion "矿物利用结果",
+  :description "矿物利用描述2",
+  :hash-needed 480000,
+  :icon-path "Icons/Tech/3604",
+  :id 3604,
+  :is-lab-tech true,
+  :item-points [12 12 12 12],
+  :items [6001 6002 6003 6004],
+  :level 4,
+  :max-level 4,
+  :name "T矿物利用",
+  :position [21 -43],
+  :pre-techs [3603],
+  :published true,
+  :unlock-functions [20 21 85],
+  :unlock-values [0.94 0.1 0.04]},
+ 3605
+ {:conclusion "矿物利用结果",
+  :description "矿物利用描述2",
+  :hash-needed 1800000,
+  :icon-path "Icons/Tech/3605",
+  :id 3605,
+  :is-lab-tech true,
+  :item-points [4 4 4 4 4],
+  :items [6001 6002 6003 6004 6005],
+  :level 5,
+  :max-level 5,
+  :name "T矿物利用",
+  :position [25 -43],
+  :pre-techs [3604],
+  :published true,
+  :unlock-functions [20 21 85],
+  :unlock-values [0.94 0.1 0.04]},
+ 3606
+ {:conclusion "矿物利用结果",
+  :description "矿物利用描述2",
+  :hash-needed -18000000,
+  :icon-path "Icons/Tech/3606",
+  :id 3606,
+  :is-lab-tech true,
+  :item-points [4],
+  :items [6006],
+  :level 6,
+  :level-coef-1 3600000,
+  :max-level 10000,
+  :name "T矿物利用",
+  :position [29 -43],
+  :pre-techs [3605],
+  :published true,
+  :unlock-functions [20 21 85],
+  :unlock-values [0.94 0.1 0.04]},
+ 3701
+ {:conclusion "垂直建造结果",
+  :description "垂直建造描述",
+  :hash-needed 36000,
+  :icon-path "Icons/Tech/3701",
+  :id 3701,
+  :is-lab-tech true,
+  :item-points [40],
+  :items [6002],
+  :level 1,
+  :max-level 1,
+  :name "T垂直建造",
+  :position [9 -23],
+  :pre-techs-implicit [1601],
+  :published true,
+  :unlock-functions [24 25],
+  :unlock-values [1 2]},
+ 3702
+ {:conclusion "垂直建造结果",
+  :description "垂直建造描述",
+  :hash-needed 108000,
+  :icon-path "Icons/Tech/3702",
+  :id 3702,
+  :is-lab-tech true,
+  :item-points [20],
+  :items [6002],
+  :level 2,
+  :max-level 2,
+  :name "T垂直建造",
+  :position [13 -23],
+  :pre-techs [3701],
+  :published true,
+  :unlock-functions [24 25],
+  :unlock-values [1 2]},
+ 3703
+ {:conclusion "垂直建造结果",
+  :description "垂直建造描述",
+  :hash-needed 144000,
+  :icon-path "Icons/Tech/3703",
+  :id 3703,
+  :is-lab-tech true,
+  :item-points [20 20],
+  :items [6002 6003],
+  :level 3,
+  :max-level 3,
+  :name "T垂直建造",
+  :position [17 -23],
+  :pre-techs [3702],
+  :published true,
+  :unlock-functions [24 25],
+  :unlock-values [1 2]},
+ 3704
+ {:conclusion "垂直建造结果",
+  :description "垂直建造描述",
+  :hash-needed 300000,
+  :icon-path "Icons/Tech/3704",
+  :id 3704,
+  :is-lab-tech true,
+  :item-points [12 12 12],
+  :items [6001 6002 6003],
+  :level 4,
+  :max-level 4,
+  :name "T垂直建造",
+  :position [21 -23],
+  :pre-techs [3703],
+  :published true,
+  :unlock-functions [24 25],
+  :unlock-values [1 2]},
+ 3705
+ {:conclusion "垂直建造结果",
+  :description "垂直建造描述",
+  :hash-needed 480000,
+  :icon-path "Icons/Tech/3705",
+  :id 3705,
+  :is-lab-tech true,
+  :item-points [12 12 12],
+  :items [6001 6002 6003],
+  :level 5,
+  :max-level 5,
+  :name "T垂直建造",
+  :position [25 -23],
+  :pre-techs [3704],
+  :published true,
+  :unlock-functions [24 25],
+  :unlock-values [1 2]},
+ 3706
+ {:conclusion "垂直建造结果",
+  :description "垂直建造描述",
+  :hash-needed 1200000,
+  :icon-path "Icons/Tech/3706",
+  :id 3706,
+  :is-lab-tech true,
+  :item-points [6 6 6 6],
+  :items [6001 6002 6003 6005],
+  :level 6,
+  :max-level 6,
+  :name "T垂直建造",
+  :position [29 -23],
+  :pre-techs [3705],
+  :published true,
+  :unlock-functions [24 25],
+  :unlock-values [1 2]},
+ 3801
  {:conclusion "运输站集装物流结果1",
   :description "运输站集装物流描述1",
   :hash-needed 9600000,
@@ -3342,7 +3682,8 @@
   :pre-techs-implicit [3508],
   :published true,
   :unlock-functions [29],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 3802
  {:conclusion "运输站集装物流结果2",
   :description "运输站集装物流描述2",
   :hash-needed 28800000,
@@ -3360,7 +3701,8 @@
   :pre-techs-max true,
   :published true,
   :unlock-functions [29],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 3803
  {:conclusion "运输站集装物流结果2",
   :description "运输站集装物流描述2",
   :hash-needed 43200000,
@@ -3378,200 +3720,8 @@
   :pre-techs-max true,
   :published true,
   :unlock-functions [29],
-  :unlock-values [1]}
- {:conclusion "矿物利用结果",
-  :description "矿物利用描述",
-  :hash-needed 36000,
-  :icon-path "Icons/Tech/3601",
-  :id 3601,
-  :is-lab-tech true,
-  :item-points [40 40],
-  :items [6001 6002],
-  :level 1,
-  :max-level 1,
-  :name "T矿物利用",
-  :position [9 -43],
-  :pre-techs-implicit [1001],
-  :published true,
-  :unlock-functions [20 21 85],
-  :unlock-values [0.94 0.1 0.04]}
- {:conclusion "矿物利用结果",
-  :description "矿物利用描述2",
-  :hash-needed 180000,
-  :icon-path "Icons/Tech/3602",
-  :id 3602,
-  :is-lab-tech true,
-  :item-points [20 20 20],
-  :items [6001 6002 6003],
-  :level 2,
-  :max-level 2,
-  :name "T矿物利用",
-  :position [13 -43],
-  :pre-techs [3601],
-  :published true,
-  :unlock-functions [20 21 85],
-  :unlock-values [0.94 0.1 0.04]}
- {:conclusion "矿物利用结果",
-  :description "矿物利用描述2",
-  :hash-needed 180000,
-  :icon-path "Icons/Tech/3603",
-  :id 3603,
-  :is-lab-tech true,
-  :item-points [20 20 20 20],
-  :items [6001 6002 6003 6004],
-  :level 3,
-  :max-level 3,
-  :name "T矿物利用",
-  :position [17 -43],
-  :pre-techs [3602],
-  :published true,
-  :unlock-functions [20 21 85],
-  :unlock-values [0.94 0.1 0.04]}
- {:conclusion "矿物利用结果",
-  :description "矿物利用描述2",
-  :hash-needed 480000,
-  :icon-path "Icons/Tech/3604",
-  :id 3604,
-  :is-lab-tech true,
-  :item-points [12 12 12 12],
-  :items [6001 6002 6003 6004],
-  :level 4,
-  :max-level 4,
-  :name "T矿物利用",
-  :position [21 -43],
-  :pre-techs [3603],
-  :published true,
-  :unlock-functions [20 21 85],
-  :unlock-values [0.94 0.1 0.04]}
- {:conclusion "矿物利用结果",
-  :description "矿物利用描述2",
-  :hash-needed 1800000,
-  :icon-path "Icons/Tech/3605",
-  :id 3605,
-  :is-lab-tech true,
-  :item-points [4 4 4 4 4],
-  :items [6001 6002 6003 6004 6005],
-  :level 5,
-  :max-level 5,
-  :name "T矿物利用",
-  :position [25 -43],
-  :pre-techs [3604],
-  :published true,
-  :unlock-functions [20 21 85],
-  :unlock-values [0.94 0.1 0.04]}
- {:conclusion "矿物利用结果",
-  :description "矿物利用描述2",
-  :hash-needed -18000000,
-  :icon-path "Icons/Tech/3606",
-  :id 3606,
-  :is-lab-tech true,
-  :item-points [4],
-  :items [6006],
-  :level 6,
-  :level-coef-1 3600000,
-  :max-level 10000,
-  :name "T矿物利用",
-  :position [29 -43],
-  :pre-techs [3605],
-  :published true,
-  :unlock-functions [20 21 85],
-  :unlock-values [0.94 0.1 0.04]}
- {:conclusion "垂直建造结果",
-  :description "垂直建造描述",
-  :hash-needed 36000,
-  :icon-path "Icons/Tech/3701",
-  :id 3701,
-  :is-lab-tech true,
-  :item-points [40],
-  :items [6002],
-  :level 1,
-  :max-level 1,
-  :name "T垂直建造",
-  :position [9 -23],
-  :pre-techs-implicit [1601],
-  :published true,
-  :unlock-functions [24 25],
-  :unlock-values [1 2]}
- {:conclusion "垂直建造结果",
-  :description "垂直建造描述",
-  :hash-needed 108000,
-  :icon-path "Icons/Tech/3702",
-  :id 3702,
-  :is-lab-tech true,
-  :item-points [20],
-  :items [6002],
-  :level 2,
-  :max-level 2,
-  :name "T垂直建造",
-  :position [13 -23],
-  :pre-techs [3701],
-  :published true,
-  :unlock-functions [24 25],
-  :unlock-values [1 2]}
- {:conclusion "垂直建造结果",
-  :description "垂直建造描述",
-  :hash-needed 144000,
-  :icon-path "Icons/Tech/3703",
-  :id 3703,
-  :is-lab-tech true,
-  :item-points [20 20],
-  :items [6002 6003],
-  :level 3,
-  :max-level 3,
-  :name "T垂直建造",
-  :position [17 -23],
-  :pre-techs [3702],
-  :published true,
-  :unlock-functions [24 25],
-  :unlock-values [1 2]}
- {:conclusion "垂直建造结果",
-  :description "垂直建造描述",
-  :hash-needed 300000,
-  :icon-path "Icons/Tech/3704",
-  :id 3704,
-  :is-lab-tech true,
-  :item-points [12 12 12],
-  :items [6001 6002 6003],
-  :level 4,
-  :max-level 4,
-  :name "T垂直建造",
-  :position [21 -23],
-  :pre-techs [3703],
-  :published true,
-  :unlock-functions [24 25],
-  :unlock-values [1 2]}
- {:conclusion "垂直建造结果",
-  :description "垂直建造描述",
-  :hash-needed 480000,
-  :icon-path "Icons/Tech/3705",
-  :id 3705,
-  :is-lab-tech true,
-  :item-points [12 12 12],
-  :items [6001 6002 6003],
-  :level 5,
-  :max-level 5,
-  :name "T垂直建造",
-  :position [25 -23],
-  :pre-techs [3704],
-  :published true,
-  :unlock-functions [24 25],
-  :unlock-values [1 2]}
- {:conclusion "垂直建造结果",
-  :description "垂直建造描述",
-  :hash-needed 1200000,
-  :icon-path "Icons/Tech/3706",
-  :id 3706,
-  :is-lab-tech true,
-  :item-points [6 6 6 6],
-  :items [6001 6002 6003 6005],
-  :level 6,
-  :max-level 6,
-  :name "T垂直建造",
-  :position [29 -23],
-  :pre-techs [3705],
-  :published true,
-  :unlock-functions [24 25],
-  :unlock-values [1 2]}
+  :unlock-values [1]},
+ 3901
  {:conclusion "研究速度结果",
   :description "研究速度描述",
   :hash-needed 600000,
@@ -3587,7 +3737,8 @@
   :pre-techs-implicit [1312],
   :published true,
   :unlock-functions [22],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 3902
  {:conclusion "研究速度结果",
   :description "研究速度描述",
   :hash-needed 1200000,
@@ -3603,7 +3754,8 @@
   :pre-techs [3901],
   :published true,
   :unlock-functions [22],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 3903
  {:conclusion "研究速度结果",
   :description "研究速度描述",
   :hash-needed 2400000,
@@ -3619,7 +3771,8 @@
   :pre-techs [3902],
   :published true,
   :unlock-functions [22],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 3904
  {:conclusion "研究速度结果",
   :description "研究速度描述",
   :hash-needed -43200000,
@@ -3636,7 +3789,93 @@
   :pre-techs [3903],
   :published true,
   :unlock-functions [22],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 4001
+ {:conclusion "配送范围结果",
+  :description "配送范围描述",
+  :hash-needed 36000,
+  :icon-path "Icons/Tech/4001",
+  :id 4001,
+  :is-lab-tech true,
+  :item-points [40 40],
+  :items [6001 6002],
+  :level 1,
+  :max-level 1,
+  :name "T配送范围",
+  :position [9 -31],
+  :pre-techs-implicit [1608],
+  :published true,
+  :unlock-functions [36],
+  :unlock-values [20]},
+ 4002
+ {:conclusion "配送范围结果",
+  :description "配送范围描述",
+  :hash-needed 108000,
+  :icon-path "Icons/Tech/4002",
+  :id 4002,
+  :is-lab-tech true,
+  :item-points [20 20 20],
+  :items [6001 6002 6003],
+  :level 2,
+  :max-level 2,
+  :name "T配送范围",
+  :position [13 -31],
+  :pre-techs [4001],
+  :published true,
+  :unlock-functions [36],
+  :unlock-values [20]},
+ 4003
+ {:conclusion "配送范围结果",
+  :description "配送范围描述",
+  :hash-needed 144000,
+  :icon-path "Icons/Tech/4003",
+  :id 4003,
+  :is-lab-tech true,
+  :item-points [20 20 20],
+  :items [6001 6002 6003],
+  :level 3,
+  :max-level 3,
+  :name "T配送范围",
+  :position [17 -31],
+  :pre-techs [4002],
+  :published true,
+  :unlock-functions [36],
+  :unlock-values [30]},
+ 4004
+ {:conclusion "配送范围结果",
+  :description "配送范围描述",
+  :hash-needed 180000,
+  :icon-path "Icons/Tech/4004",
+  :id 4004,
+  :is-lab-tech true,
+  :item-points [20 20 20 20],
+  :items [6001 6002 6003 6004],
+  :level 4,
+  :max-level 4,
+  :name "T配送范围",
+  :position [21 -31],
+  :pre-techs [4003],
+  :published true,
+  :unlock-functions [36],
+  :unlock-values [30]},
+ 4005
+ {:conclusion "配送范围结果",
+  :description "配送范围描述",
+  :hash-needed 360000,
+  :icon-path "Icons/Tech/4005",
+  :id 4005,
+  :is-lab-tech true,
+  :item-points [12 12 12 12 12],
+  :items [6001 6002 6003 6004 6005],
+  :level 5,
+  :max-level 5,
+  :name "T配送范围",
+  :position [25 -31],
+  :pre-techs [4004],
+  :published true,
+  :unlock-functions [36],
+  :unlock-values [40]},
+ 4101
  {:conclusion "宇宙探索结果1",
   :description "宇宙探索描述1",
   :hash-needed 1800,
@@ -3651,7 +3890,8 @@
   :position [9 37],
   :published true,
   :unlock-functions [23],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 4102
  {:conclusion "宇宙探索结果2",
   :description "宇宙探索描述2",
   :hash-needed 36000,
@@ -3667,7 +3907,8 @@
   :pre-techs [4101],
   :published true,
   :unlock-functions [23],
-  :unlock-values [2]}
+  :unlock-values [2]},
+ 4103
  {:conclusion "宇宙探索结果3",
   :description "宇宙探索描述3",
   :hash-needed 300000,
@@ -3684,7 +3925,8 @@
   :pre-techs-implicit [2902],
   :published true,
   :unlock-functions [23],
-  :unlock-values [3]}
+  :unlock-values [3]},
+ 4104
  {:conclusion "宇宙探索结果4",
   :description "宇宙探索描述4",
   :hash-needed 1200000,
@@ -3700,7 +3942,8 @@
   :pre-techs [4103],
   :published true,
   :unlock-functions [23],
-  :unlock-values [4]}
+  :unlock-values [4]},
+ 5001
  {:conclusion "动能武器伤害结果",
   :description "动能武器伤害描述",
   :hash-needed 36000,
@@ -3716,7 +3959,8 @@
   :pre-techs-implicit [1801],
   :published true,
   :unlock-functions [61],
-  :unlock-values [0.1]}
+  :unlock-values [0.1]},
+ 5002
  {:conclusion "动能武器伤害结果",
   :description "动能武器伤害描述",
   :hash-needed 72000,
@@ -3732,7 +3976,8 @@
   :pre-techs [5001],
   :published true,
   :unlock-functions [61],
-  :unlock-values [0.1]}
+  :unlock-values [0.1]},
+ 5003
  {:conclusion "动能武器伤害结果",
   :description "动能武器伤害描述",
   :hash-needed 144000,
@@ -3748,7 +3993,8 @@
   :pre-techs [5002],
   :published true,
   :unlock-functions [61],
-  :unlock-values [0.2]}
+  :unlock-values [0.2]},
+ 5004
  {:conclusion "动能武器伤害结果",
   :description "动能武器伤害描述",
   :hash-needed 360000,
@@ -3764,7 +4010,8 @@
   :pre-techs [5003],
   :published true,
   :unlock-functions [61],
-  :unlock-values [0.3]}
+  :unlock-values [0.3]},
+ 5005
  {:conclusion "动能武器伤害结果",
   :description "动能武器伤害描述",
   :hash-needed 720000,
@@ -3780,7 +4027,8 @@
   :pre-techs [5004],
   :published true,
   :unlock-functions [61],
-  :unlock-values [0.3]}
+  :unlock-values [0.3]},
+ 5006
  {:conclusion "动能武器伤害结果",
   :description "动能武器伤害描述",
   :hash-needed 36000000,
@@ -3798,7 +4046,8 @@
   :pre-techs [5005],
   :published true,
   :unlock-functions [61],
-  :unlock-values [0.2]}
+  :unlock-values [0.2]},
+ 5101
  {:conclusion "能量武器伤害结果",
   :description "能量武器伤害描述",
   :hash-needed 36000,
@@ -3814,7 +4063,8 @@
   :pre-techs-implicit [1801],
   :published true,
   :unlock-functions [62],
-  :unlock-values [0.1]}
+  :unlock-values [0.1]},
+ 5102
  {:conclusion "能量武器伤害结果",
   :description "能量武器伤害描述",
   :hash-needed 72000,
@@ -3830,7 +4080,8 @@
   :pre-techs [5101],
   :published true,
   :unlock-functions [62],
-  :unlock-values [0.1]}
+  :unlock-values [0.1]},
+ 5103
  {:conclusion "能量武器伤害结果",
   :description "能量武器伤害描述",
   :hash-needed 144000,
@@ -3846,7 +4097,8 @@
   :pre-techs [5102],
   :published true,
   :unlock-functions [62],
-  :unlock-values [0.2]}
+  :unlock-values [0.2]},
+ 5104
  {:conclusion "能量武器伤害结果",
   :description "能量武器伤害描述",
   :hash-needed 480000,
@@ -3862,7 +4114,8 @@
   :pre-techs [5103],
   :published true,
   :unlock-functions [62],
-  :unlock-values [0.3]}
+  :unlock-values [0.3]},
+ 5105
  {:conclusion "能量武器伤害结果",
   :description "能量武器伤害描述",
   :hash-needed 1440000,
@@ -3878,7 +4131,8 @@
   :pre-techs [5104],
   :published true,
   :unlock-functions [62],
-  :unlock-values [0.3]}
+  :unlock-values [0.3]},
+ 5106
  {:conclusion "能量武器伤害结果",
   :description "能量武器伤害描述",
   :hash-needed 135000000,
@@ -3896,7 +4150,8 @@
   :pre-techs [5105],
   :published true,
   :unlock-functions [62],
-  :unlock-values [0.2]}
+  :unlock-values [0.2]},
+ 5201
  {:conclusion "爆炸武器伤害结果",
   :description "爆炸武器伤害描述",
   :hash-needed 36000,
@@ -3912,7 +4167,8 @@
   :pre-techs-implicit [1802],
   :published true,
   :unlock-functions [63],
-  :unlock-values [0.1]}
+  :unlock-values [0.1]},
+ 5202
  {:conclusion "爆炸武器伤害结果",
   :description "爆炸武器伤害描述",
   :hash-needed 72000,
@@ -3928,7 +4184,8 @@
   :pre-techs [5201],
   :published true,
   :unlock-functions [63],
-  :unlock-values [0.1]}
+  :unlock-values [0.1]},
+ 5203
  {:conclusion "爆炸武器伤害结果",
   :description "爆炸武器伤害描述",
   :hash-needed 144000,
@@ -3944,7 +4201,8 @@
   :pre-techs [5202],
   :published true,
   :unlock-functions [63],
-  :unlock-values [0.2]}
+  :unlock-values [0.2]},
+ 5204
  {:conclusion "爆炸武器伤害结果",
   :description "爆炸武器伤害描述",
   :hash-needed 360000,
@@ -3960,7 +4218,8 @@
   :pre-techs [5203],
   :published true,
   :unlock-functions [63],
-  :unlock-values [0.3]}
+  :unlock-values [0.3]},
+ 5205
  {:conclusion "爆炸武器伤害结果",
   :description "爆炸武器伤害描述",
   :hash-needed 720000,
@@ -3976,7 +4235,8 @@
   :pre-techs [5204],
   :published true,
   :unlock-functions [63],
-  :unlock-values [0.3]}
+  :unlock-values [0.3]},
+ 5206
  {:conclusion "爆炸武器伤害结果",
   :description "爆炸武器伤害描述",
   :hash-needed 36000000,
@@ -3994,7 +4254,8 @@
   :pre-techs [5205],
   :published true,
   :unlock-functions [63],
-  :unlock-values [0.2]}
+  :unlock-values [0.2]},
+ 5301
  {:conclusion "战斗无人机伤害结果",
   :description "战斗无人机伤害描述",
   :hash-needed 108000,
@@ -4010,7 +4271,8 @@
   :pre-techs-implicit [1819],
   :published true,
   :unlock-functions [67],
-  :unlock-values [0.1]}
+  :unlock-values [0.1]},
+ 5302
  {:conclusion "战斗无人机伤害结果",
   :description "战斗无人机伤害描述",
   :hash-needed 180000,
@@ -4026,7 +4288,8 @@
   :pre-techs [5301],
   :published true,
   :unlock-functions [67],
-  :unlock-values [0.1]}
+  :unlock-values [0.1]},
+ 5303
  {:conclusion "战斗无人机伤害结果",
   :description "战斗无人机伤害描述",
   :hash-needed 480000,
@@ -4042,7 +4305,8 @@
   :pre-techs [5302],
   :published true,
   :unlock-functions [67 71],
-  :unlock-values [0.15 0.25]}
+  :unlock-values [0.15 0.25]},
+ 5304
  {:conclusion "战斗无人机伤害结果",
   :description "战斗无人机伤害描述",
   :hash-needed 720000,
@@ -4058,7 +4322,8 @@
   :pre-techs [5303],
   :published true,
   :unlock-functions [67 71],
-  :unlock-values [0.15 0.25]}
+  :unlock-values [0.15 0.25]},
+ 5305
  {:conclusion "战斗无人机伤害结果",
   :description "战斗无人机伤害描述",
   :hash-needed 84600000,
@@ -4076,7 +4341,8 @@
   :pre-techs [5304],
   :published true,
   :unlock-functions [67 71],
-  :unlock-values [0.2 0.2]}
+  :unlock-values [0.2 0.2]},
+ 5401
  {:conclusion "战斗无人机攻击速度结果",
   :description "战斗无人机攻击速度描述",
   :hash-needed 72000,
@@ -4092,7 +4358,8 @@
   :pre-techs-implicit [1819],
   :published true,
   :unlock-functions [68],
-  :unlock-values [0.1]}
+  :unlock-values [0.1]},
+ 5402
  {:conclusion "战斗无人机攻击速度结果",
   :description "战斗无人机攻击速度描述",
   :hash-needed 144000,
@@ -4108,7 +4375,8 @@
   :pre-techs [5401],
   :published true,
   :unlock-functions [68],
-  :unlock-values [0.1]}
+  :unlock-values [0.1]},
+ 5403
  {:conclusion "战斗无人机攻击速度结果",
   :description "战斗无人机攻击速度描述",
   :hash-needed 288000,
@@ -4124,7 +4392,8 @@
   :pre-techs [5402],
   :published true,
   :unlock-functions [68 72],
-  :unlock-values [0.2 0.3]}
+  :unlock-values [0.2 0.3]},
+ 5404
  {:conclusion "战斗无人机攻击速度结果",
   :description "战斗无人机攻击速度描述",
   :hash-needed 360000,
@@ -4140,7 +4409,8 @@
   :pre-techs [5403],
   :published true,
   :unlock-functions [68 72],
-  :unlock-values [0.2 0.3]}
+  :unlock-values [0.2 0.3]},
+ 5405
  {:conclusion "战斗无人机攻击速度结果",
   :description "战斗无人机攻击速度描述",
   :hash-needed 1440000,
@@ -4156,7 +4426,8 @@
   :pre-techs [5404],
   :published true,
   :unlock-functions [68 72],
-  :unlock-values [0.4 0.4]}
+  :unlock-values [0.4 0.4]},
+ 5601
  {:conclusion "战斗无人机耐久结果",
   :description "战斗无人机耐久描述",
   :hash-needed 72000,
@@ -4172,7 +4443,8 @@
   :pre-techs-implicit [1819],
   :published true,
   :unlock-functions [69],
-  :unlock-values [0.1]}
+  :unlock-values [0.1]},
+ 5602
  {:conclusion "战斗无人机耐久结果",
   :description "战斗无人机耐久描述",
   :hash-needed 144000,
@@ -4188,7 +4460,8 @@
   :pre-techs [5601],
   :published true,
   :unlock-functions [69],
-  :unlock-values [0.1]}
+  :unlock-values [0.1]},
+ 5603
  {:conclusion "战斗无人机耐久结果",
   :description "战斗无人机耐久描述",
   :hash-needed 360000,
@@ -4204,7 +4477,8 @@
   :pre-techs [5602],
   :published true,
   :unlock-functions [69 73],
-  :unlock-values [0.2 0.3]}
+  :unlock-values [0.2 0.3]},
+ 5604
  {:conclusion "战斗无人机耐久结果",
   :description "战斗无人机耐久描述",
   :hash-needed 360000,
@@ -4220,7 +4494,8 @@
   :pre-techs [5603],
   :published true,
   :unlock-functions [69 73],
-  :unlock-values [0.2 0.3]}
+  :unlock-values [0.2 0.3]},
+ 5605
  {:conclusion "战斗无人机耐久结果",
   :description "战斗无人机耐久描述",
   :hash-needed 1800000,
@@ -4236,7 +4511,8 @@
   :pre-techs [5604],
   :published true,
   :unlock-functions [69 73],
-  :unlock-values [0.4 0.4]}
+  :unlock-values [0.4 0.4]},
+ 5701
  {:conclusion "行星护盾结果",
   :description "行星护盾描述",
   :hash-needed 144000,
@@ -4252,7 +4528,8 @@
   :pre-techs-implicit [1809],
   :published true,
   :unlock-functions [74],
-  :unlock-values [0.1]}
+  :unlock-values [0.1]},
+ 5702
  {:conclusion "行星护盾结果",
   :description "行星护盾描述",
   :hash-needed 288000,
@@ -4268,7 +4545,8 @@
   :pre-techs [5701],
   :published true,
   :unlock-functions [74],
-  :unlock-values [0.15]}
+  :unlock-values [0.15]},
+ 5703
  {:conclusion "行星护盾结果",
   :description "行星护盾描述",
   :hash-needed 360000,
@@ -4284,7 +4562,8 @@
   :pre-techs [5702],
   :published true,
   :unlock-functions [74],
-  :unlock-values [0.2]}
+  :unlock-values [0.2]},
+ 5704
  {:conclusion "行星护盾结果",
   :description "行星护盾描述",
   :hash-needed 360000,
@@ -4300,7 +4579,8 @@
   :pre-techs [5703],
   :published true,
   :unlock-functions [74],
-  :unlock-values [0.25]}
+  :unlock-values [0.25]},
+ 5705
  {:conclusion "行星护盾结果",
   :description "行星护盾描述",
   :hash-needed 1800000,
@@ -4316,7 +4596,8 @@
   :pre-techs [5704],
   :published true,
   :unlock-functions [74],
-  :unlock-values [0.3]}
+  :unlock-values [0.3]},
+ 5801
  {:conclusion "地面编队扩容结果2",
   :description "地面编队扩容描述2",
   :hash-needed 36000,
@@ -4332,7 +4613,8 @@
   :pre-techs-implicit [1819],
   :published true,
   :unlock-functions [78],
-  :unlock-values [2]}
+  :unlock-values [2]},
+ 5802
  {:conclusion "地面编队扩容结果2",
   :description "地面编队扩容描述2",
   :hash-needed 108000,
@@ -4348,7 +4630,8 @@
   :pre-techs [5801],
   :published true,
   :unlock-functions [78],
-  :unlock-values [2]}
+  :unlock-values [2]},
+ 5803
  {:conclusion "地面编队扩容结果1",
   :description "地面编队扩容描述1",
   :hash-needed 288000,
@@ -4364,7 +4647,8 @@
   :pre-techs [5802],
   :published true,
   :unlock-functions [77],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 5804
  {:conclusion "地面编队扩容结果2",
   :description "地面编队扩容描述2",
   :hash-needed 432000,
@@ -4380,7 +4664,8 @@
   :pre-techs [5803],
   :published true,
   :unlock-functions [78],
-  :unlock-values [4]}
+  :unlock-values [4]},
+ 5805
  {:conclusion "地面编队扩容结果1",
   :description "地面编队扩容描述1",
   :hash-needed 720000,
@@ -4396,7 +4681,8 @@
   :pre-techs [5804],
   :published true,
   :unlock-functions [77],
-  :unlock-values [2]}
+  :unlock-values [2]},
+ 5806
  {:conclusion "地面编队扩容结果1",
   :description "地面编队扩容描述1",
   :hash-needed 1080000,
@@ -4412,7 +4698,8 @@
   :pre-techs [5805],
   :published true,
   :unlock-functions [77],
-  :unlock-values [2]}
+  :unlock-values [2]},
+ 5807
  {:conclusion "地面编队扩容结果1",
   :description "地面编队扩容描述1",
   :hash-needed 1440000,
@@ -4428,7 +4715,8 @@
   :pre-techs [5806],
   :published true,
   :unlock-functions [77],
-  :unlock-values [2]}
+  :unlock-values [2]},
+ 5901
  {:conclusion "太空编队扩容结果2",
   :description "太空编队扩容描述2",
   :hash-needed 144000,
@@ -4444,7 +4732,8 @@
   :pre-techs-implicit [1822],
   :published true,
   :unlock-functions [80],
-  :unlock-values [4]}
+  :unlock-values [4]},
+ 5902
  {:conclusion "太空编队扩容结果2",
   :description "太空编队扩容描述2",
   :hash-needed 288000,
@@ -4460,7 +4749,8 @@
   :pre-techs [5901],
   :published true,
   :unlock-functions [80],
-  :unlock-values [4]}
+  :unlock-values [4]},
+ 5903
  {:conclusion "太空编队扩容结果1",
   :description "太空编队扩容描述1",
   :hash-needed 432000,
@@ -4476,7 +4766,8 @@
   :pre-techs [5902],
   :published true,
   :unlock-functions [79],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 5904
  {:conclusion "太空编队扩容结果1",
   :description "太空编队扩容描述1",
   :hash-needed 720000,
@@ -4492,7 +4783,8 @@
   :pre-techs [5903],
   :published true,
   :unlock-functions [79],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 5905
  {:conclusion "太空编队扩容结果1",
   :description "太空编队扩容描述1",
   :hash-needed 1080000,
@@ -4508,7 +4800,8 @@
   :pre-techs [5904],
   :published true,
   :unlock-functions [79],
-  :unlock-values [1]}
+  :unlock-values [1]},
+ 5906
  {:conclusion "太空编队扩容结果1",
   :description "太空编队扩容描述1",
   :hash-needed 1440000,
@@ -4524,7 +4817,8 @@
   :pre-techs [5905],
   :published true,
   :unlock-functions [79],
-  :unlock-values [2]}
+  :unlock-values [2]},
+ 5907
  {:conclusion "太空编队扩容结果1",
   :description "太空编队扩容描述1",
   :hash-needed 2160000,
@@ -4540,7 +4834,8 @@
   :pre-techs [5906],
   :published true,
   :unlock-functions [79],
-  :unlock-values [2]}
+  :unlock-values [2]},
+ 6001
  {:conclusion "全局耐久度提升结果1",
   :description "全局耐久度提升描述1",
   :hash-needed 72000,
@@ -4556,7 +4851,8 @@
   :pre-techs-implicit [2101],
   :published true,
   :unlock-functions [84],
-  :unlock-values [0.04]}
+  :unlock-values [0.04]},
+ 6002
  {:conclusion "全局耐久度提升结果1",
   :description "全局耐久度提升描述1",
   :hash-needed 144000,
@@ -4572,7 +4868,8 @@
   :pre-techs [6001],
   :published true,
   :unlock-functions [84],
-  :unlock-values [0.04]}
+  :unlock-values [0.04]},
+ 6003
  {:conclusion "全局耐久度提升结果1",
   :description "全局耐久度提升描述1",
   :hash-needed 216000,
@@ -4588,7 +4885,8 @@
   :pre-techs [6002],
   :published true,
   :unlock-functions [84],
-  :unlock-values [0.04]}
+  :unlock-values [0.04]},
+ 6004
  {:conclusion "全局耐久度提升结果1",
   :description "全局耐久度提升描述1",
   :hash-needed 360000,
@@ -4604,7 +4902,8 @@
   :pre-techs [6003],
   :published true,
   :unlock-functions [84],
-  :unlock-values [0.04]}
+  :unlock-values [0.04]},
+ 6005
  {:conclusion "全局耐久度提升结果1",
   :description "全局耐久度提升描述1",
   :hash-needed 900000,
@@ -4620,7 +4919,8 @@
   :pre-techs [6004],
   :published true,
   :unlock-functions [84],
-  :unlock-values [0.04]}
+  :unlock-values [0.04]},
+ 6006
  {:conclusion "全局耐久度提升结果1",
   :description "全局耐久度提升描述1",
   :hash-needed 4500000,
@@ -4638,7 +4938,8 @@
   :pre-techs [6005],
   :published true,
   :unlock-functions [84],
-  :unlock-values [0.04]}
+  :unlock-values [0.04]},
+ 6101
  {:conclusion "干扰塔效果结果",
   :description "干扰塔效果描述",
   :hash-needed 36000,
@@ -4654,7 +4955,8 @@
   :pre-techs-implicit [1810],
   :published true,
   :unlock-functions [64],
-  :unlock-values [0.05]}
+  :unlock-values [0.05]},
+ 6102
  {:conclusion "干扰塔效果结果",
   :description "干扰塔效果描述",
   :hash-needed 72000,
@@ -4670,7 +4972,8 @@
   :pre-techs [6101],
   :published true,
   :unlock-functions [64],
-  :unlock-values [0.05]}
+  :unlock-values [0.05]},
+ 6103
  {:conclusion "干扰塔效果结果",
   :description "干扰塔效果描述",
   :hash-needed 144000,
@@ -4686,7 +4989,8 @@
   :pre-techs [6102],
   :published true,
   :unlock-functions [64],
-  :unlock-values [0.1]}
+  :unlock-values [0.1]},
+ 6104
  {:conclusion "干扰塔效果结果",
   :description "干扰塔效果描述",
   :hash-needed 360000,
@@ -4702,7 +5006,8 @@
   :pre-techs [6103],
   :published true,
   :unlock-functions [64],
-  :unlock-values [0.1]}
+  :unlock-values [0.1]},
+ 6105
  {:conclusion "干扰塔效果结果",
   :description "干扰塔效果描述",
   :hash-needed 720000,
@@ -4718,7 +5023,8 @@
   :pre-techs [6104],
   :published true,
   :unlock-functions [64],
-  :unlock-values [0.1]}
+  :unlock-values [0.1]},
+ 6106
  {:conclusion "干扰塔效果结果",
   :description "干扰塔效果描述",
   :hash-needed 3600000,
@@ -4734,4 +5040,4 @@
   :pre-techs [6105],
   :published true,
   :unlock-functions [64],
-  :unlock-values [0.1]}]
+  :unlock-values [0.1]}}

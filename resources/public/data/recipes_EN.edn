@@ -1,4 +1,5 @@
-[{:grid-index 1101,
+{1
+ {:grid-index 1101,
   :handcraft true,
   :id 1,
   :items {1001 1},
@@ -7,7 +8,8 @@
   :results {1101 1},
   :sid "1101",
   :time-spend 60,
-  :type "SMELT"}
+  :type "SMELT"},
+ 2
  {:grid-index 1201,
   :handcraft true,
   :id 2,
@@ -17,7 +19,8 @@
   :results {1102 1},
   :sid "1201",
   :time-spend 90,
-  :type "SMELT"}
+  :type "SMELT"},
+ 3
  {:grid-index 1102,
   :handcraft true,
   :id 3,
@@ -27,7 +30,8 @@
   :results {1104 1},
   :sid "1102",
   :time-spend 60,
-  :type "SMELT"}
+  :type "SMELT"},
+ 4
  {:grid-index 1105,
   :handcraft true,
   :id 4,
@@ -37,7 +41,8 @@
   :results {1108 1},
   :sid "1105",
   :time-spend 60,
-  :type "SMELT"}
+  :type "SMELT"},
+ 5
  {:grid-index 1401,
   :handcraft true,
   :id 5,
@@ -47,7 +52,8 @@
   :results {1201 1},
   :sid "1401",
   :time-spend 60,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 6
  {:grid-index 1202,
   :handcraft true,
   :id 6,
@@ -57,7 +63,8 @@
   :results {1202 2},
   :sid "1202",
   :time-spend 60,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 7
  {:grid-index 2104,
   :handcraft true,
   :id 7,
@@ -67,7 +74,8 @@
   :results {2203 1},
   :sid "2104",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 8
  {:grid-index 2101,
   :handcraft true,
   :id 8,
@@ -77,7 +85,8 @@
   :results {2201 1},
   :sid "2101",
   :time-spend 60,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 9
  {:grid-index 1801,
   :handcraft true,
   :id 9,
@@ -87,7 +96,8 @@
   :results {6001 1},
   :sid "1801",
   :time-spend 180,
-  :type "RESEARCH"}
+  :type "RESEARCH"},
+ 10
  {:grid-index 2408,
   :handcraft true,
   :id 10,
@@ -97,7 +107,8 @@
   :results {2901 1},
   :sid "2408",
   :time-spend 180,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 11
  {:grid-index 1305,
   :handcraft true,
   :id 11,
@@ -107,7 +118,8 @@
   :results {1111 2},
   :sid "1305",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 12
  {:grid-index 1501,
   :handcraft true,
   :id 12,
@@ -117,7 +129,8 @@
   :results {1401 1},
   :sid "1501",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 13
  {:grid-index 2102,
   :handcraft true,
   :id 13,
@@ -127,7 +140,8 @@
   :results {2202 1},
   :sid "2102",
   :time-spend 180,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 14
  {:grid-index 2308,
   :handcraft true,
   :id 14,
@@ -137,7 +151,8 @@
   :results {2307 1},
   :sid "2308",
   :time-spend 480,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 15
  {:grid-index 2309,
   :handcraft true,
   :id 15,
@@ -147,7 +162,8 @@
   :results {2308 1},
   :sid "2309",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 16
  {:description
   "Refine crude oil with plasma to obtain hydrogen and refined oil.",
   :explicit true,
@@ -160,7 +176,8 @@
   :results {1114 2, 1120 1},
   :sid "1107",
   :time-spend 240,
-  :type "REFINE"}
+  :type "REFINE"},
+ 17
  {:grid-index 1106,
   :handcraft true,
   :id 17,
@@ -170,7 +187,8 @@
   :results {1109 1},
   :sid "1106",
   :time-spend 120,
-  :type "SMELT"}
+  :type "SMELT"},
+ 18
  {:grid-index 1802,
   :handcraft true,
   :id 18,
@@ -180,7 +198,8 @@
   :results {6002 1},
   :sid "1802",
   :time-spend 360,
-  :type "RESEARCH"}
+  :type "RESEARCH"},
+ 19
  {:grid-index 1609,
   :handcraft true,
   :id 19,
@@ -190,7 +209,8 @@
   :results {1801 2},
   :sid "1609",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 20
  {:grid-index 1311,
   :handcraft true,
   :id 20,
@@ -200,7 +220,8 @@
   :results {1405 1},
   :sid "1311",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 21
  {:grid-index 1312,
   :handcraft true,
   :id 21,
@@ -210,7 +231,8 @@
   :results {1406 1},
   :sid "1312",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 22
  {:grid-index 2311,
   :handcraft true,
   :id 22,
@@ -220,7 +242,8 @@
   :results {2309 1},
   :sid "2311",
   :time-spend 300,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 23
  {:grid-index 1109,
   :id 23,
   :items {1109 1, 1114 2},
@@ -229,7 +252,8 @@
   :results {1115 1},
   :sid "1109",
   :time-spend 180,
-  :type "CHEMICAL"}
+  :type "CHEMICAL"},
+ 24
  {:grid-index 1406,
   :id 24,
   :items {1000 4, 1005 8, 1114 6},
@@ -238,7 +262,8 @@
   :results {1116 4},
   :sid "1406",
   :time-spend 360,
-  :type "CHEMICAL"}
+  :type "CHEMICAL"},
+ 25
  {:grid-index 1209,
   :id 25,
   :items {1000 1, 1114 1, 1115 2},
@@ -247,7 +272,8 @@
   :results {1117 1},
   :sid "1209",
   :time-spend 360,
-  :type "CHEMICAL"}
+  :type "CHEMICAL"},
+ 26
  {:grid-index 1308,
   :handcraft true,
   :id 26,
@@ -257,7 +283,8 @@
   :results {1118 1},
   :sid "1308",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 27
  {:grid-index 1803,
   :handcraft true,
   :id 27,
@@ -267,7 +294,8 @@
   :results {6003 1},
   :sid "1803",
   :time-spend 480,
-  :type "RESEARCH"}
+  :type "RESEARCH"},
+ 28
  {:grid-index 1505,
   :handcraft true,
   :id 28,
@@ -277,7 +305,8 @@
   :results {1126 1},
   :sid "1505",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 29
  {:description
   "The utilization of the rare Grating Crystal for the production of Casimir Crystal results in significantly enhanced efficiency.",
   :explicit true,
@@ -290,7 +319,8 @@
   :results {1126 1},
   :sid "1605",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 30
  {:grid-index 1304,
   :handcraft true,
   :id 30,
@@ -300,7 +330,8 @@
   :results {1119 2},
   :sid "1304",
   :time-spend 300,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 31
  {:grid-index 1108,
   :id 31,
   :items {1109 3, 1116 1},
@@ -309,7 +340,8 @@
   :results {1123 2},
   :sid "1108",
   :time-spend 180,
-  :type "CHEMICAL"}
+  :type "CHEMICAL"},
+ 32
  {:description
   "Fire Ice Vein would greatly facilitate the production of graphene.",
   :explicit true,
@@ -322,7 +354,8 @@
   :results {1120 1, 1123 2},
   :sid "1208",
   :time-spend 120,
-  :type "CHEMICAL"}
+  :type "CHEMICAL"},
+ 33
  {:grid-index 1408,
   :id 33,
   :items {1106 1, 1123 3},
@@ -331,7 +364,8 @@
   :results {1124 2},
   :sid "1408",
   :time-spend 240,
-  :type "CHEMICAL"}
+  :type "CHEMICAL"},
+ 34
  {:grid-index 1403,
   :id 34,
   :items {1005 10},
@@ -340,7 +374,8 @@
   :results {1003 1},
   :sid "1403",
   :time-spend 600,
-  :type "SMELT"}
+  :type "SMELT"},
+ 35
  {:description
   "It is feasible to produce Carbon Nanotubes using Stalagmite Crystal, however, this ore is quite rare and difficult to locate.",
   :explicit true,
@@ -353,7 +388,8 @@
   :results {1124 2},
   :sid "1508",
   :time-spend 240,
-  :type "CHEMICAL"}
+  :type "CHEMICAL"},
+ 36
  {:grid-index 1503,
   :handcraft true,
   :id 36,
@@ -363,7 +399,8 @@
   :results {1402 1},
   :sid "1503",
   :time-spend 480,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 37
  {:grid-index 1203,
   :id 37,
   :items {1105 1},
@@ -372,7 +409,8 @@
   :results {1113 1},
   :sid "1203",
   :time-spend 120,
-  :type "SMELT"}
+  :type "SMELT"},
+ 38
  {:grid-index 1607,
   :handcraft true,
   :id 38,
@@ -382,7 +420,8 @@
   :results {1304 1},
   :sid "1607",
   :time-spend 720,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 39
  {:grid-index 2313,
   :handcraft true,
   :id 39,
@@ -392,7 +431,8 @@
   :results {2310 1},
   :sid "2313",
   :time-spend 900,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 40
  {:grid-index 1507,
   :id 40,
   :items {1120 10},
@@ -402,7 +442,8 @@
   :results {1121 5},
   :sid "1507",
   :time-spend 150,
-  :type "PARTICLE"}
+  :type "PARTICLE"},
+ 41
  {:grid-index 1610,
   :handcraft true,
   :id 41,
@@ -412,7 +453,8 @@
   :results {1802 2},
   :sid "1610",
   :time-spend 720,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 42
  {:grid-index 1608,
   :handcraft true,
   :id 42,
@@ -422,7 +464,8 @@
   :results {1403 1},
   :sid "1608",
   :time-spend 1200,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 43
  {:grid-index 2112,
   :handcraft true,
   :id 43,
@@ -432,7 +475,8 @@
   :results {2210 1},
   :sid "2112",
   :time-spend 1800,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 44
  {:grid-index 1611,
   :id 44,
   :items {1107 1, 1120 12, 1122 12, 1403 1},
@@ -442,7 +486,8 @@
   :results {1803 2},
   :sid "1611",
   :time-spend 1440,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 45
  {:grid-index 2404,
   :handcraft true,
   :id 45,
@@ -452,7 +497,8 @@
   :results {2303 1},
   :sid "2404",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 46
  {:grid-index 2405,
   :handcraft true,
   :id 46,
@@ -462,7 +508,8 @@
   :results {2304 1},
   :sid "2405",
   :time-spend 180,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 47
  {:grid-index 2406,
   :handcraft true,
   :id 47,
@@ -472,7 +519,8 @@
   :results {2305 1},
   :sid "2406",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 48
  {:grid-index 2305,
   :handcraft true,
   :id 48,
@@ -482,7 +530,8 @@
   :results {2301 1},
   :sid "2305",
   :time-spend 180,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 49
  {:grid-index 2307,
   :handcraft true,
   :id 49,
@@ -492,7 +541,8 @@
   :results {2306 1},
   :sid "2307",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 50
  {:grid-index 1404,
   :handcraft true,
   :id 50,
@@ -502,7 +552,8 @@
   :results {1301 2},
   :sid "1404",
   :time-spend 60,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 51
  {:grid-index 1504,
   :handcraft true,
   :id 51,
@@ -512,7 +563,8 @@
   :results {1303 1},
   :sid "1504",
   :time-spend 180,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 52
  {:grid-index 1604,
   :handcraft true,
   :id 52,
@@ -522,7 +574,8 @@
   :results {1305 1},
   :sid "1604",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 53
  {:grid-index 1603,
   :handcraft true,
   :id 53,
@@ -532,7 +585,8 @@
   :results {1302 1},
   :sid "1603",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 54
  {:description
   "The processing of wood, plant fuel, and water resources yields Organic Crystal.",
   :explicit true,
@@ -546,7 +600,8 @@
   :results {1117 1},
   :sid "1309",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 55
  {:grid-index 1804,
   :handcraft true,
   :id 55,
@@ -556,7 +611,8 @@
   :results {6004 1},
   :sid "1804",
   :time-spend 600,
-  :type "RESEARCH"}
+  :type "RESEARCH"},
+ 56
  {:grid-index 2401,
   :handcraft true,
   :id 56,
@@ -566,7 +622,8 @@
   :results {2302 1},
   :sid "2401",
   :time-spend 180,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 57
  {:grid-index 1205,
   :handcraft true,
   :id 57,
@@ -576,7 +633,8 @@
   :results {1110 1},
   :sid "1205",
   :time-spend 120,
-  :type "SMELT"}
+  :type "SMELT"},
+ 58
  {:description
   "Through the catalytic action of hydrogen gas, the refined oil is subjected to X-ray irradiation, leading to its cracking and yielding an increased quantity of hydrogen, as well as a byproduct: Energetic Graphite.",
   :explicit true,
@@ -590,7 +648,8 @@
   :results {1109 1, 1120 3},
   :sid "1207",
   :time-spend 240,
-  :type "REFINE"}
+  :type "REFINE"},
+ 59
  {:grid-index 1103,
   :handcraft true,
   :id 59,
@@ -600,7 +659,8 @@
   :results {1105 1},
   :sid "1103",
   :time-spend 120,
-  :type "SMELT"}
+  :type "SMELT"},
+ 60
  {:grid-index 1206,
   :id 60,
   :items {1109 1},
@@ -609,7 +669,8 @@
   :results {1112 1},
   :sid "1206",
   :time-spend 120,
-  :type "SMELT"}
+  :type "SMELT"},
+ 61
  {:description
   "Find Kimberlite Ore and you can smelt it to produce diamonds.",
   :explicit true,
@@ -622,7 +683,8 @@
   :results {1112 2},
   :sid "1306",
   :time-spend 90,
-  :type "SMELT"}
+  :type "SMELT"},
+ 62
  {:description
   "The unique fractal structure possessed by Fractal Silicon makes it the preferred material for the efficient production of crystal silicon.",
   :explicit true,
@@ -635,7 +697,8 @@
   :results {1113 2},
   :sid "1303",
   :time-spend 90,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 63
  {:grid-index 1301,
   :id 63,
   :items {1101 3},
@@ -644,7 +707,8 @@
   :results {1103 1},
   :sid "1301",
   :time-spend 180,
-  :type "SMELT"}
+  :type "SMELT"},
+ 64
  {:grid-index 2105,
   :handcraft true,
   :id 64,
@@ -654,7 +718,8 @@
   :results {2204 1},
   :sid "2105",
   :time-spend 300,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 65
  {:grid-index 1104,
   :handcraft true,
   :id 65,
@@ -664,7 +729,8 @@
   :results {1106 1},
   :sid "1104",
   :time-spend 120,
-  :type "SMELT"}
+  :type "SMELT"},
+ 66
  {:grid-index 1204,
   :id 66,
   :items {1103 4, 1106 4, 1116 8},
@@ -673,7 +739,8 @@
   :results {1107 4},
   :sid "1204",
   :time-spend 720,
-  :type "SMELT"}
+  :type "SMELT"},
+ 67
  {:grid-index 2106,
   :handcraft true,
   :id 67,
@@ -683,7 +750,8 @@
   :results {2205 1},
   :sid "2106",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 68
  {:grid-index 1601,
   :handcraft true,
   :id 68,
@@ -693,7 +761,8 @@
   :results {1404 1},
   :sid "1601",
   :time-spend 180,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 69
  {:description
   "The discovery of Grating Crystal would facilitate the production of Photon Combiner.",
   :explicit true,
@@ -706,7 +775,8 @@
   :results {1404 1},
   :sid "1602",
   :time-spend 180,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 70
  {:grid-index 1509,
   :handcraft true,
   :id 70,
@@ -716,7 +786,8 @@
   :results {1501 2},
   :sid "1509",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 71
  {:grid-index 2410,
   :handcraft true,
   :id 71,
@@ -726,7 +797,8 @@
   :results {2311 1},
   :sid "2410",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 72
  {:grid-index 2111,
   :handcraft true,
   :id 72,
@@ -736,7 +808,8 @@
   :results {2208 1},
   :sid "2111",
   :time-spend 480,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 73
  {:grid-index 2103,
   :handcraft true,
   :id 73,
@@ -746,7 +819,8 @@
   :results {2212 1},
   :sid "2103",
   :time-spend 300,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 74
  {:description
   "Under the influence of an intense magnetic field, Critical Photons can be converted into Antimatter and hydrogen.",
   :explicit true,
@@ -760,7 +834,8 @@
   :results {1120 2, 1122 2},
   :sid "1708",
   :time-spend 120,
-  :type "PARTICLE"}
+  :type "PARTICLE"},
+ 75
  {:grid-index 1806,
   :id 75,
   :items {1122 1, 6001 1, 6002 1, 6003 1, 6004 1, 6005 1},
@@ -769,7 +844,8 @@
   :results {6006 1},
   :sid "1806",
   :time-spend 900,
-  :type "RESEARCH"}
+  :type "RESEARCH"},
+ 76
  {:grid-index 2107,
   :handcraft true,
   :id 76,
@@ -779,7 +855,8 @@
   :results {2206 1},
   :sid "2107",
   :time-spend 180,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 77
  {:grid-index 2110,
   :handcraft true,
   :id 77,
@@ -789,7 +866,8 @@
   :results {2209 1},
   :sid "2110",
   :time-spend 900,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 78
  {:grid-index 1706,
   :handcraft true,
   :id 78,
@@ -799,7 +877,8 @@
   :results {1210 1},
   :sid "1706",
   :time-spend 600,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 79
  {:description
   "The existence of Gravity Matrix facilitates the production of Space Warpers.",
   :explicit true,
@@ -813,7 +892,8 @@
   :results {1210 8},
   :sid "1707",
   :time-spend 600,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 80
  {:grid-index 1510,
   :handcraft true,
   :id 80,
@@ -823,7 +903,8 @@
   :results {1125 1},
   :sid "1510",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 81
  {:grid-index 1511,
   :handcraft true,
   :id 81,
@@ -833,7 +914,8 @@
   :results {1502 1},
   :sid "1511",
   :time-spend 480,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 82
  {:grid-index 2411,
   :handcraft true,
   :id 82,
@@ -843,7 +925,8 @@
   :results {2312 1},
   :sid "2411",
   :time-spend 1800,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 83
  {:grid-index 1512,
   :handcraft true,
   :id 83,
@@ -853,7 +936,8 @@
   :results {1503 1},
   :sid "1512",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 84
  {:grid-index 2201,
   :handcraft true,
   :id 84,
@@ -863,7 +947,8 @@
   :results {2001 3},
   :sid "2201",
   :time-spend 60,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 85
  {:grid-index 2301,
   :handcraft true,
   :id 85,
@@ -873,7 +958,8 @@
   :results {2011 1},
   :sid "2301",
   :time-spend 60,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 86
  {:grid-index 2208,
   :handcraft true,
   :id 86,
@@ -883,7 +969,8 @@
   :results {2101 1},
   :sid "2208",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 87
  {:grid-index 2204,
   :handcraft true,
   :id 87,
@@ -893,7 +980,8 @@
   :results {2020 1},
   :sid "2204",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 88
  {:grid-index 2302,
   :handcraft true,
   :id 88,
@@ -903,7 +991,8 @@
   :results {2012 2},
   :sid "2302",
   :time-spend 60,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 89
  {:grid-index 2202,
   :handcraft true,
   :id 89,
@@ -913,7 +1002,8 @@
   :results {2002 3},
   :sid "2202",
   :time-spend 60,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 90
  {:grid-index 2303,
   :handcraft true,
   :id 90,
@@ -923,7 +1013,8 @@
   :results {2013 2},
   :sid "2303",
   :time-spend 60,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 91
  {:grid-index 2209,
   :handcraft true,
   :id 91,
@@ -933,7 +1024,8 @@
   :results {2102 1},
   :sid "2209",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 92
  {:grid-index 2203,
   :handcraft true,
   :id 92,
@@ -943,7 +1035,8 @@
   :results {2003 3},
   :sid "2203",
   :time-spend 60,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 93
  {:grid-index 2212,
   :handcraft true,
   :id 93,
@@ -953,7 +1046,8 @@
   :results {2103 1},
   :sid "2212",
   :time-spend 1200,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 94
  {:grid-index 1411,
   :handcraft true,
   :id 94,
@@ -963,7 +1057,8 @@
   :results {5001 1},
   :sid "1411",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 95
  {:grid-index 2213,
   :handcraft true,
   :id 95,
@@ -973,7 +1068,8 @@
   :results {2104 1},
   :sid "2213",
   :time-spend 1800,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 96
  {:grid-index 1412,
   :handcraft true,
   :id 96,
@@ -983,7 +1079,8 @@
   :results {5002 1},
   :sid "1412",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 97
  {:grid-index 1302,
   :handcraft true,
   :id 97,
@@ -993,7 +1090,8 @@
   :results {1203 1},
   :sid "1302",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 98
  {:grid-index 1402,
   :handcraft true,
   :id 98,
@@ -1003,7 +1101,8 @@
   :results {1204 1},
   :sid "1402",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 99
  {:grid-index 1506,
   :handcraft true,
   :id 99,
@@ -1013,7 +1112,8 @@
   :results {1206 1},
   :sid "1506",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 100
  {:description
   "While Unipolar Magnets are exceedingly rare, their discovery would enable more efficient production of Particle Containers.",
   :explicit true,
@@ -1026,7 +1126,8 @@
   :results {1206 1},
   :sid "1606",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 101
  {:grid-index 1405,
   :handcraft true,
   :id 101,
@@ -1036,7 +1137,8 @@
   :results {1209 1},
   :sid "1405",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 102
  {:grid-index 1805,
   :handcraft true,
   :id 102,
@@ -1046,7 +1148,8 @@
   :results {6005 2},
   :sid "1805",
   :time-spend 1440,
-  :type "RESEARCH"}
+  :type "RESEARCH"},
+ 103
  {:grid-index 1502,
   :handcraft true,
   :id 103,
@@ -1056,7 +1159,8 @@
   :results {1205 1},
   :sid "1502",
   :time-spend 180,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 104
  {:grid-index 1409,
   :id 104,
   :items {1101 2, 1121 10, 1206 2},
@@ -1065,7 +1169,19 @@
   :results {1127 1},
   :sid "1409",
   :time-spend 480,
-  :type "PARTICLE"}
+  :type "PARTICLE"},
+ 105
+ {:grid-index 1310,
+  :handcraft true,
+  :id 105,
+  :items {1104 2, 1202 1},
+  :made-from-string "Assembler",
+  :name "Engine",
+  :results {1407 1},
+  :sid "1310",
+  :time-spend 180,
+  :type "ASSEMBLE"},
+ 106
  {:grid-index 1110,
   :handcraft true,
   :id 106,
@@ -1075,7 +1191,8 @@
   :results {1141 1},
   :sid "1110",
   :time-spend 30,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 107
  {:grid-index 1111,
   :handcraft true,
   :id 107,
@@ -1085,7 +1202,8 @@
   :results {1142 1},
   :sid "1111",
   :time-spend 60,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 108
  {:grid-index 1112,
   :handcraft true,
   :id 108,
@@ -1095,7 +1213,8 @@
   :results {1143 1},
   :sid "1112",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 109
  {:grid-index 2207,
   :handcraft true,
   :id 109,
@@ -1105,7 +1224,8 @@
   :results {2313 1},
   :sid "2207",
   :time-spend 180,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 110
  {:grid-index 2310,
   :handcraft true,
   :id 110,
@@ -1115,7 +1235,8 @@
   :results {2314 1},
   :sid "2310",
   :time-spend 180,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 111
  {:grid-index 2214,
   :handcraft true,
   :id 111,
@@ -1125,7 +1246,8 @@
   :results {2105 1},
   :sid "2214",
   :time-spend 1800,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 112
  {:grid-index 1714,
   :handcraft true,
   :id 112,
@@ -1135,7 +1257,8 @@
   :results {1131 1},
   :sid "1714",
   :time-spend 60,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 113
  {:grid-index 2109,
   :handcraft true,
   :id 113,
@@ -1145,7 +1268,8 @@
   :results {2211 1},
   :sid "2109",
   :time-spend 600,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 114
  {:grid-index 2210,
   :handcraft true,
   :id 114,
@@ -1155,7 +1279,8 @@
   :results {2106 1},
   :sid "2210",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 115
  {:description
   "The successful fractionation of deuterium from liquid hydrogen has greatly advanced the utilization of nuclear fuel.",
   :explicit true,
@@ -1168,7 +1293,8 @@
   :results {1121 1},
   :sid "1407",
   :time-spend 1,
-  :type "FRACTIONATE"}
+  :type "FRACTIONATE"},
+ 116
  {:grid-index 2402,
   :handcraft true,
   :id 116,
@@ -1178,7 +1304,8 @@
   :results {2315 1},
   :sid "2402",
   :time-spend 300,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 117
  {:grid-index 2206,
   :handcraft true,
   :id 117,
@@ -1188,7 +1315,8 @@
   :results {2030 1},
   :sid "2206",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 118
  {:grid-index 2108,
   :handcraft true,
   :id 118,
@@ -1198,7 +1326,8 @@
   :results {2213 1},
   :sid "2108",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 119
  {:grid-index 2306,
   :handcraft true,
   :id 119,
@@ -1208,7 +1337,8 @@
   :results {2316 1},
   :sid "2306",
   :time-spend 1200,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 120
  {:grid-index 2205,
   :handcraft true,
   :id 120,
@@ -1218,7 +1348,8 @@
   :results {2040 1},
   :sid "2205",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 121
  {:description
   "By adding hydrogen and coal to refined oil and subjecting it to a process of reformation, a greater quantity of refined oil can be produced.",
   :explicit true,
@@ -1232,7 +1363,8 @@
   :results {1114 3},
   :sid "1307",
   :time-spend 240,
-  :type "REFINE"}
+  :type "REFINE"},
+ 122
  {:grid-index 2211,
   :handcraft true,
   :id 122,
@@ -1242,7 +1374,8 @@
   :results {2107 1},
   :sid "2211",
   :time-spend 480,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 123
  {:grid-index 1410,
   :handcraft true,
   :id 123,
@@ -1252,7 +1385,8 @@
   :results {5003 1},
   :sid "1410",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 124
  {:grid-index 2312,
   :handcraft true,
   :id 124,
@@ -1262,7 +1396,8 @@
   :results {2317 1},
   :sid "2312",
   :time-spend 600,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 125
  {:grid-index 2501,
   :handcraft true,
   :id 125,
@@ -1272,7 +1407,8 @@
   :results {3001 1},
   :sid "2501",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 126
  {:grid-index 2504,
   :handcraft true,
   :id 126,
@@ -1282,7 +1418,8 @@
   :results {3002 1},
   :sid "2504",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 127
  {:grid-index 2503,
   :handcraft true,
   :id 127,
@@ -1292,7 +1429,8 @@
   :results {3003 1},
   :sid "2503",
   :time-spend 300,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 128
  {:grid-index 2505,
   :handcraft true,
   :id 128,
@@ -1302,7 +1440,8 @@
   :results {3004 1},
   :sid "2505",
   :time-spend 600,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 129
  {:grid-index 2502,
   :handcraft true,
   :id 129,
@@ -1312,7 +1451,8 @@
   :results {3005 1},
   :sid "2502",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 130
  {:grid-index 2508,
   :handcraft true,
   :id 130,
@@ -1322,7 +1462,8 @@
   :results {3006 1},
   :sid "2508",
   :time-spend 300,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 131
  {:grid-index 2509,
   :handcraft true,
   :id 131,
@@ -1332,7 +1473,8 @@
   :results {3007 1},
   :sid "2509",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 132
  {:grid-index 2510,
   :handcraft true,
   :id 132,
@@ -1342,7 +1484,8 @@
   :results {3008 1},
   :sid "2510",
   :time-spend 600,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 133
  {:grid-index 1210,
   :handcraft true,
   :id 133,
@@ -1352,7 +1495,8 @@
   :results {1128 1},
   :sid "1210",
   :time-spend 180,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 134
  {:grid-index 1211,
   :id 134,
   :items {1115 2, 1116 1, 1128 2},
@@ -1361,7 +1505,8 @@
   :results {1129 2},
   :sid "1211",
   :time-spend 360,
-  :type "CHEMICAL"}
+  :type "CHEMICAL"},
+ 135
  {:grid-index 1212,
   :id 135,
   :items {1113 8, 1126 1, 1129 8},
@@ -1370,7 +1515,8 @@
   :results {1130 8},
   :sid "1212",
   :time-spend 1440,
-  :type "CHEMICAL"}
+  :type "CHEMICAL"},
+ 136
  {:grid-index 1113,
   :handcraft true,
   :id 136,
@@ -1380,7 +1526,8 @@
   :results {1601 1},
   :sid "1113",
   :time-spend 60,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 137
  {:grid-index 1213,
   :handcraft true,
   :id 137,
@@ -1390,7 +1537,8 @@
   :results {1602 1},
   :sid "1213",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 138
  {:grid-index 1313,
   :handcraft true,
   :id 138,
@@ -1400,7 +1548,8 @@
   :results {1603 1},
   :sid "1313",
   :time-spend 180,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 139
  {:grid-index 1414,
   :handcraft true,
   :id 139,
@@ -1410,7 +1559,8 @@
   :results {1604 1},
   :sid "1414",
   :time-spend 90,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 140
  {:grid-index 1514,
   :handcraft true,
   :id 140,
@@ -1420,7 +1570,8 @@
   :results {1605 1},
   :sid "1514",
   :time-spend 180,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 141
  {:grid-index 1614,
   :handcraft true,
   :id 141,
@@ -1430,7 +1581,8 @@
   :results {1606 1},
   :sid "1614",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 142
  {:grid-index 1413,
   :handcraft true,
   :id 142,
@@ -1440,7 +1592,8 @@
   :results {1607 1},
   :sid "1413",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 143
  {:grid-index 1513,
   :id 143,
   :items {1120 10, 1122 10, 1206 1, 1607 1},
@@ -1449,7 +1602,8 @@
   :results {1608 1},
   :sid "1513",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 144
  {:grid-index 1114,
   :handcraft true,
   :id 144,
@@ -1459,7 +1613,8 @@
   :results {1609 1},
   :sid "1114",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 145
  {:grid-index 1214,
   :handcraft true,
   :id 145,
@@ -1469,7 +1624,8 @@
   :results {1610 2},
   :sid "1214",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 146
  {:grid-index 1314,
   :handcraft true,
   :id 146,
@@ -1479,7 +1635,8 @@
   :results {1611 3},
   :sid "1314",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 147
  {:grid-index 1701,
   :handcraft true,
   :id 147,
@@ -1489,7 +1646,8 @@
   :results {5101 1},
   :sid "1701",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 148
  {:grid-index 1702,
   :handcraft true,
   :id 148,
@@ -1499,7 +1657,8 @@
   :results {5102 1},
   :sid "1702",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 149
  {:grid-index 1703,
   :handcraft true,
   :id 149,
@@ -1509,7 +1668,8 @@
   :results {5103 1},
   :sid "1703",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 150
  {:grid-index 1704,
   :handcraft true,
   :id 150,
@@ -1519,7 +1679,8 @@
   :results {5111 1},
   :sid "1704",
   :time-spend 300,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 151
  {:grid-index 1705,
   :handcraft true,
   :id 151,
@@ -1529,17 +1690,8 @@
   :results {5112 1},
   :sid "1705",
   :time-spend 480,
-  :type "ASSEMBLE"}
- {:grid-index 1310,
-  :handcraft true,
-  :id 105,
-  :items {1104 2, 1202 1},
-  :made-from-string "Assembler",
-  :name "Engine",
-  :results {1407 1},
-  :sid "1310",
-  :time-spend 180,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 152
  {:grid-index 2507,
   :handcraft true,
   :id 152,
@@ -1549,7 +1701,8 @@
   :results {3009 1},
   :sid "2507",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 153
  {:grid-index 2409,
   :handcraft true,
   :id 153,
@@ -1559,7 +1712,8 @@
   :results {2902 1},
   :sid "2409",
   :time-spend 240,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 154
  {:grid-index 2407,
   :handcraft true,
   :id 154,
@@ -1569,7 +1723,8 @@
   :results {2318 1},
   :sid "2407",
   :time-spend 300,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 155
  {:grid-index 2403,
   :handcraft true,
   :id 155,
@@ -1579,7 +1734,8 @@
   :results {2319 1},
   :sid "2403",
   :time-spend 360,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 156
  {:grid-index 1612,
   :id 156,
   :items {1125 1, 1127 2, 1803 8, 5205 1},
@@ -1588,7 +1744,8 @@
   :results {1804 1},
   :sid "1612",
   :time-spend 1920,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 157
  {:grid-index 2506,
   :handcraft true,
   :id 157,
@@ -1598,7 +1755,8 @@
   :results {3010 1},
   :sid "2506",
   :time-spend 480,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 158
  {:grid-index 1613,
   :handcraft true,
   :id 158,
@@ -1608,7 +1766,8 @@
   :results {1612 1},
   :sid "1613",
   :time-spend 120,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 159
  {:grid-index 1713,
   :handcraft true,
   :id 159,
@@ -1618,7 +1777,8 @@
   :results {1613 2},
   :sid "1713",
   :time-spend 480,
-  :type "ASSEMBLE"}
+  :type "ASSEMBLE"},
+ 160
  {:grid-index 2304,
   :handcraft true,
   :id 160,
@@ -1628,4 +1788,4 @@
   :results {2014 1},
   :sid "2304",
   :time-spend 60,
-  :type "ASSEMBLE"}]
+  :type "ASSEMBLE"}}

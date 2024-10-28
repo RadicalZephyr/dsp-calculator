@@ -12,10 +12,12 @@
             (edn/read r))))
 
 (defn find-item-by-id [items id]
-  (first (filter #(= id (:id %)) items)))
+  (get items id))
 
 (defn find-item-by-name [items name]
-  (first (filter #(= name (:name %)) items)))
+  (->> (vals items)
+       (filter #(= name (:name %)))
+       first))
 
 (def production-facilities
   ["Assembling Machine Mk.I"
@@ -67,7 +69,7 @@
                   (assoc! ret k
                           (conj (get ret k []) r)))
                 ret outs)))
-    (transient {}) recipes)))
+    (transient {}) (vals recipes))))
 
 #?(:clj (defn repl-load-edn []
           (def items (read-edn-resource "items_EN"))

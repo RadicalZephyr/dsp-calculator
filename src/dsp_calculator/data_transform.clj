@@ -119,6 +119,11 @@
       (prn filename)
       (let [raw-json (read-json-resource filename)
             json (walk/prewalk transform raw-json)
+            json (if (not (= "meta" filename))
+                   (->> json
+                        (map (juxt :id identity))
+                        (into (sorted-map)))
+                   json)
             json-en (walk/prewalk-replace en-strings json)]
         (with-open [writer (resource-writer (str filename ".edn"))
                     writer-en (resource-writer (str filename "_EN.edn"))]
