@@ -2,11 +2,29 @@
   (:require [spade.core :refer [defclass]]
             [reagent.core :as reagent]))
 
-(declare combo-selector)
+(declare combo-selector production-tree)
 
-(defn calculator []
+(defn calculator [& {:keys [items
+                            buildings
+                            selected
+                            ratio
+                            production-facility
+                            specific
+                            timescale
+                            proliferator
+                            summary
+                            tree]}]
   [:main.page.calculator
-   [combo-selector]])
+   [combo-selector
+    items
+    buildings
+    :selected selected
+    :ratio ratio
+    :production-facility @production-facility
+    :specific specific
+    :timescale timescale
+    :proliferator proliferator]
+   [production-tree @summary @tree]])
 
 (defclass grid-pos [x y]
   {:grid-area (str x " / " y)})
