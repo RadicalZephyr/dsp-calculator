@@ -122,10 +122,12 @@
             (if (< depth *max-depth*)
               (let [item-recipes (get recipes item-id)
                     first-recipe (first item-recipes)
-                    alt-recipes (map :id (rest item-recipes))
+                    alt-recipes (rest item-recipes)
                     node (process-recipe summary depth scale first-recipe item-id)
                     alt-recipes (->> alt-recipes
-                                     vec)]
+                                     (map #(process-recipe summary depth scale % item-id))
+                                     (map (juxt :recipe identity))
+                                     (into {}))]
                 (assoc node :alt-recipes alt-recipes))
               {:error "max depth reached"}))]
     (let [summary (atom production-summary)

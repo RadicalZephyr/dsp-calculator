@@ -58,7 +58,7 @@
              :count 1
              :recipe nil
              :facility nil
-             :alt-recipes []
+             :alt-recipes {}
              :items {}}]
            (sut/production-tree test-items test-recipes 1001)))
   (t/is (= [{:facilities #{"Smelting Facility"}
@@ -68,13 +68,13 @@
              :count 1
              :recipe 1
              :facility "Smelting Facility"
-             :alt-recipes []
+             :alt-recipes {}
              :items {1001 {:id 1001
                            :name "Iron Ore"
                            :count 1
                            :recipe nil
                            :facility nil
-                           :alt-recipes []
+                           :alt-recipes {}
                            :items {}}}}]
            (sut/production-tree test-items test-recipes 1101)))
   (t/is (= [{:facilities #{"Smelting Facility"}
@@ -84,29 +84,29 @@
              :count 1
              :recipe 63
              :facility "Smelting Facility"
-             :alt-recipes []
+             :alt-recipes {}
              :items {1101 {:id 1101
                            :name "Iron Ingot"
                            :count 3
                            :recipe 1
                            :facility "Smelting Facility"
-                           :alt-recipes []
+                           :alt-recipes {}
                            :items {1001 {:id 1001
                                          :name "Iron Ore"
                                          :count 3
                                          :recipe nil
                                          :facility nil
-                                         :alt-recipes []
+                                         :alt-recipes {}
                                          :items {}}}}}}]
            (sut/production-tree test-items test-recipes 1103)))
   (t/is (= [{:facilities #{"Smelting Facility"}
              :raw-resources {}}
-            {:id 1101,
+            {:id 1101
              :name "Iron Ingot"
              :count 1
-             :recipe 1,
+             :recipe 1
              :facility "Smelting Facility"
-             :alt-recipes [],
+             :alt-recipes {}
              :items {nil {:error "max depth reached"}}}]
            (binding [sut/*max-depth* 1]
              (sut/production-tree test-items test-recipes 1101))))
@@ -117,18 +117,29 @@
              :count 1
              :recipe 60
              :facility "Smelting Facility"
-             :alt-recipes [61]
+             :alt-recipes {61 {:id 1112
+                               :name "Diamond"
+                               :count 1
+                               :recipe 61
+                               :facility "Smelting Facility"
+                               :items {1012 {:id 1012
+                                             :name "Kimberlite Ore"
+                                             :count 1
+                                             :recipe nil
+                                             :facility nil
+                                             :alt-recipes {}
+                                             :items {}}}}}
              :items {1109 {:id 1109
                            :name "Energetic Graphite"
                            :count 1
                            :recipe 17
                            :facility "Smelting Facility"
-                           :alt-recipes []
+                           :alt-recipes {}
                            :items {1006 {:id 1006
                                          :name "Coal"
                                          :count 2
                                          :recipe nil
                                          :facility nil
-                                         :alt-recipes []
+                                         :alt-recipes {}
                                          :items {}}}}}}]
            (sut/production-tree test-items test-recipes 1112))))
