@@ -10,18 +10,26 @@
 (def test-items
   {1001 {:id 1001
          :name "Iron Ore"}
+   1002 {:id 1002
+         :name "Copper Ore"}
    1006 {:id 1006
          :name "Coal"}
+   1012 {:id 1012
+         :name "Kimberlite Ore"}
    1101 {:id 1101
          :name "Iron Ingot"}
+   1102 {:id 1102
+         :name "Magnet"}
+   1104 {:id 1102
+         :name "Copper Ingot"}
    1103 {:id 1103
          :name "Steel"}
    1109 {:id 1109
          :name "Energetic Graphite"}
-   1012 {:id 1012
-         :name "Kimberlite Ore"}
    1112 {:id 1112
-         :name "Diamond"}})
+         :name "Diamond"}
+   1202 {:id 1202
+         :name "Magnetic Coil"}})
 
 (def test-recipes
   {1101 [{:id 1
@@ -30,12 +38,24 @@
           :made-from-string "Smelting Facility"
           :items {1001 1}
           :results {1101 1}}]
+   1102 [{:id 2
+          :name "Magnet"
+          :time-spend 90
+          :made-from-string "Smelting Facility"
+          :items {1001 1}
+          :results {1102 1}}]
    1103 [{:id 63
           :name "Steel"
           :time-spend 180
           :made-from-string "Smelting Facility"
           :items {1101 3}
           :results {1103 1}}]
+   1104 [{:id 3
+          :name "Copper Ingot"
+          :time-spend 60
+          :made-from-string "Smelting Facility"
+          :items {1002 1}
+          :results {1104 1}}]
    1109 [{:id 17
           :name "Energetic Graphite"
           :time-spend 120
@@ -53,7 +73,13 @@
           :time-spend 90
           :made-from-string "Smelting Facility"
           :items {1012 1}
-          :results {1112 2}}]})
+          :results {1112 2}}]
+   1202 [{:id 6
+          :name "Magnetic Coil"
+          :time-spend 60
+          :made-from-string "Assembler"
+          :items {1102 2 1104 1}
+          :results {1202 2}}]})
 
 (t/deftest test-solver
   (t/is (= {:id 1001
