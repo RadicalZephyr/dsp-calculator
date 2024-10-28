@@ -56,10 +56,14 @@
   (if (recipe-map? m)
     (let [items (get m "items")
           item-counts (get m "itemCounts")
-          new-items (mapv (fn [i c] {"id" i "count" c}) items item-counts)
+          new-items (->> item-counts
+                         (map vector items)
+                         (into {}))
           results (get m "results")
           result-counts (get m "resultCounts")
-          new-results (mapv (fn [i c] {"id" i "count" c}) results result-counts)]
+          new-results (->> result-counts
+                           (map vector results)
+                           (into {}))]
       (-> m
           (dissoc "items" "itemCounts" "results" "resultCounts")
           (assoc "items" new-items
