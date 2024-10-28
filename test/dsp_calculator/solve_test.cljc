@@ -1,7 +1,13 @@
 (ns dsp-calculator.solve-test
   (:require [dsp-calculator.solve :as sut]
-            [clojure.test :as t]
-            [com.gfredericks.exact :as e]))
+            [clojure.test :as t :refer [#?(:clj deftest)]]
+            [com.gfredericks.exact :as e]
+            #?(:cljs [devcards.core]))
+  #?(:cljs (:require-macros
+            [devcards.core :as dc :refer [defcard deftest]])))
+
+#?(:cljs (defcard solve-tests
+           "# Production Tree Tests"))
 
 (defn ratio [n d]
   (e// (e/native->integer n)
@@ -81,7 +87,7 @@
           :items {1102 2 1104 1}
           :results {1202 2}}]})
 
-(t/deftest test-solver
+(deftest test-solver
   (t/is (= {:id 1001
             :name "Iron Ore"
             :count 1
