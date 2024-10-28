@@ -10,10 +10,10 @@
                                              (str filename ".edn"))))]
             (edn/read r))))
 
-(defn find-item-by-id [id items]
+(defn find-item-by-id [items id]
   (first (filter #(= id (:id %)) items)))
 
-(defn find-item-by-name [name items]
+(defn find-item-by-name [items name]
   (first (filter #(= name (:name %)) items)))
 
 (def production-facilities
