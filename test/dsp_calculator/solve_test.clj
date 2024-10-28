@@ -5,6 +5,8 @@
 (def test-items
   {1001 {:id 1001
          :name "Iron Ore"}
+   1006 {:id 1006
+         :name "Coal"}
    1101 {:id 1101
          :name "Iron Ingot"}
    1103 {:id 1103
@@ -29,6 +31,12 @@
           :made-from-string "Smelting Facility"
           :items {1101 3}
           :results {1103 1}}]
+   1109 [{:id 17
+          :name "Energetic Graphite"
+          :time-spend 120
+          :made-from-string "Smelting Facility"
+          :items {1006 2}
+          :results {1 1109}}]
    1112 [{:id 60
           :name "Diamond"
           :time-spend 120
@@ -118,8 +126,14 @@
              :items {1109 {:id 1109
                            :name "Energetic Graphite"
                            :count 1
-                           :recipe nil
-                           :facility nil
+                           :recipe 17
+                           :facility "Smelting Facility"
                            :alt-recipes []
-                           :items {}}}}]
+                           :items {1006 {:id 1006
+                                         :name "Coal"
+                                         :count 2
+                                         :recipe nil
+                                         :facility nil
+                                         :alt-recipes []
+                                         :items {}}}}}}]
            (sut/production-tree test-items test-recipes 1112))))
