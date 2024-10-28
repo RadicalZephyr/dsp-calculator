@@ -100,7 +100,7 @@
   Note, because this tree shows the full production chain, there can
   be multiple instances of any given product. Each individual stage
   for that item can use a different recipe."
-  [recipes item-id]
+  [items recipes item-id]
   (letfn [(r [recipes summary depth scale item-id]
             (if (< depth *max-depth*)
               (let [item-recipes (get recipes item-id)
@@ -114,6 +114,7 @@
                   (swap! summary update :facilities
                          into (map :made-from-string item-recipes)))
                 {:id item-id
+                 :name (get-in items [item-id :name] "")
                  :count (* scale output-count)
                  :recipe (:id first-recipe)
                  :facility (:made-from-string first-recipe)
