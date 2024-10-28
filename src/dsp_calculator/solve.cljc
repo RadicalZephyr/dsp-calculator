@@ -81,11 +81,17 @@
   {:facilities #{}
    :raw-resources {}})
 
-(defn get-item-count [recipe item-id]
-  (get-in recipe [:items item-id] 1))
+(defn get-item-rate [recipe item-id]
+  (e// (e/native->integer
+        (get-in recipe [:items item-id] 1))
+       (e/native->integer
+        (get recipe :time-spend 60))))
 
-(defn get-result-count [recipe item-id]
-  (get-in recipe [:results item-id] 1))
+(defn get-result-rate [recipe item-id]
+  (e// (e/native->integer
+        (get-in recipe [:results item-id] 1))
+       (e/native->integer
+        (get recipe :time-spend 60))))
 
 (defn production-tree
   "Produce a production tree describing the ratios needed to produce a
@@ -105,18 +111,17 @@
   for that item can use a different recipe."
   [items recipes item-id]
   (letfn [(process-recipe [depth scale recipe item-id]
-            (let [output-count (get-result-count recipe item-id)]
+            (let [count (e// scale (get-result-rate recipe item-id))]
               {:id item-id
                :name (get-in items [item-id :name] "")
-               :count scale
+               :count count
                :recipe (:id recipe)
                :facility (:made-from-string recipe)
                :items (let [depth (inc depth)]
                         (->> (:items recipe)
                              (keys)
                              (map #(r depth
-                                      (e/* scale (e// (get-item-count recipe %)
-                                                      output-count))
+                                      (e/* count (get-item-rate recipe %))
                                       %))
                              (map (juxt :id identity))
                              (into {})))}))
@@ -137,4 +142,17 @@
                                      (into {}))]
                 (assoc node :alt-recipes alt-recipes))
               {:error "max depth reached"}))]
-    (r 0 (e/native->integer 1) item-id)))
+    ;; Handle the first layer of recursion specially, because we want
+    ;; the scale passed in to result in the `:count` being 1 for the
+    ;; top-level recipe, we need to process it slightly differently
+    ;; than we would when recursing.
+    (let [depth 0
+          item-recipes (get recipes item-id)
+          first-recipe (first item-recipes)
+          alt-recipes (rest item-recipes)
+          node (process-recipe depth (get-result-rate first-recipe item-id) first-recipe item-id)
+          alt-recipes (->> alt-recipes
+                           (map #(process-recipe depth (get-result-rate % item-id) % item-id))
+                           (map (juxt :recipe identity))
+                           (into {}))]
+      (assoc node :alt-recipes alt-recipes))))

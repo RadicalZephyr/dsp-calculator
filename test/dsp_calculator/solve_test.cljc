@@ -158,9 +158,42 @@
                           :alt-recipes {}
                           :items {1006 {:id 1006
                                         :name "Coal"
+                                        :count 1
+                                        :recipe nil
+                                        :facility nil
+                                        :alt-recipes {}
+                                        :items {}}}}}}
+           (sut/production-tree test-items test-recipes 1112)))
+  (t/is (= {:id 1202
+            :name "Magnetic Coil"
+            :count 1
+            :recipe 6
+            :facility "Assembler"
+            :alt-recipes {}
+            :items {1104 {:id 1104
+                          :name "Copper Ingot"
+                          :count 1
+                          :recipe 3
+                          :facility "Smelting Facility"
+                          :alt-recipes {}
+                          :items {1002 {:id 1002
+                                        :name "Copper Ore"
+                                        :count 1
+                                        :recipe nil
+                                        :facility nil
+                                        :alt-recipes {}
+                                        :items {}}}}
+                    1102 {:id 1102
+                          :name "Magnet"
+                          :count 3
+                          :recipe 2
+                          :facility "Smelting Facility"
+                          :alt-recipes {}
+                          :items {1001 {:id 1001
+                                        :name "Iron Ore"
                                         :count 2
                                         :recipe nil
                                         :facility nil
                                         :alt-recipes {}
                                         :items {}}}}}}
-           (sut/production-tree test-items test-recipes 1112))))
+           (sut/production-tree test-items test-recipes 1202))))
