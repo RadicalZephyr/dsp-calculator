@@ -1,14 +1,14 @@
 (ns dsp-calculator.solve
-  (:require [clojure.java.io :as io]
+  (:require #?(:clj [clojure.java.io :as io])
             [clojure.tools.reader.edn :as edn]))
 
 (def root-path "public/data/")
 
-(defn read-edn-resource [filename]
-  (with-open [r (java.io.PushbackReader.
-                 (io/reader (io/file (io/resource root-path)
-                                     (str filename ".edn"))))]
-    (edn/read r)))
+#?(:clj (defn read-edn-resource [filename]
+          (with-open [r (java.io.PushbackReader.
+                         (io/reader (io/file (io/resource root-path)
+                                             (str filename ".edn"))))]
+            (edn/read r))))
 
 (defn find-item-by-id [id items]
   (first (filter #(= id (:id %)) items)))
@@ -68,11 +68,11 @@
                 ret outs)))
     (transient {}) recipes)))
 
-(defn repl-load-edn []
-  (def items (read-edn-resource "items_EN"))
-  (def tech (read-edn-resource "tech_EN"))
-  (def recipes (read-edn-resource "recipes_EN"))
-  (def recipes-by-output (group-by-outputs recipes)))
+#?(:clj (defn repl-load-edn []
+          (def items (read-edn-resource "items_EN"))
+          (def tech (read-edn-resource "tech_EN"))
+          (def recipes (read-edn-resource "recipes_EN"))
+          (def recipes-by-output (group-by-outputs recipes))))
 
 (def ^:dynamic *max-depth* 10)
 
