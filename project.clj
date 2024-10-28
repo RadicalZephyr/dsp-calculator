@@ -13,14 +13,19 @@
                  [reagent "1.2.0"]
                  [re-frame "1.4.3"]
                  [day8.re-frame/http-fx "0.2.4"]
-                 [cljs-ajax "0.8.4"]
+                 [cljs-ajax "0.8.4"
+                  :exclusions [commons-codec]]
+                 [com.gfredericks/exact "0.1.11"
+                  :exclusions [org.clojure/google-closure-library]]
                  [garden "1.3.10"]
-                 [net.dhleong/spade "1.1.0"]]
+                 [net.dhleong/spade "1.1.0"
+                  :exclusions [org.clojure/google-closure-library]]]
   :repl-options {:init-ns dsp-calculator.core}
   :profiles {:dev {:dependencies [[org.clojure/clojurescript "1.11.60"]
                                   [day8.re-frame/tracing "0.6.2"]
                                   [day8.re-frame/re-frame-10x "1.9.9"]
-                                  [com.bhauman/figwheel-main "0.2.18"]
+                                  [com.bhauman/figwheel-main "0.2.18"
+                                   :exclusions [org.clojure/google-closure-library]]
                                   [org.clojars.earthlingzephyr/devcards "0.3.0-SNAPSHOT"]
                                   ;; Specifically for processing DSP JSON data into EDN.
                                   [org.clojure/data.json "2.5.0"]

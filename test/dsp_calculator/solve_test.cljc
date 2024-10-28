@@ -1,6 +1,11 @@
 (ns dsp-calculator.solve-test
   (:require [dsp-calculator.solve :as sut]
-            [clojure.test :as t]))
+            [clojure.test :as t]
+            [com.gfredericks.exact :as e]))
+
+(def one-half
+  (e// (e/native->integer 1)
+       (e/native->integer 2)))
 
 (def test-items
   {1001 {:id 1001
@@ -114,7 +119,7 @@
                               :facility "Smelting Facility"
                               :items {1012 {:id 1012
                                             :name "Kimberlite Ore"
-                                            :count 1
+                                            :count one-half
                                             :recipe nil
                                             :facility nil
                                             :alt-recipes {}

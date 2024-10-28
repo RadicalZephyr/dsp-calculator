@@ -1,6 +1,7 @@
 (ns dsp-calculator.solve
   (:require #?(:clj [clojure.java.io :as io])
-            [clojure.tools.reader.edn :as edn]))
+            [clojure.tools.reader.edn :as edn]
+            [com.gfredericks.exact :as e]))
 
 (def root-path "public/data/")
 
@@ -83,6 +84,9 @@
 (defn get-item-count [recipe item-id]
   (get-in recipe [:items item-id] 1))
 
+(defn get-result-count [recipe item-id]
+  (get-in recipe [:results item-id] 1))
+
 (defn production-tree
   "Produce a production tree describing the ratios needed to produce a
   given recipe.
@@ -101,19 +105,21 @@
   for that item can use a different recipe."
   [items recipes item-id]
   (letfn [(process-recipe [depth scale recipe item-id]
-            {:id item-id
-             :name (get-in items [item-id :name] "")
-             :count (* scale (get-item-count recipe item-id))
-             :recipe (:id recipe)
-             :facility (:made-from-string recipe)
-             :items (let [depth (inc depth)]
-                      (->> (:items recipe)
-                           (keys)
-                           (map #(r depth
-                                    (* scale (get-item-count recipe %))
-                                    %))
-                           (map (juxt :id identity))
-                           (into {})))})
+            (let [output-count (get-result-count recipe item-id)]
+              {:id item-id
+               :name (get-in items [item-id :name] "")
+               :count scale
+               :recipe (:id recipe)
+               :facility (:made-from-string recipe)
+               :items (let [depth (inc depth)]
+                        (->> (:items recipe)
+                             (keys)
+                             (map #(r depth
+                                      (e/* scale (e// (get-item-count recipe %)
+                                                      output-count))
+                                      %))
+                             (map (juxt :id identity))
+                             (into {})))}))
           (r [depth scale item-id]
             (if (< depth *max-depth*)
               ;; NOTE: we can't process all recipes at once by mapping
@@ -131,4 +137,4 @@
                                      (into {}))]
                 (assoc node :alt-recipes alt-recipes))
               {:error "max depth reached"}))]
-    (r 0 1 item-id)))
+    (r 0 (e/native->integer 1) item-id)))
