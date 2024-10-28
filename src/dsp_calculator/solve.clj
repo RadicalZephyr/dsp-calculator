@@ -81,6 +81,9 @@
    :facilities #{}
    :raw-resources {}})
 
+(defn get-item-count [recipe item-id]
+  (get-in recipe [:items item-id] 1))
+
 (defn production-tree
   "Produce a production tree describing the ratios needed to produce a
   given recipe.
@@ -98,10 +101,11 @@
   be multiple instances of any given product. Each individual stage
   for that item can use a different recipe."
   [recipes item-id]
-  (letfn [(r [summary depth recipes item-id]
+  (letfn [(r [recipes summary depth scale item-id]
             (if (< depth *max-depth*)
               (let [item-recipes (get recipes item-id)
                     first-recipe (first item-recipes)
+                    output-count (get-item-count first-recipe item-id)
                     alt-recipes (map :id (rest item-recipes))]
                 (when (seq alt-recipes)
                   (swap! summary update :alt-recipes
@@ -110,15 +114,21 @@
                   (swap! summary update :facilities
                          into (map :made-from-string item-recipes)))
                 {:id item-id
+                 :count (* scale output-count)
                  :recipe (:id first-recipe)
                  :facility (:made-from-string first-recipe)
                  :alt-recipes (vec alt-recipes)
                  :items (let [depth (inc depth)]
                           (->> (:items first-recipe)
-                               (map #(r summary depth recipes (:id %)))
+                               (keys)
+                               (map #(r recipes
+                                        summary
+                                        depth
+                                        (* scale (get-item-count first-recipe %))
+                                        %))
                                (map (juxt :id identity))
                                (into {})))})
               {:error "max depth reached"}))]
     (let [summary (atom production-summary)
-          tree (r summary 0 recipes item-id)]
+          tree (r recipes summary 0 1 item-id)]
       [@summary tree])))
