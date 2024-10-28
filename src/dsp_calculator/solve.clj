@@ -116,6 +116,11 @@
                            (into {})))})
           (r [depth scale item-id]
             (if (< depth *max-depth*)
+              ;; NOTE: we can't process all recipes at once by mapping
+              ;; process-recipe across the recipes because we always
+              ;; want to process at least one recipe to create the
+              ;; leaf nodes for raw resources, even if there's no
+              ;; explicit recipe present.
               (let [item-recipes (get recipes item-id)
                     first-recipe (first item-recipes)
                     alt-recipes (rest item-recipes)
