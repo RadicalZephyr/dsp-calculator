@@ -3,9 +3,9 @@
             [clojure.test :as t]
             [com.gfredericks.exact :as e]))
 
-(def one-half
-  (e// (e/native->integer 1)
-       (e/native->integer 2)))
+(defn ratio [n d]
+  (e// (e/native->integer n)
+       (e/native->integer d)))
 
 (def test-items
   {1001 {:id 1001
@@ -86,13 +86,13 @@
             :alt-recipes {}
             :items {1101 {:id 1101
                           :name "Iron Ingot"
-                          :count 3
+                          :count 1
                           :recipe 1
                           :facility "Smelting Facility"
                           :alt-recipes {}
                           :items {1001 {:id 1001
                                         :name "Iron Ore"
-                                        :count 3
+                                        :count 1
                                         :recipe nil
                                         :facility nil
                                         :alt-recipes {}
@@ -119,7 +119,7 @@
                               :facility "Smelting Facility"
                               :items {1012 {:id 1012
                                             :name "Kimberlite Ore"
-                                            :count one-half
+                                            :count (ratio 2 3)
                                             :recipe nil
                                             :facility nil
                                             :alt-recipes {}
