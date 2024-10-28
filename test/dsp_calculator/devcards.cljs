@@ -5,7 +5,7 @@
     [dsp-calculator.devcards.calculator]
     [dsp-calculator.devcards.icons]
     [dsp-calculator.devcards.research]
-    [dsp-calculator.solve-test]))
+    [dsp-calculator.production-test]))
 
 (defn ^:export main []
   (devcards.core/start-devcard-ui!))

@@ -1,5 +1,5 @@
-(ns dsp-calculator.solve-test
-  (:require [dsp-calculator.solve :as sut]
+(ns dsp-calculator.production-test
+  (:require [dsp-calculator.production :as sut]
             [clojure.test :as t :refer [#?(:clj deftest)]]
             [com.gfredericks.exact :as e]
             #?(:cljs [devcards.core]))

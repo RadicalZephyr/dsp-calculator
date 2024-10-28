@@ -1,4 +1,4 @@
-(ns dsp-calculator.solve
+(ns dsp-calculator.production
   (:require #?(:clj [clojure.java.io :as io])
             [clojure.tools.reader.edn :as edn]
             [com.gfredericks.exact :as e]))
