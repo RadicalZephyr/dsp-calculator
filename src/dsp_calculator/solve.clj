@@ -100,10 +100,7 @@
   be multiple instances of any given product. Each individual stage
   for that item can use a different recipe."
   [items recipes item-id]
-  (letfn [(process-recipe [summary depth scale recipe item-id]
-            (when recipe
-              (swap! summary update :facilities
-                     conj (:made-from-string recipe)))
+  (letfn [(process-recipe [depth scale recipe item-id]
             {:id item-id
              :name (get-in items [item-id :name] "")
              :count (* scale (get-item-count recipe item-id))
@@ -112,24 +109,21 @@
              :items (let [depth (inc depth)]
                       (->> (:items recipe)
                            (keys)
-                           (map #(r summary
-                                    depth
+                           (map #(r depth
                                     (* scale (get-item-count recipe %))
                                     %))
                            (map (juxt :id identity))
                            (into {})))})
-          (r [summary depth scale item-id]
+          (r [depth scale item-id]
             (if (< depth *max-depth*)
               (let [item-recipes (get recipes item-id)
                     first-recipe (first item-recipes)
                     alt-recipes (rest item-recipes)
-                    node (process-recipe summary depth scale first-recipe item-id)
+                    node (process-recipe depth scale first-recipe item-id)
                     alt-recipes (->> alt-recipes
-                                     (map #(process-recipe summary depth scale % item-id))
+                                     (map #(process-recipe depth scale % item-id))
                                      (map (juxt :recipe identity))
                                      (into {}))]
                 (assoc node :alt-recipes alt-recipes))
               {:error "max depth reached"}))]
-    (let [summary (atom production-summary)
-          tree (r summary 0 1 item-id)]
-      [@summary tree])))
+    (r 0 1 item-id)))
