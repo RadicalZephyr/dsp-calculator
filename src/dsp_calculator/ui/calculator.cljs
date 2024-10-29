@@ -324,7 +324,7 @@
         chemical-val @chemical]
     [:details.preferred.preferred-buildings {:open true}
      [:summary "Preferred Buildings"]
-     (let [row (atom 0)]
+     (let [row (atom 1)]
        `[:div.fields
          ~@(preferred-building-row conveyor-belts
                                    [@row (inc @row)]
