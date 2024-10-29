@@ -181,6 +181,26 @@
     :name "Conveyor Belt MK.III"
     :speed 1800}])
 
+(def mining-productivity-techs
+  [{:id 3600
+    :name "No Vein Utilization"
+    :speed (ratio 1 1)}
+   {:id 3601
+    :name "Vein Utilization I"
+    :speed (ratio 11 10)}
+   {:id 3602
+    :name "Vein Utilization II"
+    :speed (ratio 12 10)}
+   {:id 3603
+    :name "Vein Utilization III"
+    :speed (ratio 13 10)}
+   {:id 3604
+    :name "Vein Utilization IV"
+    :speed (ratio 14 10)}
+   {:id 3605
+    :name "Vein Utilization V"
+    :speed (ratio 15 10)}])
+
 (def smelters
   [{:id 2302
     :name "Arc Smelter"
@@ -213,26 +233,6 @@
    {:id 2317
     :name "Quantum Chemical Plant"
     :count 2}])
-
-(def mining-productivity-techs
-  [{:id 3600
-    :name "No Vein Utilization"
-    :speed (ratio 1 1)}
-   {:id 3601
-    :name "Vein Utilization I"
-    :speed (ratio 11 10)}
-   {:id 3602
-    :name "Vein Utilization II"
-    :speed (ratio 12 10)}
-   {:id 3603
-    :name "Vein Utilization III"
-    :speed (ratio 13 10)}
-   {:id 3604
-    :name "Vein Utilization IV"
-    :speed (ratio 14 10)}
-   {:id 3605
-    :name "Vein Utilization V"
-    :speed (ratio 15 10)}])
 
 (declare item-id tech-id)
 
