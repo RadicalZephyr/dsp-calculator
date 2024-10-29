@@ -215,7 +215,10 @@
     :count 2}])
 
 (def mining-productivity-techs
-  [{:id 3601
+  [{:id 3600
+    :name "No Vein Utilization"
+    :speed (ratio 1 1)}
+   {:id 3601
     :name "Vein Utilization I"
     :speed (ratio 11 10)}
    {:id 3602
