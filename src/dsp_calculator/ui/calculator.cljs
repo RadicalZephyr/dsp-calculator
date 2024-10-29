@@ -209,15 +209,19 @@
     :name "Quantum Chemical Plant"
     :count 2}])
 
+(declare item-id)
+
 (def preferred-building-customizations
   {"belt" (fn [building]
-            {:title-suffix (str " — Transport&nbsp;Speed:&nbsp;"
+            {:id-fn item-id
+             :title-suffix (str " — Transport&nbsp;Speed:&nbsp;"
                                 (:speed building)
                                 "&nbsp;items&nbsp;per&nbsp;minute")
              :data-key :data-per
              :data-val (str (:speed building))})
    :else (fn [building]
-           {:title-suffix (str " - Production&nbsp;Speed:&nbsp;"
+           {:id-fn item-id
+            :title-suffix (str " - Production&nbsp;Speed:&nbsp;"
                                (:count building))
             :data-key :data-count
             :data-val (str (:count building) "×")})})
@@ -235,7 +239,8 @@
   (str "item." (:id item)))
 
 (defn preferred-building-option [[x y] type selected change building]
-  (let [{:keys [title-suffix
+  (let [{:keys [id-fn
+                title-suffix
                 data-key
                 data-val]} (get-pb-customizations type building)]
     [:label {:class [(grid-row x y)
@@ -248,7 +253,7 @@
               :title (str (:name building)
                           title-suffix)}]
      [:span.item.icon {:title (:name building)
-                       :data-icon (item-id building)
+                       :data-icon (id-fn building)
                        data-key data-val
                        :lang "en-US"}]]))
 
