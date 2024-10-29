@@ -220,24 +220,12 @@ The calculator interface, the most important part of the site.")
              "Chemical Facility"}
            belt mining-productivity miner smelter assembler chemical]]])))
   (reagent/atom
-   {:belt {:id 2001
-           :name "Conveyor Belt MK.I"
-           :speed 360}
-    :mining-productivity {:id 3601
-                          :name "Vein Utilization I"
-                          :speed "+10%"}
-    :miner {:id 2301
-            :name "Mining Machine"
-            :speed 30}
-    :smelter {:id 2302
-              :name "Arc Smelter"
-              :count 1}
-    :assembler {:id 2303
-                :name "Assembling Machine Mk.I"
-                :count 0.75}
-    :chemical {:id 2309
-               :name "Chemical Plant"
-               :count 1}})
+   {:belt (first calc/conveyor-belts)
+    :mining-productivity (first calc/mining-productivity-techs)
+    :miner (first calc/miners)
+    :smelter (first calc/smelters)
+    :assembler (first calc/assemblers)
+    :chemical (first calc/chemical-plants)})
   {:inspect-data true})
 
 (defcard-rg production-tree-header
