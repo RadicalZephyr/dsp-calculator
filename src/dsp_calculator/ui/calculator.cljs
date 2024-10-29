@@ -1,6 +1,11 @@
 (ns dsp-calculator.ui.calculator
   (:require [spade.core :refer [defclass]]
-            [reagent.core :as reagent]))
+            [reagent.core :as reagent]
+            [com.gfredericks.exact :as e]))
+
+(defn ratio [x y]
+  (e// (e/native->integer x)
+       (e/native->integer y)))
 
 (declare combo-selector production-tree)
 
@@ -209,19 +214,45 @@
     :name "Quantum Chemical Plant"
     :count 2}])
 
-(declare item-id)
+(def mining-productivity-techs
+  [{:id 3601
+    :name "Vein Utilization I"
+    :speed (ratio 11 10)}
+   {:id 3602
+    :name "Vein Utilization II"
+    :speed (ratio 12 10)}
+   {:id 3603
+    :name "Vein Utilization III"
+    :speed (ratio 13 10)}
+   {:id 3604
+    :name "Vein Utilization IV"
+    :speed (ratio 14 10)}
+   {:id 3605
+    :name "Vein Utilization V"
+    :speed (ratio 15 10)}])
+
+(declare item-id tech-id)
 
 (def preferred-building-customizations
   {"belt" (fn [building]
             {:id-fn item-id
-             :title-suffix (str " — Transport&nbsp;Speed:&nbsp;"
+             :title-suffix (str " — Transport Speed: "
                                 (:speed building)
-                                "&nbsp;items&nbsp;per&nbsp;minute")
+                                " items per minute")
              :data-key :data-per
              :data-val (str (:speed building))})
+   "mining-productivity" (fn [building]
+                           {:id-fn tech-id
+                            :title-suffix (str " — Mining Efficiency: "
+                                               (:speed building))
+                            :data-key :data-count
+                            :data-val (let [hundred (e/native->integer 100)]
+                                        (str "+" (e/- (e/* hundred
+                                                           (:speed building))
+                                                      hundred) "%"))})
    :else (fn [building]
            {:id-fn item-id
-            :title-suffix (str " - Production&nbsp;Speed:&nbsp;"
+            :title-suffix (str " — Production Speed: "
                                (:count building))
             :data-key :data-count
             :data-val (str (:count building) "×")})})
@@ -237,6 +268,9 @@
 
 (defn item-id [item]
   (str "item." (:id item)))
+
+(defn tech-id [tech]
+  (str "tech." (:id tech)))
 
 (defn preferred-building-option [[x y] type selected change building]
   (let [{:keys [id-fn
@@ -263,44 +297,58 @@
               [preferred-building-option row type selected #(reset! ra %) item]))
        (into [[:span.name {:class (grid-row x y)} label]])))
 
-(defn preferred-buildings [facilities belt smelter assembler chemical]
+(defn preferred-buildings [facilities belt mining-productivity smelter assembler chemical]
   (let [belt-val @belt
+        mining-productivity-val @mining-productivity
         smelter-val @smelter
         assembler-val @assembler
         chemical-val @chemical]
     [:details.preferred.preferred-buildings {:open true}
      [:summary "Preferred Buildings"]
-     `[:div.fields
-       ~@(preferred-building-row conveyor-belts
-                                 [1 2]
-                                 "belt"
-                                 belt-val
-                                 belt
-                                 "Logistics")
+     (let [row (atom 0)]
+       `[:div.fields
+         ~@(preferred-building-row conveyor-belts
+                                   [@row (inc @row)]
+                                   "belt"
+                                   belt-val
+                                   belt
+                                   "Logistics")
 
-       ~@(when (contains? facilities "Smelting Facility")
-           (preferred-building-row smelters
-                                   [2 3]
-                                   "smelter"
-                                   smelter-val
-                                   smelter
-                                   "Smelting Facility"))
+         ~@(when (contains? facilities "Miner")
+             (swap! row + 2)
+             (preferred-building-row mining-productivity-techs
+                                     [@row (inc @row)]
+                                     "mining-productivity"
+                                     mining-productivity-val
+                                     mining-productivity
+                                     "Mining Productivity"))
 
-       ~@(when (contains? facilities "Assembler")
-           (preferred-building-row assemblers
-                                   [3 4]
-                                   "assembler"
-                                   assembler-val
-                                   assembler
-                                   "Assembler"))
+         ~@(when (contains? facilities "Smelting Facility")
+             (swap! row + 2)
+             (preferred-building-row smelters
+                                     [@row (inc @row)]
+                                     "smelter"
+                                     smelter-val
+                                     smelter
+                                     "Smelting Facility"))
 
-       ~@(when (contains? facilities "Chemical Facility")
-           (preferred-building-row chemical-plants
-                                   [4 5]
-                                   "chemical"
-                                   chemical-val
-                                   chemical
-                                   "Chemical Facility"))]]))
+         ~@(when (contains? facilities "Assembler")
+             (swap! row + 2)
+             (preferred-building-row assemblers
+                                     [@row (inc @row)]
+                                     "assembler"
+                                     assembler-val
+                                     assembler
+                                     "Assembler"))
+
+         ~@(when (contains? facilities "Chemical Facility")
+             (swap! row + 2)
+             (preferred-building-row chemical-plants
+                                     [@row (inc @row)]
+                                     "chemical"
+                                     chemical-val
+                                     chemical
+                                     "Chemical Facility"))])]))
 
 (defn production-tree-header []
   [:div.solver-header.node-header
@@ -353,7 +401,7 @@
     [:summary
      [:div.node-header
       [:div.meta
-       [:span {:title (str "10" "×&nbsp;" (:facility tree))}
+       [:span {:title (str "10" "× " (:facility tree))}
         [:span.factor "10"] "×"]
        ~[:span.recipe
          [item-icon tree]

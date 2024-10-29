@@ -165,6 +165,7 @@ The calculator interface, the most important part of the site.")
 (defcard-rg preferred-buildings
   (fn [state _]
     (let [belt (reagent/cursor state [:belt])
+          mining-productivity (reagent/cursor state [:mining-productivity])
           smelter (reagent/cursor state [:smelter])
           assembler (reagent/cursor state [:assembler])
           chemical (reagent/cursor state [:chemical])]
@@ -176,44 +177,54 @@ The calculator interface, the most important part of the site.")
            [:div.fields]]]
          [:br]
          [:div.combo-selector
-          [calc/preferred-buildings #{"Smelting Facility"} belt smelter assembler chemical]]
+          [calc/preferred-buildings
+           #{"Smelting Facility"}
+           belt mining-productivity smelter assembler chemical]]
          [:br]
          [:div.combo-selector
-          [calc/preferred-buildings #{"Assembler"} belt smelter assembler chemical]]
+          [calc/preferred-buildings
+           #{"Assembler"}
+           belt mining-productivity smelter assembler chemical]]
          [:br]
          [:div.combo-selector
-          [calc/preferred-buildings #{"Chemical Facility"} belt smelter assembler chemical]]
+          [calc/preferred-buildings
+           #{"Chemical Facility"}
+           belt mining-productivity smelter assembler chemical]]
 
          [:br]
          [:div.combo-selector
           [calc/preferred-buildings
            #{"Smelting Facility"
              "Assembler"}
-           belt smelter assembler chemical]]
+           belt mining-productivity smelter assembler chemical]]
          [:br]
          [:div.combo-selector
           [calc/preferred-buildings
            #{"Smelting Facility"
              "Chemical Facility"}
-           belt smelter assembler chemical]]
+           belt mining-productivity smelter assembler chemical]]
          [:br]
          [:div.combo-selector
           [calc/preferred-buildings
            #{"Assembler"
              "Chemical Facility"}
-           belt smelter assembler chemical]]
+           belt mining-productivity smelter assembler chemical]]
 
          [:br]
          [:div.combo-selector
           [calc/preferred-buildings
-           #{"Smelting Facility"
+           #{"Miner"
+             "Smelting Facility"
              "Assembler"
              "Chemical Facility"}
-           belt smelter assembler chemical]]])))
+           belt mining-productivity smelter assembler chemical]]])))
   (reagent/atom
    {:belt {:id 2001
            :name "Conveyor Belt MK.I"
            :speed 360}
+    :mining-productivity {:id 3601
+                          :name "Vein Utilization I"
+                          :speed "+10%"}
     :smelter {:id 2302
               :name "Arc Smelter"
               :count 1}
