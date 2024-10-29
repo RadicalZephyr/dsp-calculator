@@ -28,92 +28,92 @@
      [:div.fields]]]])
 
 (defcard-rg preferred-buildings-singles
-  (pb-card
-    `[:div.combo-selector
-      [sut/preferred-buildings
-       #{"Miner"}
-       ~@args]]
+  (pb-card [args]
+    [:div.combo-selector
+     [sut/preferred-buildings
+      #{"Miner"}
+      args]]
     [:br]
-    `[:div.combo-selector
-      [sut/preferred-buildings
-       #{"Smelting Facility"}
-       ~@args]]
+    [:div.combo-selector
+     [sut/preferred-buildings
+      #{"Smelting Facility"}
+      args]]
     [:br]
-    `[:div.combo-selector
-      [sut/preferred-buildings
-       #{"Assembler"}
-       ~@args]]
+    [:div.combo-selector
+     [sut/preferred-buildings
+      #{"Assembler"}
+      args]]
     [:br]
-    `[:div.combo-selector
-      [sut/preferred-buildings
-       #{"Chemical Facility"}
-       ~@args]])
+    [:div.combo-selector
+     [sut/preferred-buildings
+      #{"Chemical Facility"}
+      args]])
   (preferred-state)
   {:inspect-data true})
 
 (defcard-rg preferred-buildings-pairs
-  (pb-card
-    `[:div.combo-selector
-      [sut/preferred-buildings
-       #{"Miner" "Smelting Facility"}
-       ~@args]]
+  (pb-card [args]
+    [:div.combo-selector
+     [sut/preferred-buildings
+      #{"Miner" "Smelting Facility"}
+      args]]
     [:br]
-    `[:div.combo-selector
-      [sut/preferred-buildings
-       #{"Miner" "Assembler"}
-       ~@args]]
+    [:div.combo-selector
+     [sut/preferred-buildings
+      #{"Miner" "Assembler"}
+      args]]
     [:br]
-    `[:div.combo-selector
-      [sut/preferred-buildings
-       #{"Miner" "Chemical Facility"}
-       ~@args]]
+    [:div.combo-selector
+     [sut/preferred-buildings
+      #{"Miner" "Chemical Facility"}
+      args]]
     [:br]
-    `[:div.combo-selector
-      [sut/preferred-buildings
-       #{"Smelting Facility" "Assembler"}
-       ~@args]]
+    [:div.combo-selector
+     [sut/preferred-buildings
+      #{"Smelting Facility" "Assembler"}
+      args]]
     [:br]
-    `[:div.combo-selector
-      [sut/preferred-buildings
-       #{"Smelting Facility" "Chemical Facility"}
-       ~@args]]
+    [:div.combo-selector
+     [sut/preferred-buildings
+      #{"Smelting Facility" "Chemical Facility"}
+      args]]
     [:br]
-    `[:div.combo-selector
-      [sut/preferred-buildings
-       #{"Assembler" "Chemical Facility"}
-       ~@args]])
+    [:div.combo-selector
+     [sut/preferred-buildings
+      #{"Assembler" "Chemical Facility"}
+      args]])
   (preferred-state)
   {:inspect-data true})
 
 (defcard-rg preferred-buildings-triples
-  (pb-card
-    `[:div.combo-selector
-      [sut/preferred-buildings
-       #{"Miner" "Smelting Facility" "Assembler"}
-       ~@args]]
+  (pb-card [args]
+    [:div.combo-selector
+     [sut/preferred-buildings
+      #{"Miner" "Smelting Facility" "Assembler"}
+      args]]
     [:br]
-    `[:div.combo-selector
-      [sut/preferred-buildings
-       #{"Smelting Facility" "Assembler" "Chemical Facility"}
-       ~@args]]
+    [:div.combo-selector
+     [sut/preferred-buildings
+      #{"Smelting Facility" "Assembler" "Chemical Facility"}
+      args]]
     [:br]
-    `[:div.combo-selector
-      [sut/preferred-buildings
-       #{"Miner" "Smelting Facility" "Chemical Facility"}
-       ~@args]]
+    [:div.combo-selector
+     [sut/preferred-buildings
+      #{"Miner" "Smelting Facility" "Chemical Facility"}
+      args]]
     [:br]
-    `[:div.combo-selector
-      [sut/preferred-buildings
-       #{"Miner" "Assembler" "Chemical Facility"}
-       ~@args]])
+    [:div.combo-selector
+     [sut/preferred-buildings
+      #{"Miner" "Assembler" "Chemical Facility"}
+      args]])
   (preferred-state)
   {:inspect-data true})
 
 (defcard-rg preferred-buildings-full
-  (pb-card
-    `[:div.combo-selector
-      [sut/preferred-buildings
-       #{"Miner" "Smelting Facility" "Assembler" "Chemical Facility"}
-       ~@args]])
+  (pb-card [args]
+    [:div.combo-selector
+     [sut/preferred-buildings
+      #{"Miner" "Smelting Facility" "Assembler" "Chemical Facility"}
+      args]])
   (preferred-state)
   {:inspect-data true})

@@ -151,7 +151,7 @@
               [preferred-building-option row type selected #(reset! ra %) item]))
        (into [[:span.name {:class (grid-row x y)} label]])))
 
-(defn preferred-buildings [facilities belt mining-productivity miner smelter assembler chemical]
+(defn preferred-buildings [facilities & {:keys [belt mining-productivity miner smelter assembler chemical]}]
   (let [belt-val @belt
         mining-productivity-val @mining-productivity
         miner-val @miner
