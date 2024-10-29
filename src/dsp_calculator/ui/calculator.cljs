@@ -201,6 +201,14 @@
     :name "Vein Utilization V"
     :speed (ratio 15 10)}])
 
+(def miners
+  [{:id 2301
+    :name "Mining Machine"
+    :speed 30}
+   {:id 2316
+    :name "Advanced Mining Machine"
+    :speed 60}])
+
 (def smelters
   [{:id 2302
     :name "Arc Smelter"
@@ -253,6 +261,13 @@
                                         (str "+" (e/- (e/* hundred
                                                            (:speed building))
                                                       hundred) "%"))})
+   "miner" (fn [building]
+              {:id-fn item-id
+               :title-suffix (str " — Mining Speed: "
+                                  (:speed building)
+                                  " items per minute per vein")
+               :data-key :data-per
+               :data-val (:speed building)})
    :else (fn [building]
            {:id-fn item-id
             :title-suffix (str " — Production Speed: "
@@ -300,9 +315,10 @@
               [preferred-building-option row type selected #(reset! ra %) item]))
        (into [[:span.name {:class (grid-row x y)} label]])))
 
-(defn preferred-buildings [facilities belt mining-productivity smelter assembler chemical]
+(defn preferred-buildings [facilities belt mining-productivity miner smelter assembler chemical]
   (let [belt-val @belt
         mining-productivity-val @mining-productivity
+        miner-val @miner
         smelter-val @smelter
         assembler-val @assembler
         chemical-val @chemical]
@@ -325,6 +341,15 @@
                                      mining-productivity-val
                                      mining-productivity
                                      "Mining Productivity"))
+
+         ~@(when (contains? facilities "Miner")
+             (swap! row + 2)
+             (preferred-building-row miners
+                                     [@row (inc @row)]
+                                     "miner"
+                                     miner-val
+                                     miner
+                                     "Miner"))
 
          ~@(when (contains? facilities "Smelting Facility")
              (swap! row + 2)
