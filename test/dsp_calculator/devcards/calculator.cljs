@@ -1,6 +1,7 @@
 (ns dsp-calculator.devcards.calculator
   (:require [devcards.core]
             [spade.core :refer [defattrs defclass]]
+            [dsp-calculator.ui :as ui]
             [dsp-calculator.ui.calculator :as calc]
             [reagent.core :as reagent])
   (:require-macros
@@ -13,22 +14,7 @@ The calculator interface, the most important part of the site.")
 
 (defcard-rg css
   "This includes the css for the calculator interface."
-  [:div
-   [:link {:rel "stylesheet" :href "/css/reset.css"}]
-   [:link {:rel "stylesheet" :href "/css/variables.css"}]
-   [:link {:rel "stylesheet" :href "/css/skeleton.css"}]
-   [:link {:rel "stylesheet" :href "/css/cursor.css"}]
-   [:link {:rel "stylesheet" :href "/css/fonts.css"}]
-   [:link {:rel "stylesheet" :href "/css/icons.css"}]
-   [:link {:rel "stylesheet" :href "/css/dev-icons.css"}]
-   [:link {:rel "stylesheet" :href "/css/pages/calculator.css"}]
-   [:link {:rel "stylesheet" :href "/css/components/combo-selector.css"}]
-   [:link {:rel "stylesheet" :href "/css/components/dialog.css"}]
-   [:link {:rel "stylesheet" :href "/css/components/item.css"}]
-   [:link {:rel "stylesheet" :href "/css/components/recipe.css"}]
-   [:link {:rel "stylesheet" :href "/css/components/tabs.css"}]
-   [:link {:rel "stylesheet" :href "/css/components/solver.css"}]
-   [:style "@layer reset,skeleton,components,pages;"]])
+  (ui/stylesheet-includes))
 
 (defcard-rg full-calculator
   (fn [state _]
