@@ -179,6 +179,11 @@ The calculator interface, the most important part of the site.")
          [:br]
          [:div.combo-selector
           [calc/preferred-buildings
+           #{"Miner"}
+           belt mining-productivity miner smelter assembler chemical]]
+         [:br]
+         [:div.combo-selector
+          [calc/preferred-buildings
            #{"Smelting Facility"}
            belt mining-productivity miner smelter assembler chemical]]
          [:br]
