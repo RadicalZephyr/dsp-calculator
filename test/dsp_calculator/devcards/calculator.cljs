@@ -3,6 +3,7 @@
             [spade.core :refer [defattrs defclass]]
             [dsp-calculator.ui :as ui]
             [dsp-calculator.ui.calculator :as calc]
+            [dsp-calculator.devcards.calculator.controls]
             [dsp-calculator.devcards.calculator.preferred-buildings]
             [dsp-calculator.devcards.calculator.production]
             [reagent.core :as reagent])
@@ -109,43 +110,3 @@ The calculator interface, the most important part of the site.")
                  {:id 2001 :name "Conveyor Belt Mk.I" :pos [2 1]}]
      :open? true
      :close (fn [])]]])
-
-(defcard-rg ratio-control
-  (fn [state _]
-    [:main.page.calculator
-     [:div.combo-selector
-      [calc/ratio-control state "Smelting Facility"]]])
-  (reagent/atom 1)
-  {:inspect-data true})
-
-(defcard-rg specific-control
-  (fn [state _]
-    (let [specific (reagent/cursor state [:specific])
-          timescale (reagent/cursor state [:timescale])]
-      [:main.page.calculator
-       [:div.combo-selector
-        [calc/specific-control specific timescale]]]))
-  (reagent/atom {:specific 1
-                 :timescale "minute"})
-  {:inspect-data true})
-
-(defcard-rg controls
-  (fn [state _]
-    (let [ratio (reagent/cursor state [:ratio])
-          production-facility (:production-facility @state)
-          specific (reagent/cursor state [:specific])
-          timescale (reagent/cursor state [:timescale])
-          proliferator (reagent/cursor state [:proliferator])]
-      (fn [state _]
-        [:main.page.calculator
-         [:div.combo-selector
-          [calc/ratio-control ratio production-facility]
-          [calc/specific-control specific timescale]
-          [calc/proliferator-control proliferator]]])))
-  (reagent/atom
-   {:ratio 1
-    :production-facility "Smelting Facility"
-    :specific 1
-    :timescale "minute"
-    :proliferator "none"})
-  {:inspect-data true})
