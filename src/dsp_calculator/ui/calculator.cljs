@@ -165,49 +165,6 @@
                [specific-control specific timescale]
                [proliferator-control proliferator]])]))))
 
-(defclass grid-row [x y]
-  {:grid-row (str x " / " y)})
-
-(defn item-id [item]
-  (str "item." (:id item)))
-
-(def preferred-building-customizations
-  {"belt" (fn [building]
-            {:title-suffix (str " — Transport&nbsp;Speed:&nbsp;"
-                                (:speed building)
-                                "&nbsp;items&nbsp;per&nbsp;minute")
-             :data-key :data-per
-             :data-val (str (:speed building))})
-   :else (fn [building]
-           {:title-suffix (str " - Production&nbsp;Speed:&nbsp;"
-                               (:count building))
-            :data-key :data-count
-            :data-val (str (:count building) "×")})})
-
-(defn get-pb-customizations [type building]
-  (let [k (if (contains? preferred-building-customizations type)
-            type
-            :else)]
-    ((get preferred-building-customizations k) building)))
-
-(defn preferred-building-option [[x y] type selected change building]
-  (let [{:keys [title-suffix
-                data-key
-                data-val]} (get-pb-customizations type building)]
-    [:label {:class [(grid-row x y)
-                     (when (= (:id selected) (:id building)) "is-selected")]}
-     [:input {:type "radio"
-              :name type
-              :value (str (:id building))
-              :selected (= (:id selected) (:id building))
-              :on-change #(change building)
-              :title (str (:name building)
-                          title-suffix)}]
-     [:span.item.icon {:title (:name building)
-                       :data-icon (item-id building)
-                       data-key data-val
-                       :lang "en-US"}]]))
-
 (def conveyor-belts
   [{:id 2001
     :name "Conveyor Belt MK.I"
@@ -251,6 +208,49 @@
    {:id 2317
     :name "Quantum Chemical Plant"
     :count 2}])
+
+(def preferred-building-customizations
+  {"belt" (fn [building]
+            {:title-suffix (str " — Transport&nbsp;Speed:&nbsp;"
+                                (:speed building)
+                                "&nbsp;items&nbsp;per&nbsp;minute")
+             :data-key :data-per
+             :data-val (str (:speed building))})
+   :else (fn [building]
+           {:title-suffix (str " - Production&nbsp;Speed:&nbsp;"
+                               (:count building))
+            :data-key :data-count
+            :data-val (str (:count building) "×")})})
+
+(defn get-pb-customizations [type building]
+  (let [k (if (contains? preferred-building-customizations type)
+            type
+            :else)]
+    ((get preferred-building-customizations k) building)))
+
+(defclass grid-row [x y]
+  {:grid-row (str x " / " y)})
+
+(defn item-id [item]
+  (str "item." (:id item)))
+
+(defn preferred-building-option [[x y] type selected change building]
+  (let [{:keys [title-suffix
+                data-key
+                data-val]} (get-pb-customizations type building)]
+    [:label {:class [(grid-row x y)
+                     (when (= (:id selected) (:id building)) "is-selected")]}
+     [:input {:type "radio"
+              :name type
+              :value (str (:id building))
+              :selected (= (:id selected) (:id building))
+              :on-change #(change building)
+              :title (str (:name building)
+                          title-suffix)}]
+     [:span.item.icon {:title (:name building)
+                       :data-icon (item-id building)
+                       data-key data-val
+                       :lang "en-US"}]]))
 
 (defn preferred-building-row [data [x y :as row] type selected ra label]
   (->> data
@@ -296,8 +296,6 @@
                                    chemical-val
                                    chemical
                                    "Chemical Facility"))]]))
-
-
 
 (defn production-tree-header []
   [:div.solver-header.node-header
