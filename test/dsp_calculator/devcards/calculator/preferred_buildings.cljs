@@ -29,91 +29,91 @@
 
 (defcard-rg preferred-buildings-singles
   (pb-card
-    [:div.combo-selector
-     [sut/preferred-buildings
-      #{"Miner"}
-      belt mining-productivity miner smelter assembler chemical]]
+    `[:div.combo-selector
+      [sut/preferred-buildings
+       #{"Miner"}
+       ~@args]]
     [:br]
-    [:div.combo-selector
-     [sut/preferred-buildings
-      #{"Smelting Facility"}
-      belt mining-productivity miner smelter assembler chemical]]
+    `[:div.combo-selector
+      [sut/preferred-buildings
+       #{"Smelting Facility"}
+       ~@args]]
     [:br]
-    [:div.combo-selector
-     [sut/preferred-buildings
-      #{"Assembler"}
-      belt mining-productivity miner smelter assembler chemical]]
+    `[:div.combo-selector
+      [sut/preferred-buildings
+       #{"Assembler"}
+       ~@args]]
     [:br]
-    [:div.combo-selector
-     [sut/preferred-buildings
-      #{"Chemical Facility"}
-      belt mining-productivity miner smelter assembler chemical]])
+    `[:div.combo-selector
+      [sut/preferred-buildings
+       #{"Chemical Facility"}
+       ~@args]])
   (preferred-state)
   {:inspect-data true})
 
 (defcard-rg preferred-buildings-pairs
   (pb-card
-    [:div.combo-selector
-     [sut/preferred-buildings
-      #{"Miner" "Smelting Facility"}
-      belt mining-productivity miner smelter assembler chemical]]
+    `[:div.combo-selector
+      [sut/preferred-buildings
+       #{"Miner" "Smelting Facility"}
+       ~@args]]
     [:br]
-    [:div.combo-selector
-     [sut/preferred-buildings
-      #{"Miner" "Assembler"}
-      belt mining-productivity miner smelter assembler chemical]]
+    `[:div.combo-selector
+      [sut/preferred-buildings
+       #{"Miner" "Assembler"}
+       ~@args]]
     [:br]
-    [:div.combo-selector
-     [sut/preferred-buildings
-      #{"Miner" "Chemical Facility"}
-      belt mining-productivity miner smelter assembler chemical]]
+    `[:div.combo-selector
+      [sut/preferred-buildings
+       #{"Miner" "Chemical Facility"}
+       ~@args]]
     [:br]
-    [:div.combo-selector
-     [sut/preferred-buildings
-      #{"Smelting Facility" "Assembler"}
-      belt mining-productivity miner smelter assembler chemical]]
+    `[:div.combo-selector
+      [sut/preferred-buildings
+       #{"Smelting Facility" "Assembler"}
+       ~@args]]
     [:br]
-    [:div.combo-selector
-     [sut/preferred-buildings
-      #{"Smelting Facility" "Chemical Facility"}
-      belt mining-productivity miner smelter assembler chemical]]
+    `[:div.combo-selector
+      [sut/preferred-buildings
+       #{"Smelting Facility" "Chemical Facility"}
+       ~@args]]
     [:br]
-    [:div.combo-selector
-     [sut/preferred-buildings
-      #{"Assembler" "Chemical Facility"}
-      belt mining-productivity miner smelter assembler chemical]])
+    `[:div.combo-selector
+      [sut/preferred-buildings
+       #{"Assembler" "Chemical Facility"}
+       ~@args]])
   (preferred-state)
   {:inspect-data true})
 
 (defcard-rg preferred-buildings-triples
   (pb-card
-    [:div.combo-selector
-     [sut/preferred-buildings
-      #{"Miner" "Smelting Facility" "Assembler"}
-      belt mining-productivity miner smelter assembler chemical]]
+    `[:div.combo-selector
+      [sut/preferred-buildings
+       #{"Miner" "Smelting Facility" "Assembler"}
+       ~@args]]
     [:br]
-    [:div.combo-selector
-     [sut/preferred-buildings
-      #{"Smelting Facility" "Assembler" "Chemical Facility"}
-      belt mining-productivity miner smelter assembler chemical]]
+    `[:div.combo-selector
+      [sut/preferred-buildings
+       #{"Smelting Facility" "Assembler" "Chemical Facility"}
+       ~@args]]
     [:br]
-    [:div.combo-selector
-     [sut/preferred-buildings
-      #{"Miner" "Smelting Facility" "Chemical Facility"}
-      belt mining-productivity miner smelter assembler chemical]]
+    `[:div.combo-selector
+      [sut/preferred-buildings
+       #{"Miner" "Smelting Facility" "Chemical Facility"}
+       ~@args]]
     [:br]
-    [:div.combo-selector
-     [sut/preferred-buildings
-      #{"Miner" "Assembler" "Chemical Facility"}
-      belt mining-productivity miner smelter assembler chemical]])
+    `[:div.combo-selector
+      [sut/preferred-buildings
+       #{"Miner" "Assembler" "Chemical Facility"}
+       ~@args]])
   (preferred-state)
   {:inspect-data true})
 
 (defcard-rg preferred-buildings-full
   (pb-card
-    [:div.combo-selector
-     [sut/preferred-buildings
-      #{"Miner" "Smelting Facility" "Assembler" "Chemical Facility"}
-      belt mining-productivity miner smelter assembler chemical]])
+    `[:div.combo-selector
+      [sut/preferred-buildings
+       #{"Miner" "Smelting Facility" "Assembler" "Chemical Facility"}
+       ~@args]])
   (preferred-state)
   {:inspect-data true})
