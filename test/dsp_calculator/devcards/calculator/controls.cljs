@@ -1,10 +1,11 @@
 (ns dsp-calculator.devcards.calculator.controls
-  (:require [devcards.core]
+  (:require [clojure.test :as t]
+            [devcards.core]
             [reagent.core :as reagent]
             [dsp-calculator.ui.base :as base]
             [dsp-calculator.ui.calculator.controls :as sut])
   (:require-macros
-   [devcards.core :refer [defcard-rg]]))
+   [devcards.core :refer [defcard-rg deftest]]))
 
 (defcard-rg css
   "This includes the css for the calculator interface."
@@ -57,3 +58,77 @@
         [sut/proliferator-control proliferator]]]))
   (reagent/atom {:proliferator "none"})
   {:inspect-data true})
+
+(deftest test-update-controls
+  (t/is (= {:ratio nil
+            :specific 10
+            :timescale "minute"
+            :proliferator "none"}
+           (sut/update-controls {:ratio 1
+                                 :specific nil
+                                 :timescale "minute"
+                                 :proliferator "none"}
+                                :specific 10)))
+  (t/is (= {:ratio 1
+            :specific nil
+            :timescale "minute"
+            :proliferator "none"}
+           (sut/update-controls {:ratio nil
+                                 :specific 10
+                                 :timescale "minute"
+                                 :proliferator "none"}
+                                :ratio 1)))
+  (t/is (= {:ratio nil
+            :specific 1
+            :timescale "second"
+            :proliferator "none"}
+           (sut/update-controls {:ratio nil
+                                 :specific 60
+                                 :timescale "minute"
+                                 :proliferator "none"}
+                                :timescale "second")))
+  (t/is (= {:ratio nil
+            :specific 60
+            :timescale "minute"
+            :proliferator "none"}
+           (sut/update-controls {:ratio nil
+                                 :specific 1
+                                 :timescale "second"
+                                 :proliferator "none"}
+                                :timescale "minute")))
+  (t/is (= {:ratio 1
+            :specific nil
+            :timescale "second"
+            :proliferator "none"}
+           (sut/update-controls {:ratio 1
+                                 :specific nil
+                                 :timescale "minute"
+                                 :proliferator "none"}
+                                :timescale "second")))
+  (t/is (= {:ratio 1
+            :specific nil
+            :timescale "minute"
+            :proliferator "none"}
+           (sut/update-controls {:ratio 1
+                                 :specific nil
+                                 :timescale "second"
+                                 :proliferator "none"}
+                                :timescale "minute")))
+  (t/is (= {:ratio 1
+            :specific nil
+            :timescale "second"
+            :proliferator "mixed.tsp"}
+           (sut/update-controls {:ratio 1
+                                 :specific nil
+                                 :timescale "second"
+                                 :proliferator "none"}
+                                :proliferator "mixed.tsp")))
+  (t/is (= {:ratio nil
+            :specific 1
+            :timescale "second"
+            :proliferator "none"}
+           (sut/update-controls {:ratio nil
+                                 :specific 1
+                                 :timescale "second"
+                                 :proliferator "mixed.tsp"}
+                                :proliferator "none"))))

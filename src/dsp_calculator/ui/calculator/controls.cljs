@@ -41,3 +41,31 @@
     [:option {:value "speedup"} "Production Speedup"]
     [:option {:value "extra"} "Extra Products"]
     [:option {:value "custom"} "Customized"]]])
+
+(defn default-controls []
+  {:ratio 1
+   :specific nil
+   :timescale "minute"
+   :proliferator "none"})
+
+(defn rescale-specific [specific old-timescale new-timescale]
+  (when specific
+    (cond
+      (= old-timescale new-timescale) specific
+      (= new-timescale "second") (/ specific 60)
+      (= new-timescale "minute") (* specific 60)
+      :else specific)))
+
+(defn update-controls [controls setting value]
+  (case setting
+    :specific (assoc controls
+                     :ratio nil
+                     :specific value)
+    :ratio (assoc controls
+                  :ratio value
+                  :specific nil)
+    :timescale (-> controls
+                   (assoc :timescale value)
+                   (update :specific rescale-specific (:timescale controls) value))
+    :proliferator (assoc controls
+                         :proliferator value)))
