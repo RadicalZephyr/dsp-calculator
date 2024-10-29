@@ -3,6 +3,7 @@
             [spade.core :refer [defattrs defclass]]
             [dsp-calculator.ui :as ui]
             [dsp-calculator.ui.calculator :as calc]
+            [dsp-calculator.devcards.calculator.production]
             [reagent.core :as reagent])
   (:require-macros
    [devcards.core :as dc :refer [defcard defcard-rg]]))
@@ -218,33 +219,3 @@ The calculator interface, the most important part of the site.")
     :assembler (first calc/assemblers)
     :chemical (first calc/chemical-plants)})
   {:inspect-data true})
-
-(defcard-rg production-tree-header
-  [:main.page.calculator
-   [:div.solver.has-proliferators
-    [calc/production-tree-header]]])
-
-(defcard-rg production-summary
-  [:main.page.calculator
-   [:div.solver.has-proliferators
-    [calc/production-tree-summary [{:id 1001
-                                    :name "Iron Ore"}]]]])
-
-(defcard-rg production-tree
-  [:main.page.calculator
-   [:div.solver.has-proliferators
-    [calc/production-tree-header]
-    [calc/production-tree-node 0 {:id 1101
-                                  :name "Iron Ingot"
-                                  :items [{:id 1001
-                                           :name "Iron Ore"}]}]]])
-
-(defcard-rg whole-production
-  [:main.page.calculator
-   [calc/production-tree
-    {:raw-resources [{:id 1001
-                      :name "Iron Ore"}]}
-    {:id 1101
-     :name "Iron Ingot"
-     :items [{:id 1001
-              :name "Iron Ore"}]}]])
