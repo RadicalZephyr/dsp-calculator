@@ -28,8 +28,8 @@
 
 (defn icons-list [type xs]
   [:div (icons-attrs)
-   (for [x xs]
-     ^{:key (:id x)} [:div.icon {:data-icon (str type "." (:id x))}])])
+   (for [x (sort-by :id xs)]
+     ^{:key (:id x)} [:span.icon {:title (str (:name x)) :data-icon (str type "." (:id x))}])])
 
 (defn fetch-label [type ratom]
   (when (not (seq @ratom))
@@ -50,20 +50,20 @@
 (defcard-rg recipe-icons
   (fn [recipes _]
     [:div
-     [fetch-label "recipes" recipes]
+     [fetch-label "recipes_EN" recipes]
      [icons-list "recipe" (filter #(valid-recipe-icons (:id %)) (vals @recipes))]])
   (reagent/atom []))
 
 (defcard-rg item-icons
   (fn [items _]
     [:div
-     [fetch-label "items" items]
+     [fetch-label "items_EN" items]
      [icons-list "item" (vals @items)]])
   (reagent/atom []))
 
 (defcard-rg tech-icons
   (fn [tech _]
     [:div
-     [fetch-label "tech" tech]
+     [fetch-label "tech_EN" tech]
      [icons-list "tech" (vals @tech)]])
   (reagent/atom []))
