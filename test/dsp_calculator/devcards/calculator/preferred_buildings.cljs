@@ -1,6 +1,6 @@
 (ns dsp-calculator.devcards.calculator.preferred-buildings
   (:require [devcards.core]
-            [dsp-calculator.ui :as ui]
+            [dsp-calculator.ui.base :as base]
             [dsp-calculator.ui.calculator.preferred-buildings :as sut]
             [reagent.core :as reagent])
   (:require-macros
@@ -9,7 +9,7 @@
 
 (defcard-rg css
   "This includes the css for the calculator interface."
-  (ui/stylesheet-includes))
+  (base/stylesheet-includes))
 
 (defn preferred-state []
   (reagent/atom

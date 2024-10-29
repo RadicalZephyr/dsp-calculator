@@ -1,14 +1,14 @@
 (ns dsp-calculator.devcards.calculator.controls
   (:require [devcards.core]
             [reagent.core :as reagent]
-            [dsp-calculator.ui :as ui]
+            [dsp-calculator.ui.base :as base]
             [dsp-calculator.ui.calculator.controls :as sut])
   (:require-macros
    [devcards.core :refer [defcard-rg]]))
 
 (defcard-rg css
   "This includes the css for the calculator interface."
-  (ui/stylesheet-includes))
+  (base/stylesheet-includes))
 
 (defcard-rg controls
   (fn [state _]

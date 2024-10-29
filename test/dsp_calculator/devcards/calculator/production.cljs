@@ -1,13 +1,13 @@
 (ns dsp-calculator.devcards.calculator.production
   (:require [devcards.core]
-            [dsp-calculator.ui :as ui]
+            [dsp-calculator.ui.base :as base]
             [dsp-calculator.ui.calculator.production :as sut])
   (:require-macros
    [devcards.core :refer [defcard-rg]]))
 
 (defcard-rg css
   "This includes the css for the calculator interface."
-  (ui/stylesheet-includes))
+  (base/stylesheet-includes))
 
 (defcard-rg production-tree-header
   [:main.page.calculator
