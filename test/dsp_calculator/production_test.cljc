@@ -95,6 +95,7 @@
             :time-spend nil
             :facility nil
             :alt-recipes {}
+            :results {}
             :items {}}
            (sut/production-tree test-items test-recipes 1001)))
   (t/is (= {:id 1101
@@ -104,6 +105,7 @@
             :time-spend 60
             :facility "Smelting Facility"
             :alt-recipes {}
+            :results {1101 1}
             :items {1001 {:id 1001
                           :name "Iron Ore"
                           :count (e/native->integer 1)
@@ -111,6 +113,7 @@
                           :time-spend nil
                           :facility nil
                           :alt-recipes {}
+                          :results {}
                           :items {}}}}
            (sut/production-tree test-items test-recipes 1101)))
   (t/is (= {:id 1103
@@ -120,6 +123,7 @@
             :time-spend 180
             :facility "Smelting Facility"
             :alt-recipes {}
+            :results {1103 1}
             :items {1101 {:id 1101
                           :name "Iron Ingot"
                           :count (e/native->integer 1)
@@ -127,6 +131,7 @@
                           :time-spend 60
                           :facility "Smelting Facility"
                           :alt-recipes {}
+                          :results {1101 1}
                           :items {1001 {:id 1001
                                         :name "Iron Ore"
                                         :count (e/native->integer 1)
@@ -134,6 +139,7 @@
                                         :time-spend nil
                                         :facility nil
                                         :alt-recipes {}
+                                        :results {}
                                         :items {}}}}}}
            (sut/production-tree test-items test-recipes 1103)))
   (t/is (= {:id 1101
@@ -143,6 +149,7 @@
             :time-spend 60
             :facility "Smelting Facility"
             :alt-recipes {}
+            :results {1101 1}
             :items {nil {:error "max depth reached"}}}
            (binding [sut/*max-depth* 1]
              (sut/production-tree test-items test-recipes 1101))))
@@ -152,12 +159,14 @@
             :recipe 60
             :time-spend 120
             :facility "Smelting Facility"
+            :results {1112 1}
             :alt-recipes {61 {:id 1112
                               :name "Diamond"
                               :count (e/native->integer 1)
                               :recipe 61
                               :time-spend 90
                               :facility "Smelting Facility"
+                              :results {1112 2}
                               :items {1012 {:id 1012
                                             :name "Kimberlite Ore"
                                             :count (ratio 2 3)
@@ -165,6 +174,7 @@
                                             :time-spend nil
                                             :facility nil
                                             :alt-recipes {}
+                                            :results {}
                                             :items {}}}}}
             :items {1109 {:id 1109
                           :name "Energetic Graphite"
@@ -173,6 +183,7 @@
                           :time-spend 120
                           :facility "Smelting Facility"
                           :alt-recipes {}
+                          :results {1 1109}
                           :items {1006 {:id 1006
                                         :name "Coal"
                                         :count (e/native->integer 1)
@@ -180,6 +191,7 @@
                                         :time-spend nil
                                         :facility nil
                                         :alt-recipes {}
+                                        :results {}
                                         :items {}}}}}}
            (sut/production-tree test-items test-recipes 1112)))
   (t/is (= {:id 1202
@@ -189,6 +201,7 @@
             :time-spend 60
             :facility "Assembler"
             :alt-recipes {}
+            :results {1202 2}
             :items {1104 {:id 1104
                           :name "Copper Ingot"
                           :count (e/native->integer 1)
@@ -196,6 +209,7 @@
                           :time-spend 60
                           :facility "Smelting Facility"
                           :alt-recipes {}
+                          :results {1104 1}
                           :items {1002 {:id 1002
                                         :name "Copper Ore"
                                         :count (e/native->integer 1)
@@ -203,6 +217,7 @@
                                         :time-spend nil
                                         :facility nil
                                         :alt-recipes {}
+                                        :results {}
                                         :items {}}}}
                     1102 {:id 1102
                           :name "Magnet"
@@ -211,6 +226,7 @@
                           :time-spend 90
                           :facility "Smelting Facility"
                           :alt-recipes {}
+                          :results {1102 1}
                           :items {1001 {:id 1001
                                         :name "Iron Ore"
                                         :count (e/native->integer 2)
@@ -218,5 +234,6 @@
                                         :time-spend nil
                                         :facility nil
                                         :alt-recipes {}
+                                        :results {}
                                         :items {}}}}}}
            (sut/production-tree test-items test-recipes 1202))))

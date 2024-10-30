@@ -129,6 +129,7 @@
                :recipe (:id recipe)
                :time-spend (:time-spend recipe)
                :facility (:made-from-string recipe)
+               :results (get recipe :results {})
                :items (let [depth (inc depth)]
                         (->> (:items recipe)
                              (keys)
