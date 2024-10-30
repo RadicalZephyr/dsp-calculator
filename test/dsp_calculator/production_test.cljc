@@ -92,6 +92,7 @@
             :name "Iron Ore"
             :count (e/native->integer 1)
             :recipe nil
+            :time-spend nil
             :facility nil
             :alt-recipes {}
             :items {}}
@@ -100,12 +101,14 @@
             :name "Iron Ingot"
             :count (e/native->integer 1)
             :recipe 1
+            :time-spend 60
             :facility "Smelting Facility"
             :alt-recipes {}
             :items {1001 {:id 1001
                           :name "Iron Ore"
                           :count (e/native->integer 1)
                           :recipe nil
+                          :time-spend nil
                           :facility nil
                           :alt-recipes {}
                           :items {}}}}
@@ -114,18 +117,21 @@
             :name "Steel"
             :count (e/native->integer 1)
             :recipe 63
+            :time-spend 180
             :facility "Smelting Facility"
             :alt-recipes {}
             :items {1101 {:id 1101
                           :name "Iron Ingot"
                           :count (e/native->integer 1)
                           :recipe 1
+                          :time-spend 60
                           :facility "Smelting Facility"
                           :alt-recipes {}
                           :items {1001 {:id 1001
                                         :name "Iron Ore"
                                         :count (e/native->integer 1)
                                         :recipe nil
+                                        :time-spend nil
                                         :facility nil
                                         :alt-recipes {}
                                         :items {}}}}}}
@@ -134,6 +140,7 @@
             :name "Iron Ingot"
             :count (e/native->integer 1)
             :recipe 1
+            :time-spend 60
             :facility "Smelting Facility"
             :alt-recipes {}
             :items {nil {:error "max depth reached"}}}
@@ -143,16 +150,19 @@
             :name "Diamond"
             :count (e/native->integer 1)
             :recipe 60
+            :time-spend 120
             :facility "Smelting Facility"
             :alt-recipes {61 {:id 1112
                               :name "Diamond"
                               :count (e/native->integer 1)
                               :recipe 61
+                              :time-spend 90
                               :facility "Smelting Facility"
                               :items {1012 {:id 1012
                                             :name "Kimberlite Ore"
                                             :count (ratio 2 3)
                                             :recipe nil
+                                            :time-spend nil
                                             :facility nil
                                             :alt-recipes {}
                                             :items {}}}}}
@@ -160,12 +170,14 @@
                           :name "Energetic Graphite"
                           :count (e/native->integer 1)
                           :recipe 17
+                          :time-spend 120
                           :facility "Smelting Facility"
                           :alt-recipes {}
                           :items {1006 {:id 1006
                                         :name "Coal"
                                         :count (e/native->integer 1)
                                         :recipe nil
+                                        :time-spend nil
                                         :facility nil
                                         :alt-recipes {}
                                         :items {}}}}}}
@@ -174,18 +186,21 @@
             :name "Magnetic Coil"
             :count (e/native->integer 1)
             :recipe 6
+            :time-spend 60
             :facility "Assembler"
             :alt-recipes {}
             :items {1104 {:id 1104
                           :name "Copper Ingot"
                           :count (e/native->integer 1)
                           :recipe 3
+                          :time-spend 60
                           :facility "Smelting Facility"
                           :alt-recipes {}
                           :items {1002 {:id 1002
                                         :name "Copper Ore"
                                         :count (e/native->integer 1)
                                         :recipe nil
+                                        :time-spend nil
                                         :facility nil
                                         :alt-recipes {}
                                         :items {}}}}
@@ -193,12 +208,14 @@
                           :name "Magnet"
                           :count (e/native->integer 3)
                           :recipe 2
+                          :time-spend 90
                           :facility "Smelting Facility"
                           :alt-recipes {}
                           :items {1001 {:id 1001
                                         :name "Iron Ore"
                                         :count (e/native->integer 2)
                                         :recipe nil
+                                        :time-spend nil
                                         :facility nil
                                         :alt-recipes {}
                                         :items {}}}}}}

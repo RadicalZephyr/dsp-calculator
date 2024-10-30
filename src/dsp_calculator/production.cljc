@@ -127,6 +127,7 @@
                :name (get-in items [item-id :name] "")
                :count count
                :recipe (:id recipe)
+               :time-spend (:time-spend recipe)
                :facility (:made-from-string recipe)
                :items (let [depth (inc depth)]
                         (->> (:items recipe)
