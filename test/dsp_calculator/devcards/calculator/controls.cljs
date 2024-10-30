@@ -132,3 +132,83 @@
                                  :timescale "second"
                                  :proliferator "mixed.tsp"}
                                 :proliferator "none"))))
+
+(def iron-ingots
+  {:id 1101,
+   :name "Iron Ingot",
+   :count 1,
+   :recipe 1,
+   :time-spend 60,
+   :made-from-string "Smelting Facility",
+   :items {1001 1},
+   :results {1101 1}})
+
+(def steel
+  {:id 1103
+   :name "Steel"
+   :count 1
+   :recipe 63
+   :time-spend 180
+   :items {1101 1}
+   :results {1103 1}})
+
+(deftest test-render-controls
+  (t/is (= {:ratio 1
+            :specific 60
+            :timescale "minute"
+            :proliferator "none"}
+           (sut/render-controls [{:ratio 1
+                                  :specific nil
+                                  :timescale "minute"
+                                  :proliferator "none"}
+                                 iron-ingots])
+           (sut/render-controls [{:ratio nil
+                                  :specific 60
+                                  :timescale "minute"
+                                  :proliferator "none"}
+                                 iron-ingots])))
+
+  (t/is (= {:ratio 1
+            :specific 1
+            :timescale "second"
+            :proliferator "none"}
+           (sut/render-controls [{:ratio 1
+                                  :specific nil
+                                  :timescale "second"
+                                  :proliferator "none"}
+                                 iron-ingots])
+           (sut/render-controls [{:ratio nil
+                                  :specific 1
+                                  :timescale "second"
+                                  :proliferator "none"}
+                                 iron-ingots])))
+
+  (t/is (= {:ratio 1
+            :specific 20
+            :timescale "minute"
+            :proliferator "none"}
+           (sut/render-controls [{:ratio 1
+                                  :specific nil
+                                  :timescale "minute"
+                                  :proliferator "none"}
+                                 steel])
+           (sut/render-controls [{:ratio nil
+                                  :specific 20
+                                  :timescale "minute"
+                                  :proliferator "none"}
+                                 steel])))
+
+  (t/is (= {:ratio 1
+            :specific (/ 1 3)
+            :timescale "second"
+            :proliferator "none"}
+           (sut/render-controls [{:ratio 1
+                                  :specific nil
+                                  :timescale "second"
+                                  :proliferator "none"}
+                                 steel])
+           (sut/render-controls [{:ratio nil
+                                  :specific (/ 1 3)
+                                  :timescale "second"
+                                  :proliferator "none"}
+                                 steel]))))

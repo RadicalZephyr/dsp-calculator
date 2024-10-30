@@ -69,3 +69,32 @@
                    (update :specific rescale-specific (:timescale controls) value))
     :proliferator (assoc controls
                          :proliferator value)))
+
+(def ticks-per
+  {"second" 60
+   "minute" (* 60 60)})
+
+(defn output-quantity [recipe]
+  (get-in recipe [:results (:id recipe)] 1))
+
+(defn render-ratio [control-spec selected-recipe]
+  (let [ratio (:ratio control-spec)
+        num-ticks (ticks-per (:timescale control-spec))
+        num-produced (output-quantity selected-recipe)
+        production-time (:time-spend selected-recipe)]
+    (assoc control-spec :specific (/ (* ratio num-produced num-ticks)
+                                     production-time))))
+
+(defn render-specific [control-spec selected-recipe]
+  (let [specific (:specific control-spec)
+        num-ticks (ticks-per (:timescale control-spec))
+        num-produced (output-quantity selected-recipe)
+        production-time (:time-spend selected-recipe)]
+    (assoc control-spec :ratio (/ (* specific production-time)
+                                  (* num-produced num-ticks)))))
+
+(defn render-controls [[control-spec selected-recipe]]
+  (cond
+    (nil? (:specific control-spec)) (render-ratio control-spec selected-recipe)
+    (nil? (:ratio control-spec)) (render-specific control-spec selected-recipe)
+    :else control-spec))
