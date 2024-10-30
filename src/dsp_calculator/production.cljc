@@ -112,8 +112,15 @@
   stage for one item. Each map has these keys:
 
   - :id          - The item id of this node.
+  - :name        - The item name of this node.
+  - :count       - The ratio of this recipe needed to produce 1 of the root node.
   - :recipe      - The id of the recipe this node is using.
-  - :alt-recipes - A vector of alternate recipe ids that could be used.
+  - :time-spend  - The time (in game ticks) it takes to run this recipe once.
+  - :facility    - The type of production facility this recipe is made in.
+  - :alt-recipes - A map of alternate recipe trees to produce this
+                   item keyed by id that could be used.
+  - :results     - A map of the item ids of the outputs of this recipe to
+                   the number produced in one cycle.
   - :items       - A map of item ids to a node for each item needed to
                    produce this recipe.
 
