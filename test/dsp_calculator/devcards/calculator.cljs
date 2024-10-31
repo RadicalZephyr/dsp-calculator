@@ -1,12 +1,12 @@
 (ns dsp-calculator.devcards.calculator
   (:require [devcards.core]
+            [reagent.core :as reagent]
             [spade.core :refer [defattrs defclass]]
-            [dsp-calculator.ui :as ui]
+            [dsp-calculator.ui.base :as ui]
             [dsp-calculator.ui.calculator :as calc]
             [dsp-calculator.devcards.calculator.controls]
             [dsp-calculator.devcards.calculator.preferred-buildings]
-            [dsp-calculator.devcards.calculator.production]
-            [reagent.core :as reagent])
+            [dsp-calculator.devcards.calculator.production])
   (:require-macros
    [devcards.core :as dc :refer [defcard defcard-rg]]))
 
