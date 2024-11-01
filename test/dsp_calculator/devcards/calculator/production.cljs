@@ -1,5 +1,7 @@
 (ns dsp-calculator.devcards.calculator.production
   (:require [devcards.core]
+            [dsp-calculator.production :as prod]
+            [dsp-calculator.production-test :as prod-test]
             [dsp-calculator.ui.base :as base]
             [dsp-calculator.ui.calculator.production :as sut])
   (:require-macros
@@ -15,26 +17,28 @@
     [sut/production-tree-header]]])
 
 (defcard-rg production-summary
-  [:main.page.calculator
-   [:div.solver.has-proliferators
-    [sut/production-tree-summary [{:id 1001
-                                   :name "Iron Ore"}]]]])
+  (let [tree (prod/production-tree prod-test/test-items
+                                   prod-test/test-recipes
+                                   1101)
+        summary (prod/summarize tree)]
+    [:main.page.calculator
+     [:div.solver.has-proliferators
+      [sut/production-tree-summary (vals (:raw-resources summary))]]]))
 
 (defcard-rg production-tree
-  [:main.page.calculator
-   [:div.solver.has-proliferators
-    [sut/production-tree-header]
-    [sut/production-tree-node 0 {:id 1101
-                                 :name "Iron Ingot"
-                                 :items [{:id 1001
-                                          :name "Iron Ore"}]}]]])
+  (let [tree (prod/production-tree prod-test/test-items
+                                   prod-test/test-recipes
+                                   1101)]
+    [:main.page.calculator
+     [:div.solver.has-proliferators
+      [sut/production-tree-header]
+      [sut/production-tree-node 0 tree]]]))
 
 (defcard-rg whole-production
-  (let [tree (atom {:id 1101
-                    :name "Iron Ingot"
-                    :items [{:id 1001
-                             :name "Iron Ore"}]})
-        summary (atom {:raw-resources {1001 {:id 1001
-                                             :name "Iron Ore"}}})]
+  (let [tree (prod/production-tree prod-test/test-items
+                                   prod-test/test-recipes
+                                   1101)
+        summary (atom (prod/summarize tree))
+        tree (atom tree)]
     [:main.page.calculator
      [sut/production-tree summary tree]]))
