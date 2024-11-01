@@ -17,28 +17,31 @@
     [sut/production-tree-header]]])
 
 (defcard-rg production-summary
-  (let [tree (prod/production-tree prod-test/test-items
+  (let [context {}
+        tree (prod/production-tree prod-test/test-items
                                    prod-test/test-recipes
                                    1101)
         summary (prod/summarize tree)]
     [:main.page.calculator
      [:div.solver.has-proliferators
-      [sut/production-tree-summary (vals (:raw-resources summary))]]]))
+      [sut/production-tree-summary context (vals (:raw-resources summary))]]]))
 
 (defcard-rg production-tree
-  (let [tree (prod/production-tree prod-test/test-items
+  (let [context {}
+        tree (prod/production-tree prod-test/test-items
                                    prod-test/test-recipes
                                    1101)]
     [:main.page.calculator
      [:div.solver.has-proliferators
       [sut/production-tree-header]
-      [sut/production-tree-node 0 tree]]]))
+      [sut/production-tree-node context 0 tree]]]))
 
 (defcard-rg whole-production
-  (let [tree (prod/production-tree prod-test/test-items
+  (let [context (atom {})
+        tree (prod/production-tree prod-test/test-items
                                    prod-test/test-recipes
                                    1101)
         summary (atom (prod/summarize tree))
         tree (atom tree)]
     [:main.page.calculator
-     [sut/production-tree summary tree]]))
+     [sut/production-tree context summary tree]]))

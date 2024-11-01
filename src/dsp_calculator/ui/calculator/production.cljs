@@ -20,7 +20,7 @@
    [:div "Belts"]
    [:div "Throughput"]])
 
-(defn production-tree-leaf-node [depth tree]
+(defn production-tree-leaf-node [context depth tree]
   [:div.node.solve (depth-attrs depth)
    [:div.node-header
     [:div.meta
@@ -47,7 +47,7 @@
      [:option {:value "speedup"} "+100% speed"]
      [:option {:value "extra"} "+25% extra"]]]])
 
-(defn production-tree-interior-node [depth tree]
+(defn production-tree-interior-node [context depth tree]
   `[:details.node.solve ~(depth-attrs depth)
     [:summary
      [:div.node-header
@@ -67,17 +67,17 @@
         ~[item-icon tree]
         [:span.timeScale "per minute"]]]]]
     ~@(for [item (vals (:items tree))]
-        [production-tree-node 1 item])])
+        [production-tree-node context 1 item])])
 
 (defn raw-resource? [node]
   (empty? (:items node)))
 
-(defn production-tree-node [depth tree]
+(defn production-tree-node [context depth tree]
   (if (raw-resource? tree)
-    [production-tree-leaf-node (inc depth) tree]
-    [production-tree-interior-node (inc depth) tree]))
+    [production-tree-leaf-node context (inc depth) tree]
+    [production-tree-interior-node context (inc depth) tree]))
 
-(defn production-tree-summary [raw-resources]
+(defn production-tree-summary [context raw-resources]
   [:details.node.solve
    [:summary
     [:div.node-header
@@ -92,10 +92,11 @@
      [:div "Belts"]
      [:div "Throughput"]]
     (for [resource raw-resources]
-      ^{:key (:id resource)} [production-tree-leaf-node 0 resource])]])
+      ^{:key (:id resource)} [production-tree-leaf-node context 0 resource])]])
 
-(defn production-tree [summary tree]
-  [:div.solver.has-proliferators
-   [production-tree-summary (vals (:raw-resources @summary))]
-   [production-tree-header]
-   [production-tree-node 0 @tree]])
+(defn production-tree [context summary tree]
+  (let [context @context]
+    [:div.solver.has-proliferators
+     [production-tree-summary context (vals (:raw-resources @summary))]
+     [production-tree-header]
+     [production-tree-node context 0 @tree]]))
