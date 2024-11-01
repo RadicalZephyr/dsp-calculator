@@ -44,18 +44,18 @@
    [:div "Throughput"]])
 
 (defn production-tree-leaf-node [context depth tree]
-  (let [facility-count (e/* (:ratio context)
-                            (:count tree))
-        facility-str (render-rational facility-count)
-        duration (get duration (:timescale context))
-        items-per (e/* facility-count
-                       (get-result-rate tree)
-                       duration)
-        belt-rate (if (= "minute" (:timescale context))
-                    (e/* (e/native->integer 60) (:belt-rate context))
-                    (:belt-rate context))
-        belts-per (e// items-per belt-rate)]
-    [:div.node.solve (depth-attrs depth)
+  [:div.node.solve (depth-attrs depth)
+   (let [facility-count (e/* (:ratio context)
+                             (:count tree))
+         facility-str (render-rational facility-count)
+         duration (get duration (:timescale context))
+         items-per (e/* facility-count
+                        (get-result-rate tree)
+                        duration)
+         belt-rate (if (= "minute" (:timescale context))
+                     (e/* (e/native->integer 60) (:belt-rate context))
+                     (:belt-rate context))
+         belts-per (e// items-per belt-rate)]
      [:div.node-header
       [:div.meta
        [:span.item.named
@@ -69,7 +69,7 @@
         [:span.perMinute (render-rational items-per)]
         "×"
         [item-icon tree]
-        [:span.timeScale (get time-label (:timescale context))]]]]]))
+        [:span.timeScale (get time-label (:timescale context))]]]])])
 
 (declare production-tree-node)
 
@@ -82,19 +82,19 @@
      [:option {:value "extra"} "+25% extra"]]]])
 
 (defn production-tree-interior-node [context depth tree]
-  (let [facility-count (e/* (:ratio context)
-                            (:count tree))
-        facility-str (render-rational facility-count)
-        duration (get duration (:timescale context))
-        items-per (e/* facility-count
-                       (get-result-rate tree)
-                       duration)
-        belt-rate (if (= "minute" (:timescale context))
-                    (e/* (e/native->integer 60) (:belt-rate context))
-                    (:belt-rate context))
-        belts-per (e// items-per belt-rate)]
-    [:details.node.solve (depth-attrs depth)
-     [:summary
+  [:details.node.solve (depth-attrs depth)
+   [:summary
+    (let [facility-count (e/* (:ratio context)
+                              (:count tree))
+          facility-str (render-rational facility-count)
+          duration (get duration (:timescale context))
+          items-per (e/* facility-count
+                         (get-result-rate tree)
+                         duration)
+          belt-rate (if (= "minute" (:timescale context))
+                      (e/* (e/native->integer 60) (:belt-rate context))
+                      (:belt-rate context))
+          belts-per (e// items-per belt-rate)]
       [:div.node-header
        [:div.meta
         [:span.fraction {:title (str facility-str
@@ -112,9 +112,9 @@
          [:span.perMinute (render-rational items-per)]
          "×"
          [item-icon tree]
-         [:span.timeScale (get time-label (:timescale context))]]]]]
-     (for [item (vals (:items tree))]
-       ^{:key (:id item)} [production-tree-node context depth item])]))
+         [:span.timeScale (get time-label (:timescale context))]]]])]
+   (for [item (vals (:items tree))]
+     ^{:key (:id item)} [production-tree-node context depth item])])
 
 (defn raw-resource? [node]
   (empty? (:items node)))
