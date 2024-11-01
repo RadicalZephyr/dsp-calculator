@@ -252,7 +252,100 @@
                                         :alt-recipes {}
                                         :results {}
                                         :items {}}}}}}
-           (sut/production-tree test-items test-recipes 1202))))
+           (sut/production-tree test-items test-recipes 1202)))
+  (t/is (= {:id 1203
+            :name "Electric Motor"
+            :count (e/native->integer 1)
+            :recipe 97
+            :time-spend 120
+            :facility "Assembler"
+            :alt-recipes {}
+            :results {1203 1}
+            :items {1101 {:id 1101
+                          :name "Iron Ingot"
+                          :count (e/native->integer 1)
+                          :recipe 1
+                          :time-spend 60
+                          :facility "Smelting Facility"
+                          :alt-recipes {}
+                          :results {1101 1}
+                          :items {1001 {:id 1001
+                                        :name "Iron Ore"
+                                        :count (e/native->integer 1)
+                                        :recipe nil
+                                        :time-spend nil
+                                        :facility nil
+                                        :alt-recipes {}
+                                        :results {}
+                                        :items {}}}}
+                    1201 {:id 1201
+                          :name "Gear"
+                          :count (ratio 1 2)
+                          :recipe 5
+                          :time-spend 60
+                          :facility "Assembler"
+                          :alt-recipes {}
+                          :results {1201 1}
+                          :items {1101 {:id 1101
+                                        :name "Iron Ingot"
+                                        :count (ratio 1 2)
+                                        :recipe 1
+                                        :time-spend 60
+                                        :facility "Smelting Facility"
+                                        :alt-recipes {}
+                                        :results {1101 1}
+                                        :items {1001 {:id 1001
+                                                      :name "Iron Ore"
+                                                      :count (ratio 1 2)
+                                                      :recipe nil
+                                                      :time-spend nil
+                                                      :facility nil
+                                                      :alt-recipes {}
+                                                      :results {}
+                                                      :items {}}}}}}
+                    1202 {:id 1202
+                          :name "Magnetic Coil"
+                          :count (ratio 1 4)
+                          :recipe 6
+                          :time-spend 60
+                          :facility "Assembler"
+                          :alt-recipes {}
+                          :results {1202 2}
+                          :items {1104 {:id 1104
+                                        :name "Copper Ingot"
+                                        :count (ratio 1 4)
+                                        :recipe 3
+                                        :time-spend 60
+                                        :facility "Smelting Facility"
+                                        :alt-recipes {}
+                                        :results {1104 1}
+                                        :items {1002 {:id 1002
+                                                      :name "Copper Ore"
+                                                      :count (ratio 1 4)
+                                                      :recipe nil
+                                                      :time-spend nil
+                                                      :facility nil
+                                                      :alt-recipes {}
+                                                      :results {}
+                                                      :items {}}}}
+                                  1102 {:id 1102
+                                        :name "Magnet"
+                                        :count (ratio 3 4)
+                                        :recipe 2
+                                        :time-spend 90
+                                        :facility "Smelting Facility"
+                                        :alt-recipes {}
+                                        :results {1102 1}
+                                        :items {1001 {:id 1001
+                                                      :name "Iron Ore"
+                                                      :count (ratio 1 2)
+                                                      :recipe nil
+                                                      :time-spend nil
+                                                      :facility nil
+                                                      :alt-recipes {}
+                                                      :results {}
+                                                      :items {}}}}}}}}
+           (sut/production-tree test-items test-recipes 1203))))
 
 (deftest test-summary
   (t/is (= {:facilities #{"Smelting Facility"}
