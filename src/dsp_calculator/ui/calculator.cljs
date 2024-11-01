@@ -44,6 +44,15 @@
                        (close))}
       [recipe-icon item]])])
 
+(defn recipe-tab [id selected controls click-fn label]
+  [:button.tab {:id            id
+                :type          "button"
+                :role          "tab"
+                :on-click      click-fn
+                :aria-selected selected
+                :aria-controls controls}
+   label])
+
 (defn recipe-picker [& {:keys [id items buildings selected open? close]}]
   (let [first-tab? (reagent/atom true)
         first-tab (fn [] (reset! first-tab? true))
@@ -55,18 +64,8 @@
                                  :style {:position "relative"}}
          [:header "Select a Recipe"]
          [:div.tablist {:role "tablist"}
-          [:button#tab-0.tab {:type "button"
-                              :role "tab"
-                              :on-click first-tab
-                              :aria-selected (str first-tab?)
-                              :aria-controls "tabpanel-0"}
-           "Items"]
-          [:button#tab-1.tab {:type "button"
-                              :role "tab"
-                              :on-click second-tab
-                              :aria-selected (str (not first-tab?))
-                              :aria-controls "tabpanel-1"}
-           "Buildings"]]
+          [recipe-tab "tab-0" (str first-tab?) "tabpanel-0" first-tab "Items"]
+          [recipe-tab "tab-1" (not (str first-tab?)) "tabpanel-1" second-tab "Buildings"]]
          [:div#tabpanel-0.tabpanel
           {:role "tabpanel"
            :class [(if first-tab? "is-visible" "is-hidden")]}
