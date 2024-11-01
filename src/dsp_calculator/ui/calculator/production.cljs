@@ -67,7 +67,7 @@
         ~[item-icon tree]
         [:span.timeScale "per minute"]]]]]
     ~@(for [item (vals (:items tree))]
-        [production-tree-node context 1 item])])
+        [production-tree-node context depth item])])
 
 (defn raw-resource? [node]
   (empty? (:items node)))
