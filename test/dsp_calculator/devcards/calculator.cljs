@@ -112,7 +112,7 @@ The calculator interface, the most important part of the site.")
   [:main.page.calculator
    [:div.combo-selector
     [calc/recipe-picker
-     :id (str (gensym "recipe-picker"))
+     :id        (str (gensym "recipe-picker"))
      :items     (:items test-recipes)
      :buildings (:buildings test-recipes)
      :open?     true

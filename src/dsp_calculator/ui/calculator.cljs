@@ -82,10 +82,10 @@
   (let [[class icon title] (if selected
                              [".recipe" (str "item." (:id selected)) (:name selected)]
                              [nil "ui.select-recipe" "Select a recipe"])]
-    [:div.icon {:class [class]
+    [:div.icon {:class     [class]
                 :data-icon icon
-                :title title
-                :on-click open-dialog}
+                :title     title
+                :on-click  open-dialog}
      (when (nil? selected) [:span.hint "Please select a recipe"])]))
 
 (defn combo-selector [ & {:keys [recipes
