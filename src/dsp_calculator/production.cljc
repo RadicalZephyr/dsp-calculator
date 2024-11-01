@@ -88,10 +88,6 @@
 
 (def ^:dynamic *max-depth* 10)
 
-(def production-summary
-  {:facilities #{}
-   :raw-resources {}})
-
 (defn get-item-rate [recipe item-id]
   (e// (e/native->integer
         (get-in recipe [:items item-id] 1))
