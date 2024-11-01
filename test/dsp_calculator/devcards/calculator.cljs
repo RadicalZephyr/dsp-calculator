@@ -73,7 +73,7 @@ The calculator interface, the most important part of the site.")
          {:id 2001 :name "Conveyor Belt Mk.I" :pos [2 1]}]
         :selected            selected
         :ratio               ratio
-        :production-facility @production-facility
+        :production-facility production-facility
         :specific            specific
         :timescale           timescale
         :proliferator        proliferator]]))

@@ -22,11 +22,11 @@
     buildings
     :selected selected
     :ratio ratio
-    :production-facility @production-facility
+    :production-facility production-facility
     :specific specific
     :timescale timescale
     :proliferator proliferator]
-   [prod/production-tree @summary @tree]])
+   [prod/production-tree summary tree]])
 
 (defclass grid-pos [x y]
   {:grid-area (str x " / " y)})

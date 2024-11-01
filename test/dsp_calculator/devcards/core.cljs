@@ -22,7 +22,9 @@
   [dsp-ui/home-container])
 
 (defcard-rg calculator
-  [dsp-ui/calculator-container])
+  [:div "TODO: Broken, pending rewrite of calculator controls"]
+  ;; [dsp-ui/calculator-container] ;; TODO: FIXME!
+  )
 
 (defcard-rg research
   [dsp-ui/research-container])

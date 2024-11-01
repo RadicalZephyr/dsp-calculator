@@ -32,9 +32,9 @@
 (defcard-rg whole-production
   [:main.page.calculator
    [sut/production-tree
-    {:raw-resources [{:id 1001
-                      :name "Iron Ore"}]}
-    {:id 1101
-     :name "Iron Ingot"
-     :items [{:id 1001
-              :name "Iron Ore"}]}]])
+    (atom {:raw-resources {1001 {:id 1001
+                                 :name "Iron Ore"}}})
+    (atom {:id 1101
+           :name "Iron Ingot"
+           :items [{:id 1001
+                    :name "Iron Ore"}]})]])

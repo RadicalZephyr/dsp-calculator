@@ -96,6 +96,6 @@
 
 (defn production-tree [summary tree]
   [:div.solver.has-proliferators
-   [production-tree-summary (:raw-resources summary)]
+   [production-tree-summary (:raw-resources @summary)]
    [production-tree-header]
-   [production-tree-node 0 tree]])
+   [production-tree-node 0 @tree]])
