@@ -18,7 +18,9 @@
     [sut/production-tree-header]]])
 
 (defcard-rg production-summary
-  (let [context {:ratio (e/native->integer 1)}
+  (let [context {:ratio (e/native->integer 1)
+                 :timescale "minute"
+                 :belt-rate (e/native->integer 6)}
         tree (prod/production-tree prod-test/test-items
                                    prod-test/test-recipes
                                    1101)
@@ -28,7 +30,9 @@
       [sut/production-tree-summary context (vals (:raw-resources summary))]]]))
 
 (defcard-rg production-tree
-  (let [context {:ratio (e/native->integer 1)}
+  (let [context {:ratio (e/native->integer 1)
+                 :timescale "minute"
+                 :belt-rate (e/native->integer 6)}
         tree (prod/production-tree prod-test/test-items
                                    prod-test/test-recipes
                                    1101)]
@@ -38,7 +42,9 @@
       [sut/production-tree-node context 0 tree]]]))
 
 (defcard-rg whole-production
-  (let [context (atom {:ratio (e/native->integer 1)})
+  (let [context (atom {:ratio (e/native->integer 1)
+                       :timescale "minute"
+                       :belt-rate (e/native->integer 6)})
         tree (prod/production-tree prod-test/test-items
                                    prod-test/test-recipes
                                    1203)
