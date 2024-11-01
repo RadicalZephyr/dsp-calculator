@@ -236,4 +236,8 @@
                 text-decoration-thickness: 2px;
                 text-underline-offset: 0;
         }
+
+        .node .fraction {
+          font-variant-numeric: diagonal-fractions;
+        }
 }

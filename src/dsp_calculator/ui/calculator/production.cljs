@@ -1,5 +1,6 @@
 (ns dsp-calculator.ui.calculator.production
-  (:require [spade.core :refer [defclass]]))
+  (:require [spade.core :refer [defclass]]
+            [com.gfredericks.exact :as e]))
 
 (defclass depth-class [x]
   {:--depth x})
@@ -47,13 +48,25 @@
      [:option {:value "speedup"} "+100% speed"]
      [:option {:value "extra"} "+25% extra"]]]])
 
+(defn render-rational [r]
+  (if (e/integer? r)
+    (e/integer->string r)
+    [:span.fraction (str (e/numerator r)
+                         "/"
+                         (e/denominator r))]))
+
 (defn production-tree-interior-node [context depth tree]
   `[:details.node.solve ~(depth-attrs depth)
     [:summary
      [:div.node-header
       [:div.meta
-       [:span {:title (str "10" "× " (:facility tree))}
-        [:span.factor "10"] "×"]
+       ~(let [facility-count (render-rational
+                              (e/* (:ratio context)
+                                   (:count tree)))]
+          [:span {:title (str facility-count
+                              "× "
+                              (:facility tree))}
+           [:span.factor facility-count] "×"])
        ~[:span.recipe
          [item-icon tree]
          [:span.name (:name tree)]]]

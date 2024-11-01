@@ -1,5 +1,6 @@
 (ns dsp-calculator.devcards.calculator.production
   (:require [devcards.core]
+            [com.gfredericks.exact :as e]
             [dsp-calculator.production :as prod]
             [dsp-calculator.production-test :as prod-test]
             [dsp-calculator.ui.base :as base]
@@ -17,7 +18,7 @@
     [sut/production-tree-header]]])
 
 (defcard-rg production-summary
-  (let [context {}
+  (let [context {:ratio (e/native->integer 1)}
         tree (prod/production-tree prod-test/test-items
                                    prod-test/test-recipes
                                    1101)
@@ -27,7 +28,7 @@
       [sut/production-tree-summary context (vals (:raw-resources summary))]]]))
 
 (defcard-rg production-tree
-  (let [context {}
+  (let [context {:ratio (e/native->integer 1)}
         tree (prod/production-tree prod-test/test-items
                                    prod-test/test-recipes
                                    1101)]
@@ -37,7 +38,7 @@
       [sut/production-tree-node context 0 tree]]]))
 
 (defcard-rg whole-production
-  (let [context (atom {})
+  (let [context (atom {:ratio (e/native->integer 1)})
         tree (prod/production-tree prod-test/test-items
                                    prod-test/test-recipes
                                    1203)
