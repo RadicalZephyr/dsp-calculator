@@ -34,8 +34,12 @@
          :name "Energetic Graphite"}
    1112 {:id 1112
          :name "Diamond"}
+   1201 {:id 1201
+         :name "Gear"}
    1202 {:id 1202
-         :name "Magnetic Coil"}})
+         :name "Magnetic Coil"}
+   1203 {:id 1203
+         :name "Electric Motor"}})
 
 (def test-recipes
   {1101 [{:id 1
@@ -80,12 +84,24 @@
           :made-from-string "Smelting Facility"
           :items {1012 1}
           :results {1112 2}}]
+   1201 [{:id 5
+          :name "Gear"
+          :time-spend 60
+          :made-from-string "Assembler"
+          :items {1101 1}
+          :results {1201 1}}]
    1202 [{:id 6
           :name "Magnetic Coil"
           :time-spend 60
           :made-from-string "Assembler"
-          :items {1102 2 1104 1}
-          :results {1202 2}}]})
+          :items {1102 2, 1104 1}
+          :results {1202 2}}]
+   1203 [{:id 97
+          :name "Electric Motor"
+          :time-spend 120
+          :made-from-string "Assembler"
+          :items {1101 2, 1201 1, 1202 1}
+          :results {1203 1}}]})
 
 (deftest test-solver
   (t/is (= {:id 1001
@@ -265,4 +281,14 @@
                                   :name "Copper Ore"
                                   :count (e/native->integer 1)}}}
            (sut/summarize
-            (sut/production-tree test-items test-recipes 1202)))))
+            (sut/production-tree test-items test-recipes 1202))))
+
+  (t/is (= {:facilities #{"Assembler" "Smelting Facility"}
+            :raw-resources {1001 {:id 1001
+                                  :name "Iron Ore"
+                                  :count (e/native->integer 2)}
+                            1002 {:id 1002
+                                  :name "Copper Ore"
+                                  :count (ratio 1 4)}}}
+           (sut/summarize
+            (sut/production-tree test-items test-recipes 1203)))))
