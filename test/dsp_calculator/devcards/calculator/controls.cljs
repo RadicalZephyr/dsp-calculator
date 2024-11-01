@@ -13,49 +13,69 @@
 
 (defcard-rg controls
   (fn [state _]
-    (let [ratio (reagent/cursor state [:ratio])
-          specific (reagent/cursor state [:specific])
-          timescale (reagent/cursor state [:timescale])
-          proliferator (reagent/cursor state [:proliferator])]
+    (let [rendered-state
+          (reagent/reaction
+           (sut/render-controls
+            (let [s @state]
+              [s (:recipe s)])))
+          change #(swap! state sut/update-controls %1 %2)]
       (fn [state _]
-        [:main.page.calculator
-         [:div.combo-selector
-          [sut/ratio-control ratio "Smelting Facility"]
-          [sut/specific-control specific timescale]
-          [sut/proliferator-control proliferator]]])))
+        (let [{:keys [ratio
+                      specific
+                      timescale
+                      proliferator]} @rendered-state]
+          [:main.page.calculator
+           [:div.combo-selector
+            [sut/ratio-control change ratio "Smelting Facility"]
+            [sut/specific-control change specific timescale]
+            [sut/proliferator-control change proliferator]]]))))
   (reagent/atom
-   {:ratio 1
-    :specific 1
+   {:recipe {:id 1
+             :name "Iron Ingot"
+             :time-spend 60
+             :made-from-string "Smelting Facility"
+             :items {1001 1}
+             :results {1101 1}}
+    :ratio 1
+    :specific nil
     :timescale "minute"
     :proliferator "none"})
   {:inspect-data true})
 
 (defcard-rg ratio-control
   (fn [state _]
-    (let [ratio (reagent/cursor state [:ratio])]
-      [:main.page.calculator
-       [:div.combo-selector
-        [sut/ratio-control ratio "Smelting Facility"]]]))
-  (reagent/atom {:ratio 1})
+    (let [ratio (reagent/cursor state [:ratio])
+          change #(swap! state sut/update-controls %1 %2)]
+      (fn [state _]
+        [:main.page.calculator
+         [:div.combo-selector
+          [sut/ratio-control change @ratio "Smelting Facility"]]])))
+  (reagent/atom {:ratio 1
+                 :specific nil})
   {:inspect-data true})
 
 (defcard-rg specific-control
   (fn [state _]
     (let [specific (reagent/cursor state [:specific])
-          timescale (reagent/cursor state [:timescale])]
-      [:main.page.calculator
-       [:div.combo-selector
-        [sut/specific-control specific timescale]]]))
-  (reagent/atom {:specific 1
+          timescale (reagent/cursor state [:timescale])
+          change #(swap! state sut/update-controls %1 %2)]
+      (fn [state _]
+        [:main.page.calculator
+         [:div.combo-selector
+          [sut/specific-control change @specific @timescale]]])))
+  (reagent/atom {:ratio nil
+                 :specific 1
                  :timescale "minute"})
   {:inspect-data true})
 
 (defcard-rg proliferator-control
   (fn [state _]
-    (let [proliferator (reagent/cursor state [:proliferator])]
-      [:main.page.calculator
-       [:div.combo-selector
-        [sut/proliferator-control proliferator]]]))
+    (let [proliferator (reagent/cursor state [:proliferator])
+          change #(swap! state sut/update-controls %1 %2)]
+      (fn [state _]
+        [:main.page.calculator
+         [:div.combo-selector
+          [sut/proliferator-control change @proliferator]]])))
   (reagent/atom {:proliferator "none"})
   {:inspect-data true})
 

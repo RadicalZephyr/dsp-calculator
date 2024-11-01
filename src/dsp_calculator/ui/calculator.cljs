@@ -8,22 +8,18 @@
 
 (defn calculator [& {:keys [recipes
                             selected
-                            ratio
-                            production-facility
-                            specific
-                            timescale
-                            proliferator
+                            update-selected
+                            controls
+                            update-controls
                             summary
                             tree]}]
   [:main.page.calculator
    [combo-selector
     :recipes recipes
     :selected selected
-    :ratio ratio
-    :production-facility production-facility
-    :specific specific
-    :timescale timescale
-    :proliferator proliferator]
+    :update-selected update-selected
+    :controls controls
+    :update-controls update-controls]
    [prod/production-tree summary tree]])
 
 (defclass grid-pos [x y]
@@ -104,12 +100,10 @@
                 :on-click  open-dialog}
      (when (nil? selected) [:span.hint "Please select a recipe"])]))
 
-(defn combo-selector [ & {:keys [recipes
-                                 selected
-                                 ratio
-                                 specific
-                                 timescale
-                                 proliferator]}]
+(defn combo-selector [& {:keys [recipes
+                                selected
+                                controls
+                                update-controls]}]
   (let [dialog-id (str (gensym "recipe-picker"))
         open-dialog (fn []
                       (let [dialog (.getElementById js/document dialog-id)]
@@ -119,11 +113,11 @@
                          (.close dialog)))]
     (fn [& {:keys [recipes
                    selected
-                   ratio
-                   specific
-                   timescale
-                   proliferator]}]
-      (let [selected-val @selected]
+                   controls
+                   update-controls]}]
+      (let [selected-recipe @selected
+            production-facility (:facility selected-recipe)
+            {:keys [ratio specific timescale proliferator]} @controls]
         `[:div.combo-selector
           ~[recipe-picker
             :id        dialog-id
@@ -132,8 +126,8 @@
             :open?     false
             :close     close-dialog]
           ~[:div.recipe-picker
-            [selector-button selected-val open-dialog]]
-          ~@(when selected-val
-              [[control/ratio-control ratio (:facility selected-val)]
-               [control/specific-control specific timescale]
-               [control/proliferator-control proliferator]])]))))
+            [selector-button selected-recipe open-dialog]]
+          ~@(when selected-recipe
+              [[control/ratio-control update-controls ratio production-facility]
+               [control/specific-control update-controls specific timescale]
+               [control/proliferator-control update-controls proliferator]])]))))

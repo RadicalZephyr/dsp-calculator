@@ -1,40 +1,41 @@
-(ns dsp-calculator.ui.calculator.controls)
+(ns dsp-calculator.ui.calculator.controls
+  (:require [clojure.tools.reader.edn :as edn]))
 
-(defn inc-dec-buttons [ratom]
+(defn inc-dec-buttons [change control value]
   [:div.steppers
-   [:button.increment {:on-click #(swap! ratom inc)}]
-   [:button.decrement {:on-click #(swap! ratom dec)}]])
+   [:button.increment {:on-click #(change control (inc value))}]
+   [:button.decrement {:on-click #(change control (dec value))}]])
 
-(defn ratio-control [ratio production-facility]
+(defn ratio-control [change ratio production-facility]
   [:label.ratio
    [:input.factor
     {:type "number"
      :min "0"
-     :value @ratio
-     :on-change #(reset! ratio (-> % .-target .-value))}]
-   [inc-dec-buttons ratio]
+     :value (str ratio)
+     :on-change #(change :ratio (-> % .-target .-value edn/read-string))}]
+   [inc-dec-buttons change :ratio ratio]
    [:span.text (str "× " production-facility)]])
 
-(defn specific-control [specific timescale]
+(defn specific-control [change specific timescale]
   [:label.specific
    [:input.factor
     {:type "number"
      :min "0"
-     :value @specific
-     :on-change #(reset! specific (-> % .-target .-value))}]
-   [inc-dec-buttons specific]
+     :value (str specific)
+     :on-change #(change :specific (-> % .-target .-value edn/read-string))}]
+   [inc-dec-buttons change :specific specific]
    [:span.text "items"
-    [:select.timescale {:on-change #(reset! timescale (-> % .-target .-value))}
+    [:select.timescale {:on-change #(change :timescale (-> % .-target .-value))}
      [:option {:value "minute"} "per minute"]
      [:option {:value "second"} "per second"]]]])
 
-(defn proliferator-control [proliferator]
+(defn proliferator-control [change proliferator]
   [:label.proliferator
    (let [max-proliferator "Proliferator Mk.III"]
      [:span {:title (str "Highest unlocked tier will be used." max-proliferator)}
       "Proliferator: "])
    [:select {:title "No proliferator to be used"
-             :on-change #(reset! proliferator (-> % .-target .-value))}
+             :on-change #(change :proliferator (-> % .-target .-value))}
     [:option {:value "none"} "None"]
     [:option {:value "mixed.tsp"} "Mix by The Superior Tentacle"]
     [:option {:value "mixed.ab"} "Mix by Aaronbog"]

@@ -4,6 +4,7 @@
             [spade.core :refer [defattrs defclass]]
             [dsp-calculator.ui.base :as ui]
             [dsp-calculator.ui.calculator :as calc]
+            [dsp-calculator.ui.calculator.controls :as control]
             [dsp-calculator.devcards.calculator.controls]
             [dsp-calculator.devcards.calculator.preferred-buildings]
             [dsp-calculator.devcards.calculator.production])
@@ -48,28 +49,25 @@ The calculator interface, the most important part of the site.")
 (defcard-rg full-calculator
   (fn [state _]
     (let [selected (reagent/cursor state [:selected])
-          ratio (reagent/cursor state [:ratio])
-          production-facility (reagent/cursor state [:production-facility])
-          specific (reagent/cursor state [:specific])
-          timescale (reagent/cursor state [:timescale])
-          proliferator (reagent/cursor state [:proliferator])
+          control-spec (reagent/cursor state [:controls])
+          controls (reagent/reaction
+                    (control/render-controls [@control-spec @selected]))
+          update-controls #(swap! control-spec control/update-controls %1 %2)
           summary (reagent/cursor state [:summary])
           tree (reagent/cursor state [:production-tree])]
       [calc/calculator
-       :recipes      test-recipes
-       :selected     selected
-       :ratio        ratio
-       :specific     specific
-       :timescale    timescale
-       :proliferator proliferator
-       :summary      summary
-       :tree         tree]))
+       :recipes         test-recipes
+       :selected        selected
+       :controls        controls
+       :update-controls update-controls
+       :summary         summary
+       :tree            tree]))
   (reagent/atom
    {:selected nil
-    :ratio 1
-    :specific nil
-    :timescale "minute"
-    :proliferator "none"
+    :controls {:ratio 1
+               :specific nil
+               :timescale "minute"
+               :proliferator "none"}
     :summary {}
     :production-tree {}})
   {:inspect-data true})
@@ -77,24 +75,23 @@ The calculator interface, the most important part of the site.")
 (defcard-rg full-calculator-control
   (fn [state _]
     (let [selected (reagent/cursor state [:selected])
-          ratio (reagent/cursor state [:ratio])
-          specific (reagent/cursor state [:specific])
-          timescale (reagent/cursor state [:timescale])
-          proliferator (reagent/cursor state [:proliferator])]
-      [:main.page.calculator
-       [calc/combo-selector
-        :recipes      test-recipes
-        :selected     selected
-        :ratio        ratio
-        :specific     specific
-        :timescale    timescale
-        :proliferator proliferator]]))
+          control-spec (reagent/cursor state [:controls])
+          controls (reagent/reaction
+                    (control/render-controls [@control-spec @selected]))
+          update-controls #(swap! control-spec control/update-controls %1 %2)]
+      (fn [state _]
+        [:main.page.calculator
+         [calc/combo-selector
+          :recipes test-recipes
+          :selected selected
+          :controls controls
+          :update-controls update-controls]])))
   (reagent/atom
    {:selected nil
-    :ratio 1
-    :specific nil
-    :timescale "minute"
-    :proliferator "none"})
+    :controls {:ratio 1
+               :specific nil
+               :timescale "minute"
+               :proliferator "none"}})
   {:inspect-data true})
 
 (defcard-rg selector-button
