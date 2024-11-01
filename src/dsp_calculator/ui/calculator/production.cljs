@@ -66,7 +66,7 @@
         "×"
         ~[item-icon tree]
         [:span.timeScale "per minute"]]]]]
-    ~@(for [item (:items tree)]
+    ~@(for [item (vals (:items tree))]
         [production-tree-node 1 item])])
 
 (defn raw-resource? [node]
@@ -96,6 +96,6 @@
 
 (defn production-tree [summary tree]
   [:div.solver.has-proliferators
-   [production-tree-summary (:raw-resources @summary)]
+   [production-tree-summary (vals (:raw-resources @summary))]
    [production-tree-header]
    [production-tree-node 0 @tree]])

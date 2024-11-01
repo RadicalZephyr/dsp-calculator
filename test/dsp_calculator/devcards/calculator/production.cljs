@@ -18,23 +18,23 @@
   [:main.page.calculator
    [:div.solver.has-proliferators
     [sut/production-tree-summary [{:id 1001
-                                    :name "Iron Ore"}]]]])
+                                   :name "Iron Ore"}]]]])
 
 (defcard-rg production-tree
   [:main.page.calculator
    [:div.solver.has-proliferators
     [sut/production-tree-header]
     [sut/production-tree-node 0 {:id 1101
-                                  :name "Iron Ingot"
-                                  :items [{:id 1001
-                                           :name "Iron Ore"}]}]]])
+                                 :name "Iron Ingot"
+                                 :items [{:id 1001
+                                          :name "Iron Ore"}]}]]])
 
 (defcard-rg whole-production
-  [:main.page.calculator
-   [sut/production-tree
-    (atom {:raw-resources {1001 {:id 1001
-                                 :name "Iron Ore"}}})
-    (atom {:id 1101
-           :name "Iron Ingot"
-           :items [{:id 1001
-                    :name "Iron Ore"}]})]])
+  (let [tree (atom {:id 1101
+                    :name "Iron Ingot"
+                    :items [{:id 1001
+                             :name "Iron Ore"}]})
+        summary (atom {:raw-resources {1001 {:id 1001
+                                             :name "Iron Ore"}}})]
+    [:main.page.calculator
+     [sut/production-tree summary tree]]))
