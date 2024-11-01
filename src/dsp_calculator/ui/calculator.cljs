@@ -53,6 +53,13 @@
                 :aria-controls controls}
    label])
 
+(defn tab-panel [id tab-selected? recipes selected close]
+  [:div.tabpanel
+   {:id    id
+    :role  "tabpanel"
+    :class [(if tab-selected? "is-visible" "is-hidden")]}
+   [recipe-grid recipes selected close]])
+
 (defn recipe-picker [& {:keys [id items buildings selected open? close]}]
   (let [first-tab? (reagent/atom true)
         first-tab (fn [] (reset! first-tab? true))
@@ -66,14 +73,8 @@
          [:div.tablist {:role "tablist"}
           [recipe-tab "tab-0" (str first-tab?) "tabpanel-0" first-tab "Items"]
           [recipe-tab "tab-1" (not (str first-tab?)) "tabpanel-1" second-tab "Buildings"]]
-         [:div#tabpanel-0.tabpanel
-          {:role "tabpanel"
-           :class [(if first-tab? "is-visible" "is-hidden")]}
-          [recipe-grid items selected close]]
-         [:div#tabpanel-1.tabpanel.
-          {:role "tabpanel"
-           :class [(if (not first-tab?) "is-visible" "is-hidden")]}
-          [recipe-grid buildings selected close]]
+         [tab-panel "tabpanel-0" first-tab? items selected close]
+         [tab-panel "tabpanel-1" (not first-tab?) buildings selected close]
          [:div.corner-nav
           [:button.close {:on-click close}]]]))))
 
