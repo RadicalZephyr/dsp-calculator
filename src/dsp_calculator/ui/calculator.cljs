@@ -6,8 +6,7 @@
 
 (declare combo-selector)
 
-(defn calculator [& {:keys [items
-                            buildings
+(defn calculator [& {:keys [recipes
                             selected
                             ratio
                             production-facility
@@ -18,8 +17,7 @@
                             tree]}]
   [:main.page.calculator
    [combo-selector
-    items
-    buildings
+    :recipes recipes
     :selected selected
     :ratio ratio
     :production-facility production-facility
@@ -90,12 +88,12 @@
                 :on-click open-dialog}
      (when (nil? selected) [:span.hint "Please select a recipe"])]))
 
-(defn combo-selector [items buildings & {:keys [selected
-                                                ratio
-                                                production-facility
-                                                specific
-                                                timescale
-                                                proliferator]}]
+(defn combo-selector [ & {:keys [recipes
+                                 selected
+                                 ratio
+                                 specific
+                                 timescale
+                                 proliferator]}]
   (let [dialog-id (str (gensym "recipe-picker"))
         open-dialog (fn []
                       (let [dialog (.getElementById js/document dialog-id)]
@@ -103,24 +101,24 @@
         close-dialog (fn []
                        (let [dialog (.getElementById js/document dialog-id)]
                          (.close dialog)))]
-    (fn [items buildings & {:keys [selected
-                                   ratio
-                                   production-facility
-                                   specific
-                                   timescale
-                                   proliferator]}]
+    (fn [& {:keys [recipes
+                   selected
+                   ratio
+                   specific
+                   timescale
+                   proliferator]}]
       (let [selected-val @selected]
         `[:div.combo-selector
           ~[recipe-picker
-            :id dialog-id
-            :items items
-            :buildings buildings
-            :selected selected
-            :open? false
-            :close close-dialog]
+            :id        dialog-id
+            :items     (:items recipes)
+            :buildings (:buildings recipes)
+            :selected  selected
+            :open?     false
+            :close     close-dialog]
           ~[:div.recipe-picker
             [selector-button selected-val open-dialog]]
           ~@(when selected-val
-              [[control/ratio-control ratio production-facility]
+              [[control/ratio-control ratio (:facility selected-val)]
                [control/specific-control specific timescale]
                [control/proliferator-control proliferator]])]))))
