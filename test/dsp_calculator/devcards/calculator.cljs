@@ -113,7 +113,6 @@ The calculator interface, the most important part of the site.")
    [:div.combo-selector
     [calc/recipe-picker
      :id        (str (gensym "recipe-picker"))
-     :items     (:items test-recipes)
-     :buildings (:buildings test-recipes)
+     :recipes   test-recipes
      :open?     true
      :close     (fn [])]]])

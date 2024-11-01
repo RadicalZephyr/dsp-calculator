@@ -60,11 +60,11 @@
     :class [(if tab-selected? "is-visible" "is-hidden")]}
    [recipe-grid recipes selected close]])
 
-(defn recipe-picker [& {:keys [id items buildings selected open? close]}]
+(defn recipe-picker [& {:keys [id recipes selected open? close]}]
   (let [first-tab? (reagent/atom true)
         first-tab (fn [] (reset! first-tab? true))
         second-tab (fn [] (reset! first-tab? false))]
-    (fn [& {:keys [id items buildings open? close]}]
+    (fn [& {:keys [id recipes open? close]}]
       (let [first-tab? @first-tab?]
         [:dialog.window.recipes {:id id
                                  :open open?
@@ -72,9 +72,9 @@
          [:header "Select a Recipe"]
          [:div.tablist {:role "tablist"}
           [recipe-tab "tab-0" (str first-tab?) "tabpanel-0" first-tab "Items"]
-          [recipe-tab "tab-1" (not (str first-tab?)) "tabpanel-1" second-tab "Buildings"]]
-         [tab-panel "tabpanel-0" first-tab? items selected close]
-         [tab-panel "tabpanel-1" (not first-tab?) buildings selected close]
+          [recipe-tab "tab-1" (str (not first-tab?)) "tabpanel-1" second-tab "Buildings"]]
+         [tab-panel "tabpanel-0" first-tab? (:items recipes) selected close]
+         [tab-panel "tabpanel-1" (not first-tab?) (:buildings recipes) selected close]
          [:div.corner-nav
           [:button.close {:on-click close}]]]))))
 
@@ -111,8 +111,7 @@
         `[:div.combo-selector
           ~[recipe-picker
             :id        dialog-id
-            :items     (:items recipes)
-            :buildings (:buildings recipes)
+            :recipes   recipes
             :selected  selected
             :open?     false
             :close     close-dialog]
