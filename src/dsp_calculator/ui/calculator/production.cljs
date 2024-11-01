@@ -61,7 +61,7 @@
        [:span.item.named
         [item-icon tree]
         [:span.name (:name tree)]]]
-      [:div.proliferator]
+      [proliferator-node-control false]
       [:div.logistics
        [:span.belt [:span.factor (render-rational belts-per)] "×"]]
       [:ul.products
@@ -73,13 +73,14 @@
 
 (declare production-tree-node)
 
-(defn proliferator-node-control []
+(defn proliferator-node-control [render?]
   [:div.proliferator
-   [:div.icon {:data-icon "ui.inc-0" :data-count "" :data-inc "none" :title "None"}
-    [:select.count
-     [:option {:value "none"} "none"]
-     [:option {:value "speedup"} "+100% speed"]
-     [:option {:value "extra"} "+25% extra"]]]])
+   (when render?
+     [:div.icon {:data-icon "ui.inc-0" :data-count "" :data-inc "none" :title "None"}
+      [:select.count
+       [:option {:value "none"} "none"]
+       [:option {:value "speedup"} "+100% speed"]
+       [:option {:value "extra"} "+25% extra"]]])])
 
 (defn production-tree-interior-node [context depth tree]
   [:details.node.solve (depth-attrs depth)
@@ -104,7 +105,7 @@
         [:span.recipe
          [item-icon tree]
          [:span.name (:name tree)]]]
-       [proliferator-node-control]
+       [proliferator-node-control true]
        [:div.logistics
         [:span.belt [:span.factor (render-rational belts-per)] "×"]]
        [:ul.products
