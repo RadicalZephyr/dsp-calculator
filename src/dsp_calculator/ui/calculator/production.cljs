@@ -56,31 +56,31 @@
                          (e/denominator r))]))
 
 (defn production-tree-interior-node [context depth tree]
-  [:details.node.solve (depth-attrs depth)
-   [:summary
-    [:div.node-header
-     [:div.meta
-      (let [facility-count (render-rational
-                            (e/* (:ratio context)
-                                 (:count tree)))]
+  (let [facility-count (render-rational
+                        (e/* (:ratio context)
+                             (:count tree)))]
+    [:details.node.solve (depth-attrs depth)
+     [:summary
+      [:div.node-header
+       [:div.meta
         [:span {:title (str facility-count
                             "× "
                             (:facility tree))}
-         [:span.factor facility-count] "×"])
-      [:span.recipe
-       [item-icon tree]
-       [:span.name (:name tree)]]]
-     [proliferator-node-control]
-     [:div.logistics
-      [:span.belt [:span.factor "1." [:span.repeat "6"]] "×"]]
-     [:ul.products
-      [:li.throughput.is-ingredient
-       [:span.perMinute "600"]
-       "×"
-       [item-icon tree]
-       [:span.timeScale "per minute"]]]]]
-   (for [item (vals (:items tree))]
-     ^{:key (:id item)} [production-tree-node context depth item])])
+         [:span.factor facility-count] "×"]
+        [:span.recipe
+         [item-icon tree]
+         [:span.name (:name tree)]]]
+       [proliferator-node-control]
+       [:div.logistics
+        [:span.belt [:span.factor "1." [:span.repeat "6"]] "×"]]
+       [:ul.products
+        [:li.throughput.is-ingredient
+         [:span.perMinute "600"]
+         "×"
+         [item-icon tree]
+         [:span.timeScale "per minute"]]]]]
+     (for [item (vals (:items tree))]
+       ^{:key (:id item)} [production-tree-node context depth item])]))
 
 (defn raw-resource? [node]
   (empty? (:items node)))
