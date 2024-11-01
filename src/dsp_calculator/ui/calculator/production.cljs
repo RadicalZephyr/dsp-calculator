@@ -43,77 +43,60 @@
    [:div "Belts"]
    [:div "Throughput"]])
 
-(defn production-tree-leaf-node [context depth tree]
-  [:div.node.solve (depth-attrs depth)
-   (let [facility-count (e/* (:ratio context)
-                             (:count tree))
-         facility-str (render-rational facility-count)
-         duration (get duration (:timescale context))
-         items-per (e/* facility-count
-                        (get-result-rate tree)
-                        duration)
-         belt-rate (if (= "minute" (:timescale context))
-                     (e/* (e/native->integer 60) (:belt-rate context))
-                     (:belt-rate context))
-         belts-per (e// items-per belt-rate)]
-     [:div.node-header
-      [:div.meta
-       [:span.item.named
-        [item-icon tree]
-        [:span.name (:name tree)]]]
-      [proliferator-node-control false]
-      [:div.logistics
-       [:span.belt [:span.factor (render-rational belts-per)] "×"]]
-      [:ul.products
-       [:li.throughput.is-ingredient
-        [:span.perMinute (render-rational items-per)]
-        "×"
-        [item-icon tree]
-        [:span.timeScale (get time-label (:timescale context))]]]])])
-
 (declare production-tree-node)
 
-(defn proliferator-node-control [render?]
+(defn proliferator-node-control [leaf-node?]
   [:div.proliferator
-   (when render?
+   (when (not leaf-node?)
      [:div.icon {:data-icon "ui.inc-0" :data-count "" :data-inc "none" :title "None"}
       [:select.count
        [:option {:value "none"} "none"]
        [:option {:value "speedup"} "+100% speed"]
        [:option {:value "extra"} "+25% extra"]]])])
 
-(defn production-tree-interior-node [context depth tree]
-  [:details.node.solve (depth-attrs depth)
-   [:summary
-    (let [facility-count (e/* (:ratio context)
-                              (:count tree))
-          facility-str (render-rational facility-count)
-          duration (get duration (:timescale context))
-          items-per (e/* facility-count
-                         (get-result-rate tree)
-                         duration)
-          belt-rate (if (= "minute" (:timescale context))
-                      (e/* (e/native->integer 60) (:belt-rate context))
-                      (:belt-rate context))
-          belts-per (e// items-per belt-rate)]
-      [:div.node-header
-       [:div.meta
+(defn node-content [context depth tree]
+  (let [facility-count (e/* (:ratio context)
+                            (:count tree))
+        facility-str (render-rational facility-count)
+        duration (get duration (:timescale context))
+        items-per (e/* facility-count
+                       (get-result-rate tree)
+                       duration)
+        belt-rate (if (= "minute" (:timescale context))
+                    (e/* (e/native->integer 60) (:belt-rate context))
+                    (:belt-rate context))
+        belts-per (e// items-per belt-rate)
+        leaf-node? (not (seq (:items tree)))]
+    [:div.node-header
+     [:div.meta
+      (when (not leaf-node?)
         [:span.fraction {:title (str facility-str
                                      "× "
                                      (:facility tree))}
-         [:span.factor facility-str] "×"]
-        [:span.recipe
-         [item-icon tree]
-         [:span.name (:name tree)]]]
-       [proliferator-node-control true]
-       [:div.logistics
-        [:span.belt [:span.factor (render-rational belts-per)] "×"]]
-       [:ul.products
-        [:li.throughput.is-ingredient
-         [:span.perMinute (render-rational items-per)]
-         "×"
-         [item-icon tree]
-         [:span.timeScale (get time-label (:timescale context))]]]])]
+         [:span.factor facility-str] "×"])
+      [:span {:class (if leaf-node?
+                       ["item" "named"]
+                       ["recipe"])}
+       [item-icon tree]
+       [:span.name (:name tree)]]]
+     [proliferator-node-control leaf-node?]
+     [:div.logistics
+      [:span.belt [:span.factor (render-rational belts-per)] "×"]]
+     [:ul.products
+      [:li.throughput.is-ingredient
+       [:span.perMinute (render-rational items-per)]
+       "×"
+       [item-icon tree]
+       [:span.timeScale (get time-label (:timescale context))]]]]))
+
+(defn production-tree-leaf-node [context depth tree]
+  [:div.node.solve (depth-attrs depth)
+   [node-content context depth tree]])
+
+(defn production-tree-interior-node [context depth tree]
+  [:details.node.solve (depth-attrs depth)
+   [:summary
+    [node-content context depth tree]]
    (for [item (vals (:items tree))]
      ^{:key (:id item)} [production-tree-node context depth item])])
 
