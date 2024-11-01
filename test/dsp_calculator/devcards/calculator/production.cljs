@@ -40,7 +40,7 @@
   (let [context (atom {})
         tree (prod/production-tree prod-test/test-items
                                    prod-test/test-recipes
-                                   1101)
+                                   1203)
         summary (atom (prod/summarize tree))
         tree (atom tree)]
     [:main.page.calculator
