@@ -176,3 +176,27 @@
                            (map (juxt :recipe identity))
                            (into {}))]
       (assoc node :alt-recipes alt-recipes))))
+
+(def default-summary
+  {:facilities #{}
+   :raw-resources {}})
+
+(defn summarize
+  "Recurse through a production-tree, collecting details on which
+  production facilities are used and totalling up the raw resources
+  needed."
+  [tree]
+  (letfn [(process-leaf [resource-summary node]
+            (if resource-summary
+              (update resource-summary :count e/+ (:count node))
+              (select-keys node [:id :name :count])))
+          (r [summary tree]
+            (let [summary (if-let [facility (:facility tree)]
+                            (update summary :facilities conj facility)
+                            summary)]
+              (if-let [items (vals (:items tree))]
+                ;; If has input items, recurse
+                (reduce r summary items)
+                (update-in summary [:raw-resources (:id tree)] process-leaf tree))))]
+    (let [summary default-summary]
+      (r summary tree))))

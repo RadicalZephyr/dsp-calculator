@@ -237,3 +237,32 @@
                                         :results {}
                                         :items {}}}}}}
            (sut/production-tree test-items test-recipes 1202))))
+
+(deftest test-summary
+  (t/is (= {:facilities #{"Smelting Facility"}
+            :raw-resources {1001 {:id 1001
+                                  :name "Iron Ore"
+                                  :count (e/native->integer 1)}}}
+           (sut/summarize
+            (sut/production-tree test-items test-recipes 1101))
+           (sut/summarize
+            (sut/production-tree test-items test-recipes 1103))))
+
+  (t/is (= {:facilities #{"Smelting Facility"}
+            :raw-resources {1006 {:id 1006
+                                  :name "Coal"
+                                  :count (e/native->integer 1)}}}
+           (sut/summarize
+            (sut/production-tree test-items test-recipes 1109))
+           (sut/summarize
+            (sut/production-tree test-items test-recipes 1112))))
+
+  (t/is (= {:facilities #{"Assembler" "Smelting Facility"}
+            :raw-resources {1001 {:id 1001
+                                  :name "Iron Ore"
+                                  :count (e/native->integer 2)}
+                            1002 {:id 1002
+                                  :name "Copper Ore"
+                                  :count (e/native->integer 1)}}}
+           (sut/summarize
+            (sut/production-tree test-items test-recipes 1202)))))
