@@ -71,10 +71,26 @@
                                  :style {:position "relative"}}
          [:header "Select a Recipe"]
          [:div.tablist {:role "tablist"}
-          [recipe-tab "tab-0" (str first-tab?) "tabpanel-0" first-tab "Items"]
-          [recipe-tab "tab-1" (str (not first-tab?)) "tabpanel-1" second-tab "Buildings"]]
-         [tab-panel "tabpanel-0" first-tab? (:items recipes) selected close]
-         [tab-panel "tabpanel-1" (not first-tab?) (:buildings recipes) selected close]
+          [recipe-tab "tab-0"
+                      (str first-tab?)
+                      "tabpanel-0"
+                      first-tab
+                      "Items"]
+          [recipe-tab "tab-1"
+                      (str (not first-tab?))
+                      "tabpanel-1"
+                      second-tab
+                      "Buildings"]]
+         [tab-panel "tabpanel-0"
+                    first-tab?
+                    (:items recipes)
+                    selected
+                    close]
+         [tab-panel "tabpanel-1"
+                    (not first-tab?)
+                    (:buildings recipes)
+                    selected
+                    close]
          [:div.corner-nav
           [:button.close {:on-click close}]]]))))
 
