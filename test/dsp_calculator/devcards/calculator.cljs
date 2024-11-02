@@ -5,6 +5,7 @@
             [com.gfredericks.exact :as e]
             [reagent.core :as reagent]
             [spade.core :refer [defattrs defclass]]
+            [dsp-calculator.production :as prod]
             [dsp-calculator.ui.base :as ui]
             [dsp-calculator.ui.calculator :as calc]
             [dsp-calculator.ui.calculator.controls :as control]
@@ -36,6 +37,8 @@ The calculator interface, the most important part of the site.")
        :error-handler #(error-handler type %)
        :response-format (ajax.edn/edn-response-format)})))
 
+(def items (reagent/atom {}))
+
 (def recipes (reagent/atom {}))
 
 (def dialog-recipes
@@ -44,6 +47,7 @@ The calculator interface, the most important part of the site.")
 
 (defcard-rg full-calculator
   (fn [state _]
+    (fetch-once "items_EN" items)
     (fetch-once "recipes_EN" recipes)
     (let [selected (reagent/cursor state [:selected])
           control-spec (reagent/cursor state [:controls])
@@ -51,8 +55,16 @@ The calculator interface, the most important part of the site.")
                     (control/render-controls [@control-spec @selected]))
           update-controls #(swap! control-spec control/update-controls %1 %2)
           context (reagent/cursor state [:context])
-          summary (reagent/cursor state [:summary])
-          tree (reagent/cursor state [:production-tree])]
+          tree (reagent/reaction
+                (when-let [id (-> @selected
+                                  :results
+                                  keys
+                                  first)]
+                  (prod/production-tree @items
+                                        @recipes
+                                        id)))
+          summary (reagent/reaction
+                   (prod/summarize @tree))]
       [calc/calculator
        :recipes         dialog-recipes
        :selected        selected
@@ -69,9 +81,7 @@ The calculator interface, the most important part of the site.")
                :proliferator "none"}
     :context {:ratio (e/native->integer 1)
               :timescale "minute"
-              :belt-rate (e/native->integer 6)}
-    :summary {}
-    :production-tree {}})
+              :belt-rate (e/native->integer 6)}})
   {:inspect-data true})
 
 (defcard-rg full-calculator-control
