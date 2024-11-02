@@ -11,6 +11,7 @@
                             update-selected
                             controls
                             update-controls
+                            context
                             summary
                             tree]}]
   [:main.page.calculator
@@ -20,7 +21,7 @@
     :update-selected update-selected
     :controls controls
     :update-controls update-controls]
-   [prod/production-tree summary tree]])
+   [prod/production-tree context summary tree]])
 
 (defclass grid-pos [x y]
   {:grid-area (str x " / " y)})

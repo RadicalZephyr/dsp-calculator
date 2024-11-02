@@ -1,5 +1,6 @@
 (ns dsp-calculator.devcards.calculator
   (:require [devcards.core]
+            [com.gfredericks.exact :as e]
             [reagent.core :as reagent]
             [spade.core :refer [defattrs defclass]]
             [dsp-calculator.ui.base :as ui]
@@ -53,6 +54,7 @@ The calculator interface, the most important part of the site.")
           controls (reagent/reaction
                     (control/render-controls [@control-spec @selected]))
           update-controls #(swap! control-spec control/update-controls %1 %2)
+          context (reagent/cursor state [:context])
           summary (reagent/cursor state [:summary])
           tree (reagent/cursor state [:production-tree])]
       [calc/calculator
@@ -60,6 +62,7 @@ The calculator interface, the most important part of the site.")
        :selected        selected
        :controls        controls
        :update-controls update-controls
+       :context         context
        :summary         summary
        :tree            tree]))
   (reagent/atom
@@ -68,6 +71,9 @@ The calculator interface, the most important part of the site.")
                :specific nil
                :timescale "minute"
                :proliferator "none"}
+    :context {:ratio (e/native->integer 1)
+              :timescale "minute"
+              :belt-rate (e/native->integer 6)}
     :summary {}
     :production-tree {}})
   {:inspect-data true})
