@@ -52,6 +52,12 @@
        (contains? m "results")
        (contains? m "resultCounts")))
 
+(defn parse-grid-index [grid-index]
+  (let [s (str grid-index)
+        grid-pos-s [(subs s 0 1) (subs s 1 2) (subs s 2)]
+        [page x y] (map #(Integer/parseInt %) grid-pos-s)]
+    {"page" page "x" x "y" y}))
+
 (defn merge-split-recipe-fields [m]
   (if (recipe-map? m)
     (let [items (get m "items")
@@ -63,11 +69,13 @@
           result-counts (get m "resultCounts")
           new-results (->> result-counts
                            (map vector results)
-                           (into {}))]
+                           (into {}))
+          grid-pos (parse-grid-index (get m "gridIndex"))]
       (-> m
-          (dissoc "items" "itemCounts" "results" "resultCounts")
+          (dissoc "gridIndex" "items" "itemCounts" "results" "resultCounts")
           (assoc "items" new-items
-                 "results" new-results)))
+                 "results" new-results
+                 "gridPos" grid-pos)))
     m))
 
 (defn cljify-map [m]
