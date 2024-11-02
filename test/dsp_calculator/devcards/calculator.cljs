@@ -3,6 +3,7 @@
             [com.gfredericks.exact :as e]
             [reagent.core :as reagent]
             [spade.core :refer [defattrs defclass]]
+            [dsp-calculator.production-test :as prod-test]
             [dsp-calculator.ui.base :as ui]
             [dsp-calculator.ui.calculator :as calc]
             [dsp-calculator.ui.calculator.controls :as control]
@@ -22,18 +23,7 @@ The calculator interface, the most important part of the site.")
   (ui/stylesheet-includes))
 
 (def test-recipes
-  {:items [{:id 1101
-            :name "Iron Ingot"
-            :facility "Smelting Facility"
-            :pos [1 1]}
-           {:id 1104
-            :name "Copper Ingot"
-            :facility "Smelting Facility"
-            :pos [1 2]}
-           {:id 1102
-            :name "Magnet"
-            :facility "Smelting Facility"
-            :pos [2 1]}]
+  {:items (flatten (vals prod-test/test-recipes))
    :buildings [{:id 2201
                 :name "Tesla Tower"
                 :facility "Assembler"
