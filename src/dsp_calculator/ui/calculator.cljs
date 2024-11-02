@@ -27,7 +27,7 @@
   {:grid-area (str x " / " y)})
 
 (defn recipe-icon [item]
-  [:span.recipe.icon {:data-icon (str "item." (:id item))
+  [:span.recipe.icon {:data-icon (str "recipe." (:id item))
                       :title (:name item)}])
 
 (defn recipe-grid [items selected close]
