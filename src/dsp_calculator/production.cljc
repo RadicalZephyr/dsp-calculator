@@ -79,12 +79,41 @@
                 ret outs)))
     (transient {}) (vals recipes))))
 
+(def excluded-recipes
+  #{16 29 32 35 54 58 61 62 69 74 79 100 115 121})
+
+(defn match-item-recipe [recipes [id coordinate]]
+  (let [ids (->> (get recipes id)
+                 (map :id)
+                 (remove excluded-recipes)
+                 (map #(str "recipe." %))
+                 (into [(str "item." id)]))]
+    [ids coordinate]))
+
 #?(:clj (defn repl-load-edn []
           (def items (read-edn-resource "items_EN"))
           (def items-zh (read-edn-resource "items"))
+          (def item-icons (read-edn-resource "item-icons"))
           (def tech (read-edn-resource "tech_EN"))
           (def recipes (read-edn-resource "recipes_EN"))
-          (def recipes-by-output (group-by-outputs recipes))))
+          (def recipes-by-output (group-by-outputs recipes))
+          (def item-recipe-icons (mapv #(match-item-recipe recipes-by-output %)
+                                       item-icons))))
+
+(defn render-icon-css [[ids [x y]]]
+  (format "%s{ background-position: %s%% %s%%; }"
+          (apply str (map #(format "[data-icon=\"%s\"] " %) ids))
+          x
+          y))
+
+(defn render-all-icon-recipe-css [item-recipe-icons]
+  (with-open [w (io/writer
+                 (io/file
+                  (io/resource "public/css")
+                  "icon-recipe.css"))]
+    (binding [*out* w]
+      (doseq [row (map #(render-icon-css %) item-recipe-icons)]
+        (println row)))))
 
 (def ^:dynamic *max-depth* 10)
 
