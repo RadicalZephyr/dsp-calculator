@@ -54,6 +54,9 @@
        [:option {:value "speedup"} "+100% speed"]
        [:option {:value "extra"} "+25% extra"]]])])
 
+(defn raw-resource? [node]
+  (empty? (:items node)))
+
 (defn node-content [context depth tree]
   (let [facility-count (e/* (:ratio context)
                             (:count tree))
@@ -66,7 +69,7 @@
                     (e/* (e/native->integer 60) (:belt-rate context))
                     (:belt-rate context))
         belts-per (e// items-per belt-rate)
-        leaf-node? (not (seq (:items tree)))]
+        leaf-node? (raw-resource? tree)]
     [:div.node-header
      [:div.meta
       (when (not leaf-node?)
@@ -99,9 +102,6 @@
     [node-content context depth tree]]
    (for [item (vals (:items tree))]
      ^{:key (:id item)} [production-tree-node context depth item])])
-
-(defn raw-resource? [node]
-  (empty? (:items node)))
 
 (defn production-tree-node [context depth tree]
   (if (raw-resource? tree)
