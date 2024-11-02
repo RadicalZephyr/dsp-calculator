@@ -32,7 +32,7 @@
 
 (defn recipe-grid [items selected close]
   [:ul.recipe-grid {:role "listbox"}
-   (for [{[x y] :pos :as item} items]
+   (for [{{:keys [x y]} :grid-pos :as item} items]
      ^{:key (:id item)}
      [:li {:role "option"
            :class (grid-pos x y)

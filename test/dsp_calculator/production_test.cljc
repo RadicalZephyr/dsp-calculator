@@ -46,70 +46,70 @@
           :name "Iron Ingot"
           :time-spend 60
           :facility "Smelting Facility"
-          :pos [1 1]
+          :grid-pos {:page 1 :x 1 :y 1}
           :items {1001 1}
           :results {1101 1}}]
    1102 [{:id 2
           :name "Magnet"
           :time-spend 90
           :facility "Smelting Facility"
-          :pos [2 1]
+          :grid-pos {:page 1 :x 2 :y 1}
           :items {1001 1}
           :results {1102 1}}]
    1103 [{:id 63
           :name "Steel"
           :time-spend 180
           :facility "Smelting Facility"
-          :pos [3 1]
+          :grid-pos {:page 1 :x 3 :y 1}
           :items {1101 3}
           :results {1103 1}}]
    1104 [{:id 3
           :name "Copper Ingot"
           :time-spend 60
           :facility "Smelting Facility"
-          :pos [1 2]
+          :grid-pos {:page 1 :x 1 :y 2}
           :items {1002 1}
           :results {1104 1}}]
    1109 [{:id 17
           :name "Energetic Graphite"
           :time-spend 120
           :facility "Smelting Facility"
-          :pos [1 6]
+          :grid-pos {:page 1 :x 1 :y 6}
           :items {1006 2}
           :results {1 1109}}]
    1112 [{:id 60
           :name "Diamond"
           :time-spend 120
           :facility "Smelting Facility"
-          :pos [2 6]
+          :grid-pos {:page 1 :x 2 :y 6}
           :items {1109 1}
           :results {1112 1}}
          {:id 61
           :name "Diamond"
           :time-spend 90
           :facility "Smelting Facility"
-          :pos [3 6]
+          :grid-pos {:page 1 :x 3 :y 6}
           :items {1012 1}
           :results {1112 2}}]
    1201 [{:id 5
           :name "Gear"
           :time-spend 60
           :facility "Assembler"
-          :pos [4 1]
+          :grid-pos {:page 1 :x 4 :y 1}
           :items {1101 1}
           :results {1201 1}}]
    1202 [{:id 6
           :name "Magnetic Coil"
           :time-spend 60
           :facility "Assembler"
-          :pos [2 2]
+          :grid-pos {:page 1 :x 2 :y 2}
           :items {1102 2, 1104 1}
           :results {1202 2}}]
    1203 [{:id 97
           :name "Electric Motor"
           :time-spend 120
           :facility "Assembler"
-          :pos [3 2]
+          :grid-pos {:page 1 :x 3 :y 2}
           :items {1101 2, 1201 1, 1202 1}
           :results {1203 1}}]})
 
