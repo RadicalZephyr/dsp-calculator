@@ -71,6 +71,7 @@
                 height: 1lh;
                 width: max-content;
                 margin: auto 0;
+                z-index: -1;
         }
 
         .combo-selector .hint::before {
