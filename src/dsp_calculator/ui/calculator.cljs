@@ -2,7 +2,8 @@
   (:require [spade.core :refer [defclass]]
             [reagent.core :as reagent]
             [dsp-calculator.ui.calculator.controls :as control]
-            [dsp-calculator.ui.calculator.production :as prod]))
+            [dsp-calculator.ui.calculator.production :as prod]
+            [clojure.set :as set]))
 
 (declare combo-selector)
 
@@ -62,7 +63,8 @@
         first-tab (fn [] (reset! first-tab? true))
         second-tab (fn [] (reset! first-tab? false))]
     (fn [& {:keys [id recipes open? close]}]
-      (let [first-tab? @first-tab?]
+      (let [first-tab? @first-tab?
+            recipes @recipes]
         [:dialog.window.recipes {:id id
                                  :open open?
                                  :style {:position "relative"}}
@@ -132,3 +134,9 @@
               [[control/ratio-control update-controls ratio production-facility]
                [control/specific-control update-controls specific timescale]
                [control/proliferator-control update-controls proliferator]])]))))
+
+(defn split-recipes [recipes]
+  (set/rename-keys (->> (vals recipes)
+                        (group-by #(get-in % [:grid-pos :page])))
+                   {1 :items
+                    2 :buildings}))

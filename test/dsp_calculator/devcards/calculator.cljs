@@ -1,9 +1,10 @@
 (ns dsp-calculator.devcards.calculator
   (:require [devcards.core]
+            [ajax.core :refer [GET]]
+            [ajax.edn]
             [com.gfredericks.exact :as e]
             [reagent.core :as reagent]
             [spade.core :refer [defattrs defclass]]
-            [dsp-calculator.production-test :as prod-test]
             [dsp-calculator.ui.base :as ui]
             [dsp-calculator.ui.calculator :as calc]
             [dsp-calculator.ui.calculator.controls :as control]
@@ -22,23 +23,28 @@ The calculator interface, the most important part of the site.")
   "This includes the css for the calculator interface."
   (ui/stylesheet-includes))
 
-(def test-recipes
-  {:items (flatten (vals prod-test/test-recipes))
-   :buildings [{:id 2201
-                :name "Tesla Tower"
-                :facility "Assembler"
-                :pos [1 1]}
-               {:id 2202
-                :name "Wireless Power Tower"
-                :facility "Assembler"
-                :pos [1 2]}
-               {:id 2001
-                :name "Conveyor Belt Mk.I"
-                :facility "Assembler"
-                :pos [2 1]}]})
+(defn receive-edn [ratom response]
+  (reset! ratom response))
+
+(defn error-handler [type {:keys [status status-text]}]
+  (.log js/console (str "Error fetching " type ". " status " " status-text)))
+
+(defn fetch-once [type ratom]
+  (when (not (seq @ratom))
+    (GET (str "/data/" type ".edn")
+      {:handler #(receive-edn ratom %)
+       :error-handler #(error-handler type %)
+       :response-format (ajax.edn/edn-response-format)})))
+
+(def recipes (reagent/atom {}))
+
+(def dialog-recipes
+  (reagent/reaction
+   (calc/split-recipes @recipes)))
 
 (defcard-rg full-calculator
   (fn [state _]
+    (fetch-once "recipes_EN" recipes)
     (let [selected (reagent/cursor state [:selected])
           control-spec (reagent/cursor state [:controls])
           controls (reagent/reaction
@@ -48,7 +54,7 @@ The calculator interface, the most important part of the site.")
           summary (reagent/cursor state [:summary])
           tree (reagent/cursor state [:production-tree])]
       [calc/calculator
-       :recipes         test-recipes
+       :recipes         dialog-recipes
        :selected        selected
        :controls        controls
        :update-controls update-controls
@@ -78,7 +84,7 @@ The calculator interface, the most important part of the site.")
       (fn [state _]
         [:main.page.calculator
          [calc/combo-selector
-          :recipes test-recipes
+          :recipes dialog-recipes
           :selected selected
           :controls controls
           :update-controls update-controls]])))
@@ -106,6 +112,6 @@ The calculator interface, the most important part of the site.")
    [:div.combo-selector
     [calc/recipe-picker
      :id        (str (gensym "recipe-picker"))
-     :recipes   test-recipes
+     :recipes   dialog-recipes
      :open?     true
      :close     (fn [])]]])
