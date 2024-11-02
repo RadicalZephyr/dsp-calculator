@@ -8,7 +8,7 @@
    [:link {:rel "stylesheet" :href "/css/cursor.css"}]
    [:link {:rel "stylesheet" :href "/css/fonts.css"}]
    [:link {:rel "stylesheet" :href "/css/icons.css"}]
-   [:link {:rel "stylesheet" :href "/css/dev-icons.css"}]
+   [:link {:rel "stylesheet" :href "/css/specific-icons.css"}]
    [:link {:rel "stylesheet" :href "/css/pages/calculator.css"}]
    [:link {:rel "stylesheet" :href "/css/components/combo-selector.css"}]
    [:link {:rel "stylesheet" :href "/css/components/dialog.css"}]

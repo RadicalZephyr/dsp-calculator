@@ -42,7 +42,7 @@
 (defcard-rg icons-css
   "This includes the css for displaying icons into the page."
   [:div
-   [:link {:rel "stylesheet" :href "/css/dev-icons.css"}]])
+   [:link {:rel "stylesheet" :href "/css/specific-icons.css"}]])
 
 (def valid-recipe-icons
   #{16 29 32 35 54 58 61 62 69 74 79 100 115 121})
