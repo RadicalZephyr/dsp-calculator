@@ -43,7 +43,13 @@ The calculator interface, the most important part of the site.")
 
 (def dialog-recipes
   (reagent/reaction
-   (calc/split-recipes @recipes)))
+   (when-let [recipes @recipes]
+     (calc/split-recipes recipes))))
+
+(def recipes-by-output-id
+  (reagent/reaction
+   (when-let [recipes @recipes]
+     (prod/group-by-outputs recipes))))
 
 (defcard-rg full-calculator
   (fn [state _]
@@ -56,12 +62,10 @@ The calculator interface, the most important part of the site.")
           update-controls #(swap! control-spec control/update-controls %1 %2)
           context (reagent/cursor state [:context])
           tree (reagent/reaction
-                (when-let [id (-> @selected
-                                  :results
-                                  keys
-                                  first)]
+                (when-let [id (:id @selected)]
                   (prod/production-tree @items
                                         @recipes
+                                        @recipes-by-output-id
                                         id)))
           summary (reagent/reaction
                    (prod/summarize @tree))]

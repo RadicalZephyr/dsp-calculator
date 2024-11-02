@@ -152,7 +152,7 @@
   Note, because this tree shows the full production chain, there can
   be multiple instances of any given product. Each individual stage
   for that item can use a different recipe."
-  [items recipes item-id]
+  [items recipes recipes-by-output recipe-id]
   (letfn [(process-recipe [depth scale recipe item-id]
             (let [count (e// scale (get-result-rate recipe item-id))]
               {:id item-id
@@ -177,7 +177,7 @@
               ;; want to process at least one recipe to create the
               ;; leaf nodes for raw resources, even if there's no
               ;; explicit recipe present.
-              (let [item-recipes (get recipes item-id)
+              (let [item-recipes (get recipes-by-output item-id)
                     first-recipe (first item-recipes)
                     alt-recipes (rest item-recipes)
                     node (process-recipe depth scale first-recipe item-id)
@@ -192,15 +192,17 @@
     ;; top-level recipe, we need to process it slightly differently
     ;; than we would when recursing.
     (let [depth 0
-          item-recipes (get recipes item-id)
-          first-recipe (first item-recipes)
-          alt-recipes (rest item-recipes)
-          node (process-recipe depth (get-result-rate first-recipe item-id) first-recipe item-id)
-          alt-recipes (->> alt-recipes
-                           (map #(process-recipe depth (get-result-rate % item-id) % item-id))
-                           (map (juxt :recipe identity))
-                           (into {}))]
-      (assoc node :alt-recipes alt-recipes))))
+          item-recipe (get recipes recipe-id)
+
+          ;; NOTE: Getting the first result is arbitrary since the
+          ;; goal is to produce a recipe "count" of 1, as long as we
+          ;; pick the same item-id both here and inside
+          ;; process-recipe, the result will be correct.
+          item-id (-> item-recipe
+                      (get :results)
+                      keys
+                      first)]
+      (process-recipe depth (get-result-rate item-recipe item-id) item-recipe item-id))))
 
 (def default-summary
   {:facilities #{}
@@ -208,7 +210,7 @@
 
 (defn summarize
   "Recurse through a production-tree, collecting details on which
-  production facilities are used and totalling up the raw resources
+  production facilities are used and totaling up the raw resources
   needed."
   [tree]
   (letfn [(process-leaf [resource-summary node]

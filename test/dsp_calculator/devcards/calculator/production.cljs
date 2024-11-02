@@ -23,7 +23,8 @@
                  :belt-rate (e/native->integer 6)}
         tree (prod/production-tree prod-test/test-items
                                    prod-test/test-recipes
-                                   1101)
+                                   prod-test/test-recipes-by-output
+                                   1)
         summary (prod/summarize tree)]
     [:main.page.calculator
      [:div.solver.has-proliferators
@@ -40,7 +41,8 @@
                  :belt-rate (e/native->integer 6)}
         tree (prod/production-tree prod-test/test-items
                                    prod-test/test-recipes
-                                   1101)]
+                                   prod-test/test-recipes-by-output
+                                   1)]
     [:main.page.calculator
      [:div.solver.has-proliferators
       [sut/production-tree-header]
@@ -52,7 +54,8 @@
                        :belt-rate (e/native->integer 6)})
         tree (prod/production-tree prod-test/test-items
                                    prod-test/test-recipes
-                                   1203)
+                                   prod-test/test-recipes-by-output
+                                   97)
         summary (atom (prod/summarize tree))
         tree (atom tree)]
     [:main.page.calculator
