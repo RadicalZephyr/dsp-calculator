@@ -160,7 +160,7 @@
                :count count
                :recipe (:id recipe)
                :time-spend (:time-spend recipe)
-               :facility (:made-from-string recipe)
+               :facility (:facility recipe)
                :results (get recipe :results {})
                :items (let [depth (inc depth)]
                         (->> (:items recipe)

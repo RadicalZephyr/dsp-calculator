@@ -72,10 +72,13 @@
                            (into {}))
           grid-pos (parse-grid-index (get m "gridIndex"))]
       (-> m
-          (dissoc "gridIndex" "items" "itemCounts" "results" "resultCounts")
+          (dissoc "_madeFromString" "gridIndex"
+                  "items" "itemCounts"
+                  "results" "resultCounts")
           (assoc "items" new-items
                  "results" new-results
-                 "gridPos" grid-pos)))
+                 "gridPos" grid-pos
+                 "facility" (get m "_madeFromString"))))
     m))
 
 (defn cljify-map [m]
