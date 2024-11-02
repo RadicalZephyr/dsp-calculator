@@ -95,7 +95,7 @@
 
 (defn selector-button [selected open-dialog]
   (let [[class icon title] (if selected
-                             [".recipe" (str "item." (:id selected)) (:name selected)]
+                             ["recipe" (str "recipe." (:id selected)) (:name selected)]
                              [nil "ui.select-recipe" "Select a recipe"])]
     [:div.icon {:class     [class]
                 :data-icon icon
