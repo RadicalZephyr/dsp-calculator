@@ -60,7 +60,12 @@ The calculator interface, the most important part of the site.")
           controls (reagent/reaction
                     (control/render-controls [@control-spec @selected]))
           update-controls #(swap! control-spec control/update-controls %1 %2)
-          context (reagent/cursor state [:context])
+          context (reagent/reaction
+                   (when (seq @selected)
+                     (let [controls @controls]
+                       (-> controls
+                           (assoc :belt-rate (e/native->integer 6))
+                           (update :ratio e/native->integer)))))
           tree (reagent/reaction
                 (when-let [id (:id @selected)]
                   (prod/production-tree @items
@@ -82,10 +87,7 @@ The calculator interface, the most important part of the site.")
     :controls {:ratio 1
                :specific nil
                :timescale "minute"
-               :proliferator "none"}
-    :context {:ratio (e/native->integer 1)
-              :timescale "minute"
-              :belt-rate (e/native->integer 6)}})
+               :proliferator "none"}})
   {:inspect-data true})
 
 (defcard-rg full-calculator-control
