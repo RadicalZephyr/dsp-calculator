@@ -126,8 +126,10 @@
       ^{:key (:id resource)} [production-tree-leaf-node context 0 resource])]])
 
 (defn production-tree [context summary tree]
-  (let [context @context]
-    [:div.solver.has-proliferators
-     [production-tree-summary context (vals (:raw-resources @summary))]
-     [production-tree-header]
-     [production-tree-node context 0 @tree]]))
+  (let [context @context
+        tree @tree]
+    (when (seq tree)
+      [:div.solver.has-proliferators
+       [production-tree-summary context (vals (:raw-resources @summary))]
+       [production-tree-header]
+       [production-tree-node context 0 tree]])))

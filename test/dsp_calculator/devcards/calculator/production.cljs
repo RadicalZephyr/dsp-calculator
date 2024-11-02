@@ -29,6 +29,11 @@
      [:div.solver.has-proliferators
       [sut/production-tree-summary context (vals (:raw-resources summary))]]]))
 
+(defcard-rg empty-production-tree
+  "An empty production tree is not rendered."
+  [:main.page.calculator
+   [sut/production-tree (atom {}) (atom {}) (atom {})]])
+
 (defcard-rg production-tree
   (let [context {:ratio (e/native->integer 1)
                  :timescale "minute"
