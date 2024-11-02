@@ -100,20 +100,20 @@
           (def item-recipe-icons (mapv #(match-item-recipe recipes-by-output %)
                                        item-icons))))
 
-(defn render-icon-css [[ids [x y]]]
-  (format "%s{ background-position: %s%% %s%%; }"
-          (apply str (map #(format "[data-icon=\"%s\"] " %) ids))
-          x
-          y))
+#?(:clj (defn render-icon-css [[ids [x y]]]
+          (format "%s{ background-position: %s%% %s%%; }"
+                  (apply str (map #(format "[data-icon=\"%s\"] " %) ids))
+                  x
+                  y)))
 
-(defn render-all-icon-recipe-css [item-recipe-icons]
-  (with-open [w (io/writer
-                 (io/file
-                  (io/resource "public/css")
-                  "icon-recipe.css"))]
-    (binding [*out* w]
-      (doseq [row (map #(render-icon-css %) item-recipe-icons)]
-        (println row)))))
+#?(:clj (defn render-all-icon-recipe-css [item-recipe-icons]
+          (with-open [w (io/writer
+                         (io/file
+                          (io/resource "public/css")
+                          "icon-recipe.css"))]
+            (binding [*out* w]
+              (doseq [row (map #(render-icon-css %) item-recipe-icons)]
+                (println row))))))
 
 (def ^:dynamic *max-depth* 10)
 
