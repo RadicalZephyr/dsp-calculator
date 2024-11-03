@@ -21,11 +21,15 @@
     :chemical (first sut/chemical-plants)}))
 
 (defcard-rg preferred-buildings-empty
-  [:main.page.calculator
-   [:div.combo-selector
-    [:details.preferred.preferred-buildings {:open true}
-     [:summary "Preferred Buildings"]
-     [:div.fields]]]])
+  "The preferred buildings section is not rendered when the facilities
+  key is empty or nil."
+  (pb-card [args]
+    [:main.page.calculator
+     [:div.combo-selector
+      [sut/preferred-buildings
+       (assoc args
+              :facilities (atom nil))]]])
+  (preferred-state))
 
 (defcard-rg preferred-buildings-singles
   (pb-card [args]

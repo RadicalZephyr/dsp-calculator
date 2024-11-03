@@ -165,58 +165,59 @@
         smelter-val @smelter
         assembler-val @assembler
         chemical-val @chemical]
-    [:details.preferred.preferred-buildings {:open true}
-     [:summary "Preferred Buildings"]
-     (let [row (atom 1)]
-       `[:div.fields
-         ~@(preferred-building-row conveyor-belts
-                                   [@row (inc @row)]
-                                   "belt"
-                                   belt-val
-                                   belt
-                                   "Logistics")
-
-         ~@(when (contains? facilities "Miner")
-             (swap! row + 2)
-             (preferred-building-row mining-productivity-techs
+    (when (seq facilities)
+      [:details.preferred.preferred-buildings {:open true}
+       [:summary "Preferred Buildings"]
+       (let [row (atom 1)]
+         `[:div.fields
+           ~@(preferred-building-row conveyor-belts
                                      [@row (inc @row)]
-                                     "mining-productivity"
-                                     mining-productivity-val
-                                     mining-productivity
-                                     "Mining Productivity"))
+                                     "belt"
+                                     belt-val
+                                     belt
+                                     "Logistics")
 
-         ~@(when (contains? facilities "Miner")
-             (swap! row + 2)
-             (preferred-building-row miners
-                                     [@row (inc @row)]
-                                     "miner"
-                                     miner-val
-                                     miner
-                                     "Miner"))
+           ~@(when (contains? facilities "Miner")
+               (swap! row + 2)
+               (preferred-building-row mining-productivity-techs
+                                       [@row (inc @row)]
+                                       "mining-productivity"
+                                       mining-productivity-val
+                                       mining-productivity
+                                       "Mining Productivity"))
 
-         ~@(when (contains? facilities "Smelting Facility")
-             (swap! row + 2)
-             (preferred-building-row smelters
-                                     [@row (inc @row)]
-                                     "smelter"
-                                     smelter-val
-                                     smelter
-                                     "Smelting Facility"))
+           ~@(when (contains? facilities "Miner")
+               (swap! row + 2)
+               (preferred-building-row miners
+                                       [@row (inc @row)]
+                                       "miner"
+                                       miner-val
+                                       miner
+                                       "Miner"))
 
-         ~@(when (contains? facilities "Assembler")
-             (swap! row + 2)
-             (preferred-building-row assemblers
-                                     [@row (inc @row)]
-                                     "assembler"
-                                     assembler-val
-                                     assembler
-                                     "Assembler"))
+           ~@(when (contains? facilities "Smelting Facility")
+               (swap! row + 2)
+               (preferred-building-row smelters
+                                       [@row (inc @row)]
+                                       "smelter"
+                                       smelter-val
+                                       smelter
+                                       "Smelting Facility"))
 
-         ~@(when (contains? facilities "Chemical Facility")
-             (swap! row + 2)
-             (preferred-building-row chemical-plants
-                                     [@row (inc @row)]
-                                     "chemical"
-                                     chemical-val
-                                     chemical
-                                     "Chemical Facility"))])]))
+           ~@(when (contains? facilities "Assembler")
+               (swap! row + 2)
+               (preferred-building-row assemblers
+                                       [@row (inc @row)]
+                                       "assembler"
+                                       assembler-val
+                                       assembler
+                                       "Assembler"))
+
+           ~@(when (contains? facilities "Chemical Facility")
+               (swap! row + 2)
+               (preferred-building-row chemical-plants
+                                       [@row (inc @row)]
+                                       "chemical"
+                                       chemical-val
+                                       chemical
+                                       "Chemical Facility"))])])))
