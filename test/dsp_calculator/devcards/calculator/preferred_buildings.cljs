@@ -32,22 +32,22 @@
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities #{"Miner"})]]
+             :facilities (atom #{"Miner"}))]]
     [:br]
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities #{"Smelting Facility"})]]
+             :facilities (atom #{"Smelting Facility"}))]]
     [:br]
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities #{"Assembler"})]]
+             :facilities (atom #{"Assembler"}))]]
     [:br]
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities #{"Chemical Facility"})]])
+             :facilities (atom #{"Chemical Facility"}))]])
   (preferred-state)
   {:inspect-data true})
 
@@ -56,32 +56,32 @@
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities #{"Miner" "Smelting Facility"})]]
+             :facilities (atom #{"Miner" "Smelting Facility"}))]]
     [:br]
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities #{"Miner" "Assembler"})]]
+             :facilities (atom #{"Miner" "Assembler"}))]]
     [:br]
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities #{"Miner" "Chemical Facility"})]]
+             :facilities (atom #{"Miner" "Chemical Facility"}))]]
     [:br]
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities #{"Smelting Facility" "Assembler"})]]
+             :facilities (atom #{"Smelting Facility" "Assembler"}))]]
     [:br]
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities #{"Smelting Facility" "Chemical Facility"})]]
+             :facilities (atom #{"Smelting Facility" "Chemical Facility"}))]]
     [:br]
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities #{"Assembler" "Chemical Facility"})]])
+             :facilities (atom #{"Assembler" "Chemical Facility"}))]])
   (preferred-state)
   {:inspect-data true})
 
@@ -90,22 +90,22 @@
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities #{"Miner" "Smelting Facility" "Assembler"})]]
+             :facilities (atom #{"Miner" "Smelting Facility" "Assembler"}))]]
     [:br]
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities #{"Smelting Facility" "Assembler" "Chemical Facility"})]]
+             :facilities (atom #{"Smelting Facility" "Assembler" "Chemical Facility"}))]]
     [:br]
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities #{"Miner" "Smelting Facility" "Chemical Facility"})]]
+             :facilities (atom #{"Miner" "Smelting Facility" "Chemical Facility"}))]]
     [:br]
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities #{"Miner" "Assembler" "Chemical Facility"})]])
+             :facilities (atom #{"Miner" "Assembler" "Chemical Facility"}))]])
   (preferred-state)
   {:inspect-data true})
 
@@ -113,6 +113,7 @@
   (pb-card [args]
     [:div.combo-selector
      [sut/preferred-buildings
-      (assoc args :facilities #{"Miner" "Smelting Facility" "Assembler" "Chemical Facility"})]])
+      (assoc args
+             :facilities (atom #{"Miner" "Smelting Facility" "Assembler" "Chemical Facility"}))]])
   (preferred-state)
   {:inspect-data true})

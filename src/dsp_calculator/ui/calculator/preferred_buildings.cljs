@@ -158,7 +158,8 @@
                                      smelter
                                      assembler
                                      chemical]}]
-  (let [belt-val @belt
+  (let [facilities @facilities
+        belt-val @belt
         mining-productivity-val @mining-productivity
         miner-val @miner
         smelter-val @smelter
