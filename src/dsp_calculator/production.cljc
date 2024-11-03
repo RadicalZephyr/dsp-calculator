@@ -43,31 +43,49 @@
                       (get-in items-zh [id :name])]))))
 
 (def raw-resources
-  [[1000 "Water" "水"]
-   [1001 "Iron Ore" "铁矿"]
-   [1002 "Copper Ore" "铜矿"]
-   [1004 "Titanium Ore" "钛石"]
-   [1005 "Stone" "石矿"]
-   [1006 "Coal" "煤矿"]
-   [1007 "Crude Oil" "原油"]
-   [1011 "Fire Ice" "可燃冰"]
-   [1012 "Kimberlite Ore" "金伯利矿石"]
-   [1013 "Fractal Silicon" "分形硅石"]
-   [1014 "Grating Crystal" "光栅石"]
-   [1015 "Stalagmite Crystal" "刺笋结晶"]
-   [1016 "Unipolar Magnet" "单极磁石"]
-   [1030 "Log" "木材"]
-   [1031 "Plant Fuel" "植物燃料"]
-   [1208 "Critical Photon" "临界光子"]
-   [2207 "Accumulator (full)" "蓄电器（满）"] ;; TODO: write a recipe
+  [[1000 1 "Water" "水"]
+   [1001 1 "Iron Ore" "铁矿"]
+   [1002 1 "Copper Ore" "铜矿"]
+   [1004 1 "Titanium Ore" "钛石"]
+   [1005 1 "Stone" "石矿"]
+   [1006 1 "Coal" "煤矿"]
+   [1007 1 "Crude Oil" "原油"]
+   [1011 2 "Fire Ice" "可燃冰"]
+   [1012 2 "Kimberlite Ore" "金伯利矿石"]
+   [1013 2 "Fractal Silicon" "分形硅石"]
+   [1014 2 "Grating Crystal" "光栅石"]
+   [1015 2 "Stalagmite Crystal" "刺笋结晶"]
+   [1016 2 "Unipolar Magnet" "单极磁石"]
+   [1030 1 "Log" "木材"]
+   [1031 1 "Plant Fuel" "植物燃料"]
+   [1116 1 "Sulfuric Acid" "硫酸"]
+   [1120 1 "Hydrogen" "氢"]
+   [1121 1 "Deuterium" "重氢"]
+   [1208 3 "Critical Photon" "临界光子"]
+   [2207 3 "Accumulator (full)" "蓄电器（满）"] ;; TODO: write a recipe
                                             ;; for this and include
                                             ;; it in the EDN file.
-   [5201 "Dark Fog Matrix" "存储单元"]
-   [5202 "Silicon-based Neuron" "硅基神经元"]
-   [5203 "Matter Recombinator" "物质重组器"]
-   [5204 "Negentropy Singularity" "负熵奇点"]
-   [5205 "Core Element" "虚粒子"]
-   [5206 "Energy Shard" "能量碎片"]])
+   [5201 4 "Dark Fog Matrix" "存储单元"]
+   [5202 4 "Silicon-based Neuron" "硅基神经元"]
+   [5203 4 "Matter Recombinator" "物质重组器"]
+   [5204 4 "Negentropy Singularity" "负熵奇点"]
+   [5205 4 "Core Element" "虚粒子"]
+   [5206 4 "Energy Shard" "能量碎片"]])
+
+#?(:clj (defn pos->str [{:keys [page x y]}]
+          (format "%d%d%02d" page y x)))
+
+#?(:clj (defn item->recipe [idx [item-id row name-en name-zh]]
+          (let [pos {:page 3, :x (inc idx), :y row}]
+            {:id (+ 300 (- item-id 1000)),
+             :name name-en
+             :type "MINE",
+             :facility "Miner",
+             :time-spend 60,
+             :grid-pos pos
+             :items {},
+             :results {item-id 1},
+             :sid (pos->str pos)})))
 
 (defn group-by-outputs [recipes]
   (persistent!
