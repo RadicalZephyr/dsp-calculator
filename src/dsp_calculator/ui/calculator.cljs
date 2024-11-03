@@ -2,6 +2,7 @@
   (:require [spade.core :refer [defclass]]
             [reagent.core :as reagent]
             [dsp-calculator.ui.calculator.controls :as control]
+            [dsp-calculator.ui.calculator.preferred-buildings :as pref]
             [dsp-calculator.ui.calculator.production :as prod]
             [clojure.set :as set]))
 
@@ -13,6 +14,7 @@
                             controls
                             update-controls
                             context
+                            preferences
                             summary
                             tree]}]
   [:main.page.calculator
@@ -22,6 +24,8 @@
     :update-selected update-selected
     :controls controls
     :update-controls update-controls]
+   [:div.combo-selector
+    [pref/preferred-buildings preferences]]
    [prod/production-tree context summary tree]])
 
 (defclass grid-pos [x y]

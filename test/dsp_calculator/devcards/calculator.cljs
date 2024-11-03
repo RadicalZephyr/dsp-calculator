@@ -75,13 +75,24 @@ The calculator interface, the most important part of the site.")
           summary (reagent/reaction
                    (let [tree @tree]
                      (when (seq tree)
-                       (prod/summarize tree))))]
+                       (prod/summarize tree))))
+          facilities (reagent/reaction
+                      (:facilities @summary))
+          preferences
+          {:facilities facilities
+           :belt (reagent/cursor state [:belt])
+           :mining-productivity (reagent/cursor state [:mining-productivity])
+           :miner (reagent/cursor state [:miner])
+           :smelter (reagent/cursor state [:smelter])
+           :assembler (reagent/cursor state [:assembler])
+           :chemical (reagent/cursor state [:chemical])}]
       [calc/calculator
        :recipes         dialog-recipes
        :selected        selected
        :controls        controls
        :update-controls update-controls
        :context         context
+       :preferences     preferences
        :summary         summary
        :tree            tree]))
   (reagent/atom
@@ -89,7 +100,13 @@ The calculator interface, the most important part of the site.")
     :controls {:ratio 1
                :specific nil
                :timescale "minute"
-               :proliferator "none"}})
+               :proliferator "none"}
+    :belt nil
+    :mining-productivity nil
+    :miner nil
+    :smelter nil
+    :assembler nil
+    :chemical nil})
   {:inspect-data true})
 
 (defcard-rg full-calculator-control
