@@ -94,6 +94,13 @@
              :results {item-id 1},
              :sid (pos->str pos)})))
 
+#?(:clj (defn render-minable-resource-recipes [minable-resources]
+          (->> minable-resources
+               (group-by second)
+               vals
+               (mapcat #(map-indexed item->recipe %))
+               vec)))
+
 (def needed-item-names
   ["Ray Receiver"
    "Orbital Collector"
