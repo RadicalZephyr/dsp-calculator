@@ -23,9 +23,8 @@
     :selected selected
     :update-selected update-selected
     :controls controls
-    :update-controls update-controls]
-   [:div.combo-selector
-    [pref/preferred-buildings preferences]]
+    :update-controls update-controls
+    :preferences preferences]
    [prod/production-tree context summary tree]])
 
 (defclass grid-pos [x y]
@@ -110,7 +109,8 @@
 (defn combo-selector [& {:keys [recipes
                                 selected
                                 controls
-                                update-controls]}]
+                                update-controls
+                                preferences]}]
   (let [dialog-id (str (gensym "recipe-picker"))
         open-dialog (fn []
                       (let [dialog (.getElementById js/document dialog-id)]
@@ -137,7 +137,8 @@
           ~@(when selected-recipe
               [[control/ratio-control update-controls ratio production-facility]
                [control/specific-control update-controls specific timescale]
-               [control/proliferator-control update-controls proliferator]])]))))
+               [control/proliferator-control update-controls proliferator]
+               [pref/preferred-buildings preferences]])]))))
 
 (defn split-recipes [recipes]
   (set/rename-keys (->> (vals recipes)
