@@ -85,9 +85,9 @@
 #?(:clj (defn item->recipe [idx [item-id row facility name-en name-zh]]
           (let [pos {:page 3, :x (inc idx), :y row}]
             {:id (+ 300 (- item-id 1000)),
-             :name name-en
+             :name name-zh,
              :type "MINE",
-             :facility facility,
+             :facility (facility-en->zh facility),
              :time-spend 60,
              :grid-pos pos
              :items {},
