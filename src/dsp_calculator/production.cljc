@@ -114,6 +114,46 @@
                   (comp :name items-to)))
        (into {})))
 
+(defn create-multi-recipe-map [items recipes-by-output]
+  (->> recipes-by-output
+       (filter #(> (count (second %)) 1))
+       (map (fn [[id rs]]
+              [[id (get-in items [id :name])]
+               (->> rs
+                    (map (juxt :id :name))
+                    (into (sorted-map)))]))
+       (into (sorted-map))))
+
+(def multiple-recipes
+  {[1109 "Energetic Graphite"] {17 "Energetic Graphite",
+                                58 "X-ray Cracking"},
+   [1112 "Diamond"] {60 "Diamond",
+                     61 "Diamond (advanced)"},
+   [1113 "Crystal Silicon"] {37 "Crystal Silicon",
+                             62 "Crystal Silicon (advanced)"},
+   [1114 "Refined Oil"] {16 "Plasma Refining",
+                         121 "Reformed Refinement"},
+   [1117 "Organic Crystal"] {25 "Organic Crystal",
+                             54 "Organic Crystal (original)"},
+   [1120 "Hydrogen"] {16 "Plasma Refining",
+                      32 "Graphene (advanced)",
+                      58 "X-ray Cracking",
+                      74 "Mass-energy Storage"},
+   [1121 "Deuterium"] {40 "Deuterium",
+                       115 "Deuterium Fractionation"},
+   [1123 "Graphene"] {31 "Graphene",
+                      32 "Graphene (advanced)"},
+   [1124 "Carbon Nanotube"] {33 "Carbon Nanotube",
+                             35 "Carbon Nanotube (advanced)"},
+   [1126 "Casimir Crystal"] {28 "Casimir Crystal",
+                             29 "Casimir Crystal (advanced)"}
+   [1206 "Particle Container"] {99 "Particle Container",
+                                100 "Particle Container (advanced)"},
+   [1210 "Space Warper"] {78 "Space Warper",
+                          79 "Space Warper (advanced)"},
+   [1404 "Photon Combiner"] {68 "Photon Combiner",
+                             69 "Photon Combiner (advanced)"}})
+
 (defn group-by-outputs [recipes]
   (persistent!
    (reduce
