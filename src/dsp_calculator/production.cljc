@@ -43,44 +43,51 @@
                       (get-in items-zh [id :name])]))))
 
 (def minable-resources
-  [[1000 1 "Water" "水"]
-   [1001 1 "Iron Ore" "铁矿"]
-   [1002 1 "Copper Ore" "铜矿"]
-   [1004 1 "Titanium Ore" "钛石"]
-   [1005 1 "Stone" "石矿"]
-   [1006 1 "Coal" "煤矿"]
-   [1007 1 "Crude Oil" "原油"]
-   [1011 2 "Fire Ice" "可燃冰"]
-   [1012 2 "Kimberlite Ore" "金伯利矿石"]
-   [1013 2 "Fractal Silicon" "分形硅石"]
-   [1014 2 "Grating Crystal" "光栅石"]
-   [1015 2 "Stalagmite Crystal" "刺笋结晶"]
-   [1016 2 "Unipolar Magnet" "单极磁石"]
-   [1116 1 "Sulfuric Acid" "硫酸"]
-   [1120 1 "Hydrogen" "氢"]
-   [1121 1 "Deuterium" "重氢"]
-   [1208 3 "Critical Photon" "临界光子"]
-   [2207 3 "Accumulator (full)" "蓄电器（满）"]])
+  [[1000 1 "Water Pump" "Water" "水"]
+   [1001 1 "Mining Facility" "Iron Ore" "铁矿"]
+   [1002 1 "Mining Facility" "Copper Ore" "铜矿"]
+   [1004 1 "Mining Facility" "Titanium Ore" "钛石"]
+   [1005 1 "Mining Facility" "Stone" "石矿"]
+   [1006 1 "Mining Facility" "Coal" "煤矿"]
+   [1007 1 "Oil Extractor" "Crude Oil" "原油"]
+   [1011 2 "Mining Facility" "Fire Ice" "可燃冰"]
+   [1012 2 "Mining Facility" "Kimberlite Ore" "金伯利矿石"]
+   [1013 2 "Mining Facility" "Fractal Silicon" "分形硅石"]
+   [1014 2 "Mining Facility" "Grating Crystal" "光栅石"]
+   [1015 2 "Mining Facility" "Stalagmite Crystal" "刺笋结晶"]
+   [1016 2 "Mining Facility" "Unipolar Magnet" "单极磁石"]
+   [1116 1 "Water Pump" "Sulfuric Acid" "硫酸"]
+   [1120 1 "Orbital Collector" "Hydrogen" "氢"]
+   [1121 1 "Orbital Collector" "Deuterium" "重氢"]
+   [1208 3 "Ray Receiver" "Critical Photon" "临界光子"]
+   [2207 3 "Assembler" "Accumulator (full)" "蓄电器（满）"]])
 
 (def non-minable-resources
-  [[1030 1 "Log" "木材"]
-   [1031 1 "Plant Fuel" "植物燃料"]
-   [5201 4 "Dark Fog Matrix" "存储单元"]
-   [5202 4 "Silicon-based Neuron" "硅基神经元"]
-   [5203 4 "Matter Recombinator" "物质重组器"]
-   [5204 4 "Negentropy Singularity" "负熵奇点"]
-   [5205 4 "Core Element" "虚粒子"]
-   [5206 4 "Energy Shard" "能量碎片"]])
+  [[1030 1 "" "Log" "木材"]
+   [1031 1 "" "Plant Fuel" "植物燃料"]
+   [5201 4 "" "Dark Fog Matrix" "存储单元"]
+   [5202 4 "" "Silicon-based Neuron" "硅基神经元"]
+   [5203 4 "" "Matter Recombinator" "物质重组器"]
+   [5204 4 "" "Negentropy Singularity" "负熵奇点"]
+   [5205 4 "" "Core Element" "虚粒子"]
+   [5206 4 "" "Energy Shard" "能量碎片"]])
+
+(def facility-en->zh
+  {"Mining Facility" "采矿设备"
+   "Ray Receiver" "射线接收站"
+   "Orbital Collector" "轨道采集器"
+   "Water Pump" "抽水站"
+   "Oil Extractor" "原油萃取站"})
 
 #?(:clj (defn pos->str [{:keys [page x y]}]
           (format "%d%d%02d" page y x)))
 
-#?(:clj (defn item->recipe [idx [item-id row name-en name-zh]]
+#?(:clj (defn item->recipe [idx [item-id row facility name-en name-zh]]
           (let [pos {:page 3, :x (inc idx), :y row}]
             {:id (+ 300 (- item-id 1000)),
              :name name-en
              :type "MINE",
-             :facility "Miner",
+             :facility facility,
              :time-spend 60,
              :grid-pos pos
              :items {},
