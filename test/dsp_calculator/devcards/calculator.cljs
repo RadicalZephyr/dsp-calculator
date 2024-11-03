@@ -9,6 +9,7 @@
             [dsp-calculator.ui.base :as ui]
             [dsp-calculator.ui.calculator :as calc]
             [dsp-calculator.ui.calculator.controls :as control]
+            [dsp-calculator.ui.calculator.preferred-buildings :as pref]
             [dsp-calculator.devcards.calculator.controls]
             [dsp-calculator.devcards.calculator.preferred-buildings]
             [dsp-calculator.devcards.calculator.production])
@@ -60,12 +61,6 @@ The calculator interface, the most important part of the site.")
           controls (reagent/reaction
                     (control/render-controls [@control-spec @selected]))
           update-controls #(swap! control-spec control/update-controls %1 %2)
-          context (reagent/reaction
-                   (when (seq @selected)
-                     (let [controls @controls]
-                       (-> controls
-                           (assoc :belt-rate (e/native->integer 6))
-                           (update :ratio e/native->integer)))))
           tree (reagent/reaction
                 (when-let [id (:id @selected)]
                   (prod/production-tree @items
@@ -85,7 +80,14 @@ The calculator interface, the most important part of the site.")
            :miner (reagent/cursor state [:miner])
            :smelter (reagent/cursor state [:smelter])
            :assembler (reagent/cursor state [:assembler])
-           :chemical (reagent/cursor state [:chemical])}]
+           :chemical (reagent/cursor state [:chemical])}
+          context (reagent/reaction
+                   (when (seq @selected)
+                     (let [controls @controls]
+                       (-> controls
+                           (assoc :belt-rate (e/native->integer
+                                              (:speed @(:belt preferences))))
+                           (update :ratio e/native->integer)))))]
       [calc/calculator
        :recipes         dialog-recipes
        :selected        selected
@@ -101,12 +103,12 @@ The calculator interface, the most important part of the site.")
                :specific nil
                :timescale "minute"
                :proliferator "none"}
-    :belt nil
-    :mining-productivity nil
-    :miner nil
-    :smelter nil
-    :assembler nil
-    :chemical nil})
+    :belt (first pref/conveyor-belts)
+    :mining-productivity (first pref/mining-productivity-techs)
+    :miner (first pref/miners)
+    :smelter (first pref/smelters)
+    :assembler (first pref/assemblers)
+    :chemical (first pref/chemical-plants)})
   {:inspect-data true})
 
 (defcard-rg full-calculator-control
