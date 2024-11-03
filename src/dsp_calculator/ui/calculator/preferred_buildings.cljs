@@ -141,6 +141,7 @@
 
 (defn preferred-building-option [timescale x type selected change building]
   (let [selected @selected
+        timescale @timescale
         {:keys [id-fn
                 title-suffix
                 data-key
@@ -176,8 +177,7 @@
                                      smelter
                                      assembler
                                      chemical]}]
-  (let [facilities @facilities
-        timescale @timescale]
+  (let [facilities @facilities]
     (when (seq facilities)
       [:details.preferred.preferred-buildings {:open true}
        [:summary "Preferred Buildings"]
