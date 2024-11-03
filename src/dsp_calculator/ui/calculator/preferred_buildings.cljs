@@ -87,7 +87,7 @@
             (let [speed (r/str (e/* (scale-by timescale)
                                     (:speed building)))]
               {:id-fn item-id
-               :title-suffix (str " — Transport Speed: "
+               :title-suffix (str "Transport Speed: "
                                   speed
                                   " items " (time-label timescale))
                :data-key :data-per
@@ -98,7 +98,7 @@
                                                             (:speed building))
                                                        hundred)]
                              {:id-fn tech-id
-                              :title-suffix (str " — Mining Efficiency: +"
+                              :title-suffix (str "Mining Efficiency: +"
                                                  percent-increase
                                                  "%")
                               :data-key :data-count
@@ -107,7 +107,7 @@
              (let [speed (r/str (e/* (scale-by timescale)
                                      (:speed building)))]
                {:id-fn item-id
-                :title-suffix (str " — Mining Speed: "
+                :title-suffix (str "Mining Speed: "
                                    speed
                                    " items "
                                    (time-label timescale)
@@ -117,7 +117,7 @@
    :else (fn [building timescale]
            (let [speed (r/str (:count building))]
              {:id-fn item-id
-              :title-suffix (str " — Production Speed: " speed)
+              :title-suffix (str "Production Speed: " speed)
               :data-key :data-count
               :data-val (str speed "×")}))})
 
@@ -149,6 +149,7 @@
               :selected (= (:id selected) (:id building))
               :on-change #(change building)
               :title (str (:name building)
+                          " — "
                           title-suffix)}]
      [:span.item.icon {:title (:name building)
                        :data-icon (id-fn building)
