@@ -156,10 +156,10 @@
                        data-key data-val
                        :lang "en-US"}]]))
 
-(defn preferred-building-row [timescale data [x y :as row] type selected ra label]
+(defn preferred-building-row [timescale data [x y :as row] type selected change label]
   (->> data
        (map (fn [item]
-              [preferred-building-option timescale row type selected #(reset! ra %) item]))
+              [preferred-building-option timescale row type selected change item]))
        (into [[:span.name {:class (grid-row x y)} label]])))
 
 (defn preferred-buildings [& {:keys [facilities
@@ -188,7 +188,7 @@
                                      [@row (inc @row)]
                                      "belt"
                                      belt-val
-                                     belt
+                                     #(reset! belt %)
                                      "Logistics")
 
            ~@(when (contains? facilities "Miner")
@@ -198,7 +198,7 @@
                                        [@row (inc @row)]
                                        "mining-productivity"
                                        mining-productivity-val
-                                       mining-productivity
+                                       #(reset! mining-productivity %)
                                        "Mining Productivity"))
 
            ~@(when (contains? facilities "Miner")
@@ -208,7 +208,7 @@
                                        [@row (inc @row)]
                                        "miner"
                                        miner-val
-                                       miner
+                                       #(reset! miner %)
                                        "Miner"))
 
            ~@(when (contains? facilities "Smelting Facility")
@@ -218,7 +218,7 @@
                                        [@row (inc @row)]
                                        "smelter"
                                        smelter-val
-                                       smelter
+                                       #(reset! smelter %)
                                        "Smelting Facility"))
 
            ~@(when (contains? facilities "Assembler")
@@ -228,7 +228,7 @@
                                        [@row (inc @row)]
                                        "assembler"
                                        assembler-val
-                                       assembler
+                                       #(reset! assembler %)
                                        "Assembler"))
 
            ~@(when (contains? facilities "Chemical Facility")
@@ -238,5 +238,5 @@
                                        [@row (inc @row)]
                                        "chemical"
                                        chemical-val
-                                       chemical
+                                       #(reset! chemical %)
                                        "Chemical Facility"))])])))
