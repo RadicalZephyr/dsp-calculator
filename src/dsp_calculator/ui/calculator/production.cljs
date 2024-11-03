@@ -27,12 +27,14 @@
 
 (defn rational [r]
   (let [{:keys [w n d]} (r/decompose r)]
-    [:span
-     (when w (str w))
+    [:math
+     (when w [:mn (str w)])
      (when (and w n d)
        "-")
      (when (and n d)
-       [:span.fraction (str n "/" d)])]))
+       [:mfrac
+        [:mn (str n)]
+        [:mn (str d)]])]))
 
 (defn production-tree-header []
   [:div.solver-header.node-header
