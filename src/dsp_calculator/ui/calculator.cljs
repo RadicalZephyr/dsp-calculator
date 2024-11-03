@@ -28,7 +28,7 @@
    [prod/production-tree context summary tree]])
 
 (defclass grid-pos [x y]
-  {:grid-area (str x " / " y)})
+  {:grid-area (str y " / " x)})
 
 (defn recipe-icon [item]
   [:span.recipe.icon {:data-icon (str "recipe." (:id item))

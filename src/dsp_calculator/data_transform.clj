@@ -55,7 +55,7 @@
 (defn parse-grid-index [grid-index]
   (let [s (str grid-index)
         grid-pos-s [(subs s 0 1) (subs s 1 2) (subs s 2)]
-        [page x y] (map #(Integer/parseInt %) grid-pos-s)]
+        [page y x] (map #(Integer/parseInt %) grid-pos-s)]
     {"page" page "x" x "y" y}))
 
 (defn merge-split-recipe-fields [m]
