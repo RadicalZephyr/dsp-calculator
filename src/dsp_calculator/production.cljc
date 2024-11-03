@@ -42,7 +42,7 @@
                       (get-in items [id :name])
                       (get-in items-zh [id :name])]))))
 
-(def raw-resources
+(def minable-resources
   [[1000 1 "Water" "水"]
    [1001 1 "Iron Ore" "铁矿"]
    [1002 1 "Copper Ore" "铜矿"]
@@ -56,15 +56,15 @@
    [1014 2 "Grating Crystal" "光栅石"]
    [1015 2 "Stalagmite Crystal" "刺笋结晶"]
    [1016 2 "Unipolar Magnet" "单极磁石"]
-   [1030 1 "Log" "木材"]
-   [1031 1 "Plant Fuel" "植物燃料"]
    [1116 1 "Sulfuric Acid" "硫酸"]
    [1120 1 "Hydrogen" "氢"]
    [1121 1 "Deuterium" "重氢"]
    [1208 3 "Critical Photon" "临界光子"]
-   [2207 3 "Accumulator (full)" "蓄电器（满）"] ;; TODO: write a recipe
-                                            ;; for this and include
-                                            ;; it in the EDN file.
+   [2207 3 "Accumulator (full)" "蓄电器（满）"]])
+
+(def non-minable-resources
+  [[1030 1 "Log" "木材"]
+   [1031 1 "Plant Fuel" "植物燃料"]
    [5201 4 "Dark Fog Matrix" "存储单元"]
    [5202 4 "Silicon-based Neuron" "硅基神经元"]
    [5203 4 "Matter Recombinator" "物质重组器"]
