@@ -1,7 +1,8 @@
 (ns dsp-calculator.ui.calculator.preferred-buildings
   (:require [spade.core :refer [defclass]]
             [com.gfredericks.exact :as e]
-            [dsp-calculator.rational :as r]))
+            [dsp-calculator.rational :as r]
+            [dsp-calculator.ui.base :refer [time-label]]))
 
 (def conveyor-belts
   [{:id 2001
@@ -77,13 +78,18 @@
 
 (declare item-id tech-id)
 
+(def scale-by
+  {"second" (r/int 1)
+   "minute" (r/int 60)})
+
 (def preferred-building-customizations
   {"belt" (fn [building timescale]
-            (let [speed (r/str (:speed building))]
+            (let [speed (r/str (e/* (scale-by timescale)
+                                    (:speed building)))]
               {:id-fn item-id
                :title-suffix (str " — Transport Speed: "
                                   speed
-                                  " items per minute")
+                                  " items " (time-label timescale))
                :data-key :data-per
                :data-val speed}))
    "mining-productivity" (fn [building timescale]
@@ -98,11 +104,14 @@
                               :data-key :data-count
                               :data-val (str "+" percent-increase "%")}))
    "miner" (fn [building timescale]
-             (let [speed (r/str (:speed building))]
+             (let [speed (r/str (e/* (scale-by timescale)
+                                     (:speed building)))]
                {:id-fn item-id
                 :title-suffix (str " — Mining Speed: "
                                    speed
-                                   " items per minute per vein")
+                                   " items "
+                                   (time-label timescale)
+                                   " per vein")
                 :data-key :data-per
                 :data-val speed}))
    :else (fn [building timescale]
