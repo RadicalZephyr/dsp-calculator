@@ -37,54 +37,55 @@
 (def miners
   [{:id 2301
     :name "Mining Machine"
-    :speed 30}
+    :speed (r/ratio 1 2)}
    {:id 2316
     :name "Advanced Mining Machine"
-    :speed 60}])
+    :speed (r/int 1)}])
 
 (def smelters
   [{:id 2302
     :name "Arc Smelter"
-    :count 1}
+    :count (r/int 1)}
    {:id 2315
     :name "Plane Smelter"
-    :count 2}
+    :count (r/int 2)}
    {:id 2319
     :name "Negentropy Smelter"
-    :count 3}])
+    :count (r/int 3)}])
 
 (def assemblers
   [{:id 2303
     :name "Assembling Machine Mk.I"
-    :count 0.75}
+    :count (r/ratio 3 4)}
    {:id 2304
     :name "Assembling Machine Mk.II"
-    :count 1}
+    :count (r/int 1)}
    {:id 2305
     :name "Assembling Machine Mk.III"
-    :count 2}
+    :count (r/int 2)}
    {:id 2318
     :name "Re-composing Assembler"
-    :count 3}])
+    :count (r/int 3)}])
 
 (def chemical-plants
   [{:id 2309
     :name "Chemical Plant"
-    :count 1}
+    :count (r/int 1)}
    {:id 2317
     :name "Quantum Chemical Plant"
-    :count 2}])
+    :count (r/int 2)}])
 
 (declare item-id tech-id)
 
 (def preferred-building-customizations
   {"belt" (fn [building timescale]
-            {:id-fn item-id
-             :title-suffix (str " — Transport Speed: "
-                                (r/str (:speed building))
-                                " items per minute")
-             :data-key :data-per
-             :data-val (r/str (:speed building))})
+            (let [speed (r/str (:speed building))]
+              {:id-fn item-id
+               :title-suffix (str " — Transport Speed: "
+                                  speed
+                                  " items per minute")
+               :data-key :data-per
+               :data-val speed}))
    "mining-productivity" (fn [building timescale]
                            (let [hundred (r/int  100)
                                  percent-increase (e/- (e/* hundred
@@ -97,18 +98,19 @@
                               :data-key :data-count
                               :data-val (str "+" percent-increase "%")}))
    "miner" (fn [building timescale]
-              {:id-fn item-id
-               :title-suffix (str " — Mining Speed: "
-                                  (:speed building)
-                                  " items per minute per vein")
-               :data-key :data-per
-               :data-val (:speed building)})
+             (let [speed (r/str (:speed building))]
+               {:id-fn item-id
+                :title-suffix (str " — Mining Speed: "
+                                   speed
+                                   " items per minute per vein")
+                :data-key :data-per
+                :data-val speed}))
    :else (fn [building timescale]
-           {:id-fn item-id
-            :title-suffix (str " — Production Speed: "
-                               (:count building))
-            :data-key :data-count
-            :data-val (str (:count building) "×")})})
+           (let [speed (r/str (:count building))]
+             {:id-fn item-id
+              :title-suffix (str " — Production Speed: " speed)
+              :data-key :data-count
+              :data-val (str speed "×")}))})
 
 (defn get-pb-customizations [type building timescale]
   (let [k (if (contains? preferred-building-customizations type)
