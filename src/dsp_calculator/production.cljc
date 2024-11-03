@@ -1,7 +1,8 @@
 (ns dsp-calculator.production
   (:require #?(:clj [clojure.java.io :as io])
             [clojure.tools.reader.edn :as edn]
-            [com.gfredericks.exact :as e]))
+            [com.gfredericks.exact :as e]
+            [dsp-calculator.rational :as r]))
 
 (def root-path "public/data/")
 
@@ -118,16 +119,12 @@
 (def ^:dynamic *max-depth* 10)
 
 (defn get-item-rate [recipe item-id]
-  (e// (e/native->integer
-        (get-in recipe [:items item-id] 1))
-       (e/native->integer
-        (get recipe :time-spend 60))))
+  (r/ratio (get-in recipe [:items item-id] 1)
+           (get recipe :time-spend 60)))
 
 (defn get-result-rate [recipe item-id]
-  (e// (e/native->integer
-        (get-in recipe [:results item-id] 1))
-       (e/native->integer
-        (get recipe :time-spend 60))))
+  (r/ratio (get-in recipe [:results item-id] 1)
+           (get recipe :time-spend 60)))
 
 (defn production-tree
   "Produce a production tree describing the ratios needed to produce a

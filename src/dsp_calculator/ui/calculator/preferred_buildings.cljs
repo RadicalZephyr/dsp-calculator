@@ -1,41 +1,38 @@
 (ns dsp-calculator.ui.calculator.preferred-buildings
   (:require [spade.core :refer [defclass]]
-            [com.gfredericks.exact :as e]))
-
-(defn ratio [x y]
-  (e// (e/native->integer x)
-       (e/native->integer y)))
+            [com.gfredericks.exact :as e]
+            [dsp-calculator.rational :as r]))
 
 (def conveyor-belts
   [{:id 2001
     :name "Conveyor Belt MK.I"
-    :speed (e/native->integer 6)}
+    :speed (r/int 6)}
    {:id 2002
     :name "Conveyor Belt MK.II"
-    :speed (e/native->integer 12)}
+    :speed (r/int 12)}
    {:id 2003
     :name "Conveyor Belt MK.III"
-    :speed (e/native->integer 30)}])
+    :speed (r/int 30)}])
 
 (def mining-productivity-techs
   [{:id 3600
     :name "No Vein Utilization"
-    :speed (ratio 1 1)}
+    :speed (r/ratio 1 1)}
    {:id 3601
     :name "Vein Utilization I"
-    :speed (ratio 11 10)}
+    :speed (r/ratio 11 10)}
    {:id 3602
     :name "Vein Utilization II"
-    :speed (ratio 12 10)}
+    :speed (r/ratio 12 10)}
    {:id 3603
     :name "Vein Utilization III"
-    :speed (ratio 13 10)}
+    :speed (r/ratio 13 10)}
    {:id 3604
     :name "Vein Utilization IV"
-    :speed (ratio 14 10)}
+    :speed (r/ratio 14 10)}
    {:id 3605
     :name "Vein Utilization V"
-    :speed (ratio 15 10)}])
+    :speed (r/ratio 15 10)}])
 
 (def miners
   [{:id 2301
@@ -84,12 +81,12 @@
   {"belt" (fn [building timescale]
             {:id-fn item-id
              :title-suffix (str " — Transport Speed: "
-                                (e/integer->native (:speed building))
+                                (r/str (:speed building))
                                 " items per minute")
              :data-key :data-per
-             :data-val (str (:speed building))})
+             :data-val (r/str (:speed building))})
    "mining-productivity" (fn [building timescale]
-                           (let [hundred (e/native->integer 100)
+                           (let [hundred (r/int  100)
                                  percent-increase (e/- (e/* hundred
                                                             (:speed building))
                                                        hundred)]

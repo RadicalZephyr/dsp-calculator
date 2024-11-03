@@ -1,6 +1,6 @@
 (ns dsp-calculator.devcards.calculator.production
   (:require [devcards.core]
-            [com.gfredericks.exact :as e]
+            [dsp-calculator.rational :as r]
             [dsp-calculator.production :as prod]
             [dsp-calculator.production-test :as prod-test]
             [dsp-calculator.ui.base :as base]
@@ -18,9 +18,9 @@
     [sut/production-tree-header]]])
 
 (defcard-rg production-summary
-  (let [context {:ratio (e/native->integer 1)
+  (let [context {:ratio (r/int 1)
                  :timescale "minute"
-                 :belt-rate (e/native->integer 6)}
+                 :belt-rate (r/int 6)}
         tree (prod/production-tree prod-test/test-items
                                    prod-test/test-recipes
                                    prod-test/test-recipes-by-output
@@ -36,9 +36,9 @@
    [sut/production-tree (atom {}) (atom {}) (atom {})]])
 
 (defcard-rg production-tree
-  (let [context {:ratio (e/native->integer 1)
+  (let [context {:ratio (r/int 1)
                  :timescale "minute"
-                 :belt-rate (e/native->integer 6)}
+                 :belt-rate (r/int 6)}
         tree (prod/production-tree prod-test/test-items
                                    prod-test/test-recipes
                                    prod-test/test-recipes-by-output
@@ -49,9 +49,9 @@
       [sut/production-tree-node context 0 tree]]]))
 
 (defcard-rg whole-production
-  (let [context (atom {:ratio (e/native->integer 1)
+  (let [context (atom {:ratio (r/int 1)
                        :timescale "minute"
-                       :belt-rate (e/native->integer 6)})
+                       :belt-rate (r/int 6)})
         tree (prod/production-tree prod-test/test-items
                                    prod-test/test-recipes
                                    prod-test/test-recipes-by-output

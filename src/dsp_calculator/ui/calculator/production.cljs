@@ -1,5 +1,6 @@
 (ns dsp-calculator.ui.calculator.production
   (:require [spade.core :refer [defclass]]
+            [dsp-calculator.rational :as r]
             [com.gfredericks.exact :as e]))
 
 (defclass depth-class [x]
@@ -15,44 +16,20 @@
                     :title (:name item)}])
 
 (def duration
-  {"second" (e/native->integer 60)
-   "minute" (e/native->integer (* 60 60))})
+  {"second" (r/int 60)
+   "minute" (r/int (* 60 60))})
 
 (def time-label
   {"second" "per second"
    "minute" "per minute"})
 
 (defn get-result-rate [recipe]
-  (e// (e/native->integer
-        (get-in recipe [:results (:id recipe)] 1))
-       (e/native->integer
-        (or (get recipe :time-spend 60)
-            60))))
-
-(defn reduce-rational [r]
-  (if (e/integer? r)
-    {:w (e/integer->string r)}
-    (let [n (e/numerator r)
-          d (e/denominator r)]
-      (if (> d n)
-        {:n n :d d}
-        (let [whole (quot n d)
-              r (rem n d)]
-          {:w (when (not (= 0 whole))
-                whole)
-           :n r
-           :d d})))))
-
-(defn render-rational [r]
-  (let [{:keys [w n d]} (reduce-rational r)]
-    (str (when w w)
-         (when (and w n d)
-           "-")
-         (when (and n d)
-           (str n "/" d)))))
+  (r/ratio (get-in recipe [:results (:id recipe)] 1)
+           (or (get recipe :time-spend 60)
+               60)))
 
 (defn rational [r]
-  (let [{:keys [w n d]} (reduce-rational r)]
+  (let [{:keys [w n d]} (r/decompose r)]
     [:span
      (when w (str w))
      (when (and w n d)
@@ -90,14 +67,14 @@
                        duration)
         belt-rate (if (= "minute" (:timescale context))
                     (e/* (:belt-rate context)
-                         (e/native->integer 60))
+                         (r/int 60))
                     (:belt-rate context))
         belts-per (e// items-per belt-rate)
         leaf-node? (raw-resource? tree)]
     [:div.node-header
      [:div.meta
       (when (not leaf-node?)
-        [:span {:title (str (render-rational facility-count)
+        [:span {:title (str (r/str facility-count)
                             "× "
                             (:facility tree))}
          [rational facility-count] "×"])

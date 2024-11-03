@@ -2,9 +2,9 @@
   (:require [devcards.core]
             [ajax.core :refer [GET]]
             [ajax.edn]
-            [com.gfredericks.exact :as e]
             [reagent.core :as reagent]
             [spade.core :refer [defattrs defclass]]
+            [dsp-calculator.rational :as r]
             [dsp-calculator.production :as prod]
             [dsp-calculator.ui.base :as ui]
             [dsp-calculator.ui.calculator :as calc]
@@ -88,7 +88,7 @@ The calculator interface, the most important part of the site.")
                      (let [controls @controls]
                        (-> controls
                            (assoc :belt-rate (:speed @(:belt preferences)))
-                           (update :ratio e/native->integer)))))]
+                           (update :ratio r/int)))))]
       [calc/calculator
        :recipes         dialog-recipes
        :selected        selected
