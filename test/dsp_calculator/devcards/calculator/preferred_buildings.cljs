@@ -13,7 +13,8 @@
 
 (defn preferred-state []
   (reagent/atom
-   {:belt (first sut/conveyor-belts)
+   {:timescale "minute"
+    :belt (first sut/conveyor-belts)
     :mining-productivity (first sut/mining-productivity-techs)
     :miner (first sut/miners)
     :smelter (first sut/smelters)

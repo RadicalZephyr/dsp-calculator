@@ -73,8 +73,10 @@ The calculator interface, the most important part of the site.")
                        (prod/summarize tree))))
           facilities (reagent/reaction
                       (:facilities @summary))
+          timescale (reagent/cursor state [:controls :timescale])
           preferences
           {:facilities facilities
+           :timescale timescale
            :belt (reagent/cursor state [:belt])
            :mining-productivity (reagent/cursor state [:mining-productivity])
            :miner (reagent/cursor state [:miner])

@@ -81,14 +81,14 @@
 (declare item-id tech-id)
 
 (def preferred-building-customizations
-  {"belt" (fn [building]
+  {"belt" (fn [building timescale]
             {:id-fn item-id
              :title-suffix (str " — Transport Speed: "
                                 (e/integer->native (:speed building))
                                 " items per minute")
              :data-key :data-per
              :data-val (str (:speed building))})
-   "mining-productivity" (fn [building]
+   "mining-productivity" (fn [building timescale]
                            {:id-fn tech-id
                             :title-suffix (str " — Mining Efficiency: "
                                                (:speed building))
@@ -97,25 +97,25 @@
                                         (str "+" (e/- (e/* hundred
                                                            (:speed building))
                                                       hundred) "%"))})
-   "miner" (fn [building]
+   "miner" (fn [building timescale]
               {:id-fn item-id
                :title-suffix (str " — Mining Speed: "
                                   (:speed building)
                                   " items per minute per vein")
                :data-key :data-per
                :data-val (:speed building)})
-   :else (fn [building]
+   :else (fn [building timescale]
            {:id-fn item-id
             :title-suffix (str " — Production Speed: "
                                (:count building))
             :data-key :data-count
             :data-val (str (:count building) "×")})})
 
-(defn get-pb-customizations [type building]
+(defn get-pb-customizations [type building timescale]
   (let [k (if (contains? preferred-building-customizations type)
             type
             :else)]
-    ((get preferred-building-customizations k) building)))
+    ((get preferred-building-customizations k) building timescale)))
 
 (defclass grid-row [x y]
   {:grid-row (str x " / " y)})
@@ -126,11 +126,11 @@
 (defn tech-id [tech]
   (str "tech." (:id tech)))
 
-(defn preferred-building-option [[x y] type selected change building]
+(defn preferred-building-option [timescale [x y] type selected change building]
   (let [{:keys [id-fn
                 title-suffix
                 data-key
-                data-val]} (get-pb-customizations type building)]
+                data-val]} (get-pb-customizations type building timescale)]
     [:label {:class [(grid-row x y)
                      (when (= (:id selected) (:id building)) "is-selected")]}
      [:input {:type "radio"
@@ -145,13 +145,14 @@
                        data-key data-val
                        :lang "en-US"}]]))
 
-(defn preferred-building-row [data [x y :as row] type selected ra label]
+(defn preferred-building-row [timescale data [x y :as row] type selected ra label]
   (->> data
        (map (fn [item]
-              [preferred-building-option row type selected #(reset! ra %) item]))
+              [preferred-building-option timescale row type selected #(reset! ra %) item]))
        (into [[:span.name {:class (grid-row x y)} label]])))
 
 (defn preferred-buildings [& {:keys [facilities
+                                     timescale
                                      belt
                                      mining-productivity
                                      miner
@@ -159,6 +160,7 @@
                                      assembler
                                      chemical]}]
   (let [facilities @facilities
+        timescale @timescale
         belt-val @belt
         mining-productivity-val @mining-productivity
         miner-val @miner
@@ -170,7 +172,8 @@
        [:summary "Preferred Buildings"]
        (let [row (atom 1)]
          `[:div.fields
-           ~@(preferred-building-row conveyor-belts
+           ~@(preferred-building-row timescale
+                                     conveyor-belts
                                      [@row (inc @row)]
                                      "belt"
                                      belt-val
@@ -179,7 +182,8 @@
 
            ~@(when (contains? facilities "Miner")
                (swap! row + 2)
-               (preferred-building-row mining-productivity-techs
+               (preferred-building-row timescale
+                                       mining-productivity-techs
                                        [@row (inc @row)]
                                        "mining-productivity"
                                        mining-productivity-val
@@ -188,7 +192,8 @@
 
            ~@(when (contains? facilities "Miner")
                (swap! row + 2)
-               (preferred-building-row miners
+               (preferred-building-row timescale
+                                       miners
                                        [@row (inc @row)]
                                        "miner"
                                        miner-val
@@ -197,7 +202,8 @@
 
            ~@(when (contains? facilities "Smelting Facility")
                (swap! row + 2)
-               (preferred-building-row smelters
+               (preferred-building-row timescale
+                                       smelters
                                        [@row (inc @row)]
                                        "smelter"
                                        smelter-val
@@ -206,7 +212,8 @@
 
            ~@(when (contains? facilities "Assembler")
                (swap! row + 2)
-               (preferred-building-row assemblers
+               (preferred-building-row timescale
+                                       assemblers
                                        [@row (inc @row)]
                                        "assembler"
                                        assembler-val
@@ -215,7 +222,8 @@
 
            ~@(when (contains? facilities "Chemical Facility")
                (swap! row + 2)
-               (preferred-building-row chemical-plants
+               (preferred-building-row timescale
+                                       chemical-plants
                                        [@row (inc @row)]
                                        "chemical"
                                        chemical-val

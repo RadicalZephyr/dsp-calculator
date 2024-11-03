@@ -18,7 +18,8 @@
   [[args-sym] & body]
   `(fn [state# _#]
      (let [~args-sym
-           {:belt (reagent.core/cursor state# [:belt])
+           {:timescale (reagent.core/cursor state# [:timescale])
+            :belt (reagent.core/cursor state# [:belt])
             :mining-productivity (reagent.core/cursor state# [:mining-productivity])
             :miner (reagent.core/cursor state# [:miner])
             :smelter (reagent.core/cursor state# [:smelter])
