@@ -1,7 +1,8 @@
 (ns dsp-calculator.ui.calculator.production
   (:require [spade.core :refer [defclass]]
+            [com.gfredericks.exact :as e]
             [dsp-calculator.rational :as r]
-            [com.gfredericks.exact :as e]))
+            [dsp-calculator.ui.base :refer [time-label]]))
 
 (defclass depth-class [x]
   {:--depth x})
@@ -18,10 +19,6 @@
 (def duration
   {"second" (r/int 60)
    "minute" (r/int (* 60 60))})
-
-(def time-label
-  {"second" "per second"
-   "minute" "per minute"})
 
 (defn get-result-rate [recipe]
   (r/ratio (get-in recipe [:results (:id recipe)] 1)

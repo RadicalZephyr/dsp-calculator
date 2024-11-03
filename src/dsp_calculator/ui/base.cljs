@@ -1,5 +1,9 @@
 (ns dsp-calculator.ui.base)
 
+(def time-label
+  {"second" "per second"
+   "minute" "per minute"})
+
 (defn stylesheet-includes []
   [:div
    [:link {:rel "stylesheet" :href "/css/reset.css"}]
