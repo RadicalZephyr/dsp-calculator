@@ -89,14 +89,16 @@
              :data-key :data-per
              :data-val (str (:speed building))})
    "mining-productivity" (fn [building timescale]
-                           {:id-fn tech-id
-                            :title-suffix (str " — Mining Efficiency: "
-                                               (:speed building))
-                            :data-key :data-count
-                            :data-val (let [hundred (e/native->integer 100)]
-                                        (str "+" (e/- (e/* hundred
-                                                           (:speed building))
-                                                      hundred) "%"))})
+                           (let [hundred (e/native->integer 100)
+                                 percent-increase (e/- (e/* hundred
+                                                            (:speed building))
+                                                       hundred)]
+                             {:id-fn tech-id
+                              :title-suffix (str " — Mining Efficiency: +"
+                                                 percent-increase
+                                                 "%")
+                              :data-key :data-count
+                              :data-val (str "+" percent-increase "%")}))
    "miner" (fn [building timescale]
               {:id-fn item-id
                :title-suffix (str " — Mining Speed: "
