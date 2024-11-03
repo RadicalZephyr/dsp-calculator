@@ -157,10 +157,14 @@
                        :lang "en-US"}]]))
 
 (defn preferred-building-row [timescale data [x y :as row] type selected change label]
-  (->> data
-       (map (fn [item]
-              [preferred-building-option timescale row type selected change item]))
-       (into [[:span.name {:class (grid-row x y)} label]])))
+  (let [base (* x 10)]
+    (->> data
+         (map-indexed
+          (fn [idx item]
+            ^{:key (+ base (inc idx))}
+            [preferred-building-option timescale row type selected change item]))
+         (into [^{:key base} [:span.name {:class (grid-row x y)} label]])
+         seq)))
 
 (defn preferred-buildings [& {:keys [facilities
                                      timescale
@@ -182,61 +186,61 @@
       [:details.preferred.preferred-buildings {:open true}
        [:summary "Preferred Buildings"]
        (let [row (atom 1)]
-         `[:div.fields
-           ~@(preferred-building-row timescale
-                                     conveyor-belts
-                                     [@row (inc @row)]
-                                     "belt"
-                                     belt-val
-                                     #(reset! belt %)
-                                     "Logistics")
+         [:div.fields
+          (preferred-building-row timescale
+                                  conveyor-belts
+                                  [@row (inc @row)]
+                                  "belt"
+                                  belt-val
+                                  #(reset! belt %)
+                                  "Logistics")
 
-           ~@(when (contains? facilities "Miner")
-               (swap! row + 2)
-               (preferred-building-row timescale
-                                       mining-productivity-techs
-                                       [@row (inc @row)]
-                                       "mining-productivity"
-                                       mining-productivity-val
-                                       #(reset! mining-productivity %)
-                                       "Mining Productivity"))
+          (when (contains? facilities "Miner")
+            (swap! row + 2)
+            (preferred-building-row timescale
+                                    mining-productivity-techs
+                                    [@row (inc @row)]
+                                    "mining-productivity"
+                                    mining-productivity-val
+                                    #(reset! mining-productivity %)
+                                    "Mining Productivity"))
 
-           ~@(when (contains? facilities "Miner")
-               (swap! row + 2)
-               (preferred-building-row timescale
-                                       miners
-                                       [@row (inc @row)]
-                                       "miner"
-                                       miner-val
-                                       #(reset! miner %)
-                                       "Miner"))
+          (when (contains? facilities "Miner")
+            (swap! row + 2)
+            (preferred-building-row timescale
+                                    miners
+                                    [@row (inc @row)]
+                                    "miner"
+                                    miner-val
+                                    #(reset! miner %)
+                                    "Miner"))
 
-           ~@(when (contains? facilities "Smelting Facility")
-               (swap! row + 2)
-               (preferred-building-row timescale
-                                       smelters
-                                       [@row (inc @row)]
-                                       "smelter"
-                                       smelter-val
-                                       #(reset! smelter %)
-                                       "Smelting Facility"))
+          (when (contains? facilities "Smelting Facility")
+            (swap! row + 2)
+            (preferred-building-row timescale
+                                    smelters
+                                    [@row (inc @row)]
+                                    "smelter"
+                                    smelter-val
+                                    #(reset! smelter %)
+                                    "Smelting Facility"))
 
-           ~@(when (contains? facilities "Assembler")
-               (swap! row + 2)
-               (preferred-building-row timescale
-                                       assemblers
-                                       [@row (inc @row)]
-                                       "assembler"
-                                       assembler-val
-                                       #(reset! assembler %)
-                                       "Assembler"))
+          (when (contains? facilities "Assembler")
+            (swap! row + 2)
+            (preferred-building-row timescale
+                                    assemblers
+                                    [@row (inc @row)]
+                                    "assembler"
+                                    assembler-val
+                                    #(reset! assembler %)
+                                    "Assembler"))
 
-           ~@(when (contains? facilities "Chemical Facility")
-               (swap! row + 2)
-               (preferred-building-row timescale
-                                       chemical-plants
-                                       [@row (inc @row)]
-                                       "chemical"
-                                       chemical-val
-                                       #(reset! chemical %)
-                                       "Chemical Facility"))])])))
+          (when (contains? facilities "Chemical Facility")
+            (swap! row + 2)
+            (preferred-building-row timescale
+                                    chemical-plants
+                                    [@row (inc @row)]
+                                    "chemical"
+                                    chemical-val
+                                    #(reset! chemical %)
+                                    "Chemical Facility"))])])))
