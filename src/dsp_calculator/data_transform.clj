@@ -225,7 +225,7 @@
     :items {},
     :sid "3110",
     :results {1116 1}}
-   {:facility "Miner",
+   {:facility "Orbital Collector",
     :time-spend 60,
     :name "Hydrogen",
     :type "MINE",
@@ -234,7 +234,7 @@
     :items {},
     :sid "3111",
     :results {1120 1}}
-   {:facility "Miner",
+   {:facility "Orbital Collector",
     :time-spend 60,
     :name "Deuterium",
     :type "MINE",
@@ -306,7 +306,7 @@
     :items {},
     :sid "3301",
     :results {1208 1}}
-   {:facility "Miner",
+   {:facility "Assembler",
     :time-spend 60,
     :name "Accumulator (full)",
     :type "ASSEMBLE",
