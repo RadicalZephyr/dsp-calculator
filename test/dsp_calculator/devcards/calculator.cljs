@@ -73,7 +73,9 @@ The calculator interface, the most important part of the site.")
                                         @recipes-by-output-id
                                         id)))
           summary (reagent/reaction
-                   (prod/summarize @tree))]
+                   (let [tree @tree]
+                     (when (seq tree)
+                       (prod/summarize tree))))]
       [calc/calculator
        :recipes         dialog-recipes
        :selected        selected
