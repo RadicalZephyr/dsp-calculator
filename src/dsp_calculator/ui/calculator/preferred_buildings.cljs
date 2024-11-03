@@ -140,7 +140,8 @@
   (str "tech." (:id tech)))
 
 (defn preferred-building-option [timescale x type selected change building]
-  (let [{:keys [id-fn
+  (let [selected @selected
+        {:keys [id-fn
                 title-suffix
                 data-key
                 data-val]} (get-pb-customizations type building timescale)]
@@ -177,13 +178,7 @@
                                      assembler
                                      chemical]}]
   (let [facilities @facilities
-        timescale @timescale
-        belt-val @belt
-        mining-productivity-val @mining-productivity
-        miner-val @miner
-        smelter-val @smelter
-        assembler-val @assembler
-        chemical-val @chemical]
+        timescale @timescale]
     (when (seq facilities)
       [:details.preferred.preferred-buildings {:open true}
        [:summary "Preferred Buildings"]
@@ -194,7 +189,7 @@
            conveyor-belts
            [@row (inc @row)]
            "belt"
-           belt-val
+           belt
            #(reset! belt %)
            "Logistics"]
 
@@ -205,7 +200,7 @@
              mining-productivity-techs
              [@row (inc @row)]
              "mining-productivity"
-             mining-productivity-val
+             mining-productivity
              #(reset! mining-productivity %)
              "Mining Productivity"])
 
@@ -216,7 +211,7 @@
              miners
              [@row (inc @row)]
              "miner"
-             miner-val
+             miner
              #(reset! miner %)
              "Miner"])
 
@@ -227,7 +222,7 @@
              smelters
              [@row (inc @row)]
              "smelter"
-             smelter-val
+             smelter
              #(reset! smelter %)
              "Smelting Facility"])
 
@@ -238,7 +233,7 @@
              assemblers
              [@row (inc @row)]
              "assembler"
-             assembler-val
+             assembler
              #(reset! assembler %)
              "Assembler"])
 
@@ -249,6 +244,6 @@
              chemical-plants
              [@row (inc @row)]
              "chemical"
-             chemical-val
+             chemical
              #(reset! chemical %)
              "Chemical Facility"])])])))
