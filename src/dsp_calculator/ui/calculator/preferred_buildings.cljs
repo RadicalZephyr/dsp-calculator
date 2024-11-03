@@ -127,8 +127,8 @@
             :else)]
     ((get preferred-building-customizations k) building timescale)))
 
-(defclass grid-row [x y]
-  {:grid-row (str x " / " y)})
+(defclass grid-row [y]
+  {:grid-row y})
 
 (defclass grid-column [x]
   {:grid-column x})
@@ -160,14 +160,13 @@
                        data-key data-val
                        :lang "en-US"}]]))
 
-(defn preferred-building-row [timescale data [x y :as row] type selected change label]
-  (let [base (* x 10)]
-    (->> data
-         (map-indexed
-          (fn [idx item]
-            [preferred-building-option timescale (+ 2 idx) type selected change item]))
-         (into [:div.row {:class (grid-row x y)}
-                [:span.name {:class (grid-column 1)} label]]))))
+(defn preferred-building-row [timescale data y type selected change label]
+  (->> data
+       (map-indexed
+        (fn [idx item]
+          [preferred-building-option timescale (+ 2 idx) type selected change item]))
+       (into [:div.row {:class (grid-row y)}
+              [:span.name {:class (grid-column 1)} label]])))
 
 (defn preferred-buildings [& {:keys [facilities
                                      timescale
@@ -187,62 +186,62 @@
           [preferred-building-row
            timescale
            conveyor-belts
-           [@row (inc @row)]
+           @row
            "belt"
            belt
            #(reset! belt %)
            "Logistics"]
 
           (when (contains? facilities "Miner")
-            (swap! row + 2)
+            (swap! row inc)
             [preferred-building-row
              timescale
              mining-productivity-techs
-             [@row (inc @row)]
+             @row
              "mining-productivity"
              mining-productivity
              #(reset! mining-productivity %)
              "Mining Productivity"])
 
           (when (contains? facilities "Miner")
-            (swap! row + 2)
+            (swap! row inc)
             [preferred-building-row
              timescale
              miners
-             [@row (inc @row)]
+             @row
              "miner"
              miner
              #(reset! miner %)
              "Miner"])
 
           (when (contains? facilities "Smelting Facility")
-            (swap! row + 2)
+            (swap! row inc)
             [preferred-building-row
              timescale
              smelters
-             [@row (inc @row)]
+             @row
              "smelter"
              smelter
              #(reset! smelter %)
              "Smelting Facility"])
 
           (when (contains? facilities "Assembler")
-            (swap! row + 2)
+            (swap! row inc)
             [preferred-building-row
              timescale
              assemblers
-             [@row (inc @row)]
+             @row
              "assembler"
              assembler
              #(reset! assembler %)
              "Assembler"])
 
           (when (contains? facilities "Chemical Facility")
-            (swap! row + 2)
+            (swap! row inc)
             [preferred-building-row
              timescale
              chemical-plants
-             [@row (inc @row)]
+             @row
              "chemical"
              chemical
              #(reset! chemical %)
