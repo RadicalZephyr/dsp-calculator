@@ -87,6 +87,19 @@
              :results {item-id 1},
              :sid (pos->str pos)})))
 
+(def needed-item-names
+  ["Ray Receiver"
+   "Orbital Collector"
+   "Water Pump"
+   "Oil Extractor"])
+
+(defn lookup-item-translation [items-from items-to sources]
+  (->> sources
+       (map #(:id (find-item-by-name items-from %)))
+       (map (juxt (comp :name items-from)
+                  (comp :name items-to)))
+       (into {})))
+
 (defn group-by-outputs [recipes]
   (persistent!
    (reduce
