@@ -89,9 +89,9 @@
                        (get-result-rate tree)
                        duration)
         belt-rate (if (= "minute" (:timescale context))
-                    (:belt-rate context)
-                    (e// (:belt-rate context)
-                         (e/native->integer 60)))
+                    (e/* (:belt-rate context)
+                         (e/native->integer 60))
+                    (:belt-rate context))
         belts-per (e// items-per belt-rate)
         leaf-node? (raw-resource? tree)]
     [:div.node-header

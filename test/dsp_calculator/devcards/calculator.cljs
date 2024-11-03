@@ -85,8 +85,7 @@ The calculator interface, the most important part of the site.")
                    (when (seq @selected)
                      (let [controls @controls]
                        (-> controls
-                           (assoc :belt-rate (e/native->integer
-                                              (:speed @(:belt preferences))))
+                           (assoc :belt-rate (:speed @(:belt preferences)))
                            (update :ratio e/native->integer)))))]
       [calc/calculator
        :recipes         dialog-recipes

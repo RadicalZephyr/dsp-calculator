@@ -9,13 +9,13 @@
 (def conveyor-belts
   [{:id 2001
     :name "Conveyor Belt MK.I"
-    :speed 360}
+    :speed (e/native->integer 6)}
    {:id 2002
     :name "Conveyor Belt MK.II"
-    :speed 720}
+    :speed (e/native->integer 12)}
    {:id 2003
     :name "Conveyor Belt MK.III"
-    :speed 1800}])
+    :speed (e/native->integer 30)}])
 
 (def mining-productivity-techs
   [{:id 3600
@@ -84,7 +84,7 @@
   {"belt" (fn [building]
             {:id-fn item-id
              :title-suffix (str " — Transport Speed: "
-                                (:speed building)
+                                (e/integer->native (:speed building))
                                 " items per minute")
              :data-key :data-per
              :data-val (str (:speed building))})
