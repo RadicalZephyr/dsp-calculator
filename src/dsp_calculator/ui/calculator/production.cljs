@@ -58,7 +58,8 @@
   (empty? (:items node)))
 
 (defn node-content [context depth tree]
-  (let [facility-count (e/* (:ratio context)
+  (let [context @context
+        facility-count (e/* (:ratio context)
                             (:count tree))
         duration (get duration (:timescale context))
         items-per (e/* facility-count
@@ -126,8 +127,7 @@
       ^{:key (:id resource)} [production-tree-leaf-node context 0 resource])]])
 
 (defn production-tree [context summary tree]
-  (let [context @context
-        tree @tree]
+  (let [tree @tree]
     (when (seq tree)
       [:div.solver.has-proliferators
        [production-tree-summary context (vals (:raw-resources @summary))]
