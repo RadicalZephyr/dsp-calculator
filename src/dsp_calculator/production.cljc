@@ -43,22 +43,86 @@
                       (get-in items-zh [id :name])]))))
 
 (def minable-resources
-  [[1000 1 "Water Pump" "Water" "水"]
-   [1001 1 "Mining Facility" "Iron Ore" "铁矿"]
-   [1002 1 "Mining Facility" "Copper Ore" "铜矿"]
-   [1004 1 "Mining Facility" "Titanium Ore" "钛石"]
-   [1005 1 "Mining Facility" "Stone" "石矿"]
-   [1006 1 "Mining Facility" "Coal" "煤矿"]
-   [1007 1 "Oil Extractor" "Crude Oil" "原油"]
-   [1011 2 "Mining Facility" "Fire Ice" "可燃冰"]
-   [1012 2 "Mining Facility" "Kimberlite Ore" "金伯利矿石"]
-   [1013 2 "Mining Facility" "Fractal Silicon" "分形硅石"]
-   [1014 2 "Mining Facility" "Grating Crystal" "光栅石"]
-   [1015 2 "Mining Facility" "Stalagmite Crystal" "刺笋结晶"]
-   [1016 2 "Mining Facility" "Unipolar Magnet" "单极磁石"]
-   [1116 1 "Water Pump" "Sulfuric Acid" "硫酸"]
-   [1120 1 "Orbital Collector" "Hydrogen" "氢"]
-   [1121 1 "Orbital Collector" "Deuterium" "重氢"]])
+  [{:item-id 1000,
+    :row 1,
+    :facility "Water Pump",
+    :name-en "Water",
+    :name-zh "水"}
+   {:item-id 1001,
+    :row 1,
+    :facility "Mining Facility",
+    :name-en "Iron Ore",
+    :name-zh "铁矿"}
+   {:item-id 1002,
+    :row 1,
+    :facility "Mining Facility",
+    :name-en "Copper Ore",
+    :name-zh "铜矿"}
+   {:item-id 1004,
+    :row 1,
+    :facility "Mining Facility",
+    :name-en "Titanium Ore",
+    :name-zh "钛石"}
+   {:item-id 1005,
+    :row 1,
+    :facility "Mining Facility",
+    :name-en "Stone",
+    :name-zh "石矿"}
+   {:item-id 1006,
+    :row 1,
+    :facility "Mining Facility",
+    :name-en "Coal",
+    :name-zh "煤矿"}
+   {:item-id 1007,
+    :row 1,
+    :facility "Oil Extractor",
+    :name-en "Crude Oil",
+    :name-zh "原油"}
+   {:item-id 1011,
+    :row 2,
+    :facility "Mining Facility",
+    :name-en "Fire Ice",
+    :name-zh "可燃冰"}
+   {:item-id 1012,
+    :row 2,
+    :facility "Mining Facility",
+    :name-en "Kimberlite Ore",
+    :name-zh "金伯利矿石"}
+   {:item-id 1013,
+    :row 2,
+    :facility "Mining Facility",
+    :name-en "Fractal Silicon",
+    :name-zh "分形硅石"}
+   {:item-id 1014,
+    :row 2,
+    :facility "Mining Facility",
+    :name-en "Grating Crystal",
+    :name-zh "光栅石"}
+   {:item-id 1015,
+    :row 2,
+    :facility "Mining Facility",
+    :name-en "Stalagmite Crystal",
+    :name-zh "刺笋结晶"}
+   {:item-id 1016,
+    :row 2,
+    :facility "Mining Facility",
+    :name-en "Unipolar Magnet",
+    :name-zh "单极磁石"}
+   {:item-id 1116,
+    :row 1,
+    :facility "Water Pump",
+    :name-en "Sulfuric Acid",
+    :name-zh "硫酸"}
+   {:item-id 1120,
+    :row 1,
+    :facility "Orbital Collector",
+    :name-en "Hydrogen",
+    :name-zh "氢"}
+   {:item-id 1121,
+    :row 1,
+    :facility "Orbital Collector",
+    :name-en "Deuterium",
+    :name-zh "重氢"}])
 
 (def special-recipes
   ;; Graviton Spheres are consumed by Ray Receiver's at a rate of
@@ -77,21 +141,55 @@
   ;; I might be able to find a spreadsheet someone has created with the
   ;; data needed, but I don't think I want to dive into actually
   ;; collecting that data, especially since that is so variable.
-  [[1208 3 nil "Ray Receiver" "Critical Photon" "临界光子"]
+  [{:item-id 1208,
+    :row 3,
+    :count-per-min nil,
+    :facility "Ray Receiver",
+    :name-en "Critical Photon",
+    :name-zh "临界光子"}
 
    ;; When fully supplied with power, these appear to be made at a
    ;; rate of 6/min/exchanger.
-   [2207 3 6 "Energy Exchanger" "Accumulator (full)" "蓄电器（满）"]])
+   {:item-id 2207,
+    :row 3,
+    :count-per-min 6,
+    :facility "Energy Exchanger",
+    :name-en "Accumulator (full)",
+    :name-zh "蓄电器（满）"}])
 
 (def non-minable-resources
-  [[1030 1 "" "Log" "木材"]
-   [1031 1 "" "Plant Fuel" "植物燃料"]
-   [5201 4 "" "Dark Fog Matrix" "存储单元"]
-   [5202 4 "" "Silicon-based Neuron" "硅基神经元"]
-   [5203 4 "" "Matter Recombinator" "物质重组器"]
-   [5204 4 "" "Negentropy Singularity" "负熵奇点"]
-   [5205 4 "" "Core Element" "虚粒子"]
-   [5206 4 "" "Energy Shard" "能量碎片"]])
+  [{:item-id 1030,
+    :row 1,
+    :name-en "Log",
+    :name-zh "木材"}
+   {:item-id 1031,
+    :row 1,
+    :name-en "Plant Fuel",
+    :name-zh "植物燃料"}
+   {:item-id 5201,
+    :row 4,
+    :name-en "Dark Fog Matrix",
+    :name-zh "存储单元"}
+   {:item-id 5202,
+    :row 4,
+    :name-en "Silicon-based Neuron",
+    :name-zh "硅基神经元"}
+   {:item-id 5203,
+    :row 4,
+    :name-en "Matter Recombinator",
+    :name-zh "物质重组器"}
+   {:item-id 5204,
+    :row 4,
+    :name-en "Negentropy Singularity",
+    :name-zh "负熵奇点"}
+   {:item-id 5205,
+    :row 4,
+    :name-en "Core Element",
+    :name-zh "虚粒子"}
+   {:item-id 5206,
+    :row 4,
+    :name-en "Energy Shard",
+    :name-zh "能量碎片"}])
 
 (def facility-en->zh
   {"Mining Facility" "采矿设备"
@@ -106,7 +204,7 @@
          x
          (str "0" x))))
 
-(defn item->recipe [idx [item-id row facility name-en name-zh]]
+(defn item->recipe [idx {:keys [item-id row facility name-en name-zh]}]
   (let [pos {:page 3, :x (inc idx), :y row}]
     {:id (+ 300 (- item-id 1000))
      :name name-zh
@@ -118,7 +216,7 @@
      :results {item-id 1}
      :sid (pos->str pos)}))
 
-(defn render-minable-resource-recipes [minable-resources]
+(defn render-minable-resource-recipes [minable-resources speed]
   (->> minable-resources
        (group-by second)
        vals
