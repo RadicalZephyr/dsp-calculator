@@ -204,13 +204,17 @@
          x
          (str "0" x))))
 
-(defn item->recipe [idx {:keys [item-id row facility name-en name-zh]}]
+(defn per-min->time-spend [count-per-min]
+  (r/ratio (* 60 60)
+           count-per-min))
+
+(defn item->recipe [idx {:keys [item-id row count-per-min facility name-en name-zh]}]
   (let [pos {:page 3, :x (inc idx), :y row}]
     {:id (+ 300 (- item-id 1000))
      :name name-zh
      :type "MINE"
      :facility (facility-en->zh facility)
-     :time-spend 60
+     :time-spend (per-min->time-spend count-per-min)
      :grid-pos pos
      :items {}
      :results {item-id 1}
