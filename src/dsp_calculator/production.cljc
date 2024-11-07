@@ -108,14 +108,14 @@
 
 (defn item->recipe [idx [item-id row facility name-en name-zh]]
   (let [pos {:page 3, :x (inc idx), :y row}]
-    {:id (+ 300 (- item-id 1000)),
-     :name name-zh,
-     :type "MINE",
-     :facility (facility-en->zh facility),
-     :time-spend 60,
+    {:id (+ 300 (- item-id 1000))
+     :name name-zh
+     :type "MINE"
+     :facility (facility-en->zh facility)
+     :time-spend 60
      :grid-pos pos
-     :items {},
-     :results {item-id 1},
+     :items {}
+     :results {item-id 1}
      :sid (pos->str pos)}))
 
 (defn render-minable-resource-recipes [minable-resources]
