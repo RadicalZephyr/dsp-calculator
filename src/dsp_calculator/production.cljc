@@ -79,27 +79,30 @@
    "Water Pump" "抽水站"
    "Oil Extractor" "原油萃取站"})
 
-#?(:clj (defn pos->str [{:keys [page x y]}]
-          (format "%d%d%02d" page y x)))
+(defn pos->str [{:keys [page x y]}]
+  (str page y
+       (if (> x 9)
+         x
+         (str "0" x))))
 
-#?(:clj (defn item->recipe [idx [item-id row facility name-en name-zh]]
-          (let [pos {:page 3, :x (inc idx), :y row}]
-            {:id (+ 300 (- item-id 1000)),
-             :name name-zh,
-             :type "MINE",
-             :facility (facility-en->zh facility),
-             :time-spend 60,
-             :grid-pos pos
-             :items {},
-             :results {item-id 1},
-             :sid (pos->str pos)})))
+(defn item->recipe [idx [item-id row facility name-en name-zh]]
+  (let [pos {:page 3, :x (inc idx), :y row}]
+    {:id (+ 300 (- item-id 1000)),
+     :name name-zh,
+     :type "MINE",
+     :facility (facility-en->zh facility),
+     :time-spend 60,
+     :grid-pos pos
+     :items {},
+     :results {item-id 1},
+     :sid (pos->str pos)}))
 
-#?(:clj (defn render-minable-resource-recipes [minable-resources]
-          (->> minable-resources
-               (group-by second)
-               vals
-               (mapcat #(map-indexed item->recipe %))
-               vec)))
+(defn render-minable-resource-recipes [minable-resources]
+  (->> minable-resources
+       (group-by second)
+       vals
+       (mapcat #(map-indexed item->recipe %))
+       vec))
 
 (def needed-item-names
   ["Ray Receiver"
