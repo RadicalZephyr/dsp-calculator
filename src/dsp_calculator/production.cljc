@@ -58,9 +58,30 @@
    [1016 2 "Mining Facility" "Unipolar Magnet" "单极磁石"]
    [1116 1 "Water Pump" "Sulfuric Acid" "硫酸"]
    [1120 1 "Orbital Collector" "Hydrogen" "氢"]
-   [1121 1 "Orbital Collector" "Deuterium" "重氢"]
-   [1208 3 "Ray Receiver" "Critical Photon" "临界光子"]
-   [2207 3 "Assembler" "Accumulator (full)" "蓄电器（满）"]])
+   [1121 1 "Orbital Collector" "Deuterium" "重氢"]])
+
+(def special-recipes
+  ;; Graviton Spheres are consumed by Ray Receiver's at a rate of
+  ;; 0.1/min
+
+  ;; Critical Photon's are produced by Ray Receiver's at highly variable
+  ;; rates. It probably depends on several factors:
+  ;;  - Ray receiving efficiency research level
+  ;;  - Building efficiency (time spent able to receive)
+  ;;  - Use of graviton spheres (x2 plus longer uptime)
+
+  ;; The upshot of this is that I think for now it's probably beyond the
+  ;; scope of my undertaking to figure out how to calculate that rate
+  ;; and suggest a number Ray Receiver's to use.
+  ;;
+  ;; I might be able to find a spreadsheet someone has created with the
+  ;; data needed, but I don't think I want to dive into actually
+  ;; collecting that data, especially since that is so variable.
+  [[1208 3 nil "Ray Receiver" "Critical Photon" "临界光子"]
+
+   ;; When fully supplied with power, these appear to be made at a
+   ;; rate of 6/min/exchanger.
+   [2207 3 6 "Energy Exchanger" "Accumulator (full)" "蓄电器（满）"]])
 
 (def non-minable-resources
   [[1030 1 "" "Log" "木材"]
