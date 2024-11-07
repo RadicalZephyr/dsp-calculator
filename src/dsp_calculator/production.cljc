@@ -216,8 +216,8 @@
      :results {item-id 1}
      :sid (pos->str pos)}))
 
-(defn render-minable-resource-recipes [minable-resources speed]
-  (->> minable-resources
+(defn render-minable-resource-recipes [resources]
+  (->> resources
        (group-by second)
        vals
        (mapcat #(map-indexed item->recipe %))
