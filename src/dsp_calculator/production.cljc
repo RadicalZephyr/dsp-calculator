@@ -388,12 +388,8 @@
               (let [item-recipes (get recipes-by-output item-id)
                     first-recipe (first item-recipes)
                     alt-recipes (rest item-recipes)
-                    node (process-recipe depth scale first-recipe item-id)
-                    alt-recipes (->> alt-recipes
-                                     (map #(process-recipe depth scale % item-id))
-                                     (map (juxt :recipe identity))
-                                     (into {}))]
-                (assoc node :alt-recipes alt-recipes))
+                    node (process-recipe depth scale first-recipe item-id)]
+                node)
               {:error "max depth reached"}))]
     ;; Handle the first layer of recursion specially, because we want
     ;; the scale passed in to result in the `:count` being 1 for the

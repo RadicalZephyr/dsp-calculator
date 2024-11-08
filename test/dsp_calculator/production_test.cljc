@@ -127,7 +127,6 @@
                           :recipe nil
                           :time-spend nil
                           :facility nil
-                          :alt-recipes {}
                           :results {}
                           :items {}}}}
            (sut/production-tree test-items test-recipes test-recipes-by-output 1)))
@@ -144,7 +143,6 @@
                           :recipe 1
                           :time-spend 60
                           :facility "Smelting Facility"
-                          :alt-recipes {}
                           :results {1101 1}
                           :items {1001 {:id 1001
                                         :name "Iron Ore"
@@ -152,7 +150,6 @@
                                         :recipe nil
                                         :time-spend nil
                                         :facility nil
-                                        :alt-recipes {}
                                         :results {}
                                         :items {}}}}}}
            (sut/production-tree test-items test-recipes test-recipes-by-output 63)))
@@ -179,7 +176,6 @@
                           :recipe 17
                           :time-spend 120
                           :facility "Smelting Facility"
-                          :alt-recipes {}
                           :results {1109 1}
                           :items {1006 {:id 1006
                                         :name "Coal"
@@ -187,7 +183,6 @@
                                         :recipe nil
                                         :time-spend nil
                                         :facility nil
-                                        :alt-recipes {}
                                         :results {}
                                         :items {}}}}}}
            (sut/production-tree test-items test-recipes test-recipes-by-output 60)))
@@ -204,7 +199,6 @@
                           :recipe 3
                           :time-spend 60
                           :facility "Smelting Facility"
-                          :alt-recipes {}
                           :results {1104 1}
                           :items {1002 {:id 1002
                                         :name "Copper Ore"
@@ -212,7 +206,6 @@
                                         :recipe nil
                                         :time-spend nil
                                         :facility nil
-                                        :alt-recipes {}
                                         :results {}
                                         :items {}}}}
                     1102 {:id 1102
@@ -221,7 +214,6 @@
                           :recipe 2
                           :time-spend 90
                           :facility "Smelting Facility"
-                          :alt-recipes {}
                           :results {1102 1}
                           :items {1001 {:id 1001
                                         :name "Iron Ore"
@@ -229,7 +221,6 @@
                                         :recipe nil
                                         :time-spend nil
                                         :facility nil
-                                        :alt-recipes {}
                                         :results {}
                                         :items {}}}}}}
            (sut/production-tree test-items test-recipes test-recipes-by-output 6)))
@@ -246,7 +237,6 @@
                           :recipe 1
                           :time-spend 60
                           :facility "Smelting Facility"
-                          :alt-recipes {}
                           :results {1101 1}
                           :items {1001 {:id 1001
                                         :name "Iron Ore"
@@ -254,7 +244,6 @@
                                         :recipe nil
                                         :time-spend nil
                                         :facility nil
-                                        :alt-recipes {}
                                         :results {}
                                         :items {}}}}
                     1201 {:id 1201
@@ -263,7 +252,6 @@
                           :recipe 5
                           :time-spend 60
                           :facility "Assembler"
-                          :alt-recipes {}
                           :results {1201 1}
                           :items {1101 {:id 1101
                                         :name "Iron Ingot"
@@ -271,7 +259,6 @@
                                         :recipe 1
                                         :time-spend 60
                                         :facility "Smelting Facility"
-                                        :alt-recipes {}
                                         :results {1101 1}
                                         :items {1001 {:id 1001
                                                       :name "Iron Ore"
@@ -279,7 +266,6 @@
                                                       :recipe nil
                                                       :time-spend nil
                                                       :facility nil
-                                                      :alt-recipes {}
                                                       :results {}
                                                       :items {}}}}}}
                     1202 {:id 1202
@@ -288,7 +274,6 @@
                           :recipe 6
                           :time-spend 60
                           :facility "Assembler"
-                          :alt-recipes {}
                           :results {1202 2}
                           :items {1104 {:id 1104
                                         :name "Copper Ingot"
@@ -296,7 +281,6 @@
                                         :recipe 3
                                         :time-spend 60
                                         :facility "Smelting Facility"
-                                        :alt-recipes {}
                                         :results {1104 1}
                                         :items {1002 {:id 1002
                                                       :name "Copper Ore"
@@ -304,7 +288,6 @@
                                                       :recipe nil
                                                       :time-spend nil
                                                       :facility nil
-                                                      :alt-recipes {}
                                                       :results {}
                                                       :items {}}}}
                                   1102 {:id 1102
@@ -313,7 +296,6 @@
                                         :recipe 2
                                         :time-spend 90
                                         :facility "Smelting Facility"
-                                        :alt-recipes {}
                                         :results {1102 1}
                                         :items {1001 {:id 1001
                                                       :name "Iron Ore"
@@ -321,7 +303,6 @@
                                                       :recipe nil
                                                       :time-spend nil
                                                       :facility nil
-                                                      :alt-recipes {}
                                                       :results {}
                                                       :items {}}}}}}}}
            (sut/production-tree test-items test-recipes test-recipes-by-output 97))))
