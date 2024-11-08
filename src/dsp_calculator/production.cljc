@@ -419,6 +419,10 @@
   {:facilities #{}
    :raw-resources {}})
 
+(defn alt-recipe-node? [n]
+  (and (contains? n :selected-recipe)
+       (contains? n :recipes)))
+
 (defn summarize
   "Recurse through a production-tree, collecting details on which
   production facilities are used and totaling up the raw resources
@@ -429,12 +433,14 @@
               (update resource-summary :count e/+ (:count node))
               (select-keys node [:id :name :count])))
           (r [summary tree]
-            (let [summary (if-let [facility (:facility tree)]
-                            (update summary :facilities conj facility)
-                            summary)]
-              (if-let [items (vals (:items tree))]
-                ;; If has input items, recurse
-                (reduce r summary items)
-                (update-in summary [:raw-resources (:id tree)] process-leaf tree))))]
+            (if (alt-recipe-node? tree)
+              (r summary (get-in tree [:recipes (:selected-recipe tree)]))
+              (let [summary (if-let [facility (:facility tree)]
+                              (update summary :facilities conj facility)
+                              summary)]
+                (if-let [items (vals (:items tree))]
+                  ;; If has input items, recurse
+                  (reduce r summary items)
+                  (update-in summary [:raw-resources (:id tree)] process-leaf tree)))))]
     (let [summary default-summary]
       (r summary tree))))

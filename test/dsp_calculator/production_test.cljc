@@ -410,4 +410,14 @@
                                   :name "Copper Ore"
                                   :count (r/ratio 1 4)}}}
            (sut/summarize
-            (sut/production-tree test-items test-recipes test-recipes-by-output 97)))))
+            (sut/production-tree test-items test-recipes test-recipes-by-output 97))))
+
+  (t/is (= {:facilities #{"Assembler" "Smelting Facility"}
+            :raw-resources {1006 {:id 1006
+                                  :name "Coal"
+                                  :count (r/ratio 4 3)}
+                            1127 {:id 1127
+                                  :name "Strange Matter"
+                                  :count (r/ratio 1 6)}}}
+           (sut/summarize
+            (sut/production-tree test-items test-recipes test-recipes-by-output 101)))))
