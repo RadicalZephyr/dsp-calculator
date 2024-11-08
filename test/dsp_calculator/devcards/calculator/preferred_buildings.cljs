@@ -37,7 +37,12 @@
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities (atom #{"Miner"}))]]
+             :facilities (atom #{"Water Pump"}))]]
+    [:br]
+    [:div.combo-selector
+     [sut/preferred-buildings
+      (assoc args
+             :facilities (atom #{"Mining Facility"}))]]
     [:br]
     [:div.combo-selector
      [sut/preferred-buildings
@@ -61,17 +66,17 @@
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities (atom #{"Miner" "Smelting Facility"}))]]
+             :facilities (atom #{"Mining Facility" "Smelting Facility"}))]]
     [:br]
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities (atom #{"Miner" "Assembler"}))]]
+             :facilities (atom #{"Mining Facility" "Assembler"}))]]
     [:br]
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities (atom #{"Miner" "Chemical Facility"}))]]
+             :facilities (atom #{"Mining Facility" "Chemical Facility"}))]]
     [:br]
     [:div.combo-selector
      [sut/preferred-buildings
@@ -95,7 +100,7 @@
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities (atom #{"Miner" "Smelting Facility" "Assembler"}))]]
+             :facilities (atom #{"Mining Facility" "Smelting Facility" "Assembler"}))]]
     [:br]
     [:div.combo-selector
      [sut/preferred-buildings
@@ -105,12 +110,12 @@
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities (atom #{"Miner" "Smelting Facility" "Chemical Facility"}))]]
+             :facilities (atom #{"Mining Facility" "Smelting Facility" "Chemical Facility"}))]]
     [:br]
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities (atom #{"Miner" "Assembler" "Chemical Facility"}))]])
+             :facilities (atom #{"Mining Facility" "Assembler" "Chemical Facility"}))]])
   (preferred-state)
   {:inspect-data true})
 
@@ -119,6 +124,6 @@
     [:div.combo-selector
      [sut/preferred-buildings
       (assoc args
-             :facilities (atom #{"Miner" "Smelting Facility" "Assembler" "Chemical Facility"}))]])
+             :facilities (atom #{"Mining Facility" "Smelting Facility" "Assembler" "Chemical Facility"}))]])
   (preferred-state)
   {:inspect-data true})

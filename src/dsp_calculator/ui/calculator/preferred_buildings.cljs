@@ -1,5 +1,6 @@
 (ns dsp-calculator.ui.calculator.preferred-buildings
-  (:require [spade.core :refer [defclass]]
+  (:require [clojure.set :as set]
+            [spade.core :refer [defclass]]
             [com.gfredericks.exact :as e]
             [dsp-calculator.rational :as r]
             [dsp-calculator.ui.base :refer [time-label]]))
@@ -169,6 +170,14 @@
        (into [:div.row {:class (grid-row y)}
               [:span.name {:class (grid-column 1)} label]])))
 
+(defn includes-ve-facility? [facilities]
+  (seq
+   (set/intersection #{"Mining Facility"
+                       "Water Pump"
+                       "Orbital Collector"
+                       "Oil Extractor"}
+                     facilities)))
+
 (defn preferred-buildings [& {:keys [facilities
                                      timescale
                                      belt
@@ -192,7 +201,7 @@
            #(reset! belt %)
            "Logistics"]
 
-          (when (contains? facilities "Miner")
+          (when (includes-ve-facility? facilities)
             (swap! row inc)
             [preferred-building-row
              timescale
@@ -203,7 +212,7 @@
              #(reset! mining-productivity %)
              "Mining Productivity"])
 
-          (when (contains? facilities "Miner")
+          (when (contains? facilities "Mining Facility")
             (swap! row inc)
             [preferred-building-row
              timescale
