@@ -57,6 +57,10 @@
 (defn raw-resource? [node]
   (empty? (:items node)))
 
+(defn alt-recipe-node? [n]
+  (and (contains? n :selected-recipe)
+       (contains? n :recipes)))
+
 (defn node-content [context depth tree]
   (let [context @context
         facility-count (e/* (:ratio context)
@@ -104,10 +108,15 @@
    (for [item (vals (:items tree))]
      ^{:key (:id item)} [production-tree-node context depth item])])
 
+(defn production-tree-alt-node [context depth tree]
+  (let [current-recipe (get-in tree [:recipes (:selected-recipe tree)])]
+    [production-tree-interior-node context depth current-recipe]))
+
 (defn production-tree-node [context depth tree]
-  (if (raw-resource? tree)
-    [production-tree-leaf-node context (inc depth) tree]
-    [production-tree-interior-node context (inc depth) tree]))
+  (cond
+    (alt-recipe-node? tree) [production-tree-alt-node context (inc depth) tree]
+    (raw-resource? tree)   [production-tree-leaf-node context (inc depth) tree]
+    :else              [production-tree-interior-node context (inc depth) tree]))
 
 (defn production-tree-summary [context raw-resources]
   [:details.node.solve
