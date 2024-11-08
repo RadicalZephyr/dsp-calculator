@@ -97,26 +97,33 @@
        [item-icon tree]
        [:span.timeScale (get time-label (:timescale context))]]]]))
 
-(defn production-tree-leaf-node [context depth tree]
+(defn production-tree-leaf-node [context depth path tree]
   [:div.node.solve (depth-attrs depth)
    [node-content context depth tree]])
 
-(defn production-tree-interior-node [context depth tree]
+(defn production-tree-interior-node [context depth path tree]
   [:details.node.solve (depth-attrs depth)
    [:summary
     [node-content context depth tree]]
-   (for [item (vals (:items tree))]
-     ^{:key (:id item)} [production-tree-node context depth item])])
+   (let [path (conj path :items)]
+     (for [item (vals (:items tree))]
+       ^{:key (:id item)} [production-tree-node
+                           context
+                           depth
+                           (conj path (:id item))
+                           item]))])
 
-(defn production-tree-alt-node [context depth tree]
-  (let [current-recipe (get-in tree [:recipes (:selected-recipe tree)])]
-    [production-tree-interior-node context depth current-recipe]))
+(defn production-tree-alt-node [context depth path tree]
+  (let [recipe-path [:recipes (:selected-recipe tree)]
+        current-recipe (get-in tree recipe-path)
+        path (into path recipe-path)]
+    [production-tree-interior-node context depth path current-recipe]))
 
-(defn production-tree-node [context depth tree]
+(defn production-tree-node [context depth path tree]
   (cond
-    (alt-recipe-node? tree) [production-tree-alt-node context (inc depth) tree]
-    (raw-resource? tree)   [production-tree-leaf-node context (inc depth) tree]
-    :else              [production-tree-interior-node context (inc depth) tree]))
+    (alt-recipe-node? tree) [production-tree-alt-node context (inc depth) path tree]
+    (raw-resource? tree)   [production-tree-leaf-node context (inc depth) path tree]
+    :else              [production-tree-interior-node context (inc depth) path tree]))
 
 (defn production-tree-summary [context raw-resources]
   [:details.node.solve
@@ -133,7 +140,7 @@
      [:div "Belts"]
      [:div "Throughput"]]
     (for [resource raw-resources]
-      ^{:key (:id resource)} [production-tree-leaf-node context 0 resource])]])
+      ^{:key (:id resource)} [production-tree-leaf-node context 0 [] resource])]])
 
 (defn production-tree [context summary tree]
   (let [tree @tree]
@@ -141,4 +148,4 @@
       [:div.solver.has-proliferators
        [production-tree-summary context (vals (:raw-resources @summary))]
        [production-tree-header]
-       [production-tree-node context 0 tree]])))
+       [production-tree-node context 0 [] tree]])))
