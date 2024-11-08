@@ -31,12 +31,16 @@
          :name "Energetic Graphite"}
    1112 {:id 1112
          :name "Diamond"}
+   1127 {:id 1127
+         :name "Strange Matter"}
    1201 {:id 1201
          :name "Gear"}
    1202 {:id 1202
          :name "Magnetic Coil"}
    1203 {:id 1203
-         :name "Electric Motor"}})
+         :name "Electric Motor"}
+   1209 {:id 1209
+         :name "Graviton Lens"}})
 
 (def test-recipes
   {1 {:id 1
@@ -89,7 +93,7 @@
        :items {1109 1}
        :results {1112 1}}
    61 {:id 61
-       :name "Diamond"
+       :name "Diamond (advanced)"
        :time-spend 90
        :facility "Smelting Facility"
        :grid-pos {:page 1 :x 3 :y 6}
@@ -108,7 +112,14 @@
        :facility "Assembler"
        :grid-pos {:page 1 :x 3 :y 2}
        :items {1101 2, 1201 1, 1202 1}
-       :results {1203 1}}})
+       :results {1203 1}}
+   101 {:id 101
+        :name "Graviton Lens"
+        :time-spend 360
+        :facility "Assembler"
+        :grid-pos {:page 1 :x 5 :y 4}
+        :items {1112 4, 1127 1}
+        :results {1209 1}}})
 
 (def test-recipes-by-output
   (sut/group-by-outputs test-recipes))
@@ -305,7 +316,62 @@
                                                       :facility nil
                                                       :results {}
                                                       :items {}}}}}}}}
-           (sut/production-tree test-items test-recipes test-recipes-by-output 97))))
+           (sut/production-tree test-items test-recipes test-recipes-by-output 97)))
+  (t/is (= {:id 1209
+            :name "Graviton Lens"
+            :count (r/int 1)
+            :recipe 101
+            :time-spend 360
+            :facility "Assembler"
+            :results {1209 1}
+            :items {1127 {:id 1127
+                          :name "Strange Matter"
+                          :count (r/ratio 1 6)
+                          :recipe nil
+                          :time-spend nil
+                          :facility nil
+                          :results {}
+                          :items {}}
+                    1112 {:id 1112
+                          :selected-recipe 60
+                          :recipes {60 {:id 1112
+                                        :name "Diamond"
+                                        :count (r/ratio 4 3)
+                                        :recipe 60
+                                        :time-spend 120
+                                        :facility "Smelting Facility"
+                                        :results {1112 1}
+                                        :items {1109 {:id 1109
+                                                      :name "Energetic Graphite"
+                                                      :count (r/ratio 4 3)
+                                                      :recipe 17
+                                                      :time-spend 120
+                                                      :facility "Smelting Facility"
+                                                      :results {1109 1}
+                                                      :items {1006 {:id 1006,
+                                                                    :name "Coal",
+                                                                    :count (r/ratio 4 3),
+                                                                    :recipe nil,
+                                                                    :time-spend nil,
+                                                                    :facility nil,
+                                                                    :results {},
+                                                                    :items {}}}}}}
+                                    61 {:id 1112
+                                        :name "Diamond"
+                                        :count (r/ratio 1 2)
+                                        :recipe 61
+                                        :time-spend 90
+                                        :facility "Smelting Facility"
+                                        :results {1112 2}
+                                        :items {1012 {:id 1012
+                                                      :name "Kimberlite Ore"
+                                                      :count (r/ratio 1 3)
+                                                      :recipe nil
+                                                      :time-spend nil
+                                                      :facility nil
+                                                      :results {}
+                                                      :items {}}}}}}}}
+           (sut/production-tree test-items test-recipes test-recipes-by-output 101))))
 
 (deftest test-summary
   (t/is (= {:facilities #{"Smelting Facility"}

@@ -385,11 +385,18 @@
               ;; want to process at least one recipe to create the
               ;; leaf nodes for raw resources, even if there's no
               ;; explicit recipe present.
-              (let [item-recipes (get recipes-by-output item-id)
-                    first-recipe (first item-recipes)
-                    alt-recipes (rest item-recipes)
-                    node (process-recipe depth scale first-recipe item-id)]
-                node)
+              (let [item-recipes (get recipes-by-output item-id)]
+                (if (> (count item-recipes) 1)
+                  (let [recipes (->> item-recipes
+                                     (map #(process-recipe depth scale % item-id))
+                                     (map (juxt :recipe identity))
+                                     (into {}))]
+                    {:id item-id
+                     :selected-recipe (->> item-recipes
+                                           (map :id)
+                                           (apply min))
+                     :recipes recipes})
+                  (process-recipe depth scale (first item-recipes) item-id)))
               {:error "max depth reached"}))]
     ;; Handle the first layer of recursion specially, because we want
     ;; the scale passed in to result in the `:count` being 1 for the
