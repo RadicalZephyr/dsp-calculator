@@ -119,7 +119,13 @@
         :facility "Assembler"
         :grid-pos {:page 1 :x 5 :y 4}
         :items {1112 4, 1127 1}
-        :results {1209 1}}})
+        :results {1209 1}}
+   301 {:id 301,
+        :name "Iron Ore",
+        :time-spend 60,
+        :facility "Mining Facility",
+        :items {}
+        :results {1001 1}}})
 
 (def test-recipes-by-output
   (sut/group-by-outputs test-recipes))
@@ -135,10 +141,10 @@
             :items {1001 {:id 1001
                           :name "Iron Ore"
                           :count (r/int 1)
-                          :recipe nil
-                          :time-spend nil
-                          :facility nil
-                          :results {}
+                          :recipe 301
+                          :time-spend 60
+                          :facility "Mining Facility"
+                          :results {1001 1}
                           :items {}}}}
            (sut/production-tree test-items test-recipes test-recipes-by-output 1)))
   (t/is (= {:id 1103
@@ -158,10 +164,10 @@
                           :items {1001 {:id 1001
                                         :name "Iron Ore"
                                         :count (r/int 1)
-                                        :recipe nil
-                                        :time-spend nil
-                                        :facility nil
-                                        :results {}
+                                        :recipe 301
+                                        :time-spend 60
+                                        :facility "Mining Facility"
+                                        :results {1001 1}
                                         :items {}}}}}}
            (sut/production-tree test-items test-recipes test-recipes-by-output 63)))
   (t/is (= {:id 1101
@@ -229,10 +235,10 @@
                           :items {1001 {:id 1001
                                         :name "Iron Ore"
                                         :count (r/int 2)
-                                        :recipe nil
-                                        :time-spend nil
-                                        :facility nil
-                                        :results {}
+                                        :recipe 301
+                                        :time-spend 60
+                                        :facility "Mining Facility"
+                                        :results {1001 1}
                                         :items {}}}}}}
            (sut/production-tree test-items test-recipes test-recipes-by-output 6)))
   (t/is (= {:id 1203
@@ -252,10 +258,10 @@
                           :items {1001 {:id 1001
                                         :name "Iron Ore"
                                         :count (r/int 1)
-                                        :recipe nil
-                                        :time-spend nil
-                                        :facility nil
-                                        :results {}
+                                        :recipe 301
+                                        :time-spend 60
+                                        :facility "Mining Facility"
+                                        :results {1001 1}
                                         :items {}}}}
                     1201 {:id 1201
                           :name "Gear"
@@ -274,10 +280,10 @@
                                         :items {1001 {:id 1001
                                                       :name "Iron Ore"
                                                       :count (r/ratio 1 2)
-                                                      :recipe nil
-                                                      :time-spend nil
-                                                      :facility nil
-                                                      :results {}
+                                                      :recipe 301
+                                                      :time-spend 60
+                                                      :facility "Mining Facility"
+                                                      :results {1001 1}
                                                       :items {}}}}}}
                     1202 {:id 1202
                           :name "Magnetic Coil"
@@ -311,10 +317,10 @@
                                         :items {1001 {:id 1001
                                                       :name "Iron Ore"
                                                       :count (r/ratio 1 2)
-                                                      :recipe nil
-                                                      :time-spend nil
-                                                      :facility nil
-                                                      :results {}
+                                                      :recipe 301
+                                                      :time-spend 60
+                                                      :facility "Mining Facility"
+                                                      :results {1001 1}
                                                       :items {}}}}}}}}
            (sut/production-tree test-items test-recipes test-recipes-by-output 97)))
   (t/is (= {:id 1209
@@ -374,7 +380,7 @@
            (sut/production-tree test-items test-recipes test-recipes-by-output 101))))
 
 (deftest test-summary
-  (t/is (= {:facilities #{"Smelting Facility"}
+  (t/is (= {:facilities #{"Smelting Facility" "Mining Facility"}
             :raw-resources {1001 {:id 1001
                                   :name "Iron Ore"
                                   :count (r/int 1)}}}
@@ -392,7 +398,7 @@
            (sut/summarize
             (sut/production-tree test-items test-recipes test-recipes-by-output 60))))
 
-  (t/is (= {:facilities #{"Assembler" "Smelting Facility"}
+  (t/is (= {:facilities #{"Assembler" "Smelting Facility" "Mining Facility"}
             :raw-resources {1001 {:id 1001
                                   :name "Iron Ore"
                                   :count (r/int 2)}
@@ -402,7 +408,7 @@
            (sut/summarize
             (sut/production-tree test-items test-recipes test-recipes-by-output 6))))
 
-  (t/is (= {:facilities #{"Assembler" "Smelting Facility"}
+  (t/is (= {:facilities #{"Assembler" "Smelting Facility" "Mining Facility"}
             :raw-resources {1001 {:id 1001
                                   :name "Iron Ore"
                                   :count (r/int 2)}
