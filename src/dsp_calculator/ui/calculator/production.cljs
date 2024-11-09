@@ -80,11 +80,10 @@
         leaf-node? (raw-resource? tree)]
     [:div.node-header
      [:div.meta
-      (when (not leaf-node?)
-        [:span {:title (str (r/str facility-count)
-                            "× "
-                            (:facility tree))}
-         [rational facility-count] "×"])
+      [:span {:title (str (r/str facility-count)
+                          "× "
+                          (:facility tree))}
+       [rational facility-count] "×"]
       [:span {:class (if leaf-node?
                        ["item" "named"]
                        ["recipe"])}
