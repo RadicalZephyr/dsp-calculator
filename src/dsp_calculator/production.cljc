@@ -152,7 +152,7 @@
    ;; rate of 6/min/exchanger.
    {:item-id 2207,
     :row 3,
-    :count-per-min 6,
+    :count-per-min (r/int 6),
     :facility "Energy Exchanger",
     :name-en "Accumulator (full)",
     :name-zh "蓄电器（满）"}])
@@ -205,8 +205,8 @@
          (str "0" x))))
 
 (defn per-min->time-spend [count-per-min]
-  (r/ratio (* 60 60)
-           count-per-min))
+  (e// (r/int (* 60 60))
+       count-per-min))
 
 (defn item->recipe [idx {:keys [item-id row count-per-min facility name-en name-zh]}]
   (let [pos {:page 3, :x (inc idx), :y row}]
@@ -330,12 +330,14 @@
 (def ^:dynamic *max-depth* 10)
 
 (defn get-item-rate [recipe item-id]
-  (r/ratio (get-in recipe [:items item-id] 1)
-           (get recipe :time-spend 60)))
+  (e// (r/int
+        (get-in recipe [:items item-id] 1))
+       (get recipe :time-spend (r/int 60))))
 
 (defn get-result-rate [recipe item-id]
-  (r/ratio (get-in recipe [:results item-id] 1)
-           (get recipe :time-spend 60)))
+  (e// (r/int
+        (get-in recipe [:results item-id] 1))
+       (get recipe :time-spend (r/int 60))))
 
 (defn production-tree
   "Produce a production tree describing the ratios needed to produce a
