@@ -211,9 +211,9 @@
 (defn item->recipe [idx {:keys [item-id row count-per-min facility name-en name-zh]}]
   (let [pos {:page 3, :x (inc idx), :y row}]
     {:id (+ 300 (- item-id 1000))
-     :name name-zh
+     :name name-en
      :type "MINE"
-     :facility (facility-en->zh facility)
+     :facility facility
      :time-spend (per-min->time-spend count-per-min)
      :grid-pos pos
      :items {}

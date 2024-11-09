@@ -2,6 +2,7 @@
   (:require [devcards.core]
             [ajax.core :refer [GET]]
             [ajax.edn]
+            [com.gfredericks.exact :as e]
             [reagent.core :as reagent]
             [spade.core :refer [defattrs defclass]]
             [dsp-calculator.rational :as r]
@@ -40,7 +41,14 @@ The calculator interface, the most important part of the site.")
 
 (def items (reagent/atom {}))
 
-(def recipes (reagent/atom {}))
+(def raw-recipes (reagent/atom {}))
+
+(def recipes
+  (reagent/reaction
+   (when-let [recipes @raw-recipes]
+     (->> recipes
+          (map (fn [[k v]] [k (update v :time-spend (fnil r/int 60))]))
+          (into {})))))
 
 (def dialog-recipes
   (reagent/reaction
@@ -55,16 +63,33 @@ The calculator interface, the most important part of the site.")
 (defcard-rg full-calculator
   (fn [state _]
     (fetch-once "items_EN" items)
-    (fetch-once "recipes_EN" recipes)
+    (fetch-once "recipes_EN" raw-recipes)
     (let [selected (reagent/cursor state [:selected])
           control-spec (reagent/cursor state [:controls])
           controls (reagent/reaction
                     (control/render-controls [@control-spec @selected]))
           update-controls #(swap! control-spec control/update-controls %1 %2)
+          mining-productivity (reagent/cursor state [:mining-productivity])
+          miner (reagent/cursor state [:miner])
+          mining-speed (reagent/reaction
+                        (let [miner-speed (:speed @miner)
+                              mining-efficiency (:speed @mining-productivity)]
+                          (e/* (r/int 60) miner-speed mining-efficiency)))
+          full-recipes (reagent/reaction
+                        (when-let [recipes @recipes]
+                          (let [mining-speed @mining-speed]
+                           (->> prod/minable-resources
+                                (map #(assoc % :count-per-min mining-speed))
+                                prod/render-minable-resource-recipes
+                                (map (juxt :id identity))
+                                (into recipes)))))
+          recipes-by-output-id (reagent/reaction
+                                (when-let [recipes @full-recipes]
+                                  (prod/group-by-outputs recipes)))
           tree (reagent/reaction
                 (when-let [id (:id @selected)]
                   (prod/production-tree @items
-                                        @recipes
+                                        @full-recipes
                                         @recipes-by-output-id
                                         id)))
           summary (reagent/reaction
@@ -78,8 +103,8 @@ The calculator interface, the most important part of the site.")
           {:facilities facilities
            :timescale timescale
            :belt (reagent/cursor state [:belt])
-           :mining-productivity (reagent/cursor state [:mining-productivity])
-           :miner (reagent/cursor state [:miner])
+           :mining-productivity mining-productivity
+           :miner miner
            :smelter (reagent/cursor state [:smelter])
            :assembler (reagent/cursor state [:assembler])
            :chemical (reagent/cursor state [:chemical])}

@@ -20,10 +20,13 @@
   {"second" (r/int 60)
    "minute" (r/int (* 60 60))})
 
+(def sixty (r/int 60))
+
 (defn get-result-rate [recipe]
-  (r/ratio (get-in recipe [:results (:id recipe)] 1)
-           (or (get recipe :time-spend 60)
-               60)))
+  (e// (r/int
+        (get-in recipe [:results (:id recipe)] 1))
+       (or (get recipe :time-spend sixty)
+           sixty)))
 
 (defn rational [r]
   (let [{:keys [w n d]} (r/decompose r)]
