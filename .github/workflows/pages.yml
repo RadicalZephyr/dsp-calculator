@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v7
     # It is important to install java before installing clojure tools which needs java
     # exclusions: babashka, clj-kondo and cljstyle
     - name: Prepare java
@@ -24,7 +25,6 @@ jobs:
       uses: DeLaGuardo/setup-clojure@13
       with:
         lein: latest
-    - uses: actions/checkout@v7
     - name: Install dependencies
       run: lein deps
     - name: Build site
