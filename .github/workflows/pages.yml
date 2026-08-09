@@ -25,7 +25,7 @@ jobs:
     - name: Install dependencies
       run: lein deps
     - name: Build site
-      run: lein cljsbuild once
+      run: lein fig -- -O advanced -bo dev
     - name: Upload artifact
       id: deployment
       uses: actions/upload-pages-artifact@v5
