@@ -17,6 +17,7 @@ jobs:
       with:
         distribution: temurin
         java-version: '25'
+        cache: maven
     - name: Install clojure tools
       uses: DeLaGuardo/setup-clojure@13
       with:
