@@ -1,7 +1,7 @@
 ^{:open-url "http://[[server-hostname]]:[[server-port]]/index.html"
   }
 {:main "dsp-calculator.app"
- :asset-path "/js/compiled/out"
+ :asset-path "js/compiled/out"
  :output-to "resources/public/js/compiled/dsp-calculator.js"
  :output-dir "resources/public/js/compiled/out"
  :closure-defines {"re_frame.trace.trace_enabled_QMARK_" true
