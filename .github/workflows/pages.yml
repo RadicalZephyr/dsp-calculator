@@ -18,6 +18,8 @@ jobs:
         distribution: temurin
         java-version: '25'
         cache: maven
+        cache-dependency-path: |
+          project.clj
     - name: Install clojure tools
       uses: DeLaGuardo/setup-clojure@13
       with:
