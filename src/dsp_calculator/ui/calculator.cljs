@@ -17,6 +17,8 @@
         update-selected #(re-frame/dispatch [::update-selected %])
         controls (re-frame/subscribe [::controls])
         update-controls #(re-frame/dispatch [::update-controls %1 %2])
+        preferences (re-frame/subscribe [::preferences])
+        context (re-frame/subscribe [::context])
         summary (re-frame/subscribe [::summary])
         tree (re-frame/subscribe [::production-tree])]
     [calculator
@@ -25,6 +27,8 @@
      :update-selected update-selected
      :controls controls
      :update-controls update-controls
+     :preferences preferences
+     :context context
      :summary summary
      :tree tree]))
 
@@ -33,8 +37,8 @@
                             update-selected
                             controls
                             update-controls
-                            context
                             preferences
+                            context
                             summary
                             tree]}]
   [:main.page.calculator
@@ -195,6 +199,14 @@
    ::dialog-recipes
    :<- [:dsp-calculator.data/recipes]
    :-> split-recipes)
+
+  (re-frame/reg-sub
+   ::preferences
+   :-> ::preferences)
+
+  (re-frame/reg-sub
+   ::context
+   :-> ::context)
 
   (re-frame/reg-sub
    ::recipes-by-output
