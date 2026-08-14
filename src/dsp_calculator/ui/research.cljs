@@ -6,6 +6,9 @@
   (:require-macros
    [garden.def :refer [defcssfn]]))
 
+(defn init-db [db]
+  db)
+
 (defcssfn url)
 
 (defclass tech-class []

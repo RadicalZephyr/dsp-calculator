@@ -73,13 +73,19 @@
     :dsp-ui/research [research-container]
     [:h2 (str "Unknown page: " (pr-str current-page))]))
 
+(defn init-db [db]
+  (-> db
+      (assoc ::page :dsp-ui/home)
+      (c/init-db)
+      (r/init-db)))
+
 (defn setup! []
   (re-frame/reg-event-db
    ::change-page
    (fn-traced
-    change-page-event
-    [app-db [_ new-page]]
-    (assoc app-db ::page new-page)))
+     change-page-event
+     [app-db [_ new-page]]
+     (assoc app-db ::page new-page)))
 
   (re-frame/reg-sub
    ::page

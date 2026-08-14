@@ -11,7 +11,8 @@
   (re-frame/reg-event-db
    ::initialise-db
    (fn-traced initialize-db-event [_ _]
-     (-> {:dsp-calculator.ui/page :dsp-ui/home}
+     (-> {}
+         (dsp-ui/init-db)
          (dsp-data/init-db)))))
 
 (defn main-panel []

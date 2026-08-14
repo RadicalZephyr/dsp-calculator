@@ -2,6 +2,7 @@
   (:require [spade.core :refer [defclass]]
             [reagent.core :as reagent]
             [re-frame.core :as re-frame]
+            [dsp-calculator.rational :as r]
             [dsp-calculator.production :as production]
             [dsp-calculator.ui.calculator.controls :as control]
             [dsp-calculator.ui.calculator.preferred-buildings :as pref]
@@ -164,6 +165,12 @@
                         (group-by #(get-in % [:grid-pos :page])))
                    {1 :items
                     2 :buildings}))
+
+(defn init-db [db]
+  (assoc ::preferences (pref/default-preferences)
+         ::context {:ratio (r/int 1)
+                    :timescale "minute"
+                    :belt-rate (r/int 6)}))
 
 (defn setup! []
   ;; Layer 2 Subscriptions
