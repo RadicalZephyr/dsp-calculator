@@ -12,14 +12,7 @@
   (base/stylesheet-includes))
 
 (defn preferred-state []
-  (reagent/atom
-   {:timescale "minute"
-    :belt (first sut/conveyor-belts)
-    :mining-productivity (first sut/mining-productivity-techs)
-    :miner (first sut/miners)
-    :smelter (first sut/smelters)
-    :assembler (first sut/assemblers)
-    :chemical (first sut/chemical-plants)}))
+  (reagent/atom (sut/default-preferences)))
 
 (defcard-rg preferred-buildings-empty
   "The preferred buildings section is not rendered when the facilities

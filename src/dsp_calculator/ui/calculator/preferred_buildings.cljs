@@ -77,6 +77,15 @@
     :name "Quantum Chemical Plant"
     :count (r/int 2)}])
 
+(def default-preferences
+  {:timescale "minute"
+   :belt (first sut/conveyor-belts)
+   :mining-productivity (first sut/mining-productivity-techs)
+   :miner (first sut/miners)
+   :smelter (first sut/smelters)
+   :assembler (first sut/assemblers)
+   :chemical (first sut/chemical-plants)})
+
 (declare item-id tech-id)
 
 (def scale-by
