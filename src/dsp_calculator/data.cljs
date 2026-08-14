@@ -60,6 +60,20 @@
    (fn-traced [db [_ key data]]
      (assoc-in db [::data key] data)))
 
+  ;; Layer 2 Subscriptions
+
+  (re-frame/reg-sub
+   ::items
+   :-> #(get-in [::data ::items] %))
+
+  (re-frame/reg-sub
+   ::recipes
+   :-> #(get-in [::data ::recipes] %))
+
+  (re-frame/reg-sub
+   ::tech
+   :-> #(get-in % [::data ::tech]))
+
   (re-frame/dispatch [::fetch-data "recipes_EN" ::recipes])
   (re-frame/dispatch [::fetch-data "items_EN" ::items])
   (re-frame/dispatch [::fetch-data "tech_EN" ::tech]))
