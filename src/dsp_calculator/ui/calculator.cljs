@@ -190,12 +190,18 @@
    :-> split-recipes)
 
   (re-frame/reg-sub
+   ::recipes-by-output
+   :<- [:dsp-calculator.data/recipes]
+   :-> production/group-by-outputs)
+
+  (re-frame/reg-sub
    ::production-tree
    :<- [:dsp-calculator.data/items]
    :<- [:dsp-calculator.data/recipes]
+   :<- [::recipes-by-output]
    :<- [::selected-recipe]
-   (fn [[items recipes selected-recipe] _]
-     (production/production-tree items recipes (:id selected-recipe))))
+   (fn [[items recipes recipes-by-output selected-recipe] _]
+     (production/production-tree items recipes recipes-by-output (:id selected-recipe))))
 
   (re-frame/reg-sub
    ::summary
