@@ -15,11 +15,6 @@
     (fn []
       [home])))
 
-(defn calculator-container []
-  (let [subs []]
-    (fn []
-      [c/calculator])))
-
 (defn research-container []
   (let [subs []]
     (fn []
@@ -74,7 +69,7 @@
 (defn content [current-page]
   (case current-page
     :dsp-ui/home [home-container]
-    :dsp-ui/calculator [calculator-container]
+    :dsp-ui/calculator [c/calculator-container]
     :dsp-ui/research [research-container]
     [:h2 (str "Unknown page: " (pr-str current-page))]))
 

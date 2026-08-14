@@ -1,12 +1,31 @@
 (ns dsp-calculator.ui.calculator
   (:require [spade.core :refer [defclass]]
             [reagent.core :as reagent]
+            [re-frame.core :as re-frame]
+            [dsp-calculator.production :as production]
             [dsp-calculator.ui.calculator.controls :as control]
             [dsp-calculator.ui.calculator.preferred-buildings :as pref]
-            [dsp-calculator.ui.calculator.production :as prod]
+            [dsp-calculator.ui.calculator.production :as ui-prod]
             [clojure.set :as set]))
 
-(declare combo-selector)
+(declare calculator combo-selector)
+
+(defn calculator-container []
+  (let [recipes (re-frame/subscribe [::dialog-recipes])
+        selected (re-frame/subscribe [::selected-recipe])
+        update-selected #(re-frame/dispatch [::update-selected %])
+        controls (re-frame/subscribe [::controls])
+        update-controls #(re-frame/dispatch [::update-controls %1 %2])
+        summary (re-frame/subscribe [::summary])
+        tree (re-frame/subscribe [::production-tree])]
+    [calculator
+     :recipes recipes
+     :selected selected
+     :update-selected update-selected
+     :controls controls
+     :update-controls update-controls
+     :summary summary
+     :tree tree]))
 
 (defn calculator [& {:keys [recipes
                             selected
@@ -25,7 +44,7 @@
     :controls controls
     :update-controls update-controls
     :preferences preferences]
-   [prod/production-tree context summary tree]])
+   [ui-prod/production-tree context summary tree]])
 
 (defclass grid-pos [x y]
   {:grid-area (str y " / " x)})
@@ -145,3 +164,52 @@
                         (group-by #(get-in % [:grid-pos :page])))
                    {1 :items
                     2 :buildings}))
+
+(defn setup! []
+  ;; Layer 2 Subscriptions
+
+  (re-frame/reg-sub
+   ::selected-recipe
+   :-> ::selected-recipe)
+
+  (re-frame/reg-sub
+   ::control-spec
+   :-> ::control-spec)
+
+  ;; Layer 3 Subscriptions
+
+  (re-frame/reg-sub
+   ::controls
+   :<- [::control-spec]
+   :<- [::selected-recipe]
+   :-> control/render-controls)
+
+  (re-frame/reg-sub
+   ::dialog-recipes
+   :<- [:dsp-calculator.data/recipes]
+   :-> split-recipes)
+
+  (re-frame/reg-sub
+   ::production-tree
+   :<- [:dsp-calculator.data/items]
+   :<- [:dsp-calculator.data/recipes]
+   :<- [::selected-recipe]
+   (fn [[items recipes selected-recipe] _]
+     (production/production-tree items recipes (:id selected-recipe))))
+
+  (re-frame/reg-sub
+   ::summary
+   :<- [::production-tree]
+   :-> production/summarize)
+
+  ;; Event handlers
+
+  (re-frame/reg-event-db
+   ::update-selected
+   (fn [db [_ recipe]]
+     (assoc db ::selected recipe)))
+
+  (re-frame/reg-event-db
+   ::update-controls
+   (fn [db [_ setting value]]
+     (update db ::controls control/update-controls setting value))))
