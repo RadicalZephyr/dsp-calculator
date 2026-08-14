@@ -171,7 +171,9 @@
                     2 :buildings}))
 
 (defn init-db [db]
-  (assoc ::preferences (pref/default-preferences)
+  (assoc ::selected-recipe nil
+         ::control-spec (control/default-controls)
+         ::preferences (pref/default-preferences)
          ::context {:ratio (r/int 1)
                     :timescale "minute"
                     :belt-rate (r/int 6)}))
@@ -232,9 +234,9 @@
   (re-frame/reg-event-db
    ::update-selected
    (fn [db [_ recipe]]
-     (assoc db ::selected recipe)))
+     (assoc db ::selected-recipe recipe)))
 
   (re-frame/reg-event-db
    ::update-controls
    (fn [db [_ setting value]]
-     (update db ::controls control/update-controls setting value))))
+     (update db ::control-spec control/update-controls setting value))))
