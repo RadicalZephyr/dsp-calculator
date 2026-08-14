@@ -3,14 +3,16 @@
     [reagent.dom :as rd]
     [re-frame.core :as re-frame]
     [day8.re-frame.tracing :refer-macros [fn-traced]]
-    [dsp-calculator.ui :as dsp-ui]))
+    [dsp-calculator.ui :as dsp-ui]
+    [dsp-calculator.data :as dsp-data]))
 
 (defn setup! []
   (dsp-ui/setup!)
   (re-frame/reg-event-db
    ::initialise-db
    (fn-traced initialize-db-event [_ _]
-              {:dsp-calculator.ui/page :dsp-ui/home})))
+     (-> {:dsp-calculator.ui/page :dsp-ui/home}
+         (dsp-data/init-db)))))
 
 (defn main-panel []
   (let [current-page (re-frame/subscribe [:dsp-calculator.ui/page])]
@@ -23,7 +25,7 @@
 (defn init-render! []
   (re-frame/dispatch [::initialise-db])
   (rd/render [main-panel]
-                  (.getElementById js/document "app")))
+             (.getElementById js/document "app")))
 
 (defn ^:export start! []
   (setup!)

@@ -1,4 +1,9 @@
-(ns dsp-calculator.data)
+(ns dsp-calculator.data
+  (:require
+    [ajax.core :as ajax]
+    [ajax.edn]
+    [re-frame.core :as re-frame]
+    [day8.re-frame.tracing :refer-macros [fn-traced]]))
 
 (def assemble-production-speed
   {2303 0.75
@@ -30,3 +35,31 @@
 
 (def auto-replenish-fuels
   [1804 1803 1802 1801 1130 1129 1128 1121 1120 1109 1011 1114 1007 1006 1117 1030 1031])
+
+(defn init-db [db]
+  (assoc db ::data {}))
+
+(defn setup! []
+  (re-frame/reg-event-fx
+   ::fetch-data
+   (fn-traced [_ [_ type key]]
+     {:http-xhrio {:method          :get
+                   :uri             (str "data/" type ".edn")
+                   :timeout         5000
+                   :response-format (ajax.edn/edn-response-format)
+                   :on-success      [::store-data key]
+                   :on-failure      [::failure-fetch-data type key]}}))
+
+  (re-frame/reg-event-fx
+   ::failure-fetch-data
+   (fn-traced [ctx [_ type key]]
+     {}))
+
+  (re-frame/reg-event-db
+   ::store-data
+   (fn-traced [db [_ key data]]
+     (assoc-in db [::data key] data)))
+
+  (re-frame/dispatch [::fetch-data "recipes_EN" ::recipes])
+  (re-frame/dispatch [::fetch-data "items_EN" ::items])
+  (re-frame/dispatch [::fetch-data "tech_EN" ::tech]))
